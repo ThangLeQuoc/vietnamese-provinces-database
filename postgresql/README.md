@@ -10,7 +10,7 @@ Create a new database in your Postgres instance
 CREATE DATABASE vietnamese_administrative_units
 ```
 
-Then use the `psql` command to dump the backup file `vietnamese_administrative_units_postgresql.sql` to the database `vietnamese_administrative_units`
+Then use the `psql` command to dump the backup file `vietnamese_administrative_units_postgresql.sql` in the [CompleteDataset directory](CompleteDataset) to the database `vietnamese_administrative_units`
 
 ```bash
 psql -d vietnamese_administrative_units -f VietnameseProvincesDatabase/postgresql/CompleteDataset/vietnamese_administrative_units_postgresql.sql
