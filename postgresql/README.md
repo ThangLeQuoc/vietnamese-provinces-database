@@ -1,8 +1,23 @@
 # [Postgresql] - Vietnamese Provinces Database
 
-This document will guide you how to restore the Vietnamese provinces dataset to your Postgres database
+This document will guide you how to restore the Vietnamese provinces dataset to your Postgres database.
+Feel free to choose any approach listed below that you're comfortable with.
 
-## Restore as a complete database
+## Restore by standard SQL scripts
+
+Either use your existing database, or create a new one
+
+```sql
+CREATE DATABASE vietnamese_administrative_units;
+```
+
+Execute the `CreateTable_vn_units.sql` in the [StandardSQLScripts directory](StandardSQLScripts) first in the target database to generate all the table structure.
+
+Then follow up by executing the `ImportData_vn_units.sql` to import data to these generated tables.
+
+## Restore with `PSQL`
+
+### Restore as a complete database
 
 To restore the Vietnamese Provinces dataset as a new standalone database, follow these steps:
 
@@ -37,6 +52,3 @@ You will need to import the SQL patches in the [TableDumps directory](TableDumps
 3. `provinces.sql`
 4. `districts.sql`
 5. `wards.sql`
-
-## Restore by standard SQL scripts
-
