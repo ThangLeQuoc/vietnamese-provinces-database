@@ -49,6 +49,7 @@ Execute the `CreateTable_vn_units.sql` in the [sqlserver directory](sqlserver) f
 Then follow up by executing the `ImportData_vn_units.sql` to import data to these generated tables.
 
 ### Oracle
-
+(Coming soon)
 
 ## Sample Query
+
