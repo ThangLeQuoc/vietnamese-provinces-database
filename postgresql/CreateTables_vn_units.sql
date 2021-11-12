@@ -31,8 +31,8 @@ CREATE TABLE provinces (
 	full_name varchar(255) NOT NULL,
 	full_name_en varchar(255) NULL,
 	code_name varchar(255) NULL,
-	administrative_unit_id int4 NULL,
-	administrative_region_id int4 NULL,
+	administrative_unit_id integer NULL,
+	administrative_region_id integer NULL,
 	CONSTRAINT provinces_pkey PRIMARY KEY (code)
 );
 
@@ -52,7 +52,7 @@ CREATE TABLE districts (
 	full_name_en varchar(255) NULL,
 	code_name varchar(255) NULL,
 	province_code varchar(20) NULL,
-	administrative_unit_id int4 NULL,
+	administrative_unit_id integer NULL,
 	CONSTRAINT districts_pkey PRIMARY KEY (code)
 );
 
@@ -73,7 +73,7 @@ CREATE TABLE wards (
 	full_name_en varchar(255) NULL,
 	code_name varchar(255) NULL,
 	district_code varchar(20) NULL,
-	administrative_unit_id int4 NULL,
+	administrative_unit_id integer NULL,
 	CONSTRAINT wards_pkey PRIMARY KEY (code)
 );
 
