@@ -193,10 +193,34 @@ The `code` key and `full_name` are based on the original CSV file.
 |...|........|........|.............|.................|........|..|..|
 
 ### `wards` table
+![Commune level](https://i.imgur.com/B5w1adp.jpg)
+The `wards` table contains a list of **third administrative tier - the commune level** units, includes **10599** wards, communes and commune-level towns.  
+The `code` key and `full_name` are based on the original CSV file.
 
-TBD: Meaning, column definition, sample data
+#### Table definition
 
-## Sample Query
+|Column|Data type|Meaning|Constraint|
+|------|-----------|---------|------------|
+|`code`|varchar(20)|The official unit code, defined by government |Primary Key|
+|`name`|varchar(255)|Name in Vietnamese||
+|`name_en`|varchar(255)|Name of in English||
+|`full_name`|varchar(255)|Full name in Vietnamese, includes the administrative unit name||
+|`full_name_en`|varchar(255)|Full name in English, includes the administrative unit name||
+|`code_name`|varchar(255)|Code name, derived from `name`. Written in lowercase, underscored||
+|`district_code`|integer|The `district` this record belongs to|Foreign Key, references to `districts.code`|
+|`administrative_unit_id`|integer|The administrative unit id of this record|Foreign Key, references to `administrative_units.id` |
+
+#### Data preview
+
+|code|name|name_en|full_name|full_name_en|code_name|district_code|administrative_unit_id|
+|----|----|-------|---------|------------|---------|-------------|----------------------|
+|25942|Dĩ An|Di An|Phường Dĩ An|Di An Ward|di_an|724|8|
+|25945|Tân Bình|Tan Binh|Phường Tân Bình|Tan Binh Ward|tan_binh|724|8|
+|25948|Tân Đông Hiệp|Tan Dong Hiep|Phường Tân Đông Hiệp|Tan Dong Hiep Ward|tan_dong_hiep|724|8|
+|25951|Bình An|Binh An|Phường Bình An|Binh An Ward|binh_an|724|8|
+|25954|Bình Thắng|Binh Thang|Phường Bình Thắng|Binh Thang Ward|binh_thang|724|8|
+|-----|-----|-------|---------|-----------|----------|---|--|
+
+## Sample Queries
 
 TBD
-
