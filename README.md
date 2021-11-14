@@ -67,12 +67,32 @@ Execute the `CreateTable_vn_units.sql` in the [oracle directory](oracle) first i
 Then follow up by executing the `ImportData_vn_units.sql` to import data to these generated tables.
 
 ## Tables Schema
-
-TBD - Table relationship
+![VN_administrative_units db](https://i.imgur.com/sa0k4rt.png)
 
 ### `administrative_regions` table
+![VN Geographical Regions](https://i.imgur.com/CiyxQi0.png)  
+The `administrative_regions` table contains the list of **8** Vietnamese geographical regions with the `id` increment following the region location from North to South.
 
-TBD: Meaning, column definition, sample data
+|Column|Data type|Meaning|Constraint|
+|------|-----------|---------|------------|
+|`id`|integer|id of the region|Primary Key|
+|`name`|varchar(255)|Region name (in Vietnamese)||
+|`name_en`|varchar(255)|Region name (in English)||
+|`code_name`|varchar(255)|Code name, derived from Vietnamese name||
+|`code_name_en`|varchar(255)|Code name, derived from English name||
+
+**Preview of data**
+
+|id|name|name_en|code_name|code_name_en|
+|--|----|-------|---------|------------|
+|1|Đông Bắc Bộ|Northeast|dong_bac_bo|northest|
+|2|Tây Bắc Bộ|Northwest|tay_bac_bo|northwest|
+|3|Đồng bằng sông Hồng|Red River Delta|dong_bang_song_hong|red_river_delta|
+|4|Bắc Trung Bộ|North Central Coast|bac_trung_bo|north_central_coast|
+|5|Duyên hải Nam Trung Bộ|South Central Coast|duyen_hai_nam_trung_bo|south_central_coast|
+|6|Tây Nguyên|Central Highlands|tay_nguyen|central_highlands|
+|7|Đông Nam Bộ|Southeast|dong_nam_bo|southeast|
+|8|Đồng bằng sông Cửu Long|Mekong River Delta|dong_bang_song_cuu_long|southwest|
 
 ### `administrative_units` table
 
