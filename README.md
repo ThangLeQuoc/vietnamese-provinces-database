@@ -160,6 +160,7 @@ The `code` key and `full_name` are based on the original CSV file.
 |46|Thừa Thiên Huế|Thua Thien Hue|Tỉnh Thừa Thiên Huế|Thua Thien Hue Province|thua_thien_hue|2|4|
 |48|Đà Nẵng|Da Nang|Thành phố Đà Nẵng|Da Nang City|da_nang|1|5|
 |79|Hồ Chí Minh|Ho Chi Minh|Thành phố Hồ Chí Minh|Ho Chi Minh City|ho_chi_minh|1|7|
+|..|...........|...........|.....................|................|...........|..|..|
 
 
 ### `districts` table
