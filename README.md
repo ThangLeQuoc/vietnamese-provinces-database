@@ -10,7 +10,7 @@ Don't forget to leave a :star: if you find this repository helpful. It's would h
 
 The author(s) of this repository is not associated with the **General Statistics Office of Vietnam**, nor the Vietnamese government.  
 The data of provinces, districts and wards are created base on the CSV file from the [General Statistics Office of Vietnam website](https://www.gso.gov.vn/phuong-phap-thong-ke/danh-muc/don-vi-hanh-chinh/).  
-This dataset also include additional informationaApart from the original provinces, districts and wards data from the original CSV file. Please see section [Additional change make by this repository](#additional-change-make-by-this-repository)
+This dataset also include additional information apart from the original provinces, districts and wards data from the original CSV file. Please see section [Additional change make by this repository](#additional-change-make-by-this-repository)
 
 ### Additional change make by this repository
 
@@ -81,11 +81,11 @@ The `administrative_regions` table contains the list of **8** Vietnamese geograp
 
 |Column|Data type|Meaning|Constraint|
 |------|-----------|---------|------------|
-|`id`|integer|id of the region|Primary Key|
-|`name`|varchar(255)|Region name (in Vietnamese)||
-|`name_en`|varchar(255)|Region name (in English)||
-|`code_name`|varchar(255)|Code name, derived from Vietnamese name. Written in lowercase, underscored||
-|`code_name_en`|varchar(255)|Code name, derived from English name. Written in lowercase, underscored||
+|`id`|integer|Id of the region|Primary Key|
+|`name`|varchar(255)|Region name in Vietnamese||
+|`name_en`|varchar(255)|Region name in English||
+|`code_name`|varchar(255)|Code name, derived from Vietnamese name, written in lowercase, underscored||
+|`code_name_en`|varchar(255)|Code name, derived from English name, written in lowercase, underscored||
 
 #### Data preview
 
@@ -110,13 +110,13 @@ The `administrative_units` table contains a list of administrative units with `i
 
 |Column|Data type|Meaning|Constraint|
 |------|-----------|---------|------------|
-|`id`|integer|id of the region|Primary Key|
+|`id`|integer|Dd of the administrative unit|Primary Key|
 |`full_name`|varchar(255)|Full name of the administrative unit in Vietnamese||
 |`full_name_en`|varchar(255)|Full name of the administrative unit in English||
 |`short_name`|varchar(255)|Short name of the administrative unit in Vietnamese||
 |`short_name_en`|varchar(255)|Short name of the administrative unit in English||
-|`code_name`|varchar(255)|Code name, derived from Vietnamese `full_name`. Written in lowercase, underscored||
-|`code_name_en`|varchar(255)|Code name, derived from English `full_name`. Written in lowercase, underscored||
+|`code_name`|varchar(255)|Code name, derived from Vietnamese `full_name`, written in lowercase, underscored||
+|`code_name_en`|varchar(255)|Code name, derived from English `full_name`, written in lowercase, underscored||
 
 #### Data preview
 
@@ -147,7 +147,7 @@ The `code` key and `full_name` are based on the original CSV file.
 |`name_en`|varchar(255)|Name of in English||
 |`full_name`|varchar(255)|Full name in Vietnamese, includes the administrative unit name||
 |`full_name_en`|varchar(255)|Full name in English, includes the administrative unit name||
-|`code_name`|varchar(255)|Code name, derived from `name`. Written in lowercase, underscored||
+|`code_name`|varchar(255)|Code name, derived from `name`, written in lowercase, underscored||
 |`administrative_unit_id`|integer|The administrative unit id of this record|Foreign Key, references to `administrative_units.id` |
 |`administrative_region_id`|integer|The geographical region this this record belongs to|Foreign Key, references to `administrative_regions.id`|
 
@@ -177,7 +177,7 @@ The `code` key and `full_name` are based on the original CSV file.
 |`name_en`|varchar(255)|Name of in English||
 |`full_name`|varchar(255)|Full name in Vietnamese, includes the administrative unit name||
 |`full_name_en`|varchar(255)|Full name in English, includes the administrative unit name||
-|`code_name`|varchar(255)|Code name, derived from `name`. Written in lowercase, underscored||
+|`code_name`|varchar(255)|Code name, derived from `name`, written in lowercase, underscored||
 |`province_code`|integer|The `province` this record belongs to|Foreign Key, references to `provinces.code`|
 |`administrative_unit_id`|integer|The administrative unit id of this record|Foreign Key, references to `administrative_units.id` |
 
@@ -206,7 +206,7 @@ The `code` key and `full_name` are based on the original CSV file.
 |`name_en`|varchar(255)|Name of in English||
 |`full_name`|varchar(255)|Full name in Vietnamese, includes the administrative unit name||
 |`full_name_en`|varchar(255)|Full name in English, includes the administrative unit name||
-|`code_name`|varchar(255)|Code name, derived from `name`. Written in lowercase, underscored||
+|`code_name`|varchar(255)|Code name, derived from `name`, written in lowercase, underscored||
 |`district_code`|integer|The `district` this record belongs to|Foreign Key, references to `districts.code`|
 |`administrative_unit_id`|integer|The administrative unit id of this record|Foreign Key, references to `administrative_units.id` |
 
