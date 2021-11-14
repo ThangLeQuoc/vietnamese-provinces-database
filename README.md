@@ -1,4 +1,4 @@
-![Repository Banner](https://i.imgur.com/9T6sIap.png)
+![Repository Banner](https://i.imgur.com/AwPymhw.jpg)
 
 # Vietnamese Provinces Database
 
