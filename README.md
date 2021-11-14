@@ -319,7 +319,7 @@ You can go to the site, tick on the checkbox **Quận Huyện, Phường Xã**, 
 
 ### I cannot find districts 2, 9 and Thu Duc?
 
-Districts 2, 9 and Thu Duc were merge into a single Thu Duc Municipal city, directly under Ho Chi Minh city recently. Hence all their
+Districts 2, 9 and Thu Duc were merged into a single Thu Duc Municipal city, directly under **Ho Chi Minh city** recently. Hence all their
 wards are binded directly under district entity `Thu Duc city`, code `769`.
 
 ### I saw some issues in the SQL patch?
