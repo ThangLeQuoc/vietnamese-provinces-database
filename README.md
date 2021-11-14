@@ -67,9 +67,10 @@ Execute the `CreateTable_vn_units.sql` in the [oracle directory](oracle) first i
 Then follow up by executing the `ImportData_vn_units.sql` to import data to these generated tables.
 
 ## Tables Schema
-TBD - Table relationship
-### `administrative_regions` table
 
+TBD - Table relationship
+
+### `administrative_regions` table
 
 TBD: Meaning, column definition, sample data
 
@@ -92,3 +93,4 @@ TBD: Meaning, column definition, sample data
 ## Sample Query
 
 TBD
+
