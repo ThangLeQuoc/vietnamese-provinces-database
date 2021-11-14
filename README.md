@@ -1,3 +1,5 @@
+![Repository Banner](https://i.imgur.com/9T6sIap.png)
+
 # Vietnamese Provinces Database
 
 A complete SQL database of Vietnamese administrative units, includes all **63 Vietnamese provinces** and associated districts, wards sub-divisions.
