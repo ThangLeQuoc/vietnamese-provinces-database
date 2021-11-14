@@ -8,9 +8,9 @@ Data is updated as of 2021.
 
 ## Overview
 
-The author(s) of this repository is not associated with the General Statistics Office of Vietnam, nor the Vietnamese government.  
+The author(s) of this repository is not associated with the **General Statistics Office of Vietnam**, nor the Vietnamese government.  
 The data of provinces, districts and wards are created base on the CSV file from the [General Statistics Office of Vietnam website](https://www.gso.gov.vn/phuong-phap-thong-ke/danh-muc/don-vi-hanh-chinh/).  
-This dataset also include additional information Apart from the original provinces, districts and wards data from the CSV file. Please see section [Additional change make by this repository](#additional-change-make-by-this-repository)
+This dataset also include additional informationaApart from the original provinces, districts and wards data from the original CSV file. Please see section [Additional change make by this repository](#additional-change-make-by-this-repository)
 
 ### Additional change make by this repository
 
@@ -134,8 +134,33 @@ The `administrative_units` table contains a list of administrative units with `i
 |10|Xã|Commune|Xã|Commune|xa|commune|
 
 ### `provinces` table
+![Provincial level](https://i.imgur.com/wNgbRqb.jpg)  
+The `provinces` table contains a list of **first tier - provincial level** units, includes **63** municipalities and provinces.  
+The `code` key and `full_name` are based on the original CSV file.
 
-TBD: Meaning, column definition, sample data
+#### Table definition
+
+|Column|Data type|Meaning|Constraint|
+|------|-----------|---------|------------|
+|`code`|varchar(20)|The official unit code, defined by government |Primary Key|
+|`name`|varchar(255)|Name in Vietnamese||
+|`name_en`|varchar(255)|Name of in English||
+|`full_name`|varchar(255)|Full name in Vietnamese, includes the administrative unit name||
+|`full_name_en`|varchar(255)|Full name in English, includes the administrative unit name||
+|`code_name`|varchar(255)|Code name, derived from `name`. Written in lowercase, underscored||
+|`administrative_unit_id`|integer|The administrative unit id of this record|Foreign Key, references to `administrative_units.id` |
+|`administrative_region_id`|integer|The geographical region this this record belongs to|Foreign Key, references to `administrative_regions.id`|
+
+#### Data preview
+
+|code|name|name_en|full_name|full_name_en|code_name|administrative_unit_id|administrative_region_id|
+|----|----|-------|---------|------------|---------|----------------------|------------------------|
+|01|Hà Nội|Ha Noi|Thành phố Hà Nội|Ha Noi City|ha_noi|1|3|
+|30|Hải Dương|Hai Duong|Tỉnh Hải Dương|Hai Duong Province|hai_duong|2|3|
+|46|Thừa Thiên Huế|Thua Thien Hue|Tỉnh Thừa Thiên Huế|Thua Thien Hue Province|thua_thien_hue|2|4|
+|48|Đà Nẵng|Da Nang|Thành phố Đà Nẵng|Da Nang City|da_nang|1|5|
+|79|Hồ Chí Minh|Ho Chi Minh|Thành phố Hồ Chí Minh|Ho Chi Minh City|ho_chi_minh|1|7|
+
 
 ### `districts` table
 
