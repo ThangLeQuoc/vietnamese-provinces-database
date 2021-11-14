@@ -67,11 +67,15 @@ Execute the `CreateTable_vn_units.sql` in the [oracle directory](oracle) first i
 Then follow up by executing the `ImportData_vn_units.sql` to import data to these generated tables.
 
 ## Tables Schema
+
 ![VN_administrative_units db](https://i.imgur.com/sa0k4rt.png)
 
 ### `administrative_regions` table
+
 ![VN Geographical Regions](https://i.imgur.com/CiyxQi0.png)  
 The `administrative_regions` table contains the list of **8** Vietnamese geographical regions with the `id` increment following the region location from North to South.
+
+#### Table definition
 
 |Column|Data type|Meaning|Constraint|
 |------|-----------|---------|------------|
@@ -81,7 +85,7 @@ The `administrative_regions` table contains the list of **8** Vietnamese geograp
 |`code_name`|varchar(255)|Code name, derived from Vietnamese name||
 |`code_name_en`|varchar(255)|Code name, derived from English name||
 
-**Preview of data**
+#### Preview of data
 
 |id|name|name_en|code_name|code_name_en|
 |--|----|-------|---------|------------|
