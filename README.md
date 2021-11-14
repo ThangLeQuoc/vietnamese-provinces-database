@@ -135,7 +135,7 @@ The `administrative_units` table contains a list of administrative units with `i
 
 ### `provinces` table
 ![Provincial level](https://i.imgur.com/wNgbRqb.jpg)  
-The `provinces` table contains a list of **first tier - provincial level** units, includes **63** municipalities and provinces.  
+The `provinces` table contains a list of **first administrative tier - the provincial level** units, includes **63** municipalities and provinces.  
 The `code` key and `full_name` are based on the original CSV file.
 
 #### Table definition
@@ -162,10 +162,35 @@ The `code` key and `full_name` are based on the original CSV file.
 |79|Hồ Chí Minh|Ho Chi Minh|Thành phố Hồ Chí Minh|Ho Chi Minh City|ho_chi_minh|1|7|
 |..|...........|...........|.....................|................|...........|..|..|
 
-
 ### `districts` table
 
-TBD: Meaning, column definition, sample data
+![District level](https://i.imgur.com/B0OKHvB.jpg)
+The `districts` table contains a list of **second administrative tier - the district level** units, includes **705** municipal city, urban districts, district-level towns, districts and provincial cities.  
+The `code` key and `full_name` are based on the original CSV file.
+
+#### Table definition
+
+|Column|Data type|Meaning|Constraint|
+|------|-----------|---------|------------|
+|`code`|varchar(20)|The official unit code, defined by government |Primary Key|
+|`name`|varchar(255)|Name in Vietnamese||
+|`name_en`|varchar(255)|Name of in English||
+|`full_name`|varchar(255)|Full name in Vietnamese, includes the administrative unit name||
+|`full_name_en`|varchar(255)|Full name in English, includes the administrative unit name||
+|`code_name`|varchar(255)|Code name, derived from `name`. Written in lowercase, underscored||
+|`province_code`|integer|The `province` this record belongs to|Foreign Key, references to `provinces.code`|
+|`administrative_unit_id`|integer|The administrative unit id of this record|Foreign Key, references to `administrative_units.id` |
+
+#### Data preview
+
+|code|name|name_en|full_name|full_name_en|code_name|province_code|administrative_unit_id|
+|----|----|-------|---------|------------|---------|-------------|----------------------|
+|001|Ba Đình|Ba Dinh|Quận Ba Đình|Ba Dinh District|ba_dinh|01|5|
+|002|Hoàn Kiếm|Hoan Kiem|Quận Hoàn Kiếm|Hoan Kiem District|hoan_kiem|01|5|
+|003|Tây Hồ|Tay Ho|Quận Tây Hồ|Tay Ho District|tay_ho|01|5|
+|004|Long Biên|Long Bien|Quận Long Biên|Long Bien District|long_bien|01|5|
+|005|Cầu Giấy|Cau Giay|Quận Cầu Giấy|Cau Giay District|cau_giay|01|5|
+|...|........|........|.............|.................|........|..|..|
 
 ### `wards` table
 
