@@ -1,5 +1,7 @@
 ![Repository Banner](https://i.imgur.com/AwPymhw.jpg)
 ![Made in Vietnam](https://raw.githubusercontent.com/webuild-community/badge/master/svg/made.svg)
+
+[Đọc phiên bản tiếng Việt](README_vi.md)
 # Vietnamese Provinces Database
 
 A complete SQL database of Vietnamese administrative units, includes all **63 Vietnamese provinces** and associated districts, wards sub-divisions.  

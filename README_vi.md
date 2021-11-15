@@ -1,5 +1,7 @@
 ![Repository Banner](https://i.imgur.com/PM95O3N.jpg)
 ![Made in Vietnam](https://raw.githubusercontent.com/webuild-community/badge/master/svg/made.svg)
+
+[Read in English version](README.md)
 # Dữ liệu Tỉnh thành, Quận huyện Việt Nam
 
 Đây là tập lệnh cơ sở dữ liệu SQL của toàn bộ đơn vị hành chính Việt Nam, bao gồm **63 tỉnh thành** và các Quận huyện, phường xã liên quan.  
@@ -219,14 +221,14 @@ Mã đơn vị `code` và `full_name` dựa trên tệp tin CSV gốc.
 |25954|Bình Thắng|Binh Thang|Phường Bình Thắng|Binh Thang Ward|binh_thang|724|8|
 |-----|-----|-------|---------|-----------|----------|---|--|
 
-## Sample Queries
+## Câu truy vấn SQL mẫu
 
-You can easily create query to get all the kind of data you need since the tables are clearly referenced between each others.  
-Here is some sample queries to start with:
+Bạn có thể dễ dàng viết các câu truy vấn để lấy, lọc dữ liệu tương ứng bằng cách tạo các kết (`JOIN`) giữa các bảng dựa trên giá trị khoá chính, khoá ngoại.  
+Phía sau là một vài câu truy vấn mẫu để tham khảo:  
 
-### Get all the provinces in a geographical region
+### Tìm toàn bộ Tỉnh thành theo khu vực địa lý
 
-Get all provinces in **South Central Coast region** (`id` = 5)
+Tìm toàn bộ tỉnh thành thuộc vùng **Duyên hải Nam Trung Bộ** (định danh `id` của vùng = 5)
 
 ```sql
 SELECT p.code, p."name" , p.full_name , p.full_name_en ,au.full_name as administrative_unit_name
@@ -248,10 +250,9 @@ ORDER BY code;
 |58|Ninh Thuận|Tỉnh Ninh Thuận|Ninh Thuan Province|Tỉnh|
 |60|Bình Thuận|Tỉnh Bình Thuận|Binh Thuan Province|Tỉnh|
 
+### Tìm toàn bộ quận huyện thuộc tỉnh
 
-### Get all districts under a province
-
-Get all districts under **Khánh Hoà province**
+Tìm toàn bộ quận huyện thuộc **tỉnh Khánh Hoà**
 
 ```sql
 SELECT d.code, d."name" , d.full_name , d.full_name_en ,au.full_name as administrative_unit_name
@@ -274,9 +275,10 @@ ORDER BY d.code;
 |575|Khánh Sơn|Huyện Khánh Sơn|Khanh Son District|Huyện|
 |576|Trường Sa|Huyện Trường Sa|Truong Sa District|Huyện|
 
-### Get wards under a district
+### Tìm toàn bộ xã phường thuộc quận huyện
 
-Get all wards of **Ninh Hoa town**
+Tìm toàn bộ xã phường thuộc **huyện Ninh Hoà**  
+
 ```sql
 SELECT w.code, w."name" , w.full_name , w.full_name_en ,au.full_name as administrative_unit_name
 FROM wards w 
@@ -296,31 +298,32 @@ ORDER BY w.code;
 |22543|Ninh Hải|Phường Ninh Hải|Ninh Hai Ward|Phường|
 |22546|Ninh Thọ|Xã Ninh Thọ|Ninh Tho Commune|Xã|
 |-----|--------|-----------|------|-----|
-(the rest of rows are removed for brevity)
+(Các dòng kết quả tiếp theo đã được lược bớt để dễ đọc)
 
-## FAQ
+## Câu hỏi thường gặp
 
-### What is the original data source that this repository develope from?
+### Dự án này xây dựng dữ liệu từ đâu?
 
-The original data source is the CSV file from the [General Statistics Office of Vietnam website](https://www.gso.gov.vn/phuong-phap-thong-ke/danh-muc/don-vi-hanh-chinh/).  
-You can go to the site, tick on the checkbox **Quận Huyện, Phường Xã**, then click the **Xuất Excel** button to download the CSV file.
+Dữ liệu của Tỉnh thành, Quận huyện và Phường xã được tổng kết và hệ thống dựa trên tệp tin CSV (Excel) tải trực tiếp từ [trang web Đơn vị hành chính của Tổng cục Thống kê Việt Nam](https://www.gso.gov.vn/phuong-phap-thong-ke/danh-muc/don-vi-hanh-chinh/)  
+Bạn có thể truy cập trang web trên, đánh dấu vào ô **Quận Huyện, Phường Xã**, và bấm nút **Xuất Excel** để tải về tệp CSV (Excel).  
 
-### How are the primary keys defined?
+### Các khoá định danh được định nghĩa dựa trên đâu?
 
-|Table|Primary Key|
+|Bảng quan hệ|Khoá chính|
 |-----|-----------|
-|`administrative_regions`|Key: `id`. Starting from `1` to `8`, follow the geographical location order from North to South
-|`administrative_units`|Key: `id`. Starting from `1` to `10`, follow the tier order from biggest unit to smallest unit
-|`provinces`|Key: `code`. Officially referenced from government unit code
-|`districts`|Key: `code`. Officially referenced from government unit code
-|`wards`|Key: `code`. Officially referenced from government unit code
+|`administrative_regions`|Khoá chính: `id`. Tăng dần `1` đến `8` theo vị trí vùng địa lý hướng từ Bắc vào Nam
+|`administrative_units`|Khoá chính: `id`. Tăng dần từ `1` đến `10` theo phân cấp bậc đơn vị hành chính
+|`provinces`|Khoá chính: `code`. Được quy ước theo đối tượng **Tỉnh thành** do chính phủ ban hành
+|`districts`|Khoá chính: `code`. Được quy ước theo đối tượng **Quận huyện** do chính phủ ban hành
+|`wards`|Khoá chính: `code`. Được quy ước theo đối tượng **Phường xã** do chính phủ ban hành
 
-### I cannot find districts 2, 9 and Thu Duc?
+### Tôi không thể tìm thấy Quận 2, Quận 9 và Quận Thủ Đức trong cơ sở dữ liệu này?
 
-Districts 2, 9 and Thu Duc were merged into a single Thu Duc Municipal city, directly under **Ho Chi Minh city** recently. Hence all their
-wards are binded directly under district entity `Thu Duc city`, code `769`.
+Quận 2, Quận 9 và Quận Thủ Đức đã chính thức sáp nhập thành thành phố Thủ Đức, là thành phố trực thuộc thành phố Hồ Chí Minh từ đầu năm 2021. 
+Tất cả các Phường xã của 3 quận kể trên được liên kết trực tiếp đến cùng một đối tượng Quận huyện là `Thành phố Thủ Đức`, mã định danh `code` là `769`
 
-### I saw some issues in the SQL patch?
+### Tôi tìm thấy một vài lỗi trong tệp dữ liệu SQL này?
 
-Even the government csv sheet does not have a unified format (I have to admit so, mixed between 'Thị xã' & 'Thị Xã', 'Thành phố' & 'Thành Phố' format). If you see any typo, any error or redundant spaces..., please kindly [Open a issue](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/issues) and write down your finding. Or even better by [Create a Pull Request](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/pulls).
-Any contribution is welcomed.
+Nếu bạn thấy có lỗi chính tả, lỗi logic, dư thừa dữ liệu trong các tệp SQL, xin vui lòng [tạo một Issue](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/issues) và cung cấp thông tin cụ thể.  
+Hoặc tốt hơn nữa, bạn có thể đóng góp xây dựng dự án này bằng các [tạo Pull Request](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/pulls)  
+Tất cả các đóng góp đến dự án đều được trân trọng ghi nhận.
