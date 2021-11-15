@@ -1,5 +1,5 @@
 ![Repository Banner](https://i.imgur.com/AwPymhw.jpg)
-
+![Made in Vietnam](https://raw.githubusercontent.com/webuild-community/badge/master/svg/made.svg)
 # Vietnamese Provinces Database
 
 A complete SQL database of Vietnamese administrative units, includes all **63 Vietnamese provinces** and associated districts, wards sub-divisions.  
@@ -110,13 +110,13 @@ The `administrative_units` table contains a list of administrative units with `i
 
 |Column|Data type|Meaning|Constraint|
 |------|-----------|---------|------------|
-|`id`|integer|Dd of the administrative unit|Primary Key|
+|`id`|integer|Id of the administrative unit|Primary Key|
 |`full_name`|varchar(255)|Full name of the administrative unit in Vietnamese||
 |`full_name_en`|varchar(255)|Full name of the administrative unit in English||
 |`short_name`|varchar(255)|Short name of the administrative unit in Vietnamese||
 |`short_name_en`|varchar(255)|Short name of the administrative unit in English||
 |`code_name`|varchar(255)|Code name, derived from Vietnamese `full_name`, written in lowercase, underscored||
-|`code_name_en`|varchar(255)|Code name, derived from English `full_name`, written in lowercase, underscored||
+|`code_name_en`|varchar(255)|Code name, derived from English `full_name_en`, written in lowercase, underscored||
 
 #### Data preview
 
