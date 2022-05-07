@@ -11,7 +11,7 @@ Don't forget to leave a :star: if you find this repository helpful. It's would h
 ## Overview
 
 The author(s) of this repository is not associated with the **General Statistics Office of Vietnam**, nor the Vietnamese government.  
-The data of provinces, districts and wards are created base on the CSV file from the [General Statistics Office of Vietnam website](https://www.gso.gov.vn/phuong-phap-thong-ke/danh-muc/don-vi-hanh-chinh/).  
+The data of provinces, districts and wards are created base on the CSV file from the [General Statistics Office of Vietnam website][source danhmuchanhchinh gov].  
 This dataset also include additional information apart from the original provinces, districts and wards data from the original CSV file. Please see section [Additional change make by this repository](#additional-change-make-by-this-repository)
 
 ### Additional change make by this repository
@@ -306,7 +306,7 @@ ORDER BY w.code;
 
 ### What is the original data source that this repository develope from?
 
-The original data source is the CSV file from the [General Statistics Office of Vietnam website](https://www.gso.gov.vn/phuong-phap-thong-ke/danh-muc/don-vi-hanh-chinh/).  
+The original data source is the CSV file from the [General Statistics Office of Vietnam website][source danhmuchanhchinh gov].  
 You can go to the site, tick on the checkbox **Quận Huyện, Phường Xã**, then click the **Xuất Excel** button to download the CSV file.
 
 ### How are the primary keys defined?
@@ -328,3 +328,6 @@ wards are binded directly under district entity `Thu Duc city`, code `769`.
 
 Even the government csv sheet does not have a unified format (I have to admit so, mixed between 'Thị xã' & 'Thị Xã', 'Thành phố' & 'Thành Phố' format). If you see any typo, any error or redundant spaces..., please kindly [Open a issue](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/issues) and write down your finding. Or even better by [Create a Pull Request](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/pulls).
 Any contribution is welcomed.
+
+
+[source danhmuchanhchinh gov]: https://danhmuchanhchinh.gso.gov.vn/

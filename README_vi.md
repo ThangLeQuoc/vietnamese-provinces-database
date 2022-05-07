@@ -11,7 +11,7 @@ Hãy để lại một ngôi sao :star: trên dự án này nếu bạn thấy n
 ## Tổng quan
 
 Tác giả của dự án không làm việc, hay đại diện cho **Tổng cục Thống kê Việt Nam**, lẫn chính phủ nước Việt Nam.
-Dữ liệu của Tỉnh thành, Quận huyện và Phường xã được tổng kết và hệ thống dựa trên tệp tin CSV (Excel) tải trực tiếp từ [trang web Đơn vị hành chính của Tổng cục Thống kê Việt Nam](https://www.gso.gov.vn/phuong-phap-thong-ke/danh-muc/don-vi-hanh-chinh/)  
+Dữ liệu của Tỉnh thành, Quận huyện và Phường xã được tổng kết và hệ thống dựa trên tệp tin CSV (Excel) tải trực tiếp từ [trang web Đơn vị hành chính của Tổng cục Thống kê Việt Nam][source danhmuchanhchinh gov]  
 Ngoài ra, cơ sở dữ liệu này còn có thêm những thông tin bổ sung, xin xem chi tiết trong phần **Các thay đổi thêm** ngay bên dưới.  
 
 ### Các thay đổi thêm
@@ -304,7 +304,7 @@ ORDER BY w.code;
 
 ### Dự án này xây dựng dữ liệu từ đâu?
 
-Dữ liệu của Tỉnh thành, Quận huyện và Phường xã được tổng kết và hệ thống dựa trên tệp tin CSV (Excel) tải trực tiếp từ [trang web Đơn vị hành chính của Tổng cục Thống kê Việt Nam](https://www.gso.gov.vn/phuong-phap-thong-ke/danh-muc/don-vi-hanh-chinh/)  
+Dữ liệu của Tỉnh thành, Quận huyện và Phường xã được tổng kết và hệ thống dựa trên tệp tin CSV (Excel) tải trực tiếp từ [trang web Đơn vị hành chính của Tổng cục Thống kê Việt Nam][source danhmuchanhchinh gov]  
 Bạn có thể truy cập trang web trên, đánh dấu vào ô **Quận Huyện, Phường Xã**, và bấm nút **Xuất Excel** để tải về tệp CSV (Excel).  
 
 ### Các khoá định danh được định nghĩa dựa trên đâu?
@@ -327,3 +327,5 @@ Tất cả các Phường xã của 3 quận kể trên được liên kết tr�
 Nếu bạn thấy có lỗi chính tả, lỗi logic, dư thừa dữ liệu trong các tệp SQL, xin vui lòng [tạo một Issue](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/issues) và cung cấp thông tin cụ thể.  
 Hoặc tốt hơn nữa, bạn có thể đóng góp xây dựng dự án này bằng các [tạo Pull Request](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/pulls)  
 Tất cả các đóng góp đến dự án đều được trân trọng ghi nhận.
+
+[source danhmuchanhchinh gov]: https://danhmuchanhchinh.gso.gov.vn/
