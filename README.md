@@ -8,6 +8,11 @@ A complete SQL database of Vietnamese administrative units, includes all **63 Vi
 Data is updated as of late 2021.  
 Don't forget to leave a :star: if you find this repository helpful. It's would help to cheer us up to we can deliver valuable product to support our community.
 
+**Latest data status**
+Last update at: November 2021
+Most recent decree: [387/NQ-UBTVQH15][source government decree]
+
+
 ## Overview
 
 The author(s) of this repository is not associated with the **General Statistics Office of Vietnam**, nor the Vietnamese government.  
@@ -331,3 +336,4 @@ Any contribution is welcomed.
 
 
 [source danhmuchanhchinh gov]: https://danhmuchanhchinh.gso.gov.vn/
+[source government decree]: https://danhmuchanhchinh.gso.gov.vn/NghiDinh.aspx
