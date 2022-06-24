@@ -8,6 +8,10 @@
 Dữ liệu được cập nhật vào cuối năm 2021.  
 Hãy để lại một ngôi sao :star: trên dự án này nếu bạn thấy nó hữu ích. Điều này giúp khích lệ tinh thần của chúng tôi để chúng tôi tiếp tục cống hiến thêm các sản phẩm mã nguồn mở phục vụ cộng đồng.  
 
+**Trạng thái dữ liệu**  
+Cập nhật lần cuối: June 2022  
+Nghị định gần nhất: [469/NQ-UBTVQH15][source government decree]  
+
 ## Tổng quan
 
 Tác giả của dự án không làm việc, hay đại diện cho **Tổng cục Thống kê Việt Nam**, lẫn chính phủ nước Việt Nam.
@@ -329,3 +333,4 @@ Hoặc tốt hơn nữa, bạn có thể đóng góp xây dựng dự án này b
 Tất cả các đóng góp đến dự án đều được trân trọng ghi nhận.
 
 [source danhmuchanhchinh gov]: https://danhmuchanhchinh.gso.gov.vn/
+[source government decree]: https://danhmuchanhchinh.gso.gov.vn/NghiDinh.aspx

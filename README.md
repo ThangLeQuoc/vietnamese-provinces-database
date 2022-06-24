@@ -9,8 +9,8 @@ Data is updated as of late 2021.
 Don't forget to leave a :star: if you find this repository helpful. It's would help to cheer us up to we can deliver valuable product to support our community.
 
 **Data status**  
-Last update at: November 2021  
-Most recent decree: [387/NQ-UBTVQH15][source government decree]  
+Last update at: June 2022  
+Most recent decree: [469/NQ-UBTVQH15][source government decree]  
 
 
 ## Overview
