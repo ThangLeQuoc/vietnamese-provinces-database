@@ -5,6 +5,7 @@
 * against the database that contains the VietnameseProvinces dataset to check the status.
 * If a patch is missing, please go to the patch folder section and apply the corresponding missing patch.
 * 
+* The earliest version of this dataset already met the 387/NQ-UBTVQH15
 * Decrees in check:
 * - 469/NQ-UBTVQH15
 *

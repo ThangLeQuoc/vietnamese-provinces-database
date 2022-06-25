@@ -6,7 +6,7 @@
 
 A complete SQL database of Vietnamese administrative units, includes all **63 Vietnamese provinces** and associated districts, wards sub-divisions.  
 Data is updated as of late 2021.  
-Don't forget to leave a :star: if you find this repository helpful. It's would help to cheer us up to we can deliver valuable product to support our community.
+Don't forget to leave a :star: if you find this repository helpful, and to keep track of the latest release of this dataset in the future. It's would help to cheer us up so we can deliver valuable product to support our community.
 
 **Data status**  
 Last update at: June 2022  
@@ -18,6 +18,20 @@ Most recent decree: [469/NQ-UBTVQH15][source government decree]
 The author(s) of this repository is not associated with the **General Statistics Office of Vietnam**, nor the Vietnamese government.  
 The data of provinces, districts and wards are created base on the CSV file from the [General Statistics Office of Vietnam website][source danhmuchanhchinh gov].  
 This dataset also include additional information apart from the original provinces, districts and wards data from the original CSV file. Please see section [Additional change make by this repository](#additional-change-make-by-this-repository)
+
+### Dataset releases and Government issued decrees
+
+The Vietnamese Government may issues decree time to time to change the administrative unit structure. You can track the latest issued decrees [here][decree issued page].  
+
+This dataset will be gradually updated to keep up with the latest **effected** decree. To check the status of your dataset and how to keep the dataset up-to-date, see section [How to ensure that my dataset is up-to-date?](#how-to-ensure-that-my-dataset-is-up-to-date).
+
+The following tables contains the list of issued decree, its effected date from, tracked from the earliest version of this dataset.
+
+|Issued Decree|Issued on |Effect from|Release Version|
+|-------------|-----------|-------------|---------------|
+|[510/NQ-UBTVQH15][decree 510/NQ-UBTVQH15]|12/05/2022|01/07/2022|(WIP, to be released in 01/07/2022)
+|[469/NQ-UBTVQH15][decree 469/NQ-UBTVQH15]|15/02/2022|10/04/2022|v1.0.1
+|[387/NQ-UBTVQH15][decree 387/NQ-UBTVQH15]|22/09/2021|01/11/2021|v1.0.0
 
 ### Additional change make by this repository
 
@@ -329,6 +343,18 @@ You can go to the site, tick on the checkbox **Quận Huyện, Phường Xã**, 
 Districts 2, 9 and Thu Duc were merged into a single Thu Duc Municipal city, directly under **Ho Chi Minh city** recently. Hence all their
 wards are binded directly under district entity `Thu Duc city`, code `769`.
 
+### How to ensure that my dataset is up-to-date?
+
+The government may gradually public decree 
+
+If you want to check the current up-to-date status of your provinces dataset, simply execute the [patch_checker.sql](patch/patch_checker.sql) script, and apply the missing decree patch (if any) in the [patch directory](./patch/).
+
+Sample Output from the `patch_checker` script:
+
+|nghidinh_469_nq_ubtvqh15|vietnamese_provinces_dataset_up_to_date|
+|------------------------|---------------------------------------|
+|true|true|
+
 ### I saw some issues in the SQL patch?
 
 Even the government csv sheet does not have a unified format (I have to admit so, mixed between 'Thị xã' & 'Thị Xã', 'Thành phố' & 'Thành Phố' format). If you see any typo, any error or redundant spaces..., please kindly [Open a issue](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/issues) and write down your finding. Or even better by [Create a Pull Request](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/pulls).
@@ -337,3 +363,7 @@ Any contribution is welcomed.
 
 [source danhmuchanhchinh gov]: https://danhmuchanhchinh.gso.gov.vn/
 [source government decree]: https://danhmuchanhchinh.gso.gov.vn/NghiDinh.aspx
+[decree issued page]: https://danhmuchanhchinh.gso.gov.vn/NghiDinh.aspx
+[decree 387/NQ-UBTVQH15]: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-387-NQ-UBTVQH15-thanh-lap-Toa-an-nhan-dan-thanh-pho-Tu-Son-thuoc-tinh-Bac-Ninh-490766.aspx
+[decree 469/NQ-UBTVQH15]: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-469-NQ-UBTVQH15-2022-thanh-lap-phuong-thuoc-thi-xa-Pho-Yen-Thai-Nguyen-504359.aspx
+[decree 510/NQ-UBTVQH15]: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-510-NQ-UBTVQH15-2022-thanh-lap-thi-tran-Phuong-Son-huyen-Luc-Nam-Bac-Giang-516371.aspx
