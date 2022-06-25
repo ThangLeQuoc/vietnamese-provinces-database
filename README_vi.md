@@ -6,7 +6,7 @@
 
 Đây là tập lệnh cơ sở dữ liệu SQL của toàn bộ đơn vị hành chính Việt Nam, bao gồm **63 tỉnh thành** và các Quận huyện, phường xã liên quan.  
 Dữ liệu được cập nhật vào cuối năm 2021.  
-Hãy để lại một ngôi sao :star: trên dự án này nếu bạn thấy nó hữu ích. Điều này giúp khích lệ tinh thần của chúng tôi để chúng tôi tiếp tục cống hiến thêm các sản phẩm mã nguồn mở phục vụ cộng đồng.  
+Hãy để lại một ngôi sao :star: trên dự án này nếu bạn thấy nó hữu ích, và để nhận những thông báo về các bản release mới nhất. Điều này giúp khích lệ tinh thần của chúng tôi để chúng tôi tiếp tục cống hiến thêm các sản phẩm mã nguồn mở phục vụ cộng đồng.  
 
 **Trạng thái dữ liệu**  
 Cập nhật lần cuối: June 2022  
@@ -17,6 +17,21 @@ Nghị định gần nhất: [469/NQ-UBTVQH15][source government decree]
 Tác giả của dự án không làm việc, hay đại diện cho **Tổng cục Thống kê Việt Nam**, lẫn chính phủ nước Việt Nam.
 Dữ liệu của Tỉnh thành, Quận huyện và Phường xã được tổng kết và hệ thống dựa trên tệp tin CSV (Excel) tải trực tiếp từ [trang web Đơn vị hành chính của Tổng cục Thống kê Việt Nam][source danhmuchanhchinh gov]  
 Ngoài ra, cơ sở dữ liệu này còn có thêm những thông tin bổ sung, xin xem chi tiết trong phần **Các thay đổi thêm** ngay bên dưới.  
+
+### Các phiên bản của bộ dữ liệu và Nghị định của Chính phủ
+
+Chính phủ Việt Nam có thể ban hành những nghị định để thay đổi cấu trúc của các đơn vị hành chính Việt Nam theo thời gian. Bạn có thể theo dõi danh mục nghị định thay đổi đơn vị được ban hành tại [đây][decree issued page].
+
+Bộ dữ liệu này sẽ liên tục được cập nhật theo **nghị định gần nhất có hiệu lực**. Để kiểm tra trạng thái và cập nhật bộ dữ liệu hành chính Việt Nam của bạn, hãy làm theo hướng dẫn ở phần [Làm sao để cập nhật bộ dữ liệu của tôi?](#làm-sao-để-cập-nhật-bộ-dữ-liệu-của-tôi).
+
+Bảng dưới thông kê các nghị định đã được ban hành, cùng thời gian có hiệu lực, cùng phiên bản của bộ dữ liệu tỉnh thành Việt Nam từ phiên bản đầu tiên.
+
+|Nghị định|Ngày ban hành|Ngày có hiệu lực|Phiên bản|
+|-------------|-----------|-------------|---------------|
+|[510/NQ-UBTVQH15][decree 510/NQ-UBTVQH15]|12/05/2022|01/07/2022|(Sẽ tung ra vào 01/07/2022)
+|[469/NQ-UBTVQH15][decree 469/NQ-UBTVQH15]|15/02/2022|10/04/2022|v1.0.1
+|[387/NQ-UBTVQH15][decree 387/NQ-UBTVQH15]|22/09/2021|01/11/2021|v1.0.0
+
 
 ### Các thay đổi thêm
 
@@ -326,6 +341,16 @@ Bạn có thể truy cập trang web trên, đánh dấu vào ô **Quận Huyệ
 Quận 2, Quận 9 và Quận Thủ Đức đã chính thức sáp nhập thành thành phố Thủ Đức, là thành phố trực thuộc thành phố Hồ Chí Minh từ đầu năm 2021. 
 Tất cả các Phường xã của 3 quận kể trên được liên kết trực tiếp đến cùng một đối tượng Quận huyện là `Thành phố Thủ Đức`, mã định danh `code` là `769`
 
+### Làm sao để cập nhật bộ dữ liệu của tôi?
+
+Chính phủ Việt Nam có thể ban hành nghị định để thay đổi tổ chức hành chính của Việt Nam theo thời gian.  
+Để kiểm tra trạng thái của bộ dữ liệu ở máy của bạn, hãy chạy tệp [patch_checker.sql](patch/patch_checker.sql), và chạy thủ công những bản vá theo từng nghị định trong thư mục [patch](./patch/)  
+Ví dụ kết quả khi chạy lệnh kiểm tra `patch_checker`
+
+|nghidinh_469_nq_ubtvqh15|vietnamese_provinces_dataset_up_to_date|
+|------------------------|---------------------------------------|
+|true|true|
+
 ### Tôi tìm thấy một vài lỗi trong tệp dữ liệu SQL này?
 
 Nếu bạn thấy có lỗi chính tả, lỗi logic, dư thừa dữ liệu trong các tệp SQL, xin vui lòng [tạo một Issue](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/issues) và cung cấp thông tin cụ thể.  
@@ -334,3 +359,9 @@ Tất cả các đóng góp đến dự án đều được trân trọng ghi nh
 
 [source danhmuchanhchinh gov]: https://danhmuchanhchinh.gso.gov.vn/
 [source government decree]: https://danhmuchanhchinh.gso.gov.vn/NghiDinh.aspx
+[source danhmuchanhchinh gov]: https://danhmuchanhchinh.gso.gov.vn/
+[source government decree]: https://danhmuchanhchinh.gso.gov.vn/NghiDinh.aspx
+[decree issued page]: https://danhmuchanhchinh.gso.gov.vn/NghiDinh.aspx
+[decree 387/NQ-UBTVQH15]: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-387-NQ-UBTVQH15-thanh-lap-Toa-an-nhan-dan-thanh-pho-Tu-Son-thuoc-tinh-Bac-Ninh-490766.aspx
+[decree 469/NQ-UBTVQH15]: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-469-NQ-UBTVQH15-2022-thanh-lap-phuong-thuoc-thi-xa-Pho-Yen-Thai-Nguyen-504359.aspx
+[decree 510/NQ-UBTVQH15]: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-510-NQ-UBTVQH15-2022-thanh-lap-thi-tran-Phuong-Son-huyen-Luc-Nam-Bac-Giang-516371.aspx
