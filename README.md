@@ -5,7 +5,7 @@
 # Vietnamese Provinces Database
 
 A complete SQL database of Vietnamese administrative units, includes all **63 Vietnamese provinces** and associated districts, wards sub-divisions.  
-Data is updated as of the most recent effected decree: [469/NQ-UBTVQH15][source government decree]  
+Data is updated as of the most recent effected decree: [510/NQ-UBTVQH15][source government decree]  
 Don't forget to leave a :star: if you find this repository helpful, and to keep track of the latest release of this dataset in the future. It's would help to cheer us up so we can deliver valuable product to support our community.
 
 ## Overview
@@ -24,7 +24,7 @@ The following tables contains the list of issued decree, its effected date from,
 
 |Issued Decree|Issued on |Effect from|Release Version|
 |-------------|-----------|-------------|---------------|
-|[510/NQ-UBTVQH15][decree 510/NQ-UBTVQH15]|12/05/2022|01/07/2022|(WIP, to be released in 01/07/2022)
+|[510/NQ-UBTVQH15][decree 510/NQ-UBTVQH15]|12/05/2022|01/07/2022|v1.0.2
 |[469/NQ-UBTVQH15][decree 469/NQ-UBTVQH15]|15/02/2022|10/04/2022|v1.0.1
 |[387/NQ-UBTVQH15][decree 387/NQ-UBTVQH15]|22/09/2021|01/11/2021|v1.0.0
 
@@ -340,7 +340,7 @@ wards are binded directly under district entity `Thu Duc city`, code `769`.
 
 ### How to ensure that my dataset is up-to-date?
 
-The government may gradually public decree 
+The government may gradually public decree to change the administrative unit structure overtime.
 
 If you want to check the current up-to-date status of your provinces dataset, simply execute the [patch_checker.sql](patch/patch_checker.sql) script, and apply the missing decree patch (if any) in the [patch directory](./patch/).
 
