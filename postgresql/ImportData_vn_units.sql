@@ -3833,7 +3833,7 @@ INSERT INTO wards (code,"name",name_en,full_name,full_name_en,code_name,district
 	 ('07465','Thanh Lâm','Thanh Lam','Xã Thanh Lâm','Thanh Lam Commune','thanh_lam','218',10),
 	 ('07468','Tiên Nha','Tien Nha','Xã Tiên Nha','Tien Nha Commune','tien_nha','218',10),
 	 ('07471','Trường Giang','Truong Giang','Xã Trường Giang','Truong Giang Commune','truong_giang','218',10),
-	 ('07477','Phương Sơn','Phuong Son','Xã Phương Sơn','Phuong Son Commune','phuong_son','218',10),
+	 ('07477','Phương Sơn','Phuong Son','Thị trấn Phương Sơn','Phuong Son Township','phuong_son','218',9),
 	 ('07480','Chu Điện','Chu Dien','Xã Chu Điện','Chu Dien Commune','chu_dien','218',10),
 	 ('07483','Cương Sơn','Cuong Son','Xã Cương Sơn','Cuong Son Commune','cuong_son','218',10);
 INSERT INTO wards (code,"name",name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
@@ -3962,7 +3962,7 @@ INSERT INTO wards (code,"name",name_en,full_name,full_name_en,code_name,district
 	 ('07861','Danh Thắng','Danh Thang','Xã Danh Thắng','Danh Thang Commune','danh_thang','223',10),
 	 ('07864','Mai Trung','Mai Trung','Xã Mai Trung','Mai Trung Commune','mai_trung','223',10),
 	 ('07867','Đoan Bái','Doan Bai','Xã Đoan Bái','Doan Bai Commune','doan_bai','223',10),
-	 ('07870','Bắc Lý','Bac Ly','Xã Bắc Lý','Bac Ly Commune','bac_ly','223',10),
+	 ('07870','Bắc Lý','Bac Ly','Thị trấn Bắc Lý','Bac Ly Township','bac_ly','223',9),
 	 ('07873','Xuân Cẩm','Xuan Cam','Xã Xuân Cẩm','Xuan Cam Commune','xuan_cam','223',10),
 	 ('07876','Hương Lâm','Huong Lam','Xã Hương Lâm','Huong Lam Commune','huong_lam','223',10),
 	 ('07879','Đông Lỗ','Dong Lo','Xã Đông Lỗ','Dong Lo Commune','dong_lo','223',10),
