@@ -6,7 +6,7 @@ Nghị quyết về việc thành lập thị trấn Bình Phú thuộc huyện 
 Chi tiết xem tại: [569/NQ-UBTVQH15](https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-569-NQ-UBTVQH15-2022-thanh-lap-thi-tran-Binh-Phu-thuoc-huyen-Cai-Lay-Tien-Giang-525909.aspx)
 
 # Nghị định 570/NQ-UBTVQH15
-Nghị quyết về việc thành lập thị xã Chơn Thành và các phường thuộc thị xã Chơn Thành, tỉnh Bình Phước
+Nghị quyết về việc thành lập thị xã Chơn Thành và các phường thuộc thị xã Chơn Thành, tỉnh Bình Phước  
 **Ngày ban hành**: 11/08/2022  
 **Ngày có hiệu lực**: 01/10/2022  
 Chi tiết xem tại: [570/NQ-UBTVQH15](https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-570-NQ-UBTVQH15-2022-thanh-lap-thi-xa-Chon-Thanh-Binh-Phuoc-525910.aspx)
