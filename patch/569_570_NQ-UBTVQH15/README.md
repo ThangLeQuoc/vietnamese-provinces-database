@@ -1,23 +1,30 @@
 # Nghị định 569/NQ-UBTVQH15
-Thành lập thị trấn Phương Sơn thuộc huyện Lục Nam và thị trấn Bắc Lý thuộc huyện Hiệp Hòa, tỉnh Bắc Giang
-**Ngày ban hành**: 12/05/2022  
-**Ngày có hiệu lực**: 01/07/2022  
-Chi tiết xem tại: [510/NQ-UBTVQH15](https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-510-NQ-UBTVQH15-2022-thanh-lap-thi-tran-Phuong-Son-huyen-Luc-Nam-Bac-Giang-516371.aspx)
+Nghị quyết về việc thành lập thị trấn Bình Phú thuộc huyện Cai Lậy, tỉnh Tiền Giang
+
+**Ngày ban hành**: 11/08/2022  
+**Ngày có hiệu lực**: 01/10/2022  
+Chi tiết xem tại: [569/NQ-UBTVQH15](https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-569-NQ-UBTVQH15-2022-thanh-lap-thi-tran-Binh-Phu-thuoc-huyen-Cai-Lay-Tien-Giang-525909.aspx)
 
 # Nghị định 570/NQ-UBTVQH15
-
-
+Nghị quyết về việc thành lập thị xã Chơn Thành và các phường thuộc thị xã Chơn Thành, tỉnh Bình Phước
+**Ngày ban hành**: 11/08/2022  
+**Ngày có hiệu lực**: 01/10/2022  
+Chi tiết xem tại: [570/NQ-UBTVQH15](https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-570-NQ-UBTVQH15-2022-thanh-lap-thi-xa-Chon-Thanh-Binh-Phuoc-525910.aspx)
 
 ## Nội dung bản cập nhật
-- Cập nhật Phương Sơn và Bắc Lý từ cấp Xã (10) lên Thị trấn (9)
-
+- Cập nhật Bình Phú từ cấp Xã (10) lên Thị trấn (9)  
+- Đổi tên thị trấn Chơn Thành thành Phường Hưng Long 
+- Cập nhật Thành Tâm, Minh Hưng, Minh Long, Minh Thành từ cấp xã (10) lên cấp Phường (8)
 
 ### Hướng dẫn cập nhật
-Cập nhật bằng cách chạy trực tiếp tệp patch [510_NQ-UBTVQH15_patch.sql](510_NQ-UBTVQH15_patch.sql)
+Cập nhật bằng cách chạy trực tiếp tệp patch [569_570_NQ-UBTVQH15_patch.sql](569_570_NQ-UBTVQH15_patch.sql)
 
 ---
 _English_  
-Decree 510/NQ-UBTVQH15  
-- Change Phương Sơn and Bắc Lý from commune (Xã - 10) to commune-level town (Thị trấn - 9)  
+Decree 569/NQ-UBTVQH15 and 570/NQ-UBTVQH15  
+- Change Bình Phú (28471) from commune (Xã - 10) to township (Thị trấn - 9) 
+- Change Chơn Thành township (25432) to Hưng Long Ward (Phường - 8)  
+- Change Thành Tâm, Minh Hưng, Minh Long, Minh Thành from commune (Xã - 10) to ward (Phường - 8) 
 
-How to run: Execute the patch [510_NQ-UBTVQH15_patch.sql](510_NQ-UBTVQH15_patch.sql) directly   
+
+How to run: Execute the patch [569_570_NQ-UBTVQH15_patch.sql](569_570_NQ-UBTVQH15_patch.sql) directly   
