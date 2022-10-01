@@ -15,7 +15,7 @@ WHERE code IN ('28471');
 */
 UPDATE wards 
 SET name = 'Hưng Long', 
-name_en = 'Hung Long', full_name = 'Phường Hưng Long', full_name_en 'Hung Long Ward', code_name = 'hung_long', administrative_unit_id = 8
+name_en = 'Hung Long', full_name = 'Phường Hưng Long', full_name_en = 'Hung Long Ward', code_name = 'hung_long', administrative_unit_id = 8
 WHERE code IN ('25432');
 
 /*

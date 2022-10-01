@@ -9,6 +9,8 @@
 * Decrees in check:
 * - 469/NQ-UBTVQH15
 * - 510/NQ-UBTVQH15
+* - 569/NQ-UBTVQH15
+* - 570/NQ-UBTVQH15
 *
 * Example result:
 
@@ -56,11 +58,48 @@ WITH
 		-- Phương Sơn (07477), Bắc Lý (07870)
 		WHERE w.code IN('07477', '07870')
 		GROUP BY 1, 2
+	),
+	decree_569_NQ_UBTVQH15 AS (
+		SELECT '569/NQ-UBTVQH15' as decree,
+		CASE WHEN w.administrative_unit_id = 9 AND w.full_name = CONCAT('Thị trấn ', w."name") AND w.full_name_en = CONCAT(name_en, ' Township') THEN TRUE ELSE FALSE END AS up_to_date
+		FROM wards w
+		-- Bình Phú (28471) from commune (Xã - 10) to township (Thị trấn - 9) 
+		WHERE w.code = '28471'
+		GROUP BY 1, 2
+	),
+	decree_570_NQ_UBTVQH15 AS (
+		SELECT '570/NQ-UBTVQH15' as decree,
+		CASE 
+			WHEN w.administrative_unit_id = 8 AND 
+			(
+				(
+					(w.code = '25432' AND w."name" = 'Hưng Long' AND w.name_en = 'Hung Long' AND w.full_name = 'Phường Hưng Long' AND w.full_name_en = 'Hung Long Ward')
+					OR w.code IN ('25433','25441','25444','25447')
+				) AND w.full_name = CONCAT('Phường ', w.name) AND w.full_name_en = CONCAT(w.name_en, ' Ward')
+			) THEN TRUE ELSE FALSE
+		END as up_to_date
+		FROM wards w
+		-- Chơn Thành township (25432) to Hưng Long Ward (Phường - 8)
+		-- Thành Tâm, Minh Hưng, Minh Long, Minh Thành from commune (Xã - 10) to ward (Phường - 8) 
+		WHERE w.code IN ('25432','25433','25441','25444','25447')
+		GROUP BY 1, 2
 	)
-SELECT decree_469_NQ_UBTVQH15.up_to_date AS nghidinh_469_NQ_UBTVQH15,
+SELECT 
+decree_469_NQ_UBTVQH15.up_to_date AS nghidinh_469_NQ_UBTVQH15,
 decree_510_NQ_UBTVQH15.up_to_date AS nghidinh_510_NQ_UBTVQH15,
+decree_569_NQ_UBTVQH15.up_to_date AS nghidinh_569_NQ_UBTVQH15,
+decree_570_NQ_UBTVQH15.up_to_date AS nghidinh_570_NQ_UBTVQH15,
 CASE
-	WHEN decree_469_NQ_UBTVQH15.up_to_date AND decree_510_NQ_UBTVQH15.up_to_date THEN TRUE
+	WHEN 
+		decree_469_NQ_UBTVQH15.up_to_date 
+		AND decree_510_NQ_UBTVQH15.up_to_date 
+		AND decree_569_NQ_UBTVQH15.up_to_date 
+		AND decree_570_NQ_UBTVQH15.up_to_date
+		THEN TRUE
 	ELSE FALSE
 END AS vietnamese_provinces_dataset_up_to_date
-FROM decree_469_NQ_UBTVQH15, decree_510_NQ_UBTVQH15;
+FROM 
+decree_469_NQ_UBTVQH15, 
+decree_510_NQ_UBTVQH15,
+decree_569_NQ_UBTVQH15,
+decree_570_NQ_UBTVQH15;
