@@ -70,18 +70,28 @@ WITH
 	decree_570_NQ_UBTVQH15 AS (
 		SELECT '570/NQ-UBTVQH15' as decree,
 		CASE 
-			WHEN w.administrative_unit_id = 8 AND 
+			WHEN 
+			-- Change Chơn Thành district (697) from Huyện to Thị xã
+			(d.administrative_unit_id = 6 AND d.full_name = CONCAT('Thị xã ', d.name) AND d.full_name_en = CONCAT(d.name_en, ' Town')) 
+			AND 
+			-- Chơn Thành township (25432) to Hưng Long Ward (Phường - 8)
+			-- Thành Tâm, Minh Hưng, Minh Long, Minh Thành from commune (Xã - 10) to ward (Phường - 8) 
 			(
+				w.administrative_unit_id = 8 AND 
 				(
-					(w.code = '25432' AND w."name" = 'Hưng Long' AND w.name_en = 'Hung Long' AND w.full_name = 'Phường Hưng Long' AND w.full_name_en = 'Hung Long Ward')
-					OR w.code IN ('25433','25441','25444','25447')
-				) AND w.full_name = CONCAT('Phường ', w.name) AND w.full_name_en = CONCAT(w.name_en, ' Ward')
+					(
+						(w.code = '25432' AND w."name" = 'Hưng Long' AND w.name_en = 'Hung Long' AND w.full_name = 'Phường Hưng Long' AND w.full_name_en = 'Hung Long Ward')
+						OR w.code IN ('25433','25441','25444','25447')
+					) AND w.full_name = CONCAT('Phường ', w.name) AND w.full_name_en = CONCAT(w.name_en, ' Ward')
+				)
 			) THEN TRUE ELSE FALSE
 		END as up_to_date
 		FROM wards w
+		INNER JOIN districts d ON 
+		w.district_code = d.code 
 		-- Chơn Thành township (25432) to Hưng Long Ward (Phường - 8)
 		-- Thành Tâm, Minh Hưng, Minh Long, Minh Thành from commune (Xã - 10) to ward (Phường - 8) 
-		WHERE w.code IN ('25432','25433','25441','25444','25447')
+		WHERE d.code = '697' AND w.code IN ('25432','25433','25441','25444','25447')
 		GROUP BY 1, 2
 	)
 SELECT 

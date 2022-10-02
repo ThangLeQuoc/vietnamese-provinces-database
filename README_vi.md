@@ -354,6 +354,10 @@ Nếu bạn thấy có lỗi chính tả, lỗi logic, dư thừa dữ liệu tr
 Hoặc tốt hơn nữa, bạn có thể đóng góp xây dựng dự án này bằng các [tạo Pull Request](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/pulls)  
 Tất cả các đóng góp đến dự án đều được trân trọng ghi nhận.
 
+### Tôi muốn bộ dữ liệu ở định dạng JSON
+
+Xin xem qua dự án [daohoangson/dvhcvn](https://github.com/daohoangson/dvhcvn) để có bộ dữ liệu đơn vị hành chính Việt Nam ở định dạng JSON.
+
 [source danhmuchanhchinh gov]: https://danhmuchanhchinh.gso.gov.vn/
 [source government decree]: https://danhmuchanhchinh.gso.gov.vn/NghiDinh.aspx
 [source danhmuchanhchinh gov]: https://danhmuchanhchinh.gso.gov.vn/
