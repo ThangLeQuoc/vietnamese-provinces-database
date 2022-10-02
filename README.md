@@ -357,6 +357,9 @@ Sample Output from the `patch_checker` script:
 Even the government csv sheet does not have a unified format (I have to admit so, mixed between 'Thị xã' & 'Thị Xã', 'Thành phố' & 'Thành Phố' format). If you see any typo, any error or redundant spaces..., please kindly [Open a issue](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/issues) and write down your finding. Or even better by [Create a Pull Request](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/pulls).
 Any contribution is welcomed.
 
+### I prefer a JSON version
+
+Please see [daohoangson/dvhcvn](https://github.com/daohoangson/dvhcvn) as the JSON alternative version
 
 [source danhmuchanhchinh gov]: https://danhmuchanhchinh.gso.gov.vn/
 [source government decree]: https://danhmuchanhchinh.gso.gov.vn/NghiDinh.aspx

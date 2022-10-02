@@ -24,3 +24,10 @@ WHERE code IN ('25432');
 UPDATE wards
 SET full_name = CONCAT('Phường ', name), full_name_en  = CONCAT(name_en, ' Ward'), administrative_unit_id = 8
 WHERE code IN ('25433','25441','25444','25447');
+
+/*
+* Change Chơn Thành district (697) from Huyện to Thị xã
+*/
+UPDATE districts
+SET full_name = CONCAT('Thị xã ', name), full_name_en  = CONCAT(name_en, ' Town'), administrative_unit_id = 6
+WHERE code IN ('697');

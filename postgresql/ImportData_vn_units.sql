@@ -672,7 +672,7 @@ INSERT INTO districts (code,"name",name_en,full_name,full_name_en,code_name,prov
 INSERT INTO districts (code,"name",name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
 	 ('695','Đồng Phú','Dong Phu','Huyện Đồng Phú','Dong Phu District','dong_phu','70',7),
 	 ('696','Bù Đăng','Bu Dang','Huyện Bù Đăng','Bu Dang District','bu_dang','70',7),
-	 ('697','Chơn Thành','Chon Thanh','Huyện Chơn Thành','Chon Thanh District','chon_thanh','70',7),
+	 ('697','Chơn Thành','Chon Thanh','Thị xã Chơn Thành','Chon Thanh Town','chon_thanh','70',6),
 	 ('698','Phú Riềng','Phu Rieng','Huyện Phú Riềng','Phu Rieng District','phu_rieng','70',7),
 	 ('703','Tây Ninh','Tay Ninh','Thành phố Tây Ninh','Tay Ninh City','tay_ninh','72',4),
 	 ('705','Tân Biên','Tan Bien','Huyện Tân Biên','Tan Bien District','tan_bien','72',7),
