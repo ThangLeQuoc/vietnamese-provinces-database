@@ -1,4 +1,4 @@
-![Repository Banner](https://i.imgur.com/PM95O3N.jpg)
+![Repository Banner](https://i.imgur.com/d8M4Cvp.jpg)
 ![Made in Vietnam](https://raw.githubusercontent.com/webuild-community/badge/master/svg/made.svg)
 
 [Read in English version](README.md)
@@ -90,7 +90,7 @@ Sau đó chạy tiếp tệp `ImportData_vn_units.sql` để nạp dữ liệu v
 
 ### Bảng quan hệ `administrative_regions`
 
-![VN Geographical Regions](https://i.imgur.com/CiyxQi0.png)  
+![VN Geographical Regions](https://i.imgur.com/lyZfC9g.png)  
 Bảng quan hệ `administrative_regions` chứa danh sách **8** khu vực địa lý của Việt Nam, với định danh `id` tăng dần theo vị trí khu vực theo chiều từ Bắc vào Nam.
 
 #### Cấu trúc bảng dữ liệu

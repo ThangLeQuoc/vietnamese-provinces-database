@@ -1,4 +1,4 @@
-![Repository Banner](https://i.imgur.com/AwPymhw.jpg)
+![Repository Banner](https://i.imgur.com/d8M4Cvp.jpg)
 ![Made in Vietnam](https://raw.githubusercontent.com/webuild-community/badge/master/svg/made.svg)
 
 [Đọc phiên bản tiếng Việt](README_vi.md)
@@ -92,7 +92,7 @@ Then follow up by executing the `ImportData_vn_units.sql` to import data to thes
 
 ### `administrative_regions` table
 
-![VN Geographical Regions](https://i.imgur.com/CiyxQi0.png)  
+![VN Geographical Regions](https://i.imgur.com/lyZfC9g.png)  
 The `administrative_regions` table contains the list of **8** Vietnamese geographical regions with the `id` increment following the region location from North to South.
 
 #### Table definition
