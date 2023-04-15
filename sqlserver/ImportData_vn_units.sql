@@ -320,7 +320,7 @@ INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,provin
 INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
 	 ('256',N'Bắc Ninh',N'Bac Ninh',N'Thành phố Bắc Ninh',N'Bac Ninh City',N'bac_ninh',N'27',4),
 	 ('258',N'Yên Phong',N'Yen Phong',N'Huyện Yên Phong',N'Yen Phong District',N'yen_phong',N'27',7),
-	 ('259',N'Quế Võ',N'Que Vo',N'Huyện Quế Võ',N'Que Vo District',N'que_vo',N'27',7),
+	 ('259',N'Quế Võ',N'Que Vo',N'Thị xã Quế Võ',N'Que Vo Town',N'que_vo',N'27',6),
 	 ('260',N'Tiên Du',N'Tien Du',N'Huyện Tiên Du',N'Tien Du District',N'tien_du',N'27',7),
 	 ('261',N'Từ Sơn',N'Tu Son',N'Thành phố Từ Sơn',N'Tu Son City',N'tu_son',N'27',4),
 	 ('262',N'Thuận Thành',N'Thuan Thanh',N'Thị xã Thuận Thành',N'Thuan Thanh Town',N'thuan_thanh',N'27',6),
