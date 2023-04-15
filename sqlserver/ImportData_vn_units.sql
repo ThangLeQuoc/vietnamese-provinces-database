@@ -11266,7 +11266,7 @@ INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_c
 	 ('28852',N'Tiên Long',N'Tien Long',N'Xã Tiên Long',N'Tien Long Commune',N'tien_long',N'831',10),
 	 ('28855',N'An Hiệp',N'An Hiep',N'Xã An Hiệp',N'An Hiep Commune',N'an_hiep',N'831',10),
 	 ('28858',N'Hữu Định',N'Huu Dinh',N'Xã Hữu Định',N'Huu Dinh Commune',N'huu_dinh',N'831',10),
-	 ('28861',N'Tiên Thủy',N'Tien Thuy',N'Xã Tiên Thủy',N'Tien Thuy Commune',N'tien_thuy',N'831',10),
+	 ('28861',N'Tiên Thủy',N'Tien Thuy',N'Thị trấn Tiên Thủy',N'Tien Thuy Ward',N'tien_thuy',N'831',9),
 	 ('28864',N'Sơn Hòa',N'Son Hoa',N'Xã Sơn Hòa',N'Son Hoa Commune',N'son_hoa',N'831',10),
 	 ('28870',N'Chợ Lách',N'Cho Lach',N'Thị trấn Chợ Lách',N'Cho Lach Township',N'cho_lach',N'832',9),
 	 ('28873',N'Phú Phụng',N'Phu Phung',N'Xã Phú Phụng',N'Phu Phung Commune',N'phu_phung',N'832',10),
@@ -11366,7 +11366,7 @@ INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_c
 	 ('29170',N'Vĩnh An',N'Vinh An',N'Xã Vĩnh An',N'Vinh An Commune',N'vinh_an',N'836',10),
 	 ('29173',N'An Đức',N'An Duc',N'Xã An Đức',N'An Duc Commune',N'an_duc',N'836',10),
 	 ('29176',N'An Hòa Tây',N'An Hoa Tay',N'Xã An Hòa Tây',N'An Hoa Tay Commune',N'an_hoa_tay',N'836',10),
-	 ('29179',N'An Thủy',N'An Thuy',N'Xã An Thủy',N'An Thuy Commune',N'an_thuy',N'836',10),
+	 ('29179',N'Tiệm Tôm',N'Tiem Tom',N'Thị trấn Tiệm Tôm',N'Tiem Tom Township',N'tiem_tom',N'836',9),
 	 ('29182',N'Thạnh Phú',N'Thanh Phu',N'Thị trấn Thạnh Phú',N'Thanh Phu Township',N'thanh_phu',N'837',9),
 	 ('29185',N'Phú Khánh',N'Phu Khanh',N'Xã Phú Khánh',N'Phu Khanh Commune',N'phu_khanh',N'837',10),
 	 ('29188',N'Đại Điền',N'Dai Dien',N'Xã Đại Điền',N'Dai Dien Commune',N'dai_dien',N'837',10),
@@ -11392,7 +11392,7 @@ INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_c
 	 ('28906',N'Thanh Tân',N'Thanh Tan',N'Xã Thanh Tân',N'Thanh Tan Commune',N'thanh_tan',N'838',10),
 	 ('28909',N'Thạnh Ngãi',N'Thanh Ngai',N'Xã Thạnh Ngãi',N'Thanh Ngai Commune',N'thanh_ngai',N'838',10),
 	 ('28912',N'Tân Phú Tây',N'Tan Phu Tay',N'Xã Tân Phú Tây',N'Tan Phu Tay Commune',N'tan_phu_tay',N'838',10),
-	 ('28915',N'Phước Mỹ Trung',N'Phuoc My Trung',N'Xã Phước Mỹ Trung',N'Phuoc My Trung Commune',N'phuoc_my_trung',N'838',10);
+	 ('28915',N'Phước Mỹ Trung',N'Phuoc My Trung',N'Thị trấn Phước Mỹ Trung',N'Phuoc My Trung Township',N'phuoc_my_trung',N'838',9);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 	 ('28918',N'Tân Thành Bình',N'Tan Thanh Binh',N'Xã Tân Thành Bình',N'Tan Thanh Binh Commune',N'tan_thanh_binh',N'838',10),
 	 ('28921',N'Thành An',N'Thanh An',N'Xã Thành An',N'Thanh An Commune',N'thanh_an',N'838',10),
