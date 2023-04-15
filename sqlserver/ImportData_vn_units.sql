@@ -802,7 +802,7 @@ INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,provin
 	 ('888',N'Phú Tân',N'Phu Tan',N'Huyện Phú Tân',N'Phu Tan District',N'phu_tan',N'89',7),
 	 ('889',N'Châu Phú',N'Chau Phu',N'Huyện Châu Phú',N'Chau Phu District',N'chau_phu',N'89',7);
 INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
-	 ('890',N'Tịnh Biên',N'Tinh Bien',N'Huyện Tịnh Biên',N'Tinh Bien District',N'tinh_bien',N'89',7),
+	 ('890',N'Tịnh Biên',N'Tinh Bien',N'Thị xã Tịnh Biên',N'Tinh Bien Town',N'tinh_bien',N'89',6),
 	 ('891',N'Tri Tôn',N'Tri Ton',N'Huyện Tri Tôn',N'Tri Ton District',N'tri_ton',N'89',7),
 	 ('892',N'Châu Thành',N'Chau Thanh',N'Huyện Châu Thành',N'Chau Thanh District',N'chau_thanh',N'89',7),
 	 ('893',N'Chợ Mới',N'Cho Moi',N'Huyện Chợ Mới',N'Cho Moi District',N'cho_moi',N'89',7),
