@@ -4422,22 +4422,22 @@ INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_c
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 	 ('09238',N'Văn Môn',N'Van Mon',N'Xã Văn Môn',N'Van Mon Commune',N'van_mon',N'258',10),
 	 ('09241',N'Đông Thọ',N'Dong Tho',N'Xã Đông Thọ',N'Dong Tho Commune',N'dong_tho',N'258',10),
-	 ('09247',N'Phố Mới',N'Pho Moi',N'Thị trấn Phố Mới',N'Pho Moi Township',N'pho_moi',N'259',9),
+	 ('09247',N'Phố Mới',N'Pho Moi',N'Phường Phố Mới',N'Pho Moi Ward',N'pho_moi',N'259',8),
 	 ('09250',N'Việt Thống',N'Viet Thong',N'Xã Việt Thống',N'Viet Thong Commune',N'viet_thong',N'259',10),
-	 ('09253',N'Đại Xuân',N'Dai Xuan',N'Xã Đại Xuân',N'Dai Xuan Commune',N'dai_xuan',N'259',10),
-	 ('09259',N'Nhân Hòa',N'Nhan Hoa',N'Xã Nhân Hòa',N'Nhan Hoa Commune',N'nhan_hoa',N'259',10),
-	 ('09262',N'Bằng An',N'Bang An',N'Xã Bằng An',N'Bang An Commune',N'bang_an',N'259',10),
-	 ('09265',N'Phương Liễu',N'Phuong Lieu',N'Xã Phương Liễu',N'Phuong Lieu Commune',N'phuong_lieu',N'259',10),
-	 ('09268',N'Quế Tân',N'Que Tan',N'Xã Quế Tân',N'Que Tan Commune',N'que_tan',N'259',10),
-	 ('09274',N'Phù Lương',N'Phu Luong',N'Xã Phù Lương',N'Phu Luong Commune',N'phu_luong',N'259',10);
+	 ('09253',N'Đại Xuân',N'Dai Xuan',N'Phường Đại Xuân',N'Dai Xuan Ward',N'dai_xuan',N'259',8),
+	 ('09259',N'Nhân Hòa',N'Nhan Hoa',N'Phường Nhân Hòa',N'Nhan Hoa Ward',N'nhan_hoa',N'259',8),
+	 ('09262',N'Bằng An',N'Bang An',N'Phường Bằng An',N'Bang An Ward',N'bang_an',N'259',8),
+	 ('09265',N'Phương Liễu',N'Phuong Lieu',N'Phường Phương Liễu',N'Phuong Lieu Ward',N'phuong_lieu',N'259',8),
+	 ('09268',N'Quế Tân',N'Que Tan',N'Phường Quế Tân',N'Que Tan Ward',N'que_tan',N'259',8),
+	 ('09274',N'Phù Lương',N'Phu Luong',N'Phường Phù Lương',N'Phu Luong Ward',N'phu_luong',N'259',8);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 	 ('09277',N'Phù Lãng',N'Phu Lang',N'Xã Phù Lãng',N'Phu Lang Commune',N'phu_lang',N'259',10),
-	 ('09280',N'Phượng Mao',N'Phuong Mao',N'Xã Phượng Mao',N'Phuong Mao Commune',N'phuong_mao',N'259',10),
-	 ('09283',N'Việt Hùng',N'Viet Hung',N'Xã Việt Hùng',N'Viet Hung Commune',N'viet_hung',N'259',10),
+	 ('09280',N'Phượng Mao',N'Phuong Mao',N'Phường Phượng Mao',N'Phuong Mao Ward',N'phuong_mao',N'259',8),
+	 ('09283',N'Việt Hùng',N'Viet Hung',N'Phường Việt Hùng',N'Viet Hung Ward',N'viet_hung',N'259',8),
 	 ('09289',N'Ngọc Xá',N'Ngoc Xa',N'Xã Ngọc Xá',N'Ngoc Xa Commune',N'ngoc_xa',N'259',10),
 	 ('09292',N'Châu Phong',N'Chau Phong',N'Xã Châu Phong',N'Chau Phong Commune',N'chau_phong',N'259',10),
-	 ('09295',N'Bồng Lai',N'Bong Lai',N'Xã Bồng Lai',N'Bong Lai Commune',N'bong_lai',N'259',10),
-	 ('09298',N'Cách Bi',N'Cach Bi',N'Xã Cách Bi',N'Cach Bi Commune',N'cach_bi',N'259',10),
+	 ('09295',N'Bồng Lai',N'Bong Lai',N'Phường Bồng Lai',N'Bong Lai Ward',N'bong_lai',N'259',8),
+	 ('09298',N'Cách Bi',N'Cach Bi',N'Phường Cách Bi',N'Cach Bi Ward',N'cach_bi',N'259',8),
 	 ('09301',N'Đào Viên',N'Dao Vien',N'Xã Đào Viên',N'Dao Vien Commune',N'dao_vien',N'259',10),
 	 ('09304',N'Yên Giả',N'Yen Gia',N'Xã Yên Giả',N'Yen Gia Commune',N'yen_gia',N'259',10),
 	 ('09307',N'Mộ Đạo',N'Mo Dao',N'Xã Mộ Đạo',N'Mo Dao Commune',N'mo_dao',N'259',10);
