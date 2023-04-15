@@ -6,12 +6,13 @@ Nghị quyết về việc thành lập thị xã Tịnh Biên, các phường t
 Status: Done
 Source: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-721-NQ-UBTVQH15-2023-thanh-lap-thi-xa-Tinh-Bien-va-phuong-thuoc-thi-xa-An-Giang-556498.aspx
 
-
-==========================
 # 722/NQ-UBTVQH15
 Nghị quyết về việc thành lập thị trấn Vân Tùng thuộc huyện Ngân Sơn, tỉnh Bắc Kạn
 
-Status: Pending
+Status: Done
+Source: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-722-NQ-UBTVQH15-2023-thanh-lap-thi-tran-Van-Tung-huyen-Ngan-Son-Bac-Kan-556499.aspx
+
+==========================
 
 # 723/NQ-UBTVQH15
 Nghị quyết về việc thành lập thị xã Thuận Thành và các phường thuộc thị xã Thuận Thành, thị xã Quế Võ và các phường thuộc thị xã Quế Võ, tỉnh Bắc Ninh
