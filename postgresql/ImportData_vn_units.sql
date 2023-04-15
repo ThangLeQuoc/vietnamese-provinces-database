@@ -11801,7 +11801,7 @@ INSERT INTO wards (code,"name",name_en,full_name,full_name_en,code_name,district
 	 ('30367','Vĩnh Trường','Vinh Truong','Xã Vĩnh Trường','Vinh Truong Commune','vinh_truong','886',10),
 	 ('30370','Vĩnh Hội Đông','Vinh Hoi Dong','Xã Vĩnh Hội Đông','Vinh Hoi Dong Commune','vinh_hoi_dong','886',10);
 INSERT INTO wards (code,"name",name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-	 ('30373','Đa Phước','Da Phuoc','Xã Đa Phước','Da Phuoc Commune','da_phuoc','886',10),
+	 ('30373','Đa Phước','Da Phuoc','Thị trấn Đa Phước','Da Phuoc Township','da_phuoc','886',9),
 	 ('30376','Long Thạnh','Long Thanh','Phường Long Thạnh','Long Thanh Ward','long_thanh','887',8),
 	 ('30377','Long Hưng','Long Hung','Phường Long Hưng','Long Hung Ward','long_hung','887',8),
 	 ('30378','Long Châu','Long Chau','Phường Long Châu','Long Chau Ward','long_chau','887',8),
@@ -11914,7 +11914,7 @@ INSERT INTO wards (code,"name",name_en,full_name,full_name_en,code_name,district
 	 ('30664','Long Kiến','Long Kien','Xã Long Kiến','Long Kien Commune','long_kien','893',10),
 	 ('30667','Bình Phước Xuân','Binh Phuoc Xuan','Xã Bình Phước Xuân','Binh Phuoc Xuan Commune','binh_phuoc_xuan','893',10),
 	 ('30670','An Thạnh Trung','An Thanh Trung','Xã An Thạnh Trung','An Thanh Trung Commune','an_thanh_trung','893',10),
-	 ('30673','Hội An','Hoi An','Xã Hội An','Hoi An Commune','hoi_an','893',10),
+	 ('30673','Hội An','Hoi An','Thị trấn Hội An','Hoi An Township','hoi_an','893',9),
 	 ('30676','Hòa Bình','Hoa Binh','Xã Hòa Bình','Hoa Binh Commune','hoa_binh','893',10),
 	 ('30679','Hòa An','Hoa An','Xã Hòa An','Hoa An Commune','hoa_an','893',10),
 	 ('30682','Núi Sập','Nui Sap','Thị trấn Núi Sập','Nui Sap Township','nui_sap','894',9),
