@@ -4473,24 +4473,24 @@ INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_c
 	 ('09391','Tân Hồng','Tan Hong','Phường Tân Hồng','Tan Hong Ward','tan_hong','261',8),
 	 ('09394','Đình Bảng','Dinh Bang','Phường Đình Bảng','Dinh Bang Ward','dinh_bang','261',8),
 	 ('09397','Phù Chẩn','Phu Chan','Phường Phù Chẩn','Phu Chan Ward','phu_chan','261',8),
-	 ('09400','Hồ','Ho','Thị trấn Hồ','Ho Township','ho','262',9);
+	 ('09400','Hồ','Ho','Phường Hồ','Ho Ward','ho','262',8);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 	 ('09403','Hoài Thượng','Hoai Thuong','Xã Hoài Thượng','Hoai Thuong Commune','hoai_thuong','262',10),
 	 ('09406','Đại Đồng Thành','Dai Dong Thanh','Xã Đại Đồng Thành','Dai Dong Thanh Commune','dai_dong_thanh','262',10),
 	 ('09409','Mão Điền','Mao Dien','Xã Mão Điền','Mao Dien Commune','mao_dien','262',10),
-	 ('09412','Song Hồ','Song Ho','Xã Song Hồ','Song Ho Commune','song_ho','262',10),
+	 ('09412','Song Hồ','Song Ho','Phường Song Hồ','Song Ho Ward','song_ho','262',8),
 	 ('09415','Đình Tổ','Dinh To','Xã Đình Tổ','Dinh To Commune','dinh_to','262',10),
-	 ('09418','An Bình','An Binh','Xã An Bình','An Binh Commune','an_binh','262',10),
-	 ('09421','Trí Quả','Tri Qua','Xã Trí Quả','Tri Qua Commune','tri_qua','262',10),
-	 ('09424','Gia Đông','Gia Dong','Xã Gia Đông','Gia Dong Commune','gia_dong','262',10),
-	 ('09427','Thanh Khương','Thanh Khuong','Xã Thanh Khương','Thanh Khuong Commune','thanh_khuong','262',10),
-	 ('09430','Trạm Lộ','Tram Lo','Xã Trạm Lộ','Tram Lo Commune','tram_lo','262',10);
+	 ('09418','An Bình','An Binh','Phường An Bình','An Binh Ward','an_binh','262',8),
+	 ('09421','Trí Quả','Tri Qua','Phường Trí Quả','Tri Qua Ward','tri_qua','262',8),
+	 ('09424','Gia Đông','Gia Dong','Phường Gia Đông','Gia Dong Ward','gia_dong','262',8),
+	 ('09427','Thanh Khương','Thanh Khuong','Phường Thanh Khương','Thanh Khuong Ward','thanh_khuong','262',8),
+	 ('09430','Trạm Lộ','Tram Lo','Phường Trạm Lộ','Tram Lo Ward','tram_lo','262',8);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-	 ('09433','Xuân Lâm','Xuan Lam','Xã Xuân Lâm','Xuan Lam Commune','xuan_lam','262',10),
-	 ('09436','Hà Mãn','Ha Man','Xã Hà Mãn','Ha Man Commune','ha_man','262',10),
+	 ('09433','Xuân Lâm','Xuan Lam','Phường Xuân Lâm','Xuan Lam Ward','xuan_lam','262',8),
+	 ('09436','Hà Mãn','Ha Man','Phường Hà Mãn','Ha Man Ward','ha_man','262',8),
 	 ('09439','Ngũ Thái','Ngu Thai','Xã Ngũ Thái','Ngu Thai Commune','ngu_thai','262',10),
 	 ('09442','Nguyệt Đức','Nguyet Duc','Xã Nguyệt Đức','Nguyet Duc Commune','nguyet_duc','262',10),
-	 ('09445','Ninh Xá','Ninh Xa','Xã Ninh Xá','Ninh Xa Commune','ninh_xa','262',10),
+	 ('09445','Ninh Xá','Ninh Xa','Phường Ninh Xá','Ninh Xa Ward','ninh_xa','262',8),
 	 ('09448','Nghĩa Đạo','Nghia Dao','Xã Nghĩa Đạo','Nghia Dao Commune','nghia_dao','262',10),
 	 ('09451','Song Liễu','Song Lieu','Xã Song Liễu','Song Lieu Commune','song_lieu','262',10),
 	 ('09454','Gia Bình','Gia Binh','Thị trấn Gia Bình','Gia Binh Township','gia_binh','263',9),
