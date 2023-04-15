@@ -802,7 +802,7 @@ INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,provin
 	 ('888',N'Phú Tân',N'Phu Tan',N'Huyện Phú Tân',N'Phu Tan District',N'phu_tan',N'89',7),
 	 ('889',N'Châu Phú',N'Chau Phu',N'Huyện Châu Phú',N'Chau Phu District',N'chau_phu',N'89',7);
 INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
-	 ('890',N'Tịnh Biên',N'Tinh Bien',N'Huyện Tịnh Biên',N'Tinh Bien District',N'tinh_bien',N'89',7),
+	 ('890',N'Tịnh Biên',N'Tinh Bien',N'Thị xã Tịnh Biên',N'Tinh Bien Town',N'tinh_bien',N'89',6),
 	 ('891',N'Tri Tôn',N'Tri Ton',N'Huyện Tri Tôn',N'Tri Ton District',N'tri_ton',N'89',7),
 	 ('892',N'Châu Thành',N'Chau Thanh',N'Huyện Châu Thành',N'Chau Thanh District',N'chau_thanh',N'89',7),
 	 ('893',N'Chợ Mới',N'Cho Moi',N'Huyện Chợ Mới',N'Cho Moi District',N'cho_moi',N'89',7),
@@ -11801,7 +11801,7 @@ INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_c
 	 ('30367',N'Vĩnh Trường',N'Vinh Truong',N'Xã Vĩnh Trường',N'Vinh Truong Commune',N'vinh_truong',N'886',10),
 	 ('30370',N'Vĩnh Hội Đông',N'Vinh Hoi Dong',N'Xã Vĩnh Hội Đông',N'Vinh Hoi Dong Commune',N'vinh_hoi_dong',N'886',10);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-	 ('30373',N'Đa Phước',N'Da Phuoc',N'Xã Đa Phước',N'Da Phuoc Commune',N'da_phuoc',N'886',10),
+	 ('30373',N'Đa Phước',N'Da Phuoc',N'Thị trấn Đa Phước',N'Da Phuoc Township',N'da_phuoc',N'886',9),
 	 ('30376',N'Long Thạnh',N'Long Thanh',N'Phường Long Thạnh',N'Long Thanh Ward',N'long_thanh',N'887',8),
 	 ('30377',N'Long Hưng',N'Long Hung',N'Phường Long Hưng',N'Long Hung Ward',N'long_hung',N'887',8),
 	 ('30378',N'Long Châu',N'Long Chau',N'Phường Long Châu',N'Long Chau Ward',N'long_chau',N'887',8),
@@ -11851,14 +11851,14 @@ INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_c
 	 ('30493',N'Đào Hữu Cảnh',N'Dao Huu Canh',N'Xã Đào Hữu Cảnh',N'Dao Huu Canh Commune',N'dao_huu_canh',N'889',10),
 	 ('30496',N'Bình Phú',N'Binh Phu',N'Xã Bình Phú',N'Binh Phu Commune',N'binh_phu',N'889',10),
 	 ('30499',N'Bình Chánh',N'Binh Chanh',N'Xã Bình Chánh',N'Binh Chanh Commune',N'binh_chanh',N'889',10),
-	 ('30502',N'Nhà Bàng',N'Nha Bang',N'Thị trấn Nhà Bàng',N'Nha Bang Township',N'nha_bang',N'890',9),
-	 ('30505',N'Chi Lăng',N'Chi Lang',N'Thị trấn Chi Lăng',N'Chi Lang Township',N'chi_lang',N'890',9),
-	 ('30508',N'Núi Voi',N'Nui Voi',N'Xã Núi Voi',N'Nui Voi Commune',N'nui_voi',N'890',10),
-	 ('30511',N'Nhơn Hưng',N'Nhon Hung',N'Xã Nhơn Hưng',N'Nhon Hung Commune',N'nhon_hung',N'890',10);
+	 ('30502',N'Nhà Bàng',N'Nha Bang',N'Phường Nhà Bàng',N'Nha Bang Ward',N'nha_bang',N'890',8),
+	 ('30505',N'Chi Lăng',N'Chi Lang',N'Phường Chi Lăng',N'Chi Lang Ward',N'chi_lang',N'890',8),
+	 ('30508',N'Núi Voi',N'Nui Voi',N'Phường Núi Voi',N'Nui Voi Ward',N'nui_voi',N'890',8),
+	 ('30511',N'Nhơn Hưng',N'Nhon Hung',N'Phường Nhơn Hưng',N'Nhon Hung Ward',N'nhon_hung',N'890',8);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-	 ('30514',N'An Phú',N'An Phu',N'Xã An Phú',N'An Phu Commune',N'an_phu',N'890',10),
-	 ('30517',N'Thới Sơn',N'Thoi Son',N'Xã Thới Sơn',N'Thoi Son Commune',N'thoi_son',N'890',10),
-	 ('30520',N'Tịnh Biên',N'Tinh Bien',N'Thị trấn Tịnh Biên',N'Tinh Bien Township',N'tinh_bien',N'890',9),
+	 ('30514',N'An Phú',N'An Phu',N'Phường An Phú',N'An Phu Ward',N'an_phu',N'890',8),
+	 ('30517',N'Thới Sơn',N'Thoi Son',N'Phường Thới Sơn',N'Thoi Son Ward',N'thoi_son',N'890',8),
+	 ('30520',N'Tịnh Biên',N'Tinh Bien',N'Phường Tịnh Biên',N'Tinh Bien Ward',N'tinh_bien',N'890',8),
 	 ('30523',N'Văn Giáo',N'Van Giao',N'Xã Văn Giáo',N'Van Giao Commune',N'van_giao',N'890',10),
 	 ('30526',N'An Cư',N'An Cu',N'Xã An Cư',N'An Cu Commune',N'an_cu',N'890',10),
 	 ('30529',N'An Nông',N'An Nong',N'Xã An Nông',N'An Nong Commune',N'an_nong',N'890',10),
@@ -11914,7 +11914,7 @@ INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_c
 	 ('30664',N'Long Kiến',N'Long Kien',N'Xã Long Kiến',N'Long Kien Commune',N'long_kien',N'893',10),
 	 ('30667',N'Bình Phước Xuân',N'Binh Phuoc Xuan',N'Xã Bình Phước Xuân',N'Binh Phuoc Xuan Commune',N'binh_phuoc_xuan',N'893',10),
 	 ('30670',N'An Thạnh Trung',N'An Thanh Trung',N'Xã An Thạnh Trung',N'An Thanh Trung Commune',N'an_thanh_trung',N'893',10),
-	 ('30673',N'Hội An',N'Hoi An',N'Xã Hội An',N'Hoi An Commune',N'hoi_an',N'893',10),
+	 ('30673',N'Hội An',N'Hoi An',N'Thị trấn Hội An',N'Hoi An Township',N'hoi_an',N'893',9),
 	 ('30676',N'Hòa Bình',N'Hoa Binh',N'Xã Hòa Bình',N'Hoa Binh Commune',N'hoa_binh',N'893',10),
 	 ('30679',N'Hòa An',N'Hoa An',N'Xã Hòa An',N'Hoa An Commune',N'hoa_an',N'893',10),
 	 ('30682',N'Núi Sập',N'Nui Sap',N'Thị trấn Núi Sập',N'Nui Sap Township',N'nui_sap',N'894',9),
