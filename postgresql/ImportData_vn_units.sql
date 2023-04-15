@@ -11851,14 +11851,14 @@ INSERT INTO wards (code,"name",name_en,full_name,full_name_en,code_name,district
 	 ('30493','Đào Hữu Cảnh','Dao Huu Canh','Xã Đào Hữu Cảnh','Dao Huu Canh Commune','dao_huu_canh','889',10),
 	 ('30496','Bình Phú','Binh Phu','Xã Bình Phú','Binh Phu Commune','binh_phu','889',10),
 	 ('30499','Bình Chánh','Binh Chanh','Xã Bình Chánh','Binh Chanh Commune','binh_chanh','889',10),
-	 ('30502','Nhà Bàng','Nha Bang','Thị trấn Nhà Bàng','Nha Bang Township','nha_bang','890',9),
-	 ('30505','Chi Lăng','Chi Lang','Thị trấn Chi Lăng','Chi Lang Township','chi_lang','890',9),
-	 ('30508','Núi Voi','Nui Voi','Xã Núi Voi','Nui Voi Commune','nui_voi','890',10),
-	 ('30511','Nhơn Hưng','Nhon Hung','Xã Nhơn Hưng','Nhon Hung Commune','nhon_hung','890',10);
+	 ('30502','Nhà Bàng','Nha Bang','Phường Nhà Bàng','Nha Bang Ward','nha_bang','890',8),
+	 ('30505','Chi Lăng','Chi Lang','Phường Chi Lăng','Chi Lang Ward','chi_lang','890',8),
+	 ('30508','Núi Voi','Nui Voi','Phường Núi Voi','Nui Voi Ward','nui_voi','890',8),
+	 ('30511','Nhơn Hưng','Nhon Hung','Phường Nhơn Hưng','Nhon Hung Ward','nhon_hung','890',8);
 INSERT INTO wards (code,"name",name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-	 ('30514','An Phú','An Phu','Xã An Phú','An Phu Commune','an_phu','890',10),
-	 ('30517','Thới Sơn','Thoi Son','Xã Thới Sơn','Thoi Son Commune','thoi_son','890',10),
-	 ('30520','Tịnh Biên','Tinh Bien','Thị trấn Tịnh Biên','Tinh Bien Township','tinh_bien','890',9),
+	 ('30514','An Phú','An Phu','Phường An Phú','An Phu Ward','an_phu','890',8),
+	 ('30517','Thới Sơn','Thoi Son','Phường Thới Sơn','Thoi Son Ward','thoi_son','890',8),
+	 ('30520','Tịnh Biên','Tinh Bien','Phường Tịnh Biên','Tinh Bien Ward','tinh_bien','890',8),
 	 ('30523','Văn Giáo','Van Giao','Xã Văn Giáo','Van Giao Commune','van_giao','890',10),
 	 ('30526','An Cư','An Cu','Xã An Cư','An Cu Commune','an_cu','890',10),
 	 ('30529','An Nông','An Nong','Xã An Nông','An Nong Commune','an_nong','890',10),

@@ -11851,14 +11851,14 @@ INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_c
 	 ('30493',N'Đào Hữu Cảnh',N'Dao Huu Canh',N'Xã Đào Hữu Cảnh',N'Dao Huu Canh Commune',N'dao_huu_canh',N'889',10),
 	 ('30496',N'Bình Phú',N'Binh Phu',N'Xã Bình Phú',N'Binh Phu Commune',N'binh_phu',N'889',10),
 	 ('30499',N'Bình Chánh',N'Binh Chanh',N'Xã Bình Chánh',N'Binh Chanh Commune',N'binh_chanh',N'889',10),
-	 ('30502',N'Nhà Bàng',N'Nha Bang',N'Thị trấn Nhà Bàng',N'Nha Bang Township',N'nha_bang',N'890',9),
-	 ('30505',N'Chi Lăng',N'Chi Lang',N'Thị trấn Chi Lăng',N'Chi Lang Township',N'chi_lang',N'890',9),
-	 ('30508',N'Núi Voi',N'Nui Voi',N'Xã Núi Voi',N'Nui Voi Commune',N'nui_voi',N'890',10),
-	 ('30511',N'Nhơn Hưng',N'Nhon Hung',N'Xã Nhơn Hưng',N'Nhon Hung Commune',N'nhon_hung',N'890',10);
+	 ('30502',N'Nhà Bàng',N'Nha Bang',N'Phường Nhà Bàng',N'Nha Bang Ward',N'nha_bang',N'890',8),
+	 ('30505',N'Chi Lăng',N'Chi Lang',N'Phường Chi Lăng',N'Chi Lang Ward',N'chi_lang',N'890',8),
+	 ('30508',N'Núi Voi',N'Nui Voi',N'Phường Núi Voi',N'Nui Voi Ward',N'nui_voi',N'890',8),
+	 ('30511',N'Nhơn Hưng',N'Nhon Hung',N'Phường Nhơn Hưng',N'Nhon Hung Ward',N'nhon_hung',N'890',8);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-	 ('30514',N'An Phú',N'An Phu',N'Xã An Phú',N'An Phu Commune',N'an_phu',N'890',10),
-	 ('30517',N'Thới Sơn',N'Thoi Son',N'Xã Thới Sơn',N'Thoi Son Commune',N'thoi_son',N'890',10),
-	 ('30520',N'Tịnh Biên',N'Tinh Bien',N'Thị trấn Tịnh Biên',N'Tinh Bien Township',N'tinh_bien',N'890',9),
+	 ('30514',N'An Phú',N'An Phu',N'Phường An Phú',N'An Phu Ward',N'an_phu',N'890',8),
+	 ('30517',N'Thới Sơn',N'Thoi Son',N'Phường Thới Sơn',N'Thoi Son Ward',N'thoi_son',N'890',8),
+	 ('30520',N'Tịnh Biên',N'Tinh Bien',N'Phường Tịnh Biên',N'Tinh Bien Ward',N'tinh_bien',N'890',8),
 	 ('30523',N'Văn Giáo',N'Van Giao',N'Xã Văn Giáo',N'Van Giao Commune',N'van_giao',N'890',10),
 	 ('30526',N'An Cư',N'An Cu',N'Xã An Cư',N'An Cu Commune',N'an_cu',N'890',10),
 	 ('30529',N'An Nông',N'An Nong',N'Xã An Nông',N'An Nong Commune',N'an_nong',N'890',10),
