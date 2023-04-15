@@ -75,3 +75,19 @@ UPDATE wards
 SET full_name = CONCAT('Phường ', name), full_name_en  = CONCAT(name_en, ' Ward'), administrative_unit_id = 8
 WHERE code IN ('09247','09283','09262','09280','09265','09253','09259','09268','09274','09295','09298');
 -- ------------------------------------
+
+-- ------------------------------------
+/*
+* Decree: 724/NQ-UBTVQH15
+*/
+
+-- Tiên Thủy (28861) -> Thị trấn/Township (9)
+-- Phước Mỹ Trung (28915) -> Thị trấn/Township (9)
+UPDATE wards
+SET full_name = CONCAT('Thị trấn ', name), full_name_en  = CONCAT(name_en, ' Township'), administrative_unit_id = 9
+WHERE code IN ('28861', '28915');
+
+-- Tiệm Tôm (29179) from An Thủy -> Thị trấn/Township (9)
+UPDATE wards
+SET name = 'Tiệm Tôm', full_name = 'Thị trấn Tiệm Tôm', name_en = 'Tiem Tom', full_name_en = 'Tiem Tom Township', code_name = 'tiem_tom', administrative_unit_id = 9
+WHERE code = '29179';
