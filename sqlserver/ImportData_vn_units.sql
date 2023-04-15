@@ -1893,7 +1893,7 @@ INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_c
 	 ('01945',N'Cốc Đán',N'Coc Dan',N'Xã Cốc Đán',N'Coc Dan Commune',N'coc_dan',N'062',10),
 	 ('01948',N'Trung Hoà',N'Trung Hoa',N'Xã Trung Hoà',N'Trung Hoa Commune',N'trung_hoa',N'062',10),
 	 ('01951',N'Đức Vân',N'Duc Van',N'Xã Đức Vân',N'Duc Van Commune',N'duc_van',N'062',10),
-	 ('01954',N'Vân Tùng',N'Van Tung',N'Xã Vân Tùng',N'Van Tung Commune',N'van_tung',N'062',10),
+	 ('01954',N'Vân Tùng',N'Van Tung',N'Thị trấn Vân Tùng',N'Van Tung Township',N'van_tung',N'062',9),
 	 ('01957',N'Thượng Quan',N'Thuong Quan',N'Xã Thượng Quan',N'Thuong Quan Commune',N'thuong_quan',N'062',10),
 	 ('01960',N'Hiệp Lực',N'Hiep Luc',N'Xã Hiệp Lực',N'Hiep Luc Commune',N'hiep_luc',N'062',10),
 	 ('01963',N'Thuần Mang',N'Thuan Mang',N'Xã Thuần Mang',N'Thuan Mang Commune',N'thuan_mang',N'062',10),

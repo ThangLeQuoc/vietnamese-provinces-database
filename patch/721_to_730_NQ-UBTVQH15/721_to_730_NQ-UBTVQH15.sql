@@ -27,3 +27,11 @@ SET full_name = CONCAT('Thị trấn ', name), full_name_en  = CONCAT(name_en, '
 WHERE code IN ('30373', '30673');
 
 -- ------------------------------------
+
+/*
+* Decree: 722/NQ-UBTVQH15
+*/
+-- Change Vân Tùng (01954) -> Thị trấn/Township 9
+UPDATE wards
+SET full_name = CONCAT('Thị trấn ', name), full_name_en  = CONCAT(name_en, ' Township'), administrative_unit_id = 9
+WHERE code IN ('01954');

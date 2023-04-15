@@ -1714,7 +1714,7 @@ INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_c
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES ('01945','Cốc Đán','Coc Dan','Xã Cốc Đán','Coc Dan Commune','coc_dan','062',10);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES ('01948','Trung Hoà','Trung Hoa','Xã Trung Hoà','Trung Hoa Commune','trung_hoa','062',10);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES ('01951','Đức Vân','Duc Van','Xã Đức Vân','Duc Van Commune','duc_van','062',10);
-INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES ('01954','Vân Tùng','Van Tung','Xã Vân Tùng','Van Tung Commune','van_tung','062',10);
+INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES ('01954','Vân Tùng','Van Tung','Thị trấn Vân Tùng','Van Tung Township','van_tung','062',9);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES ('01957','Thượng Quan','Thuong Quan','Xã Thượng Quan','Thuong Quan Commune','thuong_quan','062',10);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES ('01960','Hiệp Lực','Hiep Luc','Xã Hiệp Lực','Hiep Luc Commune','hiep_luc','062',10);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES ('01963','Thuần Mang','Thuan Mang','Xã Thuần Mang','Thuan Mang Commune','thuan_mang','062',10);
