@@ -12,12 +12,12 @@ Nghị quyết về việc thành lập thị trấn Vân Tùng thuộc huyện 
 Status: Done
 Source: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-722-NQ-UBTVQH15-2023-thanh-lap-thi-tran-Van-Tung-huyen-Ngan-Son-Bac-Kan-556499.aspx
 
-==========================
-
 # 723/NQ-UBTVQH15
 Nghị quyết về việc thành lập thị xã Thuận Thành và các phường thuộc thị xã Thuận Thành, thị xã Quế Võ và các phường thuộc thị xã Quế Võ, tỉnh Bắc Ninh
+Status: Done
+Source: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-723-NQ-UBTVQH15-2023-thanh-lap-thi-xa-Thuan-Thanh-va-phuong-thuoc-thi-xa-Bac-Ninh-556500.aspx
 
-Status: Pending
+==========================
 
 # 724/NQ-UBTVQH15
 Nghị quyết về việc thành lập thị trấn Tiên Thủy thuộc huyện Châu Thành, thị trấn Tiệm Tôm thuộc huyện Ba Tri và thị trấn Phước Mỹ Trung thuộc huyện Mỏ Cày Bắc, tỉnh Bến Tre
