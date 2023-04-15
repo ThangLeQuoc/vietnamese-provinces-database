@@ -3,9 +3,8 @@ Pending decree
 # 721/NQ-UBTVQH15
 Nghị quyết về việc thành lập thị xã Tịnh Biên, các phường thuộc thị xã Tịnh Biên, thị trấn Đa Phước thuộc huyện An Phú và thị trấn Hội An thuộc huyện Chợ Mới, tỉnh An Giang
 
-Status: Pending
+Status: Done
 Source: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-721-NQ-UBTVQH15-2023-thanh-lap-thi-xa-Tinh-Bien-va-phuong-thuoc-thi-xa-An-Giang-556498.aspx
-
 
 
 ==========================
