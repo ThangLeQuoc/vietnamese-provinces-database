@@ -290,7 +290,7 @@ INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,provin
 INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES ('259','Quế Võ','Que Vo','Huyện Quế Võ','Que Vo District','que_vo','27',7);
 INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES ('260','Tiên Du','Tien Du','Huyện Tiên Du','Tien Du District','tien_du','27',7);
 INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES ('261','Từ Sơn','Tu Son','Thành phố Từ Sơn','Tu Son City','tu_son','27',4);
-INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES ('262','Thuận Thành','Thuan Thanh','Huyện Thuận Thành','Thuan Thanh District','thuan_thanh','27',7);
+INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES ('262','Thuận Thành','Thuan Thanh','Thị xã Thuận Thành','Thuan Thanh Town','thuan_thanh','27',6);
 INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES ('263','Gia Bình','Gia Binh','Huyện Gia Bình','Gia Binh District','gia_binh','27',7);
 INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES ('264','Lương Tài','Luong Tai','Huyện Lương Tài','Luong Tai District','luong_tai','27',7);
 INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES ('288','Hải Dương','Hai Duong','Thành phố Hải Dương','Hai Duong City','hai_duong','30',4);

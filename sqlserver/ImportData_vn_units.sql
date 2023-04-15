@@ -323,7 +323,7 @@ INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,provin
 	 ('259',N'Quế Võ',N'Que Vo',N'Huyện Quế Võ',N'Que Vo District',N'que_vo',N'27',7),
 	 ('260',N'Tiên Du',N'Tien Du',N'Huyện Tiên Du',N'Tien Du District',N'tien_du',N'27',7),
 	 ('261',N'Từ Sơn',N'Tu Son',N'Thành phố Từ Sơn',N'Tu Son City',N'tu_son',N'27',4),
-	 ('262',N'Thuận Thành',N'Thuan Thanh',N'Huyện Thuận Thành',N'Thuan Thanh District',N'thuan_thanh',N'27',7),
+	 ('262',N'Thuận Thành',N'Thuan Thanh',N'Thị xã Thuận Thành',N'Thuan Thanh Town',N'thuan_thanh',N'27',6),
 	 ('263',N'Gia Bình',N'Gia Binh',N'Huyện Gia Bình',N'Gia Binh District',N'gia_binh',N'27',7),
 	 ('264',N'Lương Tài',N'Luong Tai',N'Huyện Lương Tài',N'Luong Tai District',N'luong_tai',N'27',7),
 	 ('288',N'Hải Dương',N'Hai Duong',N'Thành phố Hải Dương',N'Hai Duong City',N'hai_duong',N'30',4),
