@@ -622,7 +622,7 @@ INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,provin
 INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES ('720','Dầu Tiếng','Dau Tieng','Huyện Dầu Tiếng','Dau Tieng District','dau_tieng','74',7);
 INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES ('721','Bến Cát','Ben Cat','Thị xã Bến Cát','Ben Cat Town','ben_cat','74',6);
 INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES ('722','Phú Giáo','Phu Giao','Huyện Phú Giáo','Phu Giao District','phu_giao','74',7);
-INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES ('723','Tân Uyên','Tan Uyen','Thị xã Tân Uyên','Tan Uyen Town','tan_uyen','74',6);
+INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES ('723','Tân Uyên','Tan Uyen','Thành phố Tân Uyên','Tan Uyen City','tan_uyen','74',4);
 INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES ('724','Dĩ An','Di An','Thành phố Dĩ An','Di An City','di_an','74',4);
 INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES ('726','Bắc Tân Uyên','Bac Tan Uyen','Huyện Bắc Tân Uyên','Bac Tan Uyen District','bac_tan_uyen','74',7);
 INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES ('731','Biên Hòa','Bien Hoa','Thành phố Biên Hòa','Bien Hoa City','bien_hoa','75',4);
