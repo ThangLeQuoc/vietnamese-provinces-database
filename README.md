@@ -354,7 +354,7 @@ Sample Output from the `patch_checker` script:
 
 ### I saw some issues in the SQL patch?
 
-If you see any typo, any error or redundant spaces..., please kindly [Open a issue](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/issues) and write down your finding. Or even better by [Create a Pull Request](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/pulls).
+If you see any improvement that can be made, please kindly [Open a issue](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/issues) and write down your finding. Or even better by [Create a Pull Request](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/pulls).
 Any contribution is welcomed.
 
 ### I prefer a JSON version
