@@ -350,7 +350,7 @@ Ví dụ kết quả khi chạy lệnh kiểm tra `patch_checker`
 
 ### Tôi tìm thấy một vài lỗi trong tệp dữ liệu SQL này?
 
-Nếu bạn thấy có lỗi chính tả, lỗi logic, dư thừa dữ liệu trong các tệp SQL, xin vui lòng [tạo một Issue](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/issues) và cung cấp thông tin cụ thể.  
+Nếu bạn có bất kỳ một đề xuất nào có thể cải tiến dự án, xin vui lòng [tạo một Issue](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/issues) và cung cấp thông tin cụ thể.  
 Hoặc tốt hơn nữa, bạn có thể đóng góp xây dựng dự án này bằng các [tạo Pull Request](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/pulls)  
 Tất cả các đóng góp đến dự án đều được trân trọng ghi nhận.
 
