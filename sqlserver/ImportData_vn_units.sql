@@ -688,7 +688,7 @@ INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,provin
 	 ('720',N'Dầu Tiếng',N'Dau Tieng',N'Huyện Dầu Tiếng',N'Dau Tieng District',N'dau_tieng',N'74',7),
 	 ('721',N'Bến Cát',N'Ben Cat',N'Thị xã Bến Cát',N'Ben Cat Town',N'ben_cat',N'74',6),
 	 ('722',N'Phú Giáo',N'Phu Giao',N'Huyện Phú Giáo',N'Phu Giao District',N'phu_giao',N'74',7),
-	 ('723',N'Tân Uyên',N'Tan Uyen',N'Thị xã Tân Uyên',N'Tan Uyen Town',N'tan_uyen',N'74',6),
+	 ('723',N'Tân Uyên',N'Tan Uyen',N'Thành phố Tân Uyên',N'Tan Uyen City',N'tan_uyen',N'74',4),
 	 ('724',N'Dĩ An',N'Di An',N'Thành phố Dĩ An',N'Di An City',N'di_an',N'74',4),
 	 ('726',N'Bắc Tân Uyên',N'Bac Tan Uyen',N'Huyện Bắc Tân Uyên',N'Bac Tan Uyen District',N'bac_tan_uyen',N'74',7);
 INSERT INTO districts (code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES

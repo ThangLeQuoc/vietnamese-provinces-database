@@ -91,3 +91,15 @@ WHERE code IN ('28861', '28915');
 UPDATE wards
 SET name = 'Tiệm Tôm', full_name = 'Thị trấn Tiệm Tôm', name_en = 'Tiem Tom', full_name_en = 'Tiem Tom Township', code_name = 'tiem_tom', administrative_unit_id = 9
 WHERE code = '29179';
+-- ------------------------------------
+
+-- ------------------------------------
+/*
+* Decree: 725/NQ-UBTVQH15
+*/
+
+-- Tân Uyên (723) -> Thành phố trực thuộc tỉnh/City (4)
+UPDATE districts
+SET full_name = CONCAT('Thành phố ', name), full_name_en  = CONCAT(name_en, ' City'), administrative_unit_id = 4
+WHERE code IN ('723');
+-- ------------------------------------
