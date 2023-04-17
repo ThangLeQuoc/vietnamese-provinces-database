@@ -103,3 +103,12 @@ UPDATE districts
 SET full_name = CONCAT('Thành phố ', name), full_name_en  = CONCAT(name_en, ' City'), administrative_unit_id = 4
 WHERE code IN ('723');
 -- ------------------------------------
+
+-- ------------------------------------
+/*
+* Decree: 725/NQ-UBTVQH15
+*/
+-- Pơng Drang (24316) -> Thị trấn/Township (9)
+UPDATE wards
+SET full_name = CONCAT('Thị trấn ', name), full_name_en  = CONCAT(name_en, ' Township'), administrative_unit_id = 9
+WHERE code IN ('24316');

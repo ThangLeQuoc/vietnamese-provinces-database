@@ -8891,7 +8891,7 @@ INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_c
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES ('24310','Chư KBô','Chu KBo','Xã Chư KBô','Chu KBo Commune','chu_kbo','649',10);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES ('24313','Cư Pơng','Cu Pong','Xã Cư Pơng','Cu Pong Commune','cu_pong','649',10);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES ('24314','Ea Sin','Ea Sin','Xã Ea Sin','Ea Sin Commune','ea_sin','649',10);
-INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES ('24316','Pơng Drang','Pong Drang','Xã Pơng Drang','Pong Drang Commune','pong_drang','649',10);
+INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES ('24316','Pơng Drang','Pong Drang','Thị trấn Pơng Drang','Pong Drang Township','pong_drang','649',9);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES ('24317','Tân Lập','Tan Lap','Xã Tân Lập','Tan Lap Commune','tan_lap','649',10);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES ('24319','Ea Ngai','Ea Ngai','Xã Ea Ngai','Ea Ngai Commune','ea_ngai','649',10);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES ('24343','Krông Năng','Krong Nang','Thị trấn Krông Năng','Krong Nang Township','krong_nang','650',9);

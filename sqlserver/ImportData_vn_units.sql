@@ -9788,7 +9788,7 @@ INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_c
 	 ('24313',N'Cư Pơng',N'Cu Pong',N'Xã Cư Pơng',N'Cu Pong Commune',N'cu_pong',N'649',10),
 	 ('24314',N'Ea Sin',N'Ea Sin',N'Xã Ea Sin',N'Ea Sin Commune',N'ea_sin',N'649',10);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-	 ('24316',N'Pơng Drang',N'Pong Drang',N'Xã Pơng Drang',N'Pong Drang Commune',N'pong_drang',N'649',10),
+	 ('24316',N'Pơng Drang',N'Pong Drang',N'Thị trấn Pơng Drang',N'Pong Drang Township',N'pong_drang',N'649',9),
 	 ('24317',N'Tân Lập',N'Tan Lap',N'Xã Tân Lập',N'Tan Lap Commune',N'tan_lap',N'649',10),
 	 ('24319',N'Ea Ngai',N'Ea Ngai',N'Xã Ea Ngai',N'Ea Ngai Commune',N'ea_ngai',N'649',10),
 	 ('24343',N'Krông Năng',N'Krong Nang',N'Thị trấn Krông Năng',N'Krong Nang Township',N'krong_nang',N'650',9),
