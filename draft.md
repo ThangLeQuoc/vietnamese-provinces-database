@@ -17,21 +17,24 @@ Nghị quyết về việc thành lập thị xã Thuận Thành và các phư�
 Status: Done
 Source: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-723-NQ-UBTVQH15-2023-thanh-lap-thi-xa-Thuan-Thanh-va-phuong-thuoc-thi-xa-Bac-Ninh-556500.aspx
 
-==========================
 
 # 724/NQ-UBTVQH15
 Nghị quyết về việc thành lập thị trấn Tiên Thủy thuộc huyện Châu Thành, thị trấn Tiệm Tôm thuộc huyện Ba Tri và thị trấn Phước Mỹ Trung thuộc huyện Mỏ Cày Bắc, tỉnh Bến Tre
 
-Status: Pending
+Status: Done
+Source: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-724-NQ-UBTVQH15-2023-thanh-lap-thi-tran-Tien-Thuy-Tiem-Tom-Ben-Tre-556492.aspx
 
 # 725/NQ-UBTVQH15
 Nghị quyết về việc thành lập thành phố Tân Uyên thuộc tỉnh Bình Dương
 
-Status: Pending
+Status: Done
+Source: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-725-NQ-UBTVQH15-2023-thanh-lap-thanh-pho-Tan-Uyen-Binh-Duong-556501.aspx
 
 # 726/NQ-UBTVQH15
 Nghị quyết về việc thành lập thị trấn Powng Drang thuộc huyện Krông Búk, tỉnh Đắk Lắk
 Status: Pending
+Source: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-726-NQ-UBTVQH15-2023-thanh-lap-thi-tran-Pong-Drang-huyen-Krong-Buk-Dak-Lak-556502.aspx
+==========================
 
 # 727/NQ-UBTVQH15
 Nghị quyết về việc thành lập các phường thuộc thị xã Điện Bàn và thị trấn Trung Phước thuộc huyện Nông Sơn, tỉnh Quảng Nam
