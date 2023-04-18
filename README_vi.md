@@ -1,4 +1,4 @@
-![Repository Banner](https://i.imgur.com/PM95O3N.jpg)
+![Repository Banner](https://i.imgur.com/dvzrhtj.jpg)
 ![Made in Vietnam](https://raw.githubusercontent.com/webuild-community/badge/master/svg/made.svg)
 
 [Read in English version](README.md)
