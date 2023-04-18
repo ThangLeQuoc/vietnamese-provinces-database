@@ -143,3 +143,18 @@ UPDATE wards
 SET full_name = CONCAT('Thị trấn ', name), full_name_en  = CONCAT(name_en, ' Township'), administrative_unit_id = 9
 WHERE code IN ('05692', '05851');
 -- ------------------------------------
+
+-- ------------------------------------
+/*
+* Decree: 730/NQ-UBTVQH15
+*/
+-- Kim Long (08878) -> Thị trấn / Township (9)
+-- Tam Hồng (09043) -> Thị trấn / Township (9)
+UPDATE wards
+SET full_name = CONCAT('Thị trấn ', name), full_name_en  = CONCAT(name_en, ' Township'), administrative_unit_id = 9
+WHERE code IN ('08878', '09043');
+
+-- Định Trung (08725) -> Phường / Ward (8)
+UPDATE wards
+SET full_name = CONCAT('Phường ', name), full_name_en  = CONCAT(name_en, ' Ward'), administrative_unit_id = 8
+WHERE code IN ('08725');

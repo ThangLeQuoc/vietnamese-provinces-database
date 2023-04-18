@@ -4223,7 +4223,7 @@ INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_c
 	 ('08719','Ngô Quyền','Ngo Quyen','Phường Ngô Quyền','Ngo Quyen Ward','ngo_quyen','243',8);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 	 ('08722','Đồng Tâm','Dong Tam','Phường Đồng Tâm','Dong Tam Ward','dong_tam','243',8),
-	 ('08725','Định Trung','Dinh Trung','Xã Định Trung','Dinh Trung Commune','dinh_trung','243',10),
+	 ('08725','Định Trung','Dinh Trung','Phường Định Trung','Dinh Trung Ward','dinh_trung','243',8),
 	 ('08728','Khai Quang','Khai Quang','Phường Khai Quang','Khai Quang Ward','khai_quang','243',8),
 	 ('08731','Thanh Trù','Thanh Tru','Xã Thanh Trù','Thanh Tru Commune','thanh_tru','243',10),
 	 ('08734','Trưng Trắc','Trung Trac','Phường Trưng Trắc','Trung Trac Ward','trung_trac','244',8),
@@ -4262,7 +4262,7 @@ INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_c
 	 ('08869','Hợp Hòa','Hop Hoa','Thị trấn Hợp Hòa','Hop Hoa Township','hop_hoa','247',9),
 	 ('08872','Hoàng Hoa','Hoang Hoa','Xã Hoàng Hoa','Hoang Hoa Commune','hoang_hoa','247',10),
 	 ('08875','Đồng Tĩnh','Dong Tinh','Xã Đồng Tĩnh','Dong Tinh Commune','dong_tinh','247',10),
-	 ('08878','Kim Long','Kim Long','Xã Kim Long','Kim Long Commune','kim_long','247',10),
+	 ('08878','Kim Long','Kim Long','Thị trấn Kim Long','Kim Long Township','kim_long','247',9),
 	 ('08881','Hướng Đạo','Huong Dao','Xã Hướng Đạo','Huong Dao Commune','huong_dao','247',10),
 	 ('08884','Đạo Tú','Dao Tu','Xã Đạo Tú','Dao Tu Commune','dao_tu','247',10);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
@@ -4324,7 +4324,7 @@ INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_c
 	 ('09034','Bình Định','Binh Dinh','Xã Bình Định','Binh Dinh Commune','binh_dinh','251',10),
 	 ('09037','Trung Nguyên','Trung Nguyen','Xã Trung Nguyên','Trung Nguyen Commune','trung_nguyen','251',10),
 	 ('09040','Tề Lỗ','Te Lo','Xã Tề Lỗ','Te Lo Commune','te_lo','251',10),
-	 ('09043','Tam Hồng','Tam Hong','Xã Tam Hồng','Tam Hong Commune','tam_hong','251',10),
+	 ('09043','Tam Hồng','Tam Hong','Thị trấn Tam Hồng','Tam Hong Township','tam_hong','251',9),
 	 ('09046','Yên Đồng','Yen Dong','Xã Yên Đồng','Yen Dong Commune','yen_dong','251',10),
 	 ('09049','Văn Tiến','Van Tien','Xã Văn Tiến','Van Tien Commune','van_tien','251',10),
 	 ('09052','Nguyệt Đức','Nguyet Duc','Xã Nguyệt Đức','Nguyet Duc Commune','nguyet_duc','251',10),
