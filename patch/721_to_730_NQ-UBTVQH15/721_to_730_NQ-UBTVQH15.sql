@@ -127,7 +127,7 @@ UPDATE wards
 SET full_name = CONCAT('Phường ', name), full_name_en  = CONCAT(name_en, ' Ward'), administrative_unit_id = 8
 WHERE code IN ('20560','20561','20562','20593','20596');
 
--- -- Quế Trung (20656) -> Trung Phước -> Thị trấn/ Township (9)
+-- Quế Trung (20656) -> Trung Phước -> Thị trấn/ Township (9)
 UPDATE wards
 SET name = 'Trung Phước', full_name = 'Thị trấn Trung Phước', name_en = 'Trung Phuoc', full_name_en = 'Trung Phuoc Township', code_name = 'trung_phuoc', administrative_unit_id = 9
 WHERE code = '20656';

@@ -34,17 +34,14 @@ Source: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-725-NQ-U
 Nghị quyết về việc thành lập thị trấn Powng Drang thuộc huyện Krông Búk, tỉnh Đắk Lắk
 Status: Pending
 Source: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-726-NQ-UBTVQH15-2023-thanh-lap-thi-tran-Pong-Drang-huyen-Krong-Buk-Dak-Lak-556502.aspx
-==========================
 
 # 727/NQ-UBTVQH15
 Nghị quyết về việc thành lập các phường thuộc thị xã Điện Bàn và thị trấn Trung Phước thuộc huyện Nông Sơn, tỉnh Quảng Nam
 
 Status: Pending
+Source: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-727-NQ-UBTVQH15-2023-thanh-lap-phuong-thuoc-thi-xa-Dien-Ban-Quang-Nam-556491.aspx
 
-# 728/NQ-UBTVQH15
-Nghị quyết về việc điều chỉnh địa giới đơn vị hành chính giữa xã Long Khánh và xã Ngũ Lạc thuộc huyện Duyên Hải, tỉnh Trà Vinh
-
-Status: Pending
+==========================
 
 # 729/NQ-UBTVQH15
 Nghị quyết về việc thành lập thị trấn Hóa Thượng thuộc huyện Đồng Hỷ và nhập xã Quân Chu vào thị trấn Quân Chu thuộc huyện Đại Từ, tỉnh Thái Nguyên
