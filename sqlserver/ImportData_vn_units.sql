@@ -8314,9 +8314,9 @@ INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_c
 	 ('20554',N'Điện Tiến',N'Dien Tien',N'Xã Điện Tiến',N'Dien Tien Commune',N'dien_tien',N'507',10),
 	 ('20557',N'Điện Hòa',N'Dien Hoa',N'Xã Điện Hòa',N'Dien Hoa Commune',N'dien_hoa',N'507',10);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-	 ('20560',N'Điện Thắng Bắc',N'Dien Thang Bac',N'Xã Điện Thắng Bắc',N'Dien Thang Bac Commune',N'dien_thang_bac',N'507',10),
-	 ('20561',N'Điện Thắng Trung',N'Dien Thang Trung',N'Xã Điện Thắng Trung',N'Dien Thang Trung Commune',N'dien_thang_trung',N'507',10),
-	 ('20562',N'Điện Thắng Nam',N'Dien Thang Nam',N'Xã Điện Thắng Nam',N'Dien Thang Nam Commune',N'dien_thang_nam',N'507',10),
+	 ('20560',N'Điện Thắng Bắc',N'Dien Thang Bac',N'Phường Điện Thắng Bắc',N'Dien Thang Bac Ward',N'dien_thang_bac',N'507',8),
+	 ('20561',N'Điện Thắng Trung',N'Dien Thang Trung',N'Phường Điện Thắng Trung',N'Dien Thang Trung Ward',N'dien_thang_trung',N'507',8),
+	 ('20562',N'Điện Thắng Nam',N'Dien Thang Nam',N'Phường Điện Thắng Nam',N'Dien Thang Nam Ward',N'dien_thang_nam',N'507',8),
 	 ('20563',N'Điện Ngọc',N'Dien Ngoc',N'Phường Điện Ngọc',N'Dien Ngoc Ward',N'dien_ngoc',N'507',8),
 	 ('20566',N'Điện Hồng',N'Dien Hong',N'Xã Điện Hồng',N'Dien Hong Commune',N'dien_hong',N'507',10),
 	 ('20569',N'Điện Thọ',N'Dien Tho',N'Xã Điện Thọ',N'Dien Tho Commune',N'dien_tho',N'507',10),
@@ -8330,8 +8330,8 @@ INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_c
 	 ('20584',N'Điện Quang',N'Dien Quang',N'Xã Điện Quang',N'Dien Quang Commune',N'dien_quang',N'507',10),
 	 ('20587',N'Điện Trung',N'Dien Trung',N'Xã Điện Trung',N'Dien Trung Commune',N'dien_trung',N'507',10),
 	 ('20590',N'Điện Phong',N'Dien Phong',N'Xã Điện Phong',N'Dien Phong Commune',N'dien_phong',N'507',10),
-	 ('20593',N'Điện Minh',N'Dien Minh',N'Xã Điện Minh',N'Dien Minh Commune',N'dien_minh',N'507',10),
-	 ('20596',N'Điện Phương',N'Dien Phuong',N'Xã Điện Phương',N'Dien Phuong Commune',N'dien_phuong',N'507',10),
+	 ('20593',N'Điện Minh',N'Dien Minh',N'Phường Điện Minh',N'Dien Minh Ward',N'dien_minh',N'507',8),
+	 ('20596',N'Điện Phương',N'Dien Phuong',N'Phường Điện Phương',N'Dien Phuong Ward',N'dien_phuong',N'507',8),
 	 ('20599',N'Nam Phước',N'Nam Phuoc',N'Thị trấn Nam Phước',N'Nam Phuoc Township',N'nam_phuoc',N'508',9),
 	 ('20602',N'Duy Thu',N'Duy Thu',N'Xã Duy Thu',N'Duy Thu Commune',N'duy_thu',N'508',10),
 	 ('20605',N'Duy Phú',N'Duy Phu',N'Xã Duy Phú',N'Duy Phu Commune',N'duy_phu',N'508',10);
@@ -8497,7 +8497,7 @@ INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_c
 	 ('20387',N'Tam Đại',N'Tam Dai',N'Xã Tam Đại',N'Tam Dai Commune',N'tam_dai',N'518',10),
 	 ('20392',N'Tam Dân',N'Tam Dan',N'Xã Tam Dân',N'Tam Dan Commune',N'tam_dan',N'518',10),
 	 ('20395',N'Tam Lãnh',N'Tam Lanh',N'Xã Tam Lãnh',N'Tam Lanh Commune',N'tam_lanh',N'518',10),
-	 ('20656',N'Quế Trung',N'Que Trung',N'Xã Quế Trung',N'Que Trung Commune',N'que_trung',N'519',10),
+	 ('20656',N'Trung Phước',N'Trung Phuoc',N'Thị trấn Trung Phước',N'Trung Phuoc Township',N'trung_phuoc',N'519',9),
 	 ('20668',N'Ninh Phước',N'Ninh Phuoc',N'Xã Ninh Phước',N'Ninh Phuoc Commune',N'ninh_phuoc',N'519',10),
 	 ('20669',N'Phước Ninh',N'Phuoc Ninh',N'Xã Phước Ninh',N'Phuoc Ninh Commune',N'phuoc_ninh',N'519',10);
 INSERT INTO wards (code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
