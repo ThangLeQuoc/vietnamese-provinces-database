@@ -44,10 +44,13 @@ Source: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-727-NQ-U
 # 729/NQ-UBTVQH15
 Nghị quyết về việc thành lập thị trấn Hóa Thượng thuộc huyện Đồng Hỷ và nhập xã Quân Chu vào thị trấn Quân Chu thuộc huyện Đại Từ, tỉnh Thái Nguyên
 
-Status: Pending
-==========================
+Status: Done
+Source: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-729-NQ-UBTVQH15-2023-thanh-lap-thi-tran-Hoa-Thuong-huyen-Dong-Hy-Thai-Nguyen-556503.aspx
+
 
 # 730/NQ-UBTVQH15
 Nghị quyết về việc thành lập thị trấn Kim Long thuộc huyện Tam Dương, thị trấn Tam Hồng thuộc huyện Yên Lạc và phường Định Trung thuộc thành phố Vĩnh Yên, tỉnh Vĩnh Phúc
 
 Status: Pending
+Source: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-730-NQ-UBTVQH15-2023-thanh-lap-thi-tran-Kim-Long-thi-tran-Tam-Hong-Vinh-Phuc-556504.aspx
+==========================
