@@ -3228,7 +3228,7 @@ INSERT INTO wards (code,"name",name_en,full_name,full_name_en,code_name,district
 	 ('05683','Hóa Trung','Hoa Trung','Xã Hóa Trung','Hoa Trung Commune','hoa_trung','169',10),
 	 ('05686','Khe Mo','Khe Mo','Xã Khe Mo','Khe Mo Commune','khe_mo','169',10),
 	 ('05689','Cây Thị','Cay Thi','Xã Cây Thị','Cay Thi Commune','cay_thi','169',10),
-	 ('05692','Hóa Thượng','Hoa Thuong','Xã Hóa Thượng','Hoa Thuong Commune','hoa_thuong','169',10),
+	 ('05692','Hóa Thượng','Hoa Thuong','Thị trấn Hóa Thượng','Hoa Thuong Township','hoa_thuong','169',9),
 	 ('05698','Hợp Tiến','Hop Tien','Xã Hợp Tiến','Hop Tien Commune','hop_tien','169',10),
 	 ('05704','Tân Lợi','Tan Loi','Xã Tân Lợi','Tan Loi Commune','tan_loi','169',10);
 INSERT INTO wards (code,"name",name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
@@ -3281,7 +3281,7 @@ INSERT INTO wards (code,"name",name_en,full_name,full_name_en,code_name,district
 	 ('05842','Văn Yên','Van Yen','Xã Văn Yên','Van Yen Commune','van_yen','171',10),
 	 ('05845','Ký Phú','Ky Phu','Xã Ký Phú','Ky Phu Commune','ky_phu','171',10),
 	 ('05848','Cát Nê','Cat Ne','Xã Cát Nê','Cat Ne Commune','cat_ne','171',10),
-	 ('05851','Quân Chu','Quan Chu','Xã Quân Chu','Quan Chu Commune','quan_chu','171',10),
+	 ('05851','Quân Chu','Quan Chu','Thị trấn Quân Chu','Quan Chu Township','quan_chu','171',9),
 	 ('05854','Bãi Bông','Bai Bong','Phường Bãi Bông','Bai Bong Ward','bai_bong','172',8),
 	 ('05857','Bắc Sơn','Bac Son','Phường Bắc Sơn','Bac Son Ward','bac_son','172',8),
 	 ('05860','Ba Hàng','Ba Hang','Phường Ba Hàng','Ba Hang Ward','ba_hang','172',8),
