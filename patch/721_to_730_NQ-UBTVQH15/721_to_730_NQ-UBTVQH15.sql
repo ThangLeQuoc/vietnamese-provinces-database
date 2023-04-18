@@ -106,9 +106,29 @@ WHERE code IN ('723');
 
 -- ------------------------------------
 /*
-* Decree: 725/NQ-UBTVQH15
+* Decree: 726/NQ-UBTVQH15
 */
 -- Pơng Drang (24316) -> Thị trấn/Township (9)
 UPDATE wards
 SET full_name = CONCAT('Thị trấn ', name), full_name_en  = CONCAT(name_en, ' Township'), administrative_unit_id = 9
 WHERE code IN ('24316');
+-- ------------------------------------
+
+-- ------------------------------------
+/*
+* Decree: 727/NQ-UBTVQH15
+*/
+-- Điện Thắng Bắc (20560) -> Phường / Ward (8)
+-- Điện Thắng Trung (20561) -> Phường / Ward (8)
+-- Điện Thắng Nam (20562) -> Phường / Ward (8)
+-- Điện Minh (20593) -> Phường / Ward (8)
+-- Điện Phương (20596) -> Phường / Ward (8)
+UPDATE wards
+SET full_name = CONCAT('Phường ', name), full_name_en  = CONCAT(name_en, ' Ward'), administrative_unit_id = 8
+WHERE code IN ('20560','20561','20562','20593','20596');
+
+-- Quế Trung (20656) -> Trung Phước -> Thị trấn/ Township (9)
+UPDATE wards
+SET name = 'Trung Phước', full_name = 'Thị trấn Trung Phước', name_en = 'Trung Phuoc', full_name_en = 'Trung Phuoc Township', code_name = 'trung_phuoc', administrative_unit_id = 9
+WHERE code = '20656';
+-- ------------------------------------
