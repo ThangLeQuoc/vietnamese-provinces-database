@@ -358,6 +358,9 @@ Tất cả các đóng góp đến dự án đều được trân trọng ghi nh
 
 Xin xem qua dự án [daohoangson/dvhcvn](https://github.com/daohoangson/dvhcvn) để có bộ dữ liệu đơn vị hành chính Việt Nam ở định dạng JSON.
 
+##### Nguồn tham khảo
+Bản đồ Việt Nam dùng làm banner từ [vietcentertourist](https://vietcentertourist.com/assets/images/vietnam.png)
+
 [source danhmuchanhchinh gov]: https://danhmuchanhchinh.gso.gov.vn/
 [source government decree]: https://danhmuchanhchinh.gso.gov.vn/NghiDinh.aspx
 [source danhmuchanhchinh gov]: https://danhmuchanhchinh.gso.gov.vn/
