@@ -1,3 +1,8 @@
+-- DROP TABLE IF EXISTS wards;
+-- DROP TABLE IF EXISTS districts;
+-- DROP TABLE IF EXISTS provinces;
+-- DROP TABLE IF EXISTS administrative_units;
+-- DROP TABLE IF EXISTS administrative_regions;
 
 -- CREATE administrative_regions TABLE
 CREATE TABLE administrative_regions (
@@ -42,6 +47,9 @@ CREATE TABLE provinces (
 ALTER TABLE provinces ADD CONSTRAINT provinces_administrative_region_id_fkey FOREIGN KEY (administrative_region_id) REFERENCES administrative_regions(id);
 ALTER TABLE provinces ADD CONSTRAINT provinces_administrative_unit_id_fkey FOREIGN KEY (administrative_unit_id) REFERENCES administrative_units(id);
 
+CREATE INDEX idx_provinces_region ON provinces(administrative_region_id);
+CREATE INDEX idx_provinces_unit ON provinces(administrative_unit_id);
+
 
 -- CREATE districts TABLE
 CREATE TABLE districts (
@@ -62,6 +70,8 @@ CREATE TABLE districts (
 ALTER TABLE districts ADD CONSTRAINT districts_administrative_unit_id_fkey FOREIGN KEY (administrative_unit_id) REFERENCES administrative_units(id);
 ALTER TABLE districts ADD CONSTRAINT districts_province_code_fkey FOREIGN KEY (province_code) REFERENCES provinces(code);
 
+CREATE INDEX idx_districts_province ON districts(province_code);
+CREATE INDEX idx_districts_unit ON districts(administrative_unit_id);
 
 
 -- CREATE wards TABLE
@@ -82,3 +92,6 @@ CREATE TABLE wards (
 
 ALTER TABLE wards ADD CONSTRAINT wards_administrative_unit_id_fkey FOREIGN KEY (administrative_unit_id) REFERENCES administrative_units(id);
 ALTER TABLE wards ADD CONSTRAINT wards_district_code_fkey FOREIGN KEY (district_code) REFERENCES districts(code);
+
+CREATE INDEX idx_wards_district ON wards(district_code);
+CREATE INDEX idx_wards_unit ON wards(administrative_unit_id);
