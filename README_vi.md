@@ -349,6 +349,8 @@ Ví dụ kết quả khi chạy lệnh kiểm tra `patch_checker`
 |------------------------|---------------------------------------|
 |true|true|
 
+Hoặc bạn có thể làm mới lại toàn bộ dữ liệu hành chính Việt Nam của bạn bằng cách gỡ toàn bộ các liên kết khoá ngoại đến các bảng thuộc bộ dữ liệu hành chính Việt Nam, rồi xoá toàn bộ các bảng dữ liệu hành chính hiện tại, tạo và nạp lại các bảng và bộ dữ liệu hành chính mới nhất, và tái khai báo lại các liên kết khoá ngoại từ các bảng dữ liệu hiện hành của bạn.
+
 ### Tôi tìm thấy một vài lỗi trong tệp dữ liệu SQL này?
 
 Nếu bạn có bất kỳ một đề xuất nào có thể cải tiến dự án, xin vui lòng [tạo một Issue](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/issues) và cung cấp thông tin cụ thể.  

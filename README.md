@@ -18,7 +18,7 @@ This dataset also include additional information apart from the original provinc
 
 The Vietnamese Government may issues decree time to time to change the administrative unit structure. You can track the latest issued decrees [here][decree issued page].  
 
-This dataset will be gradually updated to keep up with the latest **effected** decree. To check the status of your dataset and how to keep the dataset up-to-date, see section [How to ensure that my dataset is up-to-date?](#how-to-ensure-that-my-dataset-is-up-to-date).
+This dataset will be gradually updated to keep up with the latest **effected** decree. To check the status of your dataset and how to keep the dataset up-to-date, see section [How to update the existing dataset?](#how-to-update-the-existing-dataset).
 
 The following tables contains the list of issued decree, its effected date from, tracked from the earliest version of this dataset.
 
@@ -341,9 +341,9 @@ You can go to the site, tick on the checkbox **Quận Huyện, Phường Xã**, 
 Districts 2, 9 and Thu Duc were merged into a single Thu Duc Municipal city, directly under **Ho Chi Minh city** recently. Hence all their
 wards are binded directly under district entity `Thu Duc city`, code `769`.
 
-### How to ensure that my dataset is up-to-date?
+### How to update the existing dataset?
 
-The government may gradually public decree to change the administrative unit structure overtime.
+The government may gradually public new decree to change the administrative unit structure overtime.
 
 If you want to check the current up-to-date status of your provinces dataset, simply execute the [patch_checker.sql](patch/patch_checker.sql) script, and apply the missing decree patch (if any) in the [patch directory](./patch/).
 
@@ -352,6 +352,8 @@ Sample Output from the `patch_checker` script:
 |nghidinh_469_nq_ubtvqh15|vietnamese_provinces_dataset_up_to_date|
 |------------------------|---------------------------------------|
 |true|true|
+
+Or you can completely refresh the existing Vietnamese provinces table in your database by unlink all of your references, then drop these provinces tables and re-create and import all the provinces dataset, then re-establish the relationship between your data and the provinces table again.
 
 ### I saw some issues in the SQL patch?
 
