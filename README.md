@@ -5,7 +5,7 @@
 # Vietnamese Provinces Database
 
 A complete SQL database of Vietnamese administrative units, includes all **63 Vietnamese provinces** and associated districts, wards sub-divisions.  
-Data is updated as of the most recent effected decree: [730/NQ-UBTVQH15][source government decree]  
+Data is updated as of the most recent effective decree: [730/NQ-UBTVQH15][source government decree]  
 Don't forget to leave a :star: if you find this repository helpful, and to keep track of the latest release of this dataset in the future. It's would help to cheer us up so we can deliver valuable product to support our community.
 
 ## Overview
@@ -18,7 +18,7 @@ This dataset also include additional information apart from the original provinc
 
 The Vietnamese Government may issues decree time to time to change the administrative unit structure. You can track the latest issued decrees [here][decree issued page].  
 
-This dataset will be gradually updated to keep up with the latest **effected** decree. To check the status of your dataset and how to keep the dataset up-to-date, see section [How to update the existing dataset?](#how-to-update-the-existing-dataset).
+This dataset will be gradually updated to keep up with the latest **effective** decree. To check the status of your dataset and how to keep the dataset up-to-date, see section [How to update the existing dataset?](#how-to-update-the-existing-dataset).
 
 The following tables contains the list of issued decree, its effected date from, tracked from the earliest version of this dataset.
 
