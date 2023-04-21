@@ -41,4 +41,6 @@ func BootstrapTemporaryDatasetStructure() {
 	db := GetPostgresDBConnection()
 	ctx := context.Background()
 	db.ExecContext(ctx, query)
+
+	fmt.Println("Temporary Provinces tables created")
 }
