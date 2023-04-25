@@ -47,10 +47,6 @@ func insertToProvinces(administrativeRecordModels []CsvAdministrativeRow) {
 	db := vn_common.GetPostgresDBConnection()
 	ctx := context.Background()
 	for _, code := range provincesMapKey {
-		fmt.Println(code + "-" + provincesMap[code])
-
-		fmt.Println("Let's do the magic of inserting record here")
-		
 		provinceFullName := provincesMap[code]
 		administrativeUnitLevel := getAdministrativeUnit_ProvinceLevel(provinceFullName)
 		unitName := AdministrativeUnitNamesShortNameMap_vn[administrativeUnitLevel]
@@ -59,6 +55,7 @@ func insertToProvinces(administrativeRecordModels []CsvAdministrativeRow) {
 		codeName := toCodeName(provinceShortName)
 		provinceShortNameEn := normalizeString(provinceShortName)
 		provinceFullNameEn := provinceShortNameEn + " " + unitName_en
+		regionId := ProvinceRegionMap[code]
 
 		provinceModel := &vn_common.Province {
 			Code: code,
@@ -68,12 +65,10 @@ func insertToProvinces(administrativeRecordModels []CsvAdministrativeRow) {
 			FullNameEn: provinceFullNameEn,
 			CodeName: codeName,
 			AdministrativeUnitId: administrativeUnitLevel,
+			AdministrativeRegionId: regionId,
 		}
 
-		fmt.Println(*provinceModel)
-		fmt.Println("---")
-		
-		_, err := db.NewInsert().Model(provinceModel).ExcludeColumn("administrative_region_id").Exec(ctx)
+		_, err := db.NewInsert().Model(provinceModel).Exec(ctx)
 
 		if (err != nil) {
 			fmt.Println(err)
