@@ -12,7 +12,5 @@ func main() {
 
 	// Refresh temporary dataset
 	vn_common.BootstrapTemporaryDatasetStructure()
-
 	dumper.BeginDumpingData()
-	
 }
