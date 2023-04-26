@@ -29,12 +29,10 @@ UPDATE wards SET "name"='Tạ An Khương Đông', name_en='Ta An Khuong Dong', 
 UPDATE wards SET "name"='Tạ An Khương Nam', name_en='Ta An Khuong Nam', full_name='Xã Tạ An Khương Nam', full_name_en='Ta An Khuong Nam Commune', code_name='ta_an_khuong_nam' WHERE code='32170';
 
 -- Remove Quân Chu (05764)
-DELETE FROM wards WHERE code = '05764'
+DELETE FROM wards WHERE code = '05764';
 
 -- Update Phường Phường Đúc has incorrect shortname
-UPDATE wards
-SET "name"='Phường Đúc', name_en='Phuong Duc', full_name='Phường Phường Đúc', full_name_en='Phuong Duc Ward', code_name='phuong_duc' WHERE code='19780';
+UPDATE wards SET "name"='Phường Đúc', name_en='Phuong Duc', full_name='Phường Phường Đúc', full_name_en='Phuong Duc Ward', code_name='phuong_duc' WHERE code='19780';
 
 -- Cầu Đất ward code changes from 11353 to 11344
-UPDATE wards
-SET code = '11344' WHERE code = '11353'
+UPDATE wards SET code = '11344' WHERE code = '11353';
