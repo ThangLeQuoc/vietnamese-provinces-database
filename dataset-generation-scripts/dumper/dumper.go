@@ -16,7 +16,7 @@ import (
 	"golang.org/x/text/unicode/norm"
 )
 
-var csv_file_path = "./vn_provinces_ds __15_04_2023.csv"
+var csv_file_path = "./resources/vn_provinces_ds__15_04_2023.csv"
 
 func BeginDumpingData() {
 	records := readCSVAdministrativeRecords(csv_file_path)
