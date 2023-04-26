@@ -12,5 +12,6 @@ func main() {
 
 	// Refresh temporary dataset
 	vn_common.BootstrapTemporaryDatasetStructure()
+	vn_common.PersistExistingProvincesDataset()
 	dumper.BeginDumpingData()
 }

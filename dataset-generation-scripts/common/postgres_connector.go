@@ -40,7 +40,30 @@ func BootstrapTemporaryDatasetStructure() {
 	query := string(bytesVal)
 	db := GetPostgresDBConnection()
 	ctx := context.Background()
-	db.ExecContext(ctx, query)
+	_, err = db.ExecContext(ctx, query)
+	ctx.Done()
+	if (err != nil) {
+		panic(err)
+	}
+
 
 	fmt.Println("Temporary Provinces tables created")
+}
+
+func PersistExistingProvincesDataset() {
+	bytesVal, err := os.ReadFile("./resources/db_table_existing_dataset_patch.sql")
+	if (err != nil) {
+		panic(err)
+	}
+	query := string(bytesVal)
+	db := GetPostgresDBConnection()
+	ctx := context.Background()
+	_, err = db.ExecContext(ctx, query)
+	ctx.Done()
+	if (err != nil) {
+		panic(err)
+	}
+
+
+	fmt.Println("Existing dataset patch imported")
 }

@@ -30,8 +30,60 @@ func BeginDumpingData() {
 	*/
 	insertToProvinces(records)
 	insertToDistricts(records)
+	insertToWards(records)
 
 	fmt.Println("Dumper operation finished")
+}
+
+func insertToWards(administrativeRecordModels []CsvAdministrativeRow) {	
+	db := vn_common.GetPostgresDBConnection()
+	ctx := context.Background()
+	totalWard :=0
+
+	for _, a := range administrativeRecordModels {
+		if (a.WardName == "") {
+			fmt.Println("Unable to determine ward for record ")
+			fmt.Printf("%+v\n", a)
+			continue
+		}
+
+		wardFullName := a.WardName
+		administrativeUnitLevel := getAdministrativeUnit_WardLevel(wardFullName)
+		unitName := AdministrativeUnitNamesShortNameMap_vn[administrativeUnitLevel]
+		unitName_en := AdministrativeUnitNamesShortNameMap_en[administrativeUnitLevel]
+		wardShortName := strings.Trim(strings.Replace(wardFullName, unitName, "", 1), " ")
+		codeName := toCodeName(wardShortName)
+		wardShortNameEn := normalizeString(wardShortName)
+
+		// Case when district name is a number
+		isNumber, _ := regexp.MatchString("[0-9]+", wardShortName)
+		var wardFullNameEn string
+		if (isNumber) {
+			wardFullNameEn = unitName_en + " " + wardShortNameEn
+		} else {
+			wardFullNameEn = wardShortNameEn + " " + unitName_en
+		}
+		
+		wardModel := &vn_common.Ward {
+			Code: a.WardCode,
+			Name: wardShortName,
+			NameEn: wardShortNameEn,
+			FullName: wardFullName,
+			FullNameEn: wardFullNameEn,
+			CodeName: codeName,
+			AdministrativeUnitId: administrativeUnitLevel,
+			DistrictCode: a.DistrictCode,
+		}
+
+		_, err := db.NewInsert().Model(wardModel).Exec(ctx)
+		totalWard++
+		if (err != nil) {
+			fmt.Println(err)
+			panic("Exception happens while inserting into wards table")
+		}
+	}
+
+	fmt.Printf("Inserted %d wards to tables\n", totalWard)
 }
 
 func insertToDistricts(administrativeRecordModels []CsvAdministrativeRow) {
@@ -87,7 +139,6 @@ func insertToDistricts(administrativeRecordModels []CsvAdministrativeRow) {
 	}
 
 	fmt.Printf("Inserted %d districts to tables\n", len(districtsMapKey))
-
 }
 
 func insertToProvinces(administrativeRecordModels []CsvAdministrativeRow) {
@@ -207,6 +258,19 @@ func getAdministrativeUnit_DistrictLevel(districtFullName string) int {
 		return 7
 	}
 	panic("Unable to determine administrative unit name from district: " + districtFullName)
+}
+
+func getAdministrativeUnit_WardLevel(wardFullName string) int {
+	if strings.Contains(wardFullName, "Phường") {
+		return 8
+	}
+	if strings.Contains(wardFullName, "Thị trấn") {
+		return 9
+	}
+	if strings.Contains(wardFullName, "Xã") {
+		return 10
+	}
+	panic("Unable to determine administrative unit name from ward: " + wardFullName)
 }
 
 func normalizeString(source string) string {
