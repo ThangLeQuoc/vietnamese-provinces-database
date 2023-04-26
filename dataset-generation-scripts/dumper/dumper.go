@@ -47,7 +47,7 @@ func insertToWards(administrativeRecordModels []CsvAdministrativeRow) {
 			continue
 		}
 
-		wardFullName := a.WardName
+		wardFullName := removeWhiteSpaces(a.WardName)
 		administrativeUnitLevel := getAdministrativeUnit_WardLevel(wardFullName)
 		unitName := AdministrativeUnitNamesShortNameMap_vn[administrativeUnitLevel]
 		unitName_en := AdministrativeUnitNamesShortNameMap_en[administrativeUnitLevel]
@@ -103,7 +103,7 @@ func insertToDistricts(administrativeRecordModels []CsvAdministrativeRow) {
 	ctx := context.Background()
 
 	for _, code := range districtsMapKey {
-		districtFullName := districtsMap[code]
+		districtFullName := removeWhiteSpaces(districtsMap[code])
 		administrativeUnitLevel := getAdministrativeUnit_DistrictLevel(districtFullName)
 		unitName := AdministrativeUnitNamesShortNameMap_vn[administrativeUnitLevel]
 		unitName_en := AdministrativeUnitNamesShortNameMap_en[administrativeUnitLevel]
@@ -156,7 +156,7 @@ func insertToProvinces(administrativeRecordModels []CsvAdministrativeRow) {
 	db := vn_common.GetPostgresDBConnection()
 	ctx := context.Background()
 	for _, code := range provincesMapKey {
-		provinceFullName := provincesMap[code]
+		provinceFullName := removeWhiteSpaces(provincesMap[code])
 		administrativeUnitLevel := getAdministrativeUnit_ProvinceLevel(provinceFullName)
 		unitName := AdministrativeUnitNamesShortNameMap_vn[administrativeUnitLevel]
 		unitName_en := AdministrativeUnitNamesShortNameMap_en[administrativeUnitLevel]
@@ -284,4 +284,8 @@ func normalizeString(source string) string {
 func toCodeName(shortName string) string {
 	shortName = strings.ReplaceAll(shortName, " - ", " ")
 	return strings.ToLower(strings.ReplaceAll(normalizeString(shortName), " ", "_"))
+}
+
+func removeWhiteSpaces(name string) string {
+	return strings.Trim(strings.ReplaceAll(name, "  ", " "), " ") 
 }
