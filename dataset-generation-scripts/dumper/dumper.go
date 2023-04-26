@@ -18,6 +18,11 @@ import (
 
 var csv_file_path = "./resources/vn_provinces_ds__15_04_2023.csv"
 
+func CleanUpCSVFileBeforeRun() {
+	// TODO @thanglequoc: Clean up and replace "Thị Xã", "Thị Trấn", "Thành Phố" to the standard form before proceed
+	// Maybe replace double spaces and pre-trimming as well?
+}
+
 func BeginDumpingData() {
 	records := readCSVAdministrativeRecords(csv_file_path)
 
