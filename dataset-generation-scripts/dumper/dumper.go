@@ -287,6 +287,7 @@ func normalizeString(source string) string {
 
 func toCodeName(shortName string) string {
 	shortName = strings.ReplaceAll(shortName, " - ", " ")
+	shortName = strings.ReplaceAll(shortName, "'", "") // to handle special name with single quote
 	return strings.ToLower(strings.ReplaceAll(normalizeString(shortName), " ", "_"))
 }
 
