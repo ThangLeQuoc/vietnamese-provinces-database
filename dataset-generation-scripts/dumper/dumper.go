@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"regexp"
 	"strings"
 	"unicode"
-	"regexp"
 
 	vn_common "github.com/thanglequoc-vn-provinces/v2/common"
 	"golang.org/x/text/runes"
@@ -25,13 +25,12 @@ func CleanUpCSVFileBeforeRun() {
 
 func BeginDumpingData() {
 	records := readCSVAdministrativeRecords(csv_file_path)
-
 	/*
-	Thing to do:
-	- insert to provinces table
-	- insert to districts table
-	- insert to wards table
-	- 
+	   Thing to do:
+	   - insert to provinces table
+	   - insert to districts table
+	   - insert to wards table
+	   -
 	*/
 	insertToProvinces(records)
 	insertToDistricts(records)
@@ -40,13 +39,13 @@ func BeginDumpingData() {
 	fmt.Println("Dumper operation finished")
 }
 
-func insertToWards(administrativeRecordModels []CsvAdministrativeRow) {	
+func insertToWards(administrativeRecordModels []CsvAdministrativeRow) {
 	db := vn_common.GetPostgresDBConnection()
 	ctx := context.Background()
-	totalWard :=0
+	totalWard := 0
 
 	for _, a := range administrativeRecordModels {
-		if (a.WardName == "") {
+		if a.WardName == "" {
 			fmt.Println("Unable to determine ward for record ")
 			fmt.Printf("%+v\n", a)
 			continue
@@ -63,26 +62,26 @@ func insertToWards(administrativeRecordModels []CsvAdministrativeRow) {
 		// Case when district name is a number
 		isNumber, _ := regexp.MatchString("[0-9]+", wardShortName)
 		var wardFullNameEn string
-		if (isNumber) {
+		if isNumber {
 			wardFullNameEn = unitName_en + " " + wardShortNameEn
 		} else {
 			wardFullNameEn = wardShortNameEn + " " + unitName_en
 		}
-		
-		wardModel := &vn_common.Ward {
-			Code: a.WardCode,
-			Name: wardShortName,
-			NameEn: wardShortNameEn,
-			FullName: wardFullName,
-			FullNameEn: wardFullNameEn,
-			CodeName: codeName,
+
+		wardModel := &vn_common.Ward{
+			Code:                 a.WardCode,
+			Name:                 wardShortName,
+			NameEn:               wardShortNameEn,
+			FullName:             wardFullName,
+			FullNameEn:           wardFullNameEn,
+			CodeName:             codeName,
 			AdministrativeUnitId: administrativeUnitLevel,
-			DistrictCode: a.DistrictCode,
+			DistrictCode:         a.DistrictCode,
 		}
 
 		_, err := db.NewInsert().Model(wardModel).Exec(ctx)
 		totalWard++
-		if (err != nil) {
+		if err != nil {
 			fmt.Println(err)
 			panic("Exception happens while inserting into wards table")
 		}
@@ -115,29 +114,29 @@ func insertToDistricts(administrativeRecordModels []CsvAdministrativeRow) {
 		districtShortName := strings.Trim(strings.Replace(districtFullName, unitName, "", 1), " ")
 		codeName := toCodeName(districtShortName)
 		districtShortNameEn := normalizeString(districtShortName)
-		
+
 		// Case when district name is a number
 		isNumber, _ := regexp.MatchString("[0-9]+", districtShortName)
 		var districtFullNameEn string
-		if (isNumber) {
+		if isNumber {
 			districtFullNameEn = unitName_en + " " + districtShortNameEn
 		} else {
 			districtFullNameEn = districtShortNameEn + " " + unitName_en
 		}
 
-		districtModel := &vn_common.District {
-			Code: code,
-			Name: districtShortName,
-			NameEn: districtShortNameEn,
-			FullName: districtFullName,
-			FullNameEn: districtFullNameEn,
-			CodeName: codeName,
+		districtModel := &vn_common.District{
+			Code:                 code,
+			Name:                 districtShortName,
+			NameEn:               districtShortNameEn,
+			FullName:             districtFullName,
+			FullNameEn:           districtFullNameEn,
+			CodeName:             codeName,
 			AdministrativeUnitId: administrativeUnitLevel,
-			ProvinceCode: districtProvinceMap[code],
+			ProvinceCode:         districtProvinceMap[code],
 		}
 
 		_, err := db.NewInsert().Model(districtModel).Exec(ctx)
-		if (err != nil) {
+		if err != nil {
 			fmt.Println(err)
 			panic("Exception happens while inserting into districts table")
 		}
@@ -171,19 +170,19 @@ func insertToProvinces(administrativeRecordModels []CsvAdministrativeRow) {
 		provinceFullNameEn := provinceShortNameEn + " " + unitName_en
 		regionId := ProvinceRegionMap[code]
 
-		provinceModel := &vn_common.Province {
-			Code: code,
-			Name: provinceShortName,
-			NameEn: provinceShortNameEn,
-			FullName: provinceFullName,
-			FullNameEn: provinceFullNameEn,
-			CodeName: codeName,
-			AdministrativeUnitId: administrativeUnitLevel,
+		provinceModel := &vn_common.Province{
+			Code:                   code,
+			Name:                   provinceShortName,
+			NameEn:                 provinceShortNameEn,
+			FullName:               provinceFullName,
+			FullNameEn:             provinceFullNameEn,
+			CodeName:               codeName,
+			AdministrativeUnitId:   administrativeUnitLevel,
 			AdministrativeRegionId: regionId,
 		}
 
 		_, err := db.NewInsert().Model(provinceModel).Exec(ctx)
-		if (err != nil) {
+		if err != nil {
 			fmt.Println(err)
 			panic("Exception happens while inserting into provinces table")
 		}
@@ -248,7 +247,7 @@ func getAdministrativeUnit_ProvinceLevel(provinceFullName string) int {
 
 func getAdministrativeUnit_DistrictLevel(districtFullName string) int {
 	if strings.Contains(districtFullName, "Thành phố") {
-		if (strings.Contains(districtFullName, "Thủ Đức")) { // handle a special case, only Thủ Đức is the municipal city
+		if strings.Contains(districtFullName, "Thủ Đức") { // handle a special case, only Thủ Đức is the municipal city
 			return 3
 		}
 		return 4
@@ -292,5 +291,5 @@ func toCodeName(shortName string) string {
 }
 
 func removeWhiteSpaces(name string) string {
-	return strings.Trim(strings.ReplaceAll(name, "  ", " "), " ") 
+	return strings.Trim(strings.ReplaceAll(name, "  ", " "), " ")
 }

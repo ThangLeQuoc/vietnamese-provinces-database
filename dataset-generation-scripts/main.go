@@ -7,9 +7,7 @@ import (
 
 func main() {
 	// pre-run
-	
-	
-	
+
 	// Refresh temporary dataset, import existing dataset
 	vn_common.BootstrapTemporaryDatasetStructure()
 	vn_common.PersistExistingProvincesDataset()
