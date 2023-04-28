@@ -18,20 +18,6 @@ func GetPostgresDBConnection() *bun.DB {
 	return db
 }
 
-/*
-Drop all existing temporary tables
-*/
-func DropAllExistingTables() {
-	db := GetPostgresDBConnection()
-	ctx := context.Background()
-	
-	_, err := db.NewDropTable().Table("wards").Table("districts").Table("provinces").IfExists().Exec(ctx)
-	if err != nil {
-		panic(err)
-	}
-	fmt.Println("All temporary tables dropped")
-}
-
 func BootstrapTemporaryDatasetStructure() {
 	bytesVal, err := os.ReadFile("./resources/db_table_init.sql")
 	if (err != nil) {
@@ -63,7 +49,6 @@ func PersistExistingProvincesDataset() {
 	if (err != nil) {
 		panic(err)
 	}
-
 
 	fmt.Println("Existing dataset patch imported")
 }

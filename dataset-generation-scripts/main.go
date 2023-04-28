@@ -8,11 +8,11 @@ import (
 
 func main() {
 	// pre-run
-
 	// Refresh temporary dataset, import existing dataset
 	vn_common.BootstrapTemporaryDatasetStructure()
 	vn_common.PersistExistingProvincesDataset()
-	dumper.BeginDumpingData()
 
+	/* Before dumping data, you might need to go to dumper.go to adjust the csv filename for import */
+	dumper.BeginDumpingData()
 	patch_writer.GenerateSQLPatch()
 }
