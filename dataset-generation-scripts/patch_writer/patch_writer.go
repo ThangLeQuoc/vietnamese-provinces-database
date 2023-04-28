@@ -17,13 +17,17 @@ const insertAdministrativeRegionTemplate string = "INSERT INTO administrative_re
 const insertAdministrativeUnitTemplate string = "INSERT INTO administrative_units(id,full_name,full_name_en,short_name,short_name_en,code_name,code_name_en) VALUES(%d,'%s','%s','%s','%s','%s','%s');"
 
 // province insert statement
-const insertProvinceTemplate string = "INSERT INTO provinces(code,name,name_en,full_name,full_name_en,code_name,administrative_unit_id,administrative_region_id) VALUES('%s','%s','%s','%s','%s','%s',%d,%d);"
+const insertProvinceTemplate string = "INSERT INTO provinces(code,name,name_en,full_name,full_name_en,code_name,administrative_unit_id,administrative_region_id) VALUES"
+const insertProvinceValueTemplate string = "('%s','%s','%s','%s','%s','%s',%d,%d)"
 
 // district insert statement
-const insertDistrictTemplate string = "INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES('%s','%s','%s','%s','%s','%s','%s',%d);"
+const insertDistrictTemplate string = "INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES"
 
 // ward insert statement
-const insertWardTemplate string = "INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES('%s','%s','%s','%s','%s','%s','%s',%d);"
+const insertWardTemplate string = "INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES"
+const insertDistrictWardValueTemplate string = "('%s','%s','%s','%s','%s','%s','%s',%d)"
+
+const batchInsertItemSize int = 50
 
 func GenerateSQLPatch() {
 
@@ -70,35 +74,83 @@ func GenerateSQLPatch() {
 	}
 	dataWriter.WriteString("-- ----------------------------------\n\n")
 
+	// variable to generate batch insert statement
+	counter := 0
+	isAppending := false
+
 	dataWriter.WriteString("-- DATA for provinces --\n")
 	provinces := getAllProvinces()
-	for _, p := range provinces {
-		insertLine := fmt.Sprintf(insertProvinceTemplate,
-			p.Code, escapeSingleQuote(p.Name), escapeSingleQuote(p.NameEn), escapeSingleQuote(p.FullName),
-			escapeSingleQuote(p.FullNameEn), p.CodeName, p.AdministrativeUnitId, p.AdministrativeRegionId)
-		dataWriter.WriteString(insertLine + "\n")
+	for i, p := range provinces {
+		if !isAppending {
+			dataWriter.WriteString(insertProvinceTemplate + "\n")
+		}
+		dataWriter.WriteString(
+			fmt.Sprintf(insertProvinceValueTemplate, p.Code, escapeSingleQuote(p.Name), escapeSingleQuote(p.NameEn), escapeSingleQuote(p.FullName),
+				escapeSingleQuote(p.FullNameEn), p.CodeName, p.AdministrativeUnitId, p.AdministrativeRegionId))
+		counter++
+
+		// the batch insert statement batch reach limit, break and create a new batch insert statement
+		if counter == batchInsertItemSize || i == len(provinces)-1 {
+			isAppending = false
+			dataWriter.WriteString(";\n\n")
+			counter = 0 // reset counter
+		} else {
+			dataWriter.WriteString(",\n")
+			isAppending = true
+		}
 	}
 	dataWriter.WriteString("-- ----------------------------------\n\n")
 
 	dataWriter.WriteString("-- DATA for districts --\n")
+	counter = 0
+	isAppending = false
 	districts := getAllDistricts()
-	for _, d := range districts {
-		insertLine := fmt.Sprintf(insertDistrictTemplate,
-			d.Code, escapeSingleQuote(d.Name), escapeSingleQuote(d.NameEn), escapeSingleQuote(d.FullName),
-			escapeSingleQuote(d.FullNameEn), d.CodeName, d.ProvinceCode, d.AdministrativeUnitId)
-		dataWriter.WriteString(insertLine + "\n")
+	for i, d := range districts {
+		if !isAppending {
+			dataWriter.WriteString(insertDistrictTemplate + "\n")
+		}
+		dataWriter.WriteString(
+			fmt.Sprintf(insertDistrictWardValueTemplate, d.Code, escapeSingleQuote(d.Name), escapeSingleQuote(d.NameEn), escapeSingleQuote(d.FullName),
+				escapeSingleQuote(d.FullNameEn), d.CodeName, d.ProvinceCode, d.AdministrativeUnitId))
+		counter++
+
+		// the batch insert statement batch reach limit, break and create a new batch insert statement
+		if counter == batchInsertItemSize || i == len(districts)-1 {
+			isAppending = false
+			dataWriter.WriteString(";\n\n")
+			counter = 0 // reset counter
+		} else {
+			dataWriter.WriteString(",\n")
+			isAppending = true
+		}
 	}
 	dataWriter.WriteString("-- ----------------------------------\n\n")
 
 	dataWriter.WriteString("-- DATA for wards --\n")
+	counter = 0
+	isAppending = false
 	wards := getAllWards()
-	for _, w := range wards {
-		insertLine := fmt.Sprintf(insertWardTemplate,
-			w.Code, escapeSingleQuote(w.Name), escapeSingleQuote(w.NameEn), escapeSingleQuote(w.FullName),
-			escapeSingleQuote(w.FullNameEn), w.CodeName, w.DistrictCode, w.AdministrativeUnitId)
-		dataWriter.WriteString(insertLine + "\n")
+	for i, w := range wards {
+		if !isAppending {
+			dataWriter.WriteString(insertWardTemplate + "\n")
+		}
+		dataWriter.WriteString(
+			fmt.Sprintf(insertDistrictWardValueTemplate, w.Code, escapeSingleQuote(w.Name), escapeSingleQuote(w.NameEn), escapeSingleQuote(w.FullName),
+				escapeSingleQuote(w.FullNameEn), w.CodeName, w.DistrictCode, w.AdministrativeUnitId))
+		counter++
+
+		// the batch insert statement batch reach limit, break and create a new batch insert statement
+		if counter == batchInsertItemSize || i == len(wards)-1 {
+			isAppending = false
+			dataWriter.WriteString(";\n\n")
+			counter = 0 // reset counter
+		} else {
+			dataWriter.WriteString(",\n")
+			isAppending = true
+		}
 	}
 	dataWriter.WriteString("-- ----------------------------------\n")
+
 	dataWriter.WriteString("-- END OF SCRIPT FILE --\n")
 
 	dataWriter.Flush()
