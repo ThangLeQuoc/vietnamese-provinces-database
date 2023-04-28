@@ -1,3 +1,6 @@
 .DS_Store
 # Ignore lock acquired by Libre office
 .~lock*
+
+.vscode
+./dataset-generation-scripts/output/*
