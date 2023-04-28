@@ -186,7 +186,6 @@ func insertToProvinces(administrativeRecordModels []CsvAdministrativeRow) {
 			fmt.Println(err)
 			panic("Exception happens while inserting into provinces table")
 		}
-
 	}
 
 	fmt.Printf("Inserted %d provinces to tables\n", len(provincesMapKey))
@@ -231,7 +230,6 @@ func readCsvFile(filePath string) [][]string {
 	if err != nil {
 		log.Fatal("Unable to read csv records", err)
 	}
-
 	return records
 }
 
@@ -287,6 +285,7 @@ func normalizeString(source string) string {
 
 func toCodeName(shortName string) string {
 	shortName = strings.ReplaceAll(shortName, " - ", " ")
+	shortName = strings.ReplaceAll(shortName, "'", "") // to handle special name with single quote
 	return strings.ToLower(strings.ReplaceAll(normalizeString(shortName), " ", "_"))
 }
 
