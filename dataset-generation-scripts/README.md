@@ -37,6 +37,7 @@ Perform some text replacement for correction, this includes:
 - Replace "Thị Xã" to "Thị xã"
 - Replace "Thành Phố" to "Thành phố"
 - Replace "Thị Trấn" to "Thị trấn"  
+
 These manual text replacement text will [be included in the script execution](https://github.com/ThangLeQuoc/vietnamese-provinces-database/blob/master/dataset-generation-scripts/dumper/dumper.go#L21) in the future as well.  
 Update the `csv_file_path` variable in `dumper.go`  
 
