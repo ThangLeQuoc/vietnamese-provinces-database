@@ -32,8 +32,20 @@ func GetPostgresDBConnection() *bun.DB {
 ```
 #### CSV file
 Download the excel sheet from the [General Statistics Office of Vietnam website](https://danhmuchanhchinh.gso.gov.vn/).  
-By default it will come in `.xls` file format, convert this to a CSV file and put it in the `resources` folder
-Update the `csv_file_path` variable in `dumper.go`
+By default it will come in `.xls` file format, convert this to a CSV file and put it in the `resources` folder.  
+Perform some text replacement for correction, this includes: 
+- Replace "Thị Xã" to "Thị xã"
+- Replace "Thành Phố" to "Thành phố"
+- Replace "Thị Trấn" to "Thị trấn"  
+These manual text replacement text will [be included in the script execution](https://github.com/ThangLeQuoc/vietnamese-provinces-database/blob/master/dataset-generation-scripts/dumper/dumper.go#L21) in the future as well.  
+Update the `csv_file_path` variable in `dumper.go`  
+
+#### Executing
+At the root of the `dataset-generation-scripts` folder, run
+```shell
+go run main.go
+```
+And check the result in the `output` folder
 
 
 ---
