@@ -45,10 +45,5 @@ At the root of the `dataset-generation-scripts` folder, run
 ```shell
 go run main.go
 ```
-And check the result in the `output` folder
+And check the result in the `output` folder. The final result is three SQL patches will be generated for three type of databases (due to their difference in syntax).
 
-
----
-😸 WIP by @thanglequoc
-
-🚧 Still under heavy construction....
