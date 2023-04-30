@@ -30,6 +30,8 @@ func GetPostgresDBConnection() *bun.DB {
 	return db
 }
 ```
+#### Update the existing dataset patch
+Update the `resources\db_table_existing_dataset_patch.sql` with the lastest dataset patch from the repository. This will be consider as the "existing latest dataset" to be compared with the new change from the CSV dataset  
 #### CSV file
 Download the excel sheet from the [General Statistics Office of Vietnam website](https://danhmuchanhchinh.gso.gov.vn/).  
 By default it will come in `.xls` file format, convert this to a CSV file and put it in the `resources` folder.  
@@ -48,3 +50,9 @@ go run main.go
 ```
 And check the result in the `output` folder. The final result is three SQL patches will be generated for three type of databases (due to their difference in syntax).
 
+
+
+# Improvement item in the future
+- Include manual text replacement in the script as well
+- Automate the post-verification process at the end of the execution (this is being done manually)
+- 
