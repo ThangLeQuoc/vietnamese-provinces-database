@@ -20,8 +20,8 @@ You must have these thing installed on your machine
 - Postgresql
 - Go
 ### Setting thing up
-You will need to create a temporary database in Postgres named `vn_provinces_tmp`. And provide the access credential in the connection string in `common/postgres_connector.go`
-
+#### Postgres temporary database 
+You will need to create a temporary database in Postgres named `vn_provinces_tmp` in your local Postgres. And provide the access credential in the connection string in `common/postgres_connector.go`
 ```golang
 func GetPostgresDBConnection() *bun.DB {
 	dsn := "postgres://postgres:root@localhost:5432/vn_provinces_tmp?sslmode=disable"
@@ -30,6 +30,10 @@ func GetPostgresDBConnection() *bun.DB {
 	return db
 }
 ```
+#### CSV file
+Download the excel sheet from the [General Statistics Office of Vietnam website](https://danhmuchanhchinh.gso.gov.vn/).  
+By default it will come in `.xls` file format, convert this to a CSV file and put it in the `resources` folder
+Update the `csv_file_path` variable in `dumper.go`
 
 
 ---
