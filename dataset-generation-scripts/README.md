@@ -50,9 +50,7 @@ go run main.go
 ```
 And check the result in the `output` folder. The final result is three SQL patches will be generated for three type of databases (due to their difference in syntax).
 
-
-
 # Improvement item in the future
 - Include manual text replacement in the script as well
 - Automate the post-verification process at the end of the execution (this is being done manually)
-- 
+- Detect the change between the existing dataset and the newly produces dataset. And produce the SQL data patch for this change.
