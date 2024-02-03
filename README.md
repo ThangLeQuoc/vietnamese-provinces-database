@@ -5,7 +5,7 @@
 # Vietnamese Provinces Database
 
 A complete SQL database of Vietnamese administrative units, includes all **63 Vietnamese provinces** and associated districts, wards sub-divisions.  
-Data is updated as of the most recent effective decree: [730/NQ-UBTVQH15][source government decree]  
+Data is updated as of the most recent effective decree: [939/NQ-UBTVQH15][source government decree]  
 Don't forget to leave a :star: if you find this repository helpful, and to keep track of the latest release of this dataset in the future. It's would help to cheer us up so we can deliver valuable product to support our community.
 
 ## Overview
@@ -24,6 +24,7 @@ The following tables contains the list of issued decree, its effected date from,
 
 |Issued Decree|Issued on |Effect from|Release Version|
 |-------------|-----------|-------------|---------------|
+|[939/NQ-UBTVQH15][decree 939/NQ-UBTVQH15]|13/12/2023|01/02/2024 |v2.0.0
 |From [721/NQ-UBTVQH15][decree 721/NQ-UBTVQH15] to<br>[730/NQ-UBTVQH15][decree 730/NQ-UBTVQH15]|13/02/2023|10/04/2023 |v1.0.4.1
 |[569/NQ-UBTVQH15][decree 569/NQ-UBTVQH15],<br>[570/NQ-UBTVQH15][decree 570/NQ-UBTVQH15]|11/08/2022|01/10/2022 |v1.0.3.1
 |[510/NQ-UBTVQH15][decree 510/NQ-UBTVQH15]|12/05/2022|01/07/2022|v1.0.2
@@ -378,3 +379,4 @@ Vietnam Map in the banner by [vietcentertourist](https://vietcentertourist.com/a
 [decree 570/NQ-UBTVQH15]: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-570-NQ-UBTVQH15-2022-thanh-lap-thi-xa-Chon-Thanh-Binh-Phuoc-525910.aspx
 [decree 721/NQ-UBTVQH15]: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-721-NQ-UBTVQH15-2023-thanh-lap-thi-xa-Tinh-Bien-va-phuong-thuoc-thi-xa-An-Giang-556498.aspx
 [decree 730/NQ-UBTVQH15]: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-730-NQ-UBTVQH15-2023-thanh-lap-thi-tran-Kim-Long-thi-tran-Tam-Hong-Vinh-Phuc-556504.aspx
+[decree 939/NQ-UBTVQH15]: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-939-NQ-UBTVQH15-2023-nhap-xa-Thieu-Phu-vao-thi-tran-Thieu-Hoa-Thanh-Hoa-592292.aspx
