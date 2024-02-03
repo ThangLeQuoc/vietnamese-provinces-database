@@ -46,7 +46,7 @@ func GenerateSQLPatch() {
 	*/
 
 	fileTimeSuffix := strings.ReplaceAll(strings.ReplaceAll(time.Now().Format(time.DateTime), ":", "_"), " ", "__")
-	outputFilePath := fmt.Sprintf("./output/postgres_mysql_generated_ImportData_vn_units_%s.sql", fileTimeSuffix)
+	outputFilePath := fmt.Sprintf("./output/postgresql_mysql_generated_ImportData_vn_units_%s.sql", fileTimeSuffix)
 	outputMsSqlFilePath := fmt.Sprintf("./output/mssql_generated_ImportData_vn_units_%s.sql", fileTimeSuffix)
 
 	file, err := os.OpenFile(outputFilePath, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
@@ -57,13 +57,13 @@ func GenerateSQLPatch() {
 	fileMsSql, err := os.OpenFile(outputMsSqlFilePath, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 
 	dataWriter := bufio.NewWriter(file)
-	dataWriter.WriteString("/* === Vietnamese Provinces Database Dataset === */\n")
+	dataWriter.WriteString("/* === Vietnamese Provinces Database Dataset for PostgreSQL/MySQL === */\n")
 	dataWriter.WriteString(fmt.Sprintf("/* Created at:  %s */\n", time.Now().Format(time.RFC1123Z)))
 	dataWriter.WriteString("/* Reference: https://github.com/ThangLeQuoc/vietnamese-provinces-database */\n")
 	dataWriter.WriteString("/* =============================================== */\n\n")
 
 	dataWriterMsSql := bufio.NewWriter(fileMsSql)
-	dataWriterMsSql.WriteString("/* === Vietnamese Provinces Database Dataset === */\n")
+	dataWriterMsSql.WriteString("/* === Vietnamese Provinces Database Dataset for Microsoft SQL Server === */\n")
 	dataWriterMsSql.WriteString(fmt.Sprintf("/* Created at:  %s */\n", time.Now().Format(time.RFC1123Z)))
 	dataWriterMsSql.WriteString("/* Reference: https://github.com/ThangLeQuoc/vietnamese-provinces-database */\n")
 	dataWriterMsSql.WriteString("/* =============================================== */\n\n")
@@ -232,7 +232,7 @@ func generateOracleSQLPatch(
 	}
 
 	dataWriter := bufio.NewWriter(file)
-	dataWriter.WriteString("/* === Vietnamese Provinces Database Dataset === */\n")
+	dataWriter.WriteString("/* === Vietnamese Provinces Database Dataset for Oracle === */\n")
 	dataWriter.WriteString(fmt.Sprintf("/* Created at:  %s */\n", time.Now().Format(time.RFC1123Z)))
 	dataWriter.WriteString("/* Reference: https://github.com/ThangLeQuoc/vietnamese-provinces-database */\n")
 	dataWriter.WriteString("/* =============================================== */\n\n")
