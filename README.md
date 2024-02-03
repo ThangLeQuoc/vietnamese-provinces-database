@@ -11,7 +11,7 @@ Don't forget to leave a :star: if you find this repository helpful, and to keep 
 ## Overview
 
 The author(s) of this repository is not associated with the **General Statistics Office of Vietnam**, nor the Vietnamese government.  
-The data of provinces, districts and wards are created base on the [API province data provided by the General Statistics Office of Vietnam website] [source goverment API].  
+The data of provinces, districts and wards are created base on the [API province data provided by the General Statistics Office of Vietnam website][source goverment API].  
 This dataset also include additional information apart from the original provinces, districts and wards data from the original data. Please see section [Additional change make by this repository](#additional-change-make-by-this-repository)
 
 ### Dataset releases and Government issued decrees
