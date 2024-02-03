@@ -12,6 +12,7 @@
 * - 569/NQ-UBTVQH15
 * - 570/NQ-UBTVQH15
 * - 721/NQ-UBTVQH15 to 730/NQ-UBTVQH15
+* - 938/NQ-UBTVQH15 to 939/NQ-UBTVQH15
 *
 * Example result:
 
@@ -104,6 +105,16 @@ WITH
 		-- Use the decree 730 as the milestone for the sake of simplicity. Since the patch 721_to_730_NQ-UBTVQH15 should cover all decree from 721 to 730/NQ-UBTVQH15
 		WHERE w.code IN ('08878', '09043')
 		GROUP BY 1,2
+	),
+	decree_938to939_NQ_UBTVQH15 AS (
+		SELECT '938~>939/NQ-UBTVQH15' as decree,
+		CASE WHEN w.name_en = 'Minh Tam' THEN FALSE 
+			ELSE TRUE 
+		END as up_to_date
+		FROM wards w
+		-- Use the decree 730 as the milestone for the sake of simplicity. Since the patch 721_to_730_NQ-UBTVQH15 should cover all decree from 721 to 730/NQ-UBTVQH15
+		WHERE w.code = '15829'
+		GROUP BY 1,2
 	)
 SELECT 
 decree_469_NQ_UBTVQH15.up_to_date AS nghidinh_469_NQ_UBTVQH15,
@@ -111,6 +122,7 @@ decree_510_NQ_UBTVQH15.up_to_date AS nghidinh_510_NQ_UBTVQH15,
 decree_569_NQ_UBTVQH15.up_to_date AS nghidinh_569_NQ_UBTVQH15,
 decree_570_NQ_UBTVQH15.up_to_date AS nghidinh_570_NQ_UBTVQH15,
 decree_721to730_NQ_UBTVQH15.up_to_date AS nghidinh_721_730_NQ_UBTVQH15,
+decree_938to939_NQ_UBTVQH15.up_to_date AS nghidinh_938_939_NQ_UBTVQH15,
 CASE
 	WHEN 
 		decree_469_NQ_UBTVQH15.up_to_date 
@@ -118,6 +130,7 @@ CASE
 		AND decree_569_NQ_UBTVQH15.up_to_date 
 		AND decree_570_NQ_UBTVQH15.up_to_date
 		AND decree_721to730_NQ_UBTVQH15.up_to_date
+		AND decree_938to939_NQ_UBTVQH15.up_to_date
 		THEN TRUE
 	ELSE FALSE
 END AS vietnamese_provinces_dataset_up_to_date
@@ -126,4 +139,5 @@ decree_469_NQ_UBTVQH15,
 decree_510_NQ_UBTVQH15,
 decree_569_NQ_UBTVQH15,
 decree_570_NQ_UBTVQH15,
-decree_721to730_NQ_UBTVQH15;
+decree_721to730_NQ_UBTVQH15,
+decree_938to939_NQ_UBTVQH15;
