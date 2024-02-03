@@ -14,16 +14,14 @@ import (
 	"golang.org/x/text/runes"
 	"golang.org/x/text/transform"
 	"golang.org/x/text/unicode/norm"
+
+	data_downloader "github.com/thanglequoc-vn-provinces/v2/dvhcvn_data_downloader"
 )
 
 var csv_file_path = "./resources/vn_provinces_ds__15_04_2023.csv"
 
-func CleanUpCSVFileBeforeRun() {
-	// TODO @thanglequoc: Clean up and replace "Thị Xã", "Thị Trấn", "Thành Phố" to the standard form before proceed
-	// Maybe replace double spaces and pre-trimming as well?
-}
-
 func BeginDumpingData() {
+	
 	records := readCSVAdministrativeRecords(csv_file_path)
 	/*
 	   Thing to do:
@@ -36,6 +34,21 @@ func BeginDumpingData() {
 	insertToDistricts(records)
 	insertToWards(records)
 
+	fmt.Println("Dumper operation finished")
+}
+
+func BeginDumpingDataWithDvhcvnDirectSource() {
+	dvhcvnUnits := data_downloader.FetchDvhcvnData()
+	csvRecords := ToCsvAdministrativeRows(dvhcvnUnits)
+	/*
+	   Thing to do:
+	   - insert to provinces table
+	   - insert to districts table
+	   - insert to wards table
+	*/
+	insertToProvinces(csvRecords)
+	insertToDistricts(csvRecords)
+	insertToWards(csvRecords)
 	fmt.Println("Dumper operation finished")
 }
 
