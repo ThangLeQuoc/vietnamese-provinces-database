@@ -11,7 +11,7 @@ Hãy để lại một ngôi sao :star: trên dự án này nếu bạn thấy n
 ## Tổng quan
 
 Tác giả của dự án không làm việc, hay đại diện cho **Tổng cục Thống kê Việt Nam**, lẫn chính phủ nước Việt Nam.
-Dữ liệu của Tỉnh thành, Quận huyện và Phường xã được tổng kết và hệ thống dựa trên tệp tin CSV (Excel) tải trực tiếp từ [trang web Đơn vị hành chính của Tổng cục Thống kê Việt Nam][source danhmuchanhchinh gov]  
+Dữ liệu của Tỉnh thành, Quận huyện và Phường xã được tổng kết và hệ thống dựa trên dữ liệu tỉnh thành được cung cấp bởi [API từ trang web Đơn vị hành chính của Tổng cục Thống kê Việt Nam][source goverment API].  
 Ngoài ra, cơ sở dữ liệu này còn có thêm những thông tin bổ sung, xin xem chi tiết trong phần **Các thay đổi thêm** ngay bên dưới.  
 
 ### Các phiên bản của bộ dữ liệu và Nghị định của Chính phủ
@@ -367,6 +367,7 @@ Bản đồ Việt Nam dùng làm banner từ [vietcentertourist](https://vietce
 
 [source danhmuchanhchinh gov]: https://danhmuchanhchinh.gso.gov.vn/
 [source government decree]: https://danhmuchanhchinh.gso.gov.vn/NghiDinh.aspx
+[source goverment API]: https://danhmuchanhchinh.gso.gov.vn/DMDVHC.asmx
 [source danhmuchanhchinh gov]: https://danhmuchanhchinh.gso.gov.vn/
 [source government decree]: https://danhmuchanhchinh.gso.gov.vn/NghiDinh.aspx
 [decree issued page]: https://danhmuchanhchinh.gso.gov.vn/NghiDinh.aspx

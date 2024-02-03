@@ -11,8 +11,8 @@ Don't forget to leave a :star: if you find this repository helpful, and to keep 
 ## Overview
 
 The author(s) of this repository is not associated with the **General Statistics Office of Vietnam**, nor the Vietnamese government.  
-The data of provinces, districts and wards are created base on the CSV file from the [General Statistics Office of Vietnam website][source danhmuchanhchinh gov].  
-This dataset also include additional information apart from the original provinces, districts and wards data from the original CSV file. Please see section [Additional change make by this repository](#additional-change-make-by-this-repository)
+The data of provinces, districts and wards are created base on the [API province data provided by the General Statistics Office of Vietnam website] [source goverment API].  
+This dataset also include additional information apart from the original provinces, districts and wards data from the original data. Please see section [Additional change make by this repository](#additional-change-make-by-this-repository)
 
 ### Dataset releases and Government issued decrees
 
@@ -371,6 +371,7 @@ Vietnam Map in the banner by [vietcentertourist](https://vietcentertourist.com/a
 
 [source danhmuchanhchinh gov]: https://danhmuchanhchinh.gso.gov.vn/
 [source government decree]: https://danhmuchanhchinh.gso.gov.vn/NghiDinh.aspx
+[source goverment API]: https://danhmuchanhchinh.gso.gov.vn/DMDVHC.asmx
 [decree issued page]: https://danhmuchanhchinh.gso.gov.vn/NghiDinh.aspx
 [decree 387/NQ-UBTVQH15]: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-387-NQ-UBTVQH15-thanh-lap-Toa-an-nhan-dan-thanh-pho-Tu-Son-thuoc-tinh-Bac-Ninh-490766.aspx
 [decree 469/NQ-UBTVQH15]: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-469-NQ-UBTVQH15-2022-thanh-lap-phuong-thuoc-thi-xa-Pho-Yen-Thai-Nguyen-504359.aspx
