@@ -21,7 +21,7 @@ WHERE code IN ('07774','07777','07783','07789','07792','07795','07798','07801','
 * (Special) Merge Thiệu Phú commune(xã) (15790) to Thiệu Hóa township(thị trấn) (15772)
 * Please update your existing record reference from 15790 to 15772
 */
-DELETE wards WHERE code = '15790';
+DELETE FROM wards WHERE code = '15790';
 
 /*
 * Change Minh Tâm commune(xã) to Hậu Hiền township(thị trấn)
