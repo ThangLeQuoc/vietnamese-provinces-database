@@ -5,7 +5,7 @@
 # Dữ liệu Tỉnh thành, Quận huyện Việt Nam
 
 Đây là tập lệnh cơ sở dữ liệu SQL của toàn bộ đơn vị hành chính Việt Nam, bao gồm **63 tỉnh thành** và các Quận huyện, phường xã liên quan.  
-Dữ liệu được cập nhật theo nghị định gần nhất: [730/NQ-UBTVQH15][source government decree]  
+Dữ liệu được cập nhật theo nghị định gần nhất: [939/NQ-UBTVQH15][source government decree]  
 Hãy để lại một ngôi sao :star: trên dự án này nếu bạn thấy nó hữu ích, và để nhận những thông báo về các bản release mới nhất. Điều này giúp khích lệ tinh thần của chúng tôi để chúng tôi tiếp tục cống hiến thêm các sản phẩm mã nguồn mở phục vụ cộng đồng.  
 
 ## Tổng quan
