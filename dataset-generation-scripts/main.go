@@ -12,7 +12,8 @@ func main() {
 	vn_common.BootstrapTemporaryDatasetStructure()
 	vn_common.PersistExistingProvincesDataset()
 
-	/* Before dumping data, you might need to go to dumper.go to adjust the csv filename for import */
-	dumper.BeginDumpingData()
+	// /* Before dumping data, you might need to go to dumper.go to adjust the csv filename for import */
+	// dumper.BeginDumpingData()
+	dumper.BeginDumpingDataWithDvhcvnDirectSource()
 	patch_writer.GenerateSQLPatch()
 }

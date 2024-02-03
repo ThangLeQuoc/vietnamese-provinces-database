@@ -10,6 +10,7 @@ require (
 )
 
 require (
+	github.com/dlclark/regexp2 v1.9.0
 	github.com/jinzhu/inflection v1.0.0 // indirect
 	github.com/tmthrgd/go-hex v0.0.0-20190904060850-447a3041c3bc // indirect
 	github.com/vmihailenco/msgpack/v5 v5.3.5 // indirect
