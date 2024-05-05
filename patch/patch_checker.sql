@@ -115,6 +115,16 @@ WITH
 		-- Use the decree 730 as the milestone for the sake of simplicity. Since the patch 721_to_730_NQ-UBTVQH15 should cover all decree from 721 to 730/NQ-UBTVQH15
 		WHERE w.code = '15829'
 		GROUP BY 1,2
+	),
+	decree_1012_1013_NQ_UBTVQH15 AS (
+		SELECT '1012-1013/NQ-UBTVQH15' as decree,
+		CASE WHEN d.administrative_unit_id = 6 THEN FALSE 
+			ELSE TRUE 
+		END as up_to_date
+		FROM districts d
+		-- Check if Go Cong has changed to City 
+		WHERE d.code = '816'
+		GROUP BY 1,2
 	)
 SELECT 
 decree_469_NQ_UBTVQH15.up_to_date AS nghidinh_469_NQ_UBTVQH15,
@@ -123,6 +133,7 @@ decree_569_NQ_UBTVQH15.up_to_date AS nghidinh_569_NQ_UBTVQH15,
 decree_570_NQ_UBTVQH15.up_to_date AS nghidinh_570_NQ_UBTVQH15,
 decree_721to730_NQ_UBTVQH15.up_to_date AS nghidinh_721_730_NQ_UBTVQH15,
 decree_938to939_NQ_UBTVQH15.up_to_date AS nghidinh_938_939_NQ_UBTVQH15,
+decree_1012_1013_NQ_UBTVQH15.up_to_date AS nghidinh_1012_1013_NQ_UBTVQH15,
 CASE
 	WHEN 
 		decree_469_NQ_UBTVQH15.up_to_date 
@@ -131,6 +142,7 @@ CASE
 		AND decree_570_NQ_UBTVQH15.up_to_date
 		AND decree_721to730_NQ_UBTVQH15.up_to_date
 		AND decree_938to939_NQ_UBTVQH15.up_to_date
+		AND decree_1012_1013_NQ_UBTVQH15.up_to_date
 		THEN TRUE
 	ELSE FALSE
 END AS vietnamese_provinces_dataset_up_to_date
@@ -140,4 +152,5 @@ decree_510_NQ_UBTVQH15,
 decree_569_NQ_UBTVQH15,
 decree_570_NQ_UBTVQH15,
 decree_721to730_NQ_UBTVQH15,
-decree_938to939_NQ_UBTVQH15;
+decree_938to939_NQ_UBTVQH15,
+decree_1012_1013_NQ_UBTVQH15;
