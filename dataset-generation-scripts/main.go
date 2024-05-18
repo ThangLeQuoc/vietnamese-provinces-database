@@ -3,17 +3,18 @@ package main
 import (
 	vn_common "github.com/thanglequoc-vn-provinces/v2/common"
 	dumper "github.com/thanglequoc-vn-provinces/v2/dumper"
-	patch_writer "github.com/thanglequoc-vn-provinces/v2/patch_writer"
+	dataset_writer "github.com/thanglequoc-vn-provinces/v2/dataset_writer"
 )
 
 func main() {
 	// pre-run
 	// Refresh temporary dataset, import existing dataset
 	vn_common.BootstrapTemporaryDatasetStructure()
-	vn_common.PersistExistingProvincesDataset()
+	vn_common.PersistExistingProvincesDataset() // @thangle: What the heck is the purpose?
 
-	// /* Before dumping data, you might need to go to dumper.go to adjust the csv filename for import */
-	// dumper.BeginDumpingData()
 	dumper.BeginDumpingDataWithDvhcvnDirectSource()
-	patch_writer.GenerateSQLPatch()
+	//patch_writer.GenerateSQLPatch()
+
+	dataset_writer.ReadAndGenerateSQLDatasets()
+
 }

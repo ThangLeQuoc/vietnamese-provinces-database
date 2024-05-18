@@ -8,7 +8,9 @@ import (
 	"os"
 	"regexp"
 	"strings"
+	"time"
 	"unicode"
+	"bufio"
 
 	vn_common "github.com/thanglequoc-vn-provinces/v2/common"
 	"golang.org/x/text/runes"
@@ -18,34 +20,27 @@ import (
 	data_downloader "github.com/thanglequoc-vn-provinces/v2/dvhcvn_data_downloader"
 )
 
-var csv_file_path = "./resources/vn_provinces_ds__15_04_2023.csv"
-
-func BeginDumpingData() {
-	
-	records := readCSVAdministrativeRecords(csv_file_path)
-	/*
-	   Thing to do:
-	   - insert to provinces table
-	   - insert to districts table
-	   - insert to wards table
-	   -
-	*/
-	insertToProvinces(records)
-	insertToDistricts(records)
-	insertToWards(records)
-
-	fmt.Println("Dumper operation finished")
-}
 
 func BeginDumpingDataWithDvhcvnDirectSource() {
-	dvhcvnUnits := data_downloader.FetchDvhcvnData()
+	fmt.Print("(Optional) Please specify the data date (dd/MM/YYYY). Leave empty to go with default option: ")
+
+	reader := bufio.NewReader(os.Stdin)	
+
+	userInput, _ := reader.ReadString('\n')
+	userInput = strings.TrimSpace(userInput)
+	fmt.Println("Selected date: ", userInput)
+
+	var dataSetTime time.Time
+	if (len(strings.TrimSpace(userInput)) == 0) {
+		fmt.Println("No input is recorded, using tomorrow as the default day...")
+		dataSetTime = time.Now().Add(time.Hour * 24)
+	} else {
+		dataSetTime, _ = time.Parse("02/01/2006", userInput) // dd/MM/yyyy
+	}
+
+	dvhcvnUnits := data_downloader.FetchDvhcvnData(dataSetTime)
 	csvRecords := ToCsvAdministrativeRows(dvhcvnUnits)
-	/*
-	   Thing to do:
-	   - insert to provinces table
-	   - insert to districts table
-	   - insert to wards table
-	*/
+
 	insertToProvinces(csvRecords)
 	insertToDistricts(csvRecords)
 	insertToWards(csvRecords)

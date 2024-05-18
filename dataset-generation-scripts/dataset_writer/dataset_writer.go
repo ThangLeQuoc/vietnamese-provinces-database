@@ -1,4 +1,4 @@
-package patch_writer
+package dataset_writer
 
 import (
 	"bufio"
@@ -7,7 +7,9 @@ import (
 	"os"
 	"strings"
 	"time"
+
 	vn_common "github.com/thanglequoc-vn-provinces/v2/common"
+	dataset_file_writer "github.com/thanglequoc-vn-provinces/v2/dataset_writer/dataset_file_writer"
 )
 
 // region insert statement
@@ -33,11 +35,12 @@ const insertDistrictWardValueMsSqlTemplate string = "('%s',N'%s',N'%s',N'%s',N'%
 
 const batchInsertItemSize int = 50
 
+// Deprecated: Use ReadAndGenerateSQLDatasets() insteads
 func GenerateSQLPatch() {
 
 	// Clean up the output folder
 	os.RemoveAll("./output")
-	os.MkdirAll("./output", 0644)
+	os.MkdirAll("./output", 0746)
 
 	/*
 		1. Read from db
@@ -45,7 +48,7 @@ func GenerateSQLPatch() {
 		3. Write to patch file
 	*/
 
-	fileTimeSuffix := strings.ReplaceAll(strings.ReplaceAll(time.Now().Format(time.DateTime), ":", "_"), " ", "__")
+	fileTimeSuffix := strings.ReplaceAll(strings.ReplaceAll(time.Now().Format(time.DateTime), ":", "_"), " ", "__") // done
 	outputFilePath := fmt.Sprintf("./output/postgresql_mysql_generated_ImportData_vn_units_%s.sql", fileTimeSuffix)
 	outputMsSqlFilePath := fmt.Sprintf("./output/mssql_generated_ImportData_vn_units_%s.sql", fileTimeSuffix)
 
@@ -54,6 +57,7 @@ func GenerateSQLPatch() {
 		log.Fatal("Unable to write to file", err)
 		panic(err)
 	}
+
 	fileMsSql, err := os.OpenFile(outputMsSqlFilePath, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 
 	dataWriter := bufio.NewWriter(file)
@@ -70,7 +74,7 @@ func GenerateSQLPatch() {
 
 	dataWriter.WriteString("-- DATA for administrative_regions --\n")
 	dataWriterMsSql.WriteString("-- DATA for administrative_regions --\n")
-	regions := GetAllAdministrativeRegions()
+	regions := getAllAdministrativeRegions()
 	for _, r := range regions {
 		insertLine := fmt.Sprintf(insertAdministrativeRegionTemplate,
 			r.Id, r.Name, r.NameEn, r.CodeName, r.CodeNameEn)
@@ -87,7 +91,7 @@ func GenerateSQLPatch() {
 	dataWriter.WriteString("-- DATA for administrative_units --\n")
 	dataWriterMsSql.WriteString("-- DATA for administrative_units --\n")
 
-	administrativeUnits := GetAllAdministrativeUnits()
+	administrativeUnits := getAllAdministrativeUnits()
 	for _, u := range administrativeUnits {
 		insertLine := fmt.Sprintf(insertAdministrativeUnitTemplate,
 			u.Id, u.FullName, u.FullNameEn, u.ShortName, u.ShortNameEn, u.CodeName, u.CodeNameEn)
@@ -214,10 +218,59 @@ func GenerateSQLPatch() {
 	log.Print("Dataset SQL patch have been created successfully to ./output folder")
 }
 
+/*
+@thanglequoc: Add comment for this method
+*/
+func ReadAndGenerateSQLDatasets() {
+
+	// Clean up the output folder
+	os.RemoveAll("./output")
+	os.MkdirAll("./output", 0746)
+
+	regions := getAllAdministrativeRegions()
+	administrativeUnits := getAllAdministrativeUnits()
+	provinces := getAllProvinces()
+	districts := getAllDistricts()
+	wards := getAllWards()	
+
+	// Postgresql & MySQL
+	postgresMySQLDatasetFileWriter := dataset_file_writer.PostgresMySQLDatasetFileWriter {
+		OutputFilePath: "./output/postgresql_mysql_generated_ImportData_vn_units_%s.sql",
+	}
+	_, err := postgresMySQLDatasetFileWriter.WriteToFile(regions, administrativeUnits, provinces, districts, wards)
+	if (err != nil) {
+		log.Fatal("Unable to generate Postgresql-MySQL Dataset", err)
+	} else {
+		fmt.Println("Postgresql-MySQL Dataset successfully generated")
+	}
+
+	// Mssql
+	mssqlDatasetFileWriter := dataset_file_writer.MssqlDatasetFileWriter {
+		OutputFilePath: "./output/mssql_generated_ImportData_vn_units_%s.sql",
+	}
+	_, err = mssqlDatasetFileWriter.WriteToFile(regions, administrativeUnits, provinces, districts, wards)
+	if (err != nil) {
+		log.Fatal("Unable to generate Mssql Dataset", err)
+	} else {
+		fmt.Println("Mssql Dataset successfully generated")
+	}
+
+	// Oracle
+	oracleDatasetFileWriter := dataset_file_writer.OracleDatasetFileWriter {
+		OutputFilePath: "./output/oracle_generated_ImportData_vn_units_%s.sql",
+	}
+	_, err = oracleDatasetFileWriter.WriteToFile(regions, administrativeUnits, provinces, districts, wards)
+	if (err != nil) {
+		log.Fatal("Unable to generate Oracle Dataset", err)
+	} else {
+		fmt.Println("Oracle Dataset successfully generated")
+	}
+}
+
 // Oracle database is a bit special...
 func generateOracleSQLPatch(
 	administrativeUnits []vn_common.AdministrativeUnit,
-	regions []vn_common.AdministrativeRegion, 
+	regions []vn_common.AdministrativeRegion,
 	provinces []vn_common.Province,
 	districts []vn_common.District,
 	wards []vn_common.Ward) {
@@ -244,7 +297,7 @@ func generateOracleSQLPatch(
 		dataWriter.WriteString(insertLine + "\n")
 	}
 	dataWriter.WriteString("-- ----------------------------------\n\n")
-	
+
 	dataWriter.WriteString("-- DATA for administrative_units --\n")
 	for _, u := range administrativeUnits {
 		insertLine := fmt.Sprintf(insertAdministrativeUnitTemplate,
@@ -252,7 +305,6 @@ func generateOracleSQLPatch(
 		dataWriter.WriteString(insertLine + "\n")
 	}
 	dataWriter.WriteString("-- ----------------------------------\n\n")
-
 
 	// variable to generate batch insert statement
 	counter := 0
@@ -284,7 +336,6 @@ func generateOracleSQLPatch(
 	}
 	dataWriter.WriteString("-- ----------------------------------\n\n")
 
-
 	const insertDistrictOracleTemplate string = "\tINTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES('%s','%s','%s','%s','%s','%s','%s',%d)"
 	dataWriter.WriteString("-- DATA for districts --\n")
 	counter = 0
@@ -310,8 +361,6 @@ func generateOracleSQLPatch(
 		}
 	}
 	dataWriter.WriteString("-- ----------------------------------\n\n")
-
-
 
 	// ward insert statement
 	const insertWardOracleTemplate string = "\tINTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES('%s','%s','%s','%s','%s','%s','%s',%d)"
