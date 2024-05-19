@@ -10,11 +10,11 @@ func main() {
 	// pre-run
 	// Refresh temporary dataset, import existing dataset
 	vn_common.BootstrapTemporaryDatasetStructure()
-	vn_common.PersistExistingProvincesDataset() // @thangle: What the heck is the purpose?
-
 	dumper.BeginDumpingDataWithDvhcvnDirectSource()
-	//patch_writer.GenerateSQLPatch()
-
 	dataset_writer.ReadAndGenerateSQLDatasets()
+
+	/* Thing to improve
+	Get and generate record set directly, without step to write to temporary database.
+	*/
 
 }

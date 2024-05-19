@@ -3,7 +3,6 @@ package common
 import (
 	"context"
 	"database/sql"
-	"fmt"
 	"github.com/joho/godotenv"
 	"github.com/uptrace/bun"
 	"github.com/uptrace/bun/dialect/pgdialect"
@@ -28,8 +27,9 @@ func GetPostgresDBConnection() *bun.DB {
 	return db
 }
 
-func BootstrapTemporaryDatasetStructure() {
-	bytesVal, err := os.ReadFile("./resources/db_table_init.sql")
+// Useful method to execute SQL script located in this project
+func ExecuteSQLScript(pathToSQL string) error {
+	bytesVal, err := os.ReadFile(pathToSQL)
 	if err != nil {
 		panic(err)
 	}
@@ -39,29 +39,7 @@ func BootstrapTemporaryDatasetStructure() {
 	_, err = db.ExecContext(ctx, query)
 	ctx.Done()
 	if err != nil {
-		panic(err)
+		return err
 	}
-
-	fmt.Println("Temporary Provinces tables created")
-}
-
-func PersistExistingProvincesDataset() {
-
-	// TODO @thangle: Improvement - Download the existing dataset patch on GitHub
-	// https://raw.githubusercontent.com/ThangLeQuoc/vietnamese-provinces-database/master/postgresql/ImportData_vn_units.sql
-
-	bytesVal, err := os.ReadFile("./resources/db_table_existing_dataset_patch.sql")
-	if err != nil {
-		panic(err)
-	}
-	query := string(bytesVal)
-	db := GetPostgresDBConnection()
-	ctx := context.Background()
-	_, err = db.ExecContext(ctx, query)
-	ctx.Done()
-	if err != nil {
-		panic(err)
-	}
-
-	fmt.Println("Existing dataset patch imported")
+	return nil
 }

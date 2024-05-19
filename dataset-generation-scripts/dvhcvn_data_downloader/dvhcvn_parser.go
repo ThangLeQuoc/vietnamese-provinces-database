@@ -1,8 +1,8 @@
 package dvhcvn_data_downloader
 
 import (
-	"regexp"
 	"github.com/dlclark/regexp2"
+	"regexp"
 	"strings"
 )
 
@@ -13,35 +13,35 @@ E.g: <MaTinh>68</MaTinh><TenTinh>Tỉnh Lâm Đồng</TenTinh><MaQuanHuyen>675</
 */
 // TODO @thangle #Test: Add test for this one
 func toDvhcvnModel(s string) DvhcvnModel {
-	maTinhRegex := regexp.MustCompile("<MaTinh>(.+)<\\/MaTinh>")
-	maTinh := sanitizeString(maTinhRegex.FindStringSubmatch(s)[1])
+	proviceCodeRegex := regexp.MustCompile(`<MaTinh>(.+)</MaTinh>`)
+	proviceCode := sanitizeString(proviceCodeRegex.FindStringSubmatch(s)[1])
 
-	tenTinhRegex := regexp.MustCompile("<TenTinh>(.+)<\\/TenTinh>")
-	tenTinh := sanitizeString(tenTinhRegex.FindStringSubmatch(s)[1])
+	proviceNameRegex := regexp.MustCompile(`<TenTinh>(.+)</TenTinh>`)
+	proviceName := sanitizeString(proviceNameRegex.FindStringSubmatch(s)[1])
 
-	maQuanHuyenRegex := regexp.MustCompile("<MaQuanHuyen>(.+)<\\/MaQuanHuyen>")
-	maQuanHuyen := sanitizeString(maQuanHuyenRegex.FindStringSubmatch(s)[1])
+	districtCodeRegex := regexp.MustCompile(`<MaQuanHuyen>(.+)</MaQuanHuyen>`)
+	districtCode := sanitizeString(districtCodeRegex.FindStringSubmatch(s)[1])
 
-	tenQuanHuyenRegex := regexp.MustCompile("<TenQuanHuyen>(.+)<\\/TenQuanHuyen>")
-	tenQuanHuyen := sanitizeString(tenQuanHuyenRegex.FindStringSubmatch(s)[1])
+	districtNameRegex := regexp.MustCompile(`<TenQuanHuyen>(.+)</TenQuanHuyen>`)
+	districtName := sanitizeString(districtNameRegex.FindStringSubmatch(s)[1])
 
-	maPhuongXaRegex := regexp.MustCompile("<MaPhuongXa>(.+)<\\/MaPhuongXa>")
-	maPhuongXa := sanitizeString(maPhuongXaRegex.FindStringSubmatch(s)[1])
+	wardCodeRegex := regexp.MustCompile(`<MaPhuongXa>(.+)</MaPhuongXa>`)
+	wardCode := sanitizeString(wardCodeRegex.FindStringSubmatch(s)[1])
 
-	tenPhuongXaRegex := regexp.MustCompile("<TenPhuongXa>(.+)<\\/TenPhuongXa>")
-	tenPhuongXa := sanitizeString(tenPhuongXaRegex.FindStringSubmatch(s)[1])
+	wardNameRegex := regexp.MustCompile(`<TenPhuongXa>(.+)</TenPhuongXa>`)
+	wardName := sanitizeString(wardNameRegex.FindStringSubmatch(s)[1])
 
-	loaiHinhRegex := regexp.MustCompile("<LoaiHinh>(.+)<\\/LoaiHinh>")
-	loaiHinh := sanitizeString(loaiHinhRegex.FindStringSubmatch(s)[1])
+	wardUnitRegex := regexp.MustCompile(`<LoaiHinh>(.+)</LoaiHinh>`)
+	wardUnit := sanitizeString(wardUnitRegex.FindStringSubmatch(s)[1])
 
 	return DvhcvnModel{
-		MaTinh:       maTinh,
-		TenTinh:      convertStandardUnitName(tenTinh),
-		MaQuanHuyen:  maQuanHuyen,
-		TenQuanHuyen: convertStandardUnitName(tenQuanHuyen),
-		MaPhuongXa:   maPhuongXa,
-		TenPhuongXa:  convertStandardUnitName(tenPhuongXa),
-		LoaiHinh:     loaiHinh,
+		ProvinceCode: proviceCode,
+		ProvinceName: convertStandardUnitName(proviceName),
+		DistrictCode: districtCode,
+		DistrictName: convertStandardUnitName(districtName),
+		WardCode:     wardCode,
+		WardName:     convertStandardUnitName(wardName),
+		WardUnit:     wardUnit,
 	}
 }
 

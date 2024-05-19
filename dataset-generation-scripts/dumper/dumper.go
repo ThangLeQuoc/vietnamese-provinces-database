@@ -2,9 +2,7 @@ package dumper
 
 import (
 	"context"
-	"encoding/csv"
 	"fmt"
-	"log"
 	"os"
 	"regexp"
 	"strings"
@@ -39,15 +37,15 @@ func BeginDumpingDataWithDvhcvnDirectSource() {
 	}
 
 	dvhcvnUnits := data_downloader.FetchDvhcvnData(dataSetTime)
-	csvRecords := ToCsvAdministrativeRows(dvhcvnUnits)
 
-	insertToProvinces(csvRecords)
-	insertToDistricts(csvRecords)
-	insertToWards(csvRecords)
+
+	insertToProvinces(dvhcvnUnits)
+	insertToDistricts(dvhcvnUnits)
+	insertToWards(dvhcvnUnits)
 	fmt.Println("Dumper operation finished")
 }
 
-func insertToWards(administrativeRecordModels []CsvAdministrativeRow) {
+func insertToWards(administrativeRecordModels []data_downloader.DvhcvnModel) {
 	db := vn_common.GetPostgresDBConnection()
 	ctx := context.Background()
 	totalWard := 0
@@ -98,7 +96,7 @@ func insertToWards(administrativeRecordModels []CsvAdministrativeRow) {
 	fmt.Printf("Inserted %d wards to tables\n", totalWard)
 }
 
-func insertToDistricts(administrativeRecordModels []CsvAdministrativeRow) {
+func insertToDistricts(administrativeRecordModels []data_downloader.DvhcvnModel) {
 	districtsMap := make(map[string]string)
 	districtProvinceMap := make(map[string]string)
 	var districtsMapKey []string
@@ -153,7 +151,7 @@ func insertToDistricts(administrativeRecordModels []CsvAdministrativeRow) {
 	fmt.Printf("Inserted %d districts to tables\n", len(districtsMapKey))
 }
 
-func insertToProvinces(administrativeRecordModels []CsvAdministrativeRow) {
+func insertToProvinces(administrativeRecordModels []data_downloader.DvhcvnModel) {
 
 	provincesMap := make(map[string]string)
 	var provincesMapKey []string
@@ -199,48 +197,6 @@ func insertToProvinces(administrativeRecordModels []CsvAdministrativeRow) {
 	fmt.Printf("Inserted %d provinces to tables\n", len(provincesMapKey))
 }
 
-/*
-Read from the csv and parse to an array of CsvAdministrativeRow
-*/
-func readCSVAdministrativeRecords(csvFilePath string) []CsvAdministrativeRow {
-	csvRows := readCsvFile(csvFilePath)
-	var administrativeRecords []CsvAdministrativeRow
-
-	// we skip the first row, which is the csv column header
-	for _, row := range csvRows[1:] {
-		administrativeRecords = append(administrativeRecords,
-			CsvAdministrativeRow{
-				ProvinceName: row[0],
-				ProvinceCode: row[1],
-				DistrictName: row[2],
-				DistrictCode: row[3],
-				WardName:     row[4],
-				WardCode:     row[5],
-				WardUnitName: row[6],
-				EnglishName:  row[7],
-			})
-	}
-	return administrativeRecords
-}
-
-func readCsvFile(filePath string) [][]string {
-	var file *os.File
-	var err error
-
-	file, err = os.Open(filePath)
-	if err != nil {
-		log.Fatal("Unable to read csv file", err)
-	}
-	defer file.Close()
-
-	csvReader := csv.NewReader(file)
-	records, err := csvReader.ReadAll()
-	if err != nil {
-		log.Fatal("Unable to read csv records", err)
-	}
-	return records
-}
-
 func getAdministrativeUnit_ProvinceLevel(provinceFullName string) int {
 	if strings.Contains(provinceFullName, "Thành phố") {
 		return 1
@@ -253,6 +209,8 @@ func getAdministrativeUnit_ProvinceLevel(provinceFullName string) int {
 
 func getAdministrativeUnit_DistrictLevel(districtFullName string) int {
 	if strings.Contains(districtFullName, "Thành phố") {
+
+		// TODO FIXME @thangle: Avoid hard code, create a common place to set special setting
 		if strings.Contains(districtFullName, "Thủ Đức") { // handle a special case, only Thủ Đức is the municipal city
 			return 3
 		}
@@ -270,7 +228,13 @@ func getAdministrativeUnit_DistrictLevel(districtFullName string) int {
 	panic("Unable to determine administrative unit name from district: " + districtFullName)
 }
 
+// TODO FIXME @thangle: This is unsafe!, fix this
+// Is it safe to detect from <LoaiHinh> ?
+// Add unit test for this
 func getAdministrativeUnit_WardLevel(wardFullName string) int {
+
+	// FIXME @thangle: this is not correct check, e.g: "Xã Liên Phường"
+	// Must change to HasPrefix
 	if strings.Contains(wardFullName, "Phường") {
 		return 8
 	}
