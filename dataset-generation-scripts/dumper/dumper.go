@@ -2,13 +2,13 @@ package dumper
 
 import (
 	"context"
-	"encoding/csv"
 	"fmt"
-	"log"
 	"os"
 	"regexp"
 	"strings"
+	"time"
 	"unicode"
+	"bufio"
 
 	vn_common "github.com/thanglequoc-vn-provinces/v2/common"
 	"golang.org/x/text/runes"
@@ -18,41 +18,34 @@ import (
 	data_downloader "github.com/thanglequoc-vn-provinces/v2/dvhcvn_data_downloader"
 )
 
-var csv_file_path = "./resources/vn_provinces_ds__15_04_2023.csv"
-
-func BeginDumpingData() {
-	
-	records := readCSVAdministrativeRecords(csv_file_path)
-	/*
-	   Thing to do:
-	   - insert to provinces table
-	   - insert to districts table
-	   - insert to wards table
-	   -
-	*/
-	insertToProvinces(records)
-	insertToDistricts(records)
-	insertToWards(records)
-
-	fmt.Println("Dumper operation finished")
-}
 
 func BeginDumpingDataWithDvhcvnDirectSource() {
-	dvhcvnUnits := data_downloader.FetchDvhcvnData()
-	csvRecords := ToCsvAdministrativeRows(dvhcvnUnits)
-	/*
-	   Thing to do:
-	   - insert to provinces table
-	   - insert to districts table
-	   - insert to wards table
-	*/
-	insertToProvinces(csvRecords)
-	insertToDistricts(csvRecords)
-	insertToWards(csvRecords)
+	fmt.Print("(Optional) Please specify the data date (dd/MM/YYYY). Leave empty to go with default option: ")
+
+	reader := bufio.NewReader(os.Stdin)	
+
+	userInput, _ := reader.ReadString('\n')
+	userInput = strings.TrimSpace(userInput)
+	fmt.Println("Selected date: ", userInput)
+
+	var dataSetTime time.Time
+	if (len(strings.TrimSpace(userInput)) == 0) {
+		fmt.Println("No input is recorded, using tomorrow as the default day...")
+		dataSetTime = time.Now().Add(time.Hour * 24)
+	} else {
+		dataSetTime, _ = time.Parse("02/01/2006", userInput) // dd/MM/yyyy
+	}
+
+	dvhcvnUnits := data_downloader.FetchDvhcvnData(dataSetTime)
+
+
+	insertToProvinces(dvhcvnUnits)
+	insertToDistricts(dvhcvnUnits)
+	insertToWards(dvhcvnUnits)
 	fmt.Println("Dumper operation finished")
 }
 
-func insertToWards(administrativeRecordModels []CsvAdministrativeRow) {
+func insertToWards(administrativeRecordModels []data_downloader.DvhcvnModel) {
 	db := vn_common.GetPostgresDBConnection()
 	ctx := context.Background()
 	totalWard := 0
@@ -103,7 +96,7 @@ func insertToWards(administrativeRecordModels []CsvAdministrativeRow) {
 	fmt.Printf("Inserted %d wards to tables\n", totalWard)
 }
 
-func insertToDistricts(administrativeRecordModels []CsvAdministrativeRow) {
+func insertToDistricts(administrativeRecordModels []data_downloader.DvhcvnModel) {
 	districtsMap := make(map[string]string)
 	districtProvinceMap := make(map[string]string)
 	var districtsMapKey []string
@@ -158,7 +151,7 @@ func insertToDistricts(administrativeRecordModels []CsvAdministrativeRow) {
 	fmt.Printf("Inserted %d districts to tables\n", len(districtsMapKey))
 }
 
-func insertToProvinces(administrativeRecordModels []CsvAdministrativeRow) {
+func insertToProvinces(administrativeRecordModels []data_downloader.DvhcvnModel) {
 
 	provincesMap := make(map[string]string)
 	var provincesMapKey []string
@@ -205,89 +198,71 @@ func insertToProvinces(administrativeRecordModels []CsvAdministrativeRow) {
 }
 
 /*
-Read from the csv and parse to an array of CsvAdministrativeRow
+Determine the province administrative unit id from its name
 */
-func readCSVAdministrativeRecords(csvFilePath string) []CsvAdministrativeRow {
-	csvRows := readCsvFile(csvFilePath)
-	var administrativeRecords []CsvAdministrativeRow
-
-	// we skip the first row, which is the csv column header
-	for _, row := range csvRows[1:] {
-		administrativeRecords = append(administrativeRecords,
-			CsvAdministrativeRow{
-				ProvinceName: row[0],
-				ProvinceCode: row[1],
-				DistrictName: row[2],
-				DistrictCode: row[3],
-				WardName:     row[4],
-				WardCode:     row[5],
-				WardUnitName: row[6],
-				EnglishName:  row[7],
-			})
-	}
-	return administrativeRecords
-}
-
-func readCsvFile(filePath string) [][]string {
-	var file *os.File
-	var err error
-
-	file, err = os.Open(filePath)
-	if err != nil {
-		log.Fatal("Unable to read csv file", err)
-	}
-	defer file.Close()
-
-	csvReader := csv.NewReader(file)
-	records, err := csvReader.ReadAll()
-	if err != nil {
-		log.Fatal("Unable to read csv records", err)
-	}
-	return records
-}
-
 func getAdministrativeUnit_ProvinceLevel(provinceFullName string) int {
-	if strings.Contains(provinceFullName, "Thành phố") {
+	specialUnit, matchSpecialCase := SpecialAdministrativeUnitMap[provinceFullName]
+	if (matchSpecialCase) {
+		return specialUnit
+	}
+
+	if strings.HasPrefix(provinceFullName, "Thành phố") {
 		return 1
 	}
-	if strings.Contains(provinceFullName, "Tỉnh") {
+	if strings.HasPrefix(provinceFullName, "Tỉnh") {
 		return 2
 	}
 	panic("Unable to determine administrative unit name from province: " + provinceFullName)
 }
 
+/*
+Determine the district administrative unit id from its name
+*/
 func getAdministrativeUnit_DistrictLevel(districtFullName string) int {
-	if strings.Contains(districtFullName, "Thành phố") {
-		if strings.Contains(districtFullName, "Thủ Đức") { // handle a special case, only Thủ Đức is the municipal city
-			return 3
-		}
+	specialUnit, matchSpecialCase := SpecialAdministrativeUnitMap[districtFullName]
+	if (matchSpecialCase) {
+		return specialUnit
+	}
+	
+	if strings.HasPrefix(districtFullName, "Thành phố") {
 		return 4
 	}
-	if strings.Contains(districtFullName, "Quận") {
+	if strings.HasPrefix(districtFullName, "Quận") {
 		return 5
 	}
-	if strings.Contains(districtFullName, "Thị xã") {
+	if strings.HasPrefix(districtFullName, "Thị xã") {
 		return 6
 	}
-	if strings.Contains(districtFullName, "Huyện") {
+	if strings.HasPrefix(districtFullName, "Huyện") {
 		return 7
 	}
 	panic("Unable to determine administrative unit name from district: " + districtFullName)
 }
 
+/*
+Determine the ward administrative unit id from its name
+*/
 func getAdministrativeUnit_WardLevel(wardFullName string) int {
-	if strings.Contains(wardFullName, "Phường") {
+	specialUnit, matchSpecialCase := SpecialAdministrativeUnitMap[wardFullName]
+	if (matchSpecialCase) {
+		return specialUnit
+	}
+
+	if strings.HasPrefix(wardFullName, "Phường") {
 		return 8
 	}
-	if strings.Contains(wardFullName, "Thị trấn") {
+	if strings.HasPrefix(wardFullName, "Thị trấn") {
 		return 9
 	}
-	if strings.Contains(wardFullName, "Xã") {
+	if strings.HasPrefix(wardFullName, "Xã") {
 		return 10
 	}
 	panic("Unable to determine administrative unit name from ward: " + wardFullName)
 }
 
+/*
+Normalize string to remove Vietnamese special character and sign
+*/
 func normalizeString(source string) string {
 	trans := transform.Chain(norm.NFD, runes.Remove(runes.In(unicode.Mn)), norm.NFC)
 	result, _, _ := transform.String(trans, source)
@@ -296,6 +271,9 @@ func normalizeString(source string) string {
 	return result
 }
 
+/*
+Generate code name from the name
+*/
 func toCodeName(shortName string) string {
 	shortName = strings.ReplaceAll(shortName, " - ", " ")
 	shortName = strings.ReplaceAll(shortName, "'", "") // to handle special name with single quote

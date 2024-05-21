@@ -1,15 +1,5 @@
 package dumper
 
-type CsvAdministrativeRow struct {
-	ProvinceName string
-	ProvinceCode string
-	DistrictName string
-	DistrictCode string
-	WardName     string
-	WardCode     string
-	WardUnitName string
-	EnglishName  string
-}
 
 var AdministrativeUnitNames [8]string = [...]string{
 	"Thành phố",
@@ -22,6 +12,19 @@ var AdministrativeUnitNames [8]string = [...]string{
 	"Xã",
 }
 
+/*
+Short name definition of Administrative Unit from top to bottom
+- Municipality (Thành phố trực thuộc trung ương)
+- Province (Tỉnh)
+- Municipal city (Thành phố thuộc thành phố trực thuộc trung ương)
+- Provincial city (Thành phố thuộc tỉnh)
+- Urban district (Quận)
+- District-level town (Thị xã)
+- District (Huyện)
+- Ward (Phường)
+- Commune-level town (Thị trấn)
+- Commune (Xã)
+*/
 var AdministrativeUnitNamesShortNameMap_vn = map[int]string {
 	1: "Thành phố",
 	2: "Tỉnh",
@@ -34,7 +37,6 @@ var AdministrativeUnitNamesShortNameMap_vn = map[int]string {
 	9: "Thị trấn",
 	10: "Xã",
 }
-
 var AdministrativeUnitNamesShortNameMap_en = map[int]string {
 	1: "City",
 	2: "Province",
@@ -48,6 +50,10 @@ var AdministrativeUnitNamesShortNameMap_en = map[int]string {
 	10: "Commune",
 }
 
+/*
+Mapping definition for the province code and the region that it belongs to
+Define as constant mapping since the province geographical data would likely to be never changed
+*/
 var ProvinceRegionMap = map[string]int {
 	"01": 3,
 	"26": 3,
@@ -112,4 +118,13 @@ var ProvinceRegionMap = map[string]int {
 	"93": 8,
 	"94": 8,
 	"95": 8,
+}
+
+/*
+Handle Special administrative unit mapping for some corner case that cannot be detect just
+by evaluating the prefix of the name
+At the moment, there is only one Municipal city is special
+*/
+var SpecialAdministrativeUnitMap = map[string]int {
+	"Thành phố Thủ Đức": 3,
 }
