@@ -11,7 +11,6 @@ Create the DvhcvnModel from the dvhcvn response object.
 Input should be the dvhcvn content within the <TABLE> tag
 E.g: <MaTinh>68</MaTinh><TenTinh>Tỉnh Lâm Đồng</TenTinh><MaQuanHuyen>675</MaQuanHuyen><TenQuanHuyen>Huyện Lạc Dương</TenQuanHuyen><MaPhuongXa>24846</MaPhuongXa><TenPhuongXa>Thị trấn Lạc Dương</TenPhuongXa><LoaiHinh>Thị trấn</LoaiHinh>
 */
-// TODO @thangle #Test: Add test for this one
 func toDvhcvnModel(s string) DvhcvnModel {
 	proviceCodeRegex := regexp.MustCompile(`<MaTinh>(.+)</MaTinh>`)
 	proviceCode := sanitizeString(proviceCodeRegex.FindStringSubmatch(s)[1])
@@ -50,7 +49,6 @@ Standardize Adminstrative Unit name to follow correct Vietnamese typography
 E.g: Thành phố, instead of Thành Phố
 This method is put to use because some district/ward result from DVHCVN API does not follow the unify typography pattern
 */
-// TODO @thangle #Test : Add unit test for this one
 func convertStandardUnitName(s string) string {
 	if strings.HasPrefix(s, "Thành Phố") {
 		return strings.Replace(s, "Thành Phố", "Thành phố", 1)
@@ -67,7 +65,6 @@ func convertStandardUnitName(s string) string {
 /*
 Extract the XML response from DVHCVN api to DvhcvnModels
 */
-// TODO @thanglequoc: Add test
 func extractDvhcvnUnits(res string) []DvhcvnModel {
 	regexPattern := regexp2.MustCompile(`(?<=<TABLE\b[^>]*>)([\s\S\n]*?)(?=<\/TABLE>)`, 0)
 	dvhcvnUnitBlocks := regexp2FindAllString(regexPattern, res)
@@ -89,7 +86,6 @@ func regexp2FindAllString(re *regexp2.Regexp, s string) []string {
 	return matches
 }
 
-// TODO @thanglequoc: Add test
 func sanitizeString(s string) string {
 	return strings.Trim(
 		strings.ReplaceAll(s, "  ", " "), " ")
