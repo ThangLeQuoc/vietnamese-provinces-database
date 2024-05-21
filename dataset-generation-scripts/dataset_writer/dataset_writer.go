@@ -8,7 +8,7 @@ import (
 )
 
 /*
-@thanglequoc: Add comment for this method
+Generate the Vietnamese Provinces Dataset SQL files
 */
 func ReadAndGenerateSQLDatasets() {
 
