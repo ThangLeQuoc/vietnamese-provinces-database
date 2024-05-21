@@ -197,56 +197,72 @@ func insertToProvinces(administrativeRecordModels []data_downloader.DvhcvnModel)
 	fmt.Printf("Inserted %d provinces to tables\n", len(provincesMapKey))
 }
 
+/*
+Determine the province administrative unit id from its name
+*/
 func getAdministrativeUnit_ProvinceLevel(provinceFullName string) int {
-	if strings.Contains(provinceFullName, "Thành phố") {
+	specialUnit, matchSpecialCase := SpecialAdministrativeUnitMap[provinceFullName]
+	if (matchSpecialCase) {
+		return specialUnit
+	}
+
+	if strings.HasPrefix(provinceFullName, "Thành phố") {
 		return 1
 	}
-	if strings.Contains(provinceFullName, "Tỉnh") {
+	if strings.HasPrefix(provinceFullName, "Tỉnh") {
 		return 2
 	}
 	panic("Unable to determine administrative unit name from province: " + provinceFullName)
 }
 
+/*
+Determine the district administrative unit id from its name
+*/
 func getAdministrativeUnit_DistrictLevel(districtFullName string) int {
-	if strings.Contains(districtFullName, "Thành phố") {
-
-		// TODO FIXME @thangle: Avoid hard code, create a common place to set special setting
-		if strings.Contains(districtFullName, "Thủ Đức") { // handle a special case, only Thủ Đức is the municipal city
-			return 3
-		}
+	specialUnit, matchSpecialCase := SpecialAdministrativeUnitMap[districtFullName]
+	if (matchSpecialCase) {
+		return specialUnit
+	}
+	
+	if strings.HasPrefix(districtFullName, "Thành phố") {
 		return 4
 	}
-	if strings.Contains(districtFullName, "Quận") {
+	if strings.HasPrefix(districtFullName, "Quận") {
 		return 5
 	}
-	if strings.Contains(districtFullName, "Thị xã") {
+	if strings.HasPrefix(districtFullName, "Thị xã") {
 		return 6
 	}
-	if strings.Contains(districtFullName, "Huyện") {
+	if strings.HasPrefix(districtFullName, "Huyện") {
 		return 7
 	}
 	panic("Unable to determine administrative unit name from district: " + districtFullName)
 }
 
-// TODO FIXME @thangle: This is unsafe!, fix this
-// Is it safe to detect from <LoaiHinh> ?
-// Add unit test for this
+/*
+Determine the ward administrative unit id from its name
+*/
 func getAdministrativeUnit_WardLevel(wardFullName string) int {
+	specialUnit, matchSpecialCase := SpecialAdministrativeUnitMap[wardFullName]
+	if (matchSpecialCase) {
+		return specialUnit
+	}
 
-	// FIXME @thangle: this is not correct check, e.g: "Xã Liên Phường"
-	// Must change to HasPrefix
-	if strings.Contains(wardFullName, "Phường") {
+	if strings.HasPrefix(wardFullName, "Phường") {
 		return 8
 	}
-	if strings.Contains(wardFullName, "Thị trấn") {
+	if strings.HasPrefix(wardFullName, "Thị trấn") {
 		return 9
 	}
-	if strings.Contains(wardFullName, "Xã") {
+	if strings.HasPrefix(wardFullName, "Xã") {
 		return 10
 	}
 	panic("Unable to determine administrative unit name from ward: " + wardFullName)
 }
 
+/*
+Normalize string to remove Vietnamese special character and sign
+*/
 func normalizeString(source string) string {
 	trans := transform.Chain(norm.NFD, runes.Remove(runes.In(unicode.Mn)), norm.NFC)
 	result, _, _ := transform.String(trans, source)
@@ -255,6 +271,9 @@ func normalizeString(source string) string {
 	return result
 }
 
+/*
+Generate code name from the name
+*/
 func toCodeName(shortName string) string {
 	shortName = strings.ReplaceAll(shortName, " - ", " ")
 	shortName = strings.ReplaceAll(shortName, "'", "") // to handle special name with single quote

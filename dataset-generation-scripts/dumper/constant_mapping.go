@@ -120,4 +120,11 @@ var ProvinceRegionMap = map[string]int {
 	"95": 8,
 }
 
-// TODO @thangle: Define the special case mapping for Thu Duc city
+/*
+Handle Special administrative unit mapping for some corner case that cannot be detect just
+by evaluating the prefix of the name
+At the moment, there is only one Municipal city is special
+*/
+var SpecialAdministrativeUnitMap = map[string]int {
+	"Thành phố Thủ Đức": 3,
+}
