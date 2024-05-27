@@ -1,7 +1,9 @@
 package common
 
 import (
+	"context"
 	"fmt"
+	"log"
 )
 
 const pathToTableInitFile = "./resources/db_table_init.sql"
@@ -24,4 +26,62 @@ func BootstrapTemporaryDatasetStructure() {
 		panic(err)
 	}
 	fmt.Println("Data for regions & administrative unit persisted")
+}
+
+func GetAllAdministrativeUnits() []AdministrativeUnit {
+	db := GetPostgresDBConnection()
+	var result []AdministrativeUnit
+	ctx := context.Background()
+	db.NewSelect().Model(&result).Scan(ctx)
+	return result
+}
+
+func GetAllAdministrativeRegions() []AdministrativeRegion {
+	db := GetPostgresDBConnection()
+	var result []AdministrativeRegion
+	ctx := context.Background()
+	err := db.NewSelect().Model(&result).Scan(ctx)
+	if err != nil {
+		log.Fatal("Unable to query administrative regions", err)
+		panic(err)
+	}
+	return result
+}
+
+func GetAllProvinces() []Province {
+	db := GetPostgresDBConnection()
+	var result []Province
+	ctx := context.Background()
+	err := db.NewSelect().Model(&result).Relation("District").Relation("District.Ward").Scan(ctx)
+	if err != nil {
+		log.Fatal("Unable to query provinces", err)
+		panic(err)
+	}
+	return result
+}
+
+// method to get all districts
+func GetAllDistricts() []District {
+	db := GetPostgresDBConnection()
+	var result []District
+	ctx := context.Background()
+	err := db.NewSelect().Model(&result).Scan(ctx)
+	if err != nil {
+		log.Fatal("Unable to query districts", err)
+		panic(err)
+	}
+	return result
+}
+
+// method to get all wards
+func GetAllWards() []Ward {
+	db := GetPostgresDBConnection()
+	var result []Ward
+	ctx := context.Background()
+	err := db.NewSelect().Model(&result).Scan(ctx)
+	if err != nil {
+		log.Fatal("Unable to query wards", err)
+		panic(err)
+	}
+	return result
 }
