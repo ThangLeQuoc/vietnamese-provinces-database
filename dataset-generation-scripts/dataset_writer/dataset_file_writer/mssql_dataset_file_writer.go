@@ -29,7 +29,7 @@ func (w *MssqlDatasetFileWriter) WriteToFile(
 	administrativeUnits []vn_common.AdministrativeUnit,
 	provinces []vn_common.Province,
 	districts []vn_common.District,
-	wards []vn_common.Ward) (os.File, error) {
+	wards []vn_common.Ward) error {
 
 	fileTimeSuffix := getFileTimeSuffix()
 	outputFilePath := fmt.Sprintf(w.OutputFilePath, fileTimeSuffix)
@@ -140,5 +140,5 @@ func (w *MssqlDatasetFileWriter) WriteToFile(
 	dataWriterMsSql.Flush()
 	fileMsSql.Close()
 
-	return *fileMsSql, nil
+	return nil
 }
