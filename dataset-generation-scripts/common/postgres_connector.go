@@ -3,12 +3,14 @@ package common
 import (
 	"context"
 	"database/sql"
+	"fmt"
+	"log"
+	"os"
+
 	"github.com/joho/godotenv"
 	"github.com/uptrace/bun"
 	"github.com/uptrace/bun/dialect/pgdialect"
 	"github.com/uptrace/bun/driver/pgdriver"
-	"log"
-	"os"
 )
 
 func GetPostgresDBConnection() *bun.DB {
@@ -17,11 +19,14 @@ func GetPostgresDBConnection() *bun.DB {
 	if err != nil {
 		log.Fatal("Error loading .env file")
 	}
-	// s3Bucket := os.Getenv("S3_BUCKET")
-	// secretKey := os.Getenv("SECRET_KEY")
 
-	// TODO @thangle: Move this to environment variable?
-	dsn := "postgres://thanglequoc:thanglequoc@localhost:15432/vn_provinces_tmp?sslmode=disable"
+	pgUsername := os.Getenv("POSTGRES_DB_USERNAME")
+	pgPswd := os.Getenv("POSTGRES_DB_PSWD")
+	pgHost := os.Getenv("POSTGRES_DB_HOST")
+	pgPort := os.Getenv("POSTGRES_DB_PORT")
+	pgDbName := os.Getenv("POSTGRES_TMP_DB_NAME")
+
+	dsn :=  fmt.Sprintf("postgres://%s:%s@%s:%s/%s?sslmode=disable", pgUsername, pgPswd, pgHost, pgPort, pgDbName)
 	sqlDB := sql.OpenDB(pgdriver.NewConnector(pgdriver.WithDSN(dsn)))
 	db := bun.NewDB(sqlDB, pgdialect.New())
 	return db

@@ -1,0 +1,15 @@
+services:
+  postgres:
+    container_name: vn_provinces_postgres_container
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      PGDATA: /data/postgres
+    volumes:
+       - postgres:/data/postgres
+    ports:
+      - "15432:5432"
+
+volumes:
+  postgres:

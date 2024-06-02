@@ -2,9 +2,11 @@ package dataset_writer
 
 import (
 	"fmt"
-	dataset_file_writer "github.com/thanglequoc-vn-provinces/v2/dataset_writer/dataset_file_writer"
 	"log"
 	"os"
+
+	vn_common "github.com/thanglequoc-vn-provinces/v2/common"
+	dataset_file_writer "github.com/thanglequoc-vn-provinces/v2/dataset_writer/dataset_file_writer"
 )
 
 /*
@@ -16,11 +18,11 @@ func ReadAndGenerateSQLDatasets() {
 	os.RemoveAll("./output")
 	os.MkdirAll("./output", 0746)
 
-	regions := getAllAdministrativeRegions()
-	administrativeUnits := getAllAdministrativeUnits()
-	provinces := getAllProvinces()
-	districts := getAllDistricts()
-	wards := getAllWards()
+	regions := vn_common.GetAllAdministrativeRegions()
+	administrativeUnits := vn_common.GetAllAdministrativeUnits()
+	provinces := vn_common.GetAllProvinces()
+	districts := vn_common.GetAllDistricts()
+	wards := vn_common.GetAllWards()
 
 	// Postgresql & MySQL
 	postgresMySQLDatasetFileWriter := dataset_file_writer.PostgresMySQLDatasetFileWriter{
@@ -53,5 +55,16 @@ func ReadAndGenerateSQLDatasets() {
 		log.Fatal("Unable to generate Oracle Dataset", err)
 	} else {
 		fmt.Println("Oracle Dataset successfully generated")
+	}
+
+	// JSON
+	jsonDatasetFileWriter := dataset_file_writer.JSONDatasetFileWriter{
+		OutputFilePath: "./output/json_generated_data_vn_units_%s.json",
+	}
+	_, err = jsonDatasetFileWriter.WriteToFile(regions, administrativeUnits, provinces, districts, wards)
+	if err != nil {
+		log.Fatal("Unable to generate JSON Dataset", err)
+	} else {
+		fmt.Println("JSON Dataset successfully generated")
 	}
 }
