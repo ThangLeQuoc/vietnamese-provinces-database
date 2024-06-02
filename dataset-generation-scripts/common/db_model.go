@@ -6,7 +6,7 @@ import (
 
 type AdministrativeUnit struct {
 	bun.BaseModel `bun:"table:administrative_units,alias:au"`
-	Id int `bun:"id,notnull"`
+	Id int `bun:"id,pk"`
 	FullName string `bun:"full_name"`
 	FullNameEn string `bun:"full_name_en"`
 	ShortName string `bun:"short_name"`
@@ -17,7 +17,7 @@ type AdministrativeUnit struct {
 
 type AdministrativeRegion struct {
 	bun.BaseModel `bun:"table:administrative_regions,alias:ar"`
-	Id int `bun:"id,notnull"`
+	Id int `bun:"id,pk"`
 	Name string `bun:"name"`
 	NameEn string `bun:"name_en"`
 	CodeName string `bun:"code_name"`
@@ -37,6 +37,9 @@ type Province struct {
 
 	// Province has many Districts
 	District []*District `bun:"rel:has-many,join:code=province_code"`
+
+	AdministrativeUnit AdministrativeUnit `bun:"rel:belongs-to,join:administrative_unit_id=id"`
+	AdministrativeRegion AdministrativeRegion `bun:"rel:belongs-to,join:administrative_region_id=id"`
 }
 
 type District struct {
@@ -50,10 +53,9 @@ type District struct {
 	ProvinceCode string `bun:"province_code"`
 	AdministrativeUnitId int `bun:"administrative_unit_id"`
 
-	// Province Province `bun:"rel:belongs-to,join:province_code=code"`
-
 	// District has many Wards
 	Ward []*Ward `bun:"rel:has-many,join:code=district_code"`
+	AdministrativeUnit AdministrativeUnit `bun:"rel:belongs-to,join:administrative_unit_id=id"`
 }
 
 type Ward struct {
@@ -67,5 +69,5 @@ type Ward struct {
 	DistrictCode string `bun:"district_code"`
 	AdministrativeUnitId int `bun:"administrative_unit_id"`
 
-	// District District `bun:"rel:belongs-to,join:district_code=code"`
+	AdministrativeUnit AdministrativeUnit `bun:"rel:belongs-to,join:administrative_unit_id=id"`
 }

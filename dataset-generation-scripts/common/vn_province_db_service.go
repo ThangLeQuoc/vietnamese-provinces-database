@@ -52,7 +52,7 @@ func GetAllProvinces() []Province {
 	db := GetPostgresDBConnection()
 	var result []Province
 	ctx := context.Background()
-	err := db.NewSelect().Model(&result).Relation("District").Relation("District.Ward").Scan(ctx)
+	err := db.NewSelect().Model(&result).Relation("AdministrativeUnit").Relation("AdministrativeRegion").Relation("District").Relation("District.AdministrativeUnit").Relation("District.Ward").Relation("District.Ward.AdministrativeUnit").Scan(ctx)
 	if err != nil {
 		log.Fatal("Unable to query provinces", err)
 		panic(err)

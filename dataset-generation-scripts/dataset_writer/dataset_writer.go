@@ -2,10 +2,11 @@ package dataset_writer
 
 import (
 	"fmt"
-	dataset_file_writer "github.com/thanglequoc-vn-provinces/v2/dataset_writer/dataset_file_writer"
 	"log"
 	"os"
+
 	vn_common "github.com/thanglequoc-vn-provinces/v2/common"
+	dataset_file_writer "github.com/thanglequoc-vn-provinces/v2/dataset_writer/dataset_file_writer"
 )
 
 /*
@@ -58,7 +59,7 @@ func ReadAndGenerateSQLDatasets() {
 
 	// JSON
 	jsonDatasetFileWriter := dataset_file_writer.JSONDatasetFileWriter{
-		OutputFilePath: "./output/json_generated_data_vn_units_%s.sql",
+		OutputFilePath: "./output/json_generated_data_vn_units_%s.json",
 	}
 	_, err = jsonDatasetFileWriter.WriteToFile(regions, administrativeUnits, provinces, districts, wards)
 	if err != nil {
