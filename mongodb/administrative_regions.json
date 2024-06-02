@@ -1,0 +1,58 @@
+[
+ {
+  "Id": 1,
+  "Name": "Đông Bắc Bộ",
+  "NameEn": "Northeast",
+  "CodeName": "dong_bac_bo",
+  "CodeNameEn": "northest"
+ },
+ {
+  "Id": 2,
+  "Name": "Tây Bắc Bộ",
+  "NameEn": "Northwest",
+  "CodeName": "tay_bac_bo",
+  "CodeNameEn": "northwest"
+ },
+ {
+  "Id": 3,
+  "Name": "Đồng bằng sông Hồng",
+  "NameEn": "Red River Delta",
+  "CodeName": "dong_bang_song_hong",
+  "CodeNameEn": "red_river_delta"
+ },
+ {
+  "Id": 4,
+  "Name": "Bắc Trung Bộ",
+  "NameEn": "North Central Coast",
+  "CodeName": "bac_trung_bo",
+  "CodeNameEn": "north_central_coast"
+ },
+ {
+  "Id": 5,
+  "Name": "Duyên hải Nam Trung Bộ",
+  "NameEn": "South Central Coast",
+  "CodeName": "duyen_hai_nam_trung_bo",
+  "CodeNameEn": "south_central_coast"
+ },
+ {
+  "Id": 6,
+  "Name": "Tây Nguyên",
+  "NameEn": "Central Highlands",
+  "CodeName": "tay_nguyen",
+  "CodeNameEn": "central_highlands"
+ },
+ {
+  "Id": 7,
+  "Name": "Đông Nam Bộ",
+  "NameEn": "Southeast",
+  "CodeName": "dong_nam_bo",
+  "CodeNameEn": "southeast"
+ },
+ {
+  "Id": 8,
+  "Name": "Đồng bằng sông Cửu Long",
+  "NameEn": "Mekong River Delta",
+  "CodeName": "dong_bang_song_cuu_long",
+  "CodeNameEn": "southwest"
+ }
+]
