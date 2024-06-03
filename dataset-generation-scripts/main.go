@@ -4,7 +4,6 @@ import (
 	vn_common "github.com/thanglequoc-vn-provinces/v2/common"
 	dataset_writer "github.com/thanglequoc-vn-provinces/v2/dataset_writer"
 	dumper "github.com/thanglequoc-vn-provinces/v2/dumper"
-
 )
 
 func main() {

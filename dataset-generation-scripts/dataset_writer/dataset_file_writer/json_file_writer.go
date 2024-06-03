@@ -6,6 +6,8 @@ import (
 	"fmt"
 	vn_common "github.com/thanglequoc-vn-provinces/v2/common"
 	"os"
+
+	file_writer_helper "github.com/thanglequoc-vn-provinces/v2/dataset_writer/dataset_file_writer/helper"
 )
 
 type JSONDatasetFileWriter struct {
@@ -24,7 +26,9 @@ func (w *JSONDatasetFileWriter) WriteToFile(
 	file, err := os.OpenFile(outputFilePath, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 
 	dataWriter := bufio.NewWriter(file)
-	data, _ := json.MarshalIndent(provinces, "", " ")
+
+	provinceData := file_writer_helper.ConvertToJsonProvinceModel(provinces)
+	data, _ := json.MarshalIndent(provinceData, "", " ")
 	dataWriter.Write(data)
 	dataWriter.Flush()
 	file.Close()
