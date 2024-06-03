@@ -28,7 +28,7 @@ func ReadAndGenerateSQLDatasets() {
 	postgresMySQLDatasetFileWriter := dataset_file_writer.PostgresMySQLDatasetFileWriter{
 		OutputFilePath: "./output/postgresql_mysql_generated_ImportData_vn_units_%s.sql",
 	}
-	_, err := postgresMySQLDatasetFileWriter.WriteToFile(regions, administrativeUnits, provinces, districts, wards)
+	err := postgresMySQLDatasetFileWriter.WriteToFile(regions, administrativeUnits, provinces, districts, wards)
 	if err != nil {
 		log.Fatal("Unable to generate Postgresql-MySQL Dataset", err)
 	} else {
@@ -39,7 +39,7 @@ func ReadAndGenerateSQLDatasets() {
 	mssqlDatasetFileWriter := dataset_file_writer.MssqlDatasetFileWriter{
 		OutputFilePath: "./output/mssql_generated_ImportData_vn_units_%s.sql",
 	}
-	_, err = mssqlDatasetFileWriter.WriteToFile(regions, administrativeUnits, provinces, districts, wards)
+	err = mssqlDatasetFileWriter.WriteToFile(regions, administrativeUnits, provinces, districts, wards)
 	if err != nil {
 		log.Fatal("Unable to generate Mssql Dataset", err)
 	} else {
@@ -50,7 +50,7 @@ func ReadAndGenerateSQLDatasets() {
 	oracleDatasetFileWriter := dataset_file_writer.OracleDatasetFileWriter{
 		OutputFilePath: "./output/oracle_generated_ImportData_vn_units_%s.sql",
 	}
-	_, err = oracleDatasetFileWriter.WriteToFile(regions, administrativeUnits, provinces, districts, wards)
+	err = oracleDatasetFileWriter.WriteToFile(regions, administrativeUnits, provinces, districts, wards)
 	if err != nil {
 		log.Fatal("Unable to generate Oracle Dataset", err)
 	} else {
@@ -61,10 +61,21 @@ func ReadAndGenerateSQLDatasets() {
 	jsonDatasetFileWriter := dataset_file_writer.JSONDatasetFileWriter{
 		OutputFilePath: "./output/json_generated_data_vn_units_%s.json",
 	}
-	_, err = jsonDatasetFileWriter.WriteToFile(regions, administrativeUnits, provinces, districts, wards)
+	err = jsonDatasetFileWriter.WriteToFile(regions, administrativeUnits, provinces, districts, wards)
 	if err != nil {
 		log.Fatal("Unable to generate JSON Dataset", err)
 	} else {
 		fmt.Println("JSON Dataset successfully generated")
+	}
+
+	// MongoDB
+	mongoDBDatasetFileWriter := dataset_file_writer.MongoDBDatasetFileWriter{
+		OutputFolderPath: "./output/mongodb",
+	}
+	err = mongoDBDatasetFileWriter.WriteToFile(regions, administrativeUnits, provinces, districts, wards)
+	if err != nil {
+		log.Fatal("Unable to generate MongoDB Dataset", err)
+	} else {
+		fmt.Println("MongoDB Dataset successfully generated")
 	}
 }

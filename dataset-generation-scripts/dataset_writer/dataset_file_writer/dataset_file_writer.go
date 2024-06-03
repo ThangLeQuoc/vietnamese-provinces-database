@@ -2,7 +2,6 @@ package dataset_writer
 
 import (
 	vn_common "github.com/thanglequoc-vn-provinces/v2/common"
-	"os"
 	"strings"
 	"time"
 )
@@ -13,7 +12,7 @@ type DatasetFileWriter interface {
 		administrativeUnits []vn_common.AdministrativeUnit,
 		provinces []vn_common.Province,
 		districts []vn_common.District,
-		wards []vn_common.Ward) (os.File, error)
+		wards []vn_common.Ward) error
 }
 
 func getFileTimeSuffix() string {
