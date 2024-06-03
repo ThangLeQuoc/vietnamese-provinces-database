@@ -359,10 +359,6 @@ Nếu bạn có bất kỳ một đề xuất nào có thể cải tiến dự �
 Hoặc tốt hơn nữa, bạn có thể đóng góp xây dựng dự án này bằng các [tạo Pull Request](https://github.com/ThangLeQuoc/VietnameseProvincesDatabase/pulls)  
 Tất cả các đóng góp đến dự án đều được trân trọng ghi nhận.
 
-### Tôi muốn bộ dữ liệu ở định dạng JSON
-
-Xin xem qua dự án [daohoangson/dvhcvn](https://github.com/daohoangson/dvhcvn) để có bộ dữ liệu đơn vị hành chính Việt Nam ở định dạng JSON.
-
 ##### Nguồn tham khảo
 Bản đồ Việt Nam dùng làm banner từ [vietcentertourist](https://vietcentertourist.com/assets/images/vietnam.png)
 
