@@ -26,7 +26,6 @@ func ConvertToJsonProvinceModel(provinces []vn_common.Province) []dataset_file_w
 			AdministrativeUnitFullName: province.AdministrativeUnit.FullName,
 			AdministrativeUnitShortNameEn: province.AdministrativeUnit.ShortNameEn,
 			AdministrativeUnitFullNameEn: province.AdministrativeUnit.FullNameEn,
-			
 		}
 
 		if (len(province.District) != 0) {
@@ -35,6 +34,50 @@ func ConvertToJsonProvinceModel(provinces []vn_common.Province) []dataset_file_w
 				districts[i] = *d
 			}
 			p.District = ConvertToJsonDistrictModel(districts)
+		}
+		result = append(result, p)
+	}
+	return result
+}
+
+func ConvertToJsonProvinceSimplifiedModel(provinces []vn_common.Province) []dataset_file_writer_dto.JsonProvinceSimplifiedModel {
+	var result []dataset_file_writer_dto.JsonProvinceSimplifiedModel
+	for _, province := range provinces {
+		p := dataset_file_writer_dto.JsonProvinceSimplifiedModel {
+			Code: province.Code,
+			Name: province.Name,
+			NameEn: province.NameEn,
+			FullName: province.FullName,
+			FullNameEn: province.FullNameEn,
+			CodeName: province.CodeName,
+		}
+
+		if (len(province.District) != 0) {
+			districts := make([]vn_common.District, len(province.District))
+			for i, d := range province.District {
+				districts[i] = *d
+			}
+			p.District = ConvertToJsonDistrictSimplifiedModel(districts)
+		}
+		result = append(result, p)
+	}
+	return result
+}
+
+func ConvertToJsonProvinceVNSimplifiedModel(provinces []vn_common.Province) []dataset_file_writer_dto.JsonProvinceVNSimplifiedModel {
+	var result []dataset_file_writer_dto.JsonProvinceVNSimplifiedModel
+	for _, province := range provinces {
+		p := dataset_file_writer_dto.JsonProvinceVNSimplifiedModel {
+			Code: province.Code,
+			FullName: province.FullName,
+		}
+
+		if (len(province.District) != 0) {
+			districts := make([]vn_common.District, len(province.District))
+			for i, d := range province.District {
+				districts[i] = *d
+			}
+			p.District = ConvertToJsonDistrictVNSimplifiedModel(districts)
 		}
 		result = append(result, p)
 	}
@@ -102,6 +145,54 @@ func ConvertToJsonDistrictModel(districts []vn_common.District) []dataset_file_w
 	return result
 }
 
+func ConvertToJsonDistrictSimplifiedModel(districts []vn_common.District) []dataset_file_writer_dto.JsonDistrictSimplifiedModel {
+	var result []dataset_file_writer_dto.JsonDistrictSimplifiedModel
+
+	for _, district := range districts {
+		d := dataset_file_writer_dto.JsonDistrictSimplifiedModel {
+			Code: district.Code,
+			Name: district.Name,
+			NameEn: district.NameEn,
+			FullName: district.FullName,
+			FullNameEn: district.FullNameEn,
+			CodeName: district.CodeName,
+			ProvinceCode: district.ProvinceCode,
+		}
+
+		if (len(district.Ward) != 0) {
+			wards := make([]vn_common.Ward, len(district.Ward))
+			for i, w := range district.Ward {
+				wards[i] = *w
+			}
+			d.Ward = ConvertToJsonWardSimplifiedModel(wards)
+		}
+		result = append(result, d)
+	}
+	return result
+}
+
+func ConvertToJsonDistrictVNSimplifiedModel(districts []vn_common.District) []dataset_file_writer_dto.JsonDistrictVNSimplifiedModel {
+	var result []dataset_file_writer_dto.JsonDistrictVNSimplifiedModel
+
+	for _, district := range districts {
+		d := dataset_file_writer_dto.JsonDistrictVNSimplifiedModel {
+			Code: district.Code,
+			FullName: district.FullName,
+			ProvinceCode: district.ProvinceCode,
+		}
+
+		if (len(district.Ward) != 0) {
+			wards := make([]vn_common.Ward, len(district.Ward))
+			for i, w := range district.Ward {
+				wards[i] = *w
+			}
+			d.Ward = ConvertToJsonWardVNSimplifiedModel(wards)
+		}
+		result = append(result, d)
+	}
+	return result
+}
+
 func ConvertToMongoDistrictModel(districts []vn_common.District) []dataset_file_writer_dto.MongoDistrictModel {
 	var result []dataset_file_writer_dto.MongoDistrictModel
 
@@ -153,6 +244,38 @@ func ConvertToJsonWardModel(wards []vn_common.Ward) []dataset_file_writer_dto.Js
 		result = append(result, w)
 	}
 	
+	return result
+}
+
+func ConvertToJsonWardSimplifiedModel(wards []vn_common.Ward) []dataset_file_writer_dto.JsonWardSimplifiedModel {
+	var result []dataset_file_writer_dto.JsonWardSimplifiedModel
+
+	for _, ward := range wards {
+		w := dataset_file_writer_dto.JsonWardSimplifiedModel {
+			Code: ward.Code,
+			Name: ward.Name,
+			NameEn: ward.NameEn,
+			FullName: ward.FullName,
+			FullNameEn: ward.FullNameEn,
+			CodeName: ward.CodeName,
+			DistrictCode: ward.DistrictCode,
+		}
+		result = append(result, w)
+	}
+	
+	return result
+}
+
+func ConvertToJsonWardVNSimplifiedModel(wards []vn_common.Ward) []dataset_file_writer_dto.JsonWardVNSimplifiedModel {
+	var result []dataset_file_writer_dto.JsonWardVNSimplifiedModel
+	for _, ward := range wards {
+		w := dataset_file_writer_dto.JsonWardVNSimplifiedModel {
+			Code: ward.Code,
+			FullName: ward.FullName,
+			DistrictCode: ward.DistrictCode,
+		}
+		result = append(result, w)
+	}
 	return result
 }
 
