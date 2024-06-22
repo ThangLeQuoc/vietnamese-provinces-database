@@ -59,7 +59,7 @@ func ReadAndGenerateSQLDatasets() {
 
 	// JSON
 	jsonDatasetFileWriter := dataset_file_writer.JSONDatasetFileWriter{
-		OutputFilePath: "./output/json_generated_data_vn_units_%s.json",
+		OutputFolderPath: "./output/json",
 	}
 	err = jsonDatasetFileWriter.WriteToFile(regions, administrativeUnits, provinces, districts, wards)
 	if err != nil {
