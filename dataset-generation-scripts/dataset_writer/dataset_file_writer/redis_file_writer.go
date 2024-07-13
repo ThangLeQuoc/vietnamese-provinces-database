@@ -39,7 +39,7 @@ func (w *RedisDatasetFileWriter) WriteToFile(
 	os.MkdirAll(w.OutputFolderPath, 0746)
 	fileTimeSuffix := getFileTimeSuffix()
 	
-	redisDatasetFilePath := fmt.Sprintf("%s/vn_dataset_%s.redis", w.OutputFolderPath, fileTimeSuffix)
+	redisDatasetFilePath := fmt.Sprintf("%s/redis_vn_provinces_dataset_%s.redis", w.OutputFolderPath, fileTimeSuffix)
 	redisDatasetFile, err := os.OpenFile(redisDatasetFilePath, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
 	if (err != nil) {
 		return err
