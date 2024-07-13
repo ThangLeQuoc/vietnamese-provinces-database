@@ -32,7 +32,7 @@ func ReadAndGenerateSQLDatasets() {
 	if err != nil {
 		log.Fatal("Unable to generate Postgresql-MySQL Dataset", err)
 	} else {
-		fmt.Println("Postgresql-MySQL Dataset successfully generated")
+		fmt.Println("✅ Postgresql-MySQL Dataset successfully generated")
 	}
 
 	// Mssql
@@ -43,7 +43,7 @@ func ReadAndGenerateSQLDatasets() {
 	if err != nil {
 		log.Fatal("Unable to generate Mssql Dataset", err)
 	} else {
-		fmt.Println("Mssql Dataset successfully generated")
+		fmt.Println("✅ Mssql Dataset successfully generated")
 	}
 
 	// Oracle
@@ -54,7 +54,7 @@ func ReadAndGenerateSQLDatasets() {
 	if err != nil {
 		log.Fatal("Unable to generate Oracle Dataset", err)
 	} else {
-		fmt.Println("Oracle Dataset successfully generated")
+		fmt.Println("✅ Oracle Dataset successfully generated")
 	}
 
 	// JSON
@@ -65,7 +65,7 @@ func ReadAndGenerateSQLDatasets() {
 	if err != nil {
 		log.Fatal("Unable to generate JSON Dataset", err)
 	} else {
-		fmt.Println("JSON Dataset successfully generated")
+		fmt.Println("✅ JSON Dataset successfully generated")
 	}
 
 	// MongoDB
@@ -76,6 +76,17 @@ func ReadAndGenerateSQLDatasets() {
 	if err != nil {
 		log.Fatal("Unable to generate MongoDB Dataset", err)
 	} else {
-		fmt.Println("MongoDB Dataset successfully generated")
+		fmt.Println("✅ MongoDB Dataset successfully generated")
+	}
+
+	// Redis
+	redisDatasetFileWriter := dataset_file_writer.RedisDatasetFileWriter {
+		OutputFolderPath: "./output/redis",
+	}
+	err = redisDatasetFileWriter.WriteToFile(regions, administrativeUnits, provinces, districts, wards)
+	if err != nil {
+		log.Fatal("Unable to generate Redis Dataset", err)
+	} else {
+		fmt.Println("✅ Redis Dataset successfully generated")
 	}
 }

@@ -42,7 +42,7 @@ func BeginDumpingDataWithDvhcvnDirectSource() {
 	insertToProvinces(dvhcvnUnits)
 	insertToDistricts(dvhcvnUnits)
 	insertToWards(dvhcvnUnits)
-	fmt.Println("Dumper operation finished")
+	fmt.Println("📥 Dumper operation finished")
 }
 
 func insertToWards(administrativeRecordModels []data_downloader.DvhcvnModel) {

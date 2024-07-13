@@ -16,7 +16,7 @@ Fetch the data from the public government API url
 Required the selected data date
 */
 func FetchDvhcvnData(publicDataDate time.Time) []DvhcvnModel {
-	fmt.Printf("Downloading provinces data patch from %s\n", DVHCVN_URL)
+	fmt.Printf("⬇️ Downloading provinces data patch from %s\n", DVHCVN_URL)
 	dataAPIDateStr := publicDataDate.Format("02/01/2006") // dd/MM/YYYY
 
 	httpRequestBody := fmt.Sprintf(`<?xml version="1.0" encoding="utf-8"?>
