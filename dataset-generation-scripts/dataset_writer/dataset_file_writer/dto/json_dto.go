@@ -61,3 +61,57 @@ type JsonWardModel struct {
 	AdministrativeUnitShortNameEn string
 	AdministrativeUnitFullNameEn string
 }
+
+// JSON Simplified version
+type JsonProvinceSimplifiedModel struct {
+	Code string
+	Name string
+	NameEn string
+	FullName string
+	FullNameEn string
+	CodeName string
+	District []JsonDistrictSimplifiedModel
+}
+
+type JsonDistrictSimplifiedModel struct {
+	Code string
+	Name string
+	NameEn string
+	FullName string
+	FullNameEn string
+	CodeName string
+	ProvinceCode string
+
+	Ward []JsonWardSimplifiedModel
+}
+
+type JsonWardSimplifiedModel struct {
+	Code string
+	Name string
+	NameEn string
+	FullName string
+	FullNameEn string
+	CodeName string
+	DistrictCode string
+}
+
+// VN only Simplified version
+type JsonProvinceVNSimplifiedModel struct {
+	Code string
+	FullName string
+	District []JsonDistrictVNSimplifiedModel
+}
+
+type JsonDistrictVNSimplifiedModel struct {
+	Code string
+	FullName string
+	ProvinceCode string
+
+	Ward []JsonWardVNSimplifiedModel
+}
+
+type JsonWardVNSimplifiedModel struct {
+	Code string
+	FullName string
+	DistrictCode string
+}
