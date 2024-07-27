@@ -10,6 +10,17 @@ services:
        - postgres:/data/postgres
     ports:
       - "15432:5432"
-
+  postgres-gis:
+    container_name: vn_provinces_postgres_gis_container
+    image: postgis/postgis
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+      PGDATA: /data/postgres
+    volumes:
+       - postgres-gis:/data/postgres
+    ports:
+      - "15433:5432"
 volumes:
   postgres:
+  postgres-gis:
