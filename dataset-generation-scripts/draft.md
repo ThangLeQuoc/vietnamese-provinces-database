@@ -14,3 +14,12 @@
 ## Integration Test?
 https://www.ardanlabs.com/blog/2019/03/integration-testing-in-go-executing-tests-with-docker.html
 
+
+GIS Data resource
+
+Table
+code - primary key, string
+level - province/district, required string
+bbox - required, polygon
+gis_geom - multipolygon
+

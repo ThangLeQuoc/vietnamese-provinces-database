@@ -7,6 +7,7 @@ DROP TABLE IF EXISTS provinces;
 
 DROP TABLE IF EXISTS administrative_units;
 DROP TABLE IF EXISTS administrative_regions;
+DROP TABLE IF EXISTS vn_gis;
 
 -- CREATE administrative_regions TABLE
 CREATE TABLE administrative_regions (
@@ -148,3 +149,12 @@ CREATE TABLE wards (
 );
 ALTER TABLE wards ADD CONSTRAINT wards_administrative_unit_id_fkey FOREIGN KEY (administrative_unit_id) REFERENCES administrative_units(id);
 ALTER TABLE wards ADD CONSTRAINT wards_district_code_fkey FOREIGN KEY (district_code) REFERENCES districts(code);
+
+-- CREATE vn_gis TABLE
+CREATE TABLE vn_gis (
+	code varchar(20) NOT NULL,
+	level varchar(20) NOT NULL,
+	bbox geometry
+	gis_geom geometry
+	CONSTRAINT wards_pkey PRIMARY KEY (code)
+)
