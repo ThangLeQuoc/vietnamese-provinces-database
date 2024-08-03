@@ -9,6 +9,8 @@ DROP TABLE IF EXISTS administrative_units;
 DROP TABLE IF EXISTS administrative_regions;
 DROP TABLE IF EXISTS vn_gis;
 
+CREATE EXTENSION IF NOT EXISTS postgis;
+
 -- CREATE administrative_regions TABLE
 CREATE TABLE administrative_regions (
 	id integer NOT NULL,
@@ -154,7 +156,7 @@ ALTER TABLE wards ADD CONSTRAINT wards_district_code_fkey FOREIGN KEY (district_
 CREATE TABLE vn_gis (
 	code varchar(20) NOT NULL,
 	level varchar(20) NOT NULL,
-	bbox geometry
-	gis_geom geometry
-	CONSTRAINT wards_pkey PRIMARY KEY (code)
+	bbox geometry(Polygon, 4326),
+	gis_geom geometry(Multipolygon, 4326),
+	CONSTRAINT vn_gis_pkey PRIMARY KEY (code)
 )

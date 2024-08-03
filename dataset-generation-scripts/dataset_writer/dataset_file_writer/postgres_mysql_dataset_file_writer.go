@@ -8,6 +8,7 @@ import (
 	"time"
 
 	vn_common "github.com/thanglequoc-vn-provinces/v2/common"
+	gis "github.com/thanglequoc-vn-provinces/v2/gis"
 )
 
 type PostgresMySQLDatasetFileWriter struct {
@@ -31,6 +32,10 @@ const insertDistrictTemplate string = "INSERT INTO districts(code,name,name_en,f
 const insertWardTemplate string = "INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES"
 const insertDistrictWardValueTemplate string = "('%s','%s','%s','%s','%s','%s','%s',%d)"
 
+// gis insert statement
+const insertGISTemplate string = "INSERT INTO vn_gis(code,level,bbox) VALUES "
+const insertGISValueTemplate string = "('%s','%s','POLYGON((%s, %s, %s, %s, %s))');\n"
+
 const batchInsertItemSize int = 50
 
 func (w *PostgresMySQLDatasetFileWriter) WriteToFile(
@@ -38,15 +43,18 @@ func (w *PostgresMySQLDatasetFileWriter) WriteToFile(
 	administrativeUnits []vn_common.AdministrativeUnit,
 	provinces []vn_common.Province,
 	districts []vn_common.District,
-	wards []vn_common.Ward) error {
+	wards []vn_common.Ward,
+	gisData []gis.ProvinceGIS) error {
 
 	fileTimeSuffix := getFileTimeSuffix()
 	outputFilePath := fmt.Sprintf(w.OutputFilePath, fileTimeSuffix)
 	file, err := os.OpenFile(outputFilePath, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+
 	if err != nil {
 		log.Fatal("Unable to write to file", err)
 		panic(err)
 	}
+	defer file.Close()
 
 	dataWriter := bufio.NewWriter(file)
 	dataWriter.WriteString("/* === Vietnamese Provinces Database Dataset for PostgreSQL/MySQL === */\n")
@@ -150,6 +158,41 @@ func (w *PostgresMySQLDatasetFileWriter) WriteToFile(
 	dataWriter.WriteString("-- END OF SCRIPT FILE --\n")
 
 	dataWriter.Flush()
-	file.Close()
+	
+	writeGISDataToFile(gisData)
 	return nil
+}
+
+// TODO @thangle: Set it for postgres first and refactor later
+func writeGISDataToFile(gisData []gis.ProvinceGIS) {
+	fileTimeSuffix := getFileTimeSuffix()
+	outputFilePath := fmt.Sprintf("./output/postgresql_generated_ImportGISData_vn_units_%s.sql", fileTimeSuffix)
+	file, err := os.OpenFile(outputFilePath, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	if err != nil {
+		log.Fatal("Unable to write to file", err)
+		panic(err)
+	}
+	defer file.Close()
+
+	dataWriter := bufio.NewWriter(file)
+	dataWriter.WriteString("/* === Vietnamese Provinces Database - GIS Dataset for PostgreSQL === */\n")
+	dataWriter.WriteString(fmt.Sprintf("/* Created at:  %s */\n", time.Now().Format(time.RFC1123Z)))
+	dataWriter.WriteString("/* Reference: https://github.com/ThangLeQuoc/vietnamese-provinces-database */\n")
+	dataWriter.WriteString("/* =============================================== */\n\n")
+	
+	// ring order: bottom left -> going around -> bottom left again
+	for _, g := range gisData {
+		dataWriter.WriteString(insertGISTemplate)
+		
+		dataWriter.WriteString(fmt.Sprintf(insertGISValueTemplate, 
+			g.LevelId, "province",
+			gis.ToCoordinateStr(g.BBox.BottomLeftLat, g.BBox.BottomLeftLng),
+			gis.ToCoordinateStr(g.BBox.TopLeftLat, g.BBox.TopLeftLng),
+			gis.ToCoordinateStr(g.BBox.TopRightLat, g.BBox.TopRightLng),
+			gis.ToCoordinateStr(g.BBox.BottomRightLat, g.BBox.BottomRightLng),
+			gis.ToCoordinateStr(g.BBox.BottomLeftLat, g.BBox.BottomLeftLng)), // repeat the bottom left again to close the polygon ring
+		)
+	}
+
+	dataWriter.Flush()
 }

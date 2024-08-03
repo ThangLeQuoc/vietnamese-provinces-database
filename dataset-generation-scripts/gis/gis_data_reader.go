@@ -4,21 +4,30 @@ package gis
 
 import (
 	"encoding/json"
-	"fmt"
 	"io"
 	"os"
+	"log"
 )
 
-func ReadGISDataFiles() ProvinceGIS {
-	jsonFile, err := os.Open("./resources/gis/01.json")
+const GIS_RESOURCE_DIR string = "./resources/gis/"
+
+func ReadGISDataFiles() []ProvinceGIS {
+	files, err := os.ReadDir(GIS_RESOURCE_DIR)
 	if err != nil {
-    fmt.Println(err)
+		log.Fatal(err)
 	}
+	provinceGIS := make([]ProvinceGIS, len(files))
 
+	for i, f := range files {
+		jsonFile, err := os.Open(GIS_RESOURCE_DIR + f.Name())
+		if err != nil {
+			log.Fatal(err)
+		}
+		defer jsonFile.Close()
 
-	var dvhcvnGIS ProvinceGIS
-	byteValue, _ := io.ReadAll(jsonFile)
-	json.Unmarshal(byteValue, &dvhcvnGIS)
+		byteValue, _ := io.ReadAll(jsonFile)
+		json.Unmarshal(byteValue, &provinceGIS[i])
 
-	return dvhcvnGIS
+	}
+	return provinceGIS
 }
