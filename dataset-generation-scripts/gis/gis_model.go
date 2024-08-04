@@ -10,11 +10,15 @@ type LatLng struct {
 	Longitude float64
 }
 
+type GisPolygon struct {
+	GisPoints []LatLng
+}
+
 type ProvinceGIS struct {
 	LevelId string `json:"level1_id"`
 	Name string `json:"name"`
 	Districts []DistrictGIS `json:"level2s"`
-	Coordinates [][][] LatLng `json:"coordinates"`
+	Coordinates [][] GisPolygon `json:"coordinates"`
 	BBox BBox `json:"bbox"`
 	Type string `json:"type"`
 }
@@ -22,7 +26,7 @@ type ProvinceGIS struct {
 type DistrictGIS struct {
 	LevelId string `json:"level2_id"`
 	Name string `json:"name"`
-	Coordinates [][][] LatLng `json:"coordinates"`
+	Coordinates [][] GisPolygon `json:"coordinates"`
 	BBox BBox `json:"bbox"`
 	Type string `json:"type"`
 }
@@ -41,8 +45,25 @@ type BBox struct {
 	BottomRightLng float64
 }
 
+func (g *GisCoordinates) UnmarshalJSON(data []byte) error {
+	if string(data) == "null" || string(data) == `""` {
+		return nil
+	}
+	var points []LatLng
+	if err := json.Unmarshal(data, &points); err != nil {
+		return err
+	}
+
+	g.GisPoints = points
+	return nil
+}
+
 
 func (l *LatLng) UnmarshalJSON(data []byte) error {
+	if string(data) == "null" || string(data) == `""` {
+		return nil
+	}
+
 	var latlng [2]float64
 	if err := json.Unmarshal(data, &latlng); err != nil {
 		return err
