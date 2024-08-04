@@ -14,7 +14,7 @@ type ProvinceGIS struct {
 	LevelId string `json:"level1_id"`
 	Name string `json:"name"`
 	Districts []DistrictGIS `json:"level2s"`
-	Coordinates [][][][]float64 `json:"coordinates"`
+	Coordinates [][][]LatLng `json:"coordinates"`
 	BBox BBox `json:"bbox"`
 	Type string `json:"type"`
 }
@@ -42,17 +42,26 @@ type BBox struct {
 }
 
 
-// TODO @thangle: This is not correct
+func (l *LatLng) UnmarshalJSON(data []byte) error {
+	var latlng [2]float64
+	if err := json.Unmarshal(data, &latlng); err != nil {
+		return err
+	}
+
+	l.Latitude = latlng[0]
+	l.Longitude = latlng[1]
+	return nil
+}
+
 func (b *BBox) UnmarshalJSON(data []byte) error {
 	var bboxArray [4]float64
-
-	// @thangle: The bbox array format from daohoangson gis resource is 
-	// 2 first digits: BottomLeft coordinate LatLng
-	// 2 last digits: TopRight coordinate LatLng
 	if err := json.Unmarshal(data, &bboxArray); err != nil {
 			return err
 	}
 
+	// @thangle: The bbox array format from daohoangson gis resource is 
+	// 2 first digits: BottomLeft coordinate LatLng
+	// 2 last digits: TopRight coordinate LatLng
 	b.BottomLeftLat = bboxArray[0]
 	b.BottomLeftLng = bboxArray[1]
 
