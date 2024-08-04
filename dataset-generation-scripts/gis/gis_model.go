@@ -14,7 +14,7 @@ type ProvinceGIS struct {
 	LevelId string `json:"level1_id"`
 	Name string `json:"name"`
 	Districts []DistrictGIS `json:"level2s"`
-	Coordinates [][][]LatLng `json:"coordinates"`
+	Coordinates [][][] LatLng `json:"coordinates"`
 	BBox BBox `json:"bbox"`
 	Type string `json:"type"`
 }
@@ -22,7 +22,7 @@ type ProvinceGIS struct {
 type DistrictGIS struct {
 	LevelId string `json:"level2_id"`
 	Name string `json:"name"`
-	Coordinates [][][][]float64 `json:"coordinates"`
+	Coordinates [][][] LatLng `json:"coordinates"`
 	BBox BBox `json:"bbox"`
 	Type string `json:"type"`
 }
