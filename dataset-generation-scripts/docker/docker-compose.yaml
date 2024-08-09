@@ -11,5 +11,20 @@ services:
        - postgres-gis:/data/postgres
     ports:
       - "15432:5432"
+  
+  azure-edge:
+    container_name: vn_provinces_azure_edge
+    restart: always
+    image: mcr.microsoft.com/azure-sql-edge:latest
+    environment:
+      ACCEPT_EULA: "1"
+      MSSQL_SA_PASSWORD: "Root123456@thangle"
+      MSSQL_PID: "root"
+      MSSQL_USER: "sa"
+    ports:
+      - "15433:1433"
+    volumes:
+      - azure-sql-storage:/var/opt/mssql
 volumes:
   postgres-gis:
+  azure-sql-storage:
