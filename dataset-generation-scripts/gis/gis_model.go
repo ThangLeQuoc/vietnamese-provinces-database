@@ -3,6 +3,8 @@ package gis
 import (
 	"encoding/json"
 	"fmt"
+	"log"
+	"strings"
 )
 
 type LatLng struct {
@@ -50,7 +52,11 @@ func (g *GisLinearRingCoordinate) UnmarshalJSON(data []byte) error {
 		return nil
 	}
 	var points []LatLng
-	if err := json.Unmarshal(data, &points); err != nil {
+
+	var trimmedData = strings.ReplaceAll(strings.ReplaceAll(string(data), "\n", ""), " ", "")
+	if err := json.Unmarshal([]byte(trimmedData), &points); err != nil {
+		log.Default().Println(err)
+		log.Default().Println("Unable to unmarshal data: " + trimmedData)
 		return err
 	}
 
@@ -64,8 +70,10 @@ func (l *LatLng) UnmarshalJSON(data []byte) error {
 		return nil
 	}
 
+	var trimmedData = strings.ReplaceAll(strings.ReplaceAll(string(data), "\n", ""), " ", "")
 	var latlng [2]float64
-	if err := json.Unmarshal(data, &latlng); err != nil {
+	if err := json.Unmarshal([]byte(trimmedData), &latlng); err != nil {
+		log.Default().Println("Unable to unmarshal values: " + trimmedData)
 		return err
 	}
 
