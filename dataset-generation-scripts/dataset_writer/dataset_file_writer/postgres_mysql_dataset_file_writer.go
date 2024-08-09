@@ -39,7 +39,7 @@ const insertPostgresGISValueTemplate string = "('%s','%s','POLYGON((%s, %s, %s, 
 
 // Spartial MySQL insert statement
 const insertMySQLGISTemplate string = "INSERT INTO vn_gis(code,level,bbox, gis_geom) VALUES "
-const insertMySQLGISValueTemplate string = "('%s','%s',ST_GeomFromText('POLYGON((%s, %s, %s, %s, %s))', 4326), ST_GeomFromText('MULTIPOLYGON(((%s)))', 4326);\n"
+const insertMySQLGISValueTemplate string = "('%s','%s',ST_GeomFromText('POLYGON((%s, %s, %s, %s, %s))', 4326), ST_GeomFromText('MULTIPOLYGON(((%s)))', 4326));\n"
 
 const batchInsertItemSize int = 50
 
@@ -248,7 +248,7 @@ func writeMySQLGISDataToFile(gisData []gis.ProvinceGIS) {
 			gis.ToCoordinateStrLatLng(g.BBox.TopRightLng, g.BBox.TopRightLat),
 			gis.ToCoordinateStrLatLng(g.BBox.BottomRightLng, g.BBox.BottomRightLat),
 			gis.ToCoordinateStrLatLng(g.BBox.BottomLeftLng, g.BBox.BottomLeftLat), // repeat the bottom left again to close the polygon ring,
-			toPostgisMultiPolygon(g.Coordinates[0][0]),
+			toMySQLMultiPolygon(g.Coordinates[0][0]),
 			),
 		)
 
@@ -263,7 +263,7 @@ func writeMySQLGISDataToFile(gisData []gis.ProvinceGIS) {
 				gis.ToCoordinateStrLatLng(gd.BBox.TopRightLng, gd.BBox.TopRightLat),
 				gis.ToCoordinateStrLatLng(gd.BBox.BottomRightLng, gd.BBox.BottomRightLat),
 				gis.ToCoordinateStrLatLng(gd.BBox.BottomLeftLng, gd.BBox.BottomLeftLat), // repeat the bottom left again to close the polygon ring,
-				toPostgisMultiPolygon(gd.Coordinates[0][0]),
+				toMySQLMultiPolygon(gd.Coordinates[0][0]),
 				),
 			)
 		}
@@ -281,5 +281,17 @@ func toPostgisMultiPolygon(ringCoordinates gis.GisLinearRingCoordinate) string {
 	// repeat the first point to close the ring
 	firstPoint := ringCoordinates.GisPoints[0]
 	sb.WriteString(gis.ToCoordinateStr(firstPoint.Longitude, firstPoint.Latitude))
+	return sb.String()
+}
+
+func toMySQLMultiPolygon(ringCoordinates gis.GisLinearRingCoordinate) string {
+	var sb strings.Builder
+	for _, p := range ringCoordinates.GisPoints {
+		sb.WriteString(gis.ToCoordinateStrLatLng(p.Longitude, p.Latitude))
+		sb.WriteString(",")
+	}
+	// repeat the first point to close the ring
+	firstPoint := ringCoordinates.GisPoints[0]
+	sb.WriteString(gis.ToCoordinateStrLatLng(firstPoint.Longitude, firstPoint.Latitude))
 	return sb.String()
 }
