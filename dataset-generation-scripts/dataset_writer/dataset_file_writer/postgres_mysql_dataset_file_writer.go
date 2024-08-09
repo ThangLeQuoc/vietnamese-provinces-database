@@ -6,6 +6,7 @@ import (
 	"log"
 	"os"
 	"time"
+	"strings"
 
 	vn_common "github.com/thanglequoc-vn-provinces/v2/common"
 	gis "github.com/thanglequoc-vn-provinces/v2/gis"
@@ -33,8 +34,8 @@ const insertWardTemplate string = "INSERT INTO wards(code,name,name_en,full_name
 const insertDistrictWardValueTemplate string = "('%s','%s','%s','%s','%s','%s','%s',%d)"
 
 // gis insert statement
-const insertGISTemplate string = "INSERT INTO vn_gis(code,level,bbox) VALUES "
-const insertGISValueTemplate string = "('%s','%s','POLYGON((%s, %s, %s, %s, %s))');\n"
+const insertGISTemplate string = "INSERT INTO vn_gis(code,level,bbox, gis_geom) VALUES "
+const insertGISValueTemplate string = "('%s','%s','POLYGON((%s, %s, %s, %s, %s))', 'MULTIPOLYGON(((%s)))');\n"
 
 const batchInsertItemSize int = 50
 
@@ -184,15 +185,33 @@ func writeGISDataToFile(gisData []gis.ProvinceGIS) {
 	for _, g := range gisData {
 		dataWriter.WriteString(insertGISTemplate)
 		
+		// TODO @thangle: Focus on province first
 		dataWriter.WriteString(fmt.Sprintf(insertGISValueTemplate, 
-			g.LevelId, "province",
+			g.LevelId, 
+			"province",
 			gis.ToCoordinateStr(g.BBox.BottomLeftLat, g.BBox.BottomLeftLng),
 			gis.ToCoordinateStr(g.BBox.TopLeftLat, g.BBox.TopLeftLng),
 			gis.ToCoordinateStr(g.BBox.TopRightLat, g.BBox.TopRightLng),
 			gis.ToCoordinateStr(g.BBox.BottomRightLat, g.BBox.BottomRightLng),
-			gis.ToCoordinateStr(g.BBox.BottomLeftLat, g.BBox.BottomLeftLng)), // repeat the bottom left again to close the polygon ring
+			gis.ToCoordinateStr(g.BBox.BottomLeftLat, g.BBox.BottomLeftLng), // repeat the bottom left again to close the polygon ring,
+			toPostgisMultiPolygon(g.Coordinates[0][0]),
+			),
 		)
 	}
 
 	dataWriter.Flush()
+}
+
+func toPostgisMultiPolygon(ringCoordinates gis.GisLinearRingCoordinate) string {
+	var sb strings.Builder
+
+	for _, p := range ringCoordinates.GisPoints {
+		sb.WriteString(gis.ToCoordinateStr(p.Latitude, p.Longitude))
+		sb.WriteString(",")
+	}
+
+	// repeat the first point to close the ring
+	firstPoint := ringCoordinates.GisPoints[0]
+	sb.WriteString(gis.ToCoordinateStr(firstPoint.Latitude, firstPoint.Longitude))
+	return sb.String()
 }
