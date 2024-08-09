@@ -7,13 +7,13 @@ import (
 	"strings"
 )
 
-type LatLng struct {
-	Latitude float64
+type LngLat struct {
 	Longitude float64
+	Latitude float64
 }
 
 type GisLinearRingCoordinate struct {
-	GisPoints []LatLng
+	GisPoints []LngLat
 }
 
 type ProvinceGIS struct {
@@ -34,24 +34,24 @@ type DistrictGIS struct {
 }
 
 type BBox struct {
-	BottomLeftLat float64
 	BottomLeftLng float64
+	BottomLeftLat float64
 
-	TopLeftLat float64
 	TopLeftLng float64
+	TopLeftLat float64
 
-	TopRightLat float64
 	TopRightLng float64
+	TopRightLat float64
 
-	BottomRightLat float64
 	BottomRightLng float64
+	BottomRightLat float64
 }
 
 func (g *GisLinearRingCoordinate) UnmarshalJSON(data []byte) error {
 	if string(data) == "null" || string(data) == `""` {
 		return nil
 	}
-	var points []LatLng
+	var points []LngLat
 
 	var trimmedData = strings.ReplaceAll(strings.ReplaceAll(string(data), "\n", ""), " ", "")
 	if err := json.Unmarshal([]byte(trimmedData), &points); err != nil {
@@ -65,7 +65,7 @@ func (g *GisLinearRingCoordinate) UnmarshalJSON(data []byte) error {
 }
 
 
-func (l *LatLng) UnmarshalJSON(data []byte) error {
+func (l *LngLat) UnmarshalJSON(data []byte) error {
 	if string(data) == "null" || string(data) == `""` {
 		return nil
 	}
@@ -77,8 +77,8 @@ func (l *LatLng) UnmarshalJSON(data []byte) error {
 		return err
 	}
 
-	l.Latitude = latlng[0]
-	l.Longitude = latlng[1]
+	l.Longitude = latlng[0]
+	l.Latitude = latlng[1]
 	return nil
 }
 
@@ -91,20 +91,24 @@ func (b *BBox) UnmarshalJSON(data []byte) error {
 	// @thangle: The bbox array format from daohoangson gis resource is 
 	// 2 first digits: BottomLeft coordinate LatLng
 	// 2 last digits: TopRight coordinate LatLng
-	b.BottomLeftLat = bboxArray[0]
-	b.BottomLeftLng = bboxArray[1]
+	b.BottomLeftLng = bboxArray[0]
+	b.BottomLeftLat = bboxArray[1]
 
-	b.TopLeftLat = bboxArray[2]
-	b.TopLeftLng = bboxArray[1]
+	b.TopLeftLng = bboxArray[2]
+	b.TopLeftLat = bboxArray[1]
 	
-	b.TopRightLat = bboxArray[2]
-	b.TopRightLng = bboxArray[3]
+	b.TopRightLng = bboxArray[2]
+	b.TopRightLat = bboxArray[3]
 
-	b.BottomRightLat = bboxArray[0]
-	b.BottomRightLng = bboxArray[3]
+	b.BottomRightLng = bboxArray[0]
+	b.BottomRightLat = bboxArray[3]
 	return nil
 }
 
-func ToCoordinateStr(lat float64, lng float64) string {
+func ToCoordinateStr(lng float64, lat float64) string {
+	return fmt.Sprintf("%f %f", lng, lat) 
+}
+
+func ToCoordinateStrLatLng(lng float64, lat float64) string {
 	return fmt.Sprintf("%f %f", lat, lng) 
 }

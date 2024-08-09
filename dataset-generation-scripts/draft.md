@@ -23,3 +23,24 @@ level - province/district, required string
 bbox - required, polygon
 gis_geom - multipolygon
 
+Thing to do
+
+- Generate bbox data first
+- 
+
+Format(Lat Long)
+105.174641982 21.7004831250001 --> south west
+105.292898491 21.8649141770001 --> north east
+
+
+105.174641982 21.7004831250001
+105.292898491 21.7004831250001
+105.292898491 21.8649141770001
+105.174641982 21.8649141770001
+105.174641982 21.7004831250001 
+
+To avoid ring not closed exception, first point must repeated
+ 
+ https://gis.stackexchange.com/questions/321385/converting-multipolygon-field-stored-as-text-to-geometry-data-type-in-postgis-an
+
+ 

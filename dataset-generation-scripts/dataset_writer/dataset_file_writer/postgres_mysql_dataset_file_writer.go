@@ -33,9 +33,13 @@ const insertDistrictTemplate string = "INSERT INTO districts(code,name,name_en,f
 const insertWardTemplate string = "INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES"
 const insertDistrictWardValueTemplate string = "('%s','%s','%s','%s','%s','%s','%s',%d)"
 
-// gis insert statement
-const insertGISTemplate string = "INSERT INTO vn_gis(code,level,bbox, gis_geom) VALUES "
-const insertGISValueTemplate string = "('%s','%s','POLYGON((%s, %s, %s, %s, %s))', 'MULTIPOLYGON(((%s)))');\n"
+// PostGis insert statement
+const insertPostgresGISTemplate string = "INSERT INTO vn_gis(code,level,bbox, gis_geom) VALUES "
+const insertPostgresGISValueTemplate string = "('%s','%s','POLYGON((%s, %s, %s, %s, %s))', 'MULTIPOLYGON(((%s)))');\n"
+
+// Spartial MySQL insert statement
+const insertMySQLGISTemplate string = "INSERT INTO vn_gis(code,level,bbox, gis_geom) VALUES "
+const insertMySQLGISValueTemplate string = "('%s','%s',ST_GeomFromText('POLYGON((%s, %s, %s, %s, %s))', 4326), ST_GeomFromText('MULTIPOLYGON(((%s)))', 4326);\n"
 
 const batchInsertItemSize int = 50
 
@@ -160,12 +164,13 @@ func (w *PostgresMySQLDatasetFileWriter) WriteToFile(
 
 	dataWriter.Flush()
 	
-	writeGISDataToFile(gisData)
+	writePostgresGISDataToFile(gisData)
+	writeMySQLGISDataToFile(gisData)
 	return nil
 }
 
 // TODO @thangle: Set it for postgres first and refactor later
-func writeGISDataToFile(gisData []gis.ProvinceGIS) {
+func writePostgresGISDataToFile(gisData []gis.ProvinceGIS) {
 	fileTimeSuffix := getFileTimeSuffix()
 	outputFilePath := fmt.Sprintf("./output/postgresql_generated_ImportGISData_vn_units_%s.sql", fileTimeSuffix)
 	file, err := os.OpenFile(outputFilePath, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
@@ -183,30 +188,81 @@ func writeGISDataToFile(gisData []gis.ProvinceGIS) {
 	
 	// ring order: bottom left -> going around -> bottom left again
 	for _, g := range gisData {
-		dataWriter.WriteString(insertGISTemplate)
-		dataWriter.WriteString(fmt.Sprintf(insertGISValueTemplate, 
+		dataWriter.WriteString(insertPostgresGISTemplate)
+		dataWriter.WriteString(fmt.Sprintf(insertPostgresGISValueTemplate, 
 			g.LevelId, 
 			"province",
-			gis.ToCoordinateStr(g.BBox.BottomLeftLat, g.BBox.BottomLeftLng),
-			gis.ToCoordinateStr(g.BBox.TopLeftLat, g.BBox.TopLeftLng),
-			gis.ToCoordinateStr(g.BBox.TopRightLat, g.BBox.TopRightLng),
-			gis.ToCoordinateStr(g.BBox.BottomRightLat, g.BBox.BottomRightLng),
-			gis.ToCoordinateStr(g.BBox.BottomLeftLat, g.BBox.BottomLeftLng), // repeat the bottom left again to close the polygon ring,
+			gis.ToCoordinateStr(g.BBox.BottomLeftLng, g.BBox.BottomLeftLat),
+			gis.ToCoordinateStr(g.BBox.TopLeftLng, g.BBox.TopLeftLat),
+			gis.ToCoordinateStr(g.BBox.TopRightLng, g.BBox.TopRightLat),
+			gis.ToCoordinateStr(g.BBox.BottomRightLng, g.BBox.BottomRightLat),
+			gis.ToCoordinateStr(g.BBox.BottomLeftLng, g.BBox.BottomLeftLat), // repeat the bottom left again to close the polygon ring,
 			toPostgisMultiPolygon(g.Coordinates[0][0]),
 			),
 		)
 
 		// district in province
 		for _, gd := range g.Districts {
-			dataWriter.WriteString(insertGISTemplate)
-			dataWriter.WriteString(fmt.Sprintf(insertGISValueTemplate, 
+			dataWriter.WriteString(insertPostgresGISTemplate)
+			dataWriter.WriteString(fmt.Sprintf(insertPostgresGISValueTemplate, 
 				gd.LevelId, 
 				"district",
-				gis.ToCoordinateStr(gd.BBox.BottomLeftLat, gd.BBox.BottomLeftLng),
-				gis.ToCoordinateStr(gd.BBox.TopLeftLat, gd.BBox.TopLeftLng),
-				gis.ToCoordinateStr(gd.BBox.TopRightLat, gd.BBox.TopRightLng),
-				gis.ToCoordinateStr(gd.BBox.BottomRightLat, gd.BBox.BottomRightLng),
-				gis.ToCoordinateStr(gd.BBox.BottomLeftLat, gd.BBox.BottomLeftLng), // repeat the bottom left again to close the polygon ring,
+				gis.ToCoordinateStr(gd.BBox.BottomLeftLng, gd.BBox.BottomLeftLat),
+				gis.ToCoordinateStr(gd.BBox.TopLeftLng, gd.BBox.TopLeftLat),
+				gis.ToCoordinateStr(gd.BBox.TopRightLng, gd.BBox.TopRightLat),
+				gis.ToCoordinateStr(gd.BBox.BottomRightLng, gd.BBox.BottomRightLat),
+				gis.ToCoordinateStr(gd.BBox.BottomLeftLng, gd.BBox.BottomLeftLat), // repeat the bottom left again to close the polygon ring,
+				toPostgisMultiPolygon(gd.Coordinates[0][0]),
+				),
+			)
+		}
+	}
+
+	dataWriter.Flush()
+}
+
+func writeMySQLGISDataToFile(gisData []gis.ProvinceGIS) {
+	fileTimeSuffix := getFileTimeSuffix()
+	outputFilePath := fmt.Sprintf("./output/mysql_generated_ImportGISData_vn_units_%s.sql", fileTimeSuffix)
+	file, err := os.OpenFile(outputFilePath, os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0644)
+	if err != nil {
+		log.Fatal("Unable to write to file", err)
+		panic(err)
+	}
+	defer file.Close()
+
+	dataWriter := bufio.NewWriter(file)
+	dataWriter.WriteString("/* === Vietnamese Provinces Database - GIS Dataset for MySQL === */\n")
+	dataWriter.WriteString(fmt.Sprintf("/* Created at:  %s */\n", time.Now().Format(time.RFC1123Z)))
+	dataWriter.WriteString("/* Reference: https://github.com/ThangLeQuoc/vietnamese-provinces-database */\n")
+	dataWriter.WriteString("/* =============================================== */\n\n")
+	
+	// ring order: bottom left -> going around -> bottom left again
+	for _, g := range gisData {
+		dataWriter.WriteString(insertMySQLGISTemplate)
+		dataWriter.WriteString(fmt.Sprintf(insertMySQLGISValueTemplate, 
+			g.LevelId, 
+			"province",
+			gis.ToCoordinateStrLatLng(g.BBox.BottomLeftLng, g.BBox.BottomLeftLat),
+			gis.ToCoordinateStrLatLng(g.BBox.TopLeftLng, g.BBox.TopLeftLat),
+			gis.ToCoordinateStrLatLng(g.BBox.TopRightLng, g.BBox.TopRightLat),
+			gis.ToCoordinateStrLatLng(g.BBox.BottomRightLng, g.BBox.BottomRightLat),
+			gis.ToCoordinateStrLatLng(g.BBox.BottomLeftLng, g.BBox.BottomLeftLat), // repeat the bottom left again to close the polygon ring,
+			toPostgisMultiPolygon(g.Coordinates[0][0]),
+			),
+		)
+
+		// district in province
+		for _, gd := range g.Districts {
+			dataWriter.WriteString(insertMySQLGISTemplate)
+			dataWriter.WriteString(fmt.Sprintf(insertMySQLGISValueTemplate, 
+				gd.LevelId, 
+				"district",
+				gis.ToCoordinateStrLatLng(gd.BBox.BottomLeftLng, gd.BBox.BottomLeftLat),
+				gis.ToCoordinateStrLatLng(gd.BBox.TopLeftLng, gd.BBox.TopLeftLat),
+				gis.ToCoordinateStrLatLng(gd.BBox.TopRightLng, gd.BBox.TopRightLat),
+				gis.ToCoordinateStrLatLng(gd.BBox.BottomRightLng, gd.BBox.BottomRightLat),
+				gis.ToCoordinateStrLatLng(gd.BBox.BottomLeftLng, gd.BBox.BottomLeftLat), // repeat the bottom left again to close the polygon ring,
 				toPostgisMultiPolygon(gd.Coordinates[0][0]),
 				),
 			)
@@ -219,11 +275,11 @@ func writeGISDataToFile(gisData []gis.ProvinceGIS) {
 func toPostgisMultiPolygon(ringCoordinates gis.GisLinearRingCoordinate) string {
 	var sb strings.Builder
 	for _, p := range ringCoordinates.GisPoints {
-		sb.WriteString(gis.ToCoordinateStr(p.Latitude, p.Longitude))
+		sb.WriteString(gis.ToCoordinateStr(p.Longitude, p.Latitude))
 		sb.WriteString(",")
 	}
 	// repeat the first point to close the ring
 	firstPoint := ringCoordinates.GisPoints[0]
-	sb.WriteString(gis.ToCoordinateStr(firstPoint.Latitude, firstPoint.Longitude))
+	sb.WriteString(gis.ToCoordinateStr(firstPoint.Longitude, firstPoint.Latitude))
 	return sb.String()
 }
