@@ -184,8 +184,6 @@ func writeGISDataToFile(gisData []gis.ProvinceGIS) {
 	// ring order: bottom left -> going around -> bottom left again
 	for _, g := range gisData {
 		dataWriter.WriteString(insertGISTemplate)
-		
-		// TODO @thangle: Focus on province first
 		dataWriter.WriteString(fmt.Sprintf(insertGISValueTemplate, 
 			g.LevelId, 
 			"province",
@@ -197,6 +195,22 @@ func writeGISDataToFile(gisData []gis.ProvinceGIS) {
 			toPostgisMultiPolygon(g.Coordinates[0][0]),
 			),
 		)
+
+		// district in province
+		for _, gd := range g.Districts {
+			dataWriter.WriteString(insertGISTemplate)
+			dataWriter.WriteString(fmt.Sprintf(insertGISValueTemplate, 
+				gd.LevelId, 
+				"district",
+				gis.ToCoordinateStr(gd.BBox.BottomLeftLat, gd.BBox.BottomLeftLng),
+				gis.ToCoordinateStr(gd.BBox.TopLeftLat, gd.BBox.TopLeftLng),
+				gis.ToCoordinateStr(gd.BBox.TopRightLat, gd.BBox.TopRightLng),
+				gis.ToCoordinateStr(gd.BBox.BottomRightLat, gd.BBox.BottomRightLng),
+				gis.ToCoordinateStr(gd.BBox.BottomLeftLat, gd.BBox.BottomLeftLng), // repeat the bottom left again to close the polygon ring,
+				toPostgisMultiPolygon(gd.Coordinates[0][0]),
+				),
+			)
+		}
 	}
 
 	dataWriter.Flush()
@@ -204,12 +218,10 @@ func writeGISDataToFile(gisData []gis.ProvinceGIS) {
 
 func toPostgisMultiPolygon(ringCoordinates gis.GisLinearRingCoordinate) string {
 	var sb strings.Builder
-
 	for _, p := range ringCoordinates.GisPoints {
 		sb.WriteString(gis.ToCoordinateStr(p.Latitude, p.Longitude))
 		sb.WriteString(",")
 	}
-
 	// repeat the first point to close the ring
 	firstPoint := ringCoordinates.GisPoints[0]
 	sb.WriteString(gis.ToCoordinateStr(firstPoint.Latitude, firstPoint.Longitude))
