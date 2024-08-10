@@ -19,8 +19,8 @@ services:
     environment:
       ACCEPT_EULA: "1"
       MSSQL_SA_PASSWORD: "Root123456@thangle"
-      MSSQL_PID: "root"
-      MSSQL_USER: "sa"
+      # MSSQL_PID: "root"
+      # MSSQL_USER: "sa"
     ports:
       - "15433:1433"
     volumes:

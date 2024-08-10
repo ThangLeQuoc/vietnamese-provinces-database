@@ -43,4 +43,11 @@ To avoid ring not closed exception, first point must repeated
  
  https://gis.stackexchange.com/questions/321385/converting-multipolygon-field-stored-as-text-to-geometry-data-type-in-postgis-an
 
+ https://dbschema.com/2023/07/16/sqlserver/spatial-data-types/
+
+
+ Oracle database: https://hub.docker.com/r/gvenzl/oracle-free
+
+ https://oralytics.com/23c/23c-free-on-docker/
+
  
