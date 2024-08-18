@@ -40,7 +40,7 @@ func ReadAndGenerateSQLDatasets(gisData []gis.ProvinceGIS) {
 	mssqlDatasetFileWriter := dataset_file_writer.MssqlDatasetFileWriter{
 		OutputFilePath: "./output/mssql_generated_ImportData_vn_units_%s.sql",
 	}
-	err = mssqlDatasetFileWriter.WriteToFile(regions, administrativeUnits, provinces, districts, wards)
+	err = mssqlDatasetFileWriter.WriteToFile(regions, administrativeUnits, provinces, districts, wards, gisData)
 	if err != nil {
 		log.Fatal("Unable to generate Mssql Dataset", err)
 	} else {
