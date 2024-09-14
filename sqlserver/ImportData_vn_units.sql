@@ -1,5 +1,5 @@
 /* === Vietnamese Provinces Database Dataset for Microsoft SQL Server === */
-/* Created at:  Sun, 05 May 2024 16:21:58 +0700 */
+/* Created at:  Sat, 14 Sep 2024 16:22:56 +0700 */
 /* Reference: https://github.com/ThangLeQuoc/vietnamese-provinces-database */
 /* =============================================== */
 
@@ -355,11 +355,10 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('352',N'Bình Lục',N'Binh Luc',N'Huyện Bình Lục',N'Binh Luc District','binh_luc','35',7),
 ('353',N'Lý Nhân',N'Ly Nhan',N'Huyện Lý Nhân',N'Ly Nhan District','ly_nhan','35',7),
 ('356',N'Nam Định',N'Nam Dinh',N'Thành phố Nam Định',N'Nam Dinh City','nam_dinh','36',4),
-('358',N'Mỹ Lộc',N'My Loc',N'Huyện Mỹ Lộc',N'My Loc District','my_loc','36',7),
-('359',N'Vụ Bản',N'Vu Ban',N'Huyện Vụ Bản',N'Vu Ban District','vu_ban','36',7);
+('359',N'Vụ Bản',N'Vu Ban',N'Huyện Vụ Bản',N'Vu Ban District','vu_ban','36',7),
+('360',N'Ý Yên',N'Y Yen',N'Huyện Ý Yên',N'Y Yen District','y_yen','36',7);
 
 INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
-('360',N'Ý Yên',N'Y Yen',N'Huyện Ý Yên',N'Y Yen District','y_yen','36',7),
 ('361',N'Nghĩa Hưng',N'Nghia Hung',N'Huyện Nghĩa Hưng',N'Nghia Hung District','nghia_hung','36',7),
 ('362',N'Nam Trực',N'Nam Truc',N'Huyện Nam Trực',N'Nam Truc District','nam_truc','36',7),
 ('363',N'Trực Ninh',N'Truc Ninh',N'Huyện Trực Ninh',N'Truc Ninh District','truc_ninh','36',7),
@@ -408,10 +407,10 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('416',N'Quỳ Châu',N'Quy Chau',N'Huyện Quỳ Châu',N'Quy Chau District','quy_chau','40',7),
 ('417',N'Kỳ Sơn',N'Ky Son',N'Huyện Kỳ Sơn',N'Ky Son District','ky_son','40',7),
 ('418',N'Tương Dương',N'Tuong Duong',N'Huyện Tương Dương',N'Tuong Duong District','tuong_duong','40',7),
-('419',N'Nghĩa Đàn',N'Nghia Dan',N'Huyện Nghĩa Đàn',N'Nghia Dan District','nghia_dan','40',7);
+('419',N'Nghĩa Đàn',N'Nghia Dan',N'Huyện Nghĩa Đàn',N'Nghia Dan District','nghia_dan','40',7),
+('420',N'Quỳ Hợp',N'Quy Hop',N'Huyện Quỳ Hợp',N'Quy Hop District','quy_hop','40',7);
 
 INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
-('420',N'Quỳ Hợp',N'Quy Hop',N'Huyện Quỳ Hợp',N'Quy Hop District','quy_hop','40',7),
 ('421',N'Quỳnh Lưu',N'Quynh Luu',N'Huyện Quỳnh Lưu',N'Quynh Luu District','quynh_luu','40',7),
 ('422',N'Con Cuông',N'Con Cuong',N'Huyện Con Cuông',N'Con Cuong District','con_cuong','40',7),
 ('423',N'Tân Kỳ',N'Tan Ky',N'Huyện Tân Kỳ',N'Tan Ky District','tan_ky','40',7),
@@ -460,10 +459,10 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('478',N'Phú Vang',N'Phu Vang',N'Huyện Phú Vang',N'Phu Vang District','phu_vang','46',7),
 ('479',N'Hương Thủy',N'Huong Thuy',N'Thị xã Hương Thủy',N'Huong Thuy Town','huong_thuy','46',6),
 ('480',N'Hương Trà',N'Huong Tra',N'Thị xã Hương Trà',N'Huong Tra Town','huong_tra','46',6),
-('481',N'A Lưới',N'A Luoi',N'Huyện A Lưới',N'A Luoi District','a_luoi','46',7);
+('481',N'A Lưới',N'A Luoi',N'Huyện A Lưới',N'A Luoi District','a_luoi','46',7),
+('482',N'Phú Lộc',N'Phu Loc',N'Huyện Phú Lộc',N'Phu Loc District','phu_loc','46',7);
 
 INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
-('482',N'Phú Lộc',N'Phu Loc',N'Huyện Phú Lộc',N'Phu Loc District','phu_loc','46',7),
 ('483',N'Nam Đông',N'Nam Dong',N'Huyện Nam Đông',N'Nam Dong District','nam_dong','46',7),
 ('490',N'Liên Chiểu',N'Lien Chieu',N'Quận Liên Chiểu',N'Lien Chieu District','lien_chieu','48',5),
 ('491',N'Thanh Khê',N'Thanh Khe',N'Quận Thanh Khê',N'Thanh Khe District','thanh_khe','48',5),
@@ -512,10 +511,10 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('548',N'Phù Cát',N'Phu Cat',N'Huyện Phù Cát',N'Phu Cat District','phu_cat','52',7),
 ('549',N'An Nhơn',N'An Nhon',N'Thị xã An Nhơn',N'An Nhon Town','an_nhon','52',6),
 ('550',N'Tuy Phước',N'Tuy Phuoc',N'Huyện Tuy Phước',N'Tuy Phuoc District','tuy_phuoc','52',7),
-('551',N'Vân Canh',N'Van Canh',N'Huyện Vân Canh',N'Van Canh District','van_canh','52',7);
+('551',N'Vân Canh',N'Van Canh',N'Huyện Vân Canh',N'Van Canh District','van_canh','52',7),
+('555',N'Tuy Hoà',N'Tuy Hoa',N'Thành phố Tuy Hoà',N'Tuy Hoa City','tuy_hoa','54',4);
 
 INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
-('555',N'Tuy Hoà',N'Tuy Hoa',N'Thành phố Tuy Hoà',N'Tuy Hoa City','tuy_hoa','54',4),
 ('557',N'Sông Cầu',N'Song Cau',N'Thị xã Sông Cầu',N'Song Cau Town','song_cau','54',6),
 ('558',N'Đồng Xuân',N'Dong Xuan',N'Huyện Đồng Xuân',N'Dong Xuan District','dong_xuan','54',7),
 ('559',N'Tuy An',N'Tuy An',N'Huyện Tuy An',N'Tuy An District','tuy_an','54',7),
@@ -564,10 +563,10 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('623',N'An Khê',N'An Khe',N'Thị xã An Khê',N'An Khe Town','an_khe','64',6),
 ('624',N'Ayun Pa',N'Ayun Pa',N'Thị xã Ayun Pa',N'Ayun Pa Town','ayun_pa','64',6),
 ('625',N'KBang',N'KBang',N'Huyện KBang',N'KBang District','kbang','64',7),
-('626',N'Đăk Đoa',N'Dak Doa',N'Huyện Đăk Đoa',N'Dak Doa District','dak_doa','64',7);
+('626',N'Đăk Đoa',N'Dak Doa',N'Huyện Đăk Đoa',N'Dak Doa District','dak_doa','64',7),
+('627',N'Chư Păh',N'Chu Pah',N'Huyện Chư Păh',N'Chu Pah District','chu_pah','64',7);
 
 INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
-('627',N'Chư Păh',N'Chu Pah',N'Huyện Chư Păh',N'Chu Pah District','chu_pah','64',7),
 ('628',N'Ia Grai',N'Ia Grai',N'Huyện Ia Grai',N'Ia Grai District','ia_grai','64',7),
 ('629',N'Mang Yang',N'Mang Yang',N'Huyện Mang Yang',N'Mang Yang District','mang_yang','64',7),
 ('630',N'Kông Chro',N'Kong Chro',N'Huyện Kông Chro',N'Kong Chro District','kong_chro','64',7),
@@ -616,10 +615,10 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('683',N'Cát Tiên',N'Cat Tien',N'Huyện Cát Tiên',N'Cat Tien District','cat_tien','68',7),
 ('688',N'Phước Long',N'Phuoc Long',N'Thị xã Phước Long',N'Phuoc Long Town','phuoc_long','70',6),
 ('689',N'Đồng Xoài',N'Dong Xoai',N'Thành phố Đồng Xoài',N'Dong Xoai City','dong_xoai','70',4),
-('690',N'Bình Long',N'Binh Long',N'Thị xã Bình Long',N'Binh Long Town','binh_long','70',6);
+('690',N'Bình Long',N'Binh Long',N'Thị xã Bình Long',N'Binh Long Town','binh_long','70',6),
+('691',N'Bù Gia Mập',N'Bu Gia Map',N'Huyện Bù Gia Mập',N'Bu Gia Map District','bu_gia_map','70',7);
 
 INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
-('691',N'Bù Gia Mập',N'Bu Gia Map',N'Huyện Bù Gia Mập',N'Bu Gia Map District','bu_gia_map','70',7),
 ('692',N'Lộc Ninh',N'Loc Ninh',N'Huyện Lộc Ninh',N'Loc Ninh District','loc_ninh','70',7),
 ('693',N'Bù Đốp',N'Bu Dop',N'Huyện Bù Đốp',N'Bu Dop District','bu_dop','70',7),
 ('694',N'Hớn Quản',N'Hon Quan',N'Huyện Hớn Quản',N'Hon Quan District','hon_quan','70',7),
@@ -668,10 +667,10 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('764',N'Gò Vấp',N'Go Vap',N'Quận Gò Vấp',N'Go Vap District','go_vap','79',5),
 ('765',N'Bình Thạnh',N'Binh Thanh',N'Quận Bình Thạnh',N'Binh Thanh District','binh_thanh','79',5),
 ('766',N'Tân Bình',N'Tan Binh',N'Quận Tân Bình',N'Tan Binh District','tan_binh','79',5),
-('767',N'Tân Phú',N'Tan Phu',N'Quận Tân Phú',N'Tan Phu District','tan_phu','79',5);
+('767',N'Tân Phú',N'Tan Phu',N'Quận Tân Phú',N'Tan Phu District','tan_phu','79',5),
+('768',N'Phú Nhuận',N'Phu Nhuan',N'Quận Phú Nhuận',N'Phu Nhuan District','phu_nhuan','79',5);
 
 INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
-('768',N'Phú Nhuận',N'Phu Nhuan',N'Quận Phú Nhuận',N'Phu Nhuan District','phu_nhuan','79',5),
 ('769',N'Thủ Đức',N'Thu Duc',N'Thành phố Thủ Đức',N'Thu Duc City','thu_duc','79',3),
 ('770',N'3',N'3',N'Quận 3',N'District 3','3','79',5),
 ('771',N'10',N'10',N'Quận 10',N'District 10','10','79',5),
@@ -720,10 +719,10 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('834',N'Giồng Trôm',N'Giong Trom',N'Huyện Giồng Trôm',N'Giong Trom District','giong_trom','83',7),
 ('835',N'Bình Đại',N'Binh Dai',N'Huyện Bình Đại',N'Binh Dai District','binh_dai','83',7),
 ('836',N'Ba Tri',N'Ba Tri',N'Huyện Ba Tri',N'Ba Tri District','ba_tri','83',7),
-('837',N'Thạnh Phú',N'Thanh Phu',N'Huyện Thạnh Phú',N'Thanh Phu District','thanh_phu','83',7);
+('837',N'Thạnh Phú',N'Thanh Phu',N'Huyện Thạnh Phú',N'Thanh Phu District','thanh_phu','83',7),
+('838',N'Mỏ Cày Bắc',N'Mo Cay Bac',N'Huyện Mỏ Cày Bắc',N'Mo Cay Bac District','mo_cay_bac','83',7);
 
 INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
-('838',N'Mỏ Cày Bắc',N'Mo Cay Bac',N'Huyện Mỏ Cày Bắc',N'Mo Cay Bac District','mo_cay_bac','83',7),
 ('842',N'Trà Vinh',N'Tra Vinh',N'Thành phố Trà Vinh',N'Tra Vinh City','tra_vinh','84',4),
 ('844',N'Càng Long',N'Cang Long',N'Huyện Càng Long',N'Cang Long District','cang_long','84',7),
 ('845',N'Cầu Kè',N'Cau Ke',N'Huyện Cầu Kè',N'Cau Ke District','cau_ke','84',7),
@@ -772,10 +771,10 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('905',N'Châu Thành',N'Chau Thanh',N'Huyện Châu Thành',N'Chau Thanh District','chau_thanh','91',7),
 ('906',N'Giồng Riềng',N'Giong Rieng',N'Huyện Giồng Riềng',N'Giong Rieng District','giong_rieng','91',7),
 ('907',N'Gò Quao',N'Go Quao',N'Huyện Gò Quao',N'Go Quao District','go_quao','91',7),
-('908',N'An Biên',N'An Bien',N'Huyện An Biên',N'An Bien District','an_bien','91',7);
+('908',N'An Biên',N'An Bien',N'Huyện An Biên',N'An Bien District','an_bien','91',7),
+('909',N'An Minh',N'An Minh',N'Huyện An Minh',N'An Minh District','an_minh','91',7);
 
 INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
-('909',N'An Minh',N'An Minh',N'Huyện An Minh',N'An Minh District','an_minh','91',7),
 ('910',N'Vĩnh Thuận',N'Vinh Thuan',N'Huyện Vĩnh Thuận',N'Vinh Thuan District','vinh_thuan','91',7),
 ('911',N'Phú Quốc',N'Phu Quoc',N'Thành phố Phú Quốc',N'Phu Quoc City','phu_quoc','91',4),
 ('912',N'Kiên Hải',N'Kien Hai',N'Huyện Kiên Hải',N'Kien Hai District','kien_hai','91',7),
@@ -1686,12 +1685,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('02584',N'Quyết Thắng',N'Quyet Thang',N'Xã Quyết Thắng',N'Quyet Thang Commune','quyet_thang','076',10),
 ('02587',N'Đồng Quý',N'Dong Quy',N'Xã Đồng Quý',N'Dong Quy Commune','dong_quy','076',10),
 ('02590',N'Tân Thanh',N'Tan Thanh',N'Xã Tân Thanh',N'Tan Thanh Commune','tan_thanh','076',10),
-('02593',N'Vân Sơn',N'Van Son',N'Xã Vân Sơn',N'Van Son Commune','van_son','076',10),
 ('02596',N'Văn Phú',N'Van Phu',N'Xã Văn Phú',N'Van Phu Commune','van_phu','076',10),
 ('02599',N'Chi Thiết',N'Chi Thiet',N'Xã Chi Thiết',N'Chi Thiet Commune','chi_thiet','076',10),
 ('02602',N'Đông Lợi',N'Dong Loi',N'Xã Đông Lợi',N'Dong Loi Commune','dong_loi','076',10),
 ('02605',N'Thiện Kế',N'Thien Ke',N'Xã Thiện Kế',N'Thien Ke Commune','thien_ke','076',10),
-('02608',N'Hồng Lạc',N'Hong Lac',N'Xã Hồng Lạc',N'Hong Lac Commune','hong_lac','076',10),
+('02608',N'Hồng Sơn',N'Hong Son',N'Xã Hồng Sơn',N'Hong Son Commune','hong_son','076',10),
 ('02611',N'Phú Lương',N'Phu Luong',N'Xã Phú Lương',N'Phu Luong Commune','phu_luong','076',10),
 ('02614',N'Ninh Lai',N'Ninh Lai',N'Xã Ninh Lai',N'Ninh Lai Commune','ninh_lai','076',10),
 ('02617',N'Đại Phú',N'Dai Phu',N'Xã Đại Phú',N'Dai Phu Commune','dai_phu','076',10),
@@ -1711,10 +1709,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('02662',N'Đồng Tuyển',N'Dong Tuyen',N'Xã Đồng Tuyển',N'Dong Tuyen Commune','dong_tuyen','080',10),
 ('02665',N'Vạn Hoà',N'Van Hoa',N'Xã Vạn Hoà',N'Van Hoa Commune','van_hoa','080',10),
 ('02668',N'Bắc Cường',N'Bac Cuong',N'Phường Bắc Cường',N'Bac Cuong Ward','bac_cuong','080',8),
-('02671',N'Nam Cường',N'Nam Cuong',N'Phường Nam Cường',N'Nam Cuong Ward','nam_cuong','080',8);
+('02671',N'Nam Cường',N'Nam Cuong',N'Phường Nam Cường',N'Nam Cuong Ward','nam_cuong','080',8),
+('02674',N'Cam Đường',N'Cam Duong',N'Xã Cam Đường',N'Cam Duong Commune','cam_duong','080',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('02674',N'Cam Đường',N'Cam Duong',N'Xã Cam Đường',N'Cam Duong Commune','cam_duong','080',10),
 ('02677',N'Tả Phời',N'Ta Phoi',N'Xã Tả Phời',N'Ta Phoi Commune','ta_phoi','080',10),
 ('02680',N'Hợp Thành',N'Hop Thanh',N'Xã Hợp Thành',N'Hop Thanh Commune','hop_thanh','080',10),
 ('02746',N'Cốc San',N'Coc San',N'Xã Cốc San',N'Coc San Commune','coc_san','080',10),
@@ -1763,10 +1761,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('02818',N'Lùng Thẩn',N'Lung Than',N'Xã Lùng Thẩn',N'Lung Than Commune','lung_than','084',10),
 ('02821',N'Cán Cấu',N'Can Cau',N'Xã Cán Cấu',N'Can Cau Commune','can_cau','084',10),
 ('02824',N'Sín Chéng',N'Sin Cheng',N'Xã Sín Chéng',N'Sin Cheng Commune','sin_cheng','084',10),
-('02827',N'Quan Hồ Thẩn',N'Quan Ho Than',N'Xã Quan Hồ Thẩn',N'Quan Ho Than Commune','quan_ho_than','084',10);
+('02827',N'Quan Hồ Thẩn',N'Quan Ho Than',N'Xã Quan Hồ Thẩn',N'Quan Ho Than Commune','quan_ho_than','084',10),
+('02836',N'Nàn Xín',N'Nan Xin',N'Xã Nàn Xín',N'Nan Xin Commune','nan_xin','084',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('02836',N'Nàn Xín',N'Nan Xin',N'Xã Nàn Xín',N'Nan Xin Commune','nan_xin','084',10),
 ('02839',N'Bắc Hà',N'Bac Ha',N'Thị trấn Bắc Hà',N'Bac Ha Township','bac_ha','085',9),
 ('02842',N'Lùng Cải',N'Lung Cai',N'Xã Lùng Cải',N'Lung Cai Commune','lung_cai','085',10),
 ('02848',N'Lùng Phình',N'Lung Phinh',N'Xã Lùng Phình',N'Lung Phinh Commune','lung_phinh','085',10),
@@ -1815,10 +1813,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('02983',N'Việt Tiến',N'Viet Tien',N'Xã Việt Tiến',N'Viet Tien Commune','viet_tien','087',10),
 ('02986',N'Yên Sơn',N'Yen Son',N'Xã Yên Sơn',N'Yen Son Commune','yen_son','087',10),
 ('02989',N'Bảo Hà',N'Bao Ha',N'Xã Bảo Hà',N'Bao Ha Commune','bao_ha','087',10),
-('02992',N'Lương Sơn',N'Luong Son',N'Xã Lương Sơn',N'Luong Son Commune','luong_son','087',10);
+('02992',N'Lương Sơn',N'Luong Son',N'Xã Lương Sơn',N'Luong Son Commune','luong_son','087',10),
+('02998',N'Phúc Khánh',N'Phuc Khanh',N'Xã Phúc Khánh',N'Phuc Khanh Commune','phuc_khanh','087',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('02998',N'Phúc Khánh',N'Phuc Khanh',N'Xã Phúc Khánh',N'Phuc Khanh Commune','phuc_khanh','087',10),
 ('03001',N'Sa Pa',N'Sa Pa',N'Phường Sa Pa',N'Sa Pa Ward','sa_pa','088',8),
 ('03002',N'Sa Pả',N'Sa Pa',N'Phường Sa Pả',N'Sa Pa Ward','sa_pa','088',8),
 ('03003',N'Ô Quý Hồ',N'O Quy Ho',N'Phường Ô Quý Hồ',N'O Quy Ho Ward','o_quy_ho','088',8),
@@ -1867,10 +1865,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('03145',N'Thanh Minh',N'Thanh Minh',N'Xã Thanh Minh',N'Thanh Minh Commune','thanh_minh','094',10),
 ('03316',N'Nà Tấu',N'Na Tau',N'Xã Nà Tấu',N'Na Tau Commune','na_tau','094',10),
 ('03317',N'Nà Nhạn',N'Na Nhan',N'Xã Nà Nhạn',N'Na Nhan Commune','na_nhan','094',10),
-('03325',N'Mường Phăng',N'Muong Phang',N'Xã Mường Phăng',N'Muong Phang Commune','muong_phang','094',10);
+('03325',N'Mường Phăng',N'Muong Phang',N'Xã Mường Phăng',N'Muong Phang Commune','muong_phang','094',10),
+('03326',N'Pá Khoang',N'Pa Khoang',N'Xã Pá Khoang',N'Pa Khoang Commune','pa_khoang','094',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('03326',N'Pá Khoang',N'Pa Khoang',N'Xã Pá Khoang',N'Pa Khoang Commune','pa_khoang','094',10),
 ('03148',N'Sông Đà',N'Song Da',N'Phường Sông Đà',N'Song Da Ward','song_da','095',8),
 ('03151',N'Na Lay',N'Na Lay',N'Phường Na Lay',N'Na Lay Ward','na_lay','095',8),
 ('03184',N'Lay Nưa',N'Lay Nua',N'Xã Lay Nưa',N'Lay Nua Commune','lay_nua','095',10),
@@ -1919,10 +1917,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('03269',N'Pú Xi',N'Pu Xi',N'Xã Pú Xi',N'Pu Xi Commune','pu_xi','099',10),
 ('03271',N'Pú Nhung',N'Pu Nhung',N'Xã Pú Nhung',N'Pu Nhung Commune','pu_nhung','099',10),
 ('03274',N'Quài Nưa',N'Quai Nua',N'Xã Quài Nưa',N'Quai Nua Commune','quai_nua','099',10),
-('03277',N'Mường Thín',N'Muong Thin',N'Xã Mường Thín',N'Muong Thin Commune','muong_thin','099',10);
+('03277',N'Mường Thín',N'Muong Thin',N'Xã Mường Thín',N'Muong Thin Commune','muong_thin','099',10),
+('03280',N'Tỏa Tình',N'Toa Tinh',N'Xã Tỏa Tình',N'Toa Tinh Commune','toa_tinh','099',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('03280',N'Tỏa Tình',N'Toa Tinh',N'Xã Tỏa Tình',N'Toa Tinh Commune','toa_tinh','099',10),
 ('03283',N'Nà Sáy',N'Na Say',N'Xã Nà Sáy',N'Na Say Commune','na_say','099',10),
 ('03284',N'Mường Khong',N'Muong Khong',N'Xã Mường Khong',N'Muong Khong Commune','muong_khong','099',10),
 ('03289',N'Quài Cang',N'Quai Cang',N'Xã Quài Cang',N'Quai Cang Commune','quai_cang','099',10),
@@ -1971,10 +1969,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('03292',N'Ẳng Tở',N'Ang To',N'Xã Ẳng Tở',N'Ang To Commune','ang_to','102',10),
 ('03301',N'Búng Lao',N'Bung Lao',N'Xã Búng Lao',N'Bung Lao Commune','bung_lao','102',10),
 ('03302',N'Xuân Lao',N'Xuan Lao',N'Xã Xuân Lao',N'Xuan Lao Commune','xuan_lao','102',10),
-('03307',N'Ẳng Nưa',N'Ang Nua',N'Xã Ẳng Nưa',N'Ang Nua Commune','ang_nua','102',10);
+('03307',N'Ẳng Nưa',N'Ang Nua',N'Xã Ẳng Nưa',N'Ang Nua Commune','ang_nua','102',10),
+('03310',N'Ẳng Cang',N'Ang Cang',N'Xã Ẳng Cang',N'Ang Cang Commune','ang_cang','102',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('03310',N'Ẳng Cang',N'Ang Cang',N'Xã Ẳng Cang',N'Ang Cang Commune','ang_cang','102',10),
 ('03312',N'Nặm Lịch',N'Nam Lich',N'Xã Nặm Lịch',N'Nam Lich Commune','nam_lich','102',10),
 ('03313',N'Mường Lạn',N'Muong Lan',N'Xã Mường Lạn',N'Muong Lan Commune','muong_lan','102',10),
 ('03156',N'Nậm Tin',N'Nam Tin',N'Xã Nậm Tin',N'Nam Tin Commune','nam_tin','103',10),
@@ -2023,10 +2021,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('03454',N'Bum Tở',N'Bum To',N'Xã Bum Tở',N'Bum To Commune','bum_to','107',10),
 ('03457',N'Nậm Khao',N'Nam Khao',N'Xã Nậm Khao',N'Nam Khao Commune','nam_khao','107',10),
 ('03463',N'Tà Tổng',N'Ta Tong',N'Xã Tà Tổng',N'Ta Tong Commune','ta_tong','107',10),
-('03466',N'Bum Nưa',N'Bum Nua',N'Xã Bum Nưa',N'Bum Nua Commune','bum_nua','107',10);
+('03466',N'Bum Nưa',N'Bum Nua',N'Xã Bum Nưa',N'Bum Nua Commune','bum_nua','107',10),
+('03467',N'Vàng San',N'Vang San',N'Xã Vàng San',N'Vang San Commune','vang_san','107',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('03467',N'Vàng San',N'Vang San',N'Xã Vàng San',N'Vang San Commune','vang_san','107',10),
 ('03469',N'Kan Hồ',N'Kan Ho',N'Xã Kan Hồ',N'Kan Ho Commune','kan_ho','107',10),
 ('03478',N'Sìn Hồ',N'Sin Ho',N'Thị trấn Sìn Hồ',N'Sin Ho Township','sin_ho','108',9),
 ('03487',N'Chăn Nưa',N'Chan Nua',N'Xã Chăn Nưa',N'Chan Nua Commune','chan_nua','108',10),
@@ -2075,10 +2073,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('03631',N'Mường Cang',N'Muong Cang',N'Xã Mường Cang',N'Muong Cang Commune','muong_cang','110',10),
 ('03632',N'Hua Nà',N'Hua Na',N'Xã Hua Nà',N'Hua Na Commune','hua_na','110',10),
 ('03634',N'Tà Hừa',N'Ta Hua',N'Xã Tà Hừa',N'Ta Hua Commune','ta_hua','110',10),
-('03637',N'Mường Kim',N'Muong Kim',N'Xã Mường Kim',N'Muong Kim Commune','muong_kim','110',10);
+('03637',N'Mường Kim',N'Muong Kim',N'Xã Mường Kim',N'Muong Kim Commune','muong_kim','110',10),
+('03638',N'Tà Mung',N'Ta Mung',N'Xã Tà Mung',N'Ta Mung Commune','ta_mung','110',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('03638',N'Tà Mung',N'Ta Mung',N'Xã Tà Mung',N'Ta Mung Commune','ta_mung','110',10),
 ('03640',N'Tà Gia',N'Ta Gia',N'Xã Tà Gia',N'Ta Gia Commune','ta_gia','110',10),
 ('03643',N'Khoen On',N'Khoen On',N'Xã Khoen On',N'Khoen On Commune','khoen_on','110',10),
 ('03598',N'Tân Uyên',N'Tan Uyen',N'Thị trấn Tân Uyên',N'Tan Uyen Township','tan_uyen','111',9),
@@ -2121,17 +2119,16 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('03697',N'Pá Ma Pha Khinh',N'Pa Ma Pha Khinh',N'Xã Pá Ma Pha Khinh',N'Pa Ma Pha Khinh Commune','pa_ma_pha_khinh','118',10),
 ('03700',N'Chiềng Ơn',N'Chieng On',N'Xã Chiềng Ơn',N'Chieng On Commune','chieng_on','118',10),
 ('03703',N'Mường Giàng',N'Muong Giang',N'Xã Mường Giàng',N'Muong Giang Commune','muong_giang','118',10),
-('03922',N'Gia Phù',N'Gia Phu',N'Xã Gia Phù',N'Gia Phu Commune','gia_phu','122',10),
 ('03706',N'Chiềng Bằng',N'Chieng Bang',N'Xã Chiềng Bằng',N'Chieng Bang Commune','chieng_bang','118',10),
 ('03709',N'Mường Sại',N'Muong Sai',N'Xã Mường Sại',N'Muong Sai Commune','muong_sai','118',10),
 ('03712',N'Nậm ét',N'Nam et',N'Xã Nậm ét',N'Nam et Commune','nam_et','118',10),
 ('03718',N'Chiềng Khoang',N'Chieng Khoang',N'Xã Chiềng Khoang',N'Chieng Khoang Commune','chieng_khoang','118',10),
 ('03721',N'Thuận Châu',N'Thuan Chau',N'Thị trấn Thuận Châu',N'Thuan Chau Township','thuan_chau','119',9),
-('03724',N'Phổng Lái',N'Phong Lai',N'Xã Phổng Lái',N'Phong Lai Commune','phong_lai','119',10);
+('03724',N'Phổng Lái',N'Phong Lai',N'Xã Phổng Lái',N'Phong Lai Commune','phong_lai','119',10),
+('03727',N'Mường é',N'Muong e',N'Xã Mường é',N'Muong e Commune','muong_e','119',10),
+('03730',N'Chiềng Pha',N'Chieng Pha',N'Xã Chiềng Pha',N'Chieng Pha Commune','chieng_pha','119',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('03727',N'Mường é',N'Muong e',N'Xã Mường é',N'Muong e Commune','muong_e','119',10),
-('03730',N'Chiềng Pha',N'Chieng Pha',N'Xã Chiềng Pha',N'Chieng Pha Commune','chieng_pha','119',10),
 ('03733',N'Chiềng La',N'Chieng La',N'Xã Chiềng La',N'Chieng La Commune','chieng_la','119',10),
 ('03736',N'Chiềng Ngàm',N'Chieng Ngam',N'Xã Chiềng Ngàm',N'Chieng Ngam Commune','chieng_ngam','119',10),
 ('03739',N'Liệp Tè',N'Liep Te',N'Xã Liệp Tè',N'Liep Te Commune','liep_te','119',10),
@@ -2179,11 +2176,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('03865',N'Xím Vàng',N'Xim Vang',N'Xã Xím Vàng',N'Xim Vang Commune','xim_vang','121',10),
 ('03868',N'Tà Xùa',N'Ta Xua',N'Xã Tà Xùa',N'Ta Xua Commune','ta_xua','121',10),
 ('03869',N'Háng Đồng',N'Hang Dong',N'Xã Háng Đồng',N'Hang Dong Commune','hang_dong','121',10),
-('03871',N'Pắc Ngà',N'Pac Nga',N'Xã Pắc Ngà',N'Pac Nga Commune','pac_nga','121',10);
+('03871',N'Pắc Ngà',N'Pac Nga',N'Xã Pắc Ngà',N'Pac Nga Commune','pac_nga','121',10),
+('03874',N'Làng Chếu',N'Lang Cheu',N'Xã Làng Chếu',N'Lang Cheu Commune','lang_cheu','121',10),
+('03877',N'Chim Vàn',N'Chim Van',N'Xã Chim Vàn',N'Chim Van Commune','chim_van','121',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('03874',N'Làng Chếu',N'Lang Cheu',N'Xã Làng Chếu',N'Lang Cheu Commune','lang_cheu','121',10),
-('03877',N'Chim Vàn',N'Chim Van',N'Xã Chim Vàn',N'Chim Van Commune','chim_van','121',10),
 ('03880',N'Mường Khoa',N'Muong Khoa',N'Xã Mường Khoa',N'Muong Khoa Commune','muong_khoa','121',10),
 ('03883',N'Song Pe',N'Song Pe',N'Xã Song Pe',N'Song Pe Commune','song_pe','121',10),
 ('03886',N'Hồng Ngài',N'Hong Ngai',N'Xã Hồng Ngài',N'Hong Ngai Commune','hong_ngai','121',10),
@@ -2199,6 +2196,7 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('03913',N'Huy Bắc',N'Huy Bac',N'Xã Huy Bắc',N'Huy Bac Commune','huy_bac','122',10),
 ('03916',N'Huy Thượng',N'Huy Thuong',N'Xã Huy Thượng',N'Huy Thuong Commune','huy_thuong','122',10),
 ('03919',N'Tân Lang',N'Tan Lang',N'Xã Tân Lang',N'Tan Lang Commune','tan_lang','122',10),
+('03922',N'Gia Phù',N'Gia Phu',N'Xã Gia Phù',N'Gia Phu Commune','gia_phu','122',10),
 ('03925',N'Tường Phù',N'Tuong Phu',N'Xã Tường Phù',N'Tuong Phu Commune','tuong_phu','122',10),
 ('03928',N'Huy Hạ',N'Huy Ha',N'Xã Huy Hạ',N'Huy Ha Commune','huy_ha','122',10),
 ('03931',N'Huy Tân',N'Huy Tan',N'Xã Huy Tân',N'Huy Tan Commune','huy_tan','122',10),
@@ -2231,10 +2229,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('04027',N'Mường Sang',N'Muong Sang',N'Xã Mường Sang',N'Muong Sang Commune','muong_sang','123',10),
 ('04030',N'Đông Sang',N'Dong Sang',N'Xã Đông Sang',N'Dong Sang Commune','dong_sang','123',10),
 ('04033',N'Phiêng Luông',N'Phieng Luong',N'Xã Phiêng Luông',N'Phieng Luong Commune','phieng_luong','123',10),
-('04045',N'Lóng Sập',N'Long Sap',N'Xã Lóng Sập',N'Long Sap Commune','long_sap','123',10);
+('04045',N'Lóng Sập',N'Long Sap',N'Xã Lóng Sập',N'Long Sap Commune','long_sap','123',10),
+('04060',N'Yên Châu',N'Yen Chau',N'Thị trấn Yên Châu',N'Yen Chau Township','yen_chau','124',9);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('04060',N'Yên Châu',N'Yen Chau',N'Thị trấn Yên Châu',N'Yen Chau Township','yen_chau','124',9),
 ('04063',N'Chiềng Đông',N'Chieng Dong',N'Xã Chiềng Đông',N'Chieng Dong Commune','chieng_dong','124',10),
 ('04066',N'Sập Vạt',N'Sap Vat',N'Xã Sập Vạt',N'Sap Vat Commune','sap_vat','124',10),
 ('04069',N'Chiềng Sàng',N'Chieng Sang',N'Xã Chiềng Sàng',N'Chieng Sang Commune','chieng_sang','124',10),
@@ -2274,6 +2272,7 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('04168',N'Sông Mã',N'Song Ma',N'Thị trấn Sông Mã',N'Song Ma Township','song_ma','126',9),
 ('04171',N'Bó Sinh',N'Bo Sinh',N'Xã Bó Sinh',N'Bo Sinh Commune','bo_sinh','126',10),
 ('04174',N'Pú Pẩu',N'Pu Pau',N'Xã Pú Pẩu',N'Pu Pau Commune','pu_pau','126',10),
+('04318',N'Mai Sơn',N'Mai Son',N'Xã Mai Sơn',N'Mai Son Commune','mai_son','135',10),
 ('04177',N'Chiềng Phung',N'Chieng Phung',N'Xã Chiềng Phung',N'Chieng Phung Commune','chieng_phung','126',10),
 ('04180',N'Chiềng En',N'Chieng En',N'Xã Chiềng En',N'Chieng En Commune','chieng_en','126',10),
 ('04183',N'Mường Lầm',N'Muong Lam',N'Xã Mường Lầm',N'Muong Lam Commune','muong_lam','126',10),
@@ -2350,7 +2349,6 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('04309',N'Lâm Thượng',N'Lam Thuong',N'Xã Lâm Thượng',N'Lam Thuong Commune','lam_thuong','135',10),
 ('04312',N'Khánh Thiện',N'Khanh Thien',N'Xã Khánh Thiện',N'Khanh Thien Commune','khanh_thien','135',10),
 ('04315',N'Minh Chuẩn',N'Minh Chuan',N'Xã Minh Chuẩn',N'Minh Chuan Commune','minh_chuan','135',10),
-('04318',N'Mai Sơn',N'Mai Son',N'Xã Mai Sơn',N'Mai Son Commune','mai_son','135',10),
 ('04321',N'Khai Trung',N'Khai Trung',N'Xã Khai Trung',N'Khai Trung Commune','khai_trung','135',10),
 ('04324',N'Mường Lai',N'Muong Lai',N'Xã Mường Lai',N'Muong Lai Commune','muong_lai','135',10),
 ('04327',N'An Lạc',N'An Lac',N'Xã An Lạc',N'An Lac Commune','an_lac','135',10),
@@ -2387,10 +2385,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('04420',N'Yên Thái',N'Yen Thai',N'Xã Yên Thái',N'Yen Thai Commune','yen_thai','136',10),
 ('04423',N'Phong Dụ Thượng',N'Phong Du Thuong',N'Xã Phong Dụ Thượng',N'Phong Du Thuong Commune','phong_du_thuong','136',10),
 ('04426',N'Yên Hợp',N'Yen Hop',N'Xã Yên Hợp',N'Yen Hop Commune','yen_hop','136',10),
-('04429',N'Đại Sơn',N'Dai Son',N'Xã Đại Sơn',N'Dai Son Commune','dai_son','136',10);
+('04429',N'Đại Sơn',N'Dai Son',N'Xã Đại Sơn',N'Dai Son Commune','dai_son','136',10),
+('04435',N'Đại Phác',N'Dai Phac',N'Xã Đại Phác',N'Dai Phac Commune','dai_phac','136',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('04435',N'Đại Phác',N'Dai Phac',N'Xã Đại Phác',N'Dai Phac Commune','dai_phac','136',10),
 ('04438',N'Yên Phú',N'Yen Phu',N'Xã Yên Phú',N'Yen Phu Commune','yen_phu','136',10),
 ('04441',N'Xuân Ái',N'Xuan Ai',N'Xã Xuân Ái',N'Xuan Ai Commune','xuan_ai','136',10),
 ('04447',N'Viễn Sơn',N'Vien Son',N'Xã Viễn Sơn',N'Vien Son Commune','vien_son','136',10),
@@ -2439,10 +2437,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('04600',N'Trạm Tấu',N'Tram Tau',N'Xã Trạm Tấu',N'Tram Tau Commune','tram_tau','139',10),
 ('04603',N'Tà Si Láng',N'Ta Si Lang',N'Xã Tà Si Láng',N'Ta Si Lang Commune','ta_si_lang','139',10),
 ('04606',N'Pá Hu',N'Pa Hu',N'Xã Pá Hu',N'Pa Hu Commune','pa_hu','139',10),
-('04609',N'Làng Nhì',N'Lang Nhi',N'Xã Làng Nhì',N'Lang Nhi Commune','lang_nhi','139',10);
+('04609',N'Làng Nhì',N'Lang Nhi',N'Xã Làng Nhì',N'Lang Nhi Commune','lang_nhi','139',10),
+('04612',N'Bản Công',N'Ban Cong',N'Xã Bản Công',N'Ban Cong Commune','ban_cong','139',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('04612',N'Bản Công',N'Ban Cong',N'Xã Bản Công',N'Ban Cong Commune','ban_cong','139',10),
 ('04615',N'Bản Mù',N'Ban Mu',N'Xã Bản Mù',N'Ban Mu Commune','ban_mu','139',10),
 ('04618',N'Hát Lìu',N'Hat Liu',N'Xã Hát Lìu',N'Hat Liu Commune','hat_liu','139',10),
 ('04621',N'NT Liên Sơn',N'NT Lien Son',N'Thị trấn NT Liên Sơn',N'NT Lien Son Township','nt_lien_son','140',9),
@@ -2491,10 +2489,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('04774',N'Yên Bình',N'Yen Binh',N'Xã Yên Bình',N'Yen Binh Commune','yen_binh','141',10),
 ('04777',N'Thịnh Hưng',N'Thinh Hung',N'Xã Thịnh Hưng',N'Thinh Hung Commune','thinh_hung','141',10),
 ('04780',N'Hán Đà',N'Han Da',N'Xã Hán Đà',N'Han Da Commune','han_da','141',10),
-('04783',N'Phú Thịnh',N'Phu Thinh',N'Xã Phú Thịnh',N'Phu Thinh Commune','phu_thinh','141',10);
+('04783',N'Phú Thịnh',N'Phu Thinh',N'Xã Phú Thịnh',N'Phu Thinh Commune','phu_thinh','141',10),
+('04786',N'Đại Minh',N'Dai Minh',N'Xã Đại Minh',N'Dai Minh Commune','dai_minh','141',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('04786',N'Đại Minh',N'Dai Minh',N'Xã Đại Minh',N'Dai Minh Commune','dai_minh','141',10),
 ('04789',N'Thái Bình',N'Thai Binh',N'Phường Thái Bình',N'Thai Binh Ward','thai_binh','148',8),
 ('04792',N'Tân Hòa',N'Tan Hoa',N'Phường Tân Hòa',N'Tan Hoa Ward','tan_hoa','148',8),
 ('04795',N'Thịnh Lang',N'Thinh Lang',N'Phường Thịnh Lang',N'Thinh Lang Ward','thinh_lang','148',8),
@@ -2543,10 +2541,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('05041',N'Thanh Sơn',N'Thanh Son',N'Xã Thanh Sơn',N'Thanh Son Commune','thanh_son','152',10),
 ('05047',N'Thanh Cao',N'Thanh Cao',N'Xã Thanh Cao',N'Thanh Cao Commune','thanh_cao','152',10),
 ('04978',N'Bo',N'Bo',N'Thị trấn Bo',N'Bo Township','bo','153',9),
-('04984',N'Đú Sáng',N'Du Sang',N'Xã Đú Sáng',N'Du Sang Commune','du_sang','153',10);
+('04984',N'Đú Sáng',N'Du Sang',N'Xã Đú Sáng',N'Du Sang Commune','du_sang','153',10),
+('04987',N'Hùng Sơn',N'Hung Son',N'Xã Hùng Sơn',N'Hung Son Commune','hung_son','153',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('04987',N'Hùng Sơn',N'Hung Son',N'Xã Hùng Sơn',N'Hung Son Commune','hung_son','153',10),
 ('04990',N'Bình Sơn',N'Binh Son',N'Xã Bình Sơn',N'Binh Son Commune','binh_son','153',10),
 ('04999',N'Tú Sơn',N'Tu Son',N'Xã Tú Sơn',N'Tu Son Commune','tu_son','153',10),
 ('05005',N'Vĩnh Tiến',N'Vinh Tien',N'Xã Vĩnh Tiến',N'Vinh Tien Commune','vinh_tien','153',10),
@@ -2581,6 +2579,7 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('05164',N'Tử Nê',N'Tu Ne',N'Xã Tử Nê',N'Tu Ne Commune','tu_ne','155',10),
 ('05167',N'Thanh Hối',N'Thanh Hoi',N'Xã Thanh Hối',N'Thanh Hoi Commune','thanh_hoi','155',10),
 ('05170',N'Ngọc Mỹ',N'Ngoc My',N'Xã Ngọc Mỹ',N'Ngoc My Commune','ngoc_my','155',10),
+('07567',N'Tân Hoa',N'Tan Hoa',N'Xã Tân Hoa',N'Tan Hoa Commune','tan_hoa','219',10),
 ('05173',N'Đông Lai',N'Dong Lai',N'Xã Đông Lai',N'Dong Lai Commune','dong_lai','155',10),
 ('05176',N'Vân Sơn',N'Van Son',N'Xã Vân Sơn',N'Van Son Commune','van_son','155',10),
 ('05182',N'Nhân Mỹ',N'Nhan My',N'Xã Nhân Mỹ',N'Nhan My Commune','nhan_my','155',10),
@@ -3349,7 +3348,6 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('07558',N'Kiên Thành',N'Kien Thanh',N'Xã Kiên Thành',N'Kien Thanh Commune','kien_thanh','219',10),
 ('07561',N'Hồng Giang',N'Hong Giang',N'Xã Hồng Giang',N'Hong Giang Commune','hong_giang','219',10),
 ('07564',N'Kim Sơn',N'Kim Son',N'Xã Kim Sơn',N'Kim Son Commune','kim_son','219',10),
-('07567',N'Tân Hoa',N'Tan Hoa',N'Xã Tân Hoa',N'Tan Hoa Commune','tan_hoa','219',10),
 ('07570',N'Giáp Sơn',N'Giap Son',N'Xã Giáp Sơn',N'Giap Son Commune','giap_son','219',10),
 ('07573',N'Biển Động',N'Bien Dong',N'Xã Biển Động',N'Bien Dong Commune','bien_dong','219',10),
 ('07576',N'Quý Sơn',N'Quy Son',N'Xã Quý Sơn',N'Quy Son Commune','quy_son','219',10),
@@ -3375,10 +3373,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('07645',N'An Lạc',N'An Lac',N'Xã An Lạc',N'An Lac Commune','an_lac','220',10),
 ('07648',N'Vĩnh An',N'Vinh An',N'Xã Vĩnh An',N'Vinh An Commune','vinh_an','220',10),
 ('07651',N'Yên Định',N'Yen Dinh',N'Xã Yên Định',N'Yen Dinh Commune','yen_dinh','220',10),
-('07654',N'Lệ Viễn',N'Le Vien',N'Xã Lệ Viễn',N'Le Vien Commune','le_vien','220',10);
+('07654',N'Lệ Viễn',N'Le Vien',N'Xã Lệ Viễn',N'Le Vien Commune','le_vien','220',10),
+('07660',N'An Bá',N'An Ba',N'Xã An Bá',N'An Ba Commune','an_ba','220',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('07660',N'An Bá',N'An Ba',N'Xã An Bá',N'An Ba Commune','an_ba','220',10),
 ('07663',N'Tuấn Đạo',N'Tuan Dao',N'Xã Tuấn Đạo',N'Tuan Dao Commune','tuan_dao','220',10),
 ('07666',N'Dương Hưu',N'Duong Huu',N'Xã Dương Hưu',N'Duong Huu Commune','duong_huu','220',10),
 ('07672',N'Long Sơn',N'Long Son',N'Xã Long Sơn',N'Long Son Commune','long_son','220',10),
@@ -3427,10 +3425,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('07831',N'Ngọc Sơn',N'Ngoc Son',N'Xã Ngọc Sơn',N'Ngoc Son Commune','ngoc_son','223',10),
 ('07834',N'Thái Sơn',N'Thai Son',N'Xã Thái Sơn',N'Thai Son Commune','thai_son','223',10),
 ('07837',N'Hòa Sơn',N'Hoa Son',N'Xã Hòa Sơn',N'Hoa Son Commune','hoa_son','223',10),
-('07840',N'Thắng',N'Thang',N'Thị trấn Thắng',N'Thang Township','thang','223',9);
+('07840',N'Thắng',N'Thang',N'Thị trấn Thắng',N'Thang Township','thang','223',9),
+('07843',N'Quang Minh',N'Quang Minh',N'Xã Quang Minh',N'Quang Minh Commune','quang_minh','223',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('07843',N'Quang Minh',N'Quang Minh',N'Xã Quang Minh',N'Quang Minh Commune','quang_minh','223',10),
 ('07846',N'Lương Phong',N'Luong Phong',N'Xã Lương Phong',N'Luong Phong Commune','luong_phong','223',10),
 ('07849',N'Hùng Sơn',N'Hung Son',N'Xã Hùng Sơn',N'Hung Son Commune','hung_son','223',10),
 ('07852',N'Đại Thành',N'Dai Thanh',N'Xã Đại Thành',N'Dai Thanh Commune','dai_thanh','223',10),
@@ -3479,10 +3477,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('07969',N'Đoan Hùng',N'Doan Hung',N'Thị trấn Đoan Hùng',N'Doan Hung Township','doan_hung','230',9),
 ('07975',N'Hùng Xuyên',N'Hung Xuyen',N'Xã Hùng Xuyên',N'Hung Xuyen Commune','hung_xuyen','230',10),
 ('07981',N'Bằng Luân',N'Bang Luan',N'Xã Bằng Luân',N'Bang Luan Commune','bang_luan','230',10),
-('07984',N'Vân Du',N'Van Du',N'Xã Vân Du',N'Van Du Commune','van_du','230',10);
+('07984',N'Vân Du',N'Van Du',N'Xã Vân Du',N'Van Du Commune','van_du','230',10),
+('07987',N'Phú Lâm',N'Phu Lam',N'Xã Phú Lâm',N'Phu Lam Commune','phu_lam','230',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('07987',N'Phú Lâm',N'Phu Lam',N'Xã Phú Lâm',N'Phu Lam Commune','phu_lam','230',10),
 ('07993',N'Minh Lương',N'Minh Luong',N'Xã Minh Lương',N'Minh Luong Commune','minh_luong','230',10),
 ('07996',N'Bằng Doãn',N'Bang Doan',N'Xã Bằng Doãn',N'Bang Doan Commune','bang_doan','230',10),
 ('07999',N'Chí Đám',N'Chi Dam',N'Xã Chí Đám',N'Chi Dam Commune','chi_dam','230',10),
@@ -3531,10 +3529,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('08194',N'Võ Lao',N'Vo Lao',N'Xã Võ Lao',N'Vo Lao Commune','vo_lao','232',10),
 ('08197',N'Khải Xuân',N'Khai Xuan',N'Xã Khải Xuân',N'Khai Xuan Commune','khai_xuan','232',10),
 ('08200',N'Mạn Lạn',N'Man Lan',N'Xã Mạn Lạn',N'Man Lan Commune','man_lan','232',10),
-('08203',N'Hoàng Cương',N'Hoang Cuong',N'Xã Hoàng Cương',N'Hoang Cuong Commune','hoang_cuong','232',10);
+('08203',N'Hoàng Cương',N'Hoang Cuong',N'Xã Hoàng Cương',N'Hoang Cuong Commune','hoang_cuong','232',10),
+('08206',N'Chí Tiên',N'Chi Tien',N'Xã Chí Tiên',N'Chi Tien Commune','chi_tien','232',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('08206',N'Chí Tiên',N'Chi Tien',N'Xã Chí Tiên',N'Chi Tien Commune','chi_tien','232',10),
 ('08209',N'Đông Thành',N'Dong Thanh',N'Xã Đông Thành',N'Dong Thanh Commune','dong_thanh','232',10),
 ('08215',N'Sơn Cương',N'Son Cuong',N'Xã Sơn Cương',N'Son Cuong Commune','son_cuong','232',10),
 ('08218',N'Thanh Hà',N'Thanh Ha',N'Xã Thanh Hà',N'Thanh Ha Commune','thanh_ha','232',10),
@@ -3583,10 +3581,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('08356',N'Phượng Vĩ',N'Phuong Vi',N'Xã Phượng Vĩ',N'Phuong Vi Commune','phuong_vi','235',10),
 ('08362',N'Thụy Liễu',N'Thuy Lieu',N'Xã Thụy Liễu',N'Thuy Lieu Commune','thuy_lieu','235',10),
 ('08374',N'Tùng Khê',N'Tung Khe',N'Xã Tùng Khê',N'Tung Khe Commune','tung_khe','235',10),
-('08377',N'Tam Sơn',N'Tam Son',N'Xã Tam Sơn',N'Tam Son Commune','tam_son','235',10);
+('08377',N'Tam Sơn',N'Tam Son',N'Xã Tam Sơn',N'Tam Son Commune','tam_son','235',10),
+('08380',N'Văn Bán',N'Van Ban',N'Xã Văn Bán',N'Van Ban Commune','van_ban','235',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('08380',N'Văn Bán',N'Van Ban',N'Xã Văn Bán',N'Van Ban Commune','van_ban','235',10),
 ('08383',N'Cấp Dẫn',N'Cap Dan',N'Xã Cấp Dẫn',N'Cap Dan Commune','cap_dan','235',10),
 ('08389',N'Xương Thịnh',N'Xuong Thinh',N'Xã Xương Thịnh',N'Xuong Thinh Commune','xuong_thinh','235',10),
 ('08392',N'Phú Khê',N'Phu Khe',N'Xã Phú Khê',N'Phu Khe Commune','phu_khe','235',10),
@@ -3635,10 +3633,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('08602',N'Cự Thắng',N'Cu Thang',N'Xã Cự Thắng',N'Cu Thang Commune','cu_thang','238',10),
 ('08605',N'Tất Thắng',N'Tat Thang',N'Xã Tất Thắng',N'Tat Thang Commune','tat_thang','238',10),
 ('08611',N'Văn Miếu',N'Van Mieu',N'Xã Văn Miếu',N'Van Mieu Commune','van_mieu','238',10),
-('08614',N'Cự Đồng',N'Cu Dong',N'Xã Cự Đồng',N'Cu Dong Commune','cu_dong','238',10);
+('08614',N'Cự Đồng',N'Cu Dong',N'Xã Cự Đồng',N'Cu Dong Commune','cu_dong','238',10),
+('08623',N'Thắng Sơn',N'Thang Son',N'Xã Thắng Sơn',N'Thang Son Commune','thang_son','238',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('08623',N'Thắng Sơn',N'Thang Son',N'Xã Thắng Sơn',N'Thang Son Commune','thang_son','238',10),
 ('08629',N'Tân Minh',N'Tan Minh',N'Xã Tân Minh',N'Tan Minh Commune','tan_minh','238',10),
 ('08632',N'Hương Cần',N'Huong Can',N'Xã Hương Cần',N'Huong Can Commune','huong_can','238',10),
 ('08635',N'Khả Cửu',N'Kha Cuu',N'Xã Khả Cửu',N'Kha Cuu Commune','kha_cuu','238',10),
@@ -3687,10 +3685,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('08725',N'Định Trung',N'Dinh Trung',N'Phường Định Trung',N'Dinh Trung Ward','dinh_trung','243',8),
 ('08728',N'Khai Quang',N'Khai Quang',N'Phường Khai Quang',N'Khai Quang Ward','khai_quang','243',8),
 ('08731',N'Thanh Trù',N'Thanh Tru',N'Xã Thanh Trù',N'Thanh Tru Commune','thanh_tru','243',10),
-('08734',N'Trưng Trắc',N'Trung Trac',N'Phường Trưng Trắc',N'Trung Trac Ward','trung_trac','244',8);
+('08734',N'Trưng Trắc',N'Trung Trac',N'Phường Trưng Trắc',N'Trung Trac Ward','trung_trac','244',8),
+('08737',N'Hùng Vương',N'Hung Vuong',N'Phường Hùng Vương',N'Hung Vuong Ward','hung_vuong','244',8);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('08737',N'Hùng Vương',N'Hung Vuong',N'Phường Hùng Vương',N'Hung Vuong Ward','hung_vuong','244',8),
 ('08740',N'Trưng Nhị',N'Trung Nhi',N'Phường Trưng Nhị',N'Trung Nhi Ward','trung_nhi','244',8),
 ('08743',N'Phúc Thắng',N'Phuc Thang',N'Phường Phúc Thắng',N'Phuc Thang Ward','phuc_thang','244',8),
 ('08746',N'Xuân Hoà',N'Xuan Hoa',N'Phường Xuân Hoà',N'Xuan Hoa Ward','xuan_hoa','244',8),
@@ -3739,10 +3737,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('08920',N'Bồ Lý',N'Bo Ly',N'Xã Bồ Lý',N'Bo Ly Commune','bo_ly','248',10),
 ('08923',N'Đại Đình',N'Dai Dinh',N'Thị trấn Đại Đình',N'Dai Dinh Township','dai_dinh','248',9),
 ('08926',N'Tam Quan',N'Tam Quan',N'Xã Tam Quan',N'Tam Quan Commune','tam_quan','248',10),
-('08929',N'Hồ Sơn',N'Ho Son',N'Xã Hồ Sơn',N'Ho Son Commune','ho_son','248',10);
+('08929',N'Hồ Sơn',N'Ho Son',N'Xã Hồ Sơn',N'Ho Son Commune','ho_son','248',10),
+('08932',N'Minh Quang',N'Minh Quang',N'Xã Minh Quang',N'Minh Quang Commune','minh_quang','248',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('08932',N'Minh Quang',N'Minh Quang',N'Xã Minh Quang',N'Minh Quang Commune','minh_quang','248',10),
 ('08935',N'Hương Canh',N'Huong Canh',N'Thị trấn Hương Canh',N'Huong Canh Township','huong_canh','249',9),
 ('08936',N'Gia Khánh',N'Gia Khanh',N'Thị trấn Gia Khánh',N'Gia Khanh Township','gia_khanh','249',9),
 ('08938',N'Trung Mỹ',N'Trung My',N'Xã Trung Mỹ',N'Trung My Commune','trung_my','249',10),
@@ -3791,10 +3789,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('09067',N'Đại Tự',N'Dai Tu',N'Xã Đại Tự',N'Dai Tu Commune','dai_tu','251',10),
 ('09070',N'Hồng Châu',N'Hong Chau',N'Xã Hồng Châu',N'Hong Chau Commune','hong_chau','251',10),
 ('09073',N'Trung Hà',N'Trung Ha',N'Xã Trung Hà',N'Trung Ha Commune','trung_ha','251',10),
-('09076',N'Vĩnh Tường',N'Vinh Tuong',N'Thị trấn Vĩnh Tường',N'Vinh Tuong Township','vinh_tuong','252',9);
+('09076',N'Vĩnh Tường',N'Vinh Tuong',N'Thị trấn Vĩnh Tường',N'Vinh Tuong Township','vinh_tuong','252',9),
+('09079',N'Kim Xá',N'Kim Xa',N'Xã Kim Xá',N'Kim Xa Commune','kim_xa','252',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('09079',N'Kim Xá',N'Kim Xa',N'Xã Kim Xá',N'Kim Xa Commune','kim_xa','252',10),
 ('09082',N'Yên Bình',N'Yen Binh',N'Xã Yên Bình',N'Yen Binh Commune','yen_binh','252',10),
 ('09085',N'Chấn Hưng',N'Chan Hung',N'Xã Chấn Hưng',N'Chan Hung Commune','chan_hung','252',10),
 ('09088',N'Nghĩa Hưng',N'Nghia Hung',N'Xã Nghĩa Hưng',N'Nghia Hung Commune','nghia_hung','252',10),
@@ -3843,10 +3841,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('09169',N'Thị Cầu',N'Thi Cau',N'Phường Thị Cầu',N'Thi Cau Ward','thi_cau','256',8),
 ('09172',N'Kinh Bắc',N'Kinh Bac',N'Phường Kinh Bắc',N'Kinh Bac Ward','kinh_bac','256',8),
 ('09175',N'Vệ An',N'Ve An',N'Phường Vệ An',N'Ve An Ward','ve_an','256',8),
-('09178',N'Tiền An',N'Tien An',N'Phường Tiền An',N'Tien An Ward','tien_an','256',8);
+('09178',N'Tiền An',N'Tien An',N'Phường Tiền An',N'Tien An Ward','tien_an','256',8),
+('09181',N'Đại Phúc',N'Dai Phuc',N'Phường Đại Phúc',N'Dai Phuc Ward','dai_phuc','256',8);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('09181',N'Đại Phúc',N'Dai Phuc',N'Phường Đại Phúc',N'Dai Phuc Ward','dai_phuc','256',8),
 ('09184',N'Ninh Xá',N'Ninh Xa',N'Phường Ninh Xá',N'Ninh Xa Ward','ninh_xa','256',8),
 ('09187',N'Suối Hoa',N'Suoi Hoa',N'Phường Suối Hoa',N'Suoi Hoa Ward','suoi_hoa','256',8),
 ('09190',N'Võ Cường',N'Vo Cuong',N'Phường Võ Cường',N'Vo Cuong Ward','vo_cuong','256',8),
@@ -3895,10 +3893,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('09313',N'Chi Lăng',N'Chi Lang',N'Xã Chi Lăng',N'Chi Lang Commune','chi_lang','259',10),
 ('09316',N'Hán Quảng',N'Han Quang',N'Xã Hán Quảng',N'Han Quang Commune','han_quang','259',10),
 ('09319',N'Lim',N'Lim',N'Thị trấn Lim',N'Lim Township','lim','260',9),
-('09322',N'Phú Lâm',N'Phu Lam',N'Xã Phú Lâm',N'Phu Lam Commune','phu_lam','260',10);
+('09322',N'Phú Lâm',N'Phu Lam',N'Xã Phú Lâm',N'Phu Lam Commune','phu_lam','260',10),
+('09328',N'Nội Duệ',N'Noi Due',N'Xã Nội Duệ',N'Noi Due Commune','noi_due','260',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('09328',N'Nội Duệ',N'Noi Due',N'Xã Nội Duệ',N'Noi Due Commune','noi_due','260',10),
 ('09334',N'Liên Bão',N'Lien Bao',N'Xã Liên Bão',N'Lien Bao Commune','lien_bao','260',10),
 ('09337',N'Hiên Vân',N'Hien Van',N'Xã Hiên Vân',N'Hien Van Commune','hien_van','260',10),
 ('09340',N'Hoàn Sơn',N'Hoan Son',N'Xã Hoàn Sơn',N'Hoan Son Commune','hoan_son','260',10),
@@ -3947,10 +3945,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('09466',N'Cao Đức',N'Cao Duc',N'Xã Cao Đức',N'Cao Duc Commune','cao_duc','263',10),
 ('09469',N'Đại Lai',N'Dai Lai',N'Xã Đại Lai',N'Dai Lai Commune','dai_lai','263',10),
 ('09472',N'Song Giang',N'Song Giang',N'Xã Song Giang',N'Song Giang Commune','song_giang','263',10),
-('09475',N'Bình Dương',N'Binh Duong',N'Xã Bình Dương',N'Binh Duong Commune','binh_duong','263',10);
+('09475',N'Bình Dương',N'Binh Duong',N'Xã Bình Dương',N'Binh Duong Commune','binh_duong','263',10),
+('09478',N'Lãng Ngâm',N'Lang Ngam',N'Xã Lãng Ngâm',N'Lang Ngam Commune','lang_ngam','263',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('09478',N'Lãng Ngâm',N'Lang Ngam',N'Xã Lãng Ngâm',N'Lang Ngam Commune','lang_ngam','263',10),
 ('09481',N'Nhân Thắng',N'Nhan Thang',N'Xã Nhân Thắng',N'Nhan Thang Commune','nhan_thang','263',10),
 ('09484',N'Xuân Lai',N'Xuan Lai',N'Xã Xuân Lai',N'Xuan Lai Commune','xuan_lai','263',10),
 ('09487',N'Đông Cứu',N'Dong Cuu',N'Xã Đông Cứu',N'Dong Cuu Commune','dong_cuu','263',10),
@@ -3999,10 +3997,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('09601',N'Trung Hưng',N'Trung Hung',N'Phường Trung Hưng',N'Trung Hung Ward','trung_hung','269',8),
 ('09604',N'Thanh Mỹ',N'Thanh My',N'Xã Thanh Mỹ',N'Thanh My Commune','thanh_my','269',10),
 ('09607',N'Trung Sơn Trầm',N'Trung Son Tram',N'Phường Trung Sơn Trầm',N'Trung Son Tram Ward','trung_son_tram','269',8),
-('09610',N'Kim Sơn',N'Kim Son',N'Xã Kim Sơn',N'Kim Son Commune','kim_son','269',10);
+('09610',N'Kim Sơn',N'Kim Son',N'Xã Kim Sơn',N'Kim Son Commune','kim_son','269',10),
+('09613',N'Sơn Đông',N'Son Dong',N'Xã Sơn Đông',N'Son Dong Commune','son_dong','269',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('09613',N'Sơn Đông',N'Son Dong',N'Xã Sơn Đông',N'Son Dong Commune','son_dong','269',10),
 ('09616',N'Cổ Đông',N'Co Dong',N'Xã Cổ Đông',N'Co Dong Commune','co_dong','269',10),
 ('09619',N'Tây Đằng',N'Tay Dang',N'Thị trấn Tây Đằng',N'Tay Dang Township','tay_dang','271',9),
 ('09625',N'Phú Cường',N'Phu Cuong',N'Xã Phú Cường',N'Phu Cuong Commune','phu_cuong','271',10),
@@ -4051,10 +4049,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('09760',N'Trạch Mỹ Lộc',N'Trach My Loc',N'Xã Trạch Mỹ Lộc',N'Trach My Loc Commune','trach_my_loc','272',10),
 ('09763',N'Phúc Hòa',N'Phuc Hoa',N'Xã Phúc Hòa',N'Phuc Hoa Commune','phuc_hoa','272',10),
 ('09766',N'Ngọc Tảo',N'Ngoc Tao',N'Xã Ngọc Tảo',N'Ngoc Tao Commune','ngoc_tao','272',10),
-('09769',N'Phụng Thượng',N'Phung Thuong',N'Xã Phụng Thượng',N'Phung Thuong Commune','phung_thuong','272',10);
+('09769',N'Phụng Thượng',N'Phung Thuong',N'Xã Phụng Thượng',N'Phung Thuong Commune','phung_thuong','272',10),
+('09772',N'Tam Thuấn',N'Tam Thuan',N'Xã Tam Thuấn',N'Tam Thuan Commune','tam_thuan','272',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('09772',N'Tam Thuấn',N'Tam Thuan',N'Xã Tam Thuấn',N'Tam Thuan Commune','tam_thuan','272',10),
 ('09775',N'Tam Hiệp',N'Tam Hiep',N'Xã Tam Hiệp',N'Tam Hiep Commune','tam_hiep','272',10),
 ('09778',N'Hiệp Thuận',N'Hiep Thuan',N'Xã Hiệp Thuận',N'Hiep Thuan Commune','hiep_thuan','272',10),
 ('09781',N'Liên Hiệp',N'Lien Hiep',N'Xã Liên Hiệp',N'Lien Hiep Commune','lien_hiep','272',10),
@@ -4103,10 +4101,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('09910',N'Ngọc Mỹ',N'Ngoc My',N'Xã Ngọc Mỹ',N'Ngoc My Commune','ngoc_my','275',10),
 ('09913',N'Liệp Tuyết',N'Liep Tuyet',N'Xã Liệp Tuyết',N'Liep Tuyet Commune','liep_tuyet','275',10),
 ('09916',N'Thạch Thán',N'Thach Than',N'Xã Thạch Thán',N'Thach Than Commune','thach_than','275',10),
-('09919',N'Đồng Quang',N'Dong Quang',N'Xã Đồng Quang',N'Dong Quang Commune','dong_quang','275',10);
+('09919',N'Đồng Quang',N'Dong Quang',N'Xã Đồng Quang',N'Dong Quang Commune','dong_quang','275',10),
+('09922',N'Phú Cát',N'Phu Cat',N'Xã Phú Cát',N'Phu Cat Commune','phu_cat','275',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('09922',N'Phú Cát',N'Phu Cat',N'Xã Phú Cát',N'Phu Cat Commune','phu_cat','275',10),
 ('09925',N'Tuyết Nghĩa',N'Tuyet Nghia',N'Xã Tuyết Nghĩa',N'Tuyet Nghia Commune','tuyet_nghia','275',10),
 ('09928',N'Nghĩa Hương',N'Nghia Huong',N'Xã Nghĩa Hương',N'Nghia Huong Commune','nghia_huong','275',10),
 ('09931',N'Cộng Hòa',N'Cong Hoa',N'Xã Cộng Hòa',N'Cong Hoa Commune','cong_hoa','275',10),
@@ -4155,10 +4153,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('10054',N'Đại Yên',N'Dai Yen',N'Xã Đại Yên',N'Dai Yen Commune','dai_yen','277',10),
 ('10057',N'Thụy Hương',N'Thuy Huong',N'Xã Thụy Hương',N'Thuy Huong Commune','thuy_huong','277',10),
 ('10060',N'Tốt Động',N'Tot Dong',N'Xã Tốt Động',N'Tot Dong Commune','tot_dong','277',10),
-('10063',N'Lam Điền',N'Lam Dien',N'Xã Lam Điền',N'Lam Dien Commune','lam_dien','277',10);
+('10063',N'Lam Điền',N'Lam Dien',N'Xã Lam Điền',N'Lam Dien Commune','lam_dien','277',10),
+('10066',N'Tân Tiến',N'Tan Tien',N'Xã Tân Tiến',N'Tan Tien Commune','tan_tien','277',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('10066',N'Tân Tiến',N'Tan Tien',N'Xã Tân Tiến',N'Tan Tien Commune','tan_tien','277',10),
 ('10069',N'Nam Phương Tiến',N'Nam Phuong Tien',N'Xã Nam Phương Tiến',N'Nam Phuong Tien Commune','nam_phuong_tien','277',10),
 ('10072',N'Hợp Đồng',N'Hop Dong',N'Xã Hợp Đồng',N'Hop Dong Commune','hop_dong','277',10),
 ('10075',N'Hoàng Văn Thụ',N'Hoang Van Thu',N'Xã Hoàng Văn Thụ',N'Hoang Van Thu Commune','hoang_van_thu','277',10),
@@ -4189,7 +4187,6 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('10156',N'Kim An',N'Kim An',N'Xã Kim An',N'Kim An Commune','kim_an','278',10),
 ('10159',N'Kim Thư',N'Kim Thu',N'Xã Kim Thư',N'Kim Thu Commune','kim_thu','278',10),
 ('10162',N'Phương Trung',N'Phuong Trung',N'Xã Phương Trung',N'Phuong Trung Commune','phuong_trung','278',10),
-('11098',N'Tái Sơn',N'Tai Son',N'Xã Tái Sơn',N'Tai Son Commune','tai_son','298',10),
 ('10165',N'Tân Ước',N'Tan Uoc',N'Xã Tân Ước',N'Tan Uoc Commune','tan_uoc','278',10),
 ('10168',N'Dân Hòa',N'Dan Hoa',N'Xã Dân Hòa',N'Dan Hoa Commune','dan_hoa','278',10),
 ('10171',N'Liên Châu',N'Lien Chau',N'Xã Liên Châu',N'Lien Chau Commune','lien_chau','278',10),
@@ -4207,11 +4204,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('10207',N'Hồng Vân',N'Hong Van',N'Xã Hồng Vân',N'Hong Van Commune','hong_van','279',10),
 ('10210',N'Vân Tảo',N'Van Tao',N'Xã Vân Tảo',N'Van Tao Commune','van_tao','279',10),
 ('10213',N'Liên Phương',N'Lien Phuong',N'Xã Liên Phương',N'Lien Phuong Commune','lien_phuong','279',10),
-('10216',N'Văn Phú',N'Van Phu',N'Xã Văn Phú',N'Van Phu Commune','van_phu','279',10);
+('10216',N'Văn Phú',N'Van Phu',N'Xã Văn Phú',N'Van Phu Commune','van_phu','279',10),
+('10219',N'Tự Nhiên',N'Tu Nhien',N'Xã Tự Nhiên',N'Tu Nhien Commune','tu_nhien','279',10),
+('10222',N'Tiền Phong',N'Tien Phong',N'Xã Tiền Phong',N'Tien Phong Commune','tien_phong','279',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('10219',N'Tự Nhiên',N'Tu Nhien',N'Xã Tự Nhiên',N'Tu Nhien Commune','tu_nhien','279',10),
-('10222',N'Tiền Phong',N'Tien Phong',N'Xã Tiền Phong',N'Tien Phong Commune','tien_phong','279',10),
 ('10225',N'Hà Hồi',N'Ha Hoi',N'Xã Hà Hồi',N'Ha Hoi Commune','ha_hoi','279',10),
 ('10228',N'Thư Phú',N'Thu Phu',N'Xã Thư Phú',N'Thu Phu Commune','thu_phu','279',10),
 ('10231',N'Nguyễn Trãi',N'Nguyen Trai',N'Xã Nguyễn Trãi',N'Nguyen Trai Commune','nguyen_trai','279',10),
@@ -4259,17 +4256,18 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('10360',N'Viên Nội',N'Vien Noi',N'Xã Viên Nội',N'Vien Noi Commune','vien_noi','281',10),
 ('10363',N'Hoa Sơn',N'Hoa Son',N'Xã Hoa Sơn',N'Hoa Son Commune','hoa_son','281',10),
 ('10366',N'Quảng Phú Cầu',N'Quang Phu Cau',N'Xã Quảng Phú Cầu',N'Quang Phu Cau Commune','quang_phu_cau','281',10),
-('10369',N'Trường Thịnh',N'Truong Thinh',N'Xã Trường Thịnh',N'Truong Thinh Commune','truong_thinh','281',10);
+('10369',N'Trường Thịnh',N'Truong Thinh',N'Xã Trường Thịnh',N'Truong Thinh Commune','truong_thinh','281',10),
+('10372',N'Cao Thành',N'Cao Thanh',N'Xã Cao Thành',N'Cao Thanh Commune','cao_thanh','281',10),
+('10375',N'Liên Bạt',N'Lien Bat',N'Xã Liên Bạt',N'Lien Bat Commune','lien_bat','281',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('10372',N'Cao Thành',N'Cao Thanh',N'Xã Cao Thành',N'Cao Thanh Commune','cao_thanh','281',10),
-('10375',N'Liên Bạt',N'Lien Bat',N'Xã Liên Bạt',N'Lien Bat Commune','lien_bat','281',10),
 ('10378',N'Sơn Công',N'Son Cong',N'Xã Sơn Công',N'Son Cong Commune','son_cong','281',10),
 ('10381',N'Đồng Tiến',N'Dong Tien',N'Xã Đồng Tiến',N'Dong Tien Commune','dong_tien','281',10),
 ('10384',N'Phương Tú',N'Phuong Tu',N'Xã Phương Tú',N'Phuong Tu Commune','phuong_tu','281',10),
 ('10387',N'Trung Tú',N'Trung Tu',N'Xã Trung Tú',N'Trung Tu Commune','trung_tu','281',10),
 ('10390',N'Đồng Tân',N'Dong Tan',N'Xã Đồng Tân',N'Dong Tan Commune','dong_tan','281',10),
 ('10393',N'Tảo Dương Văn',N'Tao Duong Van',N'Xã Tảo Dương Văn',N'Tao Duong Van Commune','tao_duong_van','281',10),
+('10579',N'Văn An',N'Van An',N'Phường Văn An',N'Van An Ward','van_an','290',8),
 ('10396',N'Vạn Thái',N'Van Thai',N'Xã Vạn Thái',N'Van Thai Commune','van_thai','281',10),
 ('10399',N'Minh Đức',N'Minh Duc',N'Xã Minh Đức',N'Minh Duc Commune','minh_duc','281',10),
 ('10402',N'Hòa Lâm',N'Hoa Lam',N'Xã Hòa Lâm',N'Hoa Lam Commune','hoa_lam','281',10),
@@ -4311,10 +4309,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('10510',N'Bình Hàn',N'Binh Han',N'Phường Bình Hàn',N'Binh Han Ward','binh_han','288',8),
 ('10513',N'Ngọc Châu',N'Ngoc Chau',N'Phường Ngọc Châu',N'Ngoc Chau Ward','ngoc_chau','288',8),
 ('10514',N'Nhị Châu',N'Nhi Chau',N'Phường Nhị Châu',N'Nhi Chau Ward','nhi_chau','288',8),
-('10516',N'Quang Trung',N'Quang Trung',N'Phường Quang Trung',N'Quang Trung Ward','quang_trung','288',8);
+('10516',N'Quang Trung',N'Quang Trung',N'Phường Quang Trung',N'Quang Trung Ward','quang_trung','288',8),
+('10519',N'Nguyễn Trãi',N'Nguyen Trai',N'Phường Nguyễn Trãi',N'Nguyen Trai Ward','nguyen_trai','288',8);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('10519',N'Nguyễn Trãi',N'Nguyen Trai',N'Phường Nguyễn Trãi',N'Nguyen Trai Ward','nguyen_trai','288',8),
 ('10522',N'Phạm Ngũ Lão',N'Pham Ngu Lao',N'Phường Phạm Ngũ Lão',N'Pham Ngu Lao Ward','pham_ngu_lao','288',8),
 ('10525',N'Trần Hưng Đạo',N'Tran Hung Dao',N'Phường Trần Hưng Đạo',N'Tran Hung Dao Ward','tran_hung_dao','288',8),
 ('10528',N'Trần Phú',N'Tran Phu',N'Phường Trần Phú',N'Tran Phu Ward','tran_phu','288',8),
@@ -4345,7 +4343,6 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('10570',N'Cộng Hoà',N'Cong Hoa',N'Phường Cộng Hoà',N'Cong Hoa Ward','cong_hoa','290',8),
 ('10573',N'Hoàng Tân',N'Hoang Tan',N'Phường Hoàng Tân',N'Hoang Tan Ward','hoang_tan','290',8),
 ('10576',N'Cổ Thành',N'Co Thanh',N'Phường Cổ Thành',N'Co Thanh Ward','co_thanh','290',8),
-('10579',N'Văn An',N'Van An',N'Phường Văn An',N'Van An Ward','van_an','290',8),
 ('10582',N'Chí Minh',N'Chi Minh',N'Phường Chí Minh',N'Chi Minh Ward','chi_minh','290',8),
 ('10585',N'Văn Đức',N'Van Duc',N'Phường Văn Đức',N'Van Duc Ward','van_duc','290',8),
 ('10588',N'Thái Học',N'Thai Hoc',N'Phường Thái Học',N'Thai Hoc Ward','thai_hoc','290',8),
@@ -4363,11 +4360,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('10627',N'Nam Chính',N'Nam Chinh',N'Xã Nam Chính',N'Nam Chinh Commune','nam_chinh','291',10),
 ('10630',N'An Bình',N'An Binh',N'Xã An Bình',N'An Binh Commune','an_binh','291',10),
 ('10633',N'Nam Trung',N'Nam Trung',N'Xã Nam Trung',N'Nam Trung Commune','nam_trung','291',10),
-('10636',N'An Sơn',N'An Son',N'Xã An Sơn',N'An Son Commune','an_son','291',10);
+('10636',N'An Sơn',N'An Son',N'Xã An Sơn',N'An Son Commune','an_son','291',10),
+('10639',N'Cộng Hòa',N'Cong Hoa',N'Xã Cộng Hòa',N'Cong Hoa Commune','cong_hoa','291',10),
+('10642',N'Thái Tân',N'Thai Tan',N'Xã Thái Tân',N'Thai Tan Commune','thai_tan','291',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('10639',N'Cộng Hòa',N'Cong Hoa',N'Xã Cộng Hòa',N'Cong Hoa Commune','cong_hoa','291',10),
-('10642',N'Thái Tân',N'Thai Tan',N'Xã Thái Tân',N'Thai Tan Commune','thai_tan','291',10),
 ('10645',N'An Lâm',N'An Lam',N'Xã An Lâm',N'An Lam Commune','an_lam','291',10),
 ('10648',N'Phú Điền',N'Phu Dien',N'Xã Phú Điền',N'Phu Dien Commune','phu_dien','291',10),
 ('10651',N'Nam Hồng',N'Nam Hong',N'Xã Nam Hồng',N'Nam Hong Commune','nam_hong','291',10),
@@ -4415,11 +4412,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('10804',N'Đồng Cẩm',N'Dong Cam',N'Xã Đồng Cẩm',N'Dong Cam Commune','dong_cam','293',10),
 ('10807',N'Liên Hòa',N'Lien Hoa',N'Xã Liên Hòa',N'Lien Hoa Commune','lien_hoa','293',10),
 ('10810',N'Đại Đức',N'Dai Duc',N'Xã Đại Đức',N'Dai Duc Commune','dai_duc','293',10),
-('10813',N'Thanh Hà',N'Thanh Ha',N'Thị trấn Thanh Hà',N'Thanh Ha Township','thanh_ha','294',9);
+('10813',N'Thanh Hà',N'Thanh Ha',N'Thị trấn Thanh Hà',N'Thanh Ha Township','thanh_ha','294',9),
+('10816',N'Hồng Lạc',N'Hong Lac',N'Xã Hồng Lạc',N'Hong Lac Commune','hong_lac','294',10),
+('10819',N'Việt Hồng',N'Viet Hong',N'Xã Việt Hồng',N'Viet Hong Commune','viet_hong','294',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('10816',N'Hồng Lạc',N'Hong Lac',N'Xã Hồng Lạc',N'Hong Lac Commune','hong_lac','294',10),
-('10819',N'Việt Hồng',N'Viet Hong',N'Xã Việt Hồng',N'Viet Hong Commune','viet_hong','294',10),
 ('10825',N'Tân Việt',N'Tan Viet',N'Xã Tân Việt',N'Tan Viet Commune','tan_viet','294',10),
 ('10828',N'Cẩm Chế',N'Cam Che',N'Xã Cẩm Chế',N'Cam Che Commune','cam_che','294',10),
 ('10831',N'Thanh An',N'Thanh An',N'Xã Thanh An',N'Thanh An Commune','thanh_an','294',10),
@@ -4467,11 +4464,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('10981',N'Thái Học',N'Thai Hoc',N'Xã Thái Học',N'Thai Hoc Commune','thai_hoc','296',10),
 ('10984',N'Cổ Bì',N'Co Bi',N'Xã Cổ Bì',N'Co Bi Commune','co_bi','296',10),
 ('10987',N'Nhân Quyền',N'Nhan Quyen',N'Xã Nhân Quyền',N'Nhan Quyen Commune','nhan_quyen','296',10),
-('10990',N'Thái Dương',N'Thai Duong',N'Xã Thái Dương',N'Thai Duong Commune','thai_duong','296',10);
+('10990',N'Thái Dương',N'Thai Duong',N'Xã Thái Dương',N'Thai Duong Commune','thai_duong','296',10),
+('10993',N'Thái Hòa',N'Thai Hoa',N'Xã Thái Hòa',N'Thai Hoa Commune','thai_hoa','296',10),
+('10996',N'Bình Xuyên',N'Binh Xuyen',N'Xã Bình Xuyên',N'Binh Xuyen Commune','binh_xuyen','296',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('10993',N'Thái Hòa',N'Thai Hoa',N'Xã Thái Hòa',N'Thai Hoa Commune','thai_hoa','296',10),
-('10996',N'Bình Xuyên',N'Binh Xuyen',N'Xã Bình Xuyên',N'Binh Xuyen Commune','binh_xuyen','296',10),
 ('10999',N'Gia Lộc',N'Gia Loc',N'Thị trấn Gia Lộc',N'Gia Loc Township','gia_loc','297',9),
 ('11008',N'Thống Nhất',N'Thong Nhat',N'Xã Thống Nhất',N'Thong Nhat Commune','thong_nhat','297',10),
 ('11020',N'Yết Kiêu',N'Yet Kieu',N'Xã Yết Kiêu',N'Yet Kieu Commune','yet_kieu','297',10),
@@ -4496,6 +4493,7 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('11089',N'Ngọc Kỳ',N'Ngoc Ky',N'Xã Ngọc Kỳ',N'Ngoc Ky Commune','ngoc_ky','298',10),
 ('11092',N'Bình Lăng',N'Binh Lang',N'Xã Bình Lăng',N'Binh Lang Commune','binh_lang','298',10),
 ('11095',N'Chí Minh',N'Chi Minh',N'Xã Chí Minh',N'Chi Minh Commune','chi_minh','298',10),
+('11098',N'Tái Sơn',N'Tai Son',N'Xã Tái Sơn',N'Tai Son Commune','tai_son','298',10),
 ('11101',N'Quang Phục',N'Quang Phuc',N'Xã Quang Phục',N'Quang Phuc Commune','quang_phuc','298',10),
 ('11110',N'Dân Chủ',N'Dan Chu',N'Xã Dân Chủ',N'Dan Chu Commune','dan_chu','298',10),
 ('11113',N'Tân Kỳ',N'Tan Ky',N'Xã Tân Kỳ',N'Tan Ky Commune','tan_ky','298',10),
@@ -4519,10 +4517,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('11173',N'An Đức',N'An Duc',N'Xã An Đức',N'An Duc Commune','an_duc','299',10),
 ('11176',N'Vạn Phúc',N'Van Phuc',N'Xã Vạn Phúc',N'Van Phuc Commune','van_phuc','299',10),
 ('11179',N'Tân Hương',N'Tan Huong',N'Xã Tân Hương',N'Tan Huong Commune','tan_huong','299',10),
-('11185',N'Vĩnh Hòa',N'Vinh Hoa',N'Xã Vĩnh Hòa',N'Vinh Hoa Commune','vinh_hoa','299',10);
+('11185',N'Vĩnh Hòa',N'Vinh Hoa',N'Xã Vĩnh Hòa',N'Vinh Hoa Commune','vinh_hoa','299',10),
+('11188',N'Đông Xuyên',N'Dong Xuyen',N'Xã Đông Xuyên',N'Dong Xuyen Commune','dong_xuyen','299',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('11188',N'Đông Xuyên',N'Dong Xuyen',N'Xã Đông Xuyên',N'Dong Xuyen Commune','dong_xuyen','299',10),
 ('11197',N'Tân Phong',N'Tan Phong',N'Xã Tân Phong',N'Tan Phong Commune','tan_phong','299',10),
 ('11200',N'Ninh Hải',N'Ninh Hai',N'Xã Ninh Hải',N'Ninh Hai Commune','ninh_hai','299',10),
 ('11203',N'Đồng Tâm',N'Dong Tam',N'Xã Đồng Tâm',N'Dong Tam Commune','dong_tam','299',10),
@@ -4571,10 +4569,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('11356',N'Lê Lợi',N'Le Loi',N'Phường Lê Lợi',N'Le Loi Ward','le_loi','304',8),
 ('11359',N'Đằng Giang',N'Dang Giang',N'Phường Đằng Giang',N'Dang Giang Ward','dang_giang','304',8),
 ('11362',N'Lạch Tray',N'Lach Tray',N'Phường Lạch Tray',N'Lach Tray Ward','lach_tray','304',8),
-('11365',N'Đổng Quốc Bình',N'Dong Quoc Binh',N'Phường Đổng Quốc Bình',N'Dong Quoc Binh Ward','dong_quoc_binh','304',8);
+('11365',N'Đổng Quốc Bình',N'Dong Quoc Binh',N'Phường Đổng Quốc Bình',N'Dong Quoc Binh Ward','dong_quoc_binh','304',8),
+('11368',N'Cát Dài',N'Cat Dai',N'Phường Cát Dài',N'Cat Dai Ward','cat_dai','305',8);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('11368',N'Cát Dài',N'Cat Dai',N'Phường Cát Dài',N'Cat Dai Ward','cat_dai','305',8),
 ('11371',N'An Biên',N'An Bien',N'Phường An Biên',N'An Bien Ward','an_bien','305',8),
 ('11374',N'Lam Sơn',N'Lam Son',N'Phường Lam Sơn',N'Lam Son Ward','lam_son','305',8),
 ('11377',N'An Dương',N'An Duong',N'Phường An Dương',N'An Duong Ward','an_duong','305',8),
@@ -4623,10 +4621,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('11473',N'Minh Đức',N'Minh Duc',N'Thị trấn Minh Đức',N'Minh Duc Township','minh_duc','311',9),
 ('11476',N'Lại Xuân',N'Lai Xuan',N'Xã Lại Xuân',N'Lai Xuan Commune','lai_xuan','311',10),
 ('11479',N'An Sơn',N'An Son',N'Xã An Sơn',N'An Son Commune','an_son','311',10),
-('11482',N'Kỳ Sơn',N'Ky Son',N'Xã Kỳ Sơn',N'Ky Son Commune','ky_son','311',10);
+('11482',N'Kỳ Sơn',N'Ky Son',N'Xã Kỳ Sơn',N'Ky Son Commune','ky_son','311',10),
+('11485',N'Liên Khê',N'Lien Khe',N'Xã Liên Khê',N'Lien Khe Commune','lien_khe','311',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('11485',N'Liên Khê',N'Lien Khe',N'Xã Liên Khê',N'Lien Khe Commune','lien_khe','311',10),
 ('11488',N'Lưu Kiếm',N'Luu Kiem',N'Xã Lưu Kiếm',N'Luu Kiem Commune','luu_kiem','311',10),
 ('11491',N'Lưu Kỳ',N'Luu Ky',N'Xã Lưu Kỳ',N'Luu Ky Commune','luu_ky','311',10),
 ('11494',N'Gia Minh',N'Gia Minh',N'Xã Gia Minh',N'Gia Minh Commune','gia_minh','311',10),
@@ -4675,10 +4673,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('11623',N'An Đồng',N'An Dong',N'Xã An Đồng',N'An Dong Commune','an_dong','312',10),
 ('11626',N'Hồng Thái',N'Hong Thai',N'Xã Hồng Thái',N'Hong Thai Commune','hong_thai','312',10),
 ('11629',N'An Lão',N'An Lao',N'Thị trấn An Lão',N'An Lao Township','an_lao','313',9),
-('11632',N'Bát Trang',N'Bat Trang',N'Xã Bát Trang',N'Bat Trang Commune','bat_trang','313',10);
+('11632',N'Bát Trang',N'Bat Trang',N'Xã Bát Trang',N'Bat Trang Commune','bat_trang','313',10),
+('11635',N'Trường Thọ',N'Truong Tho',N'Xã Trường Thọ',N'Truong Tho Commune','truong_tho','313',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('11635',N'Trường Thọ',N'Truong Tho',N'Xã Trường Thọ',N'Truong Tho Commune','truong_tho','313',10),
 ('11638',N'Trường Thành',N'Truong Thanh',N'Xã Trường Thành',N'Truong Thanh Commune','truong_thanh','313',10),
 ('11641',N'An Tiến',N'An Tien',N'Xã An Tiến',N'An Tien Commune','an_tien','313',10),
 ('11644',N'Quang Hưng',N'Quang Hung',N'Xã Quang Hưng',N'Quang Hung Commune','quang_hung','313',10),
@@ -4727,10 +4725,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('11797',N'Tiên Thắng',N'Tien Thang',N'Xã Tiên Thắng',N'Tien Thang Commune','tien_thang','315',10),
 ('11800',N'Tiên Minh',N'Tien Minh',N'Xã Tiên Minh',N'Tien Minh Commune','tien_minh','315',10),
 ('11803',N'Bắc Hưng',N'Bac Hung',N'Xã Bắc Hưng',N'Bac Hung Commune','bac_hung','315',10),
-('11806',N'Nam Hưng',N'Nam Hung',N'Xã Nam Hưng',N'Nam Hung Commune','nam_hung','315',10);
+('11806',N'Nam Hưng',N'Nam Hung',N'Xã Nam Hưng',N'Nam Hung Commune','nam_hung','315',10),
+('11809',N'Hùng Thắng',N'Hung Thang',N'Xã Hùng Thắng',N'Hung Thang Commune','hung_thang','315',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('11809',N'Hùng Thắng',N'Hung Thang',N'Xã Hùng Thắng',N'Hung Thang Commune','hung_thang','315',10),
 ('11812',N'Tây Hưng',N'Tay Hung',N'Xã Tây Hưng',N'Tay Hung Commune','tay_hung','315',10),
 ('11815',N'Đông Hưng',N'Dong Hung',N'Xã Đông Hưng',N'Dong Hung Commune','dong_hung','315',10),
 ('11821',N'Vinh Quang',N'Vinh Quang',N'Xã Vinh Quang',N'Vinh Quang Commune','vinh_quang','315',10),
@@ -4779,10 +4777,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('11950',N'Lam Sơn',N'Lam Son',N'Phường Lam Sơn',N'Lam Son Ward','lam_son','323',8),
 ('11953',N'Hiến Nam',N'Hien Nam',N'Phường Hiến Nam',N'Hien Nam Ward','hien_nam','323',8),
 ('11956',N'An Tảo',N'An Tao',N'Phường An Tảo',N'An Tao Ward','an_tao','323',8),
-('11959',N'Lê Lợi',N'Le Loi',N'Phường Lê Lợi',N'Le Loi Ward','le_loi','323',8);
+('11959',N'Lê Lợi',N'Le Loi',N'Phường Lê Lợi',N'Le Loi Ward','le_loi','323',8),
+('11962',N'Minh Khai',N'Minh Khai',N'Phường Minh Khai',N'Minh Khai Ward','minh_khai','323',8);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('11962',N'Minh Khai',N'Minh Khai',N'Phường Minh Khai',N'Minh Khai Ward','minh_khai','323',8),
 ('11965',N'Quang Trung',N'Quang Trung',N'Phường Quang Trung',N'Quang Trung Ward','quang_trung','323',8),
 ('11968',N'Hồng Châu',N'Hong Chau',N'Phường Hồng Châu',N'Hong Chau Ward','hong_chau','323',8),
 ('11971',N'Trung Nghĩa',N'Trung Nghia',N'Xã Trung Nghĩa',N'Trung Nghia Commune','trung_nghia','323',10),
@@ -4831,10 +4829,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('12085',N'Trung Hòa',N'Trung Hoa',N'Xã Trung Hòa',N'Trung Hoa Commune','trung_hoa','327',10),
 ('12088',N'Yên Hòa',N'Yen Hoa',N'Xã Yên Hòa',N'Yen Hoa Commune','yen_hoa','327',10),
 ('12091',N'Minh Châu',N'Minh Chau',N'Xã Minh Châu',N'Minh Chau Commune','minh_chau','327',10),
-('12094',N'Trung Hưng',N'Trung Hung',N'Xã Trung Hưng',N'Trung Hung Commune','trung_hung','327',10);
+('12094',N'Trung Hưng',N'Trung Hung',N'Xã Trung Hưng',N'Trung Hung Commune','trung_hung','327',10),
+('12097',N'Lý Thường Kiệt',N'Ly Thuong Kiet',N'Xã Lý Thường Kiệt',N'Ly Thuong Kiet Commune','ly_thuong_kiet','327',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('12097',N'Lý Thường Kiệt',N'Ly Thuong Kiet',N'Xã Lý Thường Kiệt',N'Ly Thuong Kiet Commune','ly_thuong_kiet','327',10),
 ('12100',N'Tân Việt',N'Tan Viet',N'Xã Tân Việt',N'Tan Viet Commune','tan_viet','327',10),
 ('12103',N'Bần Yên Nhân',N'Ban Yen Nhan',N'Phường Bần Yên Nhân',N'Ban Yen Nhan Ward','ban_yen_nhan','328',8),
 ('12106',N'Phan Đình Phùng',N'Phan Dinh Phung',N'Phường Phan Đình Phùng',N'Phan Dinh Phung Ward','phan_dinh_phung','328',8),
@@ -4883,10 +4881,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('12235',N'Bình Kiều',N'Binh Kieu',N'Xã Bình Kiều',N'Binh Kieu Commune','binh_kieu','330',10),
 ('12238',N'Dân Tiến',N'Dan Tien',N'Xã Dân Tiến',N'Dan Tien Commune','dan_tien','330',10),
 ('12241',N'Đồng Tiến',N'Dong Tien',N'Xã Đồng Tiến',N'Dong Tien Commune','dong_tien','330',10),
-('12244',N'Hồng Tiến',N'Hong Tien',N'Xã Hồng Tiến',N'Hong Tien Commune','hong_tien','330',10);
+('12244',N'Hồng Tiến',N'Hong Tien',N'Xã Hồng Tiến',N'Hong Tien Commune','hong_tien','330',10),
+('12247',N'Tân Châu',N'Tan Chau',N'Xã Tân Châu',N'Tan Chau Commune','tan_chau','330',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('12247',N'Tân Châu',N'Tan Chau',N'Xã Tân Châu',N'Tan Chau Commune','tan_chau','330',10),
 ('12250',N'Liên Khê',N'Lien Khe',N'Xã Liên Khê',N'Lien Khe Commune','lien_khe','330',10),
 ('12253',N'Phùng Hưng',N'Phung Hung',N'Xã Phùng Hưng',N'Phung Hung Commune','phung_hung','330',10),
 ('12256',N'Việt Hòa',N'Viet Hoa',N'Xã Việt Hòa',N'Viet Hoa Commune','viet_hoa','330',10),
@@ -4935,10 +4933,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('12400',N'Quang Hưng',N'Quang Hung',N'Xã Quang Hưng',N'Quang Hung Commune','quang_hung','333',10),
 ('12403',N'Minh Hoàng',N'Minh Hoang',N'Xã Minh Hoàng',N'Minh Hoang Commune','minh_hoang','333',10),
 ('12406',N'Đoàn Đào',N'Doan Dao',N'Xã Đoàn Đào',N'Doan Dao Commune','doan_dao','333',10),
-('12409',N'Tống Phan',N'Tong Phan',N'Xã Tống Phan',N'Tong Phan Commune','tong_phan','333',10);
+('12409',N'Tống Phan',N'Tong Phan',N'Xã Tống Phan',N'Tong Phan Commune','tong_phan','333',10),
+('12412',N'Đình Cao',N'Dinh Cao',N'Xã Đình Cao',N'Dinh Cao Commune','dinh_cao','333',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('12412',N'Đình Cao',N'Dinh Cao',N'Xã Đình Cao',N'Dinh Cao Commune','dinh_cao','333',10),
 ('12415',N'Nhật Quang',N'Nhat Quang',N'Xã Nhật Quang',N'Nhat Quang Commune','nhat_quang','333',10),
 ('12418',N'Tiền Tiến',N'Tien Tien',N'Xã Tiền Tiến',N'Tien Tien Commune','tien_tien','333',10),
 ('12421',N'Tam Đa',N'Tam Da',N'Xã Tam Đa',N'Tam Da Commune','tam_da','333',10),
@@ -4987,10 +4985,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('12532',N'Châu Sơn',N'Chau Son',N'Xã Châu Sơn',N'Chau Son Commune','chau_son','338',10),
 ('12535',N'Quỳnh Mỹ',N'Quynh My',N'Xã Quỳnh Mỹ',N'Quynh My Commune','quynh_my','338',10),
 ('12538',N'An Quí',N'An Qui',N'Xã An Quí',N'An Qui Commune','an_qui','338',10),
-('12541',N'An Thanh',N'An Thanh',N'Xã An Thanh',N'An Thanh Commune','an_thanh','338',10);
+('12541',N'An Thanh',N'An Thanh',N'Xã An Thanh',N'An Thanh Commune','an_thanh','338',10),
+('12547',N'An Vũ',N'An Vu',N'Xã An Vũ',N'An Vu Commune','an_vu','338',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('12547',N'An Vũ',N'An Vu',N'Xã An Vũ',N'An Vu Commune','an_vu','338',10),
 ('12550',N'An Lễ',N'An Le',N'Xã An Lễ',N'An Le Commune','an_le','338',10),
 ('12553',N'Quỳnh Hưng',N'Quynh Hung',N'Xã Quỳnh Hưng',N'Quynh Hung Commune','quynh_hung','338',10),
 ('12556',N'Quỳnh Bảo',N'Quynh Bao',N'Xã Quỳnh Bảo',N'Quynh Bao Commune','quynh_bao','338',10),
@@ -5039,10 +5037,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('12682',N'Minh Hòa',N'Minh Hoa',N'Xã Minh Hòa',N'Minh Hoa Commune','minh_hoa','339',10),
 ('12685',N'Hồng Minh',N'Hong Minh',N'Xã Hồng Minh',N'Hong Minh Commune','hong_minh','339',10),
 ('12688',N'Đông Hưng',N'Dong Hung',N'Thị trấn Đông Hưng',N'Dong Hung Township','dong_hung','340',9),
-('12691',N'Đô Lương',N'Do Luong',N'Xã Đô Lương',N'Do Luong Commune','do_luong','340',10);
+('12691',N'Đô Lương',N'Do Luong',N'Xã Đô Lương',N'Do Luong Commune','do_luong','340',10),
+('12694',N'Đông Phương',N'Dong Phuong',N'Xã Đông Phương',N'Dong Phuong Commune','dong_phuong','340',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('12694',N'Đông Phương',N'Dong Phuong',N'Xã Đông Phương',N'Dong Phuong Commune','dong_phuong','340',10),
 ('12697',N'Liên Giang',N'Lien Giang',N'Xã Liên Giang',N'Lien Giang Commune','lien_giang','340',10),
 ('12700',N'An Châu',N'An Chau',N'Xã An Châu',N'An Chau Commune','an_chau','340',10),
 ('12703',N'Đông Sơn',N'Dong Son',N'Xã Đông Sơn',N'Dong Son Commune','dong_son','340',10),
@@ -5091,10 +5089,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('12865',N'Dương Phúc',N'Duong Phuc',N'Xã Dương Phúc',N'Duong Phuc Commune','duong_phuc','341',10),
 ('12868',N'Thụy Trình',N'Thuy Trinh',N'Xã Thụy Trình',N'Thuy Trinh Commune','thuy_trinh','341',10),
 ('12871',N'Thụy Bình',N'Thuy Binh',N'Xã Thụy Bình',N'Thuy Binh Commune','thuy_binh','341',10),
-('12874',N'Thụy Chính',N'Thuy Chinh',N'Xã Thụy Chính',N'Thuy Chinh Commune','thuy_chinh','341',10);
+('12874',N'Thụy Chính',N'Thuy Chinh',N'Xã Thụy Chính',N'Thuy Chinh Commune','thuy_chinh','341',10),
+('12877',N'Thụy Dân',N'Thuy Dan',N'Xã Thụy Dân',N'Thuy Dan Commune','thuy_dan','341',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('12877',N'Thụy Dân',N'Thuy Dan',N'Xã Thụy Dân',N'Thuy Dan Commune','thuy_dan','341',10),
 ('12880',N'Thụy Hải',N'Thuy Hai',N'Xã Thụy Hải',N'Thuy Hai Commune','thuy_hai','341',10),
 ('12889',N'Thụy Liên',N'Thuy Lien',N'Xã Thụy Liên',N'Thuy Lien Commune','thuy_lien','341',10),
 ('12892',N'Thụy Duyên',N'Thuy Duyen',N'Xã Thụy Duyên',N'Thuy Duyen Commune','thuy_duyen','341',10),
@@ -5143,10 +5141,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('13051',N'Nam Thịnh',N'Nam Thinh',N'Xã Nam Thịnh',N'Nam Thinh Commune','nam_thinh','342',10),
 ('13054',N'Nam Hà',N'Nam Ha',N'Xã Nam Hà',N'Nam Ha Commune','nam_ha','342',10),
 ('13057',N'Nam Thanh',N'Nam Thanh',N'Xã Nam Thanh',N'Nam Thanh Commune','nam_thanh','342',10),
-('13060',N'Nam Trung',N'Nam Trung',N'Xã Nam Trung',N'Nam Trung Commune','nam_trung','342',10);
+('13060',N'Nam Trung',N'Nam Trung',N'Xã Nam Trung',N'Nam Trung Commune','nam_trung','342',10),
+('13063',N'Nam Hồng',N'Nam Hong',N'Xã Nam Hồng',N'Nam Hong Commune','nam_hong','342',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('13063',N'Nam Hồng',N'Nam Hong',N'Xã Nam Hồng',N'Nam Hong Commune','nam_hong','342',10),
 ('13066',N'Nam Hưng',N'Nam Hung',N'Xã Nam Hưng',N'Nam Hung Commune','nam_hung','342',10),
 ('13069',N'Nam Hải',N'Nam Hai',N'Xã Nam Hải',N'Nam Hai Commune','nam_hai','342',10),
 ('13072',N'Nam Phú',N'Nam Phu',N'Xã Nam Phú',N'Nam Phu Commune','nam_phu','342',10),
@@ -5195,10 +5193,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('13219',N'Việt Hùng',N'Viet Hung',N'Xã Việt Hùng',N'Viet Hung Commune','viet_hung','344',10),
 ('13222',N'Minh Lãng',N'Minh Lang',N'Xã Minh Lãng',N'Minh Lang Commune','minh_lang','344',10),
 ('13228',N'Minh Khai',N'Minh Khai',N'Xã Minh Khai',N'Minh Khai Commune','minh_khai','344',10),
-('13231',N'Dũng Nghĩa',N'Dung Nghia',N'Xã Dũng Nghĩa',N'Dung Nghia Commune','dung_nghia','344',10);
+('13231',N'Dũng Nghĩa',N'Dung Nghia',N'Xã Dũng Nghĩa',N'Dung Nghia Commune','dung_nghia','344',10),
+('13234',N'Minh Quang',N'Minh Quang',N'Xã Minh Quang',N'Minh Quang Commune','minh_quang','344',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('13234',N'Minh Quang',N'Minh Quang',N'Xã Minh Quang',N'Minh Quang Commune','minh_quang','344',10),
 ('13237',N'Tam Quang',N'Tam Quang',N'Xã Tam Quang',N'Tam Quang Commune','tam_quang','344',10),
 ('13240',N'Tân Lập',N'Tan Lap',N'Xã Tân Lập',N'Tan Lap Commune','tan_lap','344',10),
 ('13243',N'Bách Thuận',N'Bach Thuan',N'Xã Bách Thuận',N'Bach Thuan Commune','bach_thuan','344',10),
@@ -5247,10 +5245,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('13345',N'Chuyên Ngoại',N'Chuyen Ngoai',N'Xã Chuyên Ngoại',N'Chuyen Ngoai Commune','chuyen_ngoai','349',10),
 ('13348',N'Yên Bắc',N'Yen Bac',N'Phường Yên Bắc',N'Yen Bac Ward','yen_bac','349',8),
 ('13351',N'Trác Văn',N'Trac Van',N'Xã Trác Văn',N'Trac Van Commune','trac_van','349',10),
-('13354',N'Tiên Nội',N'Tien Noi',N'Phường Tiên Nội',N'Tien Noi Ward','tien_noi','349',8);
+('13354',N'Tiên Nội',N'Tien Noi',N'Phường Tiên Nội',N'Tien Noi Ward','tien_noi','349',8),
+('13357',N'Hoàng Đông',N'Hoang Dong',N'Phường Hoàng Đông',N'Hoang Dong Ward','hoang_dong','349',8);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('13357',N'Hoàng Đông',N'Hoang Dong',N'Phường Hoàng Đông',N'Hoang Dong Ward','hoang_dong','349',8),
 ('13360',N'Yên Nam',N'Yen Nam',N'Xã Yên Nam',N'Yen Nam Commune','yen_nam','349',10),
 ('13363',N'Tiên Ngoại',N'Tien Ngoai',N'Xã Tiên Ngoại',N'Tien Ngoai Commune','tien_ngoai','349',10),
 ('13369',N'Tiên Sơn',N'Tien Son',N'Xã Tiên Sơn',N'Tien Son Commune','tien_son','349',10),
@@ -5299,10 +5297,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('13531',N'Bồ Đề',N'Bo De',N'Xã Bồ Đề',N'Bo De Commune','bo_de','352',10),
 ('13534',N'Bối Cầu',N'Boi Cau',N'Xã Bối Cầu',N'Boi Cau Commune','boi_cau','352',10),
 ('13540',N'An Nội',N'An Noi',N'Xã An Nội',N'An Noi Commune','an_noi','352',10),
-('13543',N'Vũ Bản',N'Vu Ban',N'Xã Vũ Bản',N'Vu Ban Commune','vu_ban','352',10);
+('13543',N'Vũ Bản',N'Vu Ban',N'Xã Vũ Bản',N'Vu Ban Commune','vu_ban','352',10),
+('13546',N'Trung Lương',N'Trung Luong',N'Xã Trung Lương',N'Trung Luong Commune','trung_luong','352',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('13546',N'Trung Lương',N'Trung Luong',N'Xã Trung Lương',N'Trung Luong Commune','trung_luong','352',10),
 ('13552',N'An Đổ',N'An Do',N'Xã An Đổ',N'An Do Commune','an_do','352',10),
 ('13555',N'La Sơn',N'La Son',N'Xã La Sơn',N'La Son Commune','la_son','352',10),
 ('13558',N'Tiêu Động',N'Tieu Dong',N'Xã Tiêu Động',N'Tieu Dong Commune','tieu_dong','352',10),
@@ -5328,57 +5326,37 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('13624',N'Xuân Khê',N'Xuan Khe',N'Xã Xuân Khê',N'Xuan Khe Commune','xuan_khe','353',10),
 ('13627',N'Tiến Thắng',N'Tien Thang',N'Xã Tiến Thắng',N'Tien Thang Commune','tien_thang','353',10),
 ('13630',N'Hòa Hậu',N'Hoa Hau',N'Xã Hòa Hậu',N'Hoa Hau Commune','hoa_hau','353',10),
-('13633',N'Hạ Long',N'Ha Long',N'Phường Hạ Long',N'Ha Long Ward','ha_long','356',8),
-('13636',N'Trần Tế Xương',N'Tran Te Xuong',N'Phường Trần Tế Xương',N'Tran Te Xuong Ward','tran_te_xuong','356',8),
-('13639',N'Vị Hoàng',N'Vi Hoang',N'Phường Vị Hoàng',N'Vi Hoang Ward','vi_hoang','356',8),
-('13642',N'Vị Xuyên',N'Vi Xuyen',N'Phường Vị Xuyên',N'Vi Xuyen Ward','vi_xuyen','356',8),
-('13645',N'Quang Trung',N'Quang Trung',N'Phường Quang Trung',N'Quang Trung Ward','quang_trung','356',8),
-('13648',N'Cửa Bắc',N'Cua Bac',N'Phường Cửa Bắc',N'Cua Bac Ward','cua_bac','356',8),
-('14539',N'Ninh Mỹ',N'Ninh My',N'Xã Ninh Mỹ',N'Ninh My Commune','ninh_my','374',10),
-('13651',N'Nguyễn Du',N'Nguyen Du',N'Phường Nguyễn Du',N'Nguyen Du Ward','nguyen_du','356',8),
-('13654',N'Bà Triệu',N'Ba Trieu',N'Phường Bà Triệu',N'Ba Trieu Ward','ba_trieu','356',8),
+('13636',N'Vị Xuyên',N'Vi Xuyen',N'Phường Vị Xuyên',N'Vi Xuyen Ward','vi_xuyen','356',8),
 ('13657',N'Trường Thi',N'Truong Thi',N'Phường Trường Thi',N'Truong Thi Ward','truong_thi','356',8),
-('13660',N'Phan Đình Phùng',N'Phan Dinh Phung',N'Phường Phan Đình Phùng',N'Phan Dinh Phung Ward','phan_dinh_phung','356',8),
-('13663',N'Ngô Quyền',N'Ngo Quyen',N'Phường Ngô Quyền',N'Ngo Quyen Ward','ngo_quyen','356',8),
 ('13666',N'Trần Hưng Đạo',N'Tran Hung Dao',N'Phường Trần Hưng Đạo',N'Tran Hung Dao Ward','tran_hung_dao','356',8),
-('13669',N'Trần Đăng Ninh',N'Tran Dang Ninh',N'Phường Trần Đăng Ninh',N'Tran Dang Ninh Ward','tran_dang_ninh','356',8),
-('13672',N'Năng Tĩnh',N'Nang Tinh',N'Phường Năng Tĩnh',N'Nang Tinh Ward','nang_tinh','356',8),
-('13675',N'Văn Miếu',N'Van Mieu',N'Phường Văn Miếu',N'Van Mieu Ward','van_mieu','356',8),
-('13678',N'Trần Quang Khải',N'Tran Quang Khai',N'Phường Trần Quang Khải',N'Tran Quang Khai Ward','tran_quang_khai','356',8),
-('13681',N'Thống Nhất',N'Thong Nhat',N'Phường Thống Nhất',N'Thong Nhat Ward','thong_nhat','356',8),
+('13669',N'Cửa Bắc',N'Cua Bac',N'Phường Cửa Bắc',N'Cua Bac Ward','cua_bac','356',8),
+('13678',N'Năng Tĩnh',N'Nang Tinh',N'Phường Năng Tĩnh',N'Nang Tinh Ward','nang_tinh','356',8),
+('13681',N'Quang Trung',N'Quang Trung',N'Phường Quang Trung',N'Quang Trung Ward','quang_trung','356',8),
 ('13684',N'Lộc Hạ',N'Loc Ha',N'Phường Lộc Hạ',N'Loc Ha Ward','loc_ha','356',8),
 ('13687',N'Lộc Vượng',N'Loc Vuong',N'Phường Lộc Vượng',N'Loc Vuong Ward','loc_vuong','356',8),
 ('13690',N'Cửa Nam',N'Cua Nam',N'Phường Cửa Nam',N'Cua Nam Ward','cua_nam','356',8),
 ('13693',N'Lộc Hòa',N'Loc Hoa',N'Phường Lộc Hòa',N'Loc Hoa Ward','loc_hoa','356',8),
-('13696',N'Nam Phong',N'Nam Phong',N'Xã Nam Phong',N'Nam Phong Commune','nam_phong','356',10),
-('13699',N'Mỹ Xá',N'My Xa',N'Phường Mỹ Xá',N'My Xa Ward','my_xa','356',8);
+('13696',N'Nam Phong',N'Nam Phong',N'Phường Nam Phong',N'Nam Phong Ward','nam_phong','356',8),
+('13699',N'Mỹ Xá',N'My Xa',N'Phường Mỹ Xá',N'My Xa Ward','my_xa','356',8),
+('13705',N'Nam Vân',N'Nam Van',N'Phường Nam Vân',N'Nam Van Ward','nam_van','356',8),
+('13708',N'Hưng Lộc',N'Hung Loc',N'Phường Hưng Lộc',N'Hung Loc Ward','hung_loc','356',8),
+('13711',N'Mỹ Hà',N'My Ha',N'Xã Mỹ Hà',N'My Ha Commune','my_ha','356',10),
+('13717',N'Mỹ Thắng',N'My Thang',N'Xã Mỹ Thắng',N'My Thang Commune','my_thang','356',10),
+('13720',N'Mỹ Trung',N'My Trung',N'Xã Mỹ Trung',N'My Trung Commune','my_trung','356',10),
+('13723',N'Mỹ Tân',N'My Tan',N'Xã Mỹ Tân',N'My Tan Commune','my_tan','356',10),
+('13726',N'Mỹ Phúc',N'My Phuc',N'Xã Mỹ Phúc',N'My Phuc Commune','my_phuc','356',10),
+('13732',N'Mỹ Thuận',N'My Thuan',N'Xã Mỹ Thuận',N'My Thuan Commune','my_thuan','356',10),
+('13735',N'Mỹ Lộc',N'My Loc',N'Xã Mỹ Lộc',N'My Loc Commune','my_loc','356',10),
+('13741',N'Gôi',N'Goi',N'Thị trấn Gôi',N'Goi Township','goi','359',9),
+('13747',N'Hiển Khánh',N'Hien Khanh',N'Xã Hiển Khánh',N'Hien Khanh Commune','hien_khanh','359',10),
+('13750',N'Minh Tân',N'Minh Tan',N'Xã Minh Tân',N'Minh Tan Commune','minh_tan','359',10),
+('13753',N'Hợp Hưng',N'Hop Hung',N'Xã Hợp Hưng',N'Hop Hung Commune','hop_hung','359',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('13702',N'Lộc An',N'Loc An',N'Xã Lộc An',N'Loc An Commune','loc_an','356',10),
-('13705',N'Nam Vân',N'Nam Van',N'Xã Nam Vân',N'Nam Van Commune','nam_van','356',10),
-('13708',N'Mỹ Lộc',N'My Loc',N'Thị trấn Mỹ Lộc',N'My Loc Township','my_loc','358',9),
-('13711',N'Mỹ Hà',N'My Ha',N'Xã Mỹ Hà',N'My Ha Commune','my_ha','358',10),
-('13714',N'Mỹ Tiến',N'My Tien',N'Xã Mỹ Tiến',N'My Tien Commune','my_tien','358',10),
-('13717',N'Mỹ Thắng',N'My Thang',N'Xã Mỹ Thắng',N'My Thang Commune','my_thang','358',10),
-('13720',N'Mỹ Trung',N'My Trung',N'Xã Mỹ Trung',N'My Trung Commune','my_trung','358',10),
-('13723',N'Mỹ Tân',N'My Tan',N'Xã Mỹ Tân',N'My Tan Commune','my_tan','358',10),
-('13726',N'Mỹ Phúc',N'My Phuc',N'Xã Mỹ Phúc',N'My Phuc Commune','my_phuc','358',10),
-('13729',N'Mỹ Hưng',N'My Hung',N'Xã Mỹ Hưng',N'My Hung Commune','my_hung','358',10),
-('13732',N'Mỹ Thuận',N'My Thuan',N'Xã Mỹ Thuận',N'My Thuan Commune','my_thuan','358',10),
-('13735',N'Mỹ Thịnh',N'My Thinh',N'Xã Mỹ Thịnh',N'My Thinh Commune','my_thinh','358',10),
-('13738',N'Mỹ Thành',N'My Thanh',N'Xã Mỹ Thành',N'My Thanh Commune','my_thanh','358',10),
-('13741',N'Gôi',N'Goi',N'Thị trấn Gôi',N'Goi Township','goi','359',9),
-('13744',N'Minh Thuận',N'Minh Thuan',N'Xã Minh Thuận',N'Minh Thuan Commune','minh_thuan','359',10),
-('13747',N'Hiển Khánh',N'Hien Khanh',N'Xã Hiển Khánh',N'Hien Khanh Commune','hien_khanh','359',10),
-('13750',N'Tân Khánh',N'Tan Khanh',N'Xã Tân Khánh',N'Tan Khanh Commune','tan_khanh','359',10),
-('13753',N'Hợp Hưng',N'Hop Hung',N'Xã Hợp Hưng',N'Hop Hung Commune','hop_hung','359',10),
 ('13756',N'Đại An',N'Dai An',N'Xã Đại An',N'Dai An Commune','dai_an','359',10),
-('13759',N'Tân Thành',N'Tan Thanh',N'Xã Tân Thành',N'Tan Thanh Commune','tan_thanh','359',10),
 ('13762',N'Cộng Hòa',N'Cong Hoa',N'Xã Cộng Hòa',N'Cong Hoa Commune','cong_hoa','359',10),
 ('13765',N'Trung Thành',N'Trung Thanh',N'Xã Trung Thành',N'Trung Thanh Commune','trung_thanh','359',10),
 ('13768',N'Quang Trung',N'Quang Trung',N'Xã Quang Trung',N'Quang Trung Commune','quang_trung','359',10),
-('13771',N'Minh Tân',N'Minh Tan',N'Xã Minh Tân',N'Minh Tan Commune','minh_tan','359',10),
-('13774',N'Liên Bảo',N'Lien Bao',N'Xã Liên Bảo',N'Lien Bao Commune','lien_bao','359',10),
 ('13777',N'Thành Lợi',N'Thanh Loi',N'Xã Thành Lợi',N'Thanh Loi Commune','thanh_loi','359',10),
 ('13780',N'Kim Thái',N'Kim Thai',N'Xã Kim Thái',N'Kim Thai Commune','kim_thai','359',10),
 ('13783',N'Liên Minh',N'Lien Minh',N'Xã Liên Minh',N'Lien Minh Commune','lien_minh','359',10),
@@ -5386,43 +5364,31 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('13789',N'Tam Thanh',N'Tam Thanh',N'Xã Tam Thanh',N'Tam Thanh Commune','tam_thanh','359',10),
 ('13792',N'Vĩnh Hào',N'Vinh Hao',N'Xã Vĩnh Hào',N'Vinh Hao Commune','vinh_hao','359',10),
 ('13795',N'Lâm',N'Lam',N'Thị trấn Lâm',N'Lam Township','lam','360',9),
-('13798',N'Yên Trung',N'Yen Trung',N'Xã Yên Trung',N'Yen Trung Commune','yen_trung','360',10),
-('13801',N'Yên Thành',N'Yen Thanh',N'Xã Yên Thành',N'Yen Thanh Commune','yen_thanh','360',10),
-('13804',N'Yên Tân',N'Yen Tan',N'Xã Yên Tân',N'Yen Tan Commune','yen_tan','360',10),
-('13807',N'Yên Lợi',N'Yen Loi',N'Xã Yên Lợi',N'Yen Loi Commune','yen_loi','360',10),
+('13801',N'Trung Nghĩa',N'Trung Nghia',N'Xã Trung Nghĩa',N'Trung Nghia Commune','trung_nghia','360',10),
+('13807',N'Tân Minh',N'Tan Minh',N'Xã Tân Minh',N'Tan Minh Commune','tan_minh','360',10),
 ('13810',N'Yên Thọ',N'Yen Tho',N'Xã Yên Thọ',N'Yen Tho Commune','yen_tho','360',10),
-('13813',N'Yên Nghĩa',N'Yen Nghia',N'Xã Yên Nghĩa',N'Yen Nghia Commune','yen_nghia','360',10),
-('13816',N'Yên Minh',N'Yen Minh',N'Xã Yên Minh',N'Yen Minh Commune','yen_minh','360',10),
-('13819',N'Yên Phương',N'Yen Phuong',N'Xã Yên Phương',N'Yen Phuong Commune','yen_phuong','360',10),
+('13819',N'Phú Hưng',N'Phu Hung',N'Xã Phú Hưng',N'Phu Hung Commune','phu_hung','360',10),
 ('13822',N'Yên Chính',N'Yen Chinh',N'Xã Yên Chính',N'Yen Chinh Commune','yen_chinh','360',10),
 ('13825',N'Yên Bình',N'Yen Binh',N'Xã Yên Bình',N'Yen Binh Commune','yen_binh','360',10),
-('13828',N'Yên Phú',N'Yen Phu',N'Xã Yên Phú',N'Yen Phu Commune','yen_phu','360',10),
 ('13831',N'Yên Mỹ',N'Yen My',N'Xã Yên Mỹ',N'Yen My Commune','yen_my','360',10),
 ('13834',N'Yên Dương',N'Yen Duong',N'Xã Yên Dương',N'Yen Duong Commune','yen_duong','360',10),
-('13840',N'Yên Hưng',N'Yen Hung',N'Xã Yên Hưng',N'Yen Hung Commune','yen_hung','360',10),
 ('13843',N'Yên Khánh',N'Yen Khanh',N'Xã Yên Khánh',N'Yen Khanh Commune','yen_khanh','360',10),
 ('13846',N'Yên Phong',N'Yen Phong',N'Xã Yên Phong',N'Yen Phong Commune','yen_phong','360',10),
 ('13849',N'Yên Ninh',N'Yen Ninh',N'Xã Yên Ninh',N'Yen Ninh Commune','yen_ninh','360',10),
-('13852',N'Yên Lương',N'Yen Luong',N'Xã Yên Lương',N'Yen Luong Commune','yen_luong','360',10);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('13855',N'Yên Hồng',N'Yen Hong',N'Xã Yên Hồng',N'Yen Hong Commune','yen_hong','360',10),
-('13858',N'Yên Quang',N'Yen Quang',N'Xã Yên Quang',N'Yen Quang Commune','yen_quang','360',10),
+('13852',N'Yên Lương',N'Yen Luong',N'Xã Yên Lương',N'Yen Luong Commune','yen_luong','360',10),
 ('13861',N'Yên Tiến',N'Yen Tien',N'Xã Yên Tiến',N'Yen Tien Commune','yen_tien','360',10),
 ('13864',N'Yên Thắng',N'Yen Thang',N'Xã Yên Thắng',N'Yen Thang Commune','yen_thang','360',10),
 ('13867',N'Yên Phúc',N'Yen Phuc',N'Xã Yên Phúc',N'Yen Phuc Commune','yen_phuc','360',10),
 ('13870',N'Yên Cường',N'Yen Cuong',N'Xã Yên Cường',N'Yen Cuong Commune','yen_cuong','360',10),
 ('13873',N'Yên Lộc',N'Yen Loc',N'Xã Yên Lộc',N'Yen Loc Commune','yen_loc','360',10),
-('13876',N'Yên Bằng',N'Yen Bang',N'Xã Yên Bằng',N'Yen Bang Commune','yen_bang','360',10),
+('13876',N'Hồng Quang',N'Hong Quang',N'Xã Hồng Quang',N'Hong Quang Commune','hong_quang','360',10),
 ('13879',N'Yên Đồng',N'Yen Dong',N'Xã Yên Đồng',N'Yen Dong Commune','yen_dong','360',10),
 ('13882',N'Yên Khang',N'Yen Khang',N'Xã Yên Khang',N'Yen Khang Commune','yen_khang','360',10),
 ('13885',N'Yên Nhân',N'Yen Nhan',N'Xã Yên Nhân',N'Yen Nhan Commune','yen_nhan','360',10),
 ('13888',N'Yên Trị',N'Yen Tri',N'Xã Yên Trị',N'Yen Tri Commune','yen_tri','360',10),
 ('13891',N'Liễu Đề',N'Lieu De',N'Thị trấn Liễu Đề',N'Lieu De Township','lieu_de','361',9),
 ('13894',N'Rạng Đông',N'Rang Dong',N'Thị trấn Rạng Đông',N'Rang Dong Township','rang_dong','361',9),
-('13897',N'Nghĩa Đồng',N'Nghia Dong',N'Xã Nghĩa Đồng',N'Nghia Dong Commune','nghia_dong','361',10),
-('13900',N'Nghĩa Thịnh',N'Nghia Thinh',N'Xã Nghĩa Thịnh',N'Nghia Thinh Commune','nghia_thinh','361',10),
-('13903',N'Nghĩa Minh',N'Nghia Minh',N'Xã Nghĩa Minh',N'Nghia Minh Commune','nghia_minh','361',10),
+('13900',N'Đồng Thịnh',N'Dong Thinh',N'Xã Đồng Thịnh',N'Dong Thinh Commune','dong_thinh','361',10),
 ('13906',N'Nghĩa Thái',N'Nghia Thai',N'Xã Nghĩa Thái',N'Nghia Thai Commune','nghia_thai','361',10),
 ('13909',N'Hoàng Nam',N'Hoang Nam',N'Xã Hoàng Nam',N'Hoang Nam Commune','hoang_nam','361',10),
 ('13912',N'Nghĩa Châu',N'Nghia Chau',N'Xã Nghĩa Châu',N'Nghia Chau Commune','nghia_chau','361',10),
@@ -5432,22 +5398,20 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('13924',N'Nghĩa Hồng',N'Nghia Hong',N'Xã Nghĩa Hồng',N'Nghia Hong Commune','nghia_hong','361',10),
 ('13927',N'Nghĩa Phong',N'Nghia Phong',N'Xã Nghĩa Phong',N'Nghia Phong Commune','nghia_phong','361',10),
 ('13930',N'Nghĩa Phú',N'Nghia Phu',N'Xã Nghĩa Phú',N'Nghia Phu Commune','nghia_phu','361',10),
-('13933',N'Nghĩa Bình',N'Nghia Binh',N'Xã Nghĩa Bình',N'Nghia Binh Commune','nghia_binh','361',10),
-('13936',N'Quỹ Nhất',N'Quy Nhat',N'Thị trấn Quỹ Nhất',N'Quy Nhat Township','quy_nhat','361',9),
-('13939',N'Nghĩa Tân',N'Nghia Tan',N'Xã Nghĩa Tân',N'Nghia Tan Commune','nghia_tan','361',10),
+('13939',N'Quỹ Nhất',N'Quy Nhat',N'Thị trấn Quỹ Nhất',N'Quy Nhat Township','quy_nhat','361',9),
 ('13942',N'Nghĩa Hùng',N'Nghia Hung',N'Xã Nghĩa Hùng',N'Nghia Hung Commune','nghia_hung','361',10),
 ('13945',N'Nghĩa Lâm',N'Nghia Lam',N'Xã Nghĩa Lâm',N'Nghia Lam Commune','nghia_lam','361',10),
 ('13948',N'Nghĩa Thành',N'Nghia Thanh',N'Xã Nghĩa Thành',N'Nghia Thanh Commune','nghia_thanh','361',10),
-('13951',N'Phúc Thắng',N'Phuc Thang',N'Xã Phúc Thắng',N'Phuc Thang Commune','phuc_thang','361',10),
+('13951',N'Phúc Thắng',N'Phuc Thang',N'Xã Phúc Thắng',N'Phuc Thang Commune','phuc_thang','361',10);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('13954',N'Nghĩa Lợi',N'Nghia Loi',N'Xã Nghĩa Lợi',N'Nghia Loi Commune','nghia_loi','361',10),
 ('13957',N'Nghĩa Hải',N'Nghia Hai',N'Xã Nghĩa Hải',N'Nghia Hai Commune','nghia_hai','361',10),
 ('13963',N'Nam Điền',N'Nam Dien',N'Xã Nam Điền',N'Nam Dien Commune','nam_dien','361',10),
 ('13966',N'Nam Giang',N'Nam Giang',N'Thị trấn Nam Giang',N'Nam Giang Township','nam_giang','362',9),
-('13969',N'Nam Mỹ',N'Nam My',N'Xã Nam Mỹ',N'Nam My Commune','nam_my','362',10),
-('13972',N'Điền Xá',N'Dien Xa',N'Xã Điền Xá',N'Dien Xa Commune','dien_xa','362',10),
+('13972',N'Nam Điền',N'Nam Dien',N'Xã Nam Điền',N'Nam Dien Commune','nam_dien','362',10),
 ('13975',N'Nghĩa An',N'Nghia An',N'Xã Nghĩa An',N'Nghia An Commune','nghia_an','362',10),
 ('13978',N'Nam Thắng',N'Nam Thang',N'Xã Nam Thắng',N'Nam Thang Commune','nam_thang','362',10),
-('13981',N'Nam Toàn',N'Nam Toan',N'Xã Nam Toàn',N'Nam Toan Commune','nam_toan','362',10),
 ('13984',N'Hồng Quang',N'Hong Quang',N'Xã Hồng Quang',N'Hong Quang Commune','hong_quang','362',10),
 ('13987',N'Tân Thịnh',N'Tan Thinh',N'Xã Tân Thịnh',N'Tan Thinh Commune','tan_thinh','362',10),
 ('13990',N'Nam Cường',N'Nam Cuong',N'Xã Nam Cường',N'Nam Cuong Commune','nam_cuong','362',10),
@@ -5455,9 +5419,7 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('13996',N'Nam Hùng',N'Nam Hung',N'Xã Nam Hùng',N'Nam Hung Commune','nam_hung','362',10),
 ('13999',N'Nam Hoa',N'Nam Hoa',N'Xã Nam Hoa',N'Nam Hoa Commune','nam_hoa','362',10),
 ('14002',N'Nam Dương',N'Nam Duong',N'Xã Nam Dương',N'Nam Duong Commune','nam_duong','362',10),
-('14005',N'Nam Thanh',N'Nam Thanh',N'Xã Nam Thanh',N'Nam Thanh Commune','nam_thanh','362',10);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('14005',N'Nam Thanh',N'Nam Thanh',N'Xã Nam Thanh',N'Nam Thanh Commune','nam_thanh','362',10),
 ('14008',N'Nam Lợi',N'Nam Loi',N'Xã Nam Lợi',N'Nam Loi Commune','nam_loi','362',10),
 ('14011',N'Bình Minh',N'Binh Minh',N'Xã Bình Minh',N'Binh Minh Commune','binh_minh','362',10),
 ('14014',N'Đồng Sơn',N'Dong Son',N'Xã Đồng Sơn',N'Dong Son Commune','dong_son','362',10),
@@ -5490,32 +5452,24 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('14095',N'Xuân Hồng',N'Xuan Hong',N'Xã Xuân Hồng',N'Xuan Hong Commune','xuan_hong','364',10),
 ('14098',N'Xuân Thành',N'Xuan Thanh',N'Xã Xuân Thành',N'Xuan Thanh Commune','xuan_thanh','364',10),
 ('14101',N'Xuân Thượng',N'Xuan Thuong',N'Xã Xuân Thượng',N'Xuan Thuong Commune','xuan_thuong','364',10),
-('14104',N'Xuân Phong',N'Xuan Phong',N'Xã Xuân Phong',N'Xuan Phong Commune','xuan_phong','364',10),
-('14107',N'Xuân Đài',N'Xuan Dai',N'Xã Xuân Đài',N'Xuan Dai Commune','xuan_dai','364',10),
+('14104',N'Xuân Giang',N'Xuan Giang',N'Xã Xuân Giang',N'Xuan Giang Commune','xuan_giang','364',10),
 ('14110',N'Xuân Tân',N'Xuan Tan',N'Xã Xuân Tân',N'Xuan Tan Commune','xuan_tan','364',10),
-('14113',N'Xuân Thủy',N'Xuan Thuy',N'Xã Xuân Thủy',N'Xuan Thuy Commune','xuan_thuy','364',10),
-('14116',N'Xuân Ngọc',N'Xuan Ngoc',N'Xã Xuân Ngọc',N'Xuan Ngoc Commune','xuan_ngoc','364',10),
-('14119',N'Xuân Bắc',N'Xuan Bac',N'Xã Xuân Bắc',N'Xuan Bac Commune','xuan_bac','364',10),
-('14122',N'Xuân Phương',N'Xuan Phuong',N'Xã Xuân Phương',N'Xuan Phuong Commune','xuan_phuong','364',10),
-('14125',N'Thọ Nghiệp',N'Tho Nghiep',N'Xã Thọ Nghiệp',N'Tho Nghiep Commune','tho_nghiep','364',10),
-('14128',N'Xuân Phú',N'Xuan Phu',N'Xã Xuân Phú',N'Xuan Phu Commune','xuan_phu','364',10),
-('14131',N'Xuân Trung',N'Xuan Trung',N'Xã Xuân Trung',N'Xuan Trung Commune','xuan_trung','364',10),
-('14134',N'Xuân Vinh',N'Xuan Vinh',N'Xã Xuân Vinh',N'Xuan Vinh Commune','xuan_vinh','364',10),
-('14137',N'Xuân Kiên',N'Xuan Kien',N'Xã Xuân Kiên',N'Xuan Kien Commune','xuan_kien','364',10),
-('14140',N'Xuân Tiến',N'Xuan Tien',N'Xã Xuân Tiến',N'Xuan Tien Commune','xuan_tien','364',10),
-('14143',N'Xuân Ninh',N'Xuan Ninh',N'Xã Xuân Ninh',N'Xuan Ninh Commune','xuan_ninh','364',10),
-('14146',N'Xuân Hòa',N'Xuan Hoa',N'Xã Xuân Hòa',N'Xuan Hoa Commune','xuan_hoa','364',10),
-('14149',N'Ngô Đồng',N'Ngo Dong',N'Thị trấn Ngô Đồng',N'Ngo Dong Township','ngo_dong','365',9),
-('14152',N'Quất Lâm',N'Quat Lam',N'Thị trấn Quất Lâm',N'Quat Lam Township','quat_lam','365',9),
-('14155',N'Giao Hương',N'Giao Huong',N'Xã Giao Hương',N'Giao Huong Commune','giao_huong','365',10);
+('14116',N'Xuân Ngọc',N'Xuan Ngoc',N'Xã Xuân Ngọc',N'Xuan Ngoc Commune','xuan_ngoc','364',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('14122',N'Trà Lũ',N'Tra Lu',N'Xã Trà Lũ',N'Tra Lu Commune','tra_lu','364',10),
+('14125',N'Thọ Nghiệp',N'Tho Nghiep',N'Xã Thọ Nghiệp',N'Tho Nghiep Commune','tho_nghiep','364',10),
+('14128',N'Xuân Phú',N'Xuan Phu',N'Xã Xuân Phú',N'Xuan Phu Commune','xuan_phu','364',10),
+('14134',N'Xuân Vinh',N'Xuan Vinh',N'Xã Xuân Vinh',N'Xuan Vinh Commune','xuan_vinh','364',10),
+('14143',N'Xuân Ninh',N'Xuan Ninh',N'Xã Xuân Ninh',N'Xuan Ninh Commune','xuan_ninh','364',10),
+('14146',N'Xuân Phúc',N'Xuan Phuc',N'Xã Xuân Phúc',N'Xuan Phuc Commune','xuan_phuc','364',10),
+('14152',N'Quất Lâm',N'Quat Lam',N'Thị trấn Quất Lâm',N'Quat Lam Township','quat_lam','365',9),
+('14155',N'Giao Hương',N'Giao Huong',N'Xã Giao Hương',N'Giao Huong Commune','giao_huong','365',10),
 ('14158',N'Hồng Thuận',N'Hong Thuan',N'Xã Hồng Thuận',N'Hong Thuan Commune','hong_thuan','365',10),
 ('14161',N'Giao Thiện',N'Giao Thien',N'Xã Giao Thiện',N'Giao Thien Commune','giao_thien','365',10),
 ('14164',N'Giao Thanh',N'Giao Thanh',N'Xã Giao Thanh',N'Giao Thanh Commune','giao_thanh','365',10),
-('14167',N'Hoành Sơn',N'Hoanh Son',N'Xã Hoành Sơn',N'Hoanh Son Commune','hoanh_son','365',10),
+('14167',N'Giao Thủy',N'Giao Thuy',N'Thị trấn Giao Thủy',N'Giao Thuy Township','giao_thuy','365',9),
 ('14170',N'Bình Hòa',N'Binh Hoa',N'Xã Bình Hòa',N'Binh Hoa Commune','binh_hoa','365',10),
-('14173',N'Giao Tiến',N'Giao Tien',N'Xã Giao Tiến',N'Giao Tien Commune','giao_tien','365',10),
 ('14176',N'Giao Hà',N'Giao Ha',N'Xã Giao Hà',N'Giao Ha Commune','giao_ha','365',10),
 ('14179',N'Giao Nhân',N'Giao Nhan',N'Xã Giao Nhân',N'Giao Nhan Commune','giao_nhan','365',10),
 ('14182',N'Giao An',N'Giao An',N'Xã Giao An',N'Giao An Commune','giao_an','365',10),
@@ -5534,16 +5488,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('14221',N'Thịnh Long',N'Thinh Long',N'Thị trấn Thịnh Long',N'Thinh Long Township','thinh_long','366',9),
 ('14224',N'Hải Nam',N'Hai Nam',N'Xã Hải Nam',N'Hai Nam Commune','hai_nam','366',10),
 ('14227',N'Hải Trung',N'Hai Trung',N'Xã Hải Trung',N'Hai Trung Commune','hai_trung','366',10),
-('14230',N'Hải Vân',N'Hai Van',N'Xã Hải Vân',N'Hai Van Commune','hai_van','366',10),
 ('14233',N'Hải Minh',N'Hai Minh',N'Xã Hải Minh',N'Hai Minh Commune','hai_minh','366',10),
 ('14236',N'Hải Anh',N'Hai Anh',N'Xã Hải Anh',N'Hai Anh Commune','hai_anh','366',10),
-('14239',N'Hải Hưng',N'Hai Hung',N'Xã Hải Hưng',N'Hai Hung Commune','hai_hung','366',10),
-('14242',N'Hải Bắc',N'Hai Bac',N'Xã Hải Bắc',N'Hai Bac Commune','hai_bac','366',10),
-('14245',N'Hải Phúc',N'Hai Phuc',N'Xã Hải Phúc',N'Hai Phuc Commune','hai_phuc','366',10),
-('14248',N'Hải Thanh',N'Hai Thanh',N'Xã Hải Thanh',N'Hai Thanh Commune','hai_thanh','366',10),
-('14251',N'Hải Hà',N'Hai Ha',N'Xã Hải Hà',N'Hai Ha Commune','hai_ha','366',10),
+('14248',N'Hải Hưng',N'Hai Hung',N'Xã Hải Hưng',N'Hai Hung Commune','hai_hung','366',10),
 ('14254',N'Hải Long',N'Hai Long',N'Xã Hải Long',N'Hai Long Commune','hai_long','366',10),
-('14257',N'Hải Phương',N'Hai Phuong',N'Xã Hải Phương',N'Hai Phuong Commune','hai_phuong','366',10),
 ('14260',N'Hải Đường',N'Hai Duong',N'Xã Hải Đường',N'Hai Duong Commune','hai_duong','366',10),
 ('14263',N'Hải Lộc',N'Hai Loc',N'Xã Hải Lộc',N'Hai Loc Commune','hai_loc','366',10),
 ('14266',N'Hải Quang',N'Hai Quang',N'Xã Hải Quang',N'Hai Quang Commune','hai_quang','366',10),
@@ -5553,18 +5501,14 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('14281',N'Hải Phong',N'Hai Phong',N'Xã Hải Phong',N'Hai Phong Commune','hai_phong','366',10),
 ('14284',N'Hải An',N'Hai An',N'Xã Hải An',N'Hai An Commune','hai_an','366',10),
 ('14287',N'Hải Tây',N'Hai Tay',N'Xã Hải Tây',N'Hai Tay Commune','hai_tay','366',10),
-('14290',N'Hải Lý',N'Hai Ly',N'Xã Hải Lý',N'Hai Ly Commune','hai_ly','366',10),
 ('14293',N'Hải Phú',N'Hai Phu',N'Xã Hải Phú',N'Hai Phu Commune','hai_phu','366',10),
 ('14296',N'Hải Giang',N'Hai Giang',N'Xã Hải Giang',N'Hai Giang Commune','hai_giang','366',10),
-('14299',N'Hải Cường',N'Hai Cuong',N'Xã Hải Cường',N'Hai Cuong Commune','hai_cuong','366',10),
 ('14302',N'Hải Ninh',N'Hai Ninh',N'Xã Hải Ninh',N'Hai Ninh Commune','hai_ninh','366',10),
-('14305',N'Hải Chính',N'Hai Chinh',N'Xã Hải Chính',N'Hai Chinh Commune','hai_chinh','366',10),
-('14308',N'Hải Xuân',N'Hai Xuan',N'Xã Hải Xuân',N'Hai Xuan Commune','hai_xuan','366',10);
+('14308',N'Hải Xuân',N'Hai Xuan',N'Xã Hải Xuân',N'Hai Xuan Commune','hai_xuan','366',10),
+('14311',N'Hải Châu',N'Hai Chau',N'Xã Hải Châu',N'Hai Chau Commune','hai_chau','366',10),
+('14317',N'Hải Hòa',N'Hai Hoa',N'Xã Hải Hòa',N'Hai Hoa Commune','hai_hoa','366',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('14311',N'Hải Châu',N'Hai Chau',N'Xã Hải Châu',N'Hai Chau Commune','hai_chau','366',10),
-('14314',N'Hải Triều',N'Hai Trieu',N'Xã Hải Triều',N'Hai Trieu Commune','hai_trieu','366',10),
-('14317',N'Hải Hòa',N'Hai Hoa',N'Xã Hải Hòa',N'Hai Hoa Commune','hai_hoa','366',10),
 ('14320',N'Đông Thành',N'Dong Thanh',N'Phường Đông Thành',N'Dong Thanh Ward','dong_thanh','369',8),
 ('14323',N'Tân Thành',N'Tan Thanh',N'Phường Tân Thành',N'Tan Thanh Ward','tan_thanh','369',8),
 ('14326',N'Thanh Bình',N'Thanh Binh',N'Phường Thanh Bình',N'Thanh Binh Ward','thanh_binh','369',8),
@@ -5611,12 +5555,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('14443',N'Văn Phú',N'Van Phu',N'Xã Văn Phú',N'Van Phu Commune','van_phu','372',10),
 ('14446',N'Phú Lộc',N'Phu Loc',N'Xã Phú Lộc',N'Phu Loc Commune','phu_loc','372',10),
 ('14449',N'Kỳ Phú',N'Ky Phu',N'Xã Kỳ Phú',N'Ky Phu Commune','ky_phu','372',10),
-('14452',N'Quỳnh Lưu',N'Quynh Luu',N'Xã Quỳnh Lưu',N'Quynh Luu Commune','quynh_luu','372',10);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('14452',N'Quỳnh Lưu',N'Quynh Luu',N'Xã Quỳnh Lưu',N'Quynh Luu Commune','quynh_luu','372',10),
 ('14455',N'Sơn Hà',N'Son Ha',N'Xã Sơn Hà',N'Son Ha Commune','son_ha','372',10),
 ('14458',N'Phú Long',N'Phu Long',N'Xã Phú Long',N'Phu Long Commune','phu_long','372',10),
-('14461',N'Quảng Lạc',N'Quang Lac',N'Xã Quảng Lạc',N'Quang Lac Commune','quang_lac','372',10),
+('14461',N'Quảng Lạc',N'Quang Lac',N'Xã Quảng Lạc',N'Quang Lac Commune','quang_lac','372',10);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('14464',N'Me',N'Me',N'Thị trấn Me',N'Me Township','me','373',9),
 ('14467',N'Gia Hòa',N'Gia Hoa',N'Xã Gia Hòa',N'Gia Hoa Commune','gia_hoa','373',10),
 ('14470',N'Gia Hưng',N'Gia Hung',N'Xã Gia Hưng',N'Gia Hung Commune','gia_hung','373',10),
@@ -5642,6 +5586,7 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('14530',N'Ninh Giang',N'Ninh Giang',N'Xã Ninh Giang',N'Ninh Giang Commune','ninh_giang','374',10),
 ('14533',N'Trường Yên',N'Truong Yen',N'Xã Trường Yên',N'Truong Yen Commune','truong_yen','374',10),
 ('14536',N'Ninh Khang',N'Ninh Khang',N'Xã Ninh Khang',N'Ninh Khang Commune','ninh_khang','374',10),
+('14539',N'Ninh Mỹ',N'Ninh My',N'Xã Ninh Mỹ',N'Ninh My Commune','ninh_my','374',10),
 ('14542',N'Ninh Hòa',N'Ninh Hoa',N'Xã Ninh Hòa',N'Ninh Hoa Commune','ninh_hoa','374',10),
 ('14545',N'Ninh Xuân',N'Ninh Xuan',N'Xã Ninh Xuân',N'Ninh Xuan Commune','ninh_xuan','374',10),
 ('14548',N'Ninh Hải',N'Ninh Hai',N'Xã Ninh Hải',N'Ninh Hai Commune','ninh_hai','374',10),
@@ -5663,11 +5608,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('14596',N'Khánh Vân',N'Khanh Van',N'Xã Khánh Vân',N'Khanh Van Commune','khanh_van','375',10),
 ('14599',N'Khánh Hội',N'Khanh Hoi',N'Xã Khánh Hội',N'Khanh Hoi Commune','khanh_hoi','375',10),
 ('14602',N'Khánh Công',N'Khanh Cong',N'Xã Khánh Công',N'Khanh Cong Commune','khanh_cong','375',10),
-('14608',N'Khánh Thành',N'Khanh Thanh',N'Xã Khánh Thành',N'Khanh Thanh Commune','khanh_thanh','375',10);
+('14608',N'Khánh Thành',N'Khanh Thanh',N'Xã Khánh Thành',N'Khanh Thanh Commune','khanh_thanh','375',10),
+('14611',N'Khánh Nhạc',N'Khanh Nhac',N'Xã Khánh Nhạc',N'Khanh Nhac Commune','khanh_nhac','375',10),
+('14614',N'Khánh Thủy',N'Khanh Thuy',N'Xã Khánh Thủy',N'Khanh Thuy Commune','khanh_thuy','375',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('14611',N'Khánh Nhạc',N'Khanh Nhac',N'Xã Khánh Nhạc',N'Khanh Nhac Commune','khanh_nhac','375',10),
-('14614',N'Khánh Thủy',N'Khanh Thuy',N'Xã Khánh Thủy',N'Khanh Thuy Commune','khanh_thuy','375',10),
 ('14617',N'Khánh Hồng',N'Khanh Hong',N'Xã Khánh Hồng',N'Khanh Hong Commune','khanh_hong','375',10),
 ('14620',N'Phát Diệm',N'Phat Diem',N'Thị trấn Phát Diệm',N'Phat Diem Township','phat_diem','376',9),
 ('14623',N'Bình Minh',N'Binh Minh',N'Thị trấn Bình Minh',N'Binh Minh Township','binh_minh','376',9),
@@ -5715,11 +5660,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('14758',N'Đông Thọ',N'Dong Tho',N'Phường Đông Thọ',N'Dong Tho Ward','dong_tho','380',8),
 ('14761',N'Nam Ngạn',N'Nam Ngan',N'Phường Nam Ngạn',N'Nam Ngan Ward','nam_ngan','380',8),
 ('14764',N'Trường Thi',N'Truong Thi',N'Phường Trường Thi',N'Truong Thi Ward','truong_thi','380',8),
-('14767',N'Điện Biên',N'Dien Bien',N'Phường Điện Biên',N'Dien Bien Ward','dien_bien','380',8);
+('14767',N'Điện Biên',N'Dien Bien',N'Phường Điện Biên',N'Dien Bien Ward','dien_bien','380',8),
+('14770',N'Phú Sơn',N'Phu Son',N'Phường Phú Sơn',N'Phu Son Ward','phu_son','380',8),
+('14773',N'Lam Sơn',N'Lam Son',N'Phường Lam Sơn',N'Lam Son Ward','lam_son','380',8);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('14770',N'Phú Sơn',N'Phu Son',N'Phường Phú Sơn',N'Phu Son Ward','phu_son','380',8),
-('14773',N'Lam Sơn',N'Lam Son',N'Phường Lam Sơn',N'Lam Son Ward','lam_son','380',8),
 ('14776',N'Ba Đình',N'Ba Dinh',N'Phường Ba Đình',N'Ba Dinh Ward','ba_dinh','380',8),
 ('14779',N'Ngọc Trạo',N'Ngoc Trao',N'Phường Ngọc Trạo',N'Ngoc Trao Ward','ngoc_trao','380',8),
 ('14782',N'Đông Vệ',N'Dong Ve',N'Phường Đông Vệ',N'Dong Ve Ward','dong_ve','380',8),
@@ -5767,11 +5712,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('16537',N'Quảng Đại',N'Quang Dai',N'Xã Quảng Đại',N'Quang Dai Commune','quang_dai','382',10),
 ('14845',N'Mường Lát',N'Muong Lat',N'Thị trấn Mường Lát',N'Muong Lat Township','muong_lat','384',9),
 ('14848',N'Tam Chung',N'Tam Chung',N'Xã Tam Chung',N'Tam Chung Commune','tam_chung','384',10),
-('14854',N'Mường Lý',N'Muong Ly',N'Xã Mường Lý',N'Muong Ly Commune','muong_ly','384',10);
+('14854',N'Mường Lý',N'Muong Ly',N'Xã Mường Lý',N'Muong Ly Commune','muong_ly','384',10),
+('14857',N'Trung Lý',N'Trung Ly',N'Xã Trung Lý',N'Trung Ly Commune','trung_ly','384',10),
+('14860',N'Quang Chiểu',N'Quang Chieu',N'Xã Quang Chiểu',N'Quang Chieu Commune','quang_chieu','384',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('14857',N'Trung Lý',N'Trung Ly',N'Xã Trung Lý',N'Trung Ly Commune','trung_ly','384',10),
-('14860',N'Quang Chiểu',N'Quang Chieu',N'Xã Quang Chiểu',N'Quang Chieu Commune','quang_chieu','384',10),
 ('14863',N'Pù Nhi',N'Pu Nhi',N'Xã Pù Nhi',N'Pu Nhi Commune','pu_nhi','384',10),
 ('14864',N'Nhi Sơn',N'Nhi Son',N'Xã Nhi Sơn',N'Nhi Son Commune','nhi_son','384',10),
 ('14866',N'Mường Chanh',N'Muong Chanh',N'Xã Mường Chanh',N'Muong Chanh Commune','muong_chanh','384',10),
@@ -5819,11 +5764,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('15007',N'Tam Thanh',N'Tam Thanh',N'Xã Tam Thanh',N'Tam Thanh Commune','tam_thanh','387',10),
 ('15010',N'Sơn Thủy',N'Son Thuy',N'Xã Sơn Thủy',N'Son Thuy Commune','son_thuy','387',10),
 ('15013',N'Na Mèo',N'Na Meo',N'Xã Na Mèo',N'Na Meo Commune','na_meo','387',10),
-('15016',N'Sơn Lư',N'Son Lu',N'Thị trấn Sơn Lư',N'Son Lu Township','son_lu','387',9);
+('15016',N'Sơn Lư',N'Son Lu',N'Thị trấn Sơn Lư',N'Son Lu Township','son_lu','387',9),
+('15019',N'Tam Lư',N'Tam Lu',N'Xã Tam Lư',N'Tam Lu Commune','tam_lu','387',10),
+('15022',N'Sơn Điện',N'Son Dien',N'Xã Sơn Điện',N'Son Dien Commune','son_dien','387',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('15019',N'Tam Lư',N'Tam Lu',N'Xã Tam Lư',N'Tam Lu Commune','tam_lu','387',10),
-('15022',N'Sơn Điện',N'Son Dien',N'Xã Sơn Điện',N'Son Dien Commune','son_dien','387',10),
 ('15025',N'Mường Mìn',N'Muong Min',N'Xã Mường Mìn',N'Muong Min Commune','muong_min','387',10),
 ('15031',N'Yên Khương',N'Yen Khuong',N'Xã Yên Khương',N'Yen Khuong Commune','yen_khuong','388',10),
 ('15034',N'Yên Thắng',N'Yen Thang',N'Xã Yên Thắng',N'Yen Thang Commune','yen_thang','388',10),
@@ -5871,11 +5816,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('15172',N'Cẩm Long',N'Cam Long',N'Xã Cẩm Long',N'Cam Long Commune','cam_long','390',10),
 ('15175',N'Cẩm Yên',N'Cam Yen',N'Xã Cẩm Yên',N'Cam Yen Commune','cam_yen','390',10),
 ('15178',N'Cẩm Tân',N'Cam Tan',N'Xã Cẩm Tân',N'Cam Tan Commune','cam_tan','390',10),
-('15181',N'Cẩm Phú',N'Cam Phu',N'Xã Cẩm Phú',N'Cam Phu Commune','cam_phu','390',10);
+('15181',N'Cẩm Phú',N'Cam Phu',N'Xã Cẩm Phú',N'Cam Phu Commune','cam_phu','390',10),
+('15184',N'Cẩm Vân',N'Cam Van',N'Xã Cẩm Vân',N'Cam Van Commune','cam_van','390',10),
+('15187',N'Kim Tân',N'Kim Tan',N'Thị trấn Kim Tân',N'Kim Tan Township','kim_tan','391',9);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('15184',N'Cẩm Vân',N'Cam Van',N'Xã Cẩm Vân',N'Cam Van Commune','cam_van','390',10),
-('15187',N'Kim Tân',N'Kim Tan',N'Thị trấn Kim Tân',N'Kim Tan Township','kim_tan','391',9),
 ('15190',N'Vân Du',N'Van Du',N'Thị trấn Vân Du',N'Van Du Township','van_du','391',9),
 ('15196',N'Thạch Lâm',N'Thach Lam',N'Xã Thạch Lâm',N'Thach Lam Commune','thach_lam','391',10),
 ('15199',N'Thạch Quảng',N'Thach Quang',N'Xã Thạch Quảng',N'Thach Quang Commune','thach_quang','391',10),
@@ -5923,11 +5868,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('15349',N'Vĩnh Lộc',N'Vinh Loc',N'Thị trấn Vĩnh Lộc',N'Vinh Loc Township','vinh_loc','393',9),
 ('15352',N'Vĩnh Quang',N'Vinh Quang',N'Xã Vĩnh Quang',N'Vinh Quang Commune','vinh_quang','393',10),
 ('15355',N'Vĩnh Yên',N'Vinh Yen',N'Xã Vĩnh Yên',N'Vinh Yen Commune','vinh_yen','393',10),
-('15358',N'Vĩnh Tiến',N'Vinh Tien',N'Xã Vĩnh Tiến',N'Vinh Tien Commune','vinh_tien','393',10);
+('15358',N'Vĩnh Tiến',N'Vinh Tien',N'Xã Vĩnh Tiến',N'Vinh Tien Commune','vinh_tien','393',10),
+('15361',N'Vĩnh Long',N'Vinh Long',N'Xã Vĩnh Long',N'Vinh Long Commune','vinh_long','393',10),
+('15364',N'Vĩnh Phúc',N'Vinh Phuc',N'Xã Vĩnh Phúc',N'Vinh Phuc Commune','vinh_phuc','393',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('15361',N'Vĩnh Long',N'Vinh Long',N'Xã Vĩnh Long',N'Vinh Long Commune','vinh_long','393',10),
-('15364',N'Vĩnh Phúc',N'Vinh Phuc',N'Xã Vĩnh Phúc',N'Vinh Phuc Commune','vinh_phuc','393',10),
 ('15367',N'Vĩnh Hưng',N'Vinh Hung',N'Xã Vĩnh Hưng',N'Vinh Hung Commune','vinh_hung','393',10),
 ('15376',N'Vĩnh Hòa',N'Vinh Hoa',N'Xã Vĩnh Hòa',N'Vinh Hoa Commune','vinh_hoa','393',10),
 ('15379',N'Vĩnh Hùng',N'Vinh Hung',N'Xã Vĩnh Hùng',N'Vinh Hung Commune','vinh_hung','393',10),
@@ -5975,11 +5920,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('15532',N'Xuân Sinh',N'Xuan Sinh',N'Xã Xuân Sinh',N'Xuan Sinh Commune','xuan_sinh','395',10),
 ('15535',N'Xuân Hưng',N'Xuan Hung',N'Xã Xuân Hưng',N'Xuan Hung Commune','xuan_hung','395',10),
 ('15538',N'Thọ Diên',N'Tho Dien',N'Xã Thọ Diên',N'Tho Dien Commune','tho_dien','395',10),
-('15541',N'Thọ Lâm',N'Tho Lam',N'Xã Thọ Lâm',N'Tho Lam Commune','tho_lam','395',10);
+('15541',N'Thọ Lâm',N'Tho Lam',N'Xã Thọ Lâm',N'Tho Lam Commune','tho_lam','395',10),
+('15544',N'Thọ Xương',N'Tho Xuong',N'Xã Thọ Xương',N'Tho Xuong Commune','tho_xuong','395',10),
+('15547',N'Xuân Bái',N'Xuan Bai',N'Xã Xuân Bái',N'Xuan Bai Commune','xuan_bai','395',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('15544',N'Thọ Xương',N'Tho Xuong',N'Xã Thọ Xương',N'Tho Xuong Commune','tho_xuong','395',10),
-('15547',N'Xuân Bái',N'Xuan Bai',N'Xã Xuân Bái',N'Xuan Bai Commune','xuan_bai','395',10),
 ('15550',N'Xuân Phú',N'Xuan Phu',N'Xã Xuân Phú',N'Xuan Phu Commune','xuan_phu','395',10),
 ('15553',N'Sao Vàng',N'Sao Vang',N'Thị trấn Sao Vàng',N'Sao Vang Township','sao_vang','395',9),
 ('15556',N'Lam Sơn',N'Lam Son',N'Thị trấn Lam Sơn',N'Lam Son Township','lam_son','395',9),
@@ -6027,11 +5972,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('15715',N'Thái Hòa',N'Thai Hoa',N'Xã Thái Hòa',N'Thai Hoa Commune','thai_hoa','397',10),
 ('15718',N'Nưa',N'Nua',N'Thị trấn Nưa',N'Nua Township','nua','397',9),
 ('15721',N'Đồng Lợi',N'Dong Loi',N'Xã Đồng Lợi',N'Dong Loi Commune','dong_loi','397',10),
-('15724',N'Đồng Tiến',N'Dong Tien',N'Xã Đồng Tiến',N'Dong Tien Commune','dong_tien','397',10);
+('15724',N'Đồng Tiến',N'Dong Tien',N'Xã Đồng Tiến',N'Dong Tien Commune','dong_tien','397',10),
+('15727',N'Đồng Thắng',N'Dong Thang',N'Xã Đồng Thắng',N'Dong Thang Commune','dong_thang','397',10),
+('15730',N'Tiến Nông',N'Tien Nong',N'Xã Tiến Nông',N'Tien Nong Commune','tien_nong','397',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('15727',N'Đồng Thắng',N'Dong Thang',N'Xã Đồng Thắng',N'Dong Thang Commune','dong_thang','397',10),
-('15730',N'Tiến Nông',N'Tien Nong',N'Xã Tiến Nông',N'Tien Nong Commune','tien_nong','397',10),
 ('15733',N'Khuyến Nông',N'Khuyen Nong',N'Xã Khuyến Nông',N'Khuyen Nong Commune','khuyen_nong','397',10),
 ('15736',N'Xuân Thịnh',N'Xuan Thinh',N'Xã Xuân Thịnh',N'Xuan Thinh Commune','xuan_thinh','397',10),
 ('15739',N'Xuân Lộc',N'Xuan Loc',N'Xã Xuân Lộc',N'Xuan Loc Commune','xuan_loc','397',10),
@@ -6071,6 +6016,7 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('15853',N'Thiệu Giao',N'Thieu Giao',N'Xã Thiệu Giao',N'Thieu Giao Commune','thieu_giao','398',10),
 ('15865',N'Bút Sơn',N'But Son',N'Thị trấn Bút Sơn',N'But Son Township','but_son','399',9),
 ('15871',N'Hoằng Giang',N'Hoang Giang',N'Xã Hoằng Giang',N'Hoang Giang Commune','hoang_giang','399',10),
+('16144',N'Nga An',N'Nga An',N'Xã Nga An',N'Nga An Commune','nga_an','401',10),
 ('15877',N'Hoằng Xuân',N'Hoang Xuan',N'Xã Hoằng Xuân',N'Hoang Xuan Commune','hoang_xuan','399',10),
 ('15880',N'Hoằng Phượng',N'Hoang Phuong',N'Xã Hoằng Phượng',N'Hoang Phuong Commune','hoang_phuong','399',10),
 ('15883',N'Hoằng Phú',N'Hoang Phu',N'Xã Hoằng Phú',N'Hoang Phu Commune','hoang_phu','399',10),
@@ -6079,10 +6025,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('15892',N'Hoằng Trung',N'Hoang Trung',N'Xã Hoằng Trung',N'Hoang Trung Commune','hoang_trung','399',10),
 ('15895',N'Hoằng Trinh',N'Hoang Trinh',N'Xã Hoằng Trinh',N'Hoang Trinh Commune','hoang_trinh','399',10),
 ('15901',N'Hoằng Sơn',N'Hoang Son',N'Xã Hoằng Sơn',N'Hoang Son Commune','hoang_son','399',10),
-('15907',N'Hoằng Cát',N'Hoang Cat',N'Xã Hoằng Cát',N'Hoang Cat Commune','hoang_cat','399',10);
+('15907',N'Hoằng Cát',N'Hoang Cat',N'Xã Hoằng Cát',N'Hoang Cat Commune','hoang_cat','399',10),
+('15910',N'Hoằng Xuyên',N'Hoang Xuyen',N'Xã Hoằng Xuyên',N'Hoang Xuyen Commune','hoang_xuyen','399',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('15910',N'Hoằng Xuyên',N'Hoang Xuyen',N'Xã Hoằng Xuyên',N'Hoang Xuyen Commune','hoang_xuyen','399',10),
 ('15916',N'Hoằng Quý',N'Hoang Quy',N'Xã Hoằng Quý',N'Hoang Quy Commune','hoang_quy','399',10),
 ('15919',N'Hoằng Hợp',N'Hoang Hop',N'Xã Hoằng Hợp',N'Hoang Hop Commune','hoang_hop','399',10),
 ('15928',N'Hoằng Đức',N'Hoang Duc',N'Xã Hoằng Đức',N'Hoang Duc Commune','hoang_duc','399',10),
@@ -6131,10 +6077,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('16084',N'Hải Lộc',N'Hai Loc',N'Xã Hải Lộc',N'Hai Loc Commune','hai_loc','400',10),
 ('16087',N'Đa Lộc',N'Da Loc',N'Xã Đa Lộc',N'Da Loc Commune','da_loc','400',10),
 ('16090',N'Ngư Lộc',N'Ngu Loc',N'Xã Ngư Lộc',N'Ngu Loc Commune','ngu_loc','400',10),
-('16093',N'Nga Sơn',N'Nga Son',N'Thị trấn Nga Sơn',N'Nga Son Township','nga_son','401',9);
+('16093',N'Nga Sơn',N'Nga Son',N'Thị trấn Nga Sơn',N'Nga Son Township','nga_son','401',9),
+('16096',N'Ba Đình',N'Ba Dinh',N'Xã Ba Đình',N'Ba Dinh Commune','ba_dinh','401',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('16096',N'Ba Đình',N'Ba Dinh',N'Xã Ba Đình',N'Ba Dinh Commune','ba_dinh','401',10),
 ('16099',N'Nga Vịnh',N'Nga Vinh',N'Xã Nga Vịnh',N'Nga Vinh Commune','nga_vinh','401',10),
 ('16102',N'Nga Văn',N'Nga Van',N'Xã Nga Văn',N'Nga Van Commune','nga_van','401',10),
 ('16105',N'Nga Thiện',N'Nga Thien',N'Xã Nga Thiện',N'Nga Thien Commune','nga_thien','401',10),
@@ -6147,7 +6093,6 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('16135',N'Nga Giáp',N'Nga Giap',N'Xã Nga Giáp',N'Nga Giap Commune','nga_giap','401',10),
 ('16138',N'Nga Hải',N'Nga Hai',N'Xã Nga Hải',N'Nga Hai Commune','nga_hai','401',10),
 ('16141',N'Nga Thành',N'Nga Thanh',N'Xã Nga Thành',N'Nga Thanh Commune','nga_thanh','401',10),
-('16144',N'Nga An',N'Nga An',N'Xã Nga An',N'Nga An Commune','nga_an','401',10),
 ('16147',N'Nga Phú',N'Nga Phu',N'Xã Nga Phú',N'Nga Phu Commune','nga_phu','401',10),
 ('16150',N'Nga Điền',N'Nga Dien',N'Xã Nga Điền',N'Nga Dien Commune','nga_dien','401',10),
 ('16153',N'Nga Tân',N'Nga Tan',N'Xã Nga Tân',N'Nga Tan Commune','nga_tan','401',10),
@@ -6183,11 +6128,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('16252',N'Hải Long',N'Hai Long',N'Xã Hải Long',N'Hai Long Commune','hai_long','403',10),
 ('16258',N'Xuân Thái',N'Xuan Thai',N'Xã Xuân Thái',N'Xuan Thai Commune','xuan_thai','403',10),
 ('16261',N'Xuân Phúc',N'Xuan Phuc',N'Xã Xuân Phúc',N'Xuan Phuc Commune','xuan_phuc','403',10),
-('16264',N'Yên Thọ',N'Yen Tho',N'Xã Yên Thọ',N'Yen Tho Commune','yen_tho','403',10);
+('16264',N'Yên Thọ',N'Yen Tho',N'Xã Yên Thọ',N'Yen Tho Commune','yen_tho','403',10),
+('16267',N'Yên Lạc',N'Yen Lac',N'Xã Yên Lạc',N'Yen Lac Commune','yen_lac','403',10),
+('16273',N'Thanh Tân',N'Thanh Tan',N'Xã Thanh Tân',N'Thanh Tan Commune','thanh_tan','403',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('16267',N'Yên Lạc',N'Yen Lac',N'Xã Yên Lạc',N'Yen Lac Commune','yen_lac','403',10),
-('16273',N'Thanh Tân',N'Thanh Tan',N'Xã Thanh Tân',N'Thanh Tan Commune','thanh_tan','403',10),
 ('16276',N'Thanh Kỳ',N'Thanh Ky',N'Xã Thanh Kỳ',N'Thanh Ky Commune','thanh_ky','403',10),
 ('16279',N'Nông Cống',N'Nong Cong',N'Thị trấn Nông Cống',N'Nong Cong Township','nong_cong','404',9),
 ('16282',N'Tân Phúc',N'Tan Phuc',N'Xã Tân Phúc',N'Tan Phuc Commune','tan_phuc','404',10),
@@ -6235,11 +6180,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('16438',N'Tân Phong',N'Tan Phong',N'Thị trấn Tân Phong',N'Tan Phong Township','tan_phong','406',9),
 ('16447',N'Quảng Trạch',N'Quang Trach',N'Xã Quảng Trạch',N'Quang Trach Commune','quang_trach','406',10),
 ('16453',N'Quảng Đức',N'Quang Duc',N'Xã Quảng Đức',N'Quang Duc Commune','quang_duc','406',10),
-('16456',N'Quảng Định',N'Quang Dinh',N'Xã Quảng Định',N'Quang Dinh Commune','quang_dinh','406',10);
+('16456',N'Quảng Định',N'Quang Dinh',N'Xã Quảng Định',N'Quang Dinh Commune','quang_dinh','406',10),
+('16462',N'Quảng Nhân',N'Quang Nhan',N'Xã Quảng Nhân',N'Quang Nhan Commune','quang_nhan','406',10),
+('16465',N'Quảng Ninh',N'Quang Ninh',N'Xã Quảng Ninh',N'Quang Ninh Commune','quang_ninh','406',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('16462',N'Quảng Nhân',N'Quang Nhan',N'Xã Quảng Nhân',N'Quang Nhan Commune','quang_nhan','406',10),
-('16465',N'Quảng Ninh',N'Quang Ninh',N'Xã Quảng Ninh',N'Quang Ninh Commune','quang_ninh','406',10),
 ('16468',N'Quảng Bình',N'Quang Binh',N'Xã Quảng Bình',N'Quang Binh Commune','quang_binh','406',10),
 ('16471',N'Quảng Hợp',N'Quang Hop',N'Xã Quảng Hợp',N'Quang Hop Commune','quang_hop','406',10),
 ('16474',N'Quảng Văn',N'Quang Van',N'Xã Quảng Văn',N'Quang Van Commune','quang_van','406',10),
@@ -6287,11 +6232,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('16642',N'Tĩnh Hải',N'Tinh Hai',N'Phường Tĩnh Hải',N'Tinh Hai Ward','tinh_hai','407',8),
 ('16645',N'Mai Lâm',N'Mai Lam',N'Phường Mai Lâm',N'Mai Lam Ward','mai_lam','407',8),
 ('16648',N'Trường Lâm',N'Truong Lam',N'Xã Trường Lâm',N'Truong Lam Commune','truong_lam','407',10),
-('16651',N'Hải Yến',N'Hai Yen',N'Xã Hải Yến',N'Hai Yen Commune','hai_yen','407',10);
+('16651',N'Hải Yến',N'Hai Yen',N'Xã Hải Yến',N'Hai Yen Commune','hai_yen','407',10),
+('16654',N'Hải Thượng',N'Hai Thuong',N'Phường Hải Thượng',N'Hai Thuong Ward','hai_thuong','407',8),
+('16657',N'Nghi Sơn',N'Nghi Son',N'Xã Nghi Sơn',N'Nghi Son Commune','nghi_son','407',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('16654',N'Hải Thượng',N'Hai Thuong',N'Phường Hải Thượng',N'Hai Thuong Ward','hai_thuong','407',8),
-('16657',N'Nghi Sơn',N'Nghi Son',N'Xã Nghi Sơn',N'Nghi Son Commune','nghi_son','407',10),
 ('16660',N'Hải Hà',N'Hai Ha',N'Xã Hải Hà',N'Hai Ha Commune','hai_ha','407',10),
 ('16663',N'Đông Vĩnh',N'Dong Vinh',N'Phường Đông Vĩnh',N'Dong Vinh Ward','dong_vinh','412',8),
 ('16666',N'Hà Huy Tập',N'Ha Huy Tap',N'Phường Hà Huy Tập',N'Ha Huy Tap Ward','ha_huy_tap','412',8),
@@ -6339,11 +6284,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('16744',N'Đồng Văn',N'Dong Van',N'Xã Đồng Văn',N'Dong Van Commune','dong_van','415',10),
 ('16747',N'Hạnh Dịch',N'Hanh Dich',N'Xã Hạnh Dịch',N'Hanh Dich Commune','hanh_dich','415',10),
 ('16750',N'Tiền Phong',N'Tien Phong',N'Xã Tiền Phong',N'Tien Phong Commune','tien_phong','415',10),
-('16753',N'Nậm Giải',N'Nam Giai',N'Xã Nậm Giải',N'Nam Giai Commune','nam_giai','415',10);
+('16753',N'Nậm Giải',N'Nam Giai',N'Xã Nậm Giải',N'Nam Giai Commune','nam_giai','415',10),
+('16756',N'Tri Lễ',N'Tri Le',N'Xã Tri Lễ',N'Tri Le Commune','tri_le','415',10),
+('16759',N'Châu Kim',N'Chau Kim',N'Xã Châu Kim',N'Chau Kim Commune','chau_kim','415',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('16756',N'Tri Lễ',N'Tri Le',N'Xã Tri Lễ',N'Tri Le Commune','tri_le','415',10),
-('16759',N'Châu Kim',N'Chau Kim',N'Xã Châu Kim',N'Chau Kim Commune','chau_kim','415',10),
 ('16763',N'Mường Nọc',N'Muong Noc',N'Xã Mường Nọc',N'Muong Noc Commune','muong_noc','415',10),
 ('16765',N'Châu Thôn',N'Chau Thon',N'Xã Châu Thôn',N'Chau Thon Commune','chau_thon','415',10),
 ('16768',N'Nậm Nhoóng',N'Nam Nhoong',N'Xã Nậm Nhoóng',N'Nam Nhoong Commune','nam_nhoong','415',10),
@@ -6391,11 +6336,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('16904',N'Xiêng My',N'Xieng My',N'Xã Xiêng My',N'Xieng My Commune','xieng_my','418',10),
 ('16906',N'Lưỡng Minh',N'Luong Minh',N'Xã Lưỡng Minh',N'Luong Minh Commune','luong_minh','418',10),
 ('16909',N'Yên Hòa',N'Yen Hoa',N'Xã Yên Hòa',N'Yen Hoa Commune','yen_hoa','418',10),
-('16912',N'Yên Na',N'Yen Na',N'Xã Yên Na',N'Yen Na Commune','yen_na','418',10);
+('16912',N'Yên Na',N'Yen Na',N'Xã Yên Na',N'Yen Na Commune','yen_na','418',10),
+('16915',N'Lưu Kiền',N'Luu Kien',N'Xã Lưu Kiền',N'Luu Kien Commune','luu_kien','418',10),
+('16921',N'Xá Lượng',N'Xa Luong',N'Xã Xá Lượng',N'Xa Luong Commune','xa_luong','418',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('16915',N'Lưu Kiền',N'Luu Kien',N'Xã Lưu Kiền',N'Luu Kien Commune','luu_kien','418',10),
-('16921',N'Xá Lượng',N'Xa Luong',N'Xã Xá Lượng',N'Xa Luong Commune','xa_luong','418',10),
 ('16924',N'Tam Thái',N'Tam Thai',N'Xã Tam Thái',N'Tam Thai Commune','tam_thai','418',10),
 ('16927',N'Tam Đình',N'Tam Dinh',N'Xã Tam Đình',N'Tam Dinh Commune','tam_dinh','418',10),
 ('16930',N'Yên Thắng',N'Yen Thang',N'Xã Yên Thắng',N'Yen Thang Commune','yen_thang','418',10),
@@ -6443,11 +6388,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('17083',N'Văn Lợi',N'Van Loi',N'Xã Văn Lợi',N'Van Loi Commune','van_loi','420',10),
 ('17086',N'Nam Sơn',N'Nam Son',N'Xã Nam Sơn',N'Nam Son Commune','nam_son','420',10),
 ('17089',N'Châu Lý',N'Chau Ly',N'Xã Châu Lý',N'Chau Ly Commune','chau_ly','420',10),
-('17092',N'Hạ Sơn',N'Ha Son',N'Xã Hạ Sơn',N'Ha Son Commune','ha_son','420',10);
+('17092',N'Hạ Sơn',N'Ha Son',N'Xã Hạ Sơn',N'Ha Son Commune','ha_son','420',10),
+('17095',N'Bắc Sơn',N'Bac Son',N'Xã Bắc Sơn',N'Bac Son Commune','bac_son','420',10),
+('17098',N'Cầu Giát',N'Cau Giat',N'Thị trấn Cầu Giát',N'Cau Giat Township','cau_giat','421',9);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('17095',N'Bắc Sơn',N'Bac Son',N'Xã Bắc Sơn',N'Bac Son Commune','bac_son','420',10),
-('17098',N'Cầu Giát',N'Cau Giat',N'Thị trấn Cầu Giát',N'Cau Giat Township','cau_giat','421',9),
 ('17101',N'Quỳnh Thắng',N'Quynh Thang',N'Xã Quỳnh Thắng',N'Quynh Thang Commune','quynh_thang','421',10),
 ('17119',N'Quỳnh Tân',N'Quynh Tan',N'Xã Quỳnh Tân',N'Quynh Tan Commune','quynh_tan','421',10),
 ('17122',N'Quỳnh Châu',N'Quynh Chau',N'Xã Quỳnh Châu',N'Quynh Chau Commune','quynh_chau','421',10),
@@ -6495,11 +6440,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('17263',N'Môn Sơn',N'Mon Son',N'Xã Môn Sơn',N'Mon Son Commune','mon_son','422',10),
 ('17266',N'Tân Kỳ',N'Tan Ky',N'Thị trấn Tân Kỳ',N'Tan Ky Township','tan_ky','423',9),
 ('17269',N'Tân Hợp',N'Tan Hop',N'Xã Tân Hợp',N'Tan Hop Commune','tan_hop','423',10),
-('17272',N'Tân Phú',N'Tan Phu',N'Xã Tân Phú',N'Tan Phu Commune','tan_phu','423',10);
+('17272',N'Tân Phú',N'Tan Phu',N'Xã Tân Phú',N'Tan Phu Commune','tan_phu','423',10),
+('17275',N'Tân Xuân',N'Tan Xuan',N'Xã Tân Xuân',N'Tan Xuan Commune','tan_xuan','423',10),
+('17278',N'Giai Xuân',N'Giai Xuan',N'Xã Giai Xuân',N'Giai Xuan Commune','giai_xuan','423',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('17275',N'Tân Xuân',N'Tan Xuan',N'Xã Tân Xuân',N'Tan Xuan Commune','tan_xuan','423',10),
-('17278',N'Giai Xuân',N'Giai Xuan',N'Xã Giai Xuân',N'Giai Xuan Commune','giai_xuan','423',10),
 ('17281',N'Nghĩa Bình',N'Nghia Binh',N'Xã Nghĩa Bình',N'Nghia Binh Commune','nghia_binh','423',10),
 ('17284',N'Nghĩa Đồng',N'Nghia Dong',N'Xã Nghĩa Đồng',N'Nghia Dong Commune','nghia_dong','423',10),
 ('17287',N'Đồng Văn',N'Dong Van',N'Xã Đồng Văn',N'Dong Van Commune','dong_van','423',10),
@@ -6547,12 +6492,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('17407',N'Diễn Hùng',N'Dien Hung',N'Xã Diễn Hùng',N'Dien Hung Commune','dien_hung','425',10),
 ('17410',N'Diễn Mỹ',N'Dien My',N'Xã Diễn Mỹ',N'Dien My Commune','dien_my','425',10),
 ('17413',N'Diễn Hồng',N'Dien Hong',N'Xã Diễn Hồng',N'Dien Hong Commune','dien_hong','425',10),
-('17416',N'Diễn Phong',N'Dien Phong',N'Xã Diễn Phong',N'Dien Phong Commune','dien_phong','425',10);
+('17416',N'Diễn Phong',N'Dien Phong',N'Xã Diễn Phong',N'Dien Phong Commune','dien_phong','425',10),
+('17419',N'Diễn Hải',N'Dien Hai',N'Xã Diễn Hải',N'Dien Hai Commune','dien_hai','425',10),
+('17422',N'Diễn Tháp',N'Dien Thap',N'Xã Diễn Tháp',N'Dien Thap Commune','dien_thap','425',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('17419',N'Diễn Hải',N'Dien Hai',N'Xã Diễn Hải',N'Dien Hai Commune','dien_hai','425',10),
-('17632',N'Bài Sơn',N'Bai Son',N'Xã Bài Sơn',N'Bai Son Commune','bai_son','427',10),
-('17422',N'Diễn Tháp',N'Dien Thap',N'Xã Diễn Tháp',N'Dien Thap Commune','dien_thap','425',10),
 ('17425',N'Diễn Liên',N'Dien Lien',N'Xã Diễn Liên',N'Dien Lien Commune','dien_lien','425',10),
 ('17428',N'Diễn Vạn',N'Dien Van',N'Xã Diễn Vạn',N'Dien Van Commune','dien_van','425',10),
 ('17431',N'Diễn Kim',N'Dien Kim',N'Xã Diễn Kim',N'Dien Kim Commune','dien_kim','425',10),
@@ -6599,12 +6543,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('17554',N'Tăng Thành',N'Tang Thanh',N'Xã Tăng Thành',N'Tang Thanh Commune','tang_thanh','426',10),
 ('17557',N'Văn Thành',N'Van Thanh',N'Xã Văn Thành',N'Van Thanh Commune','van_thanh','426',10),
 ('17560',N'Thịnh Thành',N'Thinh Thanh',N'Xã Thịnh Thành',N'Thinh Thanh Commune','thinh_thanh','426',10),
-('17563',N'Hợp Thành',N'Hop Thanh',N'Xã Hợp Thành',N'Hop Thanh Commune','hop_thanh','426',10);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('17563',N'Hợp Thành',N'Hop Thanh',N'Xã Hợp Thành',N'Hop Thanh Commune','hop_thanh','426',10),
 ('17566',N'Xuân Thành',N'Xuan Thanh',N'Xã Xuân Thành',N'Xuan Thanh Commune','xuan_thanh','426',10),
 ('17569',N'Bắc Thành',N'Bac Thanh',N'Xã Bắc Thành',N'Bac Thanh Commune','bac_thanh','426',10),
-('17572',N'Nhân Thành',N'Nhan Thanh',N'Xã Nhân Thành',N'Nhan Thanh Commune','nhan_thanh','426',10),
+('17572',N'Nhân Thành',N'Nhan Thanh',N'Xã Nhân Thành',N'Nhan Thanh Commune','nhan_thanh','426',10);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('17575',N'Trung Thành',N'Trung Thanh',N'Xã Trung Thành',N'Trung Thanh Commune','trung_thanh','426',10),
 ('17578',N'Long Thành',N'Long Thanh',N'Xã Long Thành',N'Long Thanh Commune','long_thanh','426',10),
 ('17581',N'Minh Thành',N'Minh Thanh',N'Xã Minh Thành',N'Minh Thanh Commune','minh_thanh','426',10),
@@ -6625,6 +6569,7 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('17623',N'Lam Sơn',N'Lam Son',N'Xã Lam Sơn',N'Lam Son Commune','lam_son','427',10),
 ('17626',N'Bồi Sơn',N'Boi Son',N'Xã Bồi Sơn',N'Boi Son Commune','boi_son','427',10),
 ('17629',N'Hồng Sơn',N'Hong Son',N'Xã Hồng Sơn',N'Hong Son Commune','hong_son','427',10),
+('17632',N'Bài Sơn',N'Bai Son',N'Xã Bài Sơn',N'Bai Son Commune','bai_son','427',10),
 ('17635',N'Ngọc Sơn',N'Ngoc Son',N'Xã Ngọc Sơn',N'Ngoc Son Commune','ngoc_son','427',10),
 ('17638',N'Bắc Sơn',N'Bac Son',N'Xã Bắc Sơn',N'Bac Son Commune','bac_son','427',10),
 ('17641',N'Tràng Sơn',N'Trang Son',N'Xã Tràng Sơn',N'Trang Son Commune','trang_son','427',10),
@@ -6651,11 +6596,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('17704',N'Mỹ Sơn',N'My Son',N'Xã Mỹ Sơn',N'My Son Commune','my_son','427',10),
 ('17707',N'Trù Sơn',N'Tru Son',N'Xã Trù Sơn',N'Tru Son Commune','tru_son','427',10),
 ('17710',N'Đại Sơn',N'Dai Son',N'Xã Đại Sơn',N'Dai Son Commune','dai_son','427',10),
-('17713',N'Thanh Chương',N'Thanh Chuong',N'Thị trấn Thanh Chương',N'Thanh Chuong Township','thanh_chuong','428',9);
+('17713',N'Thanh Chương',N'Thanh Chuong',N'Thị trấn Thanh Chương',N'Thanh Chuong Township','thanh_chuong','428',9),
+('17716',N'Cát Văn',N'Cat Van',N'Xã Cát Văn',N'Cat Van Commune','cat_van','428',10),
+('17719',N'Thanh Nho',N'Thanh Nho',N'Xã Thanh Nho',N'Thanh Nho Commune','thanh_nho','428',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('17716',N'Cát Văn',N'Cat Van',N'Xã Cát Văn',N'Cat Van Commune','cat_van','428',10),
-('17719',N'Thanh Nho',N'Thanh Nho',N'Xã Thanh Nho',N'Thanh Nho Commune','thanh_nho','428',10),
 ('17722',N'Hạnh Lâm',N'Hanh Lam',N'Xã Hạnh Lâm',N'Hanh Lam Commune','hanh_lam','428',10),
 ('17723',N'Thanh Sơn',N'Thanh Son',N'Xã Thanh Sơn',N'Thanh Son Commune','thanh_son','428',10),
 ('17725',N'Thanh Hòa',N'Thanh Hoa',N'Xã Thanh Hòa',N'Thanh Hoa Commune','thanh_hoa','428',10),
@@ -6703,11 +6648,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('17854',N'Nghi Kiều',N'Nghi Kieu',N'Xã Nghi Kiều',N'Nghi Kieu Commune','nghi_kieu','429',10),
 ('17857',N'Nghi Mỹ',N'Nghi My',N'Xã Nghi Mỹ',N'Nghi My Commune','nghi_my','429',10),
 ('17860',N'Nghi Phương',N'Nghi Phuong',N'Xã Nghi Phương',N'Nghi Phuong Commune','nghi_phuong','429',10),
-('17863',N'Nghi Thuận',N'Nghi Thuan',N'Xã Nghi Thuận',N'Nghi Thuan Commune','nghi_thuan','429',10);
+('17863',N'Nghi Thuận',N'Nghi Thuan',N'Xã Nghi Thuận',N'Nghi Thuan Commune','nghi_thuan','429',10),
+('17866',N'Nghi Long',N'Nghi Long',N'Xã Nghi Long',N'Nghi Long Commune','nghi_long','429',10),
+('17869',N'Nghi Xá',N'Nghi Xa',N'Xã Nghi Xá',N'Nghi Xa Commune','nghi_xa','429',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('17866',N'Nghi Long',N'Nghi Long',N'Xã Nghi Long',N'Nghi Long Commune','nghi_long','429',10),
-('17869',N'Nghi Xá',N'Nghi Xa',N'Xã Nghi Xá',N'Nghi Xa Commune','nghi_xa','429',10),
 ('17875',N'Nghi Hoa',N'Nghi Hoa',N'Xã Nghi Hoa',N'Nghi Hoa Commune','nghi_hoa','429',10),
 ('17878',N'Khánh Hợp',N'Khanh Hop',N'Xã Khánh Hợp',N'Khanh Hop Commune','khanh_hop','429',10),
 ('17881',N'Nghi Thịnh',N'Nghi Thinh',N'Xã Nghi Thịnh',N'Nghi Thinh Commune','nghi_thinh','429',10),
@@ -6755,11 +6700,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('18034',N'Hưng Lợi',N'Hung Loi',N'Xã Hưng Lợi',N'Hung Loi Commune','hung_loi','431',10),
 ('18037',N'Hưng Nghĩa',N'Hung Nghia',N'Xã Hưng Nghĩa',N'Hung Nghia Commune','hung_nghia','431',10),
 ('18040',N'Hưng Phúc',N'Hung Phuc',N'Xã Hưng Phúc',N'Hung Phuc Commune','hung_phuc','431',10),
-('18043',N'Long Xá',N'Long Xa',N'Xã Long Xá',N'Long Xa Commune','long_xa','431',10);
+('18043',N'Long Xá',N'Long Xa',N'Xã Long Xá',N'Long Xa Commune','long_xa','431',10),
+('18052',N'Châu Nhân',N'Chau Nhan',N'Xã Châu Nhân',N'Chau Nhan Commune','chau_nhan','431',10),
+('18055',N'Xuân Lam',N'Xuan Lam',N'Xã Xuân Lam',N'Xuan Lam Commune','xuan_lam','431',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('18052',N'Châu Nhân',N'Chau Nhan',N'Xã Châu Nhân',N'Chau Nhan Commune','chau_nhan','431',10),
-('18055',N'Xuân Lam',N'Xuan Lam',N'Xã Xuân Lam',N'Xuan Lam Commune','xuan_lam','431',10),
 ('18064',N'Hưng Thành',N'Hung Thanh',N'Xã Hưng Thành',N'Hung Thanh Commune','hung_thanh','431',10),
 ('17104',N'Quỳnh Vinh',N'Quynh Vinh',N'Xã Quỳnh Vinh',N'Quynh Vinh Commune','quynh_vinh','432',10),
 ('17107',N'Quỳnh Lộc',N'Quynh Loc',N'Xã Quỳnh Lộc',N'Quynh Loc Commune','quynh_loc','432',10),
@@ -6807,11 +6752,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('18181',N'Tân Mỹ Hà',N'Tan My Ha',N'Xã Tân Mỹ Hà',N'Tan My Ha Commune','tan_my_ha','439',10),
 ('18184',N'Quang Diệm',N'Quang Diem',N'Xã Quang Diệm',N'Quang Diem Commune','quang_diem','439',10),
 ('18187',N'Sơn Trung',N'Son Trung',N'Xã Sơn Trung',N'Son Trung Commune','son_trung','439',10),
-('18190',N'Sơn Bằng',N'Son Bang',N'Xã Sơn Bằng',N'Son Bang Commune','son_bang','439',10);
+('18190',N'Sơn Bằng',N'Son Bang',N'Xã Sơn Bằng',N'Son Bang Commune','son_bang','439',10),
+('18193',N'Sơn Bình',N'Son Binh',N'Xã Sơn Bình',N'Son Binh Commune','son_binh','439',10),
+('18196',N'Sơn Kim 1',N'Son Kim 1',N'Xã Sơn Kim 1',N'Commune Son Kim 1','son_kim_1','439',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('18193',N'Sơn Bình',N'Son Binh',N'Xã Sơn Bình',N'Son Binh Commune','son_binh','439',10),
-('18196',N'Sơn Kim 1',N'Son Kim 1',N'Xã Sơn Kim 1',N'Commune Son Kim 1','son_kim_1','439',10),
 ('18199',N'Sơn Kim 2',N'Son Kim 2',N'Xã Sơn Kim 2',N'Commune Son Kim 2','son_kim_2','439',10),
 ('18202',N'Sơn Trà',N'Son Tra',N'Xã Sơn Trà',N'Son Tra Commune','son_tra','439',10),
 ('18205',N'Sơn Long',N'Son Long',N'Xã Sơn Long',N'Son Long Commune','son_long','439',10),
@@ -6859,11 +6804,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('18388',N'Xuân Hồng',N'Xuan Hong',N'Xã Xuân Hồng',N'Xuan Hong Commune','xuan_hong','442',10),
 ('18391',N'Cỗ Đạm',N'Co Dam',N'Xã Cỗ Đạm',N'Co Dam Commune','co_dam','442',10),
 ('18394',N'Xuân Liên',N'Xuan Lien',N'Xã Xuân Liên',N'Xuan Lien Commune','xuan_lien','442',10),
-('18397',N'Xuân Lĩnh',N'Xuan Linh',N'Xã Xuân Lĩnh',N'Xuan Linh Commune','xuan_linh','442',10);
+('18397',N'Xuân Lĩnh',N'Xuan Linh',N'Xã Xuân Lĩnh',N'Xuan Linh Commune','xuan_linh','442',10),
+('18400',N'Xuân Lam',N'Xuan Lam',N'Xã Xuân Lam',N'Xuan Lam Commune','xuan_lam','442',10),
+('18403',N'Cương Gián',N'Cuong Gian',N'Xã Cương Gián',N'Cuong Gian Commune','cuong_gian','442',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('18400',N'Xuân Lam',N'Xuan Lam',N'Xã Xuân Lam',N'Xuan Lam Commune','xuan_lam','442',10),
-('18403',N'Cương Gián',N'Cuong Gian',N'Xã Cương Gián',N'Cuong Gian Commune','cuong_gian','442',10),
 ('18406',N'Nghèn',N'Nghen',N'Thị trấn Nghèn',N'Nghen Township','nghen','443',9),
 ('18415',N'Thiên Lộc',N'Thien Loc',N'Xã Thiên Lộc',N'Thien Loc Commune','thien_loc','443',10),
 ('18418',N'Thuần Thiện',N'Thuan Thien',N'Xã Thuần Thiện',N'Thuan Thien Commune','thuan_thien','443',10),
@@ -6911,11 +6856,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('18592',N'Thạch Liên',N'Thach Lien',N'Xã Thạch Liên',N'Thach Lien Commune','thach_lien','445',10),
 ('18595',N'Đỉnh Bàn',N'Dinh Ban',N'Xã Đỉnh Bàn',N'Dinh Ban Commune','dinh_ban','445',10),
 ('18601',N'Việt Tiến',N'Viet Tien',N'Xã Việt Tiến',N'Viet Tien Commune','viet_tien','445',10),
-('18604',N'Thạch Khê',N'Thach Khe',N'Xã Thạch Khê',N'Thach Khe Commune','thach_khe','445',10);
+('18604',N'Thạch Khê',N'Thach Khe',N'Xã Thạch Khê',N'Thach Khe Commune','thach_khe','445',10),
+('18607',N'Thạch Long',N'Thach Long',N'Xã Thạch Long',N'Thach Long Commune','thach_long','445',10),
+('18619',N'Thạch Trị',N'Thach Tri',N'Xã Thạch Trị',N'Thach Tri Commune','thach_tri','445',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('18607',N'Thạch Long',N'Thach Long',N'Xã Thạch Long',N'Thach Long Commune','thach_long','445',10),
-('18619',N'Thạch Trị',N'Thach Tri',N'Xã Thạch Trị',N'Thach Tri Commune','thach_tri','445',10),
 ('18622',N'Thạch Lạc',N'Thach Lac',N'Xã Thạch Lạc',N'Thach Lac Commune','thach_lac','445',10),
 ('18625',N'Thạch Ngọc',N'Thach Ngoc',N'Xã Thạch Ngọc',N'Thach Ngoc Commune','thach_ngoc','445',10),
 ('18628',N'Tượng Sơn',N'Tuong Son',N'Xã Tượng Sơn',N'Tuong Son Commune','tuong_son','445',10),
@@ -6963,11 +6908,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('18790',N'Kỳ Thọ',N'Ky Tho',N'Xã Kỳ Thọ',N'Ky Tho Commune','ky_tho','447',10),
 ('18793',N'Kỳ Tây',N'Ky Tay',N'Xã Kỳ Tây',N'Ky Tay Commune','ky_tay','447',10),
 ('18799',N'Kỳ Thượng',N'Ky Thuong',N'Xã Kỳ Thượng',N'Ky Thuong Commune','ky_thuong','447',10),
-('18802',N'Kỳ Hải',N'Ky Hai',N'Xã Kỳ Hải',N'Ky Hai Commune','ky_hai','447',10);
+('18802',N'Kỳ Hải',N'Ky Hai',N'Xã Kỳ Hải',N'Ky Hai Commune','ky_hai','447',10),
+('18805',N'Kỳ Thư',N'Ky Thu',N'Xã Kỳ Thư',N'Ky Thu Commune','ky_thu','447',10),
+('18811',N'Kỳ Châu',N'Ky Chau',N'Xã Kỳ Châu',N'Ky Chau Commune','ky_chau','447',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('18805',N'Kỳ Thư',N'Ky Thu',N'Xã Kỳ Thư',N'Ky Thu Commune','ky_thu','447',10),
-('18811',N'Kỳ Châu',N'Ky Chau',N'Xã Kỳ Châu',N'Ky Chau Commune','ky_chau','447',10),
 ('18814',N'Kỳ Tân',N'Ky Tan',N'Xã Kỳ Tân',N'Ky Tan Commune','ky_tan','447',10),
 ('18838',N'Lâm Hợp',N'Lam Hop',N'Xã Lâm Hợp',N'Lam Hop Commune','lam_hop','447',10),
 ('18844',N'Kỳ Sơn',N'Ky Son',N'Xã Kỳ Sơn',N'Ky Son Commune','ky_son','447',10),
@@ -7015,11 +6960,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('18907',N'Trọng Hóa',N'Trong Hoa',N'Xã Trọng Hóa',N'Trong Hoa Commune','trong_hoa','452',10),
 ('18910',N'Hóa Phúc',N'Hoa Phuc',N'Xã Hóa Phúc',N'Hoa Phuc Commune','hoa_phuc','452',10),
 ('18913',N'Hồng Hóa',N'Hong Hoa',N'Xã Hồng Hóa',N'Hong Hoa Commune','hong_hoa','452',10),
-('18916',N'Hóa Thanh',N'Hoa Thanh',N'Xã Hóa Thanh',N'Hoa Thanh Commune','hoa_thanh','452',10);
+('18916',N'Hóa Thanh',N'Hoa Thanh',N'Xã Hóa Thanh',N'Hoa Thanh Commune','hoa_thanh','452',10),
+('18919',N'Hóa Tiến',N'Hoa Tien',N'Xã Hóa Tiến',N'Hoa Tien Commune','hoa_tien','452',10),
+('18922',N'Hóa Hợp',N'Hoa Hop',N'Xã Hóa Hợp',N'Hoa Hop Commune','hoa_hop','452',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('18919',N'Hóa Tiến',N'Hoa Tien',N'Xã Hóa Tiến',N'Hoa Tien Commune','hoa_tien','452',10),
-('18922',N'Hóa Hợp',N'Hoa Hop',N'Xã Hóa Hợp',N'Hoa Hop Commune','hoa_hop','452',10),
 ('18925',N'Xuân Hóa',N'Xuan Hoa',N'Xã Xuân Hóa',N'Xuan Hoa Commune','xuan_hoa','452',10),
 ('18928',N'Yên Hóa',N'Yen Hoa',N'Xã Yên Hóa',N'Yen Hoa Commune','yen_hoa','452',10),
 ('18931',N'Minh Hóa',N'Minh Hoa',N'Xã Minh Hóa',N'Minh Hoa Commune','minh_hoa','452',10),
@@ -7067,11 +7012,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('19114',N'NT Việt Trung',N'NT Viet Trung',N'Thị trấn NT Việt Trung',N'NT Viet Trung Township','nt_viet_trung','455',9),
 ('19117',N'Xuân Trạch',N'Xuan Trach',N'Xã Xuân Trạch',N'Xuan Trach Commune','xuan_trach','455',10),
 ('19120',N'Mỹ Trạch',N'My Trach',N'Xã Mỹ Trạch',N'My Trach Commune','my_trach','455',10),
-('19123',N'Hạ Trạch',N'Ha Trach',N'Xã Hạ Trạch',N'Ha Trach Commune','ha_trach','455',10);
+('19123',N'Hạ Trạch',N'Ha Trach',N'Xã Hạ Trạch',N'Ha Trach Commune','ha_trach','455',10),
+('19126',N'Bắc Trạch',N'Bac Trach',N'Xã Bắc Trạch',N'Bac Trach Commune','bac_trach','455',10),
+('19129',N'Lâm Trạch',N'Lam Trach',N'Xã Lâm Trạch',N'Lam Trach Commune','lam_trach','455',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('19126',N'Bắc Trạch',N'Bac Trach',N'Xã Bắc Trạch',N'Bac Trach Commune','bac_trach','455',10),
-('19129',N'Lâm Trạch',N'Lam Trach',N'Xã Lâm Trạch',N'Lam Trach Commune','lam_trach','455',10),
 ('19132',N'Thanh Trạch',N'Thanh Trach',N'Xã Thanh Trạch',N'Thanh Trach Commune','thanh_trach','455',10),
 ('19135',N'Liên Trạch',N'Lien Trach',N'Xã Liên Trạch',N'Lien Trach Commune','lien_trach','455',10),
 ('19138',N'Phúc Trạch',N'Phuc Trach',N'Xã Phúc Trạch',N'Phuc Trach Commune','phuc_trach','455',10),
@@ -7119,11 +7064,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('19270',N'Cam Thủy',N'Cam Thuy',N'Xã Cam Thủy',N'Cam Thuy Commune','cam_thuy','457',10),
 ('19273',N'Ngân Thủy',N'Ngan Thuy',N'Xã Ngân Thủy',N'Ngan Thuy Commune','ngan_thuy','457',10),
 ('19276',N'Sơn Thủy',N'Son Thuy',N'Xã Sơn Thủy',N'Son Thuy Commune','son_thuy','457',10),
-('19279',N'Lộc Thủy',N'Loc Thuy',N'Xã Lộc Thủy',N'Loc Thuy Commune','loc_thuy','457',10);
+('19279',N'Lộc Thủy',N'Loc Thuy',N'Xã Lộc Thủy',N'Loc Thuy Commune','loc_thuy','457',10),
+('19285',N'Liên Thủy',N'Lien Thuy',N'Xã Liên Thủy',N'Lien Thuy Commune','lien_thuy','457',10),
+('19288',N'Hưng Thủy',N'Hung Thuy',N'Xã Hưng Thủy',N'Hung Thuy Commune','hung_thuy','457',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('19285',N'Liên Thủy',N'Lien Thuy',N'Xã Liên Thủy',N'Lien Thuy Commune','lien_thuy','457',10),
-('19288',N'Hưng Thủy',N'Hung Thuy',N'Xã Hưng Thủy',N'Hung Thuy Commune','hung_thuy','457',10),
 ('19291',N'Dương Thủy',N'Duong Thuy',N'Xã Dương Thủy',N'Duong Thuy Commune','duong_thuy','457',10),
 ('19294',N'Tân Thủy',N'Tan Thuy',N'Xã Tân Thủy',N'Tan Thuy Commune','tan_thuy','457',10),
 ('19297',N'Phú Thủy',N'Phu Thuy',N'Xã Phú Thủy',N'Phu Thuy Commune','phu_thuy','457',10),
@@ -7131,6 +7076,7 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('19303',N'Mỹ Thủy',N'My Thuy',N'Xã Mỹ Thủy',N'My Thuy Commune','my_thuy','457',10),
 ('19306',N'Ngư Thủy',N'Ngu Thuy',N'Xã Ngư Thủy',N'Ngu Thuy Commune','ngu_thuy','457',10),
 ('19309',N'Mai Thủy',N'Mai Thuy',N'Xã Mai Thủy',N'Mai Thuy Commune','mai_thuy','457',10),
+('22117',N'An Dân',N'An Dan',N'Xã An Dân',N'An Dan Commune','an_dan','559',10),
 ('19312',N'Sen Thủy',N'Sen Thuy',N'Xã Sen Thủy',N'Sen Thuy Commune','sen_thuy','457',10),
 ('19315',N'Thái Thủy',N'Thai Thuy',N'Xã Thái Thủy',N'Thai Thuy Commune','thai_thuy','457',10),
 ('19318',N'Kim Thủy',N'Kim Thuy',N'Xã Kim Thủy',N'Kim Thuy Commune','kim_thuy','457',10),
@@ -7171,10 +7117,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('19369',N'Vĩnh Thái',N'Vinh Thai',N'Xã Vĩnh Thái',N'Vinh Thai Commune','vinh_thai','464',10),
 ('19372',N'Vĩnh Tú',N'Vinh Tu',N'Xã Vĩnh Tú',N'Vinh Tu Commune','vinh_tu','464',10),
 ('19375',N'Vĩnh Chấp',N'Vinh Chap',N'Xã Vĩnh Chấp',N'Vinh Chap Commune','vinh_chap','464',10),
-('19378',N'Trung Nam',N'Trung Nam',N'Xã Trung Nam',N'Trung Nam Commune','trung_nam','464',10);
+('19378',N'Trung Nam',N'Trung Nam',N'Xã Trung Nam',N'Trung Nam Commune','trung_nam','464',10),
+('19384',N'Kim Thạch',N'Kim Thach',N'Xã Kim Thạch',N'Kim Thach Commune','kim_thach','464',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('19384',N'Kim Thạch',N'Kim Thach',N'Xã Kim Thạch',N'Kim Thach Commune','kim_thach','464',10),
 ('19387',N'Vĩnh Long',N'Vinh Long',N'Xã Vĩnh Long',N'Vinh Long Commune','vinh_long','464',10),
 ('19393',N'Vĩnh Khê',N'Vinh Khe',N'Xã Vĩnh Khê',N'Vinh Khe Commune','vinh_khe','464',10),
 ('19396',N'Vĩnh Hòa',N'Vinh Hoa',N'Xã Vĩnh Hòa',N'Vinh Hoa Commune','vinh_hoa','464',10),
@@ -7223,10 +7169,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('19543',N'Gio Mai',N'Gio Mai',N'Xã Gio Mai',N'Gio Mai Commune','gio_mai','466',10),
 ('19546',N'Hải Thái',N'Hai Thai',N'Xã Hải Thái',N'Hai Thai Commune','hai_thai','466',10),
 ('19549',N'Linh Hải',N'Linh Hai',N'Xã Linh Hải',N'Linh Hai Commune','linh_hai','466',10),
-('19552',N'Gio Quang',N'Gio Quang',N'Xã Gio Quang',N'Gio Quang Commune','gio_quang','466',10);
+('19552',N'Gio Quang',N'Gio Quang',N'Xã Gio Quang',N'Gio Quang Commune','gio_quang','466',10),
+('19555',N'Krông Klang',N'Krong Klang',N'Thị trấn Krông Klang',N'Krong Klang Township','krong_klang','467',9);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('19555',N'Krông Klang',N'Krong Klang',N'Thị trấn Krông Klang',N'Krong Klang Township','krong_klang','467',9),
 ('19558',N'Mò Ó',N'Mo O',N'Xã Mò Ó',N'Mo O Commune','mo_o','467',10),
 ('19561',N'Hướng Hiệp',N'Huong Hiep',N'Xã Hướng Hiệp',N'Huong Hiep Commune','huong_hiep','467',10),
 ('19564',N'Đa Krông',N'Da Krong',N'Xã Đa Krông',N'Da Krong Commune','da_krong','467',10),
@@ -7234,7 +7180,6 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('19570',N'Ba Lòng',N'Ba Long',N'Xã Ba Lòng',N'Ba Long Commune','ba_long','467',10),
 ('19576',N'Ba Nang',N'Ba Nang',N'Xã Ba Nang',N'Ba Nang Commune','ba_nang','467',10),
 ('19579',N'Tà Long',N'Ta Long',N'Xã Tà Long',N'Ta Long Commune','ta_long','467',10),
-('20713',N'Cà Dy',N'Ca Dy',N'Xã Cà Dy',N'Ca Dy Commune','ca_dy','510',10),
 ('19582',N'Húc Nghì',N'Huc Nghi',N'Xã Húc Nghì',N'Huc Nghi Commune','huc_nghi','467',10),
 ('19585',N'A Vao',N'A Vao',N'Xã A Vao',N'A Vao Commune','a_vao','467',10),
 ('19588',N'Tà Rụt',N'Ta Rut',N'Xã Tà Rụt',N'Ta Rut Commune','ta_rut','467',10),
@@ -7275,11 +7220,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('19702',N'Hải Phú',N'Hai Phu',N'Xã Hải Phú',N'Hai Phu Commune','hai_phu','470',10),
 ('19708',N'Hải Thượng',N'Hai Thuong',N'Xã Hải Thượng',N'Hai Thuong Commune','hai_thuong','470',10),
 ('19711',N'Hải Dương',N'Hai Duong',N'Xã Hải Dương',N'Hai Duong Commune','hai_duong','470',10),
-('19714',N'Hải Định',N'Hai Dinh',N'Xã Hải Định',N'Hai Dinh Commune','hai_dinh','470',10);
+('19714',N'Hải Định',N'Hai Dinh',N'Xã Hải Định',N'Hai Dinh Commune','hai_dinh','470',10),
+('19717',N'Hải Lâm',N'Hai Lam',N'Xã Hải Lâm',N'Hai Lam Commune','hai_lam','470',10),
+('19726',N'Hải Phong',N'Hai Phong',N'Xã Hải Phong',N'Hai Phong Commune','hai_phong','470',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('19717',N'Hải Lâm',N'Hai Lam',N'Xã Hải Lâm',N'Hai Lam Commune','hai_lam','470',10),
-('19726',N'Hải Phong',N'Hai Phong',N'Xã Hải Phong',N'Hai Phong Commune','hai_phong','470',10),
 ('19729',N'Hải Trường',N'Hai Truong',N'Xã Hải Trường',N'Hai Truong Commune','hai_truong','470',10),
 ('19735',N'Hải Sơn',N'Hai Son',N'Xã Hải Sơn',N'Hai Son Commune','hai_son','470',10),
 ('19738',N'Hải Chánh',N'Hai Chanh',N'Xã Hải Chánh',N'Hai Chanh Commune','hai_chanh','470',10),
@@ -7327,11 +7272,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('19831',N'Phong Bình',N'Phong Binh',N'Xã Phong Bình',N'Phong Binh Commune','phong_binh','476',10),
 ('19834',N'Điền Hòa',N'Dien Hoa',N'Xã Điền Hòa',N'Dien Hoa Commune','dien_hoa','476',10),
 ('19837',N'Phong Chương',N'Phong Chuong',N'Xã Phong Chương',N'Phong Chuong Commune','phong_chuong','476',10),
-('19840',N'Phong Hải',N'Phong Hai',N'Xã Phong Hải',N'Phong Hai Commune','phong_hai','476',10);
+('19840',N'Phong Hải',N'Phong Hai',N'Xã Phong Hải',N'Phong Hai Commune','phong_hai','476',10),
+('19843',N'Điền Hải',N'Dien Hai',N'Xã Điền Hải',N'Dien Hai Commune','dien_hai','476',10),
+('19846',N'Phong Hòa',N'Phong Hoa',N'Xã Phong Hòa',N'Phong Hoa Commune','phong_hoa','476',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('19843',N'Điền Hải',N'Dien Hai',N'Xã Điền Hải',N'Dien Hai Commune','dien_hai','476',10),
-('19846',N'Phong Hòa',N'Phong Hoa',N'Xã Phong Hòa',N'Phong Hoa Commune','phong_hoa','476',10),
 ('19849',N'Phong Thu',N'Phong Thu',N'Xã Phong Thu',N'Phong Thu Commune','phong_thu','476',10),
 ('19852',N'Phong Hiền',N'Phong Hien',N'Xã Phong Hiền',N'Phong Hien Commune','phong_hien','476',10),
 ('19855',N'Phong Mỹ',N'Phong My',N'Xã Phong Mỹ',N'Phong My Commune','phong_my','476',10),
@@ -7379,11 +7324,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('20011',N'Hương Văn',N'Huong Van',N'Phường Hương Văn',N'Huong Van Ward','huong_van','480',8),
 ('20017',N'Hương Xuân',N'Huong Xuan',N'Phường Hương Xuân',N'Huong Xuan Ward','huong_xuan','480',8),
 ('20020',N'Hương Chữ',N'Huong Chu',N'Phường Hương Chữ',N'Huong Chu Ward','huong_chu','480',8),
-('20026',N'Hương Bình',N'Huong Binh',N'Xã Hương Bình',N'Huong Binh Commune','huong_binh','480',10);
+('20026',N'Hương Bình',N'Huong Binh',N'Xã Hương Bình',N'Huong Binh Commune','huong_binh','480',10),
+('20035',N'Bình Tiến',N'Binh Tien',N'Xã Bình Tiến',N'Binh Tien Commune','binh_tien','480',10),
+('20041',N'Bình Thành',N'Binh Thanh',N'Xã Bình Thành',N'Binh Thanh Commune','binh_thanh','480',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('20035',N'Bình Tiến',N'Binh Tien',N'Xã Bình Tiến',N'Binh Tien Commune','binh_tien','480',10),
-('20041',N'Bình Thành',N'Binh Thanh',N'Xã Bình Thành',N'Binh Thanh Commune','binh_thanh','480',10),
 ('20044',N'A Lưới',N'A Luoi',N'Thị trấn A Lưới',N'A Luoi Township','a_luoi','481',9),
 ('20047',N'Hồng Vân',N'Hong Van',N'Xã Hồng Vân',N'Hong Van Commune','hong_van','481',10),
 ('20050',N'Hồng Hạ',N'Hong Ha',N'Xã Hồng Hạ',N'Hong Ha Commune','hong_ha','481',10),
@@ -7431,11 +7376,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('20191',N'Thượng Nhật',N'Thuong Nhat',N'Xã Thượng Nhật',N'Thuong Nhat Commune','thuong_nhat','483',10),
 ('20194',N'Hòa Hiệp Bắc',N'Hoa Hiep Bac',N'Phường Hòa Hiệp Bắc',N'Hoa Hiep Bac Ward','hoa_hiep_bac','490',8),
 ('20195',N'Hòa Hiệp Nam',N'Hoa Hiep Nam',N'Phường Hòa Hiệp Nam',N'Hoa Hiep Nam Ward','hoa_hiep_nam','490',8),
-('20197',N'Hòa Khánh Bắc',N'Hoa Khanh Bac',N'Phường Hòa Khánh Bắc',N'Hoa Khanh Bac Ward','hoa_khanh_bac','490',8);
+('20197',N'Hòa Khánh Bắc',N'Hoa Khanh Bac',N'Phường Hòa Khánh Bắc',N'Hoa Khanh Bac Ward','hoa_khanh_bac','490',8),
+('20198',N'Hòa Khánh Nam',N'Hoa Khanh Nam',N'Phường Hòa Khánh Nam',N'Hoa Khanh Nam Ward','hoa_khanh_nam','490',8),
+('20200',N'Hòa Minh',N'Hoa Minh',N'Phường Hòa Minh',N'Hoa Minh Ward','hoa_minh','490',8);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('20198',N'Hòa Khánh Nam',N'Hoa Khanh Nam',N'Phường Hòa Khánh Nam',N'Hoa Khanh Nam Ward','hoa_khanh_nam','490',8),
-('20200',N'Hòa Minh',N'Hoa Minh',N'Phường Hòa Minh',N'Hoa Minh Ward','hoa_minh','490',8),
 ('20203',N'Tam Thuận',N'Tam Thuan',N'Phường Tam Thuận',N'Tam Thuan Ward','tam_thuan','491',8),
 ('20206',N'Thanh Khê Tây',N'Thanh Khe Tay',N'Phường Thanh Khê Tây',N'Thanh Khe Tay Ward','thanh_khe_tay','491',8),
 ('20207',N'Thanh Khê Đông',N'Thanh Khe Dong',N'Phường Thanh Khê Đông',N'Thanh Khe Dong Ward','thanh_khe_dong','491',8),
@@ -7483,11 +7428,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('20308',N'Hòa Nhơn',N'Hoa Nhon',N'Xã Hòa Nhơn',N'Hoa Nhon Commune','hoa_nhon','497',10),
 ('20317',N'Hòa Phú',N'Hoa Phu',N'Xã Hòa Phú',N'Hoa Phu Commune','hoa_phu','497',10),
 ('20320',N'Hòa Phong',N'Hoa Phong',N'Xã Hòa Phong',N'Hoa Phong Commune','hoa_phong','497',10),
-('20323',N'Hòa Châu',N'Hoa Chau',N'Xã Hòa Châu',N'Hoa Chau Commune','hoa_chau','497',10);
+('20323',N'Hòa Châu',N'Hoa Chau',N'Xã Hòa Châu',N'Hoa Chau Commune','hoa_chau','497',10),
+('20326',N'Hòa Tiến',N'Hoa Tien',N'Xã Hòa Tiến',N'Hoa Tien Commune','hoa_tien','497',10),
+('20329',N'Hòa Phước',N'Hoa Phuoc',N'Xã Hòa Phước',N'Hoa Phuoc Commune','hoa_phuoc','497',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('20326',N'Hòa Tiến',N'Hoa Tien',N'Xã Hòa Tiến',N'Hoa Tien Commune','hoa_tien','497',10),
-('20329',N'Hòa Phước',N'Hoa Phuoc',N'Xã Hòa Phước',N'Hoa Phuoc Commune','hoa_phuoc','497',10),
 ('20332',N'Hòa Khương',N'Hoa Khuong',N'Xã Hòa Khương',N'Hoa Khuong Commune','hoa_khuong','497',10),
 ('20335',N'Tân Thạnh',N'Tan Thanh',N'Phường Tân Thạnh',N'Tan Thanh Ward','tan_thanh','502',8),
 ('20338',N'Phước Hòa',N'Phuoc Hoa',N'Phường Phước Hòa',N'Phuoc Hoa Ward','phuoc_hoa','502',8),
@@ -7535,11 +7480,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('20488',N'A Rooi',N'A Rooi',N'Xã A Rooi',N'A Rooi Commune','a_rooi','505',10),
 ('20491',N'Za Hung',N'Za Hung',N'Xã Za Hung',N'Za Hung Commune','za_hung','505',10),
 ('20494',N'Mà Cooi',N'Ma Cooi',N'Xã Mà Cooi',N'Ma Cooi Commune','ma_cooi','505',10),
-('20497',N'Ka Dăng',N'Ka Dang',N'Xã Ka Dăng',N'Ka Dang Commune','ka_dang','505',10);
+('20497',N'Ka Dăng',N'Ka Dang',N'Xã Ka Dăng',N'Ka Dang Commune','ka_dang','505',10),
+('20500',N'Ái Nghĩa',N'Ai Nghia',N'Thị trấn Ái Nghĩa',N'Ai Nghia Township','ai_nghia','506',9),
+('20503',N'Đại Sơn',N'Dai Son',N'Xã Đại Sơn',N'Dai Son Commune','dai_son','506',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('20500',N'Ái Nghĩa',N'Ai Nghia',N'Thị trấn Ái Nghĩa',N'Ai Nghia Township','ai_nghia','506',9),
-('20503',N'Đại Sơn',N'Dai Son',N'Xã Đại Sơn',N'Dai Son Commune','dai_son','506',10),
 ('20506',N'Đại Lãnh',N'Dai Lanh',N'Xã Đại Lãnh',N'Dai Lanh Commune','dai_lanh','506',10),
 ('20509',N'Đại Hưng',N'Dai Hung',N'Xã Đại Hưng',N'Dai Hung Commune','dai_hung','506',10),
 ('20512',N'Đại Hồng',N'Dai Hong',N'Xã Đại Hồng',N'Dai Hong Commune','dai_hong','506',10),
@@ -7587,11 +7532,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('20623',N'Duy Trung',N'Duy Trung',N'Xã Duy Trung',N'Duy Trung Commune','duy_trung','508',10),
 ('20626',N'Duy Phước',N'Duy Phuoc',N'Xã Duy Phước',N'Duy Phuoc Commune','duy_phuoc','508',10),
 ('20629',N'Duy Thành',N'Duy Thanh',N'Xã Duy Thành',N'Duy Thanh Commune','duy_thanh','508',10),
-('20632',N'Duy Vinh',N'Duy Vinh',N'Xã Duy Vinh',N'Duy Vinh Commune','duy_vinh','508',10);
+('20632',N'Duy Vinh',N'Duy Vinh',N'Xã Duy Vinh',N'Duy Vinh Commune','duy_vinh','508',10),
+('20635',N'Duy Nghĩa',N'Duy Nghia',N'Xã Duy Nghĩa',N'Duy Nghia Commune','duy_nghia','508',10),
+('20638',N'Duy Hải',N'Duy Hai',N'Xã Duy Hải',N'Duy Hai Commune','duy_hai','508',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('20635',N'Duy Nghĩa',N'Duy Nghia',N'Xã Duy Nghĩa',N'Duy Nghia Commune','duy_nghia','508',10),
-('20638',N'Duy Hải',N'Duy Hai',N'Xã Duy Hải',N'Duy Hai Commune','duy_hai','508',10),
 ('20641',N'Đông Phú',N'Dong Phu',N'Thị trấn Đông Phú',N'Dong Phu Township','dong_phu','509',9),
 ('20644',N'Quế Xuân 1',N'Que Xuan 1',N'Xã Quế Xuân 1',N'Commune Que Xuan 1','que_xuan_1','509',10),
 ('20647',N'Quế Xuân 2',N'Que Xuan 2',N'Xã Quế Xuân 2',N'Commune Que Xuan 2','que_xuan_2','509',10),
@@ -7614,6 +7559,7 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('20705',N'Đắc Tôi',N'Dac Toi',N'Xã Đắc Tôi',N'Dac Toi Commune','dac_toi','510',10),
 ('20707',N'Chà Vàl',N'Cha Val',N'Xã Chà Vàl',N'Cha Val Commune','cha_val','510',10),
 ('20710',N'Tà Bhinh',N'Ta Bhinh',N'Xã Tà Bhinh',N'Ta Bhinh Commune','ta_bhinh','510',10),
+('20713',N'Cà Dy',N'Ca Dy',N'Xã Cà Dy',N'Ca Dy Commune','ca_dy','510',10),
 ('20716',N'Đắc Pre',N'Dac Pre',N'Xã Đắc Pre',N'Dac Pre Commune','dac_pre','510',10),
 ('20719',N'Đắc Pring',N'Dac Pring',N'Xã Đắc Pring',N'Dac Pring Commune','dac_pring','510',10),
 ('20722',N'Khâm Đức',N'Kham Duc',N'Thị trấn Khâm Đức',N'Kham Duc Township','kham_duc','511',9),
@@ -7639,10 +7585,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('20782',N'Quế Lưu',N'Que Luu',N'Xã Quế Lưu',N'Que Luu Commune','que_luu','512',10),
 ('20785',N'Thăng Phước',N'Thang Phuoc',N'Xã Thăng Phước',N'Thang Phuoc Commune','thang_phuoc','512',10),
 ('20788',N'Bình Sơn',N'Binh Son',N'Xã Bình Sơn',N'Binh Son Commune','binh_son','512',10),
-('20791',N'Hà Lam',N'Ha Lam',N'Thị trấn Hà Lam',N'Ha Lam Township','ha_lam','513',9);
+('20791',N'Hà Lam',N'Ha Lam',N'Thị trấn Hà Lam',N'Ha Lam Township','ha_lam','513',9),
+('20794',N'Bình Dương',N'Binh Duong',N'Xã Bình Dương',N'Binh Duong Commune','binh_duong','513',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('20794',N'Bình Dương',N'Binh Duong',N'Xã Bình Dương',N'Binh Duong Commune','binh_duong','513',10),
 ('20797',N'Bình Giang',N'Binh Giang',N'Xã Bình Giang',N'Binh Giang Commune','binh_giang','513',10),
 ('20800',N'Bình Nguyên',N'Binh Nguyen',N'Xã Bình Nguyên',N'Binh Nguyen Commune','binh_nguyen','513',10),
 ('20803',N'Bình Phục',N'Binh Phuc',N'Xã Bình Phục',N'Binh Phuc Commune','binh_phuc','513',10),
@@ -7691,10 +7637,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('20926',N'Trà Giác',N'Tra Giac',N'Xã Trà Giác',N'Tra Giac Commune','tra_giac','515',10),
 ('20929',N'Trà Giáp',N'Tra Giap',N'Xã Trà Giáp',N'Tra Giap Commune','tra_giap','515',10),
 ('20932',N'Trà Ka',N'Tra Ka',N'Xã Trà Ka',N'Tra Ka Commune','tra_ka','515',10),
-('20935',N'Trà Leng',N'Tra Leng',N'Xã Trà Leng',N'Tra Leng Commune','tra_leng','516',10);
+('20935',N'Trà Leng',N'Tra Leng',N'Xã Trà Leng',N'Tra Leng Commune','tra_leng','516',10),
+('20938',N'Trà Dơn',N'Tra Don',N'Xã Trà Dơn',N'Tra Don Commune','tra_don','516',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('20938',N'Trà Dơn',N'Tra Don',N'Xã Trà Dơn',N'Tra Don Commune','tra_don','516',10),
 ('20941',N'Trà Tập',N'Tra Tap',N'Xã Trà Tập',N'Tra Tap Commune','tra_tap','516',10),
 ('20944',N'Trà Mai',N'Tra Mai',N'Xã Trà Mai',N'Tra Mai Commune','tra_mai','516',10),
 ('20947',N'Trà Cang',N'Tra Cang',N'Xã Trà Cang',N'Tra Cang Commune','tra_cang','516',10),
@@ -7742,6 +7688,7 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('21016',N'Quảng Phú',N'Quang Phu',N'Phường Quảng Phú',N'Quang Phu Ward','quang_phu','522',8),
 ('21019',N'Nghĩa Chánh',N'Nghia Chanh',N'Phường Nghĩa Chánh',N'Nghia Chanh Ward','nghia_chanh','522',8),
 ('21022',N'Trần Hưng Đạo',N'Tran Hung Dao',N'Phường Trần Hưng Đạo',N'Tran Hung Dao Ward','tran_hung_dao','522',8),
+('23392',N'Đắk Kan',N'Dak Kan',N'Xã Đắk Kan',N'Dak Kan Commune','dak_kan','611',10),
 ('21025',N'Nguyễn Nghiêm',N'Nguyen Nghiem',N'Phường Nguyễn Nghiêm',N'Nguyen Nghiem Ward','nguyen_nghiem','522',8),
 ('21028',N'Nghĩa Lộ',N'Nghia Lo',N'Phường Nghĩa Lộ',N'Nghia Lo Ward','nghia_lo','522',8);
 
@@ -7893,15 +7840,16 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('21463',N'Phổ Minh',N'Pho Minh',N'Phường Phổ Minh',N'Pho Minh Ward','pho_minh','534',8),
 ('21466',N'Phổ Vinh',N'Pho Vinh',N'Phường Phổ Vinh',N'Pho Vinh Ward','pho_vinh','534',8),
 ('21469',N'Phổ Hòa',N'Pho Hoa',N'Phường Phổ Hòa',N'Pho Hoa Ward','pho_hoa','534',8),
+('23395',N'Bờ Y',N'Bo Y',N'Xã Bờ Y',N'Bo Y Commune','bo_y','611',10),
 ('21472',N'Phổ Cường',N'Pho Cuong',N'Xã Phổ Cường',N'Pho Cuong Commune','pho_cuong','534',10),
 ('21475',N'Phổ Khánh',N'Pho Khanh',N'Xã Phổ Khánh',N'Pho Khanh Commune','pho_khanh','534',10),
 ('21478',N'Phổ Thạnh',N'Pho Thanh',N'Phường Phổ Thạnh',N'Pho Thanh Ward','pho_thanh','534',8),
 ('21481',N'Phổ Châu',N'Pho Chau',N'Xã Phổ Châu',N'Pho Chau Commune','pho_chau','534',10),
 ('21484',N'Ba Tơ',N'Ba To',N'Thị trấn Ba Tơ',N'Ba To Township','ba_to','535',9),
-('21487',N'Ba Điền',N'Ba Dien',N'Xã Ba Điền',N'Ba Dien Commune','ba_dien','535',10),
-('21490',N'Ba Vinh',N'Ba Vinh',N'Xã Ba Vinh',N'Ba Vinh Commune','ba_vinh','535',10);
+('21487',N'Ba Điền',N'Ba Dien',N'Xã Ba Điền',N'Ba Dien Commune','ba_dien','535',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('21490',N'Ba Vinh',N'Ba Vinh',N'Xã Ba Vinh',N'Ba Vinh Commune','ba_vinh','535',10),
 ('21493',N'Ba Thành',N'Ba Thanh',N'Xã Ba Thành',N'Ba Thanh Commune','ba_thanh','535',10),
 ('21496',N'Ba Động',N'Ba Dong',N'Xã Ba Động',N'Ba Dong Commune','ba_dong','535',10),
 ('21499',N'Ba Dinh',N'Ba Dinh',N'Xã Ba Dinh',N'Ba Dinh Commune','ba_dinh','535',10),
@@ -7950,10 +7898,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('21631',N'An Quang',N'An Quang',N'Xã An Quang',N'An Quang Commune','an_quang','542',10),
 ('21634',N'An Nghĩa',N'An Nghia',N'Xã An Nghĩa',N'An Nghia Commune','an_nghia','542',10),
 ('21637',N'Tam Quan',N'Tam Quan',N'Phường Tam Quan',N'Tam Quan Ward','tam_quan','543',8),
-('21640',N'Bồng Sơn',N'Bong Son',N'Phường Bồng Sơn',N'Bong Son Ward','bong_son','543',8),
-('21643',N'Hoài Sơn',N'Hoai Son',N'Xã Hoài Sơn',N'Hoai Son Commune','hoai_son','543',10);
+('21640',N'Bồng Sơn',N'Bong Son',N'Phường Bồng Sơn',N'Bong Son Ward','bong_son','543',8);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('21643',N'Hoài Sơn',N'Hoai Son',N'Xã Hoài Sơn',N'Hoai Son Commune','hoai_son','543',10),
 ('21646',N'Hoài Châu Bắc',N'Hoai Chau Bac',N'Xã Hoài Châu Bắc',N'Hoai Chau Bac Commune','hoai_chau_bac','543',10),
 ('21649',N'Hoài Châu',N'Hoai Chau',N'Xã Hoài Châu',N'Hoai Chau Commune','hoai_chau','543',10),
 ('21652',N'Hoài Phú',N'Hoai Phu',N'Xã Hoài Phú',N'Hoai Phu Commune','hoai_phu','543',10),
@@ -7970,6 +7918,7 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('21685',N'Hoài Đức',N'Hoai Duc',N'Phường Hoài Đức',N'Hoai Duc Ward','hoai_duc','543',8),
 ('21688',N'Tăng Bạt Hổ',N'Tang Bat Ho',N'Thị trấn Tăng Bạt Hổ',N'Tang Bat Ho Township','tang_bat_ho','544',9),
 ('21690',N'Ân Hảo Tây',N'An Hao Tay',N'Xã Ân Hảo Tây',N'An Hao Tay Commune','an_hao_tay','544',10),
+('23398',N'Sa Loong',N'Sa Loong',N'Xã Sa Loong',N'Sa Loong Commune','sa_loong','611',10),
 ('21691',N'Ân Hảo Đông',N'An Hao Dong',N'Xã Ân Hảo Đông',N'An Hao Dong Commune','an_hao_dong','544',10),
 ('21694',N'Ân Sơn',N'An Son',N'Xã Ân Sơn',N'An Son Commune','an_son','544',10),
 ('21697',N'Ân Mỹ',N'An My',N'Xã Ân Mỹ',N'An My Commune','an_my','544',10),
@@ -8001,11 +7950,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('21775',N'Mỹ Hiệp',N'My Hiep',N'Xã Mỹ Hiệp',N'My Hiep Commune','my_hiep','545',10),
 ('21778',N'Mỹ Tài',N'My Tai',N'Xã Mỹ Tài',N'My Tai Commune','my_tai','545',10),
 ('21781',N'Mỹ Cát',N'My Cat',N'Xã Mỹ Cát',N'My Cat Commune','my_cat','545',10),
-('21784',N'Mỹ Chánh Tây',N'My Chanh Tay',N'Xã Mỹ Chánh Tây',N'My Chanh Tay Commune','my_chanh_tay','545',10),
-('21786',N'Vĩnh Thạnh',N'Vinh Thanh',N'Thị trấn Vĩnh Thạnh',N'Vinh Thanh Township','vinh_thanh','546',9),
-('21787',N'Vĩnh Sơn',N'Vinh Son',N'Xã Vĩnh Sơn',N'Vinh Son Commune','vinh_son','546',10);
+('21784',N'Mỹ Chánh Tây',N'My Chanh Tay',N'Xã Mỹ Chánh Tây',N'My Chanh Tay Commune','my_chanh_tay','545',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('21786',N'Vĩnh Thạnh',N'Vinh Thanh',N'Thị trấn Vĩnh Thạnh',N'Vinh Thanh Township','vinh_thanh','546',9),
+('21787',N'Vĩnh Sơn',N'Vinh Son',N'Xã Vĩnh Sơn',N'Vinh Son Commune','vinh_son','546',10),
 ('21790',N'Vĩnh Kim',N'Vinh Kim',N'Xã Vĩnh Kim',N'Vinh Kim Commune','vinh_kim','546',10),
 ('21796',N'Vĩnh Hiệp',N'Vinh Hiep',N'Xã Vĩnh Hiệp',N'Vinh Hiep Commune','vinh_hiep','546',10),
 ('21799',N'Vĩnh Hảo',N'Vinh Hao',N'Xã Vĩnh Hảo',N'Vinh Hao Commune','vinh_hao','546',10),
@@ -8053,11 +8002,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('21919',N'Nhơn Hạnh',N'Nhon Hanh',N'Xã Nhơn Hạnh',N'Nhon Hanh Commune','nhon_hanh','549',10),
 ('21922',N'Nhơn Hậu',N'Nhon Hau',N'Xã Nhơn Hậu',N'Nhon Hau Commune','nhon_hau','549',10),
 ('21925',N'Nhơn Phong',N'Nhon Phong',N'Xã Nhơn Phong',N'Nhon Phong Commune','nhon_phong','549',10),
-('21928',N'Nhơn An',N'Nhon An',N'Xã Nhơn An',N'Nhon An Commune','nhon_an','549',10),
-('21931',N'Nhơn Phúc',N'Nhon Phuc',N'Xã Nhơn Phúc',N'Nhon Phuc Commune','nhon_phuc','549',10),
-('21934',N'Nhơn Hưng',N'Nhon Hung',N'Phường Nhơn Hưng',N'Nhon Hung Ward','nhon_hung','549',8);
+('21928',N'Nhơn An',N'Nhon An',N'Xã Nhơn An',N'Nhon An Commune','nhon_an','549',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('21931',N'Nhơn Phúc',N'Nhon Phuc',N'Xã Nhơn Phúc',N'Nhon Phuc Commune','nhon_phuc','549',10),
+('21934',N'Nhơn Hưng',N'Nhon Hung',N'Phường Nhơn Hưng',N'Nhon Hung Ward','nhon_hung','549',8),
 ('21937',N'Nhơn Khánh',N'Nhon Khanh',N'Xã Nhơn Khánh',N'Nhon Khanh Commune','nhon_khanh','549',10),
 ('21940',N'Nhơn Lộc',N'Nhon Loc',N'Xã Nhơn Lộc',N'Nhon Loc Commune','nhon_loc','549',10),
 ('21943',N'Nhơn Hoà',N'Nhon Hoa',N'Phường Nhơn Hoà',N'Nhon Hoa Ward','nhon_hoa','549',8),
@@ -8105,11 +8054,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('22054',N'Xuân Hải',N'Xuan Hai',N'Xã Xuân Hải',N'Xuan Hai Commune','xuan_hai','557',10),
 ('22057',N'Xuân Lộc',N'Xuan Loc',N'Xã Xuân Lộc',N'Xuan Loc Commune','xuan_loc','557',10),
 ('22060',N'Xuân Bình',N'Xuan Binh',N'Xã Xuân Bình',N'Xuan Binh Commune','xuan_binh','557',10),
-('22066',N'Xuân Cảnh',N'Xuan Canh',N'Xã Xuân Cảnh',N'Xuan Canh Commune','xuan_canh','557',10),
-('22069',N'Xuân Thịnh',N'Xuan Thinh',N'Xã Xuân Thịnh',N'Xuan Thinh Commune','xuan_thinh','557',10),
-('22072',N'Xuân Phương',N'Xuan Phuong',N'Xã Xuân Phương',N'Xuan Phuong Commune','xuan_phuong','557',10);
+('22066',N'Xuân Cảnh',N'Xuan Canh',N'Xã Xuân Cảnh',N'Xuan Canh Commune','xuan_canh','557',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('22069',N'Xuân Thịnh',N'Xuan Thinh',N'Xã Xuân Thịnh',N'Xuan Thinh Commune','xuan_thinh','557',10),
+('22072',N'Xuân Phương',N'Xuan Phuong',N'Xã Xuân Phương',N'Xuan Phuong Commune','xuan_phuong','557',10),
 ('22073',N'Xuân Yên',N'Xuan Yen',N'Phường Xuân Yên',N'Xuan Yen Ward','xuan_yen','557',8),
 ('22075',N'Xuân Thọ 1',N'Xuan Tho 1',N'Xã Xuân Thọ 1',N'Commune Xuan Tho 1','xuan_tho_1','557',10),
 ('22076',N'Xuân Đài',N'Xuan Dai',N'Phường Xuân Đài',N'Xuan Dai Ward','xuan_dai','557',8),
@@ -8126,7 +8075,7 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('22108',N'Xuân Quang 3',N'Xuan Quang 3',N'Xã Xuân Quang 3',N'Commune Xuan Quang 3','xuan_quang_3','558',10),
 ('22111',N'Xuân Phước',N'Xuan Phuoc',N'Xã Xuân Phước',N'Xuan Phuoc Commune','xuan_phuoc','558',10),
 ('22114',N'Chí Thạnh',N'Chi Thanh',N'Thị trấn Chí Thạnh',N'Chi Thanh Township','chi_thanh','559',9),
-('22117',N'An Dân',N'An Dan',N'Xã An Dân',N'An Dan Commune','an_dan','559',10),
+('27788',N'2',N'2',N'Phường 2',N'Ward 2','2','795',8),
 ('22120',N'An Ninh Tây',N'An Ninh Tay',N'Xã An Ninh Tây',N'An Ninh Tay Commune','an_ninh_tay','559',10),
 ('22123',N'An Ninh Đông',N'An Ninh Dong',N'Xã An Ninh Đông',N'An Ninh Dong Commune','an_ninh_dong','559',10),
 ('22126',N'An Thạch',N'An Thach',N'Xã An Thạch',N'An Thach Commune','an_thach','559',10),
@@ -8157,11 +8106,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('22207',N'Hai Riêng',N'Hai Rieng',N'Thị trấn Hai Riêng',N'Hai Rieng Township','hai_rieng','561',9),
 ('22210',N'Ea Lâm',N'Ea Lam',N'Xã Ea Lâm',N'Ea Lam Commune','ea_lam','561',10),
 ('22213',N'Đức Bình Tây',N'Duc Binh Tay',N'Xã Đức Bình Tây',N'Duc Binh Tay Commune','duc_binh_tay','561',10),
-('22216',N'Ea Bá',N'Ea Ba',N'Xã Ea Bá',N'Ea Ba Commune','ea_ba','561',10),
-('22219',N'Sơn Giang',N'Son Giang',N'Xã Sơn Giang',N'Son Giang Commune','son_giang','561',10),
-('22222',N'Đức Bình Đông',N'Duc Binh Dong',N'Xã Đức Bình Đông',N'Duc Binh Dong Commune','duc_binh_dong','561',10);
+('22216',N'Ea Bá',N'Ea Ba',N'Xã Ea Bá',N'Ea Ba Commune','ea_ba','561',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('22219',N'Sơn Giang',N'Son Giang',N'Xã Sơn Giang',N'Son Giang Commune','son_giang','561',10),
+('22222',N'Đức Bình Đông',N'Duc Binh Dong',N'Xã Đức Bình Đông',N'Duc Binh Dong Commune','duc_binh_dong','561',10),
 ('22225',N'EaBar',N'EaBar',N'Xã EaBar',N'EaBar Commune','eabar','561',10),
 ('22228',N'EaBia',N'EaBia',N'Xã EaBia',N'EaBia Commune','eabia','561',10),
 ('22231',N'EaTrol',N'EaTrol',N'Xã EaTrol',N'EaTrol Commune','eatrol','561',10),
@@ -8201,6 +8150,7 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('22330',N'Vĩnh Hải',N'Vinh Hai',N'Phường Vĩnh Hải',N'Vinh Hai Ward','vinh_hai','568',8),
 ('22333',N'Vĩnh Phước',N'Vinh Phuoc',N'Phường Vĩnh Phước',N'Vinh Phuoc Ward','vinh_phuoc','568',8),
 ('22336',N'Ngọc Hiệp',N'Ngoc Hiep',N'Phường Ngọc Hiệp',N'Ngoc Hiep Ward','ngoc_hiep','568',8),
+('29251',N'6',N'6',N'Phường 6',N'Ward 6','6','842',8),
 ('22339',N'Vĩnh Thọ',N'Vinh Tho',N'Phường Vĩnh Thọ',N'Vinh Tho Ward','vinh_tho','568',8),
 ('22342',N'Xương Huân',N'Xuong Huan',N'Phường Xương Huân',N'Xuong Huan Ward','xuong_huan','568',8),
 ('22345',N'Vạn Thắng',N'Van Thang',N'Phường Vạn Thắng',N'Van Thang Ward','van_thang','568',8),
@@ -8208,12 +8158,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('22351',N'Phương Sài',N'Phuong Sai',N'Phường Phương Sài',N'Phuong Sai Ward','phuong_sai','568',8),
 ('22354',N'Phương Sơn',N'Phuong Son',N'Phường Phương Sơn',N'Phuong Son Ward','phuong_son','568',8),
 ('22357',N'Phước Hải',N'Phuoc Hai',N'Phường Phước Hải',N'Phuoc Hai Ward','phuoc_hai','568',8),
-('22360',N'Phước Tân',N'Phuoc Tan',N'Phường Phước Tân',N'Phuoc Tan Ward','phuoc_tan','568',8),
-('22363',N'Lộc Thọ',N'Loc Tho',N'Phường Lộc Thọ',N'Loc Tho Ward','loc_tho','568',8),
-('22366',N'Phước Tiến',N'Phuoc Tien',N'Phường Phước Tiến',N'Phuoc Tien Ward','phuoc_tien','568',8),
-('22369',N'Tân Lập',N'Tan Lap',N'Phường Tân Lập',N'Tan Lap Ward','tan_lap','568',8);
+('22360',N'Phước Tân',N'Phuoc Tan',N'Phường Phước Tân',N'Phuoc Tan Ward','phuoc_tan','568',8);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('22363',N'Lộc Thọ',N'Loc Tho',N'Phường Lộc Thọ',N'Loc Tho Ward','loc_tho','568',8),
+('22366',N'Phước Tiến',N'Phuoc Tien',N'Phường Phước Tiến',N'Phuoc Tien Ward','phuoc_tien','568',8),
+('22369',N'Tân Lập',N'Tan Lap',N'Phường Tân Lập',N'Tan Lap Ward','tan_lap','568',8),
 ('22372',N'Phước Hòa',N'Phuoc Hoa',N'Phường Phước Hòa',N'Phuoc Hoa Ward','phuoc_hoa','568',8),
 ('22375',N'Vĩnh Nguyên',N'Vinh Nguyen',N'Phường Vĩnh Nguyên',N'Vinh Nguyen Ward','vinh_nguyen','568',8),
 ('22378',N'Phước Long',N'Phuoc Long',N'Phường Phước Long',N'Phuoc Long Ward','phuoc_long','568',8),
@@ -8260,12 +8210,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('22495',N'Vạn Phước',N'Van Phuoc',N'Xã Vạn Phước',N'Van Phuoc Commune','van_phuoc','571',10),
 ('22498',N'Vạn Long',N'Van Long',N'Xã Vạn Long',N'Van Long Commune','van_long','571',10),
 ('22501',N'Vạn Bình',N'Van Binh',N'Xã Vạn Bình',N'Van Binh Commune','van_binh','571',10),
-('22504',N'Vạn Thọ',N'Van Tho',N'Xã Vạn Thọ',N'Van Tho Commune','van_tho','571',10),
-('22507',N'Vạn Khánh',N'Van Khanh',N'Xã Vạn Khánh',N'Van Khanh Commune','van_khanh','571',10),
-('22510',N'Vạn Phú',N'Van Phu',N'Xã Vạn Phú',N'Van Phu Commune','van_phu','571',10),
-('22513',N'Vạn Lương',N'Van Luong',N'Xã Vạn Lương',N'Van Luong Commune','van_luong','571',10);
+('22504',N'Vạn Thọ',N'Van Tho',N'Xã Vạn Thọ',N'Van Tho Commune','van_tho','571',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('22507',N'Vạn Khánh',N'Van Khanh',N'Xã Vạn Khánh',N'Van Khanh Commune','van_khanh','571',10),
+('22510',N'Vạn Phú',N'Van Phu',N'Xã Vạn Phú',N'Van Phu Commune','van_phu','571',10),
+('22513',N'Vạn Lương',N'Van Luong',N'Xã Vạn Lương',N'Van Luong Commune','van_luong','571',10),
 ('22516',N'Vạn Thắng',N'Van Thang',N'Xã Vạn Thắng',N'Van Thang Commune','van_thang','571',10),
 ('22519',N'Vạn Thạnh',N'Van Thanh',N'Xã Vạn Thạnh',N'Van Thanh Commune','van_thanh','571',10),
 ('22522',N'Xuân Sơn',N'Xuan Son',N'Xã Xuân Sơn',N'Xuan Son Commune','xuan_son','571',10),
@@ -8298,7 +8248,6 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('22603',N'Ninh Ích',N'Ninh Ich',N'Xã Ninh Ích',N'Ninh Ich Commune','ninh_ich','572',10),
 ('22606',N'Ninh Vân',N'Ninh Van',N'Xã Ninh Vân',N'Ninh Van Commune','ninh_van','572',10),
 ('22609',N'Khánh Vĩnh',N'Khanh Vinh',N'Thị trấn Khánh Vĩnh',N'Khanh Vinh Township','khanh_vinh','573',9),
-('22825',N'Hòa Sơn',N'Hoa Son',N'Xã Hòa Sơn',N'Hoa Son Commune','hoa_son','585',10),
 ('22612',N'Khánh Hiệp',N'Khanh Hiep',N'Xã Khánh Hiệp',N'Khanh Hiep Commune','khanh_hiep','573',10),
 ('22615',N'Khánh Bình',N'Khanh Binh',N'Xã Khánh Bình',N'Khanh Binh Commune','khanh_binh','573',10),
 ('22618',N'Khánh Trung',N'Khanh Trung',N'Xã Khánh Trung',N'Khanh Trung Commune','khanh_trung','573',10),
@@ -8313,11 +8262,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('22645',N'Khánh Phú',N'Khanh Phu',N'Xã Khánh Phú',N'Khanh Phu Commune','khanh_phu','573',10),
 ('22648',N'Sơn Thái',N'Son Thai',N'Xã Sơn Thái',N'Son Thai Commune','son_thai','573',10),
 ('22651',N'Diên Khánh',N'Dien Khanh',N'Thị trấn Diên Khánh',N'Dien Khanh Township','dien_khanh','574',9),
-('22654',N'Diên Lâm',N'Dien Lam',N'Xã Diên Lâm',N'Dien Lam Commune','dien_lam','574',10),
-('22657',N'Diên Điền',N'Dien Dien',N'Xã Diên Điền',N'Dien Dien Commune','dien_dien','574',10),
-('22660',N'Diên Xuân',N'Dien Xuan',N'Xã Diên Xuân',N'Dien Xuan Commune','dien_xuan','574',10);
+('22654',N'Diên Lâm',N'Dien Lam',N'Xã Diên Lâm',N'Dien Lam Commune','dien_lam','574',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('22657',N'Diên Điền',N'Dien Dien',N'Xã Diên Điền',N'Dien Dien Commune','dien_dien','574',10),
+('22660',N'Diên Xuân',N'Dien Xuan',N'Xã Diên Xuân',N'Dien Xuan Commune','dien_xuan','574',10),
 ('22663',N'Diên Sơn',N'Dien Son',N'Xã Diên Sơn',N'Dien Son Commune','dien_son','574',10),
 ('22666',N'Diên Đồng',N'Dien Dong',N'Xã Diên Đồng',N'Dien Dong Commune','dien_dong','574',10),
 ('22669',N'Diên Phú',N'Dien Phu',N'Xã Diên Phú',N'Dien Phu Commune','dien_phu','574',10),
@@ -8365,16 +8314,17 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('22792',N'Phước Tiến',N'Phuoc Tien',N'Xã Phước Tiến',N'Phuoc Tien Commune','phuoc_tien','584',10),
 ('22795',N'Phước Thắng',N'Phuoc Thang',N'Xã Phước Thắng',N'Phuoc Thang Commune','phuoc_thang','584',10),
 ('22798',N'Phước Thành',N'Phuoc Thanh',N'Xã Phước Thành',N'Phuoc Thanh Commune','phuoc_thanh','584',10),
-('22801',N'Phước Đại',N'Phuoc Dai',N'Xã Phước Đại',N'Phuoc Dai Commune','phuoc_dai','584',10),
-('22804',N'Phước Chính',N'Phuoc Chinh',N'Xã Phước Chính',N'Phuoc Chinh Commune','phuoc_chinh','584',10),
-('22807',N'Phước Trung',N'Phuoc Trung',N'Xã Phước Trung',N'Phuoc Trung Commune','phuoc_trung','584',10);
+('22801',N'Phước Đại',N'Phuoc Dai',N'Xã Phước Đại',N'Phuoc Dai Commune','phuoc_dai','584',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('22804',N'Phước Chính',N'Phuoc Chinh',N'Xã Phước Chính',N'Phuoc Chinh Commune','phuoc_chinh','584',10),
+('22807',N'Phước Trung',N'Phuoc Trung',N'Xã Phước Trung',N'Phuoc Trung Commune','phuoc_trung','584',10),
 ('22810',N'Tân Sơn',N'Tan Son',N'Thị trấn Tân Sơn',N'Tan Son Township','tan_son','585',9),
 ('22813',N'Lâm Sơn',N'Lam Son',N'Xã Lâm Sơn',N'Lam Son Commune','lam_son','585',10),
 ('22816',N'Lương Sơn',N'Luong Son',N'Xã Lương Sơn',N'Luong Son Commune','luong_son','585',10),
 ('22819',N'Quảng Sơn',N'Quang Son',N'Xã Quảng Sơn',N'Quang Son Commune','quang_son','585',10),
 ('22822',N'Mỹ Sơn',N'My Son',N'Xã Mỹ Sơn',N'My Son Commune','my_son','585',10),
+('22825',N'Hòa Sơn',N'Hoa Son',N'Xã Hòa Sơn',N'Hoa Son Commune','hoa_son','585',10),
 ('22828',N'Ma Nới',N'Ma Noi',N'Xã Ma Nới',N'Ma Noi Commune','ma_noi','585',10),
 ('22831',N'Nhơn Sơn',N'Nhon Son',N'Xã Nhơn Sơn',N'Nhon Son Commune','nhon_son','585',10),
 ('22834',N'Khánh Hải',N'Khanh Hai',N'Thị trấn Khánh Hải',N'Khanh Hai Township','khanh_hai','586',9),
@@ -8416,16 +8366,17 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('22927',N'Phú Tài',N'Phu Tai',N'Phường Phú Tài',N'Phu Tai Ward','phu_tai','593',8),
 ('22930',N'Phú Trinh',N'Phu Trinh',N'Phường Phú Trinh',N'Phu Trinh Ward','phu_trinh','593',8),
 ('22933',N'Xuân An',N'Xuan An',N'Phường Xuân An',N'Xuan An Ward','xuan_an','593',8),
-('22936',N'Thanh Hải',N'Thanh Hai',N'Phường Thanh Hải',N'Thanh Hai Ward','thanh_hai','593',8),
-('22939',N'Bình Hưng',N'Binh Hung',N'Phường Bình Hưng',N'Binh Hung Ward','binh_hung','593',8),
-('22942',N'Đức Nghĩa',N'Duc Nghia',N'Phường Đức Nghĩa',N'Duc Nghia Ward','duc_nghia','593',8),
-('22945',N'Lạc Đạo',N'Lac Dao',N'Phường Lạc Đạo',N'Lac Dao Ward','lac_dao','593',8);
+('22936',N'Thanh Hải',N'Thanh Hai',N'Phường Thanh Hải',N'Thanh Hai Ward','thanh_hai','593',8);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('22939',N'Bình Hưng',N'Binh Hung',N'Phường Bình Hưng',N'Binh Hung Ward','binh_hung','593',8),
+('22942',N'Đức Nghĩa',N'Duc Nghia',N'Phường Đức Nghĩa',N'Duc Nghia Ward','duc_nghia','593',8),
+('22945',N'Lạc Đạo',N'Lac Dao',N'Phường Lạc Đạo',N'Lac Dao Ward','lac_dao','593',8),
 ('22948',N'Đức Thắng',N'Duc Thang',N'Phường Đức Thắng',N'Duc Thang Ward','duc_thang','593',8),
 ('22951',N'Hưng Long',N'Hung Long',N'Phường Hưng Long',N'Hung Long Ward','hung_long','593',8),
 ('22954',N'Đức Long',N'Duc Long',N'Phường Đức Long',N'Duc Long Ward','duc_long','593',8),
 ('22957',N'Thiện Nghiệp',N'Thien Nghiep',N'Xã Thiện Nghiệp',N'Thien Nghiep Commune','thien_nghiep','593',10),
+('29254',N'7',N'7',N'Phường 7',N'Ward 7','7','842',8),
 ('22960',N'Phong Nẫm',N'Phong Nam',N'Xã Phong Nẫm',N'Phong Nam Commune','phong_nam','593',10),
 ('22963',N'Tiến Lợi',N'Tien Loi',N'Xã Tiến Lợi',N'Tien Loi Commune','tien_loi','593',10),
 ('22966',N'Tiến Thành',N'Tien Thanh',N'Xã Tiến Thành',N'Tien Thanh Commune','tien_thanh','593',10),
@@ -8449,7 +8400,6 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('22993',N'Hòa Minh',N'Hoa Minh',N'Xã Hòa Minh',N'Hoa Minh Commune','hoa_minh','595',10),
 ('22996',N'Chí Công',N'Chi Cong',N'Xã Chí Công',N'Chi Cong Commune','chi_cong','595',10),
 ('22999',N'Bình Thạnh',N'Binh Thanh',N'Xã Bình Thạnh',N'Binh Thanh Commune','binh_thanh','595',10),
-('24065',N'Chư Băh',N'Chu Bah',N'Xã Chư Băh',N'Chu Bah Commune','chu_bah','624',10),
 ('23005',N'Chợ Lầu',N'Cho Lau',N'Thị trấn Chợ Lầu',N'Cho Lau Township','cho_lau','596',9),
 ('23008',N'Phan Sơn',N'Phan Son',N'Xã Phan Sơn',N'Phan Son Commune','phan_son','596',10),
 ('23011',N'Phan Lâm',N'Phan Lam',N'Xã Phan Lâm',N'Phan Lam Commune','phan_lam','596',10),
@@ -8468,12 +8418,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('23050',N'Phan Rí Thành',N'Phan Ri Thanh',N'Xã Phan Rí Thành',N'Phan Ri Thanh Commune','phan_ri_thanh','596',10),
 ('23053',N'Hòa Thắng',N'Hoa Thang',N'Xã Hòa Thắng',N'Hoa Thang Commune','hoa_thang','596',10),
 ('23056',N'Hồng Phong',N'Hong Phong',N'Xã Hồng Phong',N'Hong Phong Commune','hong_phong','596',10),
-('23059',N'Ma Lâm',N'Ma Lam',N'Thị trấn Ma Lâm',N'Ma Lam Township','ma_lam','597',9),
-('23062',N'Phú Long',N'Phu Long',N'Thị trấn Phú Long',N'Phu Long Township','phu_long','597',9),
-('23065',N'La Dạ',N'La Da',N'Xã La Dạ',N'La Da Commune','la_da','597',10),
-('23068',N'Đông Tiến',N'Dong Tien',N'Xã Đông Tiến',N'Dong Tien Commune','dong_tien','597',10);
+('23059',N'Ma Lâm',N'Ma Lam',N'Thị trấn Ma Lâm',N'Ma Lam Township','ma_lam','597',9);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('23062',N'Phú Long',N'Phu Long',N'Thị trấn Phú Long',N'Phu Long Township','phu_long','597',9),
+('23065',N'La Dạ',N'La Da',N'Xã La Dạ',N'La Da Commune','la_da','597',10),
+('23068',N'Đông Tiến',N'Dong Tien',N'Xã Đông Tiến',N'Dong Tien Commune','dong_tien','597',10),
 ('23071',N'Thuận Hòa',N'Thuan Hoa',N'Xã Thuận Hòa',N'Thuan Hoa Commune','thuan_hoa','597',10),
 ('23074',N'Đông Giang',N'Dong Giang',N'Xã Đông Giang',N'Dong Giang Commune','dong_giang','597',10),
 ('23077',N'Hàm Phú',N'Ham Phu',N'Xã Hàm Phú',N'Ham Phu Commune','ham_phu','597',10),
@@ -8520,12 +8470,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('23203',N'Mê Pu',N'Me Pu',N'Xã Mê Pu',N'Me Pu Commune','me_pu','600',10),
 ('23206',N'Nam Chính',N'Nam Chinh',N'Xã Nam Chính',N'Nam Chinh Commune','nam_chinh','600',10),
 ('23212',N'Đức Hạnh',N'Duc Hanh',N'Xã Đức Hạnh',N'Duc Hanh Commune','duc_hanh','600',10),
-('23215',N'Đức Tín',N'Duc Tin',N'Xã Đức Tín',N'Duc Tin Commune','duc_tin','600',10),
-('23218',N'Vũ Hoà',N'Vu Hoa',N'Xã Vũ Hoà',N'Vu Hoa Commune','vu_hoa','600',10),
-('23221',N'Tân Hà',N'Tan Ha',N'Xã Tân Hà',N'Tan Ha Commune','tan_ha','600',10),
-('23224',N'Đông Hà',N'Dong Ha',N'Xã Đông Hà',N'Dong Ha Commune','dong_ha','600',10);
+('23215',N'Đức Tín',N'Duc Tin',N'Xã Đức Tín',N'Duc Tin Commune','duc_tin','600',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('23218',N'Vũ Hoà',N'Vu Hoa',N'Xã Vũ Hoà',N'Vu Hoa Commune','vu_hoa','600',10),
+('23221',N'Tân Hà',N'Tan Ha',N'Xã Tân Hà',N'Tan Ha Commune','tan_ha','600',10),
+('23224',N'Đông Hà',N'Dong Ha',N'Xã Đông Hà',N'Dong Ha Commune','dong_ha','600',10),
 ('23227',N'Trà Tân',N'Tra Tan',N'Xã Trà Tân',N'Tra Tan Commune','tra_tan','600',10),
 ('23230',N'Tân Minh',N'Tan Minh',N'Thị trấn Tân Minh',N'Tan Minh Township','tan_minh','601',9),
 ('23236',N'Tân Nghĩa',N'Tan Nghia',N'Thị trấn Tân Nghĩa',N'Tan Nghia Township','tan_nghia','601',9),
@@ -8572,17 +8522,15 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('23365',N'Ngọc Linh',N'Ngoc Linh',N'Xã Ngọc Linh',N'Ngoc Linh Commune','ngoc_linh','610',10),
 ('23368',N'Đắk Long',N'Dak Long',N'Xã Đắk Long',N'Dak Long Commune','dak_long','610',10),
 ('23371',N'Đắk KRoong',N'Dak KRoong',N'Xã Đắk KRoong',N'Dak KRoong Commune','dak_kroong','610',10),
-('23374',N'Đắk Môn',N'Dak Mon',N'Xã Đắk Môn',N'Dak Mon Commune','dak_mon','610',10),
-('23377',N'Plei Kần',N'Plei Kan',N'Thị trấn Plei Kần',N'Plei Kan Township','plei_kan','611',9),
-('23380',N'Đắk Ang',N'Dak Ang',N'Xã Đắk Ang',N'Dak Ang Commune','dak_ang','611',10),
-('23383',N'Đắk Dục',N'Dak Duc',N'Xã Đắk Dục',N'Dak Duc Commune','dak_duc','611',10);
+('23374',N'Đắk Môn',N'Dak Mon',N'Xã Đắk Môn',N'Dak Mon Commune','dak_mon','610',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('23377',N'Plei Kần',N'Plei Kan',N'Thị trấn Plei Kần',N'Plei Kan Township','plei_kan','611',9),
+('23380',N'Đắk Ang',N'Dak Ang',N'Xã Đắk Ang',N'Dak Ang Commune','dak_ang','611',10),
+('23383',N'Đắk Dục',N'Dak Duc',N'Xã Đắk Dục',N'Dak Duc Commune','dak_duc','611',10),
 ('23386',N'Đắk Nông',N'Dak Nong',N'Xã Đắk Nông',N'Dak Nong Commune','dak_nong','611',10),
 ('23389',N'Đắk Xú',N'Dak Xu',N'Xã Đắk Xú',N'Dak Xu Commune','dak_xu','611',10),
-('23392',N'Đắk Kan',N'Dak Kan',N'Xã Đắk Kan',N'Dak Kan Commune','dak_kan','611',10),
-('23395',N'Bờ Y',N'Bo Y',N'Xã Bờ Y',N'Bo Y Commune','bo_y','611',10),
-('23398',N'Sa Loong',N'Sa Loong',N'Xã Sa Loong',N'Sa Loong Commune','sa_loong','611',10),
+('29257',N'8',N'8',N'Phường 8',N'Ward 8','8','842',8),
 ('23401',N'Đắk Tô',N'Dak To',N'Thị trấn Đắk Tô',N'Dak To Township','dak_to','612',9),
 ('23427',N'Đắk Rơ Nga',N'Dak Ro Nga',N'Xã Đắk Rơ Nga',N'Dak Ro Nga Commune','dak_ro_nga','612',10),
 ('23428',N'Ngọk Tụ',N'Ngok Tu',N'Xã Ngọk Tụ',N'Ngok Tu Commune','ngok_tu','612',10),
@@ -8604,7 +8552,6 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('23479',N'Đắk Rve',N'Dak Rve',N'Thị trấn Đắk Rve',N'Dak Rve Township','dak_rve','614',9),
 ('23482',N'Đắk Kôi',N'Dak Koi',N'Xã Đắk Kôi',N'Dak Koi Commune','dak_koi','614',10),
 ('23485',N'Đắk Tơ Lung',N'Dak To Lung',N'Xã Đắk Tơ Lung',N'Dak To Lung Commune','dak_to_lung','614',10),
-('24070',N'Ia RTô',N'Ia RTo',N'Xã Ia RTô',N'Ia RTo Commune','ia_rto','624',10),
 ('23488',N'Đắk Ruồng',N'Dak Ruong',N'Xã Đắk Ruồng',N'Dak Ruong Commune','dak_ruong','614',10),
 ('23491',N'Đắk Pne',N'Dak Pne',N'Xã Đắk Pne',N'Dak Pne Commune','dak_pne','614',10),
 ('23494',N'Đắk Tờ Re',N'Dak To Re',N'Xã Đắk Tờ Re',N'Dak To Re Commune','dak_to_re','614',10),
@@ -8687,6 +8634,8 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('24044',N'Đoàn Kết',N'Doan Ket',N'Phường Đoàn Kết',N'Doan Ket Ward','doan_ket','624',8),
 ('24045',N'Sông Bờ',N'Song Bo',N'Phường Sông Bờ',N'Song Bo Ward','song_bo','624',8),
 ('24064',N'Ia RBol',N'Ia RBol',N'Xã Ia RBol',N'Ia RBol Commune','ia_rbol','624',10),
+('24065',N'Chư Băh',N'Chu Bah',N'Xã Chư Băh',N'Chu Bah Commune','chu_bah','624',10),
+('24070',N'Ia RTô',N'Ia RTo',N'Xã Ia RTô',N'Ia RTo Commune','ia_rto','624',10),
 ('24073',N'Ia Sao',N'Ia Sao',N'Xã Ia Sao',N'Ia Sao Commune','ia_sao','624',10),
 ('23638',N'KBang',N'KBang',N'Thị trấn KBang',N'KBang Township','kbang','625',9),
 ('23641',N'Kon Pne',N'Kon Pne',N'Xã Kon Pne',N'Kon Pne Commune','kon_pne','625',10),
@@ -8729,11 +8678,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('23740',N'Đăk Tơ Ver',N'Dak To Ver',N'Xã Đăk Tơ Ver',N'Dak To Ver Commune','dak_to_ver','627',10),
 ('23743',N'Hòa Phú',N'Hoa Phu',N'Xã Hòa Phú',N'Hoa Phu Commune','hoa_phu','627',10),
 ('23746',N'Chư Đăng Ya',N'Chu Dang Ya',N'Xã Chư Đăng Ya',N'Chu Dang Ya Commune','chu_dang_ya','627',10),
-('23749',N'Ia Ka',N'Ia Ka',N'Xã Ia Ka',N'Ia Ka Commune','ia_ka','627',10),
-('23752',N'Ia Nhin',N'Ia Nhin',N'Xã Ia Nhin',N'Ia Nhin Commune','ia_nhin','627',10),
-('23755',N'Nghĩa Hòa',N'Nghia Hoa',N'Xã Nghĩa Hòa',N'Nghia Hoa Commune','nghia_hoa','627',10);
+('23749',N'Ia Ka',N'Ia Ka',N'Xã Ia Ka',N'Ia Ka Commune','ia_ka','627',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('23752',N'Ia Nhin',N'Ia Nhin',N'Xã Ia Nhin',N'Ia Nhin Commune','ia_nhin','627',10),
+('23755',N'Nghĩa Hòa',N'Nghia Hoa',N'Xã Nghĩa Hòa',N'Nghia Hoa Commune','nghia_hoa','627',10),
 ('23761',N'Nghĩa Hưng',N'Nghia Hung',N'Xã Nghĩa Hưng',N'Nghia Hung Commune','nghia_hung','627',10),
 ('23764',N'Ia Kha',N'Ia Kha',N'Thị trấn Ia Kha',N'Ia Kha Township','ia_kha','628',9),
 ('23767',N'Ia Sao',N'Ia Sao',N'Xã Ia Sao',N'Ia Sao Commune','ia_sao','628',10),
@@ -8745,6 +8694,7 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('23778',N'Ia Grăng',N'Ia Grang',N'Xã Ia Grăng',N'Ia Grang Commune','ia_grang','628',10),
 ('23779',N'Ia Tô',N'Ia To',N'Xã Ia Tô',N'Ia To Commune','ia_to','628',10),
 ('23782',N'Ia O',N'Ia O',N'Xã Ia O',N'Ia O Commune','ia_o','628',10),
+('29260',N'9',N'9',N'Phường 9',N'Ward 9','9','842',8),
 ('23785',N'Ia Dêr',N'Ia Der',N'Xã Ia Dêr',N'Ia Der Commune','ia_der','628',10),
 ('23788',N'Ia Chia',N'Ia Chia',N'Xã Ia Chia',N'Ia Chia Commune','ia_chia','628',10),
 ('23791',N'Ia Pếch',N'Ia Pech',N'Xã Ia Pếch',N'Ia Pech Commune','ia_pech','628',10),
@@ -8780,12 +8730,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('23866',N'Ia Din',N'Ia Din',N'Xã Ia Din',N'Ia Din Commune','ia_din','631',10),
 ('23869',N'Ia Kla',N'Ia Kla',N'Xã Ia Kla',N'Ia Kla Commune','ia_kla','631',10),
 ('23872',N'Ia Dom',N'Ia Dom',N'Xã Ia Dom',N'Ia Dom Commune','ia_dom','631',10),
-('23875',N'Ia Lang',N'Ia Lang',N'Xã Ia Lang',N'Ia Lang Commune','ia_lang','631',10),
-('23878',N'Ia Kriêng',N'Ia Krieng',N'Xã Ia Kriêng',N'Ia Krieng Commune','ia_krieng','631',10),
-('23881',N'Ia Pnôn',N'Ia Pnon',N'Xã Ia Pnôn',N'Ia Pnon Commune','ia_pnon','631',10),
-('23884',N'Ia Nan',N'Ia Nan',N'Xã Ia Nan',N'Ia Nan Commune','ia_nan','631',10);
+('23875',N'Ia Lang',N'Ia Lang',N'Xã Ia Lang',N'Ia Lang Commune','ia_lang','631',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('23878',N'Ia Kriêng',N'Ia Krieng',N'Xã Ia Kriêng',N'Ia Krieng Commune','ia_krieng','631',10),
+('23881',N'Ia Pnôn',N'Ia Pnon',N'Xã Ia Pnôn',N'Ia Pnon Commune','ia_pnon','631',10),
+('23884',N'Ia Nan',N'Ia Nan',N'Xã Ia Nan',N'Ia Nan Commune','ia_nan','631',10),
 ('23887',N'Chư Prông',N'Chu Prong',N'Thị trấn Chư Prông',N'Chu Prong Township','chu_prong','632',9),
 ('23888',N'Ia Kly',N'Ia Kly',N'Xã Ia Kly',N'Ia Kly Commune','ia_kly','632',10),
 ('23890',N'Bình Giáo',N'Binh Giao',N'Xã Bình Giáo',N'Binh Giao Commune','binh_giao','632',10),
@@ -8832,12 +8782,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('24013',N'Pờ Tó',N'Po To',N'Xã Pờ Tó',N'Po To Commune','po_to','635',10),
 ('24016',N'Chư Răng',N'Chu Rang',N'Xã Chư Răng',N'Chu Rang Commune','chu_rang','635',10),
 ('24019',N'Ia KDăm',N'Ia KDam',N'Xã Ia KDăm',N'Ia KDam Commune','ia_kdam','635',10),
-('24022',N'Kim Tân',N'Kim Tan',N'Xã Kim Tân',N'Kim Tan Commune','kim_tan','635',10),
-('24025',N'Chư Mố',N'Chu Mo',N'Xã Chư Mố',N'Chu Mo Commune','chu_mo','635',10),
-('24028',N'Ia Tul',N'Ia Tul',N'Xã Ia Tul',N'Ia Tul Commune','ia_tul','635',10),
-('24031',N'Ia Ma Rơn',N'Ia Ma Ron',N'Xã Ia Ma Rơn',N'Ia Ma Ron Commune','ia_ma_ron','635',10);
+('24022',N'Kim Tân',N'Kim Tan',N'Xã Kim Tân',N'Kim Tan Commune','kim_tan','635',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('24025',N'Chư Mố',N'Chu Mo',N'Xã Chư Mố',N'Chu Mo Commune','chu_mo','635',10),
+('24028',N'Ia Tul',N'Ia Tul',N'Xã Ia Tul',N'Ia Tul Commune','ia_tul','635',10),
+('24031',N'Ia Ma Rơn',N'Ia Ma Ron',N'Xã Ia Ma Rơn',N'Ia Ma Ron Commune','ia_ma_ron','635',10),
 ('24034',N'Ia Broăi',N'Ia Broai',N'Xã Ia Broăi',N'Ia Broai Commune','ia_broai','635',10),
 ('24037',N'Ia Trok',N'Ia Trok',N'Xã Ia Trok',N'Ia Trok Commune','ia_trok','635',10),
 ('24076',N'Phú Túc',N'Phu Tuc',N'Thị trấn Phú Túc',N'Phu Tuc Township','phu_tuc','637',9),
@@ -8854,7 +8804,6 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('24109',N'Uar',N'Uar',N'Xã Uar',N'Uar Commune','uar','637',10),
 ('24112',N'Chư Rcăm',N'Chu Rcam',N'Xã Chư Rcăm',N'Chu Rcam Commune','chu_rcam','637',10),
 ('24115',N'Krông Năng',N'Krong Nang',N'Xã Krông Năng',N'Krong Nang Commune','krong_nang','637',10),
-('24481',N'Hòa Sơn',N'Hoa Son',N'Xã Hòa Sơn',N'Hoa Son Commune','hoa_son','653',10),
 ('24043',N'Phú Thiện',N'Phu Thien',N'Thị trấn Phú Thiện',N'Phu Thien Township','phu_thien','638',9),
 ('24046',N'Chư A Thai',N'Chu A Thai',N'Xã Chư A Thai',N'Chu A Thai Commune','chu_a_thai','638',10),
 ('24048',N'Ayun Hạ',N'Ayun Ha',N'Xã Ayun Hạ',N'Ayun Ha Commune','ayun_ha','638',10),
@@ -8885,11 +8834,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('24142',N'Tân Thành',N'Tan Thanh',N'Phường Tân Thành',N'Tan Thanh Ward','tan_thanh','643',8),
 ('24145',N'Tân Tiến',N'Tan Tien',N'Phường Tân Tiến',N'Tan Tien Ward','tan_tien','643',8),
 ('24148',N'Tự An',N'Tu An',N'Phường Tự An',N'Tu An Ward','tu_an','643',8),
-('24151',N'Ea Tam',N'Ea Tam',N'Phường Ea Tam',N'Ea Tam Ward','ea_tam','643',8),
-('24154',N'Khánh Xuân',N'Khanh Xuan',N'Phường Khánh Xuân',N'Khanh Xuan Ward','khanh_xuan','643',8),
-('24157',N'Hòa Thuận',N'Hoa Thuan',N'Xã Hòa Thuận',N'Hoa Thuan Commune','hoa_thuan','643',10);
+('24151',N'Ea Tam',N'Ea Tam',N'Phường Ea Tam',N'Ea Tam Ward','ea_tam','643',8);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('24154',N'Khánh Xuân',N'Khanh Xuan',N'Phường Khánh Xuân',N'Khanh Xuan Ward','khanh_xuan','643',8),
+('24157',N'Hòa Thuận',N'Hoa Thuan',N'Xã Hòa Thuận',N'Hoa Thuan Commune','hoa_thuan','643',10),
 ('24160',N'Cư ÊBur',N'Cu EBur',N'Xã Cư ÊBur',N'Cu EBur Commune','cu_ebur','643',10),
 ('24163',N'Ea Tu',N'Ea Tu',N'Xã Ea Tu',N'Ea Tu Commune','ea_tu','643',10),
 ('24166',N'Hòa Thắng',N'Hoa Thang',N'Xã Hòa Thắng',N'Hoa Thang Commune','hoa_thang','643',10),
@@ -8937,11 +8886,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('24244',N'Tân Hoà',N'Tan Hoa',N'Xã Tân Hoà',N'Tan Hoa Commune','tan_hoa','647',10),
 ('24247',N'Cuôr KNia',N'Cuor KNia',N'Xã Cuôr KNia',N'Cuor KNia Commune','cuor_knia','647',10),
 ('24250',N'Ea Bar',N'Ea Bar',N'Xã Ea Bar',N'Ea Bar Commune','ea_bar','647',10),
-('24253',N'Ea Nuôl',N'Ea Nuol',N'Xã Ea Nuôl',N'Ea Nuol Commune','ea_nuol','647',10),
-('24256',N'Ea Pốk',N'Ea Pok',N'Thị trấn Ea Pốk',N'Ea Pok Township','ea_pok','648',9),
-('24259',N'Quảng Phú',N'Quang Phu',N'Thị trấn Quảng Phú',N'Quang Phu Township','quang_phu','648',9);
+('24253',N'Ea Nuôl',N'Ea Nuol',N'Xã Ea Nuôl',N'Ea Nuol Commune','ea_nuol','647',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('24256',N'Ea Pốk',N'Ea Pok',N'Thị trấn Ea Pốk',N'Ea Pok Township','ea_pok','648',9),
+('24259',N'Quảng Phú',N'Quang Phu',N'Thị trấn Quảng Phú',N'Quang Phu Township','quang_phu','648',9),
 ('24262',N'Quảng Tiến',N'Quang Tien',N'Xã Quảng Tiến',N'Quang Tien Commune','quang_tien','648',10),
 ('24264',N'Ea Kuêh',N'Ea Kueh',N'Xã Ea Kuêh',N'Ea Kueh Commune','ea_kueh','648',10),
 ('24265',N'Ea Kiết',N'Ea Kiet',N'Xã Ea Kiết',N'Ea Kiet Commune','ea_kiet','648',10),
@@ -8989,11 +8938,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('24400',N'Ea Păl',N'Ea Pal',N'Xã Ea Păl',N'Ea Pal Commune','ea_pal','651',10),
 ('24401',N'Cư Prông',N'Cu Prong',N'Xã Cư Prông',N'Cu Prong Commune','cu_prong','651',10),
 ('24403',N'Ea Ô',N'Ea O',N'Xã Ea Ô',N'Ea O Commune','ea_o','651',10),
-('24404',N'Cư ELang',N'Cu ELang',N'Xã Cư ELang',N'Cu ELang Commune','cu_elang','651',10),
-('24406',N'Cư Bông',N'Cu Bong',N'Xã Cư Bông',N'Cu Bong Commune','cu_bong','651',10),
-('24409',N'Cư Jang',N'Cu Jang',N'Xã Cư Jang',N'Cu Jang Commune','cu_jang','651',10);
+('24404',N'Cư ELang',N'Cu ELang',N'Xã Cư ELang',N'Cu ELang Commune','cu_elang','651',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('24406',N'Cư Bông',N'Cu Bong',N'Xã Cư Bông',N'Cu Bong Commune','cu_bong','651',10),
+('24409',N'Cư Jang',N'Cu Jang',N'Xã Cư Jang',N'Cu Jang Commune','cu_jang','651',10),
 ('24412',N'M''Đrắk',N'M''Drak',N'Thị trấn M''Đrắk',N'M''Drak Township','mdrak','652',9),
 ('24415',N'Cư Prao',N'Cu Prao',N'Xã Cư Prao',N'Cu Prao Commune','cu_prao','652',10),
 ('24418',N'Ea Pil',N'Ea Pil',N'Xã Ea Pil',N'Ea Pil Commune','ea_pil','652',10),
@@ -9018,6 +8967,7 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('24472',N'Ea Trul',N'Ea Trul',N'Xã Ea Trul',N'Ea Trul Commune','ea_trul','653',10),
 ('24475',N'Khuê Ngọc Điền',N'Khue Ngoc Dien',N'Xã Khuê Ngọc Điền',N'Khue Ngoc Dien Commune','khue_ngoc_dien','653',10),
 ('24478',N'Cư Pui',N'Cu Pui',N'Xã Cư Pui',N'Cu Pui Commune','cu_pui','653',10),
+('24481',N'Hòa Sơn',N'Hoa Son',N'Xã Hòa Sơn',N'Hoa Son Commune','hoa_son','653',10),
 ('24484',N'Cư Drăm',N'Cu Dram',N'Xã Cư Drăm',N'Cu Dram Commune','cu_dram','653',10),
 ('24487',N'Yang Mao',N'Yang Mao',N'Xã Yang Mao',N'Yang Mao Commune','yang_mao','653',10),
 ('24490',N'Phước An',N'Phuoc An',N'Thị trấn Phước An',N'Phuoc An Township','phuoc_an','654',9),
@@ -9040,12 +8990,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('24556',N'Dray Sáp',N'Dray Sap',N'Xã Dray Sáp',N'Dray Sap Commune','dray_sap','655',10),
 ('24559',N'Ea Na',N'Ea Na',N'Xã Ea Na',N'Ea Na Commune','ea_na','655',10),
 ('24565',N'Ea Bông',N'Ea Bong',N'Xã Ea Bông',N'Ea Bong Commune','ea_bong','655',10),
-('24568',N'Băng A Drênh',N'Bang A Drenh',N'Xã Băng A Drênh',N'Bang A Drenh Commune','bang_a_drenh','655',10),
-('24571',N'Dur KMăl',N'Dur KMal',N'Xã Dur KMăl',N'Dur KMal Commune','dur_kmal','655',10),
-('24574',N'Bình Hòa',N'Binh Hoa',N'Xã Bình Hòa',N'Binh Hoa Commune','binh_hoa','655',10),
-('24577',N'Quảng Điền',N'Quang Dien',N'Xã Quảng Điền',N'Quang Dien Commune','quang_dien','655',10);
+('24568',N'Băng A Drênh',N'Bang A Drenh',N'Xã Băng A Drênh',N'Bang A Drenh Commune','bang_a_drenh','655',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('24571',N'Dur KMăl',N'Dur KMal',N'Xã Dur KMăl',N'Dur KMal Commune','dur_kmal','655',10),
+('24574',N'Bình Hòa',N'Binh Hoa',N'Xã Bình Hòa',N'Binh Hoa Commune','binh_hoa','655',10),
+('24577',N'Quảng Điền',N'Quang Dien',N'Xã Quảng Điền',N'Quang Dien Commune','quang_dien','655',10),
 ('24580',N'Liên Sơn',N'Lien Son',N'Thị trấn Liên Sơn',N'Lien Son Township','lien_son','656',9),
 ('24583',N'Yang Tao',N'Yang Tao',N'Xã Yang Tao',N'Yang Tao Commune','yang_tao','656',10),
 ('24586',N'Bông Krang',N'Bong Krang',N'Xã Bông Krang',N'Bong Krang Commune','bong_krang','656',10),
@@ -9092,12 +9042,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('24667',N'Đắk Lao',N'Dak Lao',N'Xã Đắk Lao',N'Dak Lao Commune','dak_lao','663',10),
 ('24670',N'Đắk R''La',N'Dak R''La',N'Xã Đắk R''La',N'Dak R''La Commune','dak_rla','663',10),
 ('24673',N'Đắk Gằn',N'Dak Gan',N'Xã Đắk Gằn',N'Dak Gan Commune','dak_gan','663',10),
-('24676',N'Đức Mạnh',N'Duc Manh',N'Xã Đức Mạnh',N'Duc Manh Commune','duc_manh','663',10),
-('24677',N'Đắk N''Drót',N'Dak N''Drot',N'Xã Đắk N''Drót',N'Dak N''Drot Commune','dak_ndrot','663',10),
-('24678',N'Long Sơn',N'Long Son',N'Xã Long Sơn',N'Long Son Commune','long_son','663',10),
-('24679',N'Đắk Sắk',N'Dak Sak',N'Xã Đắk Sắk',N'Dak Sak Commune','dak_sak','663',10);
+('24676',N'Đức Mạnh',N'Duc Manh',N'Xã Đức Mạnh',N'Duc Manh Commune','duc_manh','663',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('24677',N'Đắk N''Drót',N'Dak N''Drot',N'Xã Đắk N''Drót',N'Dak N''Drot Commune','dak_ndrot','663',10),
+('24678',N'Long Sơn',N'Long Son',N'Xã Long Sơn',N'Long Son Commune','long_son','663',10),
+('24679',N'Đắk Sắk',N'Dak Sak',N'Xã Đắk Sắk',N'Dak Sak Commune','dak_sak','663',10),
 ('24682',N'Thuận An',N'Thuan An',N'Xã Thuận An',N'Thuan An Commune','thuan_an','663',10),
 ('24685',N'Đức Minh',N'Duc Minh',N'Xã Đức Minh',N'Duc Minh Commune','duc_minh','663',10),
 ('24688',N'Đắk Mâm',N'Dak Mam',N'Thị trấn Đắk Mâm',N'Dak Mam Township','dak_mam','664',9),
@@ -9144,12 +9094,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('24778',N'9',N'9',N'Phường 9',N'Ward 9','9','672',8),
 ('24781',N'2',N'2',N'Phường 2',N'Ward 2','2','672',8),
 ('24784',N'1',N'1',N'Phường 1',N'Ward 1','1','672',8),
-('24787',N'6',N'6',N'Phường 6',N'Ward 6','6','672',8),
-('24790',N'5',N'5',N'Phường 5',N'Ward 5','5','672',8),
-('24793',N'4',N'4',N'Phường 4',N'Ward 4','4','672',8),
-('24796',N'10',N'10',N'Phường 10',N'Ward 10','10','672',8);
+('24787',N'6',N'6',N'Phường 6',N'Ward 6','6','672',8);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('24790',N'5',N'5',N'Phường 5',N'Ward 5','5','672',8),
+('24793',N'4',N'4',N'Phường 4',N'Ward 4','4','672',8),
+('24796',N'10',N'10',N'Phường 10',N'Ward 10','10','672',8),
 ('24799',N'11',N'11',N'Phường 11',N'Ward 11','11','672',8),
 ('24802',N'3',N'3',N'Phường 3',N'Ward 3','3','672',8),
 ('24805',N'Xuân Thọ',N'Xuan Tho',N'Xã Xuân Thọ',N'Xuan Tho Commune','xuan_tho','672',10),
@@ -9196,12 +9146,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('24916',N'Tân Hà',N'Tan Ha',N'Xã Tân Hà',N'Tan Ha Commune','tan_ha','676',10),
 ('24919',N'Liên Hà',N'Lien Ha',N'Xã Liên Hà',N'Lien Ha Commune','lien_ha','676',10),
 ('24922',N'Đan Phượng',N'Dan Phuong',N'Xã Đan Phượng',N'Dan Phuong Commune','dan_phuong','676',10),
-('24925',N'Nam Hà',N'Nam Ha',N'Xã Nam Hà',N'Nam Ha Commune','nam_ha','676',10),
-('24928',N'D''Ran',N'D''Ran',N'Thị trấn D''Ran',N'D''Ran Township','dran','677',9),
-('24931',N'Thạnh Mỹ',N'Thanh My',N'Thị trấn Thạnh Mỹ',N'Thanh My Township','thanh_my','677',9),
-('24934',N'Lạc Xuân',N'Lac Xuan',N'Xã Lạc Xuân',N'Lac Xuan Commune','lac_xuan','677',10);
+('24925',N'Nam Hà',N'Nam Ha',N'Xã Nam Hà',N'Nam Ha Commune','nam_ha','676',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('24928',N'D''Ran',N'D''Ran',N'Thị trấn D''Ran',N'D''Ran Township','dran','677',9),
+('24931',N'Thạnh Mỹ',N'Thanh My',N'Thị trấn Thạnh Mỹ',N'Thanh My Township','thanh_my','677',9),
+('24934',N'Lạc Xuân',N'Lac Xuan',N'Xã Lạc Xuân',N'Lac Xuan Commune','lac_xuan','677',10),
 ('24937',N'Đạ Ròn',N'Da Ron',N'Xã Đạ Ròn',N'Da Ron Commune','da_ron','677',10),
 ('24940',N'Lạc Lâm',N'Lac Lam',N'Xã Lạc Lâm',N'Lac Lam Commune','lac_lam','677',10),
 ('24943',N'Ka Đô',N'Ka Do',N'Xã Ka Đô',N'Ka Do Commune','ka_do','677',10),
@@ -9248,18 +9198,17 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('25060',N'Lộc Lâm',N'Loc Lam',N'Xã Lộc Lâm',N'Loc Lam Commune','loc_lam','680',10),
 ('25063',N'Lộc Phú',N'Loc Phu',N'Xã Lộc Phú',N'Loc Phu Commune','loc_phu','680',10),
 ('25066',N'Lộc Bắc',N'Loc Bac',N'Xã Lộc Bắc',N'Loc Bac Commune','loc_bac','680',10),
-('25069',N'B'' Lá',N'B'' La',N'Xã B'' Lá',N'B'' La Commune','b_la','680',10),
-('25072',N'Lộc Ngãi',N'Loc Ngai',N'Xã Lộc Ngãi',N'Loc Ngai Commune','loc_ngai','680',10),
-('25075',N'Lộc Quảng',N'Loc Quang',N'Xã Lộc Quảng',N'Loc Quang Commune','loc_quang','680',10),
-('25078',N'Lộc Tân',N'Loc Tan',N'Xã Lộc Tân',N'Loc Tan Commune','loc_tan','680',10);
+('25069',N'B'' Lá',N'B'' La',N'Xã B'' Lá',N'B'' La Commune','b_la','680',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('25072',N'Lộc Ngãi',N'Loc Ngai',N'Xã Lộc Ngãi',N'Loc Ngai Commune','loc_ngai','680',10),
+('25075',N'Lộc Quảng',N'Loc Quang',N'Xã Lộc Quảng',N'Loc Quang Commune','loc_quang','680',10),
+('25078',N'Lộc Tân',N'Loc Tan',N'Xã Lộc Tân',N'Loc Tan Commune','loc_tan','680',10),
 ('25081',N'Lộc Đức',N'Loc Duc',N'Xã Lộc Đức',N'Loc Duc Commune','loc_duc','680',10),
 ('25084',N'Lộc An',N'Loc An',N'Xã Lộc An',N'Loc An Commune','loc_an','680',10),
 ('25087',N'Tân Lạc',N'Tan Lac',N'Xã Tân Lạc',N'Tan Lac Commune','tan_lac','680',10),
 ('25090',N'Lộc Thành',N'Loc Thanh',N'Xã Lộc Thành',N'Loc Thanh Commune','loc_thanh','680',10),
 ('25093',N'Lộc Nam',N'Loc Nam',N'Xã Lộc Nam',N'Loc Nam Commune','loc_nam','680',10),
-('27331',N'14',N'14',N'Phường 14',N'Ward 14','14','774',8),
 ('25096',N'Đạ M''ri',N'Da M''ri',N'Thị trấn Đạ M''ri',N'Da M''ri Township','da_mri','681',9),
 ('25099',N'Ma Đa Guôi',N'Ma Da Guoi',N'Thị trấn Ma Đa Guôi',N'Ma Da Guoi Township','ma_da_guoi','681',9),
 ('25105',N'Hà Lâm',N'Ha Lam',N'Xã Hà Lâm',N'Ha Lam Commune','ha_lam','681',10),
@@ -9301,11 +9250,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('25205',N'Tân Thiện',N'Tan Thien',N'Phường Tân Thiện',N'Tan Thien Ward','tan_thien','689',8),
 ('25207',N'Tân Thành',N'Tan Thanh',N'Xã Tân Thành',N'Tan Thanh Commune','tan_thanh','689',10),
 ('25210',N'Tiến Thành',N'Tien Thanh',N'Phường Tiến Thành',N'Tien Thanh Ward','tien_thanh','689',8),
-('25213',N'Tiến Hưng',N'Tien Hung',N'Xã Tiến Hưng',N'Tien Hung Commune','tien_hung','689',10),
-('25320',N'Hưng Chiến',N'Hung Chien',N'Phường Hưng Chiến',N'Hung Chien Ward','hung_chien','690',8),
-('25324',N'An Lộc',N'An Loc',N'Phường An Lộc',N'An Loc Ward','an_loc','690',8);
+('25213',N'Tiến Hưng',N'Tien Hung',N'Xã Tiến Hưng',N'Tien Hung Commune','tien_hung','689',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('25320',N'Hưng Chiến',N'Hung Chien',N'Phường Hưng Chiến',N'Hung Chien Ward','hung_chien','690',8),
+('25324',N'An Lộc',N'An Loc',N'Phường An Lộc',N'An Loc Ward','an_loc','690',8),
 ('25325',N'Phú Thịnh',N'Phu Thinh',N'Phường Phú Thịnh',N'Phu Thinh Ward','phu_thinh','690',8),
 ('25326',N'Phú Đức',N'Phu Duc',N'Phường Phú Đức',N'Phu Duc Ward','phu_duc','690',8),
 ('25333',N'Thanh Lương',N'Thanh Luong',N'Xã Thanh Lương',N'Thanh Luong Commune','thanh_luong','690',10),
@@ -9353,11 +9302,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('25357',N'Tân Khai',N'Tan Khai',N'Thị trấn Tân Khai',N'Tan Khai Township','tan_khai','694',9),
 ('25360',N'Đồng Nơ',N'Dong No',N'Xã Đồng Nơ',N'Dong No Commune','dong_no','694',10),
 ('25361',N'Tân Hiệp',N'Tan Hiep',N'Xã Tân Hiệp',N'Tan Hiep Commune','tan_hiep','694',10),
-('25438',N'Tân Quan',N'Tan Quan',N'Xã Tân Quan',N'Tan Quan Commune','tan_quan','694',10),
-('25363',N'Tân Phú',N'Tan Phu',N'Thị trấn Tân Phú',N'Tan Phu Township','tan_phu','695',9),
-('25366',N'Thuận Lợi',N'Thuan Loi',N'Xã Thuận Lợi',N'Thuan Loi Commune','thuan_loi','695',10);
+('25438',N'Tân Quan',N'Tan Quan',N'Xã Tân Quan',N'Tan Quan Commune','tan_quan','694',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('25363',N'Tân Phú',N'Tan Phu',N'Thị trấn Tân Phú',N'Tan Phu Township','tan_phu','695',9),
+('25366',N'Thuận Lợi',N'Thuan Loi',N'Xã Thuận Lợi',N'Thuan Loi Commune','thuan_loi','695',10),
 ('25369',N'Đồng Tâm',N'Dong Tam',N'Xã Đồng Tâm',N'Dong Tam Commune','dong_tam','695',10),
 ('25372',N'Tân Phước',N'Tan Phuoc',N'Xã Tân Phước',N'Tan Phuoc Commune','tan_phuoc','695',10),
 ('25375',N'Tân Hưng',N'Tan Hung',N'Xã Tân Hưng',N'Tan Hung Commune','tan_hung','695',10),
@@ -9405,16 +9354,15 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('25456',N'1',N'1',N'Phường 1',N'Ward 1','1','703',8),
 ('25459',N'3',N'3',N'Phường 3',N'Ward 3','3','703',8),
 ('25462',N'4',N'4',N'Phường 4',N'Ward 4','4','703',8),
-('25465',N'Hiệp Ninh',N'Hiep Ninh',N'Phường Hiệp Ninh',N'Hiep Ninh Ward','hiep_ninh','703',8),
-('25468',N'2',N'2',N'Phường 2',N'Ward 2','2','703',8),
-('25471',N'Thạnh Tân',N'Thanh Tan',N'Xã Thạnh Tân',N'Thanh Tan Commune','thanh_tan','703',10);
+('25465',N'Hiệp Ninh',N'Hiep Ninh',N'Phường Hiệp Ninh',N'Hiep Ninh Ward','hiep_ninh','703',8);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('25468',N'2',N'2',N'Phường 2',N'Ward 2','2','703',8),
+('25471',N'Thạnh Tân',N'Thanh Tan',N'Xã Thạnh Tân',N'Thanh Tan Commune','thanh_tan','703',10),
 ('25474',N'Tân Bình',N'Tan Binh',N'Xã Tân Bình',N'Tan Binh Commune','tan_binh','703',10),
 ('25477',N'Bình Minh',N'Binh Minh',N'Xã Bình Minh',N'Binh Minh Commune','binh_minh','703',10),
 ('25480',N'Ninh Sơn',N'Ninh Son',N'Phường Ninh Sơn',N'Ninh Son Ward','ninh_son','703',8),
 ('25483',N'Ninh Thạnh',N'Ninh Thanh',N'Phường Ninh Thạnh',N'Ninh Thanh Ward','ninh_thanh','703',8),
-('27334',N'05',N'05',N'Phường 05',N'Ward 05','05','774',8),
 ('25486',N'Tân Biên',N'Tan Bien',N'Thị trấn Tân Biên',N'Tan Bien Township','tan_bien','705',9),
 ('25489',N'Tân Lập',N'Tan Lap',N'Xã Tân Lập',N'Tan Lap Commune','tan_lap','705',10),
 ('25492',N'Thạnh Bắc',N'Thanh Bac',N'Xã Thạnh Bắc',N'Thanh Bac Commune','thanh_bac','705',10),
@@ -9458,10 +9406,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('25606',N'Hòa Thạnh',N'Hoa Thanh',N'Xã Hòa Thạnh',N'Hoa Thanh Commune','hoa_thanh','708',10),
 ('25609',N'Trí Bình',N'Tri Binh',N'Xã Trí Bình',N'Tri Binh Commune','tri_binh','708',10),
 ('25612',N'Hòa Hội',N'Hoa Hoi',N'Xã Hòa Hội',N'Hoa Hoi Commune','hoa_hoi','708',10),
-('25615',N'An Bình',N'An Binh',N'Xã An Bình',N'An Binh Commune','an_binh','708',10),
-('25618',N'Thanh Điền',N'Thanh Dien',N'Xã Thanh Điền',N'Thanh Dien Commune','thanh_dien','708',10);
+('25615',N'An Bình',N'An Binh',N'Xã An Bình',N'An Binh Commune','an_binh','708',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('25618',N'Thanh Điền',N'Thanh Dien',N'Xã Thanh Điền',N'Thanh Dien Commune','thanh_dien','708',10),
 ('25621',N'Thành Long',N'Thanh Long',N'Xã Thành Long',N'Thanh Long Commune','thanh_long','708',10),
 ('25624',N'Ninh Điền',N'Ninh Dien',N'Xã Ninh Điền',N'Ninh Dien Commune','ninh_dien','708',10),
 ('25627',N'Long Vĩnh',N'Long Vinh',N'Xã Long Vĩnh',N'Long Vinh Commune','long_vinh','708',10),
@@ -9510,10 +9458,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('25759',N'Định Hoà',N'Dinh Hoa',N'Phường Định Hoà',N'Dinh Hoa Ward','dinh_hoa','718',8),
 ('25760',N'Hoà Phú',N'Hoa Phu',N'Phường Hoà Phú',N'Hoa Phu Ward','hoa_phu','718',8),
 ('25762',N'Phú Mỹ',N'Phu My',N'Phường Phú Mỹ',N'Phu My Ward','phu_my','718',8),
-('25763',N'Phú Tân',N'Phu Tan',N'Phường Phú Tân',N'Phu Tan Ward','phu_tan','718',8),
-('25765',N'Tân An',N'Tan An',N'Phường Tân An',N'Tan An Ward','tan_an','718',8);
+('25763',N'Phú Tân',N'Phu Tan',N'Phường Phú Tân',N'Phu Tan Ward','phu_tan','718',8);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('25765',N'Tân An',N'Tan An',N'Phường Tân An',N'Tan An Ward','tan_an','718',8),
 ('25768',N'Hiệp An',N'Hiep An',N'Phường Hiệp An',N'Hiep An Ward','hiep_an','718',8),
 ('25771',N'Tương Bình Hiệp',N'Tuong Binh Hiep',N'Phường Tương Bình Hiệp',N'Tuong Binh Hiep Ward','tuong_binh_hiep','718',8),
 ('25774',N'Chánh Mỹ',N'Chanh My',N'Phường Chánh Mỹ',N'Chanh My Ward','chanh_my','718',8),
@@ -9562,10 +9510,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('25920',N'Tân Hiệp',N'Tan Hiep',N'Phường Tân Hiệp',N'Tan Hiep Ward','tan_hiep','723',8),
 ('25921',N'Khánh Bình',N'Khanh Binh',N'Phường Khánh Bình',N'Khanh Binh Ward','khanh_binh','723',8),
 ('25924',N'Phú Chánh',N'Phu Chanh',N'Phường Phú Chánh',N'Phu Chanh Ward','phu_chanh','723',8),
-('25930',N'Bạch Đằng',N'Bach Dang',N'Xã Bạch Đằng',N'Bach Dang Commune','bach_dang','723',10),
-('25933',N'Tân Vĩnh Hiệp',N'Tan Vinh Hiep',N'Phường Tân Vĩnh Hiệp',N'Tan Vinh Hiep Ward','tan_vinh_hiep','723',8);
+('25930',N'Bạch Đằng',N'Bach Dang',N'Xã Bạch Đằng',N'Bach Dang Commune','bach_dang','723',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('25933',N'Tân Vĩnh Hiệp',N'Tan Vinh Hiep',N'Phường Tân Vĩnh Hiệp',N'Tan Vinh Hiep Ward','tan_vinh_hiep','723',8),
 ('25936',N'Thạnh Phước',N'Thanh Phuoc',N'Phường Thạnh Phước',N'Thanh Phuoc Ward','thanh_phuoc','723',8),
 ('25937',N'Thạnh Hội',N'Thanh Hoi',N'Xã Thạnh Hội',N'Thanh Hoi Commune','thanh_hoi','723',10),
 ('25939',N'Thái Hòa',N'Thai Hoa',N'Phường Thái Hòa',N'Thai Hoa Ward','thai_hoa','723',8),
@@ -9614,10 +9562,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('26038',N'Hòa Bình',N'Hoa Binh',N'Phường Hòa Bình',N'Hoa Binh Ward','hoa_binh','731',8),
 ('26041',N'Quyết Thắng',N'Quyet Thang',N'Phường Quyết Thắng',N'Quyet Thang Ward','quyet_thang','731',8),
 ('26044',N'Thanh Bình',N'Thanh Binh',N'Phường Thanh Bình',N'Thanh Binh Ward','thanh_binh','731',8),
-('26047',N'Bình Đa',N'Binh Da',N'Phường Bình Đa',N'Binh Da Ward','binh_da','731',8),
-('26050',N'An Bình',N'An Binh',N'Phường An Bình',N'An Binh Ward','an_binh','731',8);
+('26047',N'Bình Đa',N'Binh Da',N'Phường Bình Đa',N'Binh Da Ward','binh_da','731',8);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('26050',N'An Bình',N'An Binh',N'Phường An Bình',N'An Binh Ward','an_binh','731',8),
 ('26053',N'Bửu Hòa',N'Buu Hoa',N'Phường Bửu Hòa',N'Buu Hoa Ward','buu_hoa','731',8),
 ('26056',N'Long Bình Tân',N'Long Binh Tan',N'Phường Long Bình Tân',N'Long Binh Tan Ward','long_binh_tan','731',8),
 ('26059',N'Tân Vạn',N'Tan Van',N'Phường Tân Vạn',N'Tan Van Ward','tan_van','731',8),
@@ -9666,10 +9614,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('26176',N'Trị An',N'Tri An',N'Xã Trị An',N'Tri An Commune','tri_an','735',10),
 ('26179',N'Tân An',N'Tan An',N'Xã Tân An',N'Tan An Commune','tan_an','735',10),
 ('26182',N'Vĩnh Tân',N'Vinh Tan',N'Xã Vĩnh Tân',N'Vinh Tan Commune','vinh_tan','735',10),
-('26185',N'Bình Lợi',N'Binh Loi',N'Xã Bình Lợi',N'Binh Loi Commune','binh_loi','735',10),
-('26188',N'Thạnh Phú',N'Thanh Phu',N'Xã Thạnh Phú',N'Thanh Phu Commune','thanh_phu','735',10);
+('26185',N'Bình Lợi',N'Binh Loi',N'Xã Bình Lợi',N'Binh Loi Commune','binh_loi','735',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('26188',N'Thạnh Phú',N'Thanh Phu',N'Xã Thạnh Phú',N'Thanh Phu Commune','thanh_phu','735',10),
 ('26191',N'Thiện Tân',N'Thien Tan',N'Xã Thiện Tân',N'Thien Tan Commune','thien_tan','735',10),
 ('26194',N'Tân Bình',N'Tan Binh',N'Xã Tân Bình',N'Tan Binh Commune','tan_binh','735',10),
 ('26197',N'Bình Hòa',N'Binh Hoa',N'Xã Bình Hòa',N'Binh Hoa Commune','binh_hoa','735',10),
@@ -9718,10 +9666,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('26326',N'Dầu Giây',N'Dau Giay',N'Thị trấn Dầu Giây',N'Dau Giay Township','dau_giay','738',9),
 ('26329',N'Sông Nhạn',N'Song Nhan',N'Xã Sông Nhạn',N'Song Nhan Commune','song_nhan','739',10),
 ('26332',N'Xuân Quế',N'Xuan Que',N'Xã Xuân Quế',N'Xuan Que Commune','xuan_que','739',10),
-('26335',N'Nhân Nghĩa',N'Nhan Nghia',N'Xã Nhân Nghĩa',N'Nhan Nghia Commune','nhan_nghia','739',10),
-('26338',N'Xuân Đường',N'Xuan Duong',N'Xã Xuân Đường',N'Xuan Duong Commune','xuan_duong','739',10);
+('26335',N'Nhân Nghĩa',N'Nhan Nghia',N'Xã Nhân Nghĩa',N'Nhan Nghia Commune','nhan_nghia','739',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('26338',N'Xuân Đường',N'Xuan Duong',N'Xã Xuân Đường',N'Xuan Duong Commune','xuan_duong','739',10),
 ('26341',N'Long Giao',N'Long Giao',N'Thị trấn Long Giao',N'Long Giao Township','long_giao','739',9),
 ('26344',N'Xuân Mỹ',N'Xuan My',N'Xã Xuân Mỹ',N'Xuan My Commune','xuan_my','739',10),
 ('26347',N'Thừa Đức',N'Thua Duc',N'Xã Thừa Đức',N'Thua Duc Commune','thua_duc','739',10),
@@ -9770,10 +9718,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('26491',N'Phú Đông',N'Phu Dong',N'Xã Phú Đông',N'Phu Dong Commune','phu_dong','742',10),
 ('26494',N'Long Thọ',N'Long Tho',N'Xã Long Thọ',N'Long Tho Commune','long_tho','742',10),
 ('26497',N'Vĩnh Thanh',N'Vinh Thanh',N'Xã Vĩnh Thanh',N'Vinh Thanh Commune','vinh_thanh','742',10),
-('26500',N'Phước Khánh',N'Phuoc Khanh',N'Xã Phước Khánh',N'Phuoc Khanh Commune','phuoc_khanh','742',10),
-('26503',N'Phước An',N'Phuoc An',N'Xã Phước An',N'Phuoc An Commune','phuoc_an','742',10);
+('26500',N'Phước Khánh',N'Phuoc Khanh',N'Xã Phước Khánh',N'Phuoc Khanh Commune','phuoc_khanh','742',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('26503',N'Phước An',N'Phuoc An',N'Xã Phước An',N'Phuoc An Commune','phuoc_an','742',10),
 ('26506',N'1',N'1',N'Phường 1',N'Ward 1','1','747',8),
 ('26508',N'Thắng Tam',N'Thang Tam',N'Phường Thắng Tam',N'Thang Tam Ward','thang_tam','747',8),
 ('26509',N'2',N'2',N'Phường 2',N'Ward 2','2','747',8),
@@ -9822,10 +9770,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('26623',N'Phước Thuận',N'Phuoc Thuan',N'Xã Phước Thuận',N'Phuoc Thuan Commune','phuoc_thuan','751',10),
 ('26626',N'Phước Tân',N'Phuoc Tan',N'Xã Phước Tân',N'Phuoc Tan Commune','phuoc_tan','751',10),
 ('26629',N'Xuyên Mộc',N'Xuyen Moc',N'Xã Xuyên Mộc',N'Xuyen Moc Commune','xuyen_moc','751',10),
-('26632',N'Bông Trang',N'Bong Trang',N'Xã Bông Trang',N'Bong Trang Commune','bong_trang','751',10),
-('26635',N'Tân Lâm',N'Tan Lam',N'Xã Tân Lâm',N'Tan Lam Commune','tan_lam','751',10);
+('26632',N'Bông Trang',N'Bong Trang',N'Xã Bông Trang',N'Bong Trang Commune','bong_trang','751',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('26635',N'Tân Lâm',N'Tan Lam',N'Xã Tân Lâm',N'Tan Lam Commune','tan_lam','751',10),
 ('26638',N'Bàu Lâm',N'Bau Lam',N'Xã Bàu Lâm',N'Bau Lam Commune','bau_lam','751',10),
 ('26641',N'Hòa Bình',N'Hoa Binh',N'Xã Hòa Bình',N'Hoa Binh Commune','hoa_binh','751',10),
 ('26644',N'Hòa Hưng',N'Hoa Hung',N'Xã Hòa Hưng',N'Hoa Hung Commune','hoa_hung','751',10),
@@ -9874,10 +9822,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('26773',N'Thới An',N'Thoi An',N'Phường Thới An',N'Thoi An Ward','thoi_an','761',8),
 ('26776',N'Tân Chánh Hiệp',N'Tan Chanh Hiep',N'Phường Tân Chánh Hiệp',N'Tan Chanh Hiep Ward','tan_chanh_hiep','761',8),
 ('26779',N'An Phú Đông',N'An Phu Dong',N'Phường An Phú Đông',N'An Phu Dong Ward','an_phu_dong','761',8),
-('26782',N'Tân Thới Hiệp',N'Tan Thoi Hiep',N'Phường Tân Thới Hiệp',N'Tan Thoi Hiep Ward','tan_thoi_hiep','761',8),
-('26785',N'Trung Mỹ Tây',N'Trung My Tay',N'Phường Trung Mỹ Tây',N'Trung My Tay Ward','trung_my_tay','761',8);
+('26782',N'Tân Thới Hiệp',N'Tan Thoi Hiep',N'Phường Tân Thới Hiệp',N'Tan Thoi Hiep Ward','tan_thoi_hiep','761',8);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('26785',N'Trung Mỹ Tây',N'Trung My Tay',N'Phường Trung Mỹ Tây',N'Trung My Tay Ward','trung_my_tay','761',8),
 ('26787',N'Tân Hưng Thuận',N'Tan Hung Thuan',N'Phường Tân Hưng Thuận',N'Tan Hung Thuan Ward','tan_hung_thuan','761',8),
 ('26788',N'Đông Hưng Thuận',N'Dong Hung Thuan',N'Phường Đông Hưng Thuận',N'Dong Hung Thuan Ward','dong_hung_thuan','761',8),
 ('26791',N'Tân Thới Nhất',N'Tan Thoi Nhat',N'Phường Tân Thới Nhất',N'Tan Thoi Nhat Ward','tan_thoi_nhat','761',8),
@@ -9926,10 +9874,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('26983',N'11',N'11',N'Phường 11',N'Ward 11','11','766',8),
 ('26986',N'07',N'07',N'Phường 07',N'Ward 07','07','766',8),
 ('26989',N'05',N'05',N'Phường 05',N'Ward 05','05','766',8),
-('26992',N'10',N'10',N'Phường 10',N'Ward 10','10','766',8),
-('26995',N'06',N'06',N'Phường 06',N'Ward 06','06','766',8);
+('26992',N'10',N'10',N'Phường 10',N'Ward 10','10','766',8);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('26995',N'06',N'06',N'Phường 06',N'Ward 06','06','766',8),
 ('26998',N'08',N'08',N'Phường 08',N'Ward 08','08','766',8),
 ('27001',N'09',N'09',N'Phường 09',N'Ward 09','09','766',8),
 ('27004',N'14',N'14',N'Phường 14',N'Ward 14','14','766',8),
@@ -9978,10 +9926,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('26845',N'Tăng Nhơn Phú B',N'Tang Nhon Phu B',N'Phường Tăng Nhơn Phú B',N'Tang Nhon Phu B Ward','tang_nhon_phu_b','769',8),
 ('26848',N'Phước Long B',N'Phuoc Long B',N'Phường Phước Long B',N'Phuoc Long B Ward','phuoc_long_b','769',8),
 ('26851',N'Phước Long A',N'Phuoc Long A',N'Phường Phước Long A',N'Phuoc Long A Ward','phuoc_long_a','769',8),
-('26854',N'Trường Thạnh',N'Truong Thanh',N'Phường Trường Thạnh',N'Truong Thanh Ward','truong_thanh','769',8),
-('26857',N'Long Phước',N'Long Phuoc',N'Phường Long Phước',N'Long Phuoc Ward','long_phuoc','769',8);
+('26854',N'Trường Thạnh',N'Truong Thanh',N'Phường Trường Thạnh',N'Truong Thanh Ward','truong_thanh','769',8);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('26857',N'Long Phước',N'Long Phuoc',N'Phường Long Phước',N'Long Phuoc Ward','long_phuoc','769',8),
 ('26860',N'Long Trường',N'Long Truong',N'Phường Long Trường',N'Long Truong Ward','long_truong','769',8),
 ('26863',N'Phước Bình',N'Phuoc Binh',N'Phường Phước Bình',N'Phuoc Binh Ward','phuoc_binh','769',8),
 ('26866',N'Phú Hữu',N'Phu Huu',N'Phường Phú Hữu',N'Phu Huu Ward','phu_huu','769',8),
@@ -10030,10 +9978,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('27229',N'08',N'08',N'Phường 08',N'Ward 08','08','772',8),
 ('27232',N'09',N'09',N'Phường 09',N'Ward 09','09','772',8),
 ('27235',N'12',N'12',N'Phường 12',N'Ward 12','12','772',8),
-('27238',N'07',N'07',N'Phường 07',N'Ward 07','07','772',8),
-('27241',N'06',N'06',N'Phường 06',N'Ward 06','06','772',8);
+('27238',N'07',N'07',N'Phường 07',N'Ward 07','07','772',8);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('27241',N'06',N'06',N'Phường 06',N'Ward 06','06','772',8),
 ('27244',N'04',N'04',N'Phường 04',N'Ward 04','04','772',8),
 ('27247',N'01',N'01',N'Phường 01',N'Ward 01','01','772',8),
 ('27250',N'02',N'02',N'Phường 02',N'Ward 02','02','772',8),
@@ -10060,6 +10008,8 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('27322',N'07',N'07',N'Phường 07',N'Ward 07','07','774',8),
 ('27325',N'01',N'01',N'Phường 01',N'Ward 01','01','774',8),
 ('27328',N'11',N'11',N'Phường 11',N'Ward 11','11','774',8),
+('27331',N'14',N'14',N'Phường 14',N'Ward 14','14','774',8),
+('27334',N'05',N'05',N'Phường 05',N'Ward 05','05','774',8),
 ('27337',N'06',N'06',N'Phường 06',N'Ward 06','06','774',8),
 ('27340',N'10',N'10',N'Phường 10',N'Ward 10','10','774',8),
 ('27343',N'13',N'13',N'Phường 13',N'Ward 13','13','774',8),
@@ -10080,12 +10030,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('27388',N'08',N'08',N'Phường 08',N'Ward 08','08','776',8),
 ('27391',N'02',N'02',N'Phường 02',N'Ward 02','02','776',8),
 ('27394',N'01',N'01',N'Phường 01',N'Ward 01','01','776',8),
-('27397',N'03',N'03',N'Phường 03',N'Ward 03','03','776',8),
-('27400',N'11',N'11',N'Phường 11',N'Ward 11','11','776',8),
-('27403',N'09',N'09',N'Phường 09',N'Ward 09','09','776',8),
-('27406',N'10',N'10',N'Phường 10',N'Ward 10','10','776',8);
+('27397',N'03',N'03',N'Phường 03',N'Ward 03','03','776',8);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('27400',N'11',N'11',N'Phường 11',N'Ward 11','11','776',8),
+('27403',N'09',N'09',N'Phường 09',N'Ward 09','09','776',8),
+('27406',N'10',N'10',N'Phường 10',N'Ward 10','10','776',8),
 ('27409',N'04',N'04',N'Phường 04',N'Ward 04','04','776',8),
 ('27412',N'13',N'13',N'Phường 13',N'Ward 13','13','776',8),
 ('27415',N'12',N'12',N'Phường 12',N'Ward 12','12','776',8),
@@ -10121,6 +10071,7 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('27505',N'Trung Lập Thượng',N'Trung Lap Thuong',N'Xã Trung Lập Thượng',N'Trung Lap Thuong Commune','trung_lap_thuong','783',10),
 ('27508',N'An Nhơn Tây',N'An Nhon Tay',N'Xã An Nhơn Tây',N'An Nhon Tay Commune','an_nhon_tay','783',10),
 ('27511',N'Nhuận Đức',N'Nhuan Duc',N'Xã Nhuận Đức',N'Nhuan Duc Commune','nhuan_duc','783',10),
+('30331',N'Vĩnh Tế',N'Vinh Te',N'Xã Vĩnh Tế',N'Vinh Te Commune','vinh_te','884',10),
 ('27514',N'Phạm Văn Cội',N'Pham Van Coi',N'Xã Phạm Văn Cội',N'Pham Van Coi Commune','pham_van_coi','783',10),
 ('27517',N'Phú Hòa Đông',N'Phu Hoa Dong',N'Xã Phú Hòa Đông',N'Phu Hoa Dong Commune','phu_hoa_dong','783',10),
 ('27520',N'Trung Lập Hạ',N'Trung Lap Ha',N'Xã Trung Lập Hạ',N'Trung Lap Ha Commune','trung_lap_ha','783',10),
@@ -10131,13 +10082,13 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('27535',N'Phước Vĩnh An',N'Phuoc Vinh An',N'Xã Phước Vĩnh An',N'Phuoc Vinh An Commune','phuoc_vinh_an','783',10),
 ('27538',N'Thái Mỹ',N'Thai My',N'Xã Thái Mỹ',N'Thai My Commune','thai_my','783',10),
 ('27541',N'Tân Thạnh Tây',N'Tan Thanh Tay',N'Xã Tân Thạnh Tây',N'Tan Thanh Tay Commune','tan_thanh_tay','783',10),
-('27544',N'Hòa Phú',N'Hoa Phu',N'Xã Hòa Phú',N'Hoa Phu Commune','hoa_phu','783',10),
+('27544',N'Hòa Phú',N'Hoa Phu',N'Xã Hòa Phú',N'Hoa Phu Commune','hoa_phu','783',10);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('27547',N'Tân Thạnh Đông',N'Tan Thanh Dong',N'Xã Tân Thạnh Đông',N'Tan Thanh Dong Commune','tan_thanh_dong','783',10),
 ('27550',N'Bình Mỹ',N'Binh My',N'Xã Bình Mỹ',N'Binh My Commune','binh_my','783',10),
 ('27553',N'Tân Phú Trung',N'Tan Phu Trung',N'Xã Tân Phú Trung',N'Tan Phu Trung Commune','tan_phu_trung','783',10),
-('27556',N'Tân Thông Hội',N'Tan Thong Hoi',N'Xã Tân Thông Hội',N'Tan Thong Hoi Commune','tan_thong_hoi','783',10);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('27556',N'Tân Thông Hội',N'Tan Thong Hoi',N'Xã Tân Thông Hội',N'Tan Thong Hoi Commune','tan_thong_hoi','783',10),
 ('27559',N'Hóc Môn',N'Hoc Mon',N'Thị trấn Hóc Môn',N'Hoc Mon Township','hoc_mon','784',9),
 ('27562',N'Tân Hiệp',N'Tan Hiep',N'Xã Tân Hiệp',N'Tan Hiep Commune','tan_hiep','784',10),
 ('27565',N'Nhị Bình',N'Nhi Binh',N'Xã Nhị Bình',N'Nhi Binh Commune','nhi_binh','784',10),
@@ -10183,13 +10134,13 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('27685',N'5',N'5',N'Phường 5',N'Ward 5','5','794',8),
 ('27688',N'2',N'2',N'Phường 2',N'Ward 2','2','794',8),
 ('27691',N'4',N'4',N'Phường 4',N'Ward 4','4','794',8),
-('27692',N'Tân Khánh',N'Tan Khanh',N'Phường Tân Khánh',N'Tan Khanh Ward','tan_khanh','794',8),
+('27692',N'Tân Khánh',N'Tan Khanh',N'Phường Tân Khánh',N'Tan Khanh Ward','tan_khanh','794',8);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('27694',N'1',N'1',N'Phường 1',N'Ward 1','1','794',8),
 ('27697',N'3',N'3',N'Phường 3',N'Ward 3','3','794',8),
 ('27698',N'7',N'7',N'Phường 7',N'Ward 7','7','794',8),
-('27700',N'6',N'6',N'Phường 6',N'Ward 6','6','794',8);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('27700',N'6',N'6',N'Phường 6',N'Ward 6','6','794',8),
 ('27703',N'Hướng Thọ Phú',N'Huong Tho Phu',N'Xã Hướng Thọ Phú',N'Huong Tho Phu Commune','huong_tho_phu','794',10),
 ('27706',N'Nhơn Thạnh Trung',N'Nhon Thanh Trung',N'Xã Nhơn Thạnh Trung',N'Nhon Thanh Trung Commune','nhon_thanh_trung','794',10),
 ('27709',N'Lợi Bình Nhơn',N'Loi Binh Nhon',N'Xã Lợi Bình Nhơn',N'Loi Binh Nhon Commune','loi_binh_nhon','794',10),
@@ -10197,7 +10148,6 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('27715',N'Khánh Hậu',N'Khanh Hau',N'Phường Khánh Hậu',N'Khanh Hau Ward','khanh_hau','794',8),
 ('27718',N'An Vĩnh Ngãi',N'An Vinh Ngai',N'Xã An Vĩnh Ngãi',N'An Vinh Ngai Commune','an_vinh_ngai','794',10),
 ('27787',N'1',N'1',N'Phường 1',N'Ward 1','1','795',8),
-('27788',N'2',N'2',N'Phường 2',N'Ward 2','2','795',8),
 ('27790',N'Thạnh Trị',N'Thanh Tri',N'Xã Thạnh Trị',N'Thanh Tri Commune','thanh_tri','795',10),
 ('27793',N'Bình Hiệp',N'Binh Hiep',N'Xã Bình Hiệp',N'Binh Hiep Commune','binh_hiep','795',10),
 ('27799',N'Bình Tân',N'Binh Tan',N'Xã Bình Tân',N'Binh Tan Commune','binh_tan','795',10),
@@ -10236,12 +10186,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('27826',N'Tân Thạnh',N'Tan Thanh',N'Thị trấn Tân Thạnh',N'Tan Thanh Township','tan_thanh','799',9),
 ('27829',N'Bắc Hòa',N'Bac Hoa',N'Xã Bắc Hòa',N'Bac Hoa Commune','bac_hoa','799',10),
 ('27832',N'Hậu Thạnh Tây',N'Hau Thanh Tay',N'Xã Hậu Thạnh Tây',N'Hau Thanh Tay Commune','hau_thanh_tay','799',10),
-('27835',N'Nhơn Hòa Lập',N'Nhon Hoa Lap',N'Xã Nhơn Hòa Lập',N'Nhon Hoa Lap Commune','nhon_hoa_lap','799',10),
-('27838',N'Tân Lập',N'Tan Lap',N'Xã Tân Lập',N'Tan Lap Commune','tan_lap','799',10),
-('27841',N'Hậu Thạnh Đông',N'Hau Thanh Dong',N'Xã Hậu Thạnh Đông',N'Hau Thanh Dong Commune','hau_thanh_dong','799',10),
-('27844',N'Nhơn Hoà',N'Nhon Hoa',N'Xã Nhơn Hoà',N'Nhon Hoa Commune','nhon_hoa','799',10);
+('27835',N'Nhơn Hòa Lập',N'Nhon Hoa Lap',N'Xã Nhơn Hòa Lập',N'Nhon Hoa Lap Commune','nhon_hoa_lap','799',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('27838',N'Tân Lập',N'Tan Lap',N'Xã Tân Lập',N'Tan Lap Commune','tan_lap','799',10),
+('27841',N'Hậu Thạnh Đông',N'Hau Thanh Dong',N'Xã Hậu Thạnh Đông',N'Hau Thanh Dong Commune','hau_thanh_dong','799',10),
+('27844',N'Nhơn Hoà',N'Nhon Hoa',N'Xã Nhơn Hoà',N'Nhon Hoa Commune','nhon_hoa','799',10),
 ('27847',N'Kiến Bình',N'Kien Binh',N'Xã Kiến Bình',N'Kien Binh Commune','kien_binh','799',10),
 ('27850',N'Tân Thành',N'Tan Thanh',N'Xã Tân Thành',N'Tan Thanh Commune','tan_thanh','799',10),
 ('27853',N'Tân Bình',N'Tan Binh',N'Xã Tân Bình',N'Tan Binh Commune','tan_binh','799',10),
@@ -10268,6 +10218,7 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('27916',N'Bình Thành',N'Binh Thanh',N'Xã Bình Thành',N'Binh Thanh Commune','binh_thanh','801',10),
 ('27919',N'Bình Hòa Bắc',N'Binh Hoa Bac',N'Xã Bình Hòa Bắc',N'Binh Hoa Bac Commune','binh_hoa_bac','801',10),
 ('27922',N'Bình Hòa Hưng',N'Binh Hoa Hung',N'Xã Bình Hòa Hưng',N'Binh Hoa Hung Commune','binh_hoa_hung','801',10),
+('30541',N'Tân Lập',N'Tan Lap',N'Xã Tân Lập',N'Tan Lap Commune','tan_lap','890',10),
 ('27925',N'Bình Hòa Nam',N'Binh Hoa Nam',N'Xã Bình Hòa Nam',N'Binh Hoa Nam Commune','binh_hoa_nam','801',10),
 ('27928',N'Mỹ Bình',N'My Binh',N'Xã Mỹ Bình',N'My Binh Commune','my_binh','801',10),
 ('27931',N'Hậu Nghĩa',N'Hau Nghia',N'Thị trấn Hậu Nghĩa',N'Hau Nghia Township','hau_nghia','802',9),
@@ -10287,13 +10238,13 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('27973',N'Hòa Khánh Đông',N'Hoa Khanh Dong',N'Xã Hòa Khánh Đông',N'Hoa Khanh Dong Commune','hoa_khanh_dong','802',10),
 ('27976',N'Mỹ Hạnh Nam',N'My Hanh Nam',N'Xã Mỹ Hạnh Nam',N'My Hanh Nam Commune','my_hanh_nam','802',10),
 ('27979',N'Hòa Khánh Nam',N'Hoa Khanh Nam',N'Xã Hòa Khánh Nam',N'Hoa Khanh Nam Commune','hoa_khanh_nam','802',10),
-('27982',N'Đức Hòa Đông',N'Duc Hoa Dong',N'Xã Đức Hòa Đông',N'Duc Hoa Dong Commune','duc_hoa_dong','802',10),
+('27982',N'Đức Hòa Đông',N'Duc Hoa Dong',N'Xã Đức Hòa Đông',N'Duc Hoa Dong Commune','duc_hoa_dong','802',10);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('27985',N'Đức Hòa Hạ',N'Duc Hoa Ha',N'Xã Đức Hòa Hạ',N'Duc Hoa Ha Commune','duc_hoa_ha','802',10),
 ('27988',N'Hựu Thạnh',N'Huu Thanh',N'Xã Hựu Thạnh',N'Huu Thanh Commune','huu_thanh','802',10),
 ('27991',N'Bến Lức',N'Ben Luc',N'Thị trấn Bến Lức',N'Ben Luc Township','ben_luc','803',9),
-('27994',N'Thạnh Lợi',N'Thanh Loi',N'Xã Thạnh Lợi',N'Thanh Loi Commune','thanh_loi','803',10);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('27994',N'Thạnh Lợi',N'Thanh Loi',N'Xã Thạnh Lợi',N'Thanh Loi Commune','thanh_loi','803',10),
 ('27997',N'Lương Bình',N'Luong Binh',N'Xã Lương Bình',N'Luong Binh Commune','luong_binh','803',10),
 ('28000',N'Thạnh Hòa',N'Thanh Hoa',N'Xã Thạnh Hòa',N'Thanh Hoa Commune','thanh_hoa','803',10),
 ('28003',N'Lương Hòa',N'Luong Hoa',N'Xã Lương Hòa',N'Luong Hoa Commune','luong_hoa','803',10),
@@ -10339,13 +10290,13 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('28129',N'Long Sơn',N'Long Son',N'Xã Long Sơn',N'Long Son Commune','long_son','806',10),
 ('28132',N'Tân Trạch',N'Tan Trach',N'Xã Tân Trạch',N'Tan Trach Commune','tan_trach','806',10),
 ('28135',N'Mỹ Lệ',N'My Le',N'Xã Mỹ Lệ',N'My Le Commune','my_le','806',10),
-('28138',N'Tân Lân',N'Tan Lan',N'Xã Tân Lân',N'Tan Lan Commune','tan_lan','806',10),
+('28138',N'Tân Lân',N'Tan Lan',N'Xã Tân Lân',N'Tan Lan Commune','tan_lan','806',10);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('28141',N'Phước Tuy',N'Phuoc Tuy',N'Xã Phước Tuy',N'Phuoc Tuy Commune','phuoc_tuy','806',10),
 ('28144',N'Long Hựu Đông',N'Long Huu Dong',N'Xã Long Hựu Đông',N'Long Huu Dong Commune','long_huu_dong','806',10),
 ('28147',N'Tân Ân',N'Tan An',N'Xã Tân Ân',N'Tan An Commune','tan_an','806',10),
-('28150',N'Phước Đông',N'Phuoc Dong',N'Xã Phước Đông',N'Phuoc Dong Commune','phuoc_dong','806',10);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('28150',N'Phước Đông',N'Phuoc Dong',N'Xã Phước Đông',N'Phuoc Dong Commune','phuoc_dong','806',10),
 ('28153',N'Long Hựu Tây',N'Long Huu Tay',N'Xã Long Hựu Tây',N'Long Huu Tay Commune','long_huu_tay','806',10),
 ('28156',N'Tân Chánh',N'Tan Chanh',N'Xã Tân Chánh',N'Tan Chanh Commune','tan_chanh','806',10),
 ('28159',N'Cần Giuộc',N'Can Giuoc',N'Thị trấn Cần Giuộc',N'Can Giuoc Township','can_giuoc','807',9),
@@ -10391,13 +10342,13 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('28285',N'Trung An',N'Trung An',N'Xã Trung An',N'Trung An Commune','trung_an','815',10),
 ('28288',N'Mỹ Phong',N'My Phong',N'Xã Mỹ Phong',N'My Phong Commune','my_phong','815',10),
 ('28291',N'Tân Mỹ Chánh',N'Tan My Chanh',N'Xã Tân Mỹ Chánh',N'Tan My Chanh Commune','tan_my_chanh','815',10),
-('28567',N'Phước Thạnh',N'Phuoc Thanh',N'Xã Phước Thạnh',N'Phuoc Thanh Commune','phuoc_thanh','815',10),
+('28567',N'Phước Thạnh',N'Phuoc Thanh',N'Xã Phước Thạnh',N'Phuoc Thanh Commune','phuoc_thanh','815',10);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('28591',N'Thới Sơn',N'Thoi Son',N'Xã Thới Sơn',N'Thoi Son Commune','thoi_son','815',10),
 ('28297',N'2',N'2',N'Phường 2',N'Ward 2','2','816',8),
 ('28300',N'1',N'1',N'Phường 1',N'Ward 1','1','816',8),
-('28306',N'5',N'5',N'Phường 5',N'Ward 5','5','816',8);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('28306',N'5',N'5',N'Phường 5',N'Ward 5','5','816',8),
 ('28309',N'Long Hưng',N'Long Hung',N'Phường Long Hưng',N'Long Hung Ward','long_hung','816',8),
 ('28312',N'Long Thuận',N'Long Thuan',N'Phường Long Thuận',N'Long Thuan Ward','long_thuan','816',8),
 ('28315',N'Long Chánh',N'Long Chanh',N'Phường Long Chánh',N'Long Chanh Ward','long_chanh','816',8),
@@ -10443,13 +10394,13 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('28381',N'Mỹ Lợi B',N'My Loi B',N'Xã Mỹ Lợi B',N'My Loi B Commune','my_loi_b','819',10),
 ('28384',N'Thiện Trung',N'Thien Trung',N'Xã Thiện Trung',N'Thien Trung Commune','thien_trung','819',10),
 ('28387',N'Mỹ Hội',N'My Hoi',N'Xã Mỹ Hội',N'My Hoi Commune','my_hoi','819',10),
-('28390',N'An Cư',N'An Cu',N'Xã An Cư',N'An Cu Commune','an_cu','819',10),
+('28390',N'An Cư',N'An Cu',N'Xã An Cư',N'An Cu Commune','an_cu','819',10);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('28393',N'Hậu Thành',N'Hau Thanh',N'Xã Hậu Thành',N'Hau Thanh Commune','hau_thanh','819',10),
 ('28396',N'Mỹ Lợi A',N'My Loi A',N'Xã Mỹ Lợi A',N'My Loi A Commune','my_loi_a','819',10),
 ('28399',N'Hòa Khánh',N'Hoa Khanh',N'Xã Hòa Khánh',N'Hoa Khanh Commune','hoa_khanh','819',10),
-('28402',N'Thiện Trí',N'Thien Tri',N'Xã Thiện Trí',N'Thien Tri Commune','thien_tri','819',10);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('28402',N'Thiện Trí',N'Thien Tri',N'Xã Thiện Trí',N'Thien Tri Commune','thien_tri','819',10),
 ('28405',N'Mỹ Đức Đông',N'My Duc Dong',N'Xã Mỹ Đức Đông',N'My Duc Dong Commune','my_duc_dong','819',10),
 ('28408',N'Mỹ Đức Tây',N'My Duc Tay',N'Xã Mỹ Đức Tây',N'My Duc Tay Commune','my_duc_tay','819',10),
 ('28411',N'Đông Hòa Hiệp',N'Dong Hoa Hiep',N'Xã Đông Hòa Hiệp',N'Dong Hoa Hiep Commune','dong_hoa_hiep','819',10),
@@ -10495,13 +10446,13 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('28570',N'Thạnh Phú',N'Thanh Phu',N'Xã Thạnh Phú',N'Thanh Phu Commune','thanh_phu','821',10),
 ('28573',N'Bàn Long',N'Ban Long',N'Xã Bàn Long',N'Ban Long Commune','ban_long','821',10),
 ('28576',N'Vĩnh Kim',N'Vinh Kim',N'Xã Vĩnh Kim',N'Vinh Kim Commune','vinh_kim','821',10),
-('28579',N'Bình Đức',N'Binh Duc',N'Xã Bình Đức',N'Binh Duc Commune','binh_duc','821',10),
+('28579',N'Bình Đức',N'Binh Duc',N'Xã Bình Đức',N'Binh Duc Commune','binh_duc','821',10);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('28582',N'Song Thuận',N'Song Thuan',N'Xã Song Thuận',N'Song Thuan Commune','song_thuan','821',10),
 ('28585',N'Kim Sơn',N'Kim Son',N'Xã Kim Sơn',N'Kim Son Commune','kim_son','821',10),
 ('28588',N'Phú Phong',N'Phu Phong',N'Xã Phú Phong',N'Phu Phong Commune','phu_phong','821',10),
-('28594',N'Chợ Gạo',N'Cho Gao',N'Thị trấn Chợ Gạo',N'Cho Gao Township','cho_gao','822',9);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('28594',N'Chợ Gạo',N'Cho Gao',N'Thị trấn Chợ Gạo',N'Cho Gao Township','cho_gao','822',9),
 ('28597',N'Trung Hòa',N'Trung Hoa',N'Xã Trung Hòa',N'Trung Hoa Commune','trung_hoa','822',10),
 ('28600',N'Hòa Tịnh',N'Hoa Tinh',N'Xã Hòa Tịnh',N'Hoa Tinh Commune','hoa_tinh','822',10),
 ('28603',N'Mỹ Tịnh An',N'My Tinh An',N'Xã Mỹ Tịnh An',N'My Tinh An Commune','my_tinh_an','822',10),
@@ -10515,7 +10466,6 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('28627',N'Tân Thuận Bình',N'Tan Thuan Binh',N'Xã Tân Thuận Bình',N'Tan Thuan Binh Commune','tan_thuan_binh','822',10),
 ('28630',N'Song Bình',N'Song Binh',N'Xã Song Bình',N'Song Binh Commune','song_binh','822',10),
 ('28633',N'Bình Phan',N'Binh Phan',N'Xã Bình Phan',N'Binh Phan Commune','binh_phan','822',10),
-('29746',N'Mỹ Lộc',N'My Loc',N'Xã Mỹ Lộc',N'My Loc Commune','my_loc','860',10),
 ('28636',N'Long Bình Điền',N'Long Binh Dien',N'Xã Long Bình Điền',N'Long Binh Dien Commune','long_binh_dien','822',10),
 ('28639',N'An Thạnh Thủy',N'An Thanh Thuy',N'Xã An Thạnh Thủy',N'An Thanh Thuy Commune','an_thanh_thuy','822',10),
 ('28642',N'Xuân Đông',N'Xuan Dong',N'Xã Xuân Đông',N'Xuan Dong Commune','xuan_dong','822',10),
@@ -10548,12 +10498,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('28744',N'Phước Trung',N'Phuoc Trung',N'Xã Phước Trung',N'Phuoc Trung Commune','phuoc_trung','824',10),
 ('28747',N'Tân Thành',N'Tan Thanh',N'Xã Tân Thành',N'Tan Thanh Commune','tan_thanh','824',10),
 ('28690',N'Tân Thới',N'Tan Thoi',N'Xã Tân Thới',N'Tan Thoi Commune','tan_thoi','825',10),
-('28693',N'Tân Phú',N'Tan Phu',N'Xã Tân Phú',N'Tan Phu Commune','tan_phu','825',10),
-('28696',N'Phú Thạnh',N'Phu Thanh',N'Xã Phú Thạnh',N'Phu Thanh Commune','phu_thanh','825',10),
-('28699',N'Tân Thạnh',N'Tan Thanh',N'Xã Tân Thạnh',N'Tan Thanh Commune','tan_thanh','825',10),
-('28750',N'Phú Đông',N'Phu Dong',N'Xã Phú Đông',N'Phu Dong Commune','phu_dong','825',10);
+('28693',N'Tân Phú',N'Tan Phu',N'Xã Tân Phú',N'Tan Phu Commune','tan_phu','825',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('28696',N'Phú Thạnh',N'Phu Thanh',N'Xã Phú Thạnh',N'Phu Thanh Commune','phu_thanh','825',10),
+('28699',N'Tân Thạnh',N'Tan Thanh',N'Xã Tân Thạnh',N'Tan Thanh Commune','tan_thanh','825',10),
+('28750',N'Phú Đông',N'Phu Dong',N'Xã Phú Đông',N'Phu Dong Commune','phu_dong','825',10),
 ('28753',N'Phú Tân',N'Phu Tan',N'Xã Phú Tân',N'Phu Tan Commune','phu_tan','825',10),
 ('28756',N'Phú Khương',N'Phu Khuong',N'Phường Phú Khương',N'Phu Khuong Ward','phu_khuong','829',8),
 ('28757',N'Phú Tân',N'Phu Tan',N'Phường Phú Tân',N'Phu Tan Ward','phu_tan','829',8),
@@ -10600,12 +10550,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('28891',N'Tân Thiềng',N'Tan Thieng',N'Xã Tân Thiềng',N'Tan Thieng Commune','tan_thieng','832',10),
 ('28894',N'Vĩnh Thành',N'Vinh Thanh',N'Xã Vĩnh Thành',N'Vinh Thanh Commune','vinh_thanh','832',10),
 ('28897',N'Vĩnh Hòa',N'Vinh Hoa',N'Xã Vĩnh Hòa',N'Vinh Hoa Commune','vinh_hoa','832',10),
-('28900',N'Hưng Khánh Trung B',N'Hung Khanh Trung B',N'Xã Hưng Khánh Trung B',N'Hung Khanh Trung B Commune','hung_khanh_trung_b','832',10),
-('28903',N'Mỏ Cày',N'Mo Cay',N'Thị trấn Mỏ Cày',N'Mo Cay Township','mo_cay','833',9),
-('28930',N'Định Thủy',N'Dinh Thuy',N'Xã Định Thủy',N'Dinh Thuy Commune','dinh_thuy','833',10),
-('28939',N'Đa Phước Hội',N'Da Phuoc Hoi',N'Xã Đa Phước Hội',N'Da Phuoc Hoi Commune','da_phuoc_hoi','833',10);
+('28900',N'Hưng Khánh Trung B',N'Hung Khanh Trung B',N'Xã Hưng Khánh Trung B',N'Hung Khanh Trung B Commune','hung_khanh_trung_b','832',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('28903',N'Mỏ Cày',N'Mo Cay',N'Thị trấn Mỏ Cày',N'Mo Cay Township','mo_cay','833',9),
+('28930',N'Định Thủy',N'Dinh Thuy',N'Xã Định Thủy',N'Dinh Thuy Commune','dinh_thuy','833',10),
+('28939',N'Đa Phước Hội',N'Da Phuoc Hoi',N'Xã Đa Phước Hội',N'Da Phuoc Hoi Commune','da_phuoc_hoi','833',10),
 ('28940',N'Tân Hội',N'Tan Hoi',N'Xã Tân Hội',N'Tan Hoi Commune','tan_hoi','833',10),
 ('28942',N'Phước Hiệp',N'Phuoc Hiep',N'Xã Phước Hiệp',N'Phuoc Hiep Commune','phuoc_hiep','833',10),
 ('28945',N'Bình Khánh',N'Binh Khanh',N'Xã Bình Khánh',N'Binh Khanh Commune','binh_khanh','833',10),
@@ -10652,12 +10602,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('29077',N'Lộc Thuận',N'Loc Thuan',N'Xã Lộc Thuận',N'Loc Thuan Commune','loc_thuan','835',10),
 ('29080',N'Định Trung',N'Dinh Trung',N'Xã Định Trung',N'Dinh Trung Commune','dinh_trung','835',10),
 ('29083',N'Thới Lai',N'Thoi Lai',N'Xã Thới Lai',N'Thoi Lai Commune','thoi_lai','835',10),
-('29086',N'Bình Thới',N'Binh Thoi',N'Xã Bình Thới',N'Binh Thoi Commune','binh_thoi','835',10),
-('29089',N'Phú Long',N'Phu Long',N'Xã Phú Long',N'Phu Long Commune','phu_long','835',10),
-('29092',N'Bình Thắng',N'Binh Thang',N'Xã Bình Thắng',N'Binh Thang Commune','binh_thang','835',10),
-('29095',N'Thạnh Trị',N'Thanh Tri',N'Xã Thạnh Trị',N'Thanh Tri Commune','thanh_tri','835',10);
+('29086',N'Bình Thới',N'Binh Thoi',N'Xã Bình Thới',N'Binh Thoi Commune','binh_thoi','835',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('29089',N'Phú Long',N'Phu Long',N'Xã Phú Long',N'Phu Long Commune','phu_long','835',10),
+('29092',N'Bình Thắng',N'Binh Thang',N'Xã Bình Thắng',N'Binh Thang Commune','binh_thang','835',10),
+('29095',N'Thạnh Trị',N'Thanh Tri',N'Xã Thạnh Trị',N'Thanh Tri Commune','thanh_tri','835',10),
 ('29098',N'Đại Hòa Lộc',N'Dai Hoa Loc',N'Xã Đại Hòa Lộc',N'Dai Hoa Loc Commune','dai_hoa_loc','835',10),
 ('29101',N'Thừa Đức',N'Thua Duc',N'Xã Thừa Đức',N'Thua Duc Commune','thua_duc','835',10),
 ('29104',N'Thạnh Phước',N'Thanh Phuoc',N'Xã Thạnh Phước',N'Thanh Phuoc Commune','thanh_phuoc','835',10),
@@ -10704,12 +10654,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('29230',N'Thạnh Phong',N'Thanh Phong',N'Xã Thạnh Phong',N'Thanh Phong Commune','thanh_phong','837',10),
 ('29233',N'Mỹ An',N'My An',N'Xã Mỹ An',N'My An Commune','my_an','837',10),
 ('28889',N'Phú Mỹ',N'Phu My',N'Xã Phú Mỹ',N'Phu My Commune','phu_my','838',10),
-('28901',N'Hưng Khánh Trung A',N'Hung Khanh Trung A',N'Xã Hưng Khánh Trung A',N'Hung Khanh Trung A Commune','hung_khanh_trung_a','838',10),
-('28906',N'Thanh Tân',N'Thanh Tan',N'Xã Thanh Tân',N'Thanh Tan Commune','thanh_tan','838',10),
-('28909',N'Thạnh Ngãi',N'Thanh Ngai',N'Xã Thạnh Ngãi',N'Thanh Ngai Commune','thanh_ngai','838',10),
-('28912',N'Tân Phú Tây',N'Tan Phu Tay',N'Xã Tân Phú Tây',N'Tan Phu Tay Commune','tan_phu_tay','838',10);
+('28901',N'Hưng Khánh Trung A',N'Hung Khanh Trung A',N'Xã Hưng Khánh Trung A',N'Hung Khanh Trung A Commune','hung_khanh_trung_a','838',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('28906',N'Thanh Tân',N'Thanh Tan',N'Xã Thanh Tân',N'Thanh Tan Commune','thanh_tan','838',10),
+('28909',N'Thạnh Ngãi',N'Thanh Ngai',N'Xã Thạnh Ngãi',N'Thanh Ngai Commune','thanh_ngai','838',10),
+('28912',N'Tân Phú Tây',N'Tan Phu Tay',N'Xã Tân Phú Tây',N'Tan Phu Tay Commune','tan_phu_tay','838',10),
 ('28915',N'Phước Mỹ Trung',N'Phuoc My Trung',N'Thị trấn Phước Mỹ Trung',N'Phuoc My Trung Township','phuoc_my_trung','838',9),
 ('28918',N'Tân Thành Bình',N'Tan Thanh Binh',N'Xã Tân Thành Bình',N'Tan Thanh Binh Commune','tan_thanh_binh','838',10),
 ('28921',N'Thành An',N'Thanh An',N'Xã Thành An',N'Thanh An Commune','thanh_an','838',10),
@@ -10723,10 +10673,6 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('29242',N'3',N'3',N'Phường 3',N'Ward 3','3','842',8),
 ('29245',N'2',N'2',N'Phường 2',N'Ward 2','2','842',8),
 ('29248',N'5',N'5',N'Phường 5',N'Ward 5','5','842',8),
-('29251',N'6',N'6',N'Phường 6',N'Ward 6','6','842',8),
-('29254',N'7',N'7',N'Phường 7',N'Ward 7','7','842',8),
-('29257',N'8',N'8',N'Phường 8',N'Ward 8','8','842',8),
-('29260',N'9',N'9',N'Phường 9',N'Ward 9','9','842',8),
 ('29263',N'Long Đức',N'Long Duc',N'Xã Long Đức',N'Long Duc Commune','long_duc','842',10),
 ('29266',N'Càng Long',N'Cang Long',N'Thị trấn Càng Long',N'Cang Long Township','cang_long','844',9),
 ('29269',N'Mỹ Cẩm',N'My Cam',N'Xã Mỹ Cẩm',N'My Cam Commune','my_cam','844',10),
@@ -10759,10 +10705,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('29350',N'Hiếu Tử',N'Hieu Tu',N'Xã Hiếu Tử',N'Hieu Tu Commune','hieu_tu','846',10),
 ('29353',N'Hiếu Trung',N'Hieu Trung',N'Xã Hiếu Trung',N'Hieu Trung Commune','hieu_trung','846',10),
 ('29356',N'Long Thới',N'Long Thoi',N'Xã Long Thới',N'Long Thoi Commune','long_thoi','846',10),
-('29359',N'Hùng Hòa',N'Hung Hoa',N'Xã Hùng Hòa',N'Hung Hoa Commune','hung_hoa','846',10);
+('29359',N'Hùng Hòa',N'Hung Hoa',N'Xã Hùng Hòa',N'Hung Hoa Commune','hung_hoa','846',10),
+('29362',N'Tân Hùng',N'Tan Hung',N'Xã Tân Hùng',N'Tan Hung Commune','tan_hung','846',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('29362',N'Tân Hùng',N'Tan Hung',N'Xã Tân Hùng',N'Tan Hung Commune','tan_hung','846',10),
 ('29365',N'Tập Ngãi',N'Tap Ngai',N'Xã Tập Ngãi',N'Tap Ngai Commune','tap_ngai','846',10),
 ('29368',N'Ngãi Hùng',N'Ngai Hung',N'Xã Ngãi Hùng',N'Ngai Hung Commune','ngai_hung','846',10),
 ('29371',N'Tân Hòa',N'Tan Hoa',N'Xã Tân Hòa',N'Tan Hoa Commune','tan_hoa','846',10),
@@ -10811,16 +10757,15 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('29494',N'Định An',N'Dinh An',N'Xã Định An',N'Dinh An Commune','dinh_an','849',10),
 ('29503',N'Ngọc Biên',N'Ngoc Bien',N'Xã Ngọc Biên',N'Ngoc Bien Commune','ngoc_bien','849',10),
 ('29506',N'Long Hiệp',N'Long Hiep',N'Xã Long Hiệp',N'Long Hiep Commune','long_hiep','849',10),
-('29509',N'Tân Hiệp',N'Tan Hiep',N'Xã Tân Hiệp',N'Tan Hiep Commune','tan_hiep','849',10);
+('29509',N'Tân Hiệp',N'Tan Hiep',N'Xã Tân Hiệp',N'Tan Hiep Commune','tan_hiep','849',10),
+('29497',N'Đôn Xuân',N'Don Xuan',N'Xã Đôn Xuân',N'Don Xuan Commune','don_xuan','850',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('29497',N'Đôn Xuân',N'Don Xuan',N'Xã Đôn Xuân',N'Don Xuan Commune','don_xuan','850',10),
 ('29500',N'Đôn Châu',N'Don Chau',N'Xã Đôn Châu',N'Don Chau Commune','don_chau','850',10),
 ('29513',N'Long Thành',N'Long Thanh',N'Thị trấn Long Thành',N'Long Thanh Township','long_thanh','850',9),
 ('29521',N'Long Khánh',N'Long Khanh',N'Xã Long Khánh',N'Long Khanh Commune','long_khanh','850',10),
 ('29530',N'Ngũ Lạc',N'Ngu Lac',N'Xã Ngũ Lạc',N'Ngu Lac Commune','ngu_lac','850',10),
 ('29533',N'Long Vĩnh',N'Long Vinh',N'Xã Long Vĩnh',N'Long Vinh Commune','long_vinh','850',10),
-('29749',N'Tân Phú',N'Tan Phu',N'Xã Tân Phú',N'Tan Phu Commune','tan_phu','860',10),
 ('29536',N'Đông Hải',N'Dong Hai',N'Xã Đông Hải',N'Dong Hai Commune','dong_hai','850',10),
 ('29512',N'1',N'1',N'Phường 1',N'Ward 1','1','851',8),
 ('29515',N'Long Toàn',N'Long Toan',N'Xã Long Toàn',N'Long Toan Commune','long_toan','851',10),
@@ -10863,11 +10808,11 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('29638',N'Hòa Tịnh',N'Hoa Tinh',N'Xã Hòa Tịnh',N'Hoa Tinh Commune','hoa_tinh','858',10),
 ('29641',N'Cái Nhum',N'Cai Nhum',N'Thị trấn Cái Nhum',N'Cai Nhum Township','cai_nhum','858',9),
 ('29644',N'Bình Phước',N'Binh Phuoc',N'Xã Bình Phước',N'Binh Phuoc Commune','binh_phuoc','858',10),
-('29647',N'Chánh An',N'Chanh An',N'Xã Chánh An',N'Chanh An Commune','chanh_an','858',10);
+('29647',N'Chánh An',N'Chanh An',N'Xã Chánh An',N'Chanh An Commune','chanh_an','858',10),
+('29650',N'Tân An Hội',N'Tan An Hoi',N'Xã Tân An Hội',N'Tan An Hoi Commune','tan_an_hoi','858',10),
+('29653',N'Tân Long',N'Tan Long',N'Xã Tân Long',N'Tan Long Commune','tan_long','858',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('29650',N'Tân An Hội',N'Tan An Hoi',N'Xã Tân An Hội',N'Tan An Hoi Commune','tan_an_hoi','858',10),
-('29653',N'Tân Long',N'Tan Long',N'Xã Tân Long',N'Tan Long Commune','tan_long','858',10),
 ('29656',N'Tân Long Hội',N'Tan Long Hoi',N'Xã Tân Long Hội',N'Tan Long Hoi Commune','tan_long_hoi','858',10),
 ('29659',N'Vũng Liêm',N'Vung Liem',N'Thị trấn Vũng Liêm',N'Vung Liem Township','vung_liem','859',9),
 ('29662',N'Tân Quới Trung',N'Tan Quoi Trung',N'Xã Tân Quới Trung',N'Tan Quoi Trung Commune','tan_quoi_trung','859',10),
@@ -10898,6 +10843,8 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('29737',N'Phú Lộc',N'Phu Loc',N'Xã Phú Lộc',N'Phu Loc Commune','phu_loc','860',10),
 ('29740',N'Song Phú',N'Song Phu',N'Xã Song Phú',N'Song Phu Commune','song_phu','860',10),
 ('29743',N'Hòa Hiệp',N'Hoa Hiep',N'Xã Hòa Hiệp',N'Hoa Hiep Commune','hoa_hiep','860',10),
+('29746',N'Mỹ Lộc',N'My Loc',N'Xã Mỹ Lộc',N'My Loc Commune','my_loc','860',10),
+('29749',N'Tân Phú',N'Tan Phu',N'Xã Tân Phú',N'Tan Phu Commune','tan_phu','860',10),
 ('29752',N'Long Phú',N'Long Phu',N'Xã Long Phú',N'Long Phu Commune','long_phu','860',10),
 ('29755',N'Mỹ Thạnh Trung',N'My Thanh Trung',N'Xã Mỹ Thạnh Trung',N'My Thanh Trung Commune','my_thanh_trung','860',10),
 ('29758',N'Tường Lộc',N'Tuong Loc',N'Xã Tường Lộc',N'Tuong Loc Commune','tuong_loc','860',10),
@@ -11105,7 +11052,6 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('30322',N'Vĩnh Mỹ',N'Vinh My',N'Phường Vĩnh Mỹ',N'Vinh My Ward','vinh_my','884',8),
 ('30325',N'Núi Sam',N'Nui Sam',N'Phường Núi Sam',N'Nui Sam Ward','nui_sam','884',8),
 ('30328',N'Vĩnh Ngươn',N'Vinh Nguon',N'Phường Vĩnh Ngươn',N'Vinh Nguon Ward','vinh_nguon','884',8),
-('30331',N'Vĩnh Tế',N'Vinh Te',N'Xã Vĩnh Tế',N'Vinh Te Commune','vinh_te','884',10),
 ('30334',N'Vĩnh Châu',N'Vinh Chau',N'Xã Vĩnh Châu',N'Vinh Chau Commune','vinh_chau','884',10),
 ('30337',N'An Phú',N'An Phu',N'Thị trấn An Phú',N'An Phu Township','an_phu','886',9),
 ('30340',N'Khánh An',N'Khanh An',N'Xã Khánh An',N'Khanh An Commune','khanh_an','886',10),
@@ -11123,11 +11069,10 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('30373',N'Đa Phước',N'Da Phuoc',N'Thị trấn Đa Phước',N'Da Phuoc Township','da_phuoc','886',9),
 ('30376',N'Long Thạnh',N'Long Thanh',N'Phường Long Thạnh',N'Long Thanh Ward','long_thanh','887',8),
 ('30377',N'Long Hưng',N'Long Hung',N'Phường Long Hưng',N'Long Hung Ward','long_hung','887',8),
-('31573',N'Phú Tâm',N'Phu Tam',N'Xã Phú Tâm',N'Phu Tam Commune','phu_tam','942',10);
+('30378',N'Long Châu',N'Long Chau',N'Phường Long Châu',N'Long Chau Ward','long_chau','887',8),
+('30379',N'Phú Lộc',N'Phu Loc',N'Xã Phú Lộc',N'Phu Loc Commune','phu_loc','887',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('30378',N'Long Châu',N'Long Chau',N'Phường Long Châu',N'Long Chau Ward','long_chau','887',8),
-('30379',N'Phú Lộc',N'Phu Loc',N'Xã Phú Lộc',N'Phu Loc Commune','phu_loc','887',10),
 ('30382',N'Vĩnh Xương',N'Vinh Xuong',N'Xã Vĩnh Xương',N'Vinh Xuong Commune','vinh_xuong','887',10),
 ('30385',N'Vĩnh Hòa',N'Vinh Hoa',N'Xã Vĩnh Hòa',N'Vinh Hoa Commune','vinh_hoa','887',10),
 ('30387',N'Tân Thạnh',N'Tan Thanh',N'Xã Tân Thạnh',N'Tan Thanh Commune','tan_thanh','887',10),
@@ -11175,16 +11120,15 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('30511',N'Nhơn Hưng',N'Nhon Hung',N'Phường Nhơn Hưng',N'Nhon Hung Ward','nhon_hung','890',8),
 ('30514',N'An Phú',N'An Phu',N'Phường An Phú',N'An Phu Ward','an_phu','890',8),
 ('30517',N'Thới Sơn',N'Thoi Son',N'Phường Thới Sơn',N'Thoi Son Ward','thoi_son','890',8),
-('30520',N'Tịnh Biên',N'Tinh Bien',N'Phường Tịnh Biên',N'Tinh Bien Ward','tinh_bien','890',8);
+('30520',N'Tịnh Biên',N'Tinh Bien',N'Phường Tịnh Biên',N'Tinh Bien Ward','tinh_bien','890',8),
+('30523',N'Văn Giáo',N'Van Giao',N'Xã Văn Giáo',N'Van Giao Commune','van_giao','890',10),
+('30526',N'An Cư',N'An Cu',N'Xã An Cư',N'An Cu Commune','an_cu','890',10);
 
 INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
-('30523',N'Văn Giáo',N'Van Giao',N'Xã Văn Giáo',N'Van Giao Commune','van_giao','890',10),
-('30526',N'An Cư',N'An Cu',N'Xã An Cư',N'An Cu Commune','an_cu','890',10),
 ('30529',N'An Nông',N'An Nong',N'Xã An Nông',N'An Nong Commune','an_nong','890',10),
 ('30532',N'Vĩnh Trung',N'Vinh Trung',N'Xã Vĩnh Trung',N'Vinh Trung Commune','vinh_trung','890',10),
 ('30535',N'Tân Lợi',N'Tan Loi',N'Xã Tân Lợi',N'Tan Loi Commune','tan_loi','890',10),
 ('30538',N'An Hảo',N'An Hao',N'Xã An Hảo',N'An Hao Commune','an_hao','890',10),
-('30541',N'Tân Lập',N'Tan Lap',N'Xã Tân Lập',N'Tan Lap Commune','tan_lap','890',10),
 ('30544',N'Tri Tôn',N'Tri Ton',N'Thị trấn Tri Tôn',N'Tri Ton Township','tri_ton','891',9),
 ('30547',N'Ba Chúc',N'Ba Chuc',N'Thị trấn Ba Chúc',N'Ba Chuc Township','ba_chuc','891',9),
 ('30550',N'Lạc Quới',N'Lac Quoi',N'Xã Lạc Quới',N'Lac Quoi Commune','lac_quoi','891',10),
@@ -11227,12 +11171,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('30661',N'Long Giang',N'Long Giang',N'Xã Long Giang',N'Long Giang Commune','long_giang','893',10),
 ('30664',N'Long Kiến',N'Long Kien',N'Xã Long Kiến',N'Long Kien Commune','long_kien','893',10),
 ('30667',N'Bình Phước Xuân',N'Binh Phuoc Xuan',N'Xã Bình Phước Xuân',N'Binh Phuoc Xuan Commune','binh_phuoc_xuan','893',10),
-('30670',N'An Thạnh Trung',N'An Thanh Trung',N'Xã An Thạnh Trung',N'An Thanh Trung Commune','an_thanh_trung','893',10);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('30670',N'An Thạnh Trung',N'An Thanh Trung',N'Xã An Thạnh Trung',N'An Thanh Trung Commune','an_thanh_trung','893',10),
 ('30673',N'Hội An',N'Hoi An',N'Thị trấn Hội An',N'Hoi An Township','hoi_an','893',9),
 ('30676',N'Hòa Bình',N'Hoa Binh',N'Xã Hòa Bình',N'Hoa Binh Commune','hoa_binh','893',10),
-('30679',N'Hòa An',N'Hoa An',N'Xã Hòa An',N'Hoa An Commune','hoa_an','893',10),
+('30679',N'Hòa An',N'Hoa An',N'Xã Hòa An',N'Hoa An Commune','hoa_an','893',10);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('30682',N'Núi Sập',N'Nui Sap',N'Thị trấn Núi Sập',N'Nui Sap Township','nui_sap','894',9),
 ('30685',N'Phú Hoà',N'Phu Hoa',N'Thị trấn Phú Hoà',N'Phu Hoa Township','phu_hoa','894',9),
 ('30688',N'Óc Eo',N'Oc Eo',N'Thị trấn Óc Eo',N'Oc Eo Township','oc_eo','894',9),
@@ -11279,12 +11223,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('30814',N'Hòn Nghệ',N'Hon Nghe',N'Xã Hòn Nghệ',N'Hon Nghe Commune','hon_nghe','902',10),
 ('30817',N'Hòn Đất',N'Hon Dat',N'Thị trấn Hòn Đất',N'Hon Dat Township','hon_dat','903',9),
 ('30820',N'Sóc Sơn',N'Soc Son',N'Thị trấn Sóc Sơn',N'Soc Son Township','soc_son','903',9),
-('30823',N'Bình Sơn',N'Binh Son',N'Xã Bình Sơn',N'Binh Son Commune','binh_son','903',10);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('30823',N'Bình Sơn',N'Binh Son',N'Xã Bình Sơn',N'Binh Son Commune','binh_son','903',10),
 ('30826',N'Bình Giang',N'Binh Giang',N'Xã Bình Giang',N'Binh Giang Commune','binh_giang','903',10),
 ('30828',N'Mỹ Thái',N'My Thai',N'Xã Mỹ Thái',N'My Thai Commune','my_thai','903',10),
-('30829',N'Nam Thái Sơn',N'Nam Thai Son',N'Xã Nam Thái Sơn',N'Nam Thai Son Commune','nam_thai_son','903',10),
+('30829',N'Nam Thái Sơn',N'Nam Thai Son',N'Xã Nam Thái Sơn',N'Nam Thai Son Commune','nam_thai_son','903',10);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('30832',N'Mỹ Hiệp Sơn',N'My Hiep Son',N'Xã Mỹ Hiệp Sơn',N'My Hiep Son Commune','my_hiep_son','903',10),
 ('30835',N'Sơn Kiên',N'Son Kien',N'Xã Sơn Kiên',N'Son Kien Commune','son_kien','903',10),
 ('30836',N'Sơn Bình',N'Son Binh',N'Xã Sơn Bình',N'Son Binh Commune','son_binh','903',10),
@@ -11331,12 +11275,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('30943',N'Long Thạnh',N'Long Thanh',N'Xã Long Thạnh',N'Long Thanh Commune','long_thanh','906',10),
 ('30946',N'Vĩnh Thạnh',N'Vinh Thanh',N'Xã Vĩnh Thạnh',N'Vinh Thanh Commune','vinh_thanh','906',10),
 ('30947',N'Vĩnh Phú',N'Vinh Phu',N'Xã Vĩnh Phú',N'Vinh Phu Commune','vinh_phu','906',10),
-('30949',N'Hòa Thuận',N'Hoa Thuan',N'Xã Hòa Thuận',N'Hoa Thuan Commune','hoa_thuan','906',10);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('30949',N'Hòa Thuận',N'Hoa Thuan',N'Xã Hòa Thuận',N'Hoa Thuan Commune','hoa_thuan','906',10),
 ('30950',N'Ngọc Hoà',N'Ngoc Hoa',N'Xã Ngọc Hoà',N'Ngoc Hoa Commune','ngoc_hoa','906',10),
 ('30952',N'Gò Quao',N'Go Quao',N'Thị trấn Gò Quao',N'Go Quao Township','go_quao','907',9),
-('30955',N'Vĩnh Hòa Hưng Bắc',N'Vinh Hoa Hung Bac',N'Xã Vĩnh Hòa Hưng Bắc',N'Vinh Hoa Hung Bac Commune','vinh_hoa_hung_bac','907',10),
+('30955',N'Vĩnh Hòa Hưng Bắc',N'Vinh Hoa Hung Bac',N'Xã Vĩnh Hòa Hưng Bắc',N'Vinh Hoa Hung Bac Commune','vinh_hoa_hung_bac','907',10);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('30958',N'Định Hòa',N'Dinh Hoa',N'Xã Định Hòa',N'Dinh Hoa Commune','dinh_hoa','907',10),
 ('30961',N'Thới Quản',N'Thoi Quan',N'Xã Thới Quản',N'Thoi Quan Commune','thoi_quan','907',10),
 ('30964',N'Định An',N'Dinh An',N'Xã Định An',N'Dinh An Commune','dinh_an','907',10),
@@ -11383,12 +11327,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('31096',N'Dương Tơ',N'Duong To',N'Xã Dương Tơ',N'Duong To Commune','duong_to','911',10),
 ('31102',N'Bãi Thơm',N'Bai Thom',N'Xã Bãi Thơm',N'Bai Thom Commune','bai_thom','911',10),
 ('31105',N'Thổ Châu',N'Tho Chau',N'Xã Thổ Châu',N'Tho Chau Commune','tho_chau','911',10),
-('31108',N'Hòn Tre',N'Hon Tre',N'Xã Hòn Tre',N'Hon Tre Commune','hon_tre','912',10);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('31108',N'Hòn Tre',N'Hon Tre',N'Xã Hòn Tre',N'Hon Tre Commune','hon_tre','912',10),
 ('31111',N'Lại Sơn',N'Lai Son',N'Xã Lại Sơn',N'Lai Son Commune','lai_son','912',10),
 ('31114',N'An Sơn',N'An Son',N'Xã An Sơn',N'An Son Commune','an_son','912',10),
-('31115',N'Nam Du',N'Nam Du',N'Xã Nam Du',N'Nam Du Commune','nam_du','912',10),
+('31115',N'Nam Du',N'Nam Du',N'Xã Nam Du',N'Nam Du Commune','nam_du','912',10);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('31012',N'Thạnh Yên',N'Thanh Yen',N'Xã Thạnh Yên',N'Thanh Yen Commune','thanh_yen','913',10),
 ('31015',N'Thạnh Yên A',N'Thanh Yen A',N'Xã Thạnh Yên A',N'Thanh Yen A Commune','thanh_yen_a','913',10),
 ('31027',N'An Minh Bắc',N'An Minh Bac',N'Xã An Minh Bắc',N'An Minh Bac Commune','an_minh_bac','913',10),
@@ -11435,12 +11379,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('31204',N'Tân Phú',N'Tan Phu',N'Phường Tân Phú',N'Tan Phu Ward','tan_phu','919',8),
 ('31207',N'Thốt Nốt',N'Thot Not',N'Phường Thốt Nốt',N'Thot Not Ward','thot_not','923',8),
 ('31210',N'Thới Thuận',N'Thoi Thuan',N'Phường Thới Thuận',N'Thoi Thuan Ward','thoi_thuan','923',8),
-('31212',N'Thuận An',N'Thuan An',N'Phường Thuận An',N'Thuan An Ward','thuan_an','923',8);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('31212',N'Thuận An',N'Thuan An',N'Phường Thuận An',N'Thuan An Ward','thuan_an','923',8),
 ('31213',N'Tân Lộc',N'Tan Loc',N'Phường Tân Lộc',N'Tan Loc Ward','tan_loc','923',8),
 ('31216',N'Trung Nhứt',N'Trung Nhut',N'Phường Trung Nhứt',N'Trung Nhut Ward','trung_nhut','923',8),
-('31217',N'Thạnh Hoà',N'Thanh Hoa',N'Phường Thạnh Hoà',N'Thanh Hoa Ward','thanh_hoa','923',8),
+('31217',N'Thạnh Hoà',N'Thanh Hoa',N'Phường Thạnh Hoà',N'Thanh Hoa Ward','thanh_hoa','923',8);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('31219',N'Trung Kiên',N'Trung Kien',N'Phường Trung Kiên',N'Trung Kien Ward','trung_kien','923',8),
 ('31227',N'Tân Hưng',N'Tan Hung',N'Phường Tân Hưng',N'Tan Hung Ward','tan_hung','923',8),
 ('31228',N'Thuận Hưng',N'Thuan Hung',N'Phường Thuận Hưng',N'Thuan Hung Ward','thuan_hung','923',8),
@@ -11487,12 +11431,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('31298',N'Trường Xuân B',N'Truong Xuan B',N'Xã Trường Xuân B',N'Truong Xuan B Commune','truong_xuan_b','927',10),
 ('31318',N'I',N'I',N'Phường I',N'I Ward','i','930',8),
 ('31321',N'III',N'III',N'Phường III',N'III Ward','iii','930',8),
-('31324',N'IV',N'IV',N'Phường IV',N'IV Ward','iv','930',8);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('31324',N'IV',N'IV',N'Phường IV',N'IV Ward','iv','930',8),
 ('31327',N'V',N'V',N'Phường V',N'V Ward','v','930',8),
 ('31330',N'VII',N'VII',N'Phường VII',N'VII Ward','vii','930',8),
-('31333',N'Vị Tân',N'Vi Tan',N'Xã Vị Tân',N'Vi Tan Commune','vi_tan','930',10),
+('31333',N'Vị Tân',N'Vi Tan',N'Xã Vị Tân',N'Vi Tan Commune','vi_tan','930',10);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('31336',N'Hoả Lựu',N'Hoa Luu',N'Xã Hoả Lựu',N'Hoa Luu Commune','hoa_luu','930',10),
 ('31338',N'Tân Tiến',N'Tan Tien',N'Xã Tân Tiến',N'Tan Tien Commune','tan_tien','930',10),
 ('31339',N'Hoả Tiến',N'Hoa Tien',N'Xã Hoả Tiến',N'Hoa Tien Commune','hoa_tien','930',10),
@@ -11539,12 +11483,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('31444',N'Vị Trung',N'Vi Trung',N'Xã Vị Trung',N'Vi Trung Commune','vi_trung','935',10),
 ('31447',N'Vị Thuỷ',N'Vi Thuy',N'Xã Vị Thuỷ',N'Vi Thuy Commune','vi_thuy','935',10),
 ('31450',N'Vị Thắng',N'Vi Thang',N'Xã Vị Thắng',N'Vi Thang Commune','vi_thang','935',10),
-('31453',N'Vĩnh Thuận Tây',N'Vinh Thuan Tay',N'Xã Vĩnh Thuận Tây',N'Vinh Thuan Tay Commune','vinh_thuan_tay','935',10);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('31453',N'Vĩnh Thuận Tây',N'Vinh Thuan Tay',N'Xã Vĩnh Thuận Tây',N'Vinh Thuan Tay Commune','vinh_thuan_tay','935',10),
 ('31456',N'Vĩnh Trung',N'Vinh Trung',N'Xã Vĩnh Trung',N'Vinh Trung Commune','vinh_trung','935',10),
 ('31459',N'Vĩnh Tường',N'Vinh Tuong',N'Xã Vĩnh Tường',N'Vinh Tuong Commune','vinh_tuong','935',10),
-('31462',N'Vị Đông',N'Vi Dong',N'Xã Vị Đông',N'Vi Dong Commune','vi_dong','935',10),
+('31462',N'Vị Đông',N'Vi Dong',N'Xã Vị Đông',N'Vi Dong Commune','vi_dong','935',10);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('31465',N'Vị Thanh',N'Vi Thanh',N'Xã Vị Thanh',N'Vi Thanh Commune','vi_thanh','935',10),
 ('31468',N'Vị Bình',N'Vi Binh',N'Xã Vị Bình',N'Vi Binh Commune','vi_binh','935',10),
 ('31483',N'Thuận Hưng',N'Thuan Hung',N'Xã Thuận Hưng',N'Thuan Hung Commune','thuan_hung','936',10),
@@ -11569,13 +11513,13 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('31504',N'8',N'8',N'Phường 8',N'Ward 8','8','941',8),
 ('31507',N'6',N'6',N'Phường 6',N'Ward 6','6','941',8),
 ('31510',N'2',N'2',N'Phường 2',N'Ward 2','2','941',8),
-('31513',N'1',N'1',N'Phường 1',N'Ward 1','1','941',8),
 ('31516',N'4',N'4',N'Phường 4',N'Ward 4','4','941',8),
 ('31519',N'3',N'3',N'Phường 3',N'Ward 3','3','941',8),
-('31522',N'9',N'9',N'Phường 9',N'Ward 9','9','941',8),
+('31522',N'1',N'1',N'Phường 1',N'Ward 1','1','941',8),
 ('31525',N'10',N'10',N'Phường 10',N'Ward 10','10','941',8),
 ('31569',N'Châu Thành',N'Chau Thanh',N'Thị trấn Châu Thành',N'Chau Thanh Township','chau_thanh','942',9),
 ('31570',N'Hồ Đắc Kiện',N'Ho Dac Kien',N'Xã Hồ Đắc Kiện',N'Ho Dac Kien Commune','ho_dac_kien','942',10),
+('31573',N'Phú Tâm',N'Phu Tam',N'Xã Phú Tâm',N'Phu Tam Commune','phu_tam','942',10),
 ('31576',N'Thuận Hòa',N'Thuan Hoa',N'Xã Thuận Hòa',N'Thuan Hoa Commune','thuan_hoa','942',10),
 ('31582',N'Phú Tân',N'Phu Tan',N'Xã Phú Tân',N'Phu Tan Commune','phu_tan','942',10),
 ('31585',N'Thiện Mỹ',N'Thien My',N'Xã Thiện Mỹ',N'Thien My Commune','thien_my','942',10),
@@ -11591,12 +11535,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('31549',N'Thới An Hội',N'Thoi An Hoi',N'Xã Thới An Hội',N'Thoi An Hoi Commune','thoi_an_hoi','943',10),
 ('31552',N'Nhơn Mỹ',N'Nhon My',N'Xã Nhơn Mỹ',N'Nhon My Commune','nhon_my','943',10),
 ('31555',N'Kế Thành',N'Ke Thanh',N'Xã Kế Thành',N'Ke Thanh Commune','ke_thanh','943',10),
-('31558',N'Kế An',N'Ke An',N'Xã Kế An',N'Ke An Commune','ke_an','943',10);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('31558',N'Kế An',N'Ke An',N'Xã Kế An',N'Ke An Commune','ke_an','943',10),
 ('31561',N'Đại Hải',N'Dai Hai',N'Xã Đại Hải',N'Dai Hai Commune','dai_hai','943',10),
 ('31564',N'An Mỹ',N'An My',N'Xã An Mỹ',N'An My Commune','an_my','943',10),
-('31567',N'Huỳnh Hữu Nghĩa',N'Huynh Huu Nghia',N'Thị trấn Huỳnh Hữu Nghĩa',N'Huynh Huu Nghia Township','huynh_huu_nghia','944',9),
+('31567',N'Huỳnh Hữu Nghĩa',N'Huynh Huu Nghia',N'Thị trấn Huỳnh Hữu Nghĩa',N'Huynh Huu Nghia Township','huynh_huu_nghia','944',9);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('31579',N'Long Hưng',N'Long Hung',N'Xã Long Hưng',N'Long Hung Commune','long_hung','944',10),
 ('31588',N'Hưng Phú',N'Hung Phu',N'Xã Hưng Phú',N'Hung Phu Commune','hung_phu','944',10),
 ('31591',N'Mỹ Hương',N'My Huong',N'Xã Mỹ Hương',N'My Huong Commune','my_huong','944',10),
@@ -11643,12 +11587,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('31747',N'3',N'3',N'Phường 3',N'Ward 3','3','948',8),
 ('31750',N'Mỹ Bình',N'My Binh',N'Xã Mỹ Bình',N'My Binh Commune','my_binh','948',10),
 ('31753',N'Mỹ Quới',N'My Quoi',N'Xã Mỹ Quới',N'My Quoi Commune','my_quoi','948',10),
-('31756',N'Phú Lộc',N'Phu Loc',N'Thị trấn Phú Lộc',N'Phu Loc Township','phu_loc','949',9);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('31756',N'Phú Lộc',N'Phu Loc',N'Thị trấn Phú Lộc',N'Phu Loc Township','phu_loc','949',9),
 ('31757',N'Hưng Lợi',N'Hung Loi',N'Thị trấn Hưng Lợi',N'Hung Loi Township','hung_loi','949',9),
 ('31759',N'Lâm Tân',N'Lam Tan',N'Xã Lâm Tân',N'Lam Tan Commune','lam_tan','949',10),
-('31762',N'Thạnh Tân',N'Thanh Tan',N'Xã Thạnh Tân',N'Thanh Tan Commune','thanh_tan','949',10),
+('31762',N'Thạnh Tân',N'Thanh Tan',N'Xã Thạnh Tân',N'Thanh Tan Commune','thanh_tan','949',10);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('31765',N'Lâm Kiết',N'Lam Kiet',N'Xã Lâm Kiết',N'Lam Kiet Commune','lam_kiet','949',10),
 ('31768',N'Tuân Tức',N'Tuan Tuc',N'Xã Tuân Tức',N'Tuan Tuc Commune','tuan_tuc','949',10),
 ('31771',N'Vĩnh Thành',N'Vinh Thanh',N'Xã Vĩnh Thành',N'Vinh Thanh Commune','vinh_thanh','949',10),
@@ -11695,12 +11639,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('31861',N'Vĩnh Lộc A',N'Vinh Loc A',N'Xã Vĩnh Lộc A',N'Vinh Loc A Commune','vinh_loc_a','956',10),
 ('31863',N'Ninh Thạnh Lợi A',N'Ninh Thanh Loi A',N'Xã Ninh Thạnh Lợi A',N'Ninh Thanh Loi A Commune','ninh_thanh_loi_a','956',10),
 ('31864',N'Ninh Thạnh Lợi',N'Ninh Thanh Loi',N'Xã Ninh Thạnh Lợi',N'Ninh Thanh Loi Commune','ninh_thanh_loi','956',10),
-('31867',N'Phước Long',N'Phuoc Long',N'Thị trấn Phước Long',N'Phuoc Long Township','phuoc_long','957',9);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('31867',N'Phước Long',N'Phuoc Long',N'Thị trấn Phước Long',N'Phuoc Long Township','phuoc_long','957',9),
 ('31870',N'Vĩnh Phú Đông',N'Vinh Phu Dong',N'Xã Vĩnh Phú Đông',N'Vinh Phu Dong Commune','vinh_phu_dong','957',10),
 ('31873',N'Vĩnh Phú Tây',N'Vinh Phu Tay',N'Xã Vĩnh Phú Tây',N'Vinh Phu Tay Commune','vinh_phu_tay','957',10),
-('31876',N'Phước Long',N'Phuoc Long',N'Xã Phước Long',N'Phuoc Long Commune','phuoc_long','957',10),
+('31876',N'Phước Long',N'Phuoc Long',N'Xã Phước Long',N'Phuoc Long Commune','phuoc_long','957',10);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('31879',N'Hưng Phú',N'Hung Phu',N'Xã Hưng Phú',N'Hung Phu Commune','hung_phu','957',10),
 ('31882',N'Vĩnh Thanh',N'Vinh Thanh',N'Xã Vĩnh Thanh',N'Vinh Thanh Commune','vinh_thanh','957',10),
 ('31885',N'Phong Thạnh Tây A',N'Phong Thanh Tay A',N'Xã Phong Thạnh Tây A',N'Phong Thanh Tay A Commune','phong_thanh_tay_a','957',10),
@@ -11747,12 +11691,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('32005',N'1',N'1',N'Phường 1',N'Ward 1','1','964',8),
 ('32008',N'5',N'5',N'Phường 5',N'Ward 5','5','964',8),
 ('32011',N'2',N'2',N'Phường 2',N'Ward 2','2','964',8),
-('32014',N'8',N'8',N'Phường 8',N'Ward 8','8','964',8);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('32014',N'8',N'8',N'Phường 8',N'Ward 8','8','964',8),
 ('32017',N'6',N'6',N'Phường 6',N'Ward 6','6','964',8),
 ('32020',N'7',N'7',N'Phường 7',N'Ward 7','7','964',8),
-('32022',N'Tân Xuyên',N'Tan Xuyen',N'Phường Tân Xuyên',N'Tan Xuyen Ward','tan_xuyen','964',8),
+('32022',N'Tân Xuyên',N'Tan Xuyen',N'Phường Tân Xuyên',N'Tan Xuyen Ward','tan_xuyen','964',8);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('32023',N'An Xuyên',N'An Xuyen',N'Xã An Xuyên',N'An Xuyen Commune','an_xuyen','964',10),
 ('32025',N'Tân Thành',N'Tan Thanh',N'Phường Tân Thành',N'Tan Thanh Ward','tan_thanh','964',8),
 ('32026',N'Tân Thành',N'Tan Thanh',N'Xã Tân Thành',N'Tan Thanh Commune','tan_thanh','964',10),
@@ -11799,12 +11743,12 @@ INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_co
 ('32131',N'Lương Thế Trân',N'Luong The Tran',N'Xã Lương Thế Trân',N'Luong The Tran Commune','luong_the_tran','969',10),
 ('32134',N'Phú Hưng',N'Phu Hung',N'Xã Phú Hưng',N'Phu Hung Commune','phu_hung','969',10),
 ('32137',N'Tân Hưng',N'Tan Hung',N'Xã Tân Hưng',N'Tan Hung Commune','tan_hung','969',10),
-('32140',N'Hưng Mỹ',N'Hung My',N'Xã Hưng Mỹ',N'Hung My Commune','hung_my','969',10);
-
-INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
+('32140',N'Hưng Mỹ',N'Hung My',N'Xã Hưng Mỹ',N'Hung My Commune','hung_my','969',10),
 ('32141',N'Hoà Mỹ',N'Hoa My',N'Xã Hoà Mỹ',N'Hoa My Commune','hoa_my','969',10),
 ('32142',N'Đông Hưng',N'Dong Hung',N'Xã Đông Hưng',N'Dong Hung Commune','dong_hung','969',10),
-('32143',N'Đông Thới',N'Dong Thoi',N'Xã Đông Thới',N'Dong Thoi Commune','dong_thoi','969',10),
+('32143',N'Đông Thới',N'Dong Thoi',N'Xã Đông Thới',N'Dong Thoi Commune','dong_thoi','969',10);
+
+INSERT INTO wards(code,name,name_en,full_name,full_name_en,code_name,district_code,administrative_unit_id) VALUES
 ('32146',N'Tân Hưng Đông',N'Tan Hung Dong',N'Xã Tân Hưng Đông',N'Tan Hung Dong Commune','tan_hung_dong','969',10),
 ('32149',N'Trần Thới',N'Tran Thoi',N'Xã Trần Thới',N'Tran Thoi Commune','tran_thoi','969',10),
 ('32152',N'Đầm Dơi',N'Dam Doi',N'Thị trấn Đầm Dơi',N'Dam Doi Township','dam_doi','970',9),
