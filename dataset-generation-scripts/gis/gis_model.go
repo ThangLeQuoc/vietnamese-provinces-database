@@ -106,9 +106,9 @@ func (b *BBox) UnmarshalJSON(data []byte) error {
 }
 
 func ToCoordinateStr(lng float64, lat float64) string {
-	return fmt.Sprintf("%f %f", lng, lat) 
+	return fmt.Sprintf("%.15f %.15f", lng, lat) 
 }
 
 func ToCoordinateStrLatLng(lng float64, lat float64) string {
-	return fmt.Sprintf("%f %f", lat, lng) 
+	return fmt.Sprintf("%.15f %.15f", lat, lng) 
 }

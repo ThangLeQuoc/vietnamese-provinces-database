@@ -51,7 +51,7 @@ func ReadAndGenerateSQLDatasets(gisData []gis.ProvinceGIS) {
 	oracleDatasetFileWriter := dataset_file_writer.OracleDatasetFileWriter{
 		OutputFilePath: "./output/oracle_generated_ImportData_vn_units_%s.sql",
 	}
-	err = oracleDatasetFileWriter.WriteToFile(regions, administrativeUnits, provinces, districts, wards)
+	err = oracleDatasetFileWriter.WriteToFile(regions, administrativeUnits, provinces, districts, wards, gisData)
 	if err != nil {
 		log.Fatal("Unable to generate Oracle Dataset", err)
 	} else {
