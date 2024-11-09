@@ -7,31 +7,6 @@ import (
 )
 
 /*
-Create the DvhcvnModel from the dvhcvn response object.
-Input should be the dvhcvn content within the <TABLE> tag
-E.g: <MaTinh>68</MaTinh><TenTinh>Tỉnh Lâm Đồng</TenTinh><MaQuanHuyen>675</MaQuanHuyen><TenQuanHuyen>Huyện Lạc Dương</TenQuanHuyen><MaPhuongXa>24846</MaPhuongXa><TenPhuongXa>Thị trấn Lạc Dương</TenPhuongXa><LoaiHinh>Thị trấn</LoaiHinh>
-*/
-func toDvhcvnModel(s string) DvhcvnModel {
-
-	proviceCode := extractRegexValue(`<MaTinh>(.+)</MaTinh>`, s)
-	proviceName := extractRegexValue(`<TenTinh>(.+)</TenTinh>`, s)
-	districtCode := extractRegexValue(`<MaQuanHuyen>(.+)</MaQuanHuyen>`, s)
-	districtName := extractRegexValue(`<TenQuanHuyen>(.+)</TenQuanHuyen>`, s)
-	wardCode := extractRegexValue(`<MaPhuongXa>(.+)</MaPhuongXa>`, s)
-	wardName := extractRegexValue(`<TenPhuongXa>(.+)</TenPhuongXa>`, s)
-
-	return DvhcvnModel{
-		ProvinceCode: proviceCode,
-		ProvinceName: convertStandardUnitName(proviceName),
-		DistrictCode: districtCode,
-		DistrictName: convertStandardUnitName(districtName),
-		WardCode:     wardCode,
-		WardName:     convertStandardUnitName(wardName),
-		WardUnit:     "",
-	}
-}
-
-/*
 Create the DvhcvnProvinceModel from the dvhcvn response object.
 Input should be the dvhcvn content within the <TABLE> tag
 E.g: <MaTinh>94</MaTinh><TenTinh>Tỉnh Sóc Trăng</TenTinh><LoaiHinh>Tỉnh</LoaiHinh>
@@ -113,20 +88,6 @@ func convertStandardUnitName(s string) string {
 	return s
 }
 
-/*
-Extract the XML response from DVHCVN api to DvhcvnModels
-*/
-func extractDvhcvnUnits(res string) []DvhcvnModel {
-	regexPattern := regexp2.MustCompile(`(?<=<TABLE\b[^>]*>)([\s\S\n]*?)(?=<\/TABLE>)`, 0)
-	dvhcvnUnitBlocks := regexp2FindAllString(regexPattern, res)
-
-	var result []DvhcvnModel
-	for _, unit := range dvhcvnUnitBlocks {
-		result = append(result, toDvhcvnModel(unit))
-	}
-	return result
-}
-
 func regexp2FindAllString(re *regexp2.Regexp, s string) []string {
 	var matches []string
 	m, _ := re.FindStringMatch(s)
@@ -150,6 +111,9 @@ func extractRegexValue(pattern string, s string) string {
 	return ""
 }
 
+/*
+Extract the XML response from DVHCVN api to DvhcvnProvinceModel
+*/
 func extractProvinceDvhcvnUnits(soapResponse string) []DvhcvnProvinceModel {
 	regexPattern := regexp2.MustCompile(`(?<=<TABLE\b[^>]*>)([\s\S\n]*?)(?=<\/TABLE>)`, 0)
 	dvhcvnUnitBlocks := regexp2FindAllString(regexPattern, soapResponse)
@@ -161,6 +125,9 @@ func extractProvinceDvhcvnUnits(soapResponse string) []DvhcvnProvinceModel {
 	return result
 }
 
+/*
+Extract the XML response from DVHCVN api to DvhcvnDistrictModel
+*/
 func extractDistrictDvhcvnUnits(soapResponse string) []DvhcvnDistrictModel {
 	regexPattern := regexp2.MustCompile(`(?<=<TABLE\b[^>]*>)([\s\S\n]*?)(?=<\/TABLE>)`, 0)
 	dvhcvnUnitBlocks := regexp2FindAllString(regexPattern, soapResponse)
@@ -172,6 +139,9 @@ func extractDistrictDvhcvnUnits(soapResponse string) []DvhcvnDistrictModel {
 	return result
 }
 
+/*
+Extract the XML response from DVHCVN api to DvhcvnWardModel
+*/
 func extractWardDvhcvnUnits(soapResponse string) []DvhcvnWardModel {
 	regexPattern := regexp2.MustCompile(`(?<=<TABLE\b[^>]*>)([\s\S\n]*?)(?=<\/TABLE>)`, 0)
 	dvhcvnUnitBlocks := regexp2FindAllString(regexPattern, soapResponse)
