@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestToDvhcvnModel(t *testing.T) {
+func TestToDvhcvnWardModel(t *testing.T) {
 
 	input := `<TABLE diffgr:id="TABLE4405" msdata:rowOrder="4404">
 	<MaTinh>36</MaTinh>
@@ -17,7 +17,7 @@ func TestToDvhcvnModel(t *testing.T) {
 	<LoaiHinh>Xã</LoaiHinh>
 	</TABLE>`
 
-	actualModel := toDvhcvnModel(input)
+	actualModel := toDvhcvnWardModel(input)
 
 	assert.Equal(t, "36", actualModel.ProvinceCode)
 	assert.Equal(t, "Tỉnh Nam Định", actualModel.ProvinceName)
@@ -25,11 +25,11 @@ func TestToDvhcvnModel(t *testing.T) {
 	assert.Equal(t, "Huyện Ý Yên", actualModel.DistrictName)
 	assert.Equal(t, "13870", actualModel.WardCode)
 	assert.Equal(t, "Xã Yên Cường", actualModel.WardName)
-	assert.Equal(t, "Xã", actualModel.WardUnit)
+	assert.Equal(t, "Xã", actualModel.Unit)
 
 }
 
-func TestExtractDvhcvnUnits(t *testing.T) {
+func TestExtractWardDvhcvnUnits(t *testing.T) {
 	input := `<TABLE diffgr:id="TABLE6037" msdata:rowOrder="6036">
 		<MaTinh>44</MaTinh>
 		<TenTinh>Tỉnh Quảng Bình</TenTinh>
@@ -58,7 +58,7 @@ func TestExtractDvhcvnUnits(t *testing.T) {
 		<LoaiHinh>Thị trấn</LoaiHinh>
 	</TABLE>`
 
-	actualModels := extractDvhcvnUnits(input)
+	actualModels := extractWardDvhcvnUnits(input)
 	assert.Equal(t, 3, len(actualModels))
 	assert.Equal(t, "Xã An Ninh", actualModels[0].WardName)
 	assert.Equal(t, "Xã Vạn Ninh", actualModels[1].WardName)

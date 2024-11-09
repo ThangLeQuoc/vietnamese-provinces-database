@@ -5,33 +5,45 @@ import (
 	"io"
 	"log"
 	"net/http"
-	"slices"
 	"strings"
 	"time"
 )
 
 const DVHCVN_URL = "https://danhmuchanhchinh.gso.gov.vn/DMDVHC.asmx"
 
+const DVHCVN_SOAP_DANH_MUC_TINH = "DanhMucTinh"
+const DVHCVN_SOAP_DANH_MUC_QUAN_HUYEN = "DanhMucQuanHuyen"
+const DVHCVN_SOAP_DANH_MUC_PHUONG_XA = "DanhMucPhuongXa"
+
 /*
 Fetch the data from the public government API url
 Required the selected data date
 */
-func FetchDvhcvnData(publicDataDate time.Time) []DvhcvnModel {
+func FetchDvhcvnData(publicDataDate time.Time) DvhcvnDataSet {
 	fmt.Printf("⬇️ Downloading provinces data patch from %s\n", DVHCVN_URL)
 	dataAPIDateStr := publicDataDate.Format("02/01/2006") // dd/MM/YYYY
 
-	// Fetch ward-level data
-	wardRequestBody := createSoapRequest("DanhMucPhuongXa", dataAPIDateStr)
-	wardData := fetchDataFromAPI(wardRequestBody)
-	result := extractDvhcvnUnits(wardData)
+	// Fetch province-level data from DVHCVN SOAP API
+	provinceRequestBody := createSoapRequest(DVHCVN_SOAP_DANH_MUC_TINH, dataAPIDateStr)
+	provinceSoapResponse := fetchDataFromAPI(provinceRequestBody)
+	provinceResult := extractProvinceDvhcvnUnits(provinceSoapResponse)
 
-	// Fetch district-level data
-	districtRequestBody := createSoapRequest("DanhMucQuanHuyen", dataAPIDateStr)
-	districtData := fetchDataFromAPI(districtRequestBody)
-	districtResult := extractDvhcvnUnits(districtData)
+	// Fetch district-level data from DVHCVN SOAP API
+	districtRequestBody := createSoapRequest(DVHCVN_SOAP_DANH_MUC_QUAN_HUYEN, dataAPIDateStr)
+	districtSoapResponse := fetchDataFromAPI(districtRequestBody)
+	districtResult := extractDistrictDvhcvnUnits(districtSoapResponse)
+
+	// Fetch ward-level data from DVHCVN SOAP API
+	wardRequestBody := createSoapRequest(DVHCVN_SOAP_DANH_MUC_PHUONG_XA, dataAPIDateStr)
+	wardSoapResponse := fetchDataFromAPI(wardRequestBody)
+	wardResult := extractWardDvhcvnUnits(wardSoapResponse)
 
 	// Concatenate and return results
-	return slices.Concat(result, districtResult)
+	return DvhcvnDataSet{
+		ProvinceData: provinceResult,
+		DistrictData: districtResult,
+		WardData: wardResult,
+	}
 }
 
 // Helper function to create a SOAP request body
