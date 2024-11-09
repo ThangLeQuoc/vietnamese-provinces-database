@@ -12096,15 +12096,6 @@
        "DistrictCode": "085"
       },
       {
-       "Code": "02872",
-       "Name": "Tà Chải",
-       "NameEn": "Ta Chai",
-       "FullName": "Xã Tà Chải",
-       "FullNameEn": "Ta Chai Commune",
-       "CodeName": "ta_chai",
-       "DistrictCode": "085"
-      },
-      {
        "Code": "02875",
        "Name": "Na Hối",
        "NameEn": "Na Hoi",
@@ -13139,6 +13130,15 @@
      "ProvinceCode": "11",
      "Ward": [
       {
+       "Code": "03197",
+       "Name": "Sa Lông",
+       "NameEn": "Sa Long",
+       "FullName": "Xã Sa Lông",
+       "FullNameEn": "Sa Long Commune",
+       "CodeName": "sa_long",
+       "DistrictCode": "097"
+      },
+      {
        "Code": "03172",
        "Name": "Mường Chà",
        "NameEn": "Muong Cha",
@@ -13208,15 +13208,6 @@
        "FullName": "Xã Huổi Lèng",
        "FullNameEn": "Huoi Leng Commune",
        "CodeName": "huoi_leng",
-       "DistrictCode": "097"
-      },
-      {
-       "Code": "03197",
-       "Name": "Sa Lông",
-       "NameEn": "Sa Long",
-       "FullName": "Xã Sa Lông",
-       "FullNameEn": "Sa Long Commune",
-       "CodeName": "sa_long",
        "DistrictCode": "097"
       },
       {
@@ -16016,6 +16007,15 @@
      "ProvinceCode": "14",
      "Ward": [
       {
+       "Code": "03931",
+       "Name": "Huy Tân",
+       "NameEn": "Huy Tan",
+       "FullName": "Xã Huy Tân",
+       "FullNameEn": "Huy Tan Commune",
+       "CodeName": "huy_tan",
+       "DistrictCode": "122"
+      },
+      {
        "Code": "03898",
        "Name": "Phù Yên",
        "NameEn": "Phu Yen",
@@ -16112,15 +16112,6 @@
        "FullName": "Xã Huy Hạ",
        "FullNameEn": "Huy Ha Commune",
        "CodeName": "huy_ha",
-       "DistrictCode": "122"
-      },
-      {
-       "Code": "03931",
-       "Name": "Huy Tân",
-       "NameEn": "Huy Tan",
-       "FullName": "Xã Huy Tân",
-       "FullNameEn": "Huy Tan Commune",
-       "CodeName": "huy_tan",
        "DistrictCode": "122"
       },
       {
@@ -17466,15 +17457,6 @@
      "ProvinceCode": "15",
      "Ward": [
       {
-       "Code": "04318",
-       "Name": "Mai Sơn",
-       "NameEn": "Mai Son",
-       "FullName": "Xã Mai Sơn",
-       "FullNameEn": "Mai Son Commune",
-       "CodeName": "mai_son",
-       "DistrictCode": "135"
-      },
-      {
        "Code": "04303",
        "Name": "Yên Thế",
        "NameEn": "Yen The",
@@ -17517,6 +17499,15 @@
        "FullName": "Xã Minh Chuẩn",
        "FullNameEn": "Minh Chuan Commune",
        "CodeName": "minh_chuan",
+       "DistrictCode": "135"
+      },
+      {
+       "Code": "04318",
+       "Name": "Mai Sơn",
+       "NameEn": "Mai Son",
+       "FullName": "Xã Mai Sơn",
+       "FullNameEn": "Mai Son Commune",
+       "CodeName": "mai_son",
        "DistrictCode": "135"
       },
       {
@@ -24060,15 +24051,6 @@
        "DistrictCode": "193"
       },
       {
-       "Code": "06682",
-       "Name": "Yết Kiêu",
-       "NameEn": "Yet Kieu",
-       "FullName": "Phường Yết Kiêu",
-       "FullNameEn": "Yet Kieu Ward",
-       "CodeName": "yet_kieu",
-       "DistrictCode": "193"
-      },
-      {
        "Code": "06685",
        "Name": "Trần Hưng Đạo",
        "NameEn": "Tran Hung Dao",
@@ -24293,15 +24275,6 @@
        "FullName": "Phường Ninh Dương",
        "FullNameEn": "Ninh Duong Ward",
        "CodeName": "ninh_duong",
-       "DistrictCode": "194"
-      },
-      {
-       "Code": "06718",
-       "Name": "Hoà Lạc",
-       "NameEn": "Hoa Lac",
-       "FullName": "Phường Hoà Lạc",
-       "FullNameEn": "Hoa Lac Ward",
-       "CodeName": "hoa_lac",
        "DistrictCode": "194"
       },
       {
@@ -24551,20 +24524,11 @@
       },
       {
        "Code": "06799",
-       "Name": "Cộng Hòa",
-       "NameEn": "Cong Hoa",
-       "FullName": "Xã Cộng Hòa",
-       "FullNameEn": "Cong Hoa Commune",
-       "CodeName": "cong_hoa",
-       "DistrictCode": "195"
-      },
-      {
-       "Code": "06802",
-       "Name": "Cẩm Hải",
-       "NameEn": "Cam Hai",
-       "FullName": "Xã Cẩm Hải",
-       "FullNameEn": "Cam Hai Commune",
-       "CodeName": "cam_hai",
+       "Name": "Hải Hòa",
+       "NameEn": "Hai Hoa",
+       "FullName": "Xã Hải Hòa",
+       "FullNameEn": "Hai Hoa Commune",
+       "CodeName": "hai_hoa",
        "DistrictCode": "195"
       },
       {
@@ -25121,11 +25085,11 @@
       },
       {
        "Code": "06985",
-       "Name": "Lương Mông",
-       "NameEn": "Luong Mong",
-       "FullName": "Xã Lương Mông",
-       "FullNameEn": "Luong Mong Commune",
-       "CodeName": "luong_mong",
+       "Name": "Lương Minh",
+       "NameEn": "Luong Minh",
+       "FullName": "Xã Lương Minh",
+       "FullNameEn": "Luong Minh Commune",
+       "CodeName": "luong_minh",
        "DistrictCode": "202"
       },
       {
@@ -25135,15 +25099,6 @@
        "FullName": "Xã Đồn Đạc",
        "FullNameEn": "Don Dac Commune",
        "CodeName": "don_dac",
-       "DistrictCode": "202"
-      },
-      {
-       "Code": "06991",
-       "Name": "Minh Cầm",
-       "NameEn": "Minh Cam",
-       "FullName": "Xã Minh Cầm",
-       "FullNameEn": "Minh Cam Commune",
-       "CodeName": "minh_cam",
        "DistrictCode": "202"
       }
      ]
@@ -25271,11 +25226,20 @@
      "Code": "205",
      "Name": "Đông Triều",
      "NameEn": "Dong Trieu",
-     "FullName": "Thị xã Đông Triều",
-     "FullNameEn": "Dong Trieu Town",
+     "FullName": "Thành phố Đông Triều",
+     "FullNameEn": "Dong Trieu City",
      "CodeName": "dong_trieu",
      "ProvinceCode": "22",
      "Ward": [
+      {
+       "Code": "07123",
+       "Name": "Kim Sơn",
+       "NameEn": "Kim Son",
+       "FullName": "Phường Kim Sơn",
+       "FullNameEn": "Kim Son Ward",
+       "CodeName": "kim_son",
+       "DistrictCode": "205"
+      },
       {
        "Code": "07069",
        "Name": "Mạo Khê",
@@ -25283,15 +25247,6 @@
        "FullName": "Phường Mạo Khê",
        "FullNameEn": "Mao Khe Ward",
        "CodeName": "mao_khe",
-       "DistrictCode": "205"
-      },
-      {
-       "Code": "07072",
-       "Name": "Đông Triều",
-       "NameEn": "Dong Trieu",
-       "FullName": "Phường Đông Triều",
-       "FullNameEn": "Dong Trieu Ward",
-       "CodeName": "dong_trieu",
        "DistrictCode": "205"
       },
       {
@@ -25316,8 +25271,8 @@
        "Code": "07081",
        "Name": "Bình Khê",
        "NameEn": "Binh Khe",
-       "FullName": "Xã Bình Khê",
-       "FullNameEn": "Binh Khe Commune",
+       "FullName": "Phường Bình Khê",
+       "FullNameEn": "Binh Khe Ward",
        "CodeName": "binh_khe",
        "DistrictCode": "205"
       },
@@ -25331,20 +25286,11 @@
        "DistrictCode": "205"
       },
       {
-       "Code": "07087",
-       "Name": "Tân Việt",
-       "NameEn": "Tan Viet",
-       "FullName": "Xã Tân Việt",
-       "FullNameEn": "Tan Viet Commune",
-       "CodeName": "tan_viet",
-       "DistrictCode": "205"
-      },
-      {
        "Code": "07090",
        "Name": "Bình Dương",
        "NameEn": "Binh Duong",
-       "FullName": "Xã Bình Dương",
-       "FullNameEn": "Binh Duong Commune",
+       "FullName": "Phường Bình Dương",
+       "FullNameEn": "Binh Duong Ward",
        "CodeName": "binh_duong",
        "DistrictCode": "205"
       },
@@ -25379,8 +25325,8 @@
        "Code": "07102",
        "Name": "Thủy An",
        "NameEn": "Thuy An",
-       "FullName": "Xã Thủy An",
-       "FullNameEn": "Thuy An Commune",
+       "FullName": "Phường Thủy An",
+       "FullNameEn": "Thuy An Ward",
        "CodeName": "thuy_an",
        "DistrictCode": "205"
       },
@@ -25439,15 +25385,6 @@
        "DistrictCode": "205"
       },
       {
-       "Code": "07123",
-       "Name": "Kim Sơn",
-       "NameEn": "Kim Son",
-       "FullName": "Phường Kim Sơn",
-       "FullNameEn": "Kim Son Ward",
-       "CodeName": "kim_son",
-       "DistrictCode": "205"
-      },
-      {
        "Code": "07126",
        "Name": "Hưng Đạo",
        "NameEn": "Hung Dao",
@@ -25460,8 +25397,8 @@
        "Code": "07129",
        "Name": "Yên Đức",
        "NameEn": "Yen Duc",
-       "FullName": "Xã Yên Đức",
-       "FullNameEn": "Yen Duc Commune",
+       "FullName": "Phường Yên Đức",
+       "FullNameEn": "Yen Duc Ward",
        "CodeName": "yen_duc",
        "DistrictCode": "205"
       }
@@ -26689,15 +26626,6 @@
      "ProvinceCode": "24",
      "Ward": [
       {
-       "Code": "07567",
-       "Name": "Tân Hoa",
-       "NameEn": "Tan Hoa",
-       "FullName": "Xã Tân Hoa",
-       "FullNameEn": "Tan Hoa Commune",
-       "CodeName": "tan_hoa",
-       "DistrictCode": "219"
-      },
-      {
        "Code": "07525",
        "Name": "Chũ",
        "NameEn": "Chu",
@@ -26821,6 +26749,15 @@
        "FullName": "Xã Kim Sơn",
        "FullNameEn": "Kim Son Commune",
        "CodeName": "kim_son",
+       "DistrictCode": "219"
+      },
+      {
+       "Code": "07567",
+       "Name": "Tân Hoa",
+       "NameEn": "Tan Hoa",
+       "FullName": "Xã Tân Hoa",
+       "FullNameEn": "Tan Hoa Commune",
+       "CodeName": "tan_hoa",
        "DistrictCode": "219"
       },
       {
@@ -32687,15 +32624,6 @@
      "ProvinceCode": "30",
      "Ward": [
       {
-       "Code": "10579",
-       "Name": "Văn An",
-       "NameEn": "Van An",
-       "FullName": "Phường Văn An",
-       "FullNameEn": "Van An Ward",
-       "CodeName": "van_an",
-       "DistrictCode": "290"
-      },
-      {
        "Code": "10546",
        "Name": "Phả Lại",
        "NameEn": "Pha Lai",
@@ -32792,6 +32720,15 @@
        "FullName": "Phường Cổ Thành",
        "FullNameEn": "Co Thanh Ward",
        "CodeName": "co_thanh",
+       "DistrictCode": "290"
+      },
+      {
+       "Code": "10579",
+       "Name": "Văn An",
+       "NameEn": "Van An",
+       "FullName": "Phường Văn An",
+       "FullNameEn": "Van An Ward",
+       "CodeName": "van_an",
        "DistrictCode": "290"
       },
       {
@@ -36804,6 +36741,16 @@
        "DistrictCode": "317"
       }
      ]
+    },
+    {
+     "Code": "318",
+     "Name": "Bạch Long Vĩ",
+     "NameEn": "Bach Long Vi",
+     "FullName": "Huyện Bạch Long Vĩ",
+     "FullNameEn": "Bach Long Vi District",
+     "CodeName": "bach_long_vi",
+     "ProvinceCode": "31",
+     "Ward": null
     }
    ]
   },
@@ -38819,15 +38766,6 @@
        "DistrictCode": "338"
       },
       {
-       "Code": "12556",
-       "Name": "Quỳnh Bảo",
-       "NameEn": "Quynh Bao",
-       "FullName": "Xã Quỳnh Bảo",
-       "FullNameEn": "Quynh Bao Commune",
-       "CodeName": "quynh_bao",
-       "DistrictCode": "338"
-      },
-      {
        "Code": "12559",
        "Name": "An Mỹ",
        "NameEn": "An My",
@@ -38855,15 +38793,6 @@
        "DistrictCode": "338"
       },
       {
-       "Code": "12568",
-       "Name": "Quỳnh Xá",
-       "NameEn": "Quynh Xa",
-       "FullName": "Xã Quỳnh Xá",
-       "FullNameEn": "Quynh Xa Commune",
-       "CodeName": "quynh_xa",
-       "DistrictCode": "338"
-      },
-      {
        "Code": "12571",
        "Name": "An Dục",
        "NameEn": "An Duc",
@@ -38883,11 +38812,11 @@
       },
       {
        "Code": "12577",
-       "Name": "Quỳnh Trang",
-       "NameEn": "Quynh Trang",
-       "FullName": "Xã Quỳnh Trang",
-       "FullNameEn": "Quynh Trang Commune",
-       "CodeName": "quynh_trang",
+       "Name": "Trang Bảo Xá",
+       "NameEn": "Trang Bao Xa",
+       "FullName": "Xã Trang Bảo Xá",
+       "FullNameEn": "Trang Bao Xa Commune",
+       "CodeName": "trang_bao_xa",
        "DistrictCode": "338"
       },
       {
@@ -38930,11 +38859,11 @@
       },
       {
        "Code": "12589",
-       "Name": "Điệp Nông",
-       "NameEn": "Diep Nong",
-       "FullName": "Xã Điệp Nông",
-       "FullNameEn": "Diep Nong Commune",
-       "CodeName": "diep_nong",
+       "Name": "Quang Trung",
+       "NameEn": "Quang Trung",
+       "FullName": "Xã Quang Trung",
+       "FullNameEn": "Quang Trung Commune",
+       "CodeName": "quang_trung",
        "DistrictCode": "339"
       },
       {
@@ -38956,15 +38885,6 @@
        "DistrictCode": "339"
       },
       {
-       "Code": "12598",
-       "Name": "Dân Chủ",
-       "NameEn": "Dan Chu",
-       "FullName": "Xã Dân Chủ",
-       "FullNameEn": "Dan Chu Commune",
-       "CodeName": "dan_chu",
-       "DistrictCode": "339"
-      },
-      {
        "Code": "12601",
        "Name": "Canh Tân",
        "NameEn": "Canh Tan",
@@ -38980,15 +38900,6 @@
        "FullName": "Xã Hòa Tiến",
        "FullNameEn": "Hoa Tien Commune",
        "CodeName": "hoa_tien",
-       "DistrictCode": "339"
-      },
-      {
-       "Code": "12607",
-       "Name": "Hùng Dũng",
-       "NameEn": "Hung Dung",
-       "FullName": "Xã Hùng Dũng",
-       "FullNameEn": "Hung Dung Commune",
-       "CodeName": "hung_dung",
        "DistrictCode": "339"
       },
       {
@@ -39255,15 +39166,6 @@
        "DistrictCode": "340"
       },
       {
-       "Code": "12691",
-       "Name": "Đô Lương",
-       "NameEn": "Do Luong",
-       "FullName": "Xã Đô Lương",
-       "FullNameEn": "Do Luong Commune",
-       "CodeName": "do_luong",
-       "DistrictCode": "340"
-      },
-      {
        "Code": "12694",
        "Name": "Đông Phương",
        "NameEn": "Dong Phuong",
@@ -39273,21 +39175,12 @@
        "DistrictCode": "340"
       },
       {
-       "Code": "12697",
-       "Name": "Liên Giang",
-       "NameEn": "Lien Giang",
-       "FullName": "Xã Liên Giang",
-       "FullNameEn": "Lien Giang Commune",
-       "CodeName": "lien_giang",
-       "DistrictCode": "340"
-      },
-      {
        "Code": "12700",
-       "Name": "An Châu",
-       "NameEn": "An Chau",
-       "FullName": "Xã An Châu",
-       "FullNameEn": "An Chau Commune",
-       "CodeName": "an_chau",
+       "Name": "Liên An Đô",
+       "NameEn": "Lien An Do",
+       "FullName": "Xã Liên An Đô",
+       "FullNameEn": "Lien An Do Commune",
+       "CodeName": "lien_an_do",
        "DistrictCode": "340"
       },
       {
@@ -39363,15 +39256,6 @@
        "DistrictCode": "340"
       },
       {
-       "Code": "12727",
-       "Name": "Chương Dương",
-       "NameEn": "Chuong Duong",
-       "FullName": "Xã Chương Dương",
-       "FullNameEn": "Chuong Duong Commune",
-       "CodeName": "chuong_duong",
-       "DistrictCode": "340"
-      },
-      {
        "Code": "12730",
        "Name": "Nguyên Xá",
        "NameEn": "Nguyen Xa",
@@ -39381,21 +39265,12 @@
        "DistrictCode": "340"
       },
       {
-       "Code": "12733",
-       "Name": "Phong Châu",
-       "NameEn": "Phong Chau",
-       "FullName": "Xã Phong Châu",
-       "FullNameEn": "Phong Chau Commune",
-       "CodeName": "phong_chau",
-       "DistrictCode": "340"
-      },
-      {
        "Code": "12736",
-       "Name": "Hợp Tiến",
-       "NameEn": "Hop Tien",
-       "FullName": "Xã Hợp Tiến",
-       "FullNameEn": "Hop Tien Commune",
-       "CodeName": "hop_tien",
+       "Name": "Phong Dương Tiến",
+       "NameEn": "Phong Duong Tien",
+       "FullName": "Xã Phong Dương Tiến",
+       "FullNameEn": "Phong Duong Tien Commune",
+       "CodeName": "phong_duong_tien",
        "DistrictCode": "340"
       },
       {
@@ -39490,11 +39365,11 @@
       },
       {
        "Code": "12775",
-       "Name": "Đông Động",
-       "NameEn": "Dong Dong",
-       "FullName": "Xã Đông Động",
-       "FullNameEn": "Dong Dong Commune",
-       "CodeName": "dong_dong",
+       "Name": "Xuân Quang Động",
+       "NameEn": "Xuan Quang Dong",
+       "FullName": "Xã Xuân Quang Động",
+       "FullNameEn": "Xuan Quang Dong Commune",
+       "CodeName": "xuan_quang_dong",
        "DistrictCode": "340"
       },
       {
@@ -39531,24 +39406,6 @@
        "FullName": "Xã Đông Quan",
        "FullNameEn": "Dong Quan Commune",
        "CodeName": "dong_quan",
-       "DistrictCode": "340"
-      },
-      {
-       "Code": "12796",
-       "Name": "Đông Quang",
-       "NameEn": "Dong Quang",
-       "FullName": "Xã Đông Quang",
-       "FullNameEn": "Dong Quang Commune",
-       "CodeName": "dong_quang",
-       "DistrictCode": "340"
-      },
-      {
-       "Code": "12799",
-       "Name": "Đông Xuân",
-       "NameEn": "Dong Xuan",
-       "FullName": "Xã Đông Xuân",
-       "FullNameEn": "Dong Xuan Commune",
-       "CodeName": "dong_xuan",
        "DistrictCode": "340"
       },
       {
@@ -39961,15 +39818,6 @@
        "DistrictCode": "342"
       },
       {
-       "Code": "12982",
-       "Name": "Đông Quí",
-       "NameEn": "Dong Qui",
-       "FullName": "Xã Đông Quí",
-       "FullNameEn": "Dong Qui Commune",
-       "CodeName": "dong_qui",
-       "DistrictCode": "342"
-      },
-      {
        "Code": "12985",
        "Name": "Vũ Lăng",
        "NameEn": "Vu Lang",
@@ -40007,11 +39855,11 @@
       },
       {
        "Code": "12997",
-       "Name": "Đông Trung",
-       "NameEn": "Dong Trung",
-       "FullName": "Xã Đông Trung",
-       "FullNameEn": "Dong Trung Commune",
-       "CodeName": "dong_trung",
+       "Name": "Đông Quang",
+       "NameEn": "Dong Quang",
+       "FullName": "Xã Đông Quang",
+       "FullNameEn": "Dong Quang Commune",
+       "CodeName": "dong_quang",
        "DistrictCode": "342"
       },
       {
@@ -40030,15 +39878,6 @@
        "FullName": "Xã Đông Minh",
        "FullNameEn": "Dong Minh Commune",
        "CodeName": "dong_minh",
-       "DistrictCode": "342"
-      },
-      {
-       "Code": "13009",
-       "Name": "Đông Phong",
-       "NameEn": "Dong Phong",
-       "FullName": "Xã Đông Phong",
-       "FullNameEn": "Dong Phong Commune",
-       "CodeName": "dong_phong",
        "DistrictCode": "342"
       },
       {
@@ -40088,20 +39927,11 @@
       },
       {
        "Code": "13030",
-       "Name": "Tây Phong",
-       "NameEn": "Tay Phong",
-       "FullName": "Xã Tây Phong",
-       "FullNameEn": "Tay Phong Commune",
-       "CodeName": "tay_phong",
-       "DistrictCode": "342"
-      },
-      {
-       "Code": "13033",
-       "Name": "Tây Tiến",
-       "NameEn": "Tay Tien",
-       "FullName": "Xã Tây Tiến",
-       "FullNameEn": "Tay Tien Commune",
-       "CodeName": "tay_tien",
+       "Name": "Ái Quốc",
+       "NameEn": "Ai Quoc",
+       "FullName": "Xã Ái Quốc",
+       "FullNameEn": "Ai Quoc Commune",
+       "CodeName": "ai_quoc",
        "DistrictCode": "342"
       },
       {
@@ -40120,15 +39950,6 @@
        "FullName": "Xã Vân Trường",
        "FullNameEn": "Van Truong Commune",
        "CodeName": "van_truong",
-       "DistrictCode": "342"
-      },
-      {
-       "Code": "13042",
-       "Name": "Nam Thắng",
-       "NameEn": "Nam Thang",
-       "FullName": "Xã Nam Thắng",
-       "FullNameEn": "Nam Thang Commune",
-       "CodeName": "nam_thang",
        "DistrictCode": "342"
       },
       {
@@ -40169,11 +39990,11 @@
       },
       {
        "Code": "13057",
-       "Name": "Nam Thanh",
-       "NameEn": "Nam Thanh",
-       "FullName": "Xã Nam Thanh",
-       "FullNameEn": "Nam Thanh Commune",
-       "CodeName": "nam_thanh",
+       "Name": "Nam Tiến",
+       "NameEn": "Nam Tien",
+       "FullName": "Xã Nam Tiến",
+       "FullNameEn": "Nam Tien Commune",
+       "CodeName": "nam_tien",
        "DistrictCode": "342"
       },
       {
@@ -40323,30 +40144,12 @@
        "DistrictCode": "343"
       },
       {
-       "Code": "13117",
-       "Name": "Thượng Hiền",
-       "NameEn": "Thuong Hien",
-       "FullName": "Xã Thượng Hiền",
-       "FullNameEn": "Thuong Hien Commune",
-       "CodeName": "thuong_hien",
-       "DistrictCode": "343"
-      },
-      {
        "Code": "13120",
-       "Name": "Nam Cao",
-       "NameEn": "Nam Cao",
-       "FullName": "Xã Nam Cao",
-       "FullNameEn": "Nam Cao Commune",
-       "CodeName": "nam_cao",
-       "DistrictCode": "343"
-      },
-      {
-       "Code": "13123",
-       "Name": "Đình Phùng",
-       "NameEn": "Dinh Phung",
-       "FullName": "Xã Đình Phùng",
-       "FullNameEn": "Dinh Phung Commune",
-       "CodeName": "dinh_phung",
+       "Name": "Thống Nhất",
+       "NameEn": "Thong Nhat",
+       "FullName": "Xã Thống Nhất",
+       "FullNameEn": "Thong Nhat Commune",
+       "CodeName": "thong_nhat",
        "DistrictCode": "343"
       },
       {
@@ -40422,15 +40225,6 @@
        "DistrictCode": "343"
       },
       {
-       "Code": "13153",
-       "Name": "Vũ Thắng",
-       "NameEn": "Vu Thang",
-       "FullName": "Xã Vũ Thắng",
-       "FullNameEn": "Vu Thang Commune",
-       "CodeName": "vu_thang",
-       "DistrictCode": "343"
-      },
-      {
        "Code": "13156",
        "Name": "Vũ Công",
        "NameEn": "Vu Cong",
@@ -40441,11 +40235,11 @@
       },
       {
        "Code": "13159",
-       "Name": "Vũ Hòa",
-       "NameEn": "Vu Hoa",
-       "FullName": "Xã Vũ Hòa",
-       "FullNameEn": "Vu Hoa Commune",
-       "CodeName": "vu_hoa",
+       "Name": "Hồng Vũ",
+       "NameEn": "Hong Vu",
+       "FullName": "Xã Hồng Vũ",
+       "FullNameEn": "Hong Vu Commune",
+       "CodeName": "hong_vu",
        "DistrictCode": "343"
       },
       {
@@ -40473,15 +40267,6 @@
        "FullName": "Xã Minh Quang",
        "FullNameEn": "Minh Quang Commune",
        "CodeName": "minh_quang",
-       "DistrictCode": "343"
-      },
-      {
-       "Code": "13174",
-       "Name": "Vũ Bình",
-       "NameEn": "Vu Binh",
-       "FullName": "Xã Vũ Bình",
-       "FullNameEn": "Vu Binh Commune",
-       "CodeName": "vu_binh",
        "DistrictCode": "343"
       },
       {
@@ -48814,15 +48599,6 @@
      "ProvinceCode": "38",
      "Ward": [
       {
-       "Code": "16144",
-       "Name": "Nga An",
-       "NameEn": "Nga An",
-       "FullName": "Xã Nga An",
-       "FullNameEn": "Nga An Commune",
-       "CodeName": "nga_an",
-       "DistrictCode": "401"
-      },
-      {
        "Code": "16093",
        "Name": "Nga Sơn",
        "NameEn": "Nga Son",
@@ -48946,6 +48722,15 @@
        "FullName": "Xã Nga Thành",
        "FullNameEn": "Nga Thanh Commune",
        "CodeName": "nga_thanh",
+       "DistrictCode": "401"
+      },
+      {
+       "Code": "16144",
+       "Name": "Nga An",
+       "NameEn": "Nga An",
+       "FullName": "Xã Nga An",
+       "FullNameEn": "Nga An Commune",
+       "CodeName": "nga_an",
        "DistrictCode": "401"
       },
       {
@@ -56117,6 +55902,15 @@
      "ProvinceCode": "42",
      "Ward": [
       {
+       "Code": "18679",
+       "Name": "Yên Hòa",
+       "NameEn": "Yen Hoa",
+       "FullName": "Xã Yên Hòa",
+       "FullNameEn": "Yen Hoa Commune",
+       "CodeName": "yen_hoa",
+       "DistrictCode": "446"
+      },
+      {
        "Code": "18673",
        "Name": "Cẩm Xuyên",
        "NameEn": "Cam Xuyen",
@@ -56132,15 +55926,6 @@
        "FullName": "Thị trấn Thiên Cầm",
        "FullNameEn": "Thien Cam Township",
        "CodeName": "thien_cam",
-       "DistrictCode": "446"
-      },
-      {
-       "Code": "18679",
-       "Name": "Yên Hòa",
-       "NameEn": "Yen Hoa",
-       "FullName": "Xã Yên Hòa",
-       "FullNameEn": "Yen Hoa Commune",
-       "CodeName": "yen_hoa",
        "DistrictCode": "446"
       },
       {
@@ -59035,6 +58820,15 @@
      "ProvinceCode": "45",
      "Ward": [
       {
+       "Code": "19603",
+       "Name": "Thanh An",
+       "NameEn": "Thanh An",
+       "FullName": "Xã Thanh An",
+       "FullNameEn": "Thanh An Commune",
+       "CodeName": "thanh_an",
+       "DistrictCode": "468"
+      },
+      {
        "Code": "19597",
        "Name": "Cam Lộ",
        "NameEn": "Cam Lo",
@@ -59050,15 +58844,6 @@
        "FullName": "Xã Cam Tuyền",
        "FullNameEn": "Cam Tuyen Commune",
        "CodeName": "cam_tuyen",
-       "DistrictCode": "468"
-      },
-      {
-       "Code": "19603",
-       "Name": "Thanh An",
-       "NameEn": "Thanh An",
-       "FullName": "Xã Thanh An",
-       "FullNameEn": "Thanh An Commune",
-       "CodeName": "thanh_an",
        "DistrictCode": "468"
       },
       {
@@ -59435,6 +59220,16 @@
        "DistrictCode": "470"
       }
      ]
+    },
+    {
+     "Code": "471",
+     "Name": "Cồn Cỏ",
+     "NameEn": "Con Co",
+     "FullName": "Huyện Cồn Cỏ",
+     "FullNameEn": "Con Co District",
+     "CodeName": "con_co",
+     "ProvinceCode": "45",
+     "Ward": null
     }
    ]
   },
@@ -61404,6 +61199,16 @@
        "DistrictCode": "497"
       }
      ]
+    },
+    {
+     "Code": "498",
+     "Name": "Hoàng Sa",
+     "NameEn": "Hoang Sa",
+     "FullName": "Huyện Hoàng Sa",
+     "FullNameEn": "Hoang Sa District",
+     "CodeName": "hoang_sa",
+     "ProvinceCode": "48",
+     "Ward": null
     }
    ]
   },
@@ -65480,6 +65285,16 @@
        "DistrictCode": "535"
       }
      ]
+    },
+    {
+     "Code": "536",
+     "Name": "Lý Sơn",
+     "NameEn": "Ly Son",
+     "FullName": "Huyện Lý Sơn",
+     "FullNameEn": "Ly Son District",
+     "CodeName": "ly_son",
+     "ProvinceCode": "51",
+     "Ward": null
     }
    ]
   },
@@ -66112,6 +65927,15 @@
      "ProvinceCode": "52",
      "Ward": [
       {
+       "Code": "21781",
+       "Name": "Mỹ Cát",
+       "NameEn": "My Cat",
+       "FullName": "Xã Mỹ Cát",
+       "FullNameEn": "My Cat Commune",
+       "CodeName": "my_cat",
+       "DistrictCode": "545"
+      },
+      {
        "Code": "21730",
        "Name": "Phù Mỹ",
        "NameEn": "Phu My",
@@ -66262,15 +66086,6 @@
        "FullName": "Xã Mỹ Tài",
        "FullNameEn": "My Tai Commune",
        "CodeName": "my_tai",
-       "DistrictCode": "545"
-      },
-      {
-       "Code": "21781",
-       "Name": "Mỹ Cát",
-       "NameEn": "My Cat",
-       "FullName": "Xã Mỹ Cát",
-       "FullNameEn": "My Cat Commune",
-       "CodeName": "my_cat",
        "DistrictCode": "545"
       },
       {
@@ -67073,15 +66888,6 @@
       },
       {
        "Code": "22018",
-       "Name": "8",
-       "NameEn": "8",
-       "FullName": "Phường 8",
-       "FullNameEn": "Ward 8",
-       "CodeName": "8",
-       "DistrictCode": "555"
-      },
-      {
-       "Code": "22021",
        "Name": "2",
        "NameEn": "2",
        "FullName": "Phường 2",
@@ -67096,15 +66902,6 @@
        "FullName": "Phường 9",
        "FullNameEn": "Ward 9",
        "CodeName": "9",
-       "DistrictCode": "555"
-      },
-      {
-       "Code": "22027",
-       "Name": "3",
-       "NameEn": "3",
-       "FullName": "Phường 3",
-       "FullNameEn": "Ward 3",
-       "CodeName": "3",
        "DistrictCode": "555"
       },
       {
@@ -67132,15 +66929,6 @@
        "FullName": "Phường 7",
        "FullNameEn": "Ward 7",
        "CodeName": "7",
-       "DistrictCode": "555"
-      },
-      {
-       "Code": "22039",
-       "Name": "6",
-       "NameEn": "6",
-       "FullName": "Phường 6",
-       "FullNameEn": "Ward 6",
-       "CodeName": "6",
        "DistrictCode": "555"
       },
       {
@@ -67177,15 +66965,6 @@
        "FullName": "Xã Bình Kiến",
        "FullNameEn": "Binh Kien Commune",
        "CodeName": "binh_kien",
-       "DistrictCode": "555"
-      },
-      {
-       "Code": "22048",
-       "Name": "Bình Ngọc",
-       "NameEn": "Binh Ngoc",
-       "FullName": "Xã Bình Ngọc",
-       "FullNameEn": "Binh Ngoc Commune",
-       "CodeName": "binh_ngoc",
        "DistrictCode": "555"
       },
       {
@@ -67456,21 +67235,21 @@
      "ProvinceCode": "54",
      "Ward": [
       {
-       "Code": "22117",
-       "Name": "An Dân",
-       "NameEn": "An Dan",
-       "FullName": "Xã An Dân",
-       "FullNameEn": "An Dan Commune",
-       "CodeName": "an_dan",
-       "DistrictCode": "559"
-      },
-      {
        "Code": "22114",
        "Name": "Chí Thạnh",
        "NameEn": "Chi Thanh",
        "FullName": "Thị trấn Chí Thạnh",
        "FullNameEn": "Chi Thanh Township",
        "CodeName": "chi_thanh",
+       "DistrictCode": "559"
+      },
+      {
+       "Code": "22117",
+       "Name": "An Dân",
+       "NameEn": "An Dan",
+       "FullName": "Xã An Dân",
+       "FullNameEn": "An Dan Commune",
+       "CodeName": "an_dan",
        "DistrictCode": "559"
       },
       {
@@ -68207,24 +67986,6 @@
        "DistrictCode": "568"
       },
       {
-       "Code": "22342",
-       "Name": "Xương Huân",
-       "NameEn": "Xuong Huan",
-       "FullName": "Phường Xương Huân",
-       "FullNameEn": "Xuong Huan Ward",
-       "CodeName": "xuong_huan",
-       "DistrictCode": "568"
-      },
-      {
-       "Code": "22345",
-       "Name": "Vạn Thắng",
-       "NameEn": "Van Thang",
-       "FullName": "Phường Vạn Thắng",
-       "FullNameEn": "Van Thang Ward",
-       "CodeName": "van_thang",
-       "DistrictCode": "568"
-      },
-      {
        "Code": "22348",
        "Name": "Vạn Thạnh",
        "NameEn": "Van Thanh",
@@ -68243,30 +68004,12 @@
        "DistrictCode": "568"
       },
       {
-       "Code": "22354",
-       "Name": "Phương Sơn",
-       "NameEn": "Phuong Son",
-       "FullName": "Phường Phương Sơn",
-       "FullNameEn": "Phuong Son Ward",
-       "CodeName": "phuong_son",
-       "DistrictCode": "568"
-      },
-      {
        "Code": "22357",
        "Name": "Phước Hải",
        "NameEn": "Phuoc Hai",
        "FullName": "Phường Phước Hải",
        "FullNameEn": "Phuoc Hai Ward",
        "CodeName": "phuoc_hai",
-       "DistrictCode": "568"
-      },
-      {
-       "Code": "22360",
-       "Name": "Phước Tân",
-       "NameEn": "Phuoc Tan",
-       "FullName": "Phường Phước Tân",
-       "FullNameEn": "Phuoc Tan Ward",
-       "CodeName": "phuoc_tan",
        "DistrictCode": "568"
       },
       {
@@ -68280,20 +68023,11 @@
       },
       {
        "Code": "22366",
-       "Name": "Phước Tiến",
-       "NameEn": "Phuoc Tien",
-       "FullName": "Phường Phước Tiến",
-       "FullNameEn": "Phuoc Tien Ward",
-       "CodeName": "phuoc_tien",
-       "DistrictCode": "568"
-      },
-      {
-       "Code": "22369",
-       "Name": "Tân Lập",
-       "NameEn": "Tan Lap",
-       "FullName": "Phường Tân Lập",
-       "FullNameEn": "Tan Lap Ward",
-       "CodeName": "tan_lap",
+       "Name": "Tân Tiến",
+       "NameEn": "Tan Tien",
+       "FullName": "Phường Tân Tiến",
+       "FullNameEn": "Tan Tien Ward",
+       "CodeName": "tan_tien",
        "DistrictCode": "568"
       },
       {
@@ -68980,15 +68714,6 @@
        "DistrictCode": "572"
       },
       {
-       "Code": "22579",
-       "Name": "Ninh Phước",
-       "NameEn": "Ninh Phuoc",
-       "FullName": "Xã Ninh Phước",
-       "FullNameEn": "Ninh Phuoc Commune",
-       "CodeName": "ninh_phuoc",
-       "DistrictCode": "572"
-      },
-      {
        "Code": "22582",
        "Name": "Ninh Phú",
        "NameEn": "Ninh Phu",
@@ -69062,11 +68787,11 @@
       },
       {
        "Code": "22606",
-       "Name": "Ninh Vân",
-       "NameEn": "Ninh Van",
-       "FullName": "Xã Ninh Vân",
-       "FullNameEn": "Ninh Van Commune",
-       "CodeName": "ninh_van",
+       "Name": "Ninh Phước",
+       "NameEn": "Ninh Phuoc",
+       "FullName": "Xã Ninh Phước",
+       "FullNameEn": "Ninh Phuoc Commune",
+       "CodeName": "ninh_phuoc",
        "DistrictCode": "572"
       }
      ]
@@ -69246,11 +68971,11 @@
       },
       {
        "Code": "22660",
-       "Name": "Diên Xuân",
-       "NameEn": "Dien Xuan",
-       "FullName": "Xã Diên Xuân",
-       "FullNameEn": "Dien Xuan Commune",
-       "CodeName": "dien_xuan",
+       "Name": "Xuân Đồng",
+       "NameEn": "Xuan Dong",
+       "FullName": "Xã Xuân Đồng",
+       "FullNameEn": "Xuan Dong Commune",
+       "CodeName": "xuan_dong",
        "DistrictCode": "574"
       },
       {
@@ -69260,15 +68985,6 @@
        "FullName": "Xã Diên Sơn",
        "FullNameEn": "Dien Son Commune",
        "CodeName": "dien_son",
-       "DistrictCode": "574"
-      },
-      {
-       "Code": "22666",
-       "Name": "Diên Đồng",
-       "NameEn": "Dien Dong",
-       "FullName": "Xã Diên Đồng",
-       "FullNameEn": "Dien Dong Commune",
-       "CodeName": "dien_dong",
        "DistrictCode": "574"
       },
       {
@@ -69549,39 +69265,12 @@
        "DistrictCode": "582"
       },
       {
-       "Code": "22747",
+       "Code": "22750",
        "Name": "Phủ Hà",
        "NameEn": "Phu Ha",
        "FullName": "Phường Phủ Hà",
        "FullNameEn": "Phu Ha Ward",
        "CodeName": "phu_ha",
-       "DistrictCode": "582"
-      },
-      {
-       "Code": "22750",
-       "Name": "Thanh Sơn",
-       "NameEn": "Thanh Son",
-       "FullName": "Phường Thanh Sơn",
-       "FullNameEn": "Thanh Son Ward",
-       "CodeName": "thanh_son",
-       "DistrictCode": "582"
-      },
-      {
-       "Code": "22753",
-       "Name": "Mỹ Hương",
-       "NameEn": "My Huong",
-       "FullName": "Phường Mỹ Hương",
-       "FullNameEn": "My Huong Ward",
-       "CodeName": "my_huong",
-       "DistrictCode": "582"
-      },
-      {
-       "Code": "22756",
-       "Name": "Tấn Tài",
-       "NameEn": "Tan Tai",
-       "FullName": "Phường Tấn Tài",
-       "FullNameEn": "Tan Tai Ward",
-       "CodeName": "tan_tai",
        "DistrictCode": "582"
       },
       {
@@ -71430,6 +71119,15 @@
      "ProvinceCode": "62",
      "Ward": [
       {
+       "Code": "23302",
+       "Name": "Lê Lợi",
+       "NameEn": "Le Loi",
+       "FullName": "Phường Lê Lợi",
+       "FullNameEn": "Le Loi Ward",
+       "CodeName": "le_loi",
+       "DistrictCode": "608"
+      },
+      {
        "Code": "23281",
        "Name": "Quang Trung",
        "NameEn": "Quang Trung",
@@ -71490,15 +71188,6 @@
        "FullName": "Phường Thống Nhất",
        "FullNameEn": "Thong Nhat Ward",
        "CodeName": "thong_nhat",
-       "DistrictCode": "608"
-      },
-      {
-       "Code": "23302",
-       "Name": "Lê Lợi",
-       "NameEn": "Le Loi",
-       "FullName": "Phường Lê Lợi",
-       "FullNameEn": "Le Loi Ward",
-       "CodeName": "le_loi",
        "DistrictCode": "608"
       },
       {
@@ -71749,33 +71438,6 @@
      "ProvinceCode": "62",
      "Ward": [
       {
-       "Code": "23392",
-       "Name": "Đắk Kan",
-       "NameEn": "Dak Kan",
-       "FullName": "Xã Đắk Kan",
-       "FullNameEn": "Dak Kan Commune",
-       "CodeName": "dak_kan",
-       "DistrictCode": "611"
-      },
-      {
-       "Code": "23395",
-       "Name": "Bờ Y",
-       "NameEn": "Bo Y",
-       "FullName": "Xã Bờ Y",
-       "FullNameEn": "Bo Y Commune",
-       "CodeName": "bo_y",
-       "DistrictCode": "611"
-      },
-      {
-       "Code": "23398",
-       "Name": "Sa Loong",
-       "NameEn": "Sa Loong",
-       "FullName": "Xã Sa Loong",
-       "FullNameEn": "Sa Loong Commune",
-       "CodeName": "sa_loong",
-       "DistrictCode": "611"
-      },
-      {
        "Code": "23377",
        "Name": "Plei Kần",
        "NameEn": "Plei Kan",
@@ -71818,6 +71480,33 @@
        "FullName": "Xã Đắk Xú",
        "FullNameEn": "Dak Xu Commune",
        "CodeName": "dak_xu",
+       "DistrictCode": "611"
+      },
+      {
+       "Code": "23392",
+       "Name": "Đắk Kan",
+       "NameEn": "Dak Kan",
+       "FullName": "Xã Đắk Kan",
+       "FullNameEn": "Dak Kan Commune",
+       "CodeName": "dak_kan",
+       "DistrictCode": "611"
+      },
+      {
+       "Code": "23395",
+       "Name": "Bờ Y",
+       "NameEn": "Bo Y",
+       "FullName": "Xã Bờ Y",
+       "FullNameEn": "Bo Y Commune",
+       "CodeName": "bo_y",
+       "DistrictCode": "611"
+      },
+      {
+       "Code": "23398",
+       "Name": "Sa Loong",
+       "NameEn": "Sa Loong",
+       "FullName": "Xã Sa Loong",
+       "FullNameEn": "Sa Loong Commune",
+       "CodeName": "sa_loong",
        "DistrictCode": "611"
       }
      ]
@@ -72603,15 +72292,6 @@
        "DistrictCode": "622"
       },
       {
-       "Code": "23593",
-       "Name": "Tân Sơn",
-       "NameEn": "Tan Son",
-       "FullName": "Xã Tân Sơn",
-       "FullNameEn": "Tan Son Commune",
-       "CodeName": "tan_son",
-       "DistrictCode": "622"
-      },
-      {
        "Code": "23596",
        "Name": "Trà Đa",
        "NameEn": "Tra Da",
@@ -72978,21 +72658,12 @@
        "DistrictCode": "625"
       },
       {
-       "Code": "23671",
-       "Name": "Kông Pla",
-       "NameEn": "Kong Pla",
-       "FullName": "Xã Kông Pla",
-       "FullNameEn": "Kong Pla Commune",
-       "CodeName": "kong_pla",
-       "DistrictCode": "625"
-      },
-      {
        "Code": "23674",
-       "Name": "Đăk HLơ",
-       "NameEn": "Dak HLo",
-       "FullName": "Xã Đăk HLơ",
-       "FullNameEn": "Dak HLo Commune",
-       "CodeName": "dak_hlo",
+       "Name": "Kông Bơ La",
+       "NameEn": "Kong Bo La",
+       "FullName": "Xã Kông Bơ La",
+       "FullNameEn": "Kong Bo La Commune",
+       "CodeName": "kong_bo_la",
        "DistrictCode": "625"
       }
      ]
@@ -74672,15 +74343,6 @@
        "DistrictCode": "643"
       },
       {
-       "Code": "24127",
-       "Name": "Thống Nhất",
-       "NameEn": "Thong Nhat",
-       "FullName": "Phường Thống Nhất",
-       "FullNameEn": "Thong Nhat Ward",
-       "CodeName": "thong_nhat",
-       "DistrictCode": "643"
-      },
-      {
        "Code": "24130",
        "Name": "Thành Nhất",
        "NameEn": "Thanh Nhat",
@@ -74691,11 +74353,11 @@
       },
       {
        "Code": "24133",
-       "Name": "Thắng Lợi",
-       "NameEn": "Thang Loi",
-       "FullName": "Phường Thắng Lợi",
-       "FullNameEn": "Thang Loi Ward",
-       "CodeName": "thang_loi",
+       "Name": "Thành Công",
+       "NameEn": "Thanh Cong",
+       "FullName": "Phường Thành Công",
+       "FullNameEn": "Thanh Cong Ward",
+       "CodeName": "thanh_cong",
        "DistrictCode": "643"
       },
       {
@@ -74705,15 +74367,6 @@
        "FullName": "Phường Tân Lợi",
        "FullNameEn": "Tan Loi Ward",
        "CodeName": "tan_loi",
-       "DistrictCode": "643"
-      },
-      {
-       "Code": "24139",
-       "Name": "Thành Công",
-       "NameEn": "Thanh Cong",
-       "FullName": "Phường Thành Công",
-       "FullNameEn": "Thanh Cong Ward",
-       "CodeName": "thanh_cong",
        "DistrictCode": "643"
       },
       {
@@ -74887,15 +74540,6 @@
        "FullName": "Phường Đoàn Kết",
        "FullNameEn": "Doan Ket Ward",
        "CodeName": "doan_ket",
-       "DistrictCode": "644"
-      },
-      {
-       "Code": "24325",
-       "Name": "Ea Blang",
-       "NameEn": "Ea Blang",
-       "FullName": "Xã Ea Blang",
-       "FullNameEn": "Ea Blang Commune",
-       "CodeName": "ea_blang",
        "DistrictCode": "644"
       },
       {
@@ -75422,6 +75066,15 @@
      "ProvinceCode": "66",
      "Ward": [
       {
+       "Code": "24317",
+       "Name": "Tân Lập",
+       "NameEn": "Tan Lap",
+       "FullName": "Xã Tân Lập",
+       "FullNameEn": "Tan Lap Commune",
+       "CodeName": "tan_lap",
+       "DistrictCode": "649"
+      },
+      {
        "Code": "24307",
        "Name": "Cư Né",
        "NameEn": "Cu Ne",
@@ -75464,15 +75117,6 @@
        "FullName": "Thị trấn Pơng Drang",
        "FullNameEn": "Pong Drang Township",
        "CodeName": "pong_drang",
-       "DistrictCode": "649"
-      },
-      {
-       "Code": "24317",
-       "Name": "Tân Lập",
-       "NameEn": "Tan Lap",
-       "FullName": "Xã Tân Lập",
-       "FullNameEn": "Tan Lap Commune",
-       "CodeName": "tan_lap",
        "DistrictCode": "649"
       },
       {
@@ -75931,15 +75575,6 @@
        "FullName": "Xã Hòa Thành",
        "FullNameEn": "Hoa Thanh Commune",
        "CodeName": "hoa_thanh",
-       "DistrictCode": "653"
-      },
-      {
-       "Code": "24460",
-       "Name": "Hòa Tân",
-       "NameEn": "Hoa Tan",
-       "FullName": "Xã Hòa Tân",
-       "FullNameEn": "Hoa Tan Commune",
-       "CodeName": "hoa_tan",
        "DistrictCode": "653"
       },
       {
@@ -81535,6 +81170,15 @@
      "ProvinceCode": "74",
      "Ward": [
       {
+       "Code": "25903",
+       "Name": "Tân Lập",
+       "NameEn": "Tan Lap",
+       "FullName": "Xã Tân Lập",
+       "FullNameEn": "Tan Lap Commune",
+       "CodeName": "tan_lap",
+       "DistrictCode": "726"
+      },
+      {
        "Code": "25894",
        "Name": "Tân Định",
        "NameEn": "Tan Dinh",
@@ -81559,15 +81203,6 @@
        "FullName": "Thị trấn Tân Bình",
        "FullNameEn": "Tan Binh Township",
        "CodeName": "tan_binh",
-       "DistrictCode": "726"
-      },
-      {
-       "Code": "25903",
-       "Name": "Tân Lập",
-       "NameEn": "Tan Lap",
-       "FullName": "Xã Tân Lập",
-       "FullNameEn": "Tan Lap Commune",
-       "CodeName": "tan_lap",
        "DistrictCode": "726"
       },
       {
@@ -81710,11 +81345,11 @@
       },
       {
        "Code": "26014",
-       "Name": "Tân Tiến",
-       "NameEn": "Tan Tien",
-       "FullName": "Phường Tân Tiến",
-       "FullNameEn": "Tan Tien Ward",
-       "CodeName": "tan_tien",
+       "Name": "Tân Mai",
+       "NameEn": "Tan Mai",
+       "FullName": "Phường Tân Mai",
+       "FullNameEn": "Tan Mai Ward",
+       "CodeName": "tan_mai",
        "DistrictCode": "731"
       },
       {
@@ -81745,15 +81380,6 @@
        "DistrictCode": "731"
       },
       {
-       "Code": "26026",
-       "Name": "Tân Mai",
-       "NameEn": "Tan Mai",
-       "FullName": "Phường Tân Mai",
-       "FullNameEn": "Tan Mai Ward",
-       "CodeName": "tan_mai",
-       "DistrictCode": "731"
-      },
-      {
        "Code": "26029",
        "Name": "Thống Nhất",
        "NameEn": "Thong Nhat",
@@ -81763,48 +81389,12 @@
        "DistrictCode": "731"
       },
       {
-       "Code": "26032",
+       "Code": "26041",
        "Name": "Trung Dũng",
        "NameEn": "Trung Dung",
        "FullName": "Phường Trung Dũng",
        "FullNameEn": "Trung Dung Ward",
        "CodeName": "trung_dung",
-       "DistrictCode": "731"
-      },
-      {
-       "Code": "26035",
-       "Name": "Tam Hòa",
-       "NameEn": "Tam Hoa",
-       "FullName": "Phường Tam Hòa",
-       "FullNameEn": "Tam Hoa Ward",
-       "CodeName": "tam_hoa",
-       "DistrictCode": "731"
-      },
-      {
-       "Code": "26038",
-       "Name": "Hòa Bình",
-       "NameEn": "Hoa Binh",
-       "FullName": "Phường Hòa Bình",
-       "FullNameEn": "Hoa Binh Ward",
-       "CodeName": "hoa_binh",
-       "DistrictCode": "731"
-      },
-      {
-       "Code": "26041",
-       "Name": "Quyết Thắng",
-       "NameEn": "Quyet Thang",
-       "FullName": "Phường Quyết Thắng",
-       "FullNameEn": "Quyet Thang Ward",
-       "CodeName": "quyet_thang",
-       "DistrictCode": "731"
-      },
-      {
-       "Code": "26044",
-       "Name": "Thanh Bình",
-       "NameEn": "Thanh Binh",
-       "FullName": "Phường Thanh Bình",
-       "FullNameEn": "Thanh Binh Ward",
-       "CodeName": "thanh_binh",
        "DistrictCode": "731"
       },
       {
@@ -81926,24 +81516,6 @@
      "CodeName": "long_khanh",
      "ProvinceCode": "75",
      "Ward": [
-      {
-       "Code": "26071",
-       "Name": "Xuân Trung",
-       "NameEn": "Xuan Trung",
-       "FullName": "Phường Xuân Trung",
-       "FullNameEn": "Xuan Trung Ward",
-       "CodeName": "xuan_trung",
-       "DistrictCode": "732"
-      },
-      {
-       "Code": "26074",
-       "Name": "Xuân Thanh",
-       "NameEn": "Xuan Thanh",
-       "FullName": "Phường Xuân Thanh",
-       "FullNameEn": "Xuan Thanh Ward",
-       "CodeName": "xuan_thanh",
-       "DistrictCode": "732"
-      },
       {
        "Code": "26077",
        "Name": "Xuân Bình",
@@ -82109,15 +81681,6 @@
        "DistrictCode": "734"
       },
       {
-       "Code": "26128",
-       "Name": "Núi Tượng",
-       "NameEn": "Nui Tuong",
-       "FullName": "Xã Núi Tượng",
-       "FullNameEn": "Nui Tuong Commune",
-       "CodeName": "nui_tuong",
-       "DistrictCode": "734"
-      },
-      {
        "Code": "26131",
        "Name": "Tà Lài",
        "NameEn": "Ta Lai",
@@ -82133,15 +81696,6 @@
        "FullName": "Xã Phú Lập",
        "FullNameEn": "Phu Lap Commune",
        "CodeName": "phu_lap",
-       "DistrictCode": "734"
-      },
-      {
-       "Code": "26137",
-       "Name": "Phú Sơn",
-       "NameEn": "Phu Son",
-       "FullName": "Xã Phú Sơn",
-       "FullNameEn": "Phu Son Commune",
-       "CodeName": "phu_son",
        "DistrictCode": "734"
       },
       {
@@ -82164,11 +81718,11 @@
       },
       {
        "Code": "26146",
-       "Name": "Phú Trung",
-       "NameEn": "Phu Trung",
-       "FullName": "Xã Phú Trung",
-       "FullNameEn": "Phu Trung Commune",
-       "CodeName": "phu_trung",
+       "Name": "Phú Sơn",
+       "NameEn": "Phu Son",
+       "FullName": "Xã Phú Sơn",
+       "FullNameEn": "Phu Son Commune",
+       "CodeName": "phu_son",
        "DistrictCode": "734"
       },
       {
@@ -82327,30 +81881,12 @@
        "DistrictCode": "735"
       },
       {
-       "Code": "26197",
-       "Name": "Bình Hòa",
-       "NameEn": "Binh Hoa",
-       "FullName": "Xã Bình Hòa",
-       "FullNameEn": "Binh Hoa Commune",
-       "CodeName": "binh_hoa",
-       "DistrictCode": "735"
-      },
-      {
        "Code": "26200",
        "Name": "Mã Đà",
        "NameEn": "Ma Da",
        "FullName": "Xã Mã Đà",
        "FullNameEn": "Ma Da Commune",
        "CodeName": "ma_da",
-       "DistrictCode": "735"
-      },
-      {
-       "Code": "26203",
-       "Name": "Hiếu Liêm",
-       "NameEn": "Hieu Liem",
-       "FullName": "Xã Hiếu Liêm",
-       "FullNameEn": "Hieu Liem Commune",
-       "CodeName": "hieu_liem",
        "DistrictCode": "735"
       }
      ]
@@ -84111,6 +83647,16 @@
        "DistrictCode": "754"
       }
      ]
+    },
+    {
+     "Code": "755",
+     "Name": "Côn Đảo",
+     "NameEn": "Con Dao",
+     "FullName": "Huyện Côn Đảo",
+     "FullNameEn": "Con Dao District",
+     "CodeName": "con_dao",
+     "ProvinceCode": "77",
+     "Ward": null
     }
    ]
   },
@@ -87329,21 +86875,21 @@
      "ProvinceCode": "80",
      "Ward": [
       {
-       "Code": "27788",
-       "Name": "2",
-       "NameEn": "2",
-       "FullName": "Phường 2",
-       "FullNameEn": "Ward 2",
-       "CodeName": "2",
-       "DistrictCode": "795"
-      },
-      {
        "Code": "27787",
        "Name": "1",
        "NameEn": "1",
        "FullName": "Phường 1",
        "FullNameEn": "Ward 1",
        "CodeName": "1",
+       "DistrictCode": "795"
+      },
+      {
+       "Code": "27788",
+       "Name": "2",
+       "NameEn": "2",
+       "FullName": "Phường 2",
+       "FullNameEn": "Ward 2",
+       "CodeName": "2",
        "DistrictCode": "795"
       },
       {
@@ -89077,24 +88623,6 @@
        "DistrictCode": "815"
       },
       {
-       "Code": "28255",
-       "Name": "7",
-       "NameEn": "7",
-       "FullName": "Phường 7",
-       "FullNameEn": "Ward 7",
-       "CodeName": "7",
-       "DistrictCode": "815"
-      },
-      {
-       "Code": "28258",
-       "Name": "3",
-       "NameEn": "3",
-       "FullName": "Phường 3",
-       "FullNameEn": "Ward 3",
-       "CodeName": "3",
-       "DistrictCode": "815"
-      },
-      {
        "Code": "28261",
        "Name": "1",
        "NameEn": "1",
@@ -89110,15 +88638,6 @@
        "FullName": "Phường 2",
        "FullNameEn": "Ward 2",
        "CodeName": "2",
-       "DistrictCode": "815"
-      },
-      {
-       "Code": "28267",
-       "Name": "8",
-       "NameEn": "8",
-       "FullName": "Phường 8",
-       "FullNameEn": "Ward 8",
-       "CodeName": "8",
        "DistrictCode": "815"
       },
       {
@@ -90025,15 +89544,6 @@
        "DistrictCode": "821"
       },
       {
-       "Code": "28531",
-       "Name": "Tân Lý Tây",
-       "NameEn": "Tan Ly Tay",
-       "FullName": "Xã Tân Lý Tây",
-       "FullNameEn": "Tan Ly Tay Commune",
-       "CodeName": "tan_ly_tay",
-       "DistrictCode": "821"
-      },
-      {
        "Code": "28534",
        "Name": "Thân Cửu Nghĩa",
        "NameEn": "Than Cuu Nghia",
@@ -90070,15 +89580,6 @@
        "DistrictCode": "821"
       },
       {
-       "Code": "28546",
-       "Name": "Dưỡng Điềm",
-       "NameEn": "Duong Diem",
-       "FullName": "Xã Dưỡng Điềm",
-       "FullNameEn": "Duong Diem Commune",
-       "CodeName": "duong_diem",
-       "DistrictCode": "821"
-      },
-      {
        "Code": "28549",
        "Name": "Đông Hòa",
        "NameEn": "Dong Hoa",
@@ -90094,15 +89595,6 @@
        "FullName": "Xã Long Định",
        "FullNameEn": "Long Dinh Commune",
        "CodeName": "long_dinh",
-       "DistrictCode": "821"
-      },
-      {
-       "Code": "28555",
-       "Name": "Hữu Đạo",
-       "NameEn": "Huu Dao",
-       "FullName": "Xã Hữu Đạo",
-       "FullNameEn": "Huu Dao Commune",
-       "CodeName": "huu_dao",
        "DistrictCode": "821"
       },
       {
@@ -90720,42 +90212,6 @@
      "ProvinceCode": "83",
      "Ward": [
       {
-       "Code": "28756",
-       "Name": "Phú Khương",
-       "NameEn": "Phu Khuong",
-       "FullName": "Phường Phú Khương",
-       "FullNameEn": "Phu Khuong Ward",
-       "CodeName": "phu_khuong",
-       "DistrictCode": "829"
-      },
-      {
-       "Code": "28757",
-       "Name": "Phú Tân",
-       "NameEn": "Phu Tan",
-       "FullName": "Phường Phú Tân",
-       "FullNameEn": "Phu Tan Ward",
-       "CodeName": "phu_tan",
-       "DistrictCode": "829"
-      },
-      {
-       "Code": "28759",
-       "Name": "8",
-       "NameEn": "8",
-       "FullName": "Phường 8",
-       "FullNameEn": "Ward 8",
-       "CodeName": "8",
-       "DistrictCode": "829"
-      },
-      {
-       "Code": "28762",
-       "Name": "6",
-       "NameEn": "6",
-       "FullName": "Phường 6",
-       "FullNameEn": "Ward 6",
-       "CodeName": "6",
-       "DistrictCode": "829"
-      },
-      {
        "Code": "28765",
        "Name": "4",
        "NameEn": "4",
@@ -90789,6 +90245,42 @@
        "FullName": "Phường 7",
        "FullNameEn": "Ward 7",
        "CodeName": "7",
+       "DistrictCode": "829"
+      },
+      {
+       "Code": "28756",
+       "Name": "Phú Khương",
+       "NameEn": "Phu Khuong",
+       "FullName": "Phường Phú Khương",
+       "FullNameEn": "Phu Khuong Ward",
+       "CodeName": "phu_khuong",
+       "DistrictCode": "829"
+      },
+      {
+       "Code": "28757",
+       "Name": "Phú Tân",
+       "NameEn": "Phu Tan",
+       "FullName": "Phường Phú Tân",
+       "FullNameEn": "Phu Tan Ward",
+       "CodeName": "phu_tan",
+       "DistrictCode": "829"
+      },
+      {
+       "Code": "28759",
+       "Name": "8",
+       "NameEn": "8",
+       "FullName": "Phường 8",
+       "FullNameEn": "Ward 8",
+       "CodeName": "8",
+       "DistrictCode": "829"
+      },
+      {
+       "Code": "28762",
+       "Name": "6",
+       "NameEn": "6",
+       "FullName": "Phường 6",
+       "FullNameEn": "Ward 6",
+       "CodeName": "6",
        "DistrictCode": "829"
       },
       {
@@ -92242,42 +91734,6 @@
      "ProvinceCode": "84",
      "Ward": [
       {
-       "Code": "29251",
-       "Name": "6",
-       "NameEn": "6",
-       "FullName": "Phường 6",
-       "FullNameEn": "Ward 6",
-       "CodeName": "6",
-       "DistrictCode": "842"
-      },
-      {
-       "Code": "29254",
-       "Name": "7",
-       "NameEn": "7",
-       "FullName": "Phường 7",
-       "FullNameEn": "Ward 7",
-       "CodeName": "7",
-       "DistrictCode": "842"
-      },
-      {
-       "Code": "29257",
-       "Name": "8",
-       "NameEn": "8",
-       "FullName": "Phường 8",
-       "FullNameEn": "Ward 8",
-       "CodeName": "8",
-       "DistrictCode": "842"
-      },
-      {
-       "Code": "29260",
-       "Name": "9",
-       "NameEn": "9",
-       "FullName": "Phường 9",
-       "FullNameEn": "Ward 9",
-       "CodeName": "9",
-       "DistrictCode": "842"
-      },
-      {
        "Code": "29236",
        "Name": "4",
        "NameEn": "4",
@@ -92320,6 +91776,42 @@
        "FullName": "Phường 5",
        "FullNameEn": "Ward 5",
        "CodeName": "5",
+       "DistrictCode": "842"
+      },
+      {
+       "Code": "29251",
+       "Name": "6",
+       "NameEn": "6",
+       "FullName": "Phường 6",
+       "FullNameEn": "Ward 6",
+       "CodeName": "6",
+       "DistrictCode": "842"
+      },
+      {
+       "Code": "29254",
+       "Name": "7",
+       "NameEn": "7",
+       "FullName": "Phường 7",
+       "FullNameEn": "Ward 7",
+       "CodeName": "7",
+       "DistrictCode": "842"
+      },
+      {
+       "Code": "29257",
+       "Name": "8",
+       "NameEn": "8",
+       "FullName": "Phường 8",
+       "FullNameEn": "Ward 8",
+       "CodeName": "8",
+       "DistrictCode": "842"
+      },
+      {
+       "Code": "29260",
+       "Name": "9",
+       "NameEn": "9",
+       "FullName": "Phường 9",
+       "FullNameEn": "Ward 9",
+       "CodeName": "9",
        "DistrictCode": "842"
       },
       {
@@ -93323,21 +92815,12 @@
        "DistrictCode": "855"
       },
       {
-       "Code": "29548",
+       "Code": "29551",
        "Name": "1",
        "NameEn": "1",
        "FullName": "Phường 1",
        "FullNameEn": "Ward 1",
        "CodeName": "1",
-       "DistrictCode": "855"
-      },
-      {
-       "Code": "29551",
-       "Name": "2",
-       "NameEn": "2",
-       "FullName": "Phường 2",
-       "FullNameEn": "Ward 2",
-       "CodeName": "2",
        "DistrictCode": "855"
       },
       {
@@ -93415,15 +92898,6 @@
      "ProvinceCode": "86",
      "Ward": [
       {
-       "Code": "29575",
-       "Name": "Long Hồ",
-       "NameEn": "Long Ho",
-       "FullName": "Thị trấn Long Hồ",
-       "FullNameEn": "Long Ho Township",
-       "CodeName": "long_ho",
-       "DistrictCode": "857"
-      },
-      {
        "Code": "29578",
        "Name": "Đồng Phú",
        "NameEn": "Dong Phu",
@@ -93497,11 +92971,11 @@
       },
       {
        "Code": "29602",
-       "Name": "Phú Đức",
-       "NameEn": "Phu Duc",
-       "FullName": "Xã Phú Đức",
-       "FullNameEn": "Phu Duc Commune",
-       "CodeName": "phu_duc",
+       "Name": "Long Hồ",
+       "NameEn": "Long Ho",
+       "FullName": "Thị trấn Long Hồ",
+       "FullNameEn": "Long Ho Township",
+       "CodeName": "long_ho",
        "DistrictCode": "857"
       },
       {
@@ -93988,15 +93462,6 @@
        "DistrictCode": "860"
       },
       {
-       "Code": "29758",
-       "Name": "Tường Lộc",
-       "NameEn": "Tuong Loc",
-       "FullName": "Xã Tường Lộc",
-       "FullNameEn": "Tuong Loc Commune",
-       "CodeName": "tuong_loc",
-       "DistrictCode": "860"
-      },
-      {
        "Code": "29761",
        "Name": "Loan Mỹ",
        "NameEn": "Loan My",
@@ -94217,15 +93682,6 @@
        "DistrictCode": "862"
       },
       {
-       "Code": "29854",
-       "Name": "Thiện Mỹ",
-       "NameEn": "Thien My",
-       "FullName": "Xã Thiện Mỹ",
-       "FullNameEn": "Thien My Commune",
-       "CodeName": "thien_my",
-       "DistrictCode": "862"
-      },
-      {
        "Code": "29857",
        "Name": "Lục Sỹ Thành",
        "NameEn": "Luc Sy Thanh",
@@ -94254,15 +93710,6 @@
      "CodeName": "binh_tan",
      "ProvinceCode": "86",
      "Ward": [
-      {
-       "Code": "29773",
-       "Name": "Tân Hưng",
-       "NameEn": "Tan Hung",
-       "FullName": "Xã Tân Hưng",
-       "FullNameEn": "Tan Hung Commune",
-       "CodeName": "tan_hung",
-       "DistrictCode": "863"
-      },
       {
        "Code": "29776",
        "Name": "Tân Thành",
@@ -95923,15 +95370,6 @@
      "ProvinceCode": "89",
      "Ward": [
       {
-       "Code": "30331",
-       "Name": "Vĩnh Tế",
-       "NameEn": "Vinh Te",
-       "FullName": "Xã Vĩnh Tế",
-       "FullNameEn": "Vinh Te Commune",
-       "CodeName": "vinh_te",
-       "DistrictCode": "884"
-      },
-      {
        "Code": "30316",
        "Name": "Châu Phú B",
        "NameEn": "Chau Phu B",
@@ -95974,6 +95412,15 @@
        "FullName": "Phường Vĩnh Ngươn",
        "FullNameEn": "Vinh Nguon Ward",
        "CodeName": "vinh_nguon",
+       "DistrictCode": "884"
+      },
+      {
+       "Code": "30331",
+       "Name": "Vĩnh Tế",
+       "NameEn": "Vinh Te",
+       "FullName": "Xã Vĩnh Tế",
+       "FullNameEn": "Vinh Te Commune",
+       "CodeName": "vinh_te",
        "DistrictCode": "884"
       },
       {
@@ -96572,15 +96019,6 @@
      "ProvinceCode": "89",
      "Ward": [
       {
-       "Code": "30541",
-       "Name": "Tân Lập",
-       "NameEn": "Tan Lap",
-       "FullName": "Xã Tân Lập",
-       "FullNameEn": "Tan Lap Commune",
-       "CodeName": "tan_lap",
-       "DistrictCode": "890"
-      },
-      {
        "Code": "30502",
        "Name": "Nhà Bàng",
        "NameEn": "Nha Bang",
@@ -96695,6 +96133,15 @@
        "FullName": "Xã An Hảo",
        "FullNameEn": "An Hao Commune",
        "CodeName": "an_hao",
+       "DistrictCode": "890"
+      },
+      {
+       "Code": "30541",
+       "Name": "Tân Lập",
+       "NameEn": "Tan Lap",
+       "FullName": "Xã Tân Lập",
+       "FullNameEn": "Tan Lap Commune",
+       "CodeName": "tan_lap",
        "DistrictCode": "890"
       }
      ]
@@ -98828,39 +98275,12 @@
        "DistrictCode": "916"
       },
       {
-       "Code": "31126",
-       "Name": "An Nghiệp",
-       "NameEn": "An Nghiep",
-       "FullName": "Phường An Nghiệp",
-       "FullNameEn": "An Nghiep Ward",
-       "CodeName": "an_nghiep",
-       "DistrictCode": "916"
-      },
-      {
-       "Code": "31129",
-       "Name": "An Cư",
-       "NameEn": "An Cu",
-       "FullName": "Phường An Cư",
-       "FullNameEn": "An Cu Ward",
-       "CodeName": "an_cu",
-       "DistrictCode": "916"
-      },
-      {
        "Code": "31135",
        "Name": "Tân An",
        "NameEn": "Tan An",
        "FullName": "Phường Tân An",
        "FullNameEn": "Tan An Ward",
        "CodeName": "tan_an",
-       "DistrictCode": "916"
-      },
-      {
-       "Code": "31141",
-       "Name": "An Phú",
-       "NameEn": "An Phu",
-       "FullName": "Phường An Phú",
-       "FullNameEn": "An Phu Ward",
-       "CodeName": "an_phu",
        "DistrictCode": "916"
       },
       {
