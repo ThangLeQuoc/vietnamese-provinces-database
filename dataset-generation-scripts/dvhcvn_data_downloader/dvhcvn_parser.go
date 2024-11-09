@@ -12,26 +12,15 @@ Input should be the dvhcvn content within the <TABLE> tag
 E.g: <MaTinh>68</MaTinh><TenTinh>Tỉnh Lâm Đồng</TenTinh><MaQuanHuyen>675</MaQuanHuyen><TenQuanHuyen>Huyện Lạc Dương</TenQuanHuyen><MaPhuongXa>24846</MaPhuongXa><TenPhuongXa>Thị trấn Lạc Dương</TenPhuongXa><LoaiHinh>Thị trấn</LoaiHinh>
 */
 func toDvhcvnModel(s string) DvhcvnModel {
-	proviceCodeRegex := regexp.MustCompile(`<MaTinh>(.+)</MaTinh>`)
-	proviceCode := sanitizeString(proviceCodeRegex.FindStringSubmatch(s)[1])
 
-	proviceNameRegex := regexp.MustCompile(`<TenTinh>(.+)</TenTinh>`)
-	proviceName := sanitizeString(proviceNameRegex.FindStringSubmatch(s)[1])
+	proviceCode := extractRegexValue(`<MaTinh>(.+)</MaTinh>`, s)
+	proviceName := extractRegexValue(`<TenTinh>(.+)</TenTinh>`, s)
+	
+	districtCode := extractRegexValue(`<MaQuanHuyen>(.+)</MaQuanHuyen>`, s)
+	districtName := extractRegexValue(`<TenQuanHuyen>(.+)</TenQuanHuyen>`, s)
 
-	districtCodeRegex := regexp.MustCompile(`<MaQuanHuyen>(.+)</MaQuanHuyen>`)
-	districtCode := sanitizeString(districtCodeRegex.FindStringSubmatch(s)[1])
-
-	districtNameRegex := regexp.MustCompile(`<TenQuanHuyen>(.+)</TenQuanHuyen>`)
-	districtName := sanitizeString(districtNameRegex.FindStringSubmatch(s)[1])
-
-	wardCodeRegex := regexp.MustCompile(`<MaPhuongXa>(.+)</MaPhuongXa>`)
-	wardCode := sanitizeString(wardCodeRegex.FindStringSubmatch(s)[1])
-
-	wardNameRegex := regexp.MustCompile(`<TenPhuongXa>(.+)</TenPhuongXa>`)
-	wardName := sanitizeString(wardNameRegex.FindStringSubmatch(s)[1])
-
-	wardUnitRegex := regexp.MustCompile(`<LoaiHinh>(.+)</LoaiHinh>`)
-	wardUnit := sanitizeString(wardUnitRegex.FindStringSubmatch(s)[1])
+	wardCode := extractRegexValue(`<MaPhuongXa>(.+)</MaPhuongXa>`, s)
+	wardName := extractRegexValue(`<TenPhuongXa>(.+)</TenPhuongXa>`, s)
 
 	return DvhcvnModel{
 		ProvinceCode: proviceCode,
@@ -40,7 +29,7 @@ func toDvhcvnModel(s string) DvhcvnModel {
 		DistrictName: convertStandardUnitName(districtName),
 		WardCode:     wardCode,
 		WardName:     convertStandardUnitName(wardName),
-		WardUnit:     wardUnit,
+		WardUnit:     "",
 	}
 }
 
@@ -89,4 +78,12 @@ func regexp2FindAllString(re *regexp2.Regexp, s string) []string {
 func sanitizeString(s string) string {
 	return strings.Trim(
 		strings.ReplaceAll(s, "  ", " "), " ")
+}
+
+func extractRegexValue(pattern string, s string) string {
+	regex := regexp.MustCompile(pattern)
+	if match := regex.FindStringSubmatch(s); match != nil {
+		return sanitizeString(match[1])
+	}
+	return ""
 }
