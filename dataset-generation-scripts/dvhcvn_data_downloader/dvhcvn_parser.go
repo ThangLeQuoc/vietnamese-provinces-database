@@ -15,10 +15,8 @@ func toDvhcvnModel(s string) DvhcvnModel {
 
 	proviceCode := extractRegexValue(`<MaTinh>(.+)</MaTinh>`, s)
 	proviceName := extractRegexValue(`<TenTinh>(.+)</TenTinh>`, s)
-	
 	districtCode := extractRegexValue(`<MaQuanHuyen>(.+)</MaQuanHuyen>`, s)
 	districtName := extractRegexValue(`<TenQuanHuyen>(.+)</TenQuanHuyen>`, s)
-
 	wardCode := extractRegexValue(`<MaPhuongXa>(.+)</MaPhuongXa>`, s)
 	wardName := extractRegexValue(`<TenPhuongXa>(.+)</TenPhuongXa>`, s)
 
@@ -30,6 +28,70 @@ func toDvhcvnModel(s string) DvhcvnModel {
 		WardCode:     wardCode,
 		WardName:     convertStandardUnitName(wardName),
 		WardUnit:     "",
+	}
+}
+
+/*
+Create the DvhcvnProvinceModel from the dvhcvn response object.
+Input should be the dvhcvn content within the <TABLE> tag
+E.g: <MaTinh>94</MaTinh><TenTinh>Tỉnh Sóc Trăng</TenTinh><LoaiHinh>Tỉnh</LoaiHinh>
+*/
+func toDvhcvnProvinceModel(s string) DvhcvnProvinceModel {
+	proviceCode := extractRegexValue(`<MaTinh>(.+)</MaTinh>`, s)
+	proviceName := extractRegexValue(`<TenTinh>(.+)</TenTinh>`, s)
+	unit := extractRegexValue(`<LoaiHinh>(.+)</LoaiHinh>`, s)
+
+	return DvhcvnProvinceModel{
+		ProvinceCode: proviceCode,
+		ProvinceName: convertStandardUnitName(proviceName),
+		Unit:         unit,
+	}
+}
+
+/*
+Create the toDvhcvnDistrictModel from the dvhcvn response object.
+Input should be the dvhcvn content within the <TABLE> tag
+E.g: <MaTinh>01</MaTinh><TenTinh>Thành phố Hà Nội</TenTinh><MaQuanHuyen>003</MaQuanHuyen><TenQuanHuyen>Quận Tây Hồ</TenQuanHuyen><LoaiHinh>Quận</LoaiHinh>
+*/
+func toDvhcvnDistrictModel(s string) DvhcvnDistrictModel {
+	proviceCode := extractRegexValue(`<MaTinh>(.+)</MaTinh>`, s)
+	proviceName := extractRegexValue(`<TenTinh>(.+)</TenTinh>`, s)
+	districtCode := extractRegexValue(`<MaQuanHuyen>(.+)</MaQuanHuyen>`, s)
+	districtName := extractRegexValue(`<TenQuanHuyen>(.+)</TenQuanHuyen>`, s)
+	unit := extractRegexValue(`<LoaiHinh>(.+)</LoaiHinh>`, s)
+
+	return DvhcvnDistrictModel{
+		ProvinceCode: proviceCode,
+		ProvinceName: convertStandardUnitName(proviceName),
+		DistrictCode: districtCode,
+		DistrictName: convertStandardUnitName(districtName),
+		Unit:         unit,
+	}
+}
+
+/*
+Create the DvhcvnWardModel from the dvhcvn response object.
+Input should be the dvhcvn content within the <TABLE> tag
+E.g: <MaTinh>74</MaTinh><TenTinh>Tỉnh Bình Dương</TenTinh><MaQuanHuyen>721</MaQuanHuyen><TenQuanHuyen>Thành phố Bến Cát</TenQuanHuyen><MaPhuongXa>25843</MaPhuongXa><TenPhuongXa>Phường An Tây</TenPhuongXa><LoaiHinh>Phường</LoaiHinh>
+*/
+func toDvhcvnWardModel(s string) DvhcvnWardModel {
+	proviceCode := extractRegexValue(`<MaTinh>(.+)</MaTinh>`, s)
+	proviceName := extractRegexValue(`<TenTinh>(.+)</TenTinh>`, s)
+	districtCode := extractRegexValue(`<MaQuanHuyen>(.+)</MaQuanHuyen>`, s)
+	districtName := extractRegexValue(`<TenQuanHuyen>(.+)</TenQuanHuyen>`, s)
+	wardCode := extractRegexValue(`<MaPhuongXa>(.+)</MaPhuongXa>`, s)
+	wardName := extractRegexValue(`<TenPhuongXa>(.+)</TenPhuongXa>`, s)
+
+	unit := extractRegexValue(`<LoaiHinh>(.+)</LoaiHinh>`, s)
+
+	return DvhcvnWardModel{
+		ProvinceCode: proviceCode,
+		ProvinceName: convertStandardUnitName(proviceName),
+		DistrictCode: districtCode,
+		DistrictName: convertStandardUnitName(districtName),
+		WardCode:     wardCode,
+		WardName:     convertStandardUnitName(wardName),
+		Unit:         unit,
 	}
 }
 
@@ -86,4 +148,37 @@ func extractRegexValue(pattern string, s string) string {
 		return sanitizeString(match[1])
 	}
 	return ""
+}
+
+func extractProvinceDvhcvnUnits(soapResponse string) []DvhcvnProvinceModel {
+	regexPattern := regexp2.MustCompile(`(?<=<TABLE\b[^>]*>)([\s\S\n]*?)(?=<\/TABLE>)`, 0)
+	dvhcvnUnitBlocks := regexp2FindAllString(regexPattern, soapResponse)
+
+	var result []DvhcvnProvinceModel
+	for _, unit := range dvhcvnUnitBlocks {
+		result = append(result, toDvhcvnProvinceModel(unit))
+	}
+	return result
+}
+
+func extractDistrictDvhcvnUnits(soapResponse string) []DvhcvnDistrictModel {
+	regexPattern := regexp2.MustCompile(`(?<=<TABLE\b[^>]*>)([\s\S\n]*?)(?=<\/TABLE>)`, 0)
+	dvhcvnUnitBlocks := regexp2FindAllString(regexPattern, soapResponse)
+
+	var result []DvhcvnDistrictModel
+	for _, unit := range dvhcvnUnitBlocks {
+		result = append(result, toDvhcvnDistrictModel(unit))
+	}
+	return result
+}
+
+func extractWardDvhcvnUnits(soapResponse string) []DvhcvnWardModel {
+	regexPattern := regexp2.MustCompile(`(?<=<TABLE\b[^>]*>)([\s\S\n]*?)(?=<\/TABLE>)`, 0)
+	dvhcvnUnitBlocks := regexp2FindAllString(regexPattern, soapResponse)
+
+	var result []DvhcvnWardModel
+	for _, unit := range dvhcvnUnitBlocks {
+		result = append(result, toDvhcvnWardModel(unit))
+	}
+	return result
 }
