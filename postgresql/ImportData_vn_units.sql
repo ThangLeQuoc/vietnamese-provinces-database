@@ -1,5 +1,5 @@
 /* === Vietnamese Provinces Database Dataset for PostgreSQL/MySQL === */
-/* Created at:  Sat, 09 Nov 2024 13:43:10 +0700 */
+/* Created at:  Sat, 09 Nov 2024 19:05:29 +0700 */
 /* Reference: https://github.com/ThangLeQuoc/vietnamese-provinces-database */
 /* =============================================== */
 
@@ -114,6 +114,21 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('019','Nam Từ Liêm','Nam Tu Liem','Quận Nam Từ Liêm','Nam Tu Liem District','nam_tu_liem','01',5),
 ('020','Thanh Trì','Thanh Tri','Huyện Thanh Trì','Thanh Tri District','thanh_tri','01',7),
 ('021','Bắc Từ Liêm','Bac Tu Liem','Quận Bắc Từ Liêm','Bac Tu Liem District','bac_tu_liem','01',5),
+('250','Mê Linh','Me Linh','Huyện Mê Linh','Me Linh District','me_linh','01',7),
+('268','Hà Đông','Ha Dong','Quận Hà Đông','Ha Dong District','ha_dong','01',5),
+('269','Sơn Tây','Son Tay','Thị xã Sơn Tây','Son Tay Town','son_tay','01',6),
+('271','Ba Vì','Ba Vi','Huyện Ba Vì','Ba Vi District','ba_vi','01',7),
+('272','Phúc Thọ','Phuc Tho','Huyện Phúc Thọ','Phuc Tho District','phuc_tho','01',7),
+('273','Đan Phượng','Dan Phuong','Huyện Đan Phượng','Dan Phuong District','dan_phuong','01',7),
+('274','Hoài Đức','Hoai Duc','Huyện Hoài Đức','Hoai Duc District','hoai_duc','01',7),
+('275','Quốc Oai','Quoc Oai','Huyện Quốc Oai','Quoc Oai District','quoc_oai','01',7),
+('276','Thạch Thất','Thach That','Huyện Thạch Thất','Thach That District','thach_that','01',7),
+('277','Chương Mỹ','Chuong My','Huyện Chương Mỹ','Chuong My District','chuong_my','01',7),
+('278','Thanh Oai','Thanh Oai','Huyện Thanh Oai','Thanh Oai District','thanh_oai','01',7),
+('279','Thường Tín','Thuong Tin','Huyện Thường Tín','Thuong Tin District','thuong_tin','01',7),
+('280','Phú Xuyên','Phu Xuyen','Huyện Phú Xuyên','Phu Xuyen District','phu_xuyen','01',7),
+('281','Ứng Hòa','Ung Hoa','Huyện Ứng Hòa','Ung Hoa District','ung_hoa','01',7),
+('282','Mỹ Đức','My Duc','Huyện Mỹ Đức','My Duc District','my_duc','01',7),
 ('024','Hà Giang','Ha Giang','Thành phố Hà Giang','Ha Giang City','ha_giang','02',4),
 ('026','Đồng Văn','Dong Van','Huyện Đồng Văn','Dong Van District','dong_van','02',7),
 ('027','Mèo Vạc','Meo Vac','Huyện Mèo Vạc','Meo Vac District','meo_vac','02',7),
@@ -133,7 +148,9 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('048','Hạ Lang','Ha Lang','Huyện Hạ Lang','Ha Lang District','ha_lang','04',7),
 ('049','Quảng Hòa','Quang Hoa','Huyện Quảng Hòa','Quang Hoa District','quang_hoa','04',7),
 ('051','Hoà An','Hoa An','Huyện Hoà An','Hoa An District','hoa_an','04',7),
-('052','Nguyên Bình','Nguyen Binh','Huyện Nguyên Bình','Nguyen Binh District','nguyen_binh','04',7),
+('052','Nguyên Bình','Nguyen Binh','Huyện Nguyên Bình','Nguyen Binh District','nguyen_binh','04',7);
+
+INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
 ('053','Thạch An','Thach An','Huyện Thạch An','Thach An District','thach_an','04',7),
 ('058','Bắc Kạn','Bac Kan','Thành phố Bắc Kạn','Bac Kan City','bac_kan','06',4),
 ('060','Pác Nặm','Pac Nam','Huyện Pác Nặm','Pac Nam District','pac_nam','06',7),
@@ -148,9 +165,7 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('072','Na Hang','Na Hang','Huyện Na Hang','Na Hang District','na_hang','08',7),
 ('073','Chiêm Hóa','Chiem Hoa','Huyện Chiêm Hóa','Chiem Hoa District','chiem_hoa','08',7),
 ('074','Hàm Yên','Ham Yen','Huyện Hàm Yên','Ham Yen District','ham_yen','08',7),
-('075','Yên Sơn','Yen Son','Huyện Yên Sơn','Yen Son District','yen_son','08',7);
-
-INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
+('075','Yên Sơn','Yen Son','Huyện Yên Sơn','Yen Son District','yen_son','08',7),
 ('076','Sơn Dương','Son Duong','Huyện Sơn Dương','Son Duong District','son_duong','08',7),
 ('080','Lào Cai','Lao Cai','Thành phố Lào Cai','Lao Cai City','lao_cai','10',4),
 ('082','Bát Xát','Bat Xat','Huyện Bát Xát','Bat Xat District','bat_xat','10',7),
@@ -185,7 +200,9 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('120','Mường La','Muong La','Huyện Mường La','Muong La District','muong_la','14',7),
 ('121','Bắc Yên','Bac Yen','Huyện Bắc Yên','Bac Yen District','bac_yen','14',7),
 ('122','Phù Yên','Phu Yen','Huyện Phù Yên','Phu Yen District','phu_yen','14',7),
-('123','Mộc Châu','Moc Chau','Huyện Mộc Châu','Moc Chau District','moc_chau','14',7),
+('123','Mộc Châu','Moc Chau','Huyện Mộc Châu','Moc Chau District','moc_chau','14',7);
+
+INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
 ('124','Yên Châu','Yen Chau','Huyện Yên Châu','Yen Chau District','yen_chau','14',7),
 ('125','Mai Sơn','Mai Son','Huyện Mai Sơn','Mai Son District','mai_son','14',7),
 ('126','Sông Mã','Song Ma','Huyện Sông Mã','Song Ma District','song_ma','14',7),
@@ -200,9 +217,7 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('139','Trạm Tấu','Tram Tau','Huyện Trạm Tấu','Tram Tau District','tram_tau','15',7),
 ('140','Văn Chấn','Van Chan','Huyện Văn Chấn','Van Chan District','van_chan','15',7),
 ('141','Yên Bình','Yen Binh','Huyện Yên Bình','Yen Binh District','yen_binh','15',7),
-('148','Hòa Bình','Hoa Binh','Thành phố Hòa Bình','Hoa Binh City','hoa_binh','17',4);
-
-INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
+('148','Hòa Bình','Hoa Binh','Thành phố Hòa Bình','Hoa Binh City','hoa_binh','17',4),
 ('150','Đà Bắc','Da Bac','Huyện Đà Bắc','Da Bac District','da_bac','17',7),
 ('152','Lương Sơn','Luong Son','Huyện Lương Sơn','Luong Son District','luong_son','17',7),
 ('153','Kim Bôi','Kim Boi','Huyện Kim Bôi','Kim Boi District','kim_boi','17',7),
@@ -237,7 +252,9 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('195','Cẩm Phả','Cam Pha','Thành phố Cẩm Phả','Cam Pha City','cam_pha','22',4),
 ('196','Uông Bí','Uong Bi','Thành phố Uông Bí','Uong Bi City','uong_bi','22',4),
 ('198','Bình Liêu','Binh Lieu','Huyện Bình Liêu','Binh Lieu District','binh_lieu','22',7),
-('199','Tiên Yên','Tien Yen','Huyện Tiên Yên','Tien Yen District','tien_yen','22',7),
+('199','Tiên Yên','Tien Yen','Huyện Tiên Yên','Tien Yen District','tien_yen','22',7);
+
+INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
 ('200','Đầm Hà','Dam Ha','Huyện Đầm Hà','Dam Ha District','dam_ha','22',7),
 ('201','Hải Hà','Hai Ha','Huyện Hải Hà','Hai Ha District','hai_ha','22',7),
 ('202','Ba Chẽ','Ba Che','Huyện Ba Chẽ','Ba Che District','ba_che','22',7),
@@ -252,9 +269,7 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('218','Lục Nam','Luc Nam','Huyện Lục Nam','Luc Nam District','luc_nam','24',7),
 ('219','Lục Ngạn','Luc Ngan','Huyện Lục Ngạn','Luc Ngan District','luc_ngan','24',7),
 ('220','Sơn Động','Son Dong','Huyện Sơn Động','Son Dong District','son_dong','24',7),
-('221','Yên Dũng','Yen Dung','Huyện Yên Dũng','Yen Dung District','yen_dung','24',7);
-
-INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
+('221','Yên Dũng','Yen Dung','Huyện Yên Dũng','Yen Dung District','yen_dung','24',7),
 ('222','Việt Yên','Viet Yen','Thị xã Việt Yên','Viet Yen Town','viet_yen','24',6),
 ('223','Hiệp Hòa','Hiep Hoa','Huyện Hiệp Hòa','Hiep Hoa District','hiep_hoa','24',7),
 ('227','Việt Trì','Viet Tri','Thành phố Việt Trì','Viet Tri City','viet_tri','25',4),
@@ -276,7 +291,6 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('247','Tam Dương','Tam Duong','Huyện Tam Dương','Tam Duong District','tam_duong','26',7),
 ('248','Tam Đảo','Tam Dao','Huyện Tam Đảo','Tam Dao District','tam_dao','26',7),
 ('249','Bình Xuyên','Binh Xuyen','Huyện Bình Xuyên','Binh Xuyen District','binh_xuyen','26',7),
-('250','Mê Linh','Me Linh','Huyện Mê Linh','Me Linh District','me_linh','01',7),
 ('251','Yên Lạc','Yen Lac','Huyện Yên Lạc','Yen Lac District','yen_lac','26',7),
 ('252','Vĩnh Tường','Vinh Tuong','Huyện Vĩnh Tường','Vinh Tuong District','vinh_tuong','26',7),
 ('253','Sông Lô','Song Lo','Huyện Sông Lô','Song Lo District','song_lo','26',7),
@@ -288,20 +302,6 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('262','Thuận Thành','Thuan Thanh','Thị xã Thuận Thành','Thuan Thanh Town','thuan_thanh','27',6),
 ('263','Gia Bình','Gia Binh','Huyện Gia Bình','Gia Binh District','gia_binh','27',7),
 ('264','Lương Tài','Luong Tai','Huyện Lương Tài','Luong Tai District','luong_tai','27',7),
-('268','Hà Đông','Ha Dong','Quận Hà Đông','Ha Dong District','ha_dong','01',5),
-('269','Sơn Tây','Son Tay','Thị xã Sơn Tây','Son Tay Town','son_tay','01',6),
-('271','Ba Vì','Ba Vi','Huyện Ba Vì','Ba Vi District','ba_vi','01',7),
-('272','Phúc Thọ','Phuc Tho','Huyện Phúc Thọ','Phuc Tho District','phuc_tho','01',7),
-('273','Đan Phượng','Dan Phuong','Huyện Đan Phượng','Dan Phuong District','dan_phuong','01',7),
-('274','Hoài Đức','Hoai Duc','Huyện Hoài Đức','Hoai Duc District','hoai_duc','01',7),
-('275','Quốc Oai','Quoc Oai','Huyện Quốc Oai','Quoc Oai District','quoc_oai','01',7),
-('276','Thạch Thất','Thach That','Huyện Thạch Thất','Thach That District','thach_that','01',7),
-('277','Chương Mỹ','Chuong My','Huyện Chương Mỹ','Chuong My District','chuong_my','01',7),
-('278','Thanh Oai','Thanh Oai','Huyện Thanh Oai','Thanh Oai District','thanh_oai','01',7),
-('279','Thường Tín','Thuong Tin','Huyện Thường Tín','Thuong Tin District','thuong_tin','01',7),
-('280','Phú Xuyên','Phu Xuyen','Huyện Phú Xuyên','Phu Xuyen District','phu_xuyen','01',7),
-('281','Ứng Hòa','Ung Hoa','Huyện Ứng Hòa','Ung Hoa District','ung_hoa','01',7),
-('282','Mỹ Đức','My Duc','Huyện Mỹ Đức','My Duc District','my_duc','01',7),
 ('288','Hải Dương','Hai Duong','Thành phố Hải Dương','Hai Duong City','hai_duong','30',4),
 ('290','Chí Linh','Chi Linh','Thành phố Chí Linh','Chi Linh City','chi_linh','30',4),
 ('291','Nam Sách','Nam Sach','Huyện Nam Sách','Nam Sach District','nam_sach','30',7);
@@ -329,7 +329,9 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('314','Kiến Thuỵ','Kien Thuy','Huyện Kiến Thuỵ','Kien Thuy District','kien_thuy','31',7),
 ('315','Tiên Lãng','Tien Lang','Huyện Tiên Lãng','Tien Lang District','tien_lang','31',7),
 ('316','Vĩnh Bảo','Vinh Bao','Huyện Vĩnh Bảo','Vinh Bao District','vinh_bao','31',7),
+('615','Đắk Hà','Dak Ha','Huyện Đắk Hà','Dak Ha District','dak_ha','62',7),
 ('317','Cát Hải','Cat Hai','Huyện Cát Hải','Cat Hai District','cat_hai','31',7),
+('318','Bạch Long Vĩ','Bach Long Vi','Huyện Bạch Long Vĩ','Bach Long Vi District','bach_long_vi','31',7),
 ('323','Hưng Yên','Hung Yen','Thành phố Hưng Yên','Hung Yen City','hung_yen','33',4),
 ('325','Văn Lâm','Van Lam','Huyện Văn Lâm','Van Lam District','van_lam','33',7),
 ('326','Văn Giang','Van Giang','Huyện Văn Giang','Van Giang District','van_giang','33',7),
@@ -354,11 +356,11 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('351','Thanh Liêm','Thanh Liem','Huyện Thanh Liêm','Thanh Liem District','thanh_liem','35',7),
 ('352','Bình Lục','Binh Luc','Huyện Bình Lục','Binh Luc District','binh_luc','35',7),
 ('353','Lý Nhân','Ly Nhan','Huyện Lý Nhân','Ly Nhan District','ly_nhan','35',7),
-('356','Nam Định','Nam Dinh','Thành phố Nam Định','Nam Dinh City','nam_dinh','36',4),
-('359','Vụ Bản','Vu Ban','Huyện Vụ Bản','Vu Ban District','vu_ban','36',7),
-('360','Ý Yên','Y Yen','Huyện Ý Yên','Y Yen District','y_yen','36',7);
+('356','Nam Định','Nam Dinh','Thành phố Nam Định','Nam Dinh City','nam_dinh','36',4);
 
 INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
+('359','Vụ Bản','Vu Ban','Huyện Vụ Bản','Vu Ban District','vu_ban','36',7),
+('360','Ý Yên','Y Yen','Huyện Ý Yên','Y Yen District','y_yen','36',7),
 ('361','Nghĩa Hưng','Nghia Hung','Huyện Nghĩa Hưng','Nghia Hung District','nghia_hung','36',7),
 ('362','Nam Trực','Nam Truc','Huyện Nam Trực','Nam Truc District','nam_truc','36',7),
 ('363','Trực Ninh','Truc Ninh','Huyện Trực Ninh','Truc Ninh District','truc_ninh','36',7),
@@ -406,11 +408,11 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('415','Quế Phong','Que Phong','Huyện Quế Phong','Que Phong District','que_phong','40',7),
 ('416','Quỳ Châu','Quy Chau','Huyện Quỳ Châu','Quy Chau District','quy_chau','40',7),
 ('417','Kỳ Sơn','Ky Son','Huyện Kỳ Sơn','Ky Son District','ky_son','40',7),
-('418','Tương Dương','Tuong Duong','Huyện Tương Dương','Tuong Duong District','tuong_duong','40',7),
-('419','Nghĩa Đàn','Nghia Dan','Huyện Nghĩa Đàn','Nghia Dan District','nghia_dan','40',7),
-('420','Quỳ Hợp','Quy Hop','Huyện Quỳ Hợp','Quy Hop District','quy_hop','40',7);
+('418','Tương Dương','Tuong Duong','Huyện Tương Dương','Tuong Duong District','tuong_duong','40',7);
 
 INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
+('419','Nghĩa Đàn','Nghia Dan','Huyện Nghĩa Đàn','Nghia Dan District','nghia_dan','40',7),
+('420','Quỳ Hợp','Quy Hop','Huyện Quỳ Hợp','Quy Hop District','quy_hop','40',7),
 ('421','Quỳnh Lưu','Quynh Luu','Huyện Quỳnh Lưu','Quynh Luu District','quynh_luu','40',7),
 ('422','Con Cuông','Con Cuong','Huyện Con Cuông','Con Cuong District','con_cuong','40',7),
 ('423','Tân Kỳ','Tan Ky','Huyện Tân Kỳ','Tan Ky District','tan_ky','40',7),
@@ -453,16 +455,17 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('468','Cam Lộ','Cam Lo','Huyện Cam Lộ','Cam Lo District','cam_lo','45',7),
 ('469','Triệu Phong','Trieu Phong','Huyện Triệu Phong','Trieu Phong District','trieu_phong','45',7),
 ('470','Hải Lăng','Hai Lang','Huyện Hải Lăng','Hai Lang District','hai_lang','45',7),
+('471','Cồn Cỏ','Con Co','Huyện Cồn Cỏ','Con Co District','con_co','45',7),
 ('474','Huế','Hue','Thành phố Huế','Hue City','hue','46',4),
 ('476','Phong Điền','Phong Dien','Huyện Phong Điền','Phong Dien District','phong_dien','46',7),
 ('477','Quảng Điền','Quang Dien','Huyện Quảng Điền','Quang Dien District','quang_dien','46',7),
 ('478','Phú Vang','Phu Vang','Huyện Phú Vang','Phu Vang District','phu_vang','46',7),
-('479','Hương Thủy','Huong Thuy','Thị xã Hương Thủy','Huong Thuy Town','huong_thuy','46',6),
-('480','Hương Trà','Huong Tra','Thị xã Hương Trà','Huong Tra Town','huong_tra','46',6),
-('481','A Lưới','A Luoi','Huyện A Lưới','A Luoi District','a_luoi','46',7),
-('482','Phú Lộc','Phu Loc','Huyện Phú Lộc','Phu Loc District','phu_loc','46',7);
+('479','Hương Thủy','Huong Thuy','Thị xã Hương Thủy','Huong Thuy Town','huong_thuy','46',6);
 
 INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
+('480','Hương Trà','Huong Tra','Thị xã Hương Trà','Huong Tra Town','huong_tra','46',6),
+('481','A Lưới','A Luoi','Huyện A Lưới','A Luoi District','a_luoi','46',7),
+('482','Phú Lộc','Phu Loc','Huyện Phú Lộc','Phu Loc District','phu_loc','46',7),
 ('483','Nam Đông','Nam Dong','Huyện Nam Đông','Nam Dong District','nam_dong','46',7),
 ('490','Liên Chiểu','Lien Chieu','Quận Liên Chiểu','Lien Chieu District','lien_chieu','48',5),
 ('491','Thanh Khê','Thanh Khe','Quận Thanh Khê','Thanh Khe District','thanh_khe','48',5),
@@ -471,6 +474,7 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('494','Ngũ Hành Sơn','Ngu Hanh Son','Quận Ngũ Hành Sơn','Ngu Hanh Son District','ngu_hanh_son','48',5),
 ('495','Cẩm Lệ','Cam Le','Quận Cẩm Lệ','Cam Le District','cam_le','48',5),
 ('497','Hòa Vang','Hoa Vang','Huyện Hòa Vang','Hoa Vang District','hoa_vang','48',7),
+('498','Hoàng Sa','Hoang Sa','Huyện Hoàng Sa','Hoang Sa District','hoang_sa','48',7),
 ('502','Tam Kỳ','Tam Ky','Thành phố Tam Kỳ','Tam Ky City','tam_ky','49',4),
 ('503','Hội An','Hoi An','Thành phố Hội An','Hoi An City','hoi_an','49',4),
 ('504','Tây Giang','Tay Giang','Huyện Tây Giang','Tay Giang District','tay_giang','49',7),
@@ -501,20 +505,21 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('533','Mộ Đức','Mo Duc','Huyện Mộ Đức','Mo Duc District','mo_duc','51',7),
 ('534','Đức Phổ','Duc Pho','Thị xã Đức Phổ','Duc Pho Town','duc_pho','51',6),
 ('535','Ba Tơ','Ba To','Huyện Ba Tơ','Ba To District','ba_to','51',7),
+('536','Lý Sơn','Ly Son','Huyện Lý Sơn','Ly Son District','ly_son','51',7),
 ('540','Quy Nhơn','Quy Nhon','Thành phố Quy Nhơn','Quy Nhon City','quy_nhon','52',4),
 ('542','An Lão','An Lao','Huyện An Lão','An Lao District','an_lao','52',7),
 ('543','Hoài Nhơn','Hoai Nhon','Thị xã Hoài Nhơn','Hoai Nhon Town','hoai_nhon','52',6),
 ('544','Hoài Ân','Hoai An','Huyện Hoài Ân','Hoai An District','hoai_an','52',7),
 ('545','Phù Mỹ','Phu My','Huyện Phù Mỹ','Phu My District','phu_my','52',7),
 ('546','Vĩnh Thạnh','Vinh Thanh','Huyện Vĩnh Thạnh','Vinh Thanh District','vinh_thanh','52',7),
-('547','Tây Sơn','Tay Son','Huyện Tây Sơn','Tay Son District','tay_son','52',7),
+('547','Tây Sơn','Tay Son','Huyện Tây Sơn','Tay Son District','tay_son','52',7);
+
+INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
 ('548','Phù Cát','Phu Cat','Huyện Phù Cát','Phu Cat District','phu_cat','52',7),
 ('549','An Nhơn','An Nhon','Thị xã An Nhơn','An Nhon Town','an_nhon','52',6),
 ('550','Tuy Phước','Tuy Phuoc','Huyện Tuy Phước','Tuy Phuoc District','tuy_phuoc','52',7),
 ('551','Vân Canh','Van Canh','Huyện Vân Canh','Van Canh District','van_canh','52',7),
-('555','Tuy Hoà','Tuy Hoa','Thành phố Tuy Hoà','Tuy Hoa City','tuy_hoa','54',4);
-
-INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
+('555','Tuy Hoà','Tuy Hoa','Thành phố Tuy Hoà','Tuy Hoa City','tuy_hoa','54',4),
 ('557','Sông Cầu','Song Cau','Thị xã Sông Cầu','Song Cau Town','song_cau','54',6),
 ('558','Đồng Xuân','Dong Xuan','Huyện Đồng Xuân','Dong Xuan District','dong_xuan','54',7),
 ('559','Tuy An','Tuy An','Huyện Tuy An','Tuy An District','tuy_an','54',7),
@@ -555,18 +560,17 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('612','Đắk Tô','Dak To','Huyện Đắk Tô','Dak To District','dak_to','62',7),
 ('613','Kon Plông','Kon Plong','Huyện Kon Plông','Kon Plong District','kon_plong','62',7),
 ('614','Kon Rẫy','Kon Ray','Huyện Kon Rẫy','Kon Ray District','kon_ray','62',7),
-('615','Đắk Hà','Dak Ha','Huyện Đắk Hà','Dak Ha District','dak_ha','62',7),
 ('616','Sa Thầy','Sa Thay','Huyện Sa Thầy','Sa Thay District','sa_thay','62',7),
 ('617','Tu Mơ Rông','Tu Mo Rong','Huyện Tu Mơ Rông','Tu Mo Rong District','tu_mo_rong','62',7),
 ('618','Ia H'' Drai','Ia H'' Drai','Huyện Ia H'' Drai','Ia H'' Drai District','ia_h_drai','62',7),
 ('622','Pleiku','Pleiku','Thành phố Pleiku','Pleiku City','pleiku','64',4),
-('623','An Khê','An Khe','Thị xã An Khê','An Khe Town','an_khe','64',6),
+('623','An Khê','An Khe','Thị xã An Khê','An Khe Town','an_khe','64',6);
+
+INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
 ('624','Ayun Pa','Ayun Pa','Thị xã Ayun Pa','Ayun Pa Town','ayun_pa','64',6),
 ('625','KBang','KBang','Huyện KBang','KBang District','kbang','64',7),
 ('626','Đăk Đoa','Dak Doa','Huyện Đăk Đoa','Dak Doa District','dak_doa','64',7),
-('627','Chư Păh','Chu Pah','Huyện Chư Păh','Chu Pah District','chu_pah','64',7);
-
-INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
+('627','Chư Păh','Chu Pah','Huyện Chư Păh','Chu Pah District','chu_pah','64',7),
 ('628','Ia Grai','Ia Grai','Huyện Ia Grai','Ia Grai District','ia_grai','64',7),
 ('629','Mang Yang','Mang Yang','Huyện Mang Yang','Mang Yang District','mang_yang','64',7),
 ('630','Kông Chro','Kong Chro','Huyện Kông Chro','Kong Chro District','kong_chro','64',7),
@@ -612,13 +616,13 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('680','Bảo Lâm','Bao Lam','Huyện Bảo Lâm','Bao Lam District','bao_lam','68',7),
 ('681','Đạ Huoai','Da Huoai','Huyện Đạ Huoai','Da Huoai District','da_huoai','68',7),
 ('682','Đạ Tẻh','Da Teh','Huyện Đạ Tẻh','Da Teh District','da_teh','68',7),
-('683','Cát Tiên','Cat Tien','Huyện Cát Tiên','Cat Tien District','cat_tien','68',7),
+('683','Cát Tiên','Cat Tien','Huyện Cát Tiên','Cat Tien District','cat_tien','68',7);
+
+INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
 ('688','Phước Long','Phuoc Long','Thị xã Phước Long','Phuoc Long Town','phuoc_long','70',6),
 ('689','Đồng Xoài','Dong Xoai','Thành phố Đồng Xoài','Dong Xoai City','dong_xoai','70',4),
 ('690','Bình Long','Binh Long','Thị xã Bình Long','Binh Long Town','binh_long','70',6),
-('691','Bù Gia Mập','Bu Gia Map','Huyện Bù Gia Mập','Bu Gia Map District','bu_gia_map','70',7);
-
-INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
+('691','Bù Gia Mập','Bu Gia Map','Huyện Bù Gia Mập','Bu Gia Map District','bu_gia_map','70',7),
 ('692','Lộc Ninh','Loc Ninh','Huyện Lộc Ninh','Loc Ninh District','loc_ninh','70',7),
 ('693','Bù Đốp','Bu Dop','Huyện Bù Đốp','Bu Dop District','bu_dop','70',7),
 ('694','Hớn Quản','Hon Quan','Huyện Hớn Quản','Hon Quan District','hon_quan','70',7),
@@ -662,15 +666,16 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('752','Long Điền','Long Dien','Huyện Long Điền','Long Dien District','long_dien','77',7),
 ('753','Đất Đỏ','Dat Do','Huyện Đất Đỏ','Dat Do District','dat_do','77',7),
 ('754','Phú Mỹ','Phu My','Thị xã Phú Mỹ','Phu My Town','phu_my','77',6),
+('755','Côn Đảo','Con Dao','Huyện Côn Đảo','Con Dao District','con_dao','77',7),
 ('760','1','1','Quận 1','District 1','1','79',5),
-('761','12','12','Quận 12','District 12','12','79',5),
+('761','12','12','Quận 12','District 12','12','79',5);
+
+INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
 ('764','Gò Vấp','Go Vap','Quận Gò Vấp','Go Vap District','go_vap','79',5),
 ('765','Bình Thạnh','Binh Thanh','Quận Bình Thạnh','Binh Thanh District','binh_thanh','79',5),
 ('766','Tân Bình','Tan Binh','Quận Tân Bình','Tan Binh District','tan_binh','79',5),
 ('767','Tân Phú','Tan Phu','Quận Tân Phú','Tan Phu District','tan_phu','79',5),
-('768','Phú Nhuận','Phu Nhuan','Quận Phú Nhuận','Phu Nhuan District','phu_nhuan','79',5);
-
-INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
+('768','Phú Nhuận','Phu Nhuan','Quận Phú Nhuận','Phu Nhuan District','phu_nhuan','79',5),
 ('769','Thủ Đức','Thu Duc','Thành phố Thủ Đức','Thu Duc City','thu_duc','79',3),
 ('770','3','3','Quận 3','District 3','3','79',5),
 ('771','10','10','Quận 10','District 10','10','79',5),
@@ -715,14 +720,14 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('829','Bến Tre','Ben Tre','Thành phố Bến Tre','Ben Tre City','ben_tre','83',4),
 ('831','Châu Thành','Chau Thanh','Huyện Châu Thành','Chau Thanh District','chau_thanh','83',7),
 ('832','Chợ Lách','Cho Lach','Huyện Chợ Lách','Cho Lach District','cho_lach','83',7),
-('833','Mỏ Cày Nam','Mo Cay Nam','Huyện Mỏ Cày Nam','Mo Cay Nam District','mo_cay_nam','83',7),
+('833','Mỏ Cày Nam','Mo Cay Nam','Huyện Mỏ Cày Nam','Mo Cay Nam District','mo_cay_nam','83',7);
+
+INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
 ('834','Giồng Trôm','Giong Trom','Huyện Giồng Trôm','Giong Trom District','giong_trom','83',7),
 ('835','Bình Đại','Binh Dai','Huyện Bình Đại','Binh Dai District','binh_dai','83',7),
 ('836','Ba Tri','Ba Tri','Huyện Ba Tri','Ba Tri District','ba_tri','83',7),
 ('837','Thạnh Phú','Thanh Phu','Huyện Thạnh Phú','Thanh Phu District','thanh_phu','83',7),
-('838','Mỏ Cày Bắc','Mo Cay Bac','Huyện Mỏ Cày Bắc','Mo Cay Bac District','mo_cay_bac','83',7);
-
-INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
+('838','Mỏ Cày Bắc','Mo Cay Bac','Huyện Mỏ Cày Bắc','Mo Cay Bac District','mo_cay_bac','83',7),
 ('842','Trà Vinh','Tra Vinh','Thành phố Trà Vinh','Tra Vinh City','tra_vinh','84',4),
 ('844','Càng Long','Cang Long','Huyện Càng Long','Cang Long District','cang_long','84',7),
 ('845','Cầu Kè','Cau Ke','Huyện Cầu Kè','Cau Ke District','cau_ke','84',7),
@@ -767,14 +772,14 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('900','Hà Tiên','Ha Tien','Thành phố Hà Tiên','Ha Tien City','ha_tien','91',4),
 ('902','Kiên Lương','Kien Luong','Huyện Kiên Lương','Kien Luong District','kien_luong','91',7),
 ('903','Hòn Đất','Hon Dat','Huyện Hòn Đất','Hon Dat District','hon_dat','91',7),
-('904','Tân Hiệp','Tan Hiep','Huyện Tân Hiệp','Tan Hiep District','tan_hiep','91',7),
+('904','Tân Hiệp','Tan Hiep','Huyện Tân Hiệp','Tan Hiep District','tan_hiep','91',7);
+
+INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
 ('905','Châu Thành','Chau Thanh','Huyện Châu Thành','Chau Thanh District','chau_thanh','91',7),
 ('906','Giồng Riềng','Giong Rieng','Huyện Giồng Riềng','Giong Rieng District','giong_rieng','91',7),
 ('907','Gò Quao','Go Quao','Huyện Gò Quao','Go Quao District','go_quao','91',7),
 ('908','An Biên','An Bien','Huyện An Biên','An Bien District','an_bien','91',7),
-('909','An Minh','An Minh','Huyện An Minh','An Minh District','an_minh','91',7);
-
-INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
+('909','An Minh','An Minh','Huyện An Minh','An Minh District','an_minh','91',7),
 ('910','Vĩnh Thuận','Vinh Thuan','Huyện Vĩnh Thuận','Vinh Thuan District','vinh_thuan','91',7),
 ('911','Phú Quốc','Phu Quoc','Thành phố Phú Quốc','Phu Quoc City','phu_quoc','91',4),
 ('912','Kiên Hải','Kien Hai','Huyện Kiên Hải','Kien Hai District','kien_hai','91',7),
@@ -819,18 +824,13 @@ INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,provinc
 ('966','U Minh','U Minh','Huyện U Minh','U Minh District','u_minh','96',7),
 ('967','Thới Bình','Thoi Binh','Huyện Thới Bình','Thoi Binh District','thoi_binh','96',7),
 ('968','Trần Văn Thời','Tran Van Thoi','Huyện Trần Văn Thời','Tran Van Thoi District','tran_van_thoi','96',7),
-('969','Cái Nước','Cai Nuoc','Huyện Cái Nước','Cai Nuoc District','cai_nuoc','96',7),
+('969','Cái Nước','Cai Nuoc','Huyện Cái Nước','Cai Nuoc District','cai_nuoc','96',7);
+
+INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
 ('970','Đầm Dơi','Dam Doi','Huyện Đầm Dơi','Dam Doi District','dam_doi','96',7),
 ('971','Năm Căn','Nam Can','Huyện Năm Căn','Nam Can District','nam_can','96',7),
 ('972','Phú Tân','Phu Tan','Huyện Phú Tân','Phu Tan District','phu_tan','96',7),
-('973','Ngọc Hiển','Ngoc Hien','Huyện Ngọc Hiển','Ngoc Hien District','ngoc_hien','96',7),
-('318','Bạch Long Vĩ','Bach Long Vi','Huyện Bạch Long Vĩ','Bach Long Vi District','bach_long_vi','31',7);
-
-INSERT INTO districts(code,name,name_en,full_name,full_name_en,code_name,province_code,administrative_unit_id) VALUES
-('471','Cồn Cỏ','Con Co','Huyện Cồn Cỏ','Con Co District','con_co','45',7),
-('498','Hoàng Sa','Hoang Sa','Huyện Hoàng Sa','Hoang Sa District','hoang_sa','48',7),
-('536','Lý Sơn','Ly Son','Huyện Lý Sơn','Ly Son District','ly_son','51',7),
-('755','Côn Đảo','Con Dao','Huyện Côn Đảo','Con Dao District','con_dao','77',7);
+('973','Ngọc Hiển','Ngoc Hien','Huyện Ngọc Hiển','Ngoc Hien District','ngoc_hien','96',7);
 
 -- ----------------------------------
 

@@ -39910,6 +39910,68 @@
    "FullName": "Tỉnh Kon Tum",
    "District": [
     {
+     "Code": "615",
+     "FullName": "Huyện Đắk Hà",
+     "ProvinceCode": "62",
+     "Ward": [
+      {
+       "Code": "23500",
+       "FullName": "Thị trấn Đắk Hà",
+       "DistrictCode": "615"
+      },
+      {
+       "Code": "23503",
+       "FullName": "Xã Đắk PXi",
+       "DistrictCode": "615"
+      },
+      {
+       "Code": "23504",
+       "FullName": "Xã Đăk Long",
+       "DistrictCode": "615"
+      },
+      {
+       "Code": "23506",
+       "FullName": "Xã Đắk HRing",
+       "DistrictCode": "615"
+      },
+      {
+       "Code": "23509",
+       "FullName": "Xã Đắk Ui",
+       "DistrictCode": "615"
+      },
+      {
+       "Code": "23510",
+       "FullName": "Xã Đăk Ngọk",
+       "DistrictCode": "615"
+      },
+      {
+       "Code": "23512",
+       "FullName": "Xã Đắk Mar",
+       "DistrictCode": "615"
+      },
+      {
+       "Code": "23515",
+       "FullName": "Xã Ngok Wang",
+       "DistrictCode": "615"
+      },
+      {
+       "Code": "23518",
+       "FullName": "Xã Ngok Réo",
+       "DistrictCode": "615"
+      },
+      {
+       "Code": "23521",
+       "FullName": "Xã Hà Mòn",
+       "DistrictCode": "615"
+      },
+      {
+       "Code": "23524",
+       "FullName": "Xã Đắk La",
+       "DistrictCode": "615"
+      }
+     ]
+    },
+    {
      "Code": "608",
      "FullName": "Thành phố Kon Tum",
      "ProvinceCode": "62",
@@ -40278,68 +40340,6 @@
        "Code": "23497",
        "FullName": "Xã Tân Lập",
        "DistrictCode": "614"
-      }
-     ]
-    },
-    {
-     "Code": "615",
-     "FullName": "Huyện Đắk Hà",
-     "ProvinceCode": "62",
-     "Ward": [
-      {
-       "Code": "23500",
-       "FullName": "Thị trấn Đắk Hà",
-       "DistrictCode": "615"
-      },
-      {
-       "Code": "23503",
-       "FullName": "Xã Đắk PXi",
-       "DistrictCode": "615"
-      },
-      {
-       "Code": "23504",
-       "FullName": "Xã Đăk Long",
-       "DistrictCode": "615"
-      },
-      {
-       "Code": "23506",
-       "FullName": "Xã Đắk HRing",
-       "DistrictCode": "615"
-      },
-      {
-       "Code": "23509",
-       "FullName": "Xã Đắk Ui",
-       "DistrictCode": "615"
-      },
-      {
-       "Code": "23510",
-       "FullName": "Xã Đăk Ngọk",
-       "DistrictCode": "615"
-      },
-      {
-       "Code": "23512",
-       "FullName": "Xã Đắk Mar",
-       "DistrictCode": "615"
-      },
-      {
-       "Code": "23515",
-       "FullName": "Xã Ngok Wang",
-       "DistrictCode": "615"
-      },
-      {
-       "Code": "23518",
-       "FullName": "Xã Ngok Réo",
-       "DistrictCode": "615"
-      },
-      {
-       "Code": "23521",
-       "FullName": "Xã Hà Mòn",
-       "DistrictCode": "615"
-      },
-      {
-       "Code": "23524",
-       "FullName": "Xã Đắk La",
-       "DistrictCode": "615"
       }
      ]
     },

@@ -86751,6 +86751,140 @@
    "District": [
     {
      "Type": "district",
+     "Code": "615",
+     "Name": "Đắk Hà",
+     "NameEn": "Dak Ha",
+     "FullName": "Huyện Đắk Hà",
+     "FullNameEn": "Dak Ha District",
+     "CodeName": "dak_ha",
+     "ProvinceCode": "62",
+     "AdministrativeUnitId": 7,
+     "Ward": [
+      {
+       "Type": "ward",
+       "Code": "23500",
+       "Name": "Đắk Hà",
+       "NameEn": "Dak Ha",
+       "FullName": "Thị trấn Đắk Hà",
+       "FullNameEn": "Dak Ha Township",
+       "CodeName": "dak_ha",
+       "DistrictCode": "615",
+       "AdministrativeUnitId": 9
+      },
+      {
+       "Type": "ward",
+       "Code": "23503",
+       "Name": "Đắk PXi",
+       "NameEn": "Dak PXi",
+       "FullName": "Xã Đắk PXi",
+       "FullNameEn": "Dak PXi Commune",
+       "CodeName": "dak_pxi",
+       "DistrictCode": "615",
+       "AdministrativeUnitId": 10
+      },
+      {
+       "Type": "ward",
+       "Code": "23504",
+       "Name": "Đăk Long",
+       "NameEn": "Dak Long",
+       "FullName": "Xã Đăk Long",
+       "FullNameEn": "Dak Long Commune",
+       "CodeName": "dak_long",
+       "DistrictCode": "615",
+       "AdministrativeUnitId": 10
+      },
+      {
+       "Type": "ward",
+       "Code": "23506",
+       "Name": "Đắk HRing",
+       "NameEn": "Dak HRing",
+       "FullName": "Xã Đắk HRing",
+       "FullNameEn": "Dak HRing Commune",
+       "CodeName": "dak_hring",
+       "DistrictCode": "615",
+       "AdministrativeUnitId": 10
+      },
+      {
+       "Type": "ward",
+       "Code": "23509",
+       "Name": "Đắk Ui",
+       "NameEn": "Dak Ui",
+       "FullName": "Xã Đắk Ui",
+       "FullNameEn": "Dak Ui Commune",
+       "CodeName": "dak_ui",
+       "DistrictCode": "615",
+       "AdministrativeUnitId": 10
+      },
+      {
+       "Type": "ward",
+       "Code": "23510",
+       "Name": "Đăk Ngọk",
+       "NameEn": "Dak Ngok",
+       "FullName": "Xã Đăk Ngọk",
+       "FullNameEn": "Dak Ngok Commune",
+       "CodeName": "dak_ngok",
+       "DistrictCode": "615",
+       "AdministrativeUnitId": 10
+      },
+      {
+       "Type": "ward",
+       "Code": "23512",
+       "Name": "Đắk Mar",
+       "NameEn": "Dak Mar",
+       "FullName": "Xã Đắk Mar",
+       "FullNameEn": "Dak Mar Commune",
+       "CodeName": "dak_mar",
+       "DistrictCode": "615",
+       "AdministrativeUnitId": 10
+      },
+      {
+       "Type": "ward",
+       "Code": "23515",
+       "Name": "Ngok Wang",
+       "NameEn": "Ngok Wang",
+       "FullName": "Xã Ngok Wang",
+       "FullNameEn": "Ngok Wang Commune",
+       "CodeName": "ngok_wang",
+       "DistrictCode": "615",
+       "AdministrativeUnitId": 10
+      },
+      {
+       "Type": "ward",
+       "Code": "23518",
+       "Name": "Ngok Réo",
+       "NameEn": "Ngok Reo",
+       "FullName": "Xã Ngok Réo",
+       "FullNameEn": "Ngok Reo Commune",
+       "CodeName": "ngok_reo",
+       "DistrictCode": "615",
+       "AdministrativeUnitId": 10
+      },
+      {
+       "Type": "ward",
+       "Code": "23521",
+       "Name": "Hà Mòn",
+       "NameEn": "Ha Mon",
+       "FullName": "Xã Hà Mòn",
+       "FullNameEn": "Ha Mon Commune",
+       "CodeName": "ha_mon",
+       "DistrictCode": "615",
+       "AdministrativeUnitId": 10
+      },
+      {
+       "Type": "ward",
+       "Code": "23524",
+       "Name": "Đắk La",
+       "NameEn": "Dak La",
+       "FullName": "Xã Đắk La",
+       "FullNameEn": "Dak La Commune",
+       "CodeName": "dak_la",
+       "DistrictCode": "615",
+       "AdministrativeUnitId": 10
+      }
+     ]
+    },
+    {
+     "Type": "district",
      "Code": "608",
      "Name": "Kon Tum",
      "NameEn": "Kon Tum",
@@ -87549,140 +87683,6 @@
        "FullNameEn": "Tan Lap Commune",
        "CodeName": "tan_lap",
        "DistrictCode": "614",
-       "AdministrativeUnitId": 10
-      }
-     ]
-    },
-    {
-     "Type": "district",
-     "Code": "615",
-     "Name": "Đắk Hà",
-     "NameEn": "Dak Ha",
-     "FullName": "Huyện Đắk Hà",
-     "FullNameEn": "Dak Ha District",
-     "CodeName": "dak_ha",
-     "ProvinceCode": "62",
-     "AdministrativeUnitId": 7,
-     "Ward": [
-      {
-       "Type": "ward",
-       "Code": "23500",
-       "Name": "Đắk Hà",
-       "NameEn": "Dak Ha",
-       "FullName": "Thị trấn Đắk Hà",
-       "FullNameEn": "Dak Ha Township",
-       "CodeName": "dak_ha",
-       "DistrictCode": "615",
-       "AdministrativeUnitId": 9
-      },
-      {
-       "Type": "ward",
-       "Code": "23503",
-       "Name": "Đắk PXi",
-       "NameEn": "Dak PXi",
-       "FullName": "Xã Đắk PXi",
-       "FullNameEn": "Dak PXi Commune",
-       "CodeName": "dak_pxi",
-       "DistrictCode": "615",
-       "AdministrativeUnitId": 10
-      },
-      {
-       "Type": "ward",
-       "Code": "23504",
-       "Name": "Đăk Long",
-       "NameEn": "Dak Long",
-       "FullName": "Xã Đăk Long",
-       "FullNameEn": "Dak Long Commune",
-       "CodeName": "dak_long",
-       "DistrictCode": "615",
-       "AdministrativeUnitId": 10
-      },
-      {
-       "Type": "ward",
-       "Code": "23506",
-       "Name": "Đắk HRing",
-       "NameEn": "Dak HRing",
-       "FullName": "Xã Đắk HRing",
-       "FullNameEn": "Dak HRing Commune",
-       "CodeName": "dak_hring",
-       "DistrictCode": "615",
-       "AdministrativeUnitId": 10
-      },
-      {
-       "Type": "ward",
-       "Code": "23509",
-       "Name": "Đắk Ui",
-       "NameEn": "Dak Ui",
-       "FullName": "Xã Đắk Ui",
-       "FullNameEn": "Dak Ui Commune",
-       "CodeName": "dak_ui",
-       "DistrictCode": "615",
-       "AdministrativeUnitId": 10
-      },
-      {
-       "Type": "ward",
-       "Code": "23510",
-       "Name": "Đăk Ngọk",
-       "NameEn": "Dak Ngok",
-       "FullName": "Xã Đăk Ngọk",
-       "FullNameEn": "Dak Ngok Commune",
-       "CodeName": "dak_ngok",
-       "DistrictCode": "615",
-       "AdministrativeUnitId": 10
-      },
-      {
-       "Type": "ward",
-       "Code": "23512",
-       "Name": "Đắk Mar",
-       "NameEn": "Dak Mar",
-       "FullName": "Xã Đắk Mar",
-       "FullNameEn": "Dak Mar Commune",
-       "CodeName": "dak_mar",
-       "DistrictCode": "615",
-       "AdministrativeUnitId": 10
-      },
-      {
-       "Type": "ward",
-       "Code": "23515",
-       "Name": "Ngok Wang",
-       "NameEn": "Ngok Wang",
-       "FullName": "Xã Ngok Wang",
-       "FullNameEn": "Ngok Wang Commune",
-       "CodeName": "ngok_wang",
-       "DistrictCode": "615",
-       "AdministrativeUnitId": 10
-      },
-      {
-       "Type": "ward",
-       "Code": "23518",
-       "Name": "Ngok Réo",
-       "NameEn": "Ngok Reo",
-       "FullName": "Xã Ngok Réo",
-       "FullNameEn": "Ngok Reo Commune",
-       "CodeName": "ngok_reo",
-       "DistrictCode": "615",
-       "AdministrativeUnitId": 10
-      },
-      {
-       "Type": "ward",
-       "Code": "23521",
-       "Name": "Hà Mòn",
-       "NameEn": "Ha Mon",
-       "FullName": "Xã Hà Mòn",
-       "FullNameEn": "Ha Mon Commune",
-       "CodeName": "ha_mon",
-       "DistrictCode": "615",
-       "AdministrativeUnitId": 10
-      },
-      {
-       "Type": "ward",
-       "Code": "23524",
-       "Name": "Đắk La",
-       "NameEn": "Dak La",
-       "FullName": "Xã Đắk La",
-       "FullNameEn": "Dak La Commune",
-       "CodeName": "dak_la",
-       "DistrictCode": "615",
        "AdministrativeUnitId": 10
       }
      ]
