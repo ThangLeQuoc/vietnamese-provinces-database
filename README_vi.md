@@ -1,11 +1,11 @@
-![Repository Banner](https://i.imgur.com/GNzxBKP.png)
+![Repository Banner](https://i.imgur.com/YlXOsfg.png)
 ![Made in Vietnam](https://raw.githubusercontent.com/webuild-community/badge/master/svg/made.svg)
 
 [Read in English version](README.md)
 # Dữ liệu Tỉnh thành, Quận huyện Việt Nam
 
 Đây là tập lệnh cơ sở dữ liệu SQL của toàn bộ đơn vị hành chính Việt Nam, bao gồm **63 tỉnh thành** và các Quận huyện, phường xã liên quan.  
-Dữ liệu được cập nhật theo nghị định gần nhất: [1013/NQ-UBTVQH15][source government decree]  
+Dữ liệu được cập nhật theo nghị định gần nhất: [1203/NQ-UBTVQH15][source government decree]  
 Hãy để lại một ngôi sao :star: trên dự án này nếu bạn thấy nó hữu ích, và để nhận những thông báo về các bản release mới nhất. Điều này giúp khích lệ tinh thần của chúng tôi để chúng tôi tiếp tục cống hiến thêm các sản phẩm mã nguồn mở phục vụ cộng đồng.  
 
 ## Tổng quan
@@ -24,6 +24,8 @@ Bảng dưới thông kê các nghị định đã được ban hành, cùng th�
 
 |Nghị định|Ngày ban hành|Ngày có hiệu lực|Phiên bản|
 |-------------|-----------|-------------|---------------|
+|[1203/NQ-UBTVQH15][decree 1203/NQ-UBTVQH15]|28/09/2024|01/11/2024|v2.2.0
+|[1106/NQ-UBTVQH15][decree 1106/NQ-UBTVQH15]|23/07/2024|01/09/2024|v2.1.0
 |[1013/NQ-UBTVQH15][decree 1013/NQ-UBTVQH15]|19/03/2024|01/05/2024|v2.0.1
 |[939/NQ-UBTVQH15][decree 939/NQ-UBTVQH15]|13/12/2023|01/02/2024 |v2.0.0
 |Từ [721/NQ-UBTVQH15][decree 721/NQ-UBTVQH15] đến<br>[730/NQ-UBTVQH15][decree 730/NQ-UBTVQH15]|13/02/2023|10/04/2023 |v1.0.4.1
@@ -377,3 +379,5 @@ Bản đồ Việt Nam dùng làm banner từ [vietcentertourist](https://vietce
 [decree 730/NQ-UBTVQH15]: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-730-NQ-UBTVQH15-2023-thanh-lap-thi-tran-Kim-Long-thi-tran-Tam-Hong-Vinh-Phuc-556504.aspx
 [decree 939/NQ-UBTVQH15]: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-939-NQ-UBTVQH15-2023-nhap-xa-Thieu-Phu-vao-thi-tran-Thieu-Hoa-Thanh-Hoa-592292.aspx
 [decree 1013/NQ-UBTVQH15]: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-1013-NQ-UBTVQH15-2024-thanh-lap-cac-phuong-thuoc-thi-xa-Go-Cong-Tien-Giang-606022.aspx
+[decree 1106/NQ-UBTVQH15]: https://thuvienphapluat.vn/van-ban/Bo-may-hanh-chinh/Nghi-quyet-1106-NQ-UBTVQH15-2024-sap-xep-don-vi-hanh-chinh-cap-xa-Tuyen-Quang-619244.aspx  
+[decree 1203/NQ-UBTVQH15]: https://thuvienphapluat.vn/banan/tin-tuc/nghi-quyet-ve-sap-xep-don-vi-hanh-chinh-tai-63-tinh-thanh-pho-giai-doan-20232025-11897  

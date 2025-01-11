@@ -38,26 +38,20 @@ func BeginDumpingDataWithDvhcvnDirectSource() {
 
 	dvhcvnUnits := data_downloader.FetchDvhcvnData(dataSetTime)
 
-
-	insertToProvinces(dvhcvnUnits)
-	insertToDistricts(dvhcvnUnits)
-	insertToWards(dvhcvnUnits)
+	insertToProvinces(dvhcvnUnits.ProvinceData)
+	insertToDistricts(dvhcvnUnits.DistrictData)
+	insertToWards(dvhcvnUnits.WardData)
 	fmt.Println("📥 Dumper operation finished")
 }
 
-func insertToWards(administrativeRecordModels []data_downloader.DvhcvnModel) {
+func insertToWards(dvhcvnWardModels []data_downloader.DvhcvnWardModel) {
 	db := vn_common.GetPostgresDBConnection()
 	ctx := context.Background()
 	totalWard := 0
 
-	for _, a := range administrativeRecordModels {
-		if a.WardName == "" {
-			fmt.Println("Unable to determine ward for record ")
-			fmt.Printf("%+v\n", a)
-			continue
-		}
+	for _, w := range dvhcvnWardModels {
 
-		wardFullName := removeWhiteSpaces(a.WardName)
+		wardFullName := removeWhiteSpaces(w.WardName)
 		administrativeUnitLevel := getAdministrativeUnit_WardLevel(wardFullName)
 		unitName := AdministrativeUnitNamesShortNameMap_vn[administrativeUnitLevel]
 		unitName_en := AdministrativeUnitNamesShortNameMap_en[administrativeUnitLevel]
@@ -65,7 +59,7 @@ func insertToWards(administrativeRecordModels []data_downloader.DvhcvnModel) {
 		codeName := toCodeName(wardShortName)
 		wardShortNameEn := normalizeString(wardShortName)
 
-		// Case when district name is a number
+		// Case when ward name is a number
 		isNumber, _ := regexp.MatchString("[0-9]+", wardShortName)
 		var wardFullNameEn string
 		if isNumber {
@@ -75,14 +69,14 @@ func insertToWards(administrativeRecordModels []data_downloader.DvhcvnModel) {
 		}
 
 		wardModel := &vn_common.Ward{
-			Code:                 a.WardCode,
+			Code:                 w.WardCode,
 			Name:                 wardShortName,
 			NameEn:               wardShortNameEn,
 			FullName:             wardFullName,
 			FullNameEn:           wardFullNameEn,
 			CodeName:             codeName,
 			AdministrativeUnitId: administrativeUnitLevel,
-			DistrictCode:         a.DistrictCode,
+			DistrictCode:         w.DistrictCode,
 		}
 
 		_, err := db.NewInsert().Model(wardModel).Exec(ctx)
@@ -96,24 +90,13 @@ func insertToWards(administrativeRecordModels []data_downloader.DvhcvnModel) {
 	fmt.Printf("Inserted %d wards to tables\n", totalWard)
 }
 
-func insertToDistricts(administrativeRecordModels []data_downloader.DvhcvnModel) {
-	districtsMap := make(map[string]string)
-	districtProvinceMap := make(map[string]string)
-	var districtsMapKey []string
-
-	for _, a := range administrativeRecordModels {
-		if _, exists := districtsMap[a.DistrictCode]; !exists {
-			districtsMapKey = append(districtsMapKey, a.DistrictCode)
-		}
-		districtsMap[a.DistrictCode] = a.DistrictName
-		districtProvinceMap[a.DistrictCode] = a.ProvinceCode
-	}
-
+func insertToDistricts(dvhcvnDistrictModels []data_downloader.DvhcvnDistrictModel) {
 	db := vn_common.GetPostgresDBConnection()
 	ctx := context.Background()
 
-	for _, code := range districtsMapKey {
-		districtFullName := removeWhiteSpaces(districtsMap[code])
+	for _, d := range dvhcvnDistrictModels {
+
+		districtFullName := removeWhiteSpaces(d.DistrictName)
 		administrativeUnitLevel := getAdministrativeUnit_DistrictLevel(districtFullName)
 		unitName := AdministrativeUnitNamesShortNameMap_vn[administrativeUnitLevel]
 		unitName_en := AdministrativeUnitNamesShortNameMap_en[administrativeUnitLevel]
@@ -131,14 +114,14 @@ func insertToDistricts(administrativeRecordModels []data_downloader.DvhcvnModel)
 		}
 
 		districtModel := &vn_common.District{
-			Code:                 code,
+			Code:                 d.DistrictCode,
 			Name:                 districtShortName,
 			NameEn:               districtShortNameEn,
 			FullName:             districtFullName,
 			FullNameEn:           districtFullNameEn,
 			CodeName:             codeName,
 			AdministrativeUnitId: administrativeUnitLevel,
-			ProvinceCode:         districtProvinceMap[code],
+			ProvinceCode:         d.ProvinceCode,
 		}
 
 		_, err := db.NewInsert().Model(districtModel).Exec(ctx)
@@ -148,25 +131,15 @@ func insertToDistricts(administrativeRecordModels []data_downloader.DvhcvnModel)
 		}
 	}
 
-	fmt.Printf("Inserted %d districts to tables\n", len(districtsMapKey))
+	fmt.Printf("Inserted %d districts to tables\n", len(dvhcvnDistrictModels))
 }
 
-func insertToProvinces(administrativeRecordModels []data_downloader.DvhcvnModel) {
-
-	provincesMap := make(map[string]string)
-	var provincesMapKey []string
-
-	for _, a := range administrativeRecordModels {
-		if _, exists := provincesMap[a.ProvinceCode]; !exists {
-			provincesMapKey = append(provincesMapKey, a.ProvinceCode)
-		}
-		provincesMap[a.ProvinceCode] = a.ProvinceName
-	}
-
+func insertToProvinces(dvhcvnProvinceModels []data_downloader.DvhcvnProvinceModel) {
 	db := vn_common.GetPostgresDBConnection()
 	ctx := context.Background()
-	for _, code := range provincesMapKey {
-		provinceFullName := removeWhiteSpaces(provincesMap[code])
+
+	for _, p := range dvhcvnProvinceModels {
+		provinceFullName := removeWhiteSpaces(p.ProvinceName)
 		administrativeUnitLevel := getAdministrativeUnit_ProvinceLevel(provinceFullName)
 		unitName := AdministrativeUnitNamesShortNameMap_vn[administrativeUnitLevel]
 		unitName_en := AdministrativeUnitNamesShortNameMap_en[administrativeUnitLevel]
@@ -174,10 +147,10 @@ func insertToProvinces(administrativeRecordModels []data_downloader.DvhcvnModel)
 		codeName := toCodeName(provinceShortName)
 		provinceShortNameEn := normalizeString(provinceShortName)
 		provinceFullNameEn := provinceShortNameEn + " " + unitName_en
-		regionId := ProvinceRegionMap[code]
+		regionId := ProvinceRegionMap[p.ProvinceCode]
 
 		provinceModel := &vn_common.Province{
-			Code:                   code,
+			Code:                   p.ProvinceCode,
 			Name:                   provinceShortName,
 			NameEn:                 provinceShortNameEn,
 			FullName:               provinceFullName,
@@ -194,8 +167,10 @@ func insertToProvinces(administrativeRecordModels []data_downloader.DvhcvnModel)
 		}
 	}
 
-	fmt.Printf("Inserted %d provinces to tables\n", len(provincesMapKey))
+	fmt.Printf("Inserted %d provinces to tables\n", len(dvhcvnProvinceModels))
 }
+
+
 
 /*
 Determine the province administrative unit id from its name
